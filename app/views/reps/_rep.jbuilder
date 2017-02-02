@@ -1,14 +1,18 @@
 # frozen_string_literal: true
 return json.error 'Record not found' if rep.blank?
 
-json.self rep_url(rep.bioguide_id)
+if rep.id
+  json.self rep_url(rep.bioguide_id)
 
-json.state do
-  json.partial! 'states/state', state: rep.state
-end
+  json.state do
+    json.partial! 'states/state', state: rep.state
+  end
 
-json.district do
-  json.partial! 'districts/district', district: rep.district if rep.district
+  json.district do
+    json.partial! 'districts/district', district: rep.district if rep.district
+  end
+else
+  json.source 'https://www.openstates.org/'
 end
 
 json.extract! rep,

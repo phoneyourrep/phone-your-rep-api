@@ -6,12 +6,13 @@ class RepsController < ApplicationController
 
   # GET /reps
   def index
-    address = params[:address]
-    lat     = params[:lat]
-    long    = params[:long]
+    address    = params[:address]
+    lat        = params[:lat]
+    long       = params[:long]
+    state_reps = params[:state_reps]
     # return the first result, or a random one
     if address || lat || long
-      @reps = Rep.find_em address: address, lat: lat, long: long
+      @reps = Rep.find_em address: address, lat: lat, long: long, state_reps: state_reps
       return if @reps.blank?
       house_rep = @reps.detect { |rep| !rep.district.blank? }
       @district = house_rep.district if house_rep
