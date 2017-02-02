@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 class Rep < ApplicationRecord
+  extend OpenStatesable
+
   belongs_to :district
   belongs_to :state
   has_many   :office_locations, dependent: :destroy, foreign_key: :bioguide_id, primary_key: :bioguide_id
@@ -25,13 +27,14 @@ class Rep < ApplicationRecord
   attr_accessor :sorted_offices
 
   # Find the reps in the db associated to location, and sort the offices by distance.
-  def self.find_em(address: nil, lat: nil, long: nil)
+  def self.find_em(address: nil, lat: nil, long: nil, state_reps: nil)
     init(address, lat, long)
     return [] if coordinates.blank?
     find_district_and_state
     return [] if district.blank?
     self.reps = Rep.yours(state: state, district: district).includes(:office_locations)
-    self.reps = reps.distinct
+    self.reps = reps.distinct.to_a
+    add_state_reps(coordinates) if state_reps == 'true'
     reps.each { |rep| rep.sort_offices(coordinates) }
   end
 
