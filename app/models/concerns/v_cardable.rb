@@ -3,6 +3,7 @@ module VCardable
   def make_vcard
     Vpim::Vcard::Maker.make2 do |maker|
       add_rep_name(maker)
+      add_rep_photo(maker)
       add_contact_url(maker)
       add_primary_phone(maker)
       add_primary_address(maker)
@@ -75,6 +76,12 @@ module VCardable
       name.given    = rep.first if rep.first
       name.family   = rep.last if rep.last
       name.suffix   = rep.suffix if rep.suffix
+    end
+  end
+
+  def add_rep_photo(maker)
+    maker.add_photo do |photo|
+      photo.link = rep.photo
     end
   end
 end
