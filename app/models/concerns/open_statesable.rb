@@ -12,6 +12,8 @@ module OpenStatesable
     @state_delegation.map do |state_rep|
       Rep.new do |rep|
         rep.official_full = state_rep.name
+        rep.first         = state_rep.first_name
+        rep.last          = state_rep.last_name
         rep.party         = state_rep.party
         rep.role          = state_rep.office
         rep.photo         = state_rep.photo

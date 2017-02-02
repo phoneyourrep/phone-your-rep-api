@@ -31,6 +31,7 @@ Rails.application.routes.draw do
   resources :districts,        only: [:index, :show]
   resources :states,           only: [:index, :show]
   get '/v_cards/:id', to: 'v_cards#show'
+  get '/v_cards/', to: 'v_cards#index'
 
   # OSDI STUFF!
   get '/osdi/people' => 'osdi_reps#index'

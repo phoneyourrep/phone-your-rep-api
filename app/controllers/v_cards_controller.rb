@@ -1,5 +1,11 @@
 # frozen_string_literal: true
 class VCardsController < ApplicationController
+  def index
+    v_card   = params[:v_card]
+    rep_name = params[:rep]
+    send_data v_card, filename: "#{rep_name}.vcf" if v_card && rep_name
+  end
+
   def show
     @office = OfficeLocation.find_with_rep(params.require(:id)).first
     @rep    = @office.rep
