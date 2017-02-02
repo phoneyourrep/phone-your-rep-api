@@ -25,7 +25,7 @@ module OpenStatesable
     state_rep.office_locations.map do |state_rep_office|
       OfficeLocation.new do |office_location|
         office_location.rep         = rep
-        office_location.address     = "#{state_rep_office.line_1}, #{state_rep_office.line_2}"
+        office_location.address     = "#{state_rep_office.line_1} #{state_rep_office.line_2}".strip
         office_location.city        = state_rep_office.city
         office_location.state       = state_rep_office.state
         office_location.zip         = state_rep_office.zip
