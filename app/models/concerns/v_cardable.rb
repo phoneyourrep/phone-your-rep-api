@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 module VCardable
-  def make_vcard
+  def make_v_card
     Vpim::Vcard::Maker.make2 do |maker|
       add_rep_name(maker)
       add_rep_photo(maker)

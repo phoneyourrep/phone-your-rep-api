@@ -32,7 +32,7 @@ class OfficeLocation < ApplicationRecord
 
   def add_v_card
     VCard.where(office_location_id: id).destroy_all
-    v_card = VCard.create data: make_vcard.to_s
+    v_card = VCard.create data: make_v_card.to_s
     update_attribute :v_card, v_card
   end
 
