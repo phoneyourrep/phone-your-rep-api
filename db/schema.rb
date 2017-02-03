@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170131072703) do
+ActiveRecord::Schema.define(version: 20170203010930) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -84,7 +84,6 @@ ActiveRecord::Schema.define(version: 20170131072703) do
     t.string   "hours"
     t.string   "qr_code_uid"
     t.string   "qr_code_name"
-    t.string   "v_card"
     t.integer  "downloads",                                       default: 0
   end
 
@@ -152,6 +151,14 @@ ActiveRecord::Schema.define(version: 20170131072703) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
 
+  create_table "v_cards", force: :cascade do |t|
+    t.text     "data"
+    t.integer  "office_location_id"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.index ["office_location_id"], name: "index_v_cards_on_office_location_id", using: :btree
+  end
+
   create_table "zcta", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -169,6 +176,7 @@ ActiveRecord::Schema.define(version: 20170131072703) do
 
   add_foreign_key "district_geoms", "districts"
   add_foreign_key "state_geoms", "states"
+  add_foreign_key "v_cards", "office_locations"
   add_foreign_key "zcta_districts", "districts"
   add_foreign_key "zcta_districts", "zcta", column: "zcta_id"
 end

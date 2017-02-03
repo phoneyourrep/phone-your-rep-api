@@ -80,8 +80,16 @@ module VCardable
   end
 
   def add_rep_photo(maker)
-    maker.add_photo do |photo|
-      photo.link = rep.photo
+    begin
+      web_photo = open(rep.photo) { |f| f.read }
+    rescue OpenURI::HTTPError => e
+      logger.error e
+    end
+    if web_photo
+      maker.add_photo do |photo|
+        photo.image = web_photo
+        photo.type  = 'JPEG'
+      end
     end
   end
 end

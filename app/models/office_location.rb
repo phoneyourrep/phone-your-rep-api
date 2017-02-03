@@ -4,10 +4,11 @@ class OfficeLocation < ApplicationRecord
 
   belongs_to    :rep, foreign_key: :bioguide_id, primary_key: :bioguide_id
   has_many      :issues
+  has_one       :v_card
 
   geocoded_by      :full_address
   after_validation :geocode, if: :needs_geocoding?
-  scope            :find_with_rep, ->(id) { where(id: id).includes(:rep) }
+  scope            :with_v_card, ->(id) { where(id: id).includes(:rep, :v_card) }
   is_impressionable counter_cache: true, column_name: :downloads
 
   dragonfly_accessor :qr_code
@@ -30,8 +31,9 @@ class OfficeLocation < ApplicationRecord
   end
 
   def add_v_card
-    v_card = make_vcard
-    update_attribute :v_card, v_card.to_s
+    VCard.where(office_location_id: id).destroy_all
+    v_card = VCard.create data: make_vcard.to_s
+    update_attribute :v_card, v_card
   end
 
   def full_address
