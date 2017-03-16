@@ -1,5 +1,5 @@
 # Phone Your Rep API
-[![Code Climate](https://codeclimate.com/github/msimonborg/phone-your-rep-api/badges/gpa.svg)](https://codeclimate.com/github/msimonborg/phone-your-rep-api)
+[![Code Climate](https://codeclimate.com/github/phoneyourrep/phone-your-rep-api/badges/gpa.svg)](https://codeclimate.com/github/phoneyourrep/phone-your-rep-api)
 
 The companion to [the Phone Your Rep frontend](https://github.com/kylebutts/phone_your_rep).
 
