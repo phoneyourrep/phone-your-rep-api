@@ -13,8 +13,8 @@ namespace :db do
             Rails.root.join('lib', 'seeds', '*legislators-historical*.y*l')
           ).last
         end
-        update = DbPyrUpdate.new
-        update.historical_reps(file)
+        update = DbPyrUpdate::HistoricalReps.new(file)
+        update.call
       end
 
       desc 'Update current reps in database from yaml data file'
@@ -26,8 +26,8 @@ namespace :db do
             Rails.root.join('lib', 'seeds', '*legislators-current*.y*l')
           ).last
         end
-        update = DbPyrUpdate.new
-        update.reps(file)
+        update = DbPyrUpdate::Reps.new(file)
+        update.call
       end
 
       desc 'Update rep social media accounts from yaml data file'
@@ -39,8 +39,8 @@ namespace :db do
             Rails.root.join('lib', 'seeds', '*legislators-social-media*.y*l')
           ).last
         end
-        update = DbPyrUpdate.new
-        update.socials(file)
+        update = DbPyrUpdate::Socials.new(file)
+        update.call
       end
 
       desc 'Update office locations in database from yaml data file'
@@ -52,8 +52,8 @@ namespace :db do
             Rails.root.join('lib', 'seeds', '*legislators-district-offices*.y*l')
           ).last
         end
-        update = DbPyrUpdate.new
-        update.office_locations(file)
+        update = DbPyrUpdate::OfficeLocations.new(file)
+        update.call
       end
 
       desc 'Update all rep and office_location data from default yaml files'
