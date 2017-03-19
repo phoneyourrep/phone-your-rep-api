@@ -9,8 +9,8 @@ namespace :pyr do
 
     desc 'Remove the image meta files'
     task :clean do
-      source_file = get_source_file
-      Dir.chdir(source_file.to_s) do
+      dir = get_dir
+      Dir.chdir(dir.to_s) do
         sh 'rm *meta.yml'
       end
     end
@@ -22,8 +22,8 @@ namespace :pyr do
 
     desc 'Upload images to S3 bucket'
     task :upload do
-      source_file = get_source_file
-      Dir.chdir(source_file.to_s) do
+      dir = get_dir
+      Dir.chdir(dir.to_s) do
         sh 'aws s3 cp . s3://phone-your-rep-images/ --recursive --grants'\
           ' read=uri=http://acs.amazonaws.com/groups/global/AllUsers'
       end
@@ -31,8 +31,8 @@ namespace :pyr do
 
     desc 'Delete images source file'
     task :delete do
-      source_file = get_source_file
-      sh "rm -rf #{source_file.to_s}"
+      dir = get_dir
+      sh "rm -rf #{dir.to_s}"
     end
 
     desc 'Export QR Code UIDs from CSV file'
@@ -79,9 +79,9 @@ namespace :pyr do
     desc 'Generate QR codes, upload to S3 bucket, and delete locally'
     task create: [:generate, :clean, :empty, :upload, :delete, :publish]
 
-    def get_source_file
-      if ENV['source_file']
-        ENV['source_file']
+    def get_dir
+      if ENV['dir']
+        ENV['dir']
       else
         month = Date.today.month.to_s
         day = Date.today.day.to_s
