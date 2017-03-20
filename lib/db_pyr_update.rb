@@ -153,7 +153,7 @@ module DbPyrUpdate
         yaml_office['offices'].each do |yaml_off|
           office = OfficeLocation.find_or_create_by(
             bioguide_id: yaml_office['id']['bioguide'],
-            city:        yaml_off['city'],
+            office_id:   yaml_off['id'],
             office_type: 'district'
           )
           update_location_info(office, yaml_off)

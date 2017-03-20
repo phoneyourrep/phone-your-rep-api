@@ -62,7 +62,7 @@ namespace :pyr do
       i = 0
       CSV.foreach(Rails.root.join('lib', 'qr_codes.csv')) do |row|
         next if row[0] == 'id'
-        o = OfficeLocation.find_by(office_id: row[0])
+        o = OfficeLocation.find_by(office_id: row[0], active: true)
         if o
           o.update(qr_code_uid: row[1], qr_code_name: row[2])
           i += 1
