@@ -13,6 +13,7 @@ module DbPyrUpdate
       @reps.each do |yaml_rep|
         db_rep = Rep.find_or_create_by(bioguide_id: yaml_rep['id']['bioguide'])
         update_rep(db_rep, yaml_rep)
+        puts "Updated #{db_rep.official_full}"
       end
     end
 
@@ -102,6 +103,8 @@ module DbPyrUpdate
         rep = Rep.find_by(bioguide_id: h_rep['id']['bioguide'])
         next if rep.blank?
         rep.update(active: false)
+        rep.office_locations.each { |office| office.update(active: false) }
+        puts "Retired #{rep.official_full}"
       end
     end
   end
@@ -112,6 +115,7 @@ module DbPyrUpdate
         rep = Rep.find_or_create_by(bioguide_id: social['id']['bioguide'])
         update_rep_socials(rep, social)
         rep.save
+        puts "Updated socials for #{rep.official_full}"
       end
     end
 
@@ -155,6 +159,7 @@ module DbPyrUpdate
           update_location_info(office, yaml_off)
           update_other_office_info(office, yaml_off)
           @active_offices << office
+          puts "Updated #{office.rep.official_full}'s #{office.city} office"
         end
       end
 
