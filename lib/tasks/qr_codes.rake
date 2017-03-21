@@ -2,6 +2,12 @@
 
 namespace :pyr do
   namespace :qr_codes do
+
+    # Set the "PYR_S3_BUCKET" environment variable on your machine or
+    # at the command line (e.g. `rake some_task PYR_S3_BUCKET=your-own-bucket`)
+    # if you wish to generate and upload your own images.
+    S3_BUCKET = ENV['PYR_S3_BUCKET']
+
     desc 'Generate QR code images for all office locations'
     task :generate do
       active_offices = OfficeLocation.where(active: true)
@@ -34,7 +40,7 @@ namespace :pyr do
         sh 'rm *meta.yml'
         files = Dir.glob('*.png')
         files.each do |old_filename|
-          new_filename = old_filename.sub(/[a-zA-Z\d]+_/, '').sub('_', '-')
+          new_filename = old_filename.sub(/[a-zA-Z\d]+_/, '')
           File.rename("#{dir}/#{old_filename}", "#{dir}/#{new_filename}")
         end
       end
@@ -42,8 +48,8 @@ namespace :pyr do
 
     desc 'Empty the S3 bucket'
     task :empty do
-      puts "Emptying contents of the #{OfficeLocation::S3_BUCKET} S3 bucket"
-      sh "aws s3 rm s3://#{OfficeLocation::S3_BUCKET} --recursive"
+      puts "Emptying contents of the #{S3_BUCKET} S3 bucket"
+      sh "aws s3 rm s3://#{S3_BUCKET} --recursive"
     end
 
     desc 'Upload images to S3 bucket'
@@ -51,7 +57,7 @@ namespace :pyr do
       dir = get_dir
       Dir.chdir(dir.to_s) do
         puts 'Uploading new images'
-        sh "aws s3 cp . s3://#{OfficeLocation::S3_BUCKET}/ --recursive --grants"\
+        sh "aws s3 cp . s3://#{S3_BUCKET}/ --recursive --grants"\
           ' read=uri=http://acs.amazonaws.com/groups/global/AllUsers'
       end
     end
