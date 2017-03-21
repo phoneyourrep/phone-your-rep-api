@@ -49,4 +49,3 @@ class ImportZCTA
     puts "Added district #{district.code} to ZCTA #{zcta_code}"
   end
 end
-

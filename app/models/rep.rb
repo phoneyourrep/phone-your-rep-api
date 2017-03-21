@@ -4,10 +4,10 @@ class Rep < ApplicationRecord
   belongs_to :state
   has_one    :avatar, dependent: :destroy
   has_many   :office_locations, dependent: :destroy, foreign_key: :bioguide_id, primary_key: :bioguide_id
-  scope      :yours, ->(state:, district:) {
+  scope      :yours, lambda { |state:, district:|
     where(district: district).or(Rep.where(state: state, district: nil))
   }
-  serialize  :committees, Array
+  serialize :committees, Array
   is_impressionable
 
   # Open up Rep Metaclass to set Class attributes --------------------------------------------------------------------
@@ -98,7 +98,7 @@ class Rep < ApplicationRecord
 
   def fetch_avatar_data
     ava = avatar || build_avatar
-    ava.update data: open(photo) { |f| f.read }
+    ava.update data: open(photo, &:read)
   rescue => e
     logger.error e
   end

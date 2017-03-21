@@ -2,7 +2,6 @@
 
 namespace :pyr do
   namespace :qr_codes do
-
     # Set the "PYR_S3_BUCKET" environment variable on your machine or
     # at the command line (e.g. `rake some_task PYR_S3_BUCKET=your-own-bucket`)
     # if you wish to generate and upload your own images.
@@ -18,7 +17,7 @@ namespace :pyr do
         office.add_qr_code_img
         finish = Time.now
         remaining = active_offices_count - i
-        time_remaining = (finish - start)/i * remaining
+        time_remaining = (finish - start) / i * remaining
         print "\rgenerated #{i} QR code(s), #{remaining} remaining, #{estimate_time(time_remaining)}"
         i += 1
       end
@@ -35,7 +34,7 @@ namespace :pyr do
 
     desc 'Remove the image meta files and make the filenames predictable'
     task :clean do
-      dir = get_dir
+      dir = lookup_dir
       Dir.chdir(dir.to_s) do
         sh 'rm *meta.yml'
         files = Dir.glob('*.png')
@@ -54,7 +53,7 @@ namespace :pyr do
 
     desc 'Upload images to S3 bucket'
     task :upload do
-      dir = get_dir
+      dir = lookup_dir
       Dir.chdir(dir.to_s) do
         puts 'Uploading new images'
         sh "aws s3 cp . s3://#{S3_BUCKET}/ --recursive --grants"\
@@ -64,15 +63,15 @@ namespace :pyr do
 
     desc 'Delete images source file'
     task :delete do
-      dir = get_dir
-      sh "rm -rf #{dir.to_s}"
+      dir = lookup_dir
+      sh "rm -rf #{dir}"
       puts 'Deleted local copies'
     end
 
     desc 'Generate QR codes, upload to S3 bucket, and delete locally'
     task create: [:generate, :clean, :empty, :upload, :delete]
 
-    def get_dir
+    def lookup_dir
       if ENV['dir']
         ENV['dir']
       else
