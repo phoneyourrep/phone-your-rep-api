@@ -5,9 +5,15 @@ require_relative '../config/environment.rb'
 class ImportZCTA
   attr_reader :files
 
-  def initialize(files = [])
+  def initialize(*files)
     @files = files
   end
+
+  def import
+    files.each { |file| seed_from_csv(file) }
+  end
+
+  private
 
   def zcta_code(row)
     zcta5 = row['ZCTA5']
@@ -42,15 +48,5 @@ class ImportZCTA
     zcta.districts << district
     puts "Added district #{district.code} to ZCTA #{zcta_code}"
   end
-
-  def seed_all
-    files.each { |file| seed_from_csv(file) }
-  end
 end
 
-Zcta.destroy_all
-
-import_zcta = ImportZCTA.new Dir[Rails.root.join('lib', 'seeds', 'zcta_cd', '*')]
-import_zcta.seed_all
-
-puts "There are now #{Zcta.count} ZCTAs in the database."
