@@ -2,6 +2,7 @@
 class Rep < ApplicationRecord
   belongs_to :district
   belongs_to :state
+  has_one    :avatar
   has_many   :office_locations, dependent: :destroy, foreign_key: :bioguide_id, primary_key: :bioguide_id
   scope      :yours, ->(state:, district:) {
     where(district: district).or(Rep.where(state: state, district: nil))
@@ -85,5 +86,20 @@ class Rep < ApplicationRecord
   # Return office_locations even if they were never sorted.
   def sorted_offices_array
     sorted_offices || office_locations
+  end
+
+  def add_photo
+    update photo: photo_slug
+  end
+
+  def photo_slug
+    "https://theunitedstates.io/images/congress/450x550/#{bioguide_id}.jpg"
+  end
+
+  def fetch_avatar_data
+    ava = avatar || build_avatar
+    ava.update data: open(photo) { |f| f.read }
+  rescue => e
+    logger.error e
   end
 end

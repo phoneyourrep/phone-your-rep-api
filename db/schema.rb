@@ -10,11 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170317215044) do
+ActiveRecord::Schema.define(version: 20170321041123) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
   enable_extension "postgis"
+
+  create_table "avatars", force: :cascade do |t|
+    t.integer  "rep_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.binary   "data"
+    t.index ["rep_id"], name: "index_avatars_on_rep_id", using: :btree
+  end
 
   create_table "district_geoms", force: :cascade do |t|
     t.integer  "district_id"
@@ -177,6 +185,7 @@ ActiveRecord::Schema.define(version: 20170317215044) do
     t.index ["zcta_id"], name: "index_zcta_districts_on_zcta_id", using: :btree
   end
 
+  add_foreign_key "avatars", "reps"
   add_foreign_key "district_geoms", "districts"
   add_foreign_key "state_geoms", "states"
   add_foreign_key "v_cards", "office_locations"

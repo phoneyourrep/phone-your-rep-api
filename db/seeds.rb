@@ -76,6 +76,8 @@ def seed_reps
     r.url           = term['url']
     r.contact_form  = term['contact_form']
     r.senate_class  = format('0%o', term['class']) if term['class']
+    r.add_photo
+    r.fetch_avatar_data
     r.office_locations.build(
       office_type: 'capitol',
       office_id:   "#{r.bioguide_id}-capitol",

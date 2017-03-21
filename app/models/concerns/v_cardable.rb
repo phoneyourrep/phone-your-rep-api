@@ -91,15 +91,9 @@ module VCardable
   end
 
   def add_rep_photo(maker)
-    begin
-      web_photo = open(rep.photo) { |f| f.read }
-    rescue => e
-      logger.error e
-    end
-
-    return unless web_photo
+    return if rep.avatar.blank? || rep.avatar.data.blank?
     maker.add_photo do |photo|
-      photo.image = web_photo
+      photo.image = rep.avatar.data
       photo.type  = 'JPEG'
     end
   end
