@@ -16,7 +16,7 @@ class RepsController < ApplicationController
       house_rep = @reps.detect { |rep| !rep.district.blank? }
       @district = house_rep.district if house_rep
     else
-      @reps = Rep.all.includes(:office_locations, :district, :state)
+      @reps = Rep.where(active: true).includes(:office_locations, :district, :state)
     end
     @self = request.url
   end
