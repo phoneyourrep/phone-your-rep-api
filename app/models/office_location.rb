@@ -2,7 +2,9 @@
 class OfficeLocation < ApplicationRecord
   include VCardable
 
-  S3_BUCKET = ENV['PYR_S3_BUCKET']
+  # Set a "PYR_S3_BUCKET" environment variable to your own S3 Bucket
+  # if you want to use your own generated QR Codes.
+  S3_BUCKET = ENV['PYR_S3_BUCKET'] || 'phone-your-rep-images'
 
   belongs_to    :rep, foreign_key: :bioguide_id, primary_key: :bioguide_id
   has_many      :issues
