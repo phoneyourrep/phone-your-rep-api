@@ -4,27 +4,54 @@ namespace :pyr do
   namespace :qr_codes do
     desc 'Generate QR code images for all office locations'
     task :generate do
-      OfficeLocation.where(active: true).each { |o| o.add_qr_code_img }
+      active_offices = OfficeLocation.where(active: true)
+      active_offices_count = active_offices.count
+      i = 1
+      start = Time.now
+      active_offices.each do |office|
+        office.add_qr_code_img
+        finish = Time.now
+        remaining = active_offices_count - i
+        time_remaining = (finish - start)/i * remaining
+        print "\rgenerated #{i} QR codes, #{remaining} remaining, #{estimate_time(time_remaining)}"
+        i += 1
+      end
     end
 
-    desc 'Remove the image meta files'
+    def estimate_time(time)
+      minutes = (time/60).round
+      if minutes > 1
+        "approx. #{minutes} minutes"
+      elsif minutes < 1
+        '< 1 minute'
+      end
+    end
+
+    desc 'Remove the image meta files and make the filenames predictable'
     task :clean do
       dir = get_dir
       Dir.chdir(dir.to_s) do
         sh 'rm *meta.yml'
+        files = Dir.glob('*.png')
+        files.each do |old_filename|
+          new_filename = old_filename.sub(/[a-zA-Z\d]+_/, '').sub('_', '-')
+          File.rename("#{dir}/#{old_filename}", "#{dir}/#{new_filename}")
+        end
       end
     end
 
     desc 'Empty the S3 bucket'
     task :empty do
-      sh 'aws s3 rm s3://phone-your-rep-images --recursive'
+      puts "Emptying contents of the #{OfficeLocation::S3_BUCKET} S3 bucket"
+      sh "aws s3 rm s3://#{OfficeLocation::S3_BUCKET} --recursive"
     end
 
     desc 'Upload images to S3 bucket'
     task :upload do
       dir = get_dir
       Dir.chdir(dir.to_s) do
-        sh 'aws s3 cp . s3://phone-your-rep-images/ --recursive --grants'\
+        puts 'Uploading new images'
+        sh "aws s3 cp . s3://#{OfficeLocation::S3_BUCKET}/ --recursive --grants"\
           ' read=uri=http://acs.amazonaws.com/groups/global/AllUsers'
       end
     end
@@ -33,51 +60,11 @@ namespace :pyr do
     task :delete do
       dir = get_dir
       sh "rm -rf #{dir.to_s}"
-    end
-
-    desc 'Export QR Code UIDs from CSV file'
-    task :export do
-      offices = OfficeLocation.where(active: true)
-      header = %w(id qr_code_uid qr_code_name)
-      file = Rails.root.join('lib', 'qr_codes.csv').to_s
-      CSV.open(file, 'wb') do |csv|
-        csv << header
-        i = 0
-        offices.each do |o|
-          csv << [o.office_id, o.qr_code_uid, o.qr_code_name]
-          i += 1
-        end
-        puts "Exported #{i} QR codes"
-      end
-    end
-
-    desc 'Publish QR codes to production'
-    task publish: [:export] do
-      sh "git commit -am 'generate and export qr codes #{DateTime.now}'"
-      sh 'git push heroku master'
-    end
-
-    desc 'Import QR Code UIDs from CSV file'
-    task :import do
-      i = 0
-      CSV.foreach(Rails.root.join('lib', 'qr_codes.csv')) do |row|
-        next if row[0] == 'id'
-        o = OfficeLocation.find_by(office_id: row[0], active: true)
-        if o
-          o.update(qr_code_uid: row[1], qr_code_name: row[2])
-          i += 1
-          if ENV['verbose'] == 'true'
-            puts o.rep.official_full
-            puts row[1], row[2]
-            puts i
-          end
-        end
-      end
-      puts "Imported #{i} QR codes"
+      puts 'Deleted local copies'
     end
 
     desc 'Generate QR codes, upload to S3 bucket, and delete locally'
-    task create: [:generate, :clean, :empty, :upload, :delete, :publish]
+    task create: [:generate, :clean, :empty, :upload, :delete]
 
     def get_dir
       if ENV['dir']

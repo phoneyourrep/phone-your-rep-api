@@ -65,6 +65,6 @@ class OfficeLocation < ApplicationRecord
 
   def qr_code_link
     return if qr_code.blank?
-    "https://s3.amazonaws.com/#{S3_BUCKET}/#{office_id.sub('-', '_')}.png"
+    "https://s3.amazonaws.com/#{S3_BUCKET}/#{office_id}.png"
   end
 end
