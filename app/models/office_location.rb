@@ -66,6 +66,7 @@ class OfficeLocation < ApplicationRecord
   end
 
   def qr_code_link
+    return unless office_id
     "https://s3.amazonaws.com/#{S3_BUCKET}/#{office_id.tr('-', '_')}.png"
   end
 end
