@@ -2,7 +2,7 @@
 class OfficeLocation < ApplicationRecord
   include VCardable
 
-  S3_BUCKET = 'phone-your-rep-images'.freeze
+  S3_BUCKET = ENV['PYR_S3_BUCKET']
 
   belongs_to    :rep, foreign_key: :bioguide_id, primary_key: :bioguide_id
   has_many      :issues
