@@ -1,21 +1,17 @@
 # frozen_string_literal: true
+
 namespace :db do
   namespace :pyr do
     desc 'Drop schema and tables, rebuild and seed the database'
     task :setup do
       if Rails.env.development?
         `rm db/schema.rb`
-        `rails db:drop`
-        `rails db:create`
+        sh 'rake db:drop'
+        sh 'rake db:create'
       end
-      `rails db:gis:setup`
-      `rails db:migrate`
-      `rails db:seed`
-      `ruby lib/shapefiles.rb`
-      `ruby lib/import_zcta.rb`
-      `ruby lib/add_photos.rb`
-      `ruby lib/add_v_cards.rb`
-      `ruby lib/import_qr_codes.rb`
+      sh 'rake db:gis:setup'
+      sh 'rake db:migrate'
+      sh 'rake db:seed'
     end
 
     desc 'Rebuild the database with an alert at completion for MacOS'
