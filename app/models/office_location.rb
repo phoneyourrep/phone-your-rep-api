@@ -2,9 +2,11 @@
 class OfficeLocation < ApplicationRecord
   include VCardable
 
+  S3_BUCKET = 'phone-your-rep-images'.freeze
+
   belongs_to    :rep, foreign_key: :bioguide_id, primary_key: :bioguide_id
   has_many      :issues
-  has_one       :v_card
+  has_one       :v_card, dependent: :destroy
 
   geocoded_by      :full_address
   after_validation :geocode, if: :needs_geocoding?
@@ -63,6 +65,6 @@ class OfficeLocation < ApplicationRecord
 
   def qr_code_link
     return if qr_code.blank?
-    "https://s3.amazonaws.com/phone-your-rep-images/#{qr_code_uid.split('/').last}" if qr_code_uid
+    "https://s3.amazonaws.com/#{S3_BUCKET}/#{office_id}.png"
   end
 end

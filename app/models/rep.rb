@@ -2,7 +2,7 @@
 class Rep < ApplicationRecord
   belongs_to :district
   belongs_to :state
-  has_one    :avatar
+  has_one    :avatar, dependent: :destroy
   has_many   :office_locations, dependent: :destroy, foreign_key: :bioguide_id, primary_key: :bioguide_id
   scope      :yours, ->(state:, district:) {
     where(district: district).or(Rep.where(state: state, district: nil))
