@@ -19,7 +19,7 @@ namespace :pyr do
         finish = Time.now
         remaining = active_offices_count - i
         time_remaining = (finish - start)/i * remaining
-        print "\rgenerated #{i} QR codes, #{remaining} remaining, #{estimate_time(time_remaining)}"
+        print "\rgenerated #{i} QR code(s), #{remaining} remaining, #{estimate_time(time_remaining)}"
         i += 1
       end
     end
@@ -27,9 +27,9 @@ namespace :pyr do
     def estimate_time(time)
       minutes = (time/60).round
       if minutes > 1
-        "approx. #{minutes} minutes"
+        "approx. #{minutes} minutes   "
       elsif minutes < 1
-        '< 1 minute'
+        '< 1 minute                   '
       end
     end
 
