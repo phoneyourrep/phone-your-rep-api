@@ -1,5 +1,5 @@
 # Phone Your Rep API
-[![Code Climate](https://codeclimate.com/github/msimonborg/phone-your-rep-api/badges/gpa.svg)](https://codeclimate.com/github/msimonborg/phone-your-rep-api)
+[![Code Climate](https://codeclimate.com/github/phoneyourrep/phone-your-rep-api/badges/gpa.svg)](https://codeclimate.com/github/phoneyourrep/phone-your-rep-api)
 
 The companion to [the Phone Your Rep frontend](https://github.com/kylebutts/phone_your_rep).
 
@@ -40,7 +40,7 @@ gem install rails --no-ri --no-rdoc
 gem install bundler
 bundle install
 ```
-You can setup and then fully seed the database with one command:
+You can setup and then fully seed the database with one command
 ```
 rake db:pyr:setup
 ```
@@ -48,9 +48,9 @@ If you've already configured and seeded the database before and just need to upd
  ```
 rake db:pyr:setup_alert
  ```
- If you're configuring for the first time and you're getting errors, or you don't want to do a complete reset, or you're some kind of control freak, here are the manual steps broken down:
+ If you're configuring for the first time and you're getting errors, or you don't want to do a complete reset, or you're some kind of control freak, here are the manual steps broken down
 
-####Creating the spatial database and migrating
+#### Creating the spatial database and migrating
 ```
 rake db:drop # skip this unless you're resetting
 rake db:create
@@ -59,7 +59,7 @@ rake db:migrate
 ```
 Migrating is your first test that you have a properly configured database. If you get errors while migrating, you may have PostGIS configuration issues and your database is not recognizing the geospatial datatypes. Read up on the documentation for RGeo and ActiveRecord PostGIS Adapter to troubleshoot.
 
-####Seeding the data
+#### Seeding the data
 Many of the offices have coordinates preloaded in the seed data. Any that don't will automatically be geocoded during seeding.
 
 The `geocoder` gem allows you to do some geocoding without an API key. It will probably be enough for seeding and development. However, if you want to use your own API key for geocoding, you can configure it in `config/initializers/geocoder.rb`. You will also need to check this file for deployment, as it's configured to access an environment variable for the API key in production.
@@ -81,7 +81,7 @@ The two tasks above load the basic state and district data such as names and cod
 ```
 rake db:pyr:shapefiles
 ```
-The `shapefiles` task is the last test that your database is configured properly for GIS.
+The `shapefiles` task loads the geographic boundary data for the states and districts, and is the last test that your database is configured properly for GIS.
 ```
 rake db:pyr:seed_reps
 ```
@@ -100,12 +100,12 @@ Finally
 ```
 rails s
 ```
-####Congrats! You've set up a geospatial database! Have a few cold ones, you deserve it.
-The app is configured to get QR code images from the phone-your-rep-images S3 bucket by default. These QR codes are kept up to date with the current data. If you are adapting this app for a different data set and wish to generate your own, you can do so easily by following these steps:
+#### Congrats! You've set up a geospatial database! Have a few cold ones, you deserve it.
+The app is configured to get QR code images from the `phone-your-rep-images` S3 bucket by default. These QR codes are kept up to date with the current data. If you are adapting this app for a different data set and wish to generate your own, you can do so easily by following these steps:
 
-#####Create your own dedicated S3 bucket
-#####Set a `PYR_S3_BUCKET` evironment variable to the bucket name
-#####Download and configure the AWS command line tool to interact with your bucket.
+##### Create your own dedicated S3 bucket
+##### Set a `PYR_S3_BUCKET` evironment variable to the bucket name
+##### Download and configure the AWS command line tool to interact with your bucket.
 
 Then just
 ```
@@ -113,7 +113,7 @@ rake pyr:qr_codes:create
 ```
 This will generate the images, empty the bucket, upload the images, and then delete the local copies. If you set the environment variable properly, your app should automatically point to the right URLs.
 
-#Updating
+# Updating
 If you just need to update your existing database with the most current data then run
 ```
 rake db:pyr:update:all
@@ -136,15 +136,15 @@ rake db:pyr:update:office_locations
 ```
 This updates all of the active district offices for all reps, adds new ones, and deactivates those no longer in service. Updated VCards are also generated for each office.
 
-If you need to generate updated QR codes you can run that command as `rake db:pyr:update:all qr_codes=true`
+If you need to generate updated QR codes you can run the update command as `rake db:pyr:update:all qr_codes=true`
 
 All of the raw data is stored in the code base as yaml files. These files may be updated in the repo often, so it's recommended that you run the update tasks often as well.
 
-#Deployment
+# Deployment
 
 This is deployed on Heroku. Deploying a geo-spatially enabled database to Heroku can be a bit of a challenge. Docs for that will come soon.
 
-#Usage
+# Usage
 This API is in beta. An example request to the API looks like this:
 ```
 https://phone-your-rep.herokuapp.com/api/beta/reps?lat=42.3134848&long=-71.2072321
