@@ -1,4 +1,4 @@
-inherit_from: .rubocop_todo.yml
+#inherit_from: .rubocop_todo.yml
 
 Metrics/LineLength:
   Max: 120
@@ -21,6 +21,8 @@ Lint/AssignmentInCondition:
 Metrics/BlockLength:
   Exclude:
     - 'db/schema.rb'
+    - '**/*.rake'
+    - 'config/routes.rb'
 
 Style/DotPosition:
   EnforcedStyle: trailing

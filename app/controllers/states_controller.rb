@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class StatesController < ApplicationController
   before_action :set_state, only: [:show]
 

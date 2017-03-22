@@ -24,7 +24,7 @@ namespace :pyr do
     end
 
     def estimate_time(time)
-      minutes = (time/60).round
+      minutes = (time / 60).round
       if minutes > 1
         "approx. #{minutes} minutes   "
       elsif minutes < 1

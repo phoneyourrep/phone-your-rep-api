@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class ZctasController < ApplicationController
   before_action :set_zcta, only: [:show]
 
