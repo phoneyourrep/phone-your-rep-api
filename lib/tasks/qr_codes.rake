@@ -18,7 +18,7 @@ namespace :pyr do
         finish = Time.now
         remaining = active_offices_count - i
         time_remaining = (finish - start) / i * remaining
-        print "\r#{i} QR code(s), #{remaining} remaining, #{estimate_time(time_remaining)}"
+        print "\rcreated #{i} QR code(s), #{remaining} remaining, #{estimate_time(time_remaining)}"
         i += 1
       end
     end

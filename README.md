@@ -42,20 +42,20 @@ bundle install
 ```
 You can setup and then fully seed the database with one command:
 ```
-rails db:pyr:setup
+rake db:pyr:setup
 ```
-If you've already configured the database before, and are just resetting or updating, it's recommended that you just rake and skip ahead to #Usage. It'll take a few, so grab a cold one. If you're on MacOS, you can get an alert when it's finished by running this instead
+If you've already configured and seeded the database before and just need to update, skip ahead to #Updating. If you need to set up for the first time, or reset and seed from scratch, then use `rake db:pyr:setup`. It'll take a few, so grab a cold one. If you're on MacOS, you can get an alert when it's finished by running this instead
  ```
-rails db:pyr:setup_alert
+rake db:pyr:setup_alert
  ```
  If you're configuring for the first time and you're getting errors, or you don't want to do a complete reset, or you're some kind of control freak, here are the manual steps broken down:
 
 ####Creating the spatial database and migrating
 ```
-rails db:drop # skip this unless you're resetting
-rails db:create
-rails db:gis:setup
-rails db:migrate
+rake db:drop # skip this unless you're resetting
+rake db:create
+rake db:gis:setup # enables the PostGIS extension
+rake db:migrate
 ```
 Migrating is your first test that you have a properly configured database. If you get errors while migrating, you may have PostGIS configuration issues and your database is not recognizing the geospatial datatypes. Read up on the documentation for RGeo and ActiveRecord PostGIS Adapter to troubleshoot.
 
@@ -70,49 +70,77 @@ after_validation :geocode, if: :needs_geocoding?
 ```
 Then seed the db
 ```
-rails db:seed
+rake db:seed
 ```
-When you're done seeding the basic data, you need to load the shapefiles for district and state geometries. The next command is the final test that your database is properly configured. Run
+The `seeds.rb` file invokes a handful of discreet seeding tasks. If you want to isolate any of these, or seed manually, here they are broken down:
 ```
-ruby lib/shapefiles.rb
+rake db:pyr:seed_states
+rake db:pyr:seed_districts
 ```
-You did it, friend. Now make a sandwich while you seed the ZCTAs (Zip Code Tabulation Area)
+The two tasks above load the basic state and district data such as names and codes.
 ```
-ruby lib/import_zcta.rb
+rake db:pyr:shapefiles
 ```
-Then add photo URLs to the reps
+The `shapefiles` task is the last test that your database is configured properly for GIS.
 ```
-ruby lib/add_photos.rb
+rake db:pyr:seed_reps
 ```
-and generate V-cards for every office location (added photos to V-cards, this takes a bit longer now)
+The `seed_reps` task loads all of the rep and office location data and generates VCards for each office.
+
+If you want to be able to look up congressional districts by ZCTA, pass `zctas=true` as a variable to the rake task, e.g.
 ```
-ruby lib/add_v_cards.rb
+rake db:seed zctas=true
 ```
-and load up the QR code URL data, to access the public QR code images stored on the Phone Your Rep S3 server
+or
 ```
-rake pyr:qr_codes:import
+rake db:setup zctas=true
 ```
+
 Finally
 ```
 rails s
 ```
 ####Congrats! You've set up a geospatial database! Have a few cold ones, you deserve it.
-If you want to generate your own QR codes for the office locations, drop into the console with `rails c` and enter this line
-```ruby
-OfficeLocation.all.each { |office| office.add_qr_code_img }
+The app is configured to get QR code images from the phone-your-rep-images S3 bucket by default. These QR codes are kept up to date with the current data. If you are adapting this app for a different data set and wish to generate your own, you can do so easily by following these steps:
+
+#####Create your own dedicated S3 bucket
+#####Set a `PYR_S3_BUCKET` evironment variable to the bucket name
+#####Download and configure the AWS command line tool to interact with your bucket.
+
+Then just
 ```
-And change `OfficeLocation#qr_code_link` to
-```ruby
-def qr_code_link
-    return if qr_code.blank?
-    if Rails.env.production?
-      "https://s3.amazonaws.com/phone-your-rep-images/#{qr_code_uid.split('/').last}" if qr_code_uid
-    elsif Rails.env.development?
-      "http://localhost:3000#{qr_code.url}"
-    end
-  end
+rake pyr:qr_codes:create
 ```
-QR code generation is a pretty long and expensive process, and in most cases is not necessary unless the public images are inaccurate. Feel free to skip it.
+This will generate the images, empty the bucket, upload the images, and then delete the local copies. If you set the environment variable properly, your app should automatically point to the right URLs.
+
+#Updating
+If you just need to update your existing database with the most current data then run
+```
+rake db:pyr:update:all
+```
+The discreet steps are broken down as follows:
+```
+rake db:pyr:update:retired_reps
+```
+This deactivates any reps (and their office locations) that are no longer serving in congress.
+```
+rake db:pyr:update:current_reps
+```
+This updates basic info for the active reps, including name, role, state, district, and DC office. New reps will be added to the database.
+```
+rake db:pyr:update:socials
+```
+This updates the social media accounts for active reps.
+```
+rake db:pyr:update:office_locations
+```
+This updates all of the active district offices for all reps, adds new ones, and deactivates those no longer in service. Updated VCards are also generated for each office.
+
+If you need to generate updated QR codes you can run that command as `rake db:pyr:update:all qr_codes=true`
+
+All of the raw data is stored in the code base as yaml files. These files may be updated in the repo often, so it's recommended that you run the update tasks often as well.
+
+#Deployment
 
 This is deployed on Heroku. Deploying a geo-spatially enabled database to Heroku can be a bit of a challenge. Docs for that will come soon.
 
