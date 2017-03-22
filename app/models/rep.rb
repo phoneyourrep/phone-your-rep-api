@@ -3,14 +3,17 @@ class Rep < ApplicationRecord
   belongs_to :district
   belongs_to :state
   has_one    :avatar, dependent: :destroy
-  has_many   :office_locations, dependent: :destroy, foreign_key: :bioguide_id, primary_key: :bioguide_id
+  has_many   :office_locations,
+             dependent: :destroy,
+             foreign_key: :bioguide_id,
+             primary_key: :bioguide_id
   scope      :yours, lambda { |state:, district:|
     where(district: district).or(Rep.where(state: state, district: nil))
   }
   serialize :committees, Array
   is_impressionable
 
-  # Open up Rep Metaclass to set Class attributes --------------------------------------------------------------------
+  # Open up Rep Metaclass to set Class attributes --------------------------------------------------
   class << self
     # Address value from params.
     attr_accessor :address
@@ -18,11 +21,12 @@ class Rep < ApplicationRecord
     attr_accessor :coordinates
     # The State that the :district belongs to.
     attr_accessor :state
-    # Voting district found by a GIS database query to find the geometry that contains the :coordinates.
+    # Voting district found by a GIS database query to find the geometry that
+    # contains the :coordinates.
     attr_accessor :district
     # Rep records that are associated to the district and state.
     attr_accessor :reps
-  end # Metaclass ----------------------------------------------------------------------------------------------------
+  end # Metaclass ----------------------------------------------------------------------------------
 
   # Instance attribute that holds offices sorted by location after calling the :sort_offices method.
   attr_accessor :sorted_offices
@@ -34,8 +38,8 @@ class Rep < ApplicationRecord
     find_district_and_state
     return [] if district.blank?
     self.reps = Rep.yours(state: state, district: district).
-      where(active: true).
-      includes(:office_locations)
+                where(active: true).
+                includes(:office_locations)
     self.reps = reps.distinct
     reps.each { |rep| rep.sort_offices(coordinates) }
   end
@@ -55,7 +59,8 @@ class Rep < ApplicationRecord
     self.coordinates = Geocoder.coordinates(address)
   end
 
-  # Find the district geometry that contains the coordinates, and the district and state it belongs to.
+  # Find the district geometry that contains the coordinates,
+  # and the district and state it belongs to.
   def self.find_district_and_state
     lat           = coordinates.first
     lon           = coordinates.last
@@ -65,12 +70,14 @@ class Rep < ApplicationRecord
     self.state    = district.state
   end
 
-  # Sort the offices by proximity to the request coordinates, making sure to not miss offices that aren't geocoded.
+  # Sort the offices by proximity to the request coordinates,
+  # making sure to not miss offices that aren't geocoded.
   def sort_offices(coordinates)
     closest_offices       = active_office_locations.near(coordinates, 4000)
     closest_offices      += active_office_locations
     self.sorted_offices   = closest_offices.uniq || []
-    sorted_offices.blank? ? [] : sorted_offices.each { |office| office.calculate_distance(coordinates) }
+    return [] if sorted_offices.blank?
+    sorted_offices.each { |office| office.calculate_distance(coordinates) }
   end
 
   # Return only active offices

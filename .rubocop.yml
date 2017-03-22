@@ -1,12 +1,18 @@
-#inherit_from: .rubocop_todo.yml
+# inherit_from: .rubocop_todo.yml
 
 Metrics/LineLength:
-  Max: 120
+  Max: 100
   Exclude:
     - 'db/**/*'
+    - 'config/initializers/devise.rb'
+
+Metrics/AbcSize:
+  Max: 20
+  Exclude:
+   - 'db/**/*'
 
 Metrics/MethodLength:
-  Max: 16
+  Max: 15
   Exclude:
     - 'db/**/*'
 
@@ -27,16 +33,9 @@ Metrics/BlockLength:
 Style/DotPosition:
   EnforcedStyle: trailing
 
-Style/MultilineMethodCallIndentation:
-  Enabled: false
-
 Style/Documentation:
   Enabled: false
 
 Rails/Output:
   Exclude:
-    - 'db/seeds.rb'
-    - 'lib/export_qr_codes.rb'
-    - 'lib/get_your_rep/get_all_the_reps.rb'
-    - 'lib/import_qr_codes.rb'
     - 'lib/shapefiles.rb'

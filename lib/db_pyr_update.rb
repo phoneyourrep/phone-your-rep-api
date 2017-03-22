@@ -69,22 +69,34 @@ module DbPyrUpdate
         office_type: 'capitol',
         bioguide_id: rep.bioguide_id
       )
-      cap_office.update(
-        office_id: "#{rep.bioguide_id}-capitol",
-        rep:       rep,
-        phone:     term['phone'],
-        fax:       term['fax'],
-        hours:     term['hours'],
-        zip:       address_ary.pop,
-        state:     address_ary.pop,
-        city:      address_ary.pop,
-        active:    true,
-        address: address_ary.
-          join(' ').
-          delete(';').
-          sub('HOB', 'House Office Building')
-      )
+      cap_office.tap do |off|
+        update_basic_office_info(off, rep)
+        update_phone_fax_and_hours(off, term)
+        update_cap_office_address(address_ary, off)
+      end
       cap_office.add_v_card
+    end
+
+    def update_basic_office_info(off, rep)
+      off.office_id = "#{rep.bioguide_id}-capitol"
+      off.rep       = rep
+      off.active    = true
+    end
+
+    def update_phone_fax_and_hours(off, term)
+      off.phone = term['phone']
+      off.fax   = term['fax']
+      off.hours = term['hours']
+    end
+
+    def update_cap_office_address(address_ary, off)
+      off.zip     = address_ary.pop
+      off.state   = address_ary.pop
+      off.city    = address_ary.pop
+      off.address = address_ary.
+                    join(' ').
+                    delete(';').
+                    sub('HOB', 'House Office Building')
     end
 
     def update_rep_photo(rep)
@@ -119,15 +131,31 @@ module DbPyrUpdate
     private
 
     def update_rep_socials(rep, social)
-      rep.facebook     = social['social']['facebook']
-      rep.facebook_id  = social['social']['facebook_id']
-      rep.twitter      = social['social']['twitter']
-      rep.twitter_id   = social['social']['twitter_id']
-      rep.youtube      = social['social']['youtube']
-      rep.youtube_id   = social['social']['youtube_id']
+      update_facebook(rep, social)
+      update_twitter(rep, social)
+      update_youtube(rep, social)
+      update_instagram(rep, social)
+      rep.googleplus   = social['social']['googleplus']
+    end
+
+    def update_instagram(rep, social)
       rep.instagram    = social['social']['instagram']
       rep.instagram_id = social['social']['instagram_id']
-      rep.googleplus   = social['social']['googleplus']
+    end
+
+    def update_youtube(rep, social)
+      rep.youtube    = social['social']['youtube']
+      rep.youtube_id = social['social']['youtube_id']
+    end
+
+    def update_twitter(rep, social)
+      rep.twitter    = social['social']['twitter']
+      rep.twitter_id = social['social']['twitter_id']
+    end
+
+    def update_facebook(rep, social)
+      rep.facebook    = social['social']['facebook']
+      rep.facebook_id = social['social']['facebook_id']
     end
     # End of private methods
   end

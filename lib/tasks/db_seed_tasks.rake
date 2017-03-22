@@ -90,7 +90,7 @@ namespace :db do
     task :seed_reps do
       Rep.destroy_all
       Rake::Task['db:pyr:update:current_reps'].invoke
-      puts "There are now #{Rep.count} reps and #{OfficeLocation.count} office locations in the database."
+      puts "There are now #{Rep.count} reps and #{OfficeLocation.count} offices in the database."
       Rake::Task['db:pyr:update:socials'].invoke
       OfficeLocation.destroy_all(office_type: 'district')
       Rake::Task['db:pyr:update:office_locations'].invoke
