@@ -39,13 +39,20 @@ class ImportZCTA
     state_code = row['STATE'].size == 1 ? '0' + row['STATE'] : row['STATE']
     dis_cod    = row['CD'].size == 1 ? '0' + row['CD'] : row['CD']
     zcta_code  = zcta_code(row)
+    state_abbr = State.find_by(state_code: state_code).abbr
     district   = District.find_by(full_code: state_code + dis_cod)
-    zcta       = Zcta.where(zcta: zcta_code).first_or_create
-    add_district(district, zcta, zcta_code) unless district.blank?
+    zcta       = Zcta.find_or_create_by(zcta: zcta_code)
+    add_zcta_district(district, state_abbr, zcta, zcta_code) unless district.blank?
   end
 
-  def add_district(district, zcta, zcta_code)
-    zcta.districts << district
+  def add_zcta_district(district, state_abbr, zcta, zcta_code)
+    ZctaDistrict.create(
+      zip_code: zcta_code,
+      district_code:     district.code,
+      state:             state_abbr,
+      district:          district,
+      zcta:              zcta
+    )
     puts "Added district #{district.code} to ZCTA #{zcta_code}"
   end
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20_170_321_041_123) do
+ActiveRecord::Schema.define(version: 20_170_324_214_757) do
   # These are extensions that must be enabled in order to support this database
   enable_extension 'plpgsql'
   enable_extension 'postgis'
@@ -179,8 +179,11 @@ ActiveRecord::Schema.define(version: 20_170_321_041_123) do
   create_table 'zcta_districts', force: :cascade do |t|
     t.integer  'zcta_id'
     t.integer  'district_id'
-    t.datetime 'created_at',  null: false
-    t.datetime 'updated_at',  null: false
+    t.datetime 'created_at',    null: false
+    t.datetime 'updated_at',    null: false
+    t.string   'zip_code'
+    t.string   'state'
+    t.string   'district_code'
     t.index ['district_id'], name: 'index_zcta_districts_on_district_id', using: :btree
     t.index ['zcta_id'], name: 'index_zcta_districts_on_zcta_id', using: :btree
   end

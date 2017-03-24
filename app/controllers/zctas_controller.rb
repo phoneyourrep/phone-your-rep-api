@@ -2,6 +2,13 @@
 class ZctasController < ApplicationController
   before_action :set_zcta, only: [:show]
 
+  def index
+    @zctas = ZctaDistrict.all
+    respond_to do |format|
+      format.csv { render plain: @zctas.to_csv }
+    end
+  end
+
   def show
     return if @zcta.blank?
     if params[:reps] == 'true'
