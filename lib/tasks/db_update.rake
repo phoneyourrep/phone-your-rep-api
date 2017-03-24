@@ -100,7 +100,7 @@ namespace :db do
       def update_yaml_file(file, source)
         sh "curl #{source} -o #{file}"
         return if Rails.env.production?
-        `git add #{file}; git commit -m 'update #{file.to_s.split('/').last}'`
+        puts `git add #{file}; git commit -m 'update #{file.to_s.split('/').last}'`
       end
     end
   end
