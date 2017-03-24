@@ -6,8 +6,10 @@ namespace :db do
     namespace :update do
       desc 'Download updated legislators-historical.yaml'
       task :fetch_retired_reps do
-        source = 'https://raw.githubusercontent.com/unitedstates/congress-legislators/'\
-          'master/legislators-historical.yaml'
+        source = get_source(
+          'https://raw.githubusercontent.com/unitedstates/congress-legislators/'\
+            'master/legislators-historical.yaml'
+        )
         file = get_file('lib', 'seeds', 'legislators-historical.yaml')
         update_yaml_file(file, source)
       end
@@ -21,8 +23,10 @@ namespace :db do
 
       desc 'Download updated legislators-current.yaml'
       task :fetch_current_reps do
-        source = 'https://raw.githubusercontent.com/unitedstates/congress-legislators/'\
-          'master/legislators-current.yaml'
+        source = get_source(
+          'https://raw.githubusercontent.com/unitedstates/congress-legislators/'\
+            'master/legislators-current.yaml'
+        )
         file = get_file('lib', 'seeds', 'legislators-current.yaml')
         update_yaml_file(file, source)
       end
@@ -36,8 +40,10 @@ namespace :db do
 
       desc 'Download updated legislators-social-media.yaml'
       task :fetch_socials do
-        source = 'https://raw.githubusercontent.com/unitedstates/congress-legislators/'\
-          'master/legislators-social-media.yaml'
+        source = get_source(
+          'https://raw.githubusercontent.com/unitedstates/congress-legislators/'\
+            'master/legislators-social-media.yaml'
+        )
         file = get_file('lib', 'seeds', 'legislators-social-media.yaml')
         update_yaml_file(file, source)
       end
@@ -51,8 +57,10 @@ namespace :db do
 
       desc 'Download updated legislators-district-offices.yaml'
       task :fetch_office_locations do
-        source = 'https://raw.githubusercontent.com/thewalkers/congress-legislators/'\
-          'master/legislators-district-offices.yaml'
+        source = get_source(
+          'https://raw.githubusercontent.com/thewalkers/congress-legislators/'\
+            'master/legislators-district-offices.yaml'
+        )
         file = get_file('lib', 'seeds', 'legislators-district-offices.yaml')
         update_yaml_file(file, source)
       end
@@ -71,6 +79,14 @@ namespace :db do
         end
       end
 
+      def get_source(default)
+        if ENV['source']
+          ENV['source']
+        else
+          default
+        end
+      end
+
       def get_file(*default)
         if ENV['file']
           Rails.root.join(ENV['file'])
@@ -83,9 +99,8 @@ namespace :db do
 
       def update_yaml_file(file, source)
         sh "curl #{source} -o #{file}"
-        if Rails.env.development?
-          `git add #{file}; git commit -m 'update #{file.to_s.split('/').last}'`
-        end
+        return if Rails.env.development?
+        `git add #{file}; git commit -m 'update #{file.to_s.split('/').last}'`
       end
     end
   end
