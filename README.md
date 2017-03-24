@@ -138,7 +138,9 @@ This updates all of the active district offices for all reps, adds new ones, and
 
 If you need to generate updated QR codes you can run the update command as `rake db:pyr:update:all qr_codes=true`
 
-All of the raw data is stored in the code base as yaml files. These files may be updated in the repo often, so it's recommended that you run the update tasks often as well.
+All of the raw data is stored in the code base as yaml files which track files from [unitedstates](https://www.github.com/unitedstates/congress-legislators) and [TheWalkers](https://www.github.com/thewalkers/congress-legislators). Each database update task automatically updates the yaml file first by `curl`-ing its online source and committing any changes. These files may be updated often, so it's recommended that you run the update tasks once a week or so.
+
+If you want to specify a file destination other than the default you can set it in the `file` variable e.g. `rake db:pyr:update:socials file=socials.yaml`. This will download the data to `socials.yaml` in the root directory, commit the change, and update the database from that file, leaving the default file (`lib/seeds/legislators-social-media.yaml`) unchanged.
 
 # Deployment
 
