@@ -50,7 +50,7 @@ rake db:pyr:setup_alert
  ```
  If you're configuring for the first time and you're getting errors, or you don't want to do a complete reset, or you're some kind of control freak, here are the manual steps broken down
 
-#### Creating the spatial database and migrating
+#### Step 1: Creating the spatial database and migrating
 ```
 rake db:drop # skip this unless you're resetting
 rake db:create
@@ -59,7 +59,7 @@ rake db:migrate
 ```
 Migrating is your first test that you have a properly configured database. If you get errors while migrating, you may have PostGIS configuration issues and your database is not recognizing the geospatial datatypes. Read up on the documentation for RGeo and ActiveRecord PostGIS Adapter to troubleshoot.
 
-#### Seeding the data
+#### Step 2: Seeding the data
 Many of the offices have coordinates preloaded in the seed data. Any that don't will automatically be geocoded during seeding.
 
 The `geocoder` gem allows you to do some geocoding without an API key. It will probably be enough for seeding and development. However, if you want to use your own API key for geocoding, you can configure it in `config/initializers/geocoder.rb`. You will also need to check this file for deployment, as it's configured to access an environment variable for the API key in production.
@@ -93,7 +93,7 @@ rake db:seed zctas=true
 ```
 or
 ```
-rake db:setup zctas=true
+rake db:pyr:setup zctas=true
 ```
 
 Finally
