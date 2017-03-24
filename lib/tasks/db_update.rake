@@ -73,10 +73,10 @@ namespace :db do
 
       def get_file(*default)
         if ENV['file']
-          ENV['file']
+          Rails.root.join(ENV['file'])
         else
           Dir.glob(
-              Rails.root.join(*default)
+            Rails.root.join(*default)
           ).last
         end
       end
@@ -84,7 +84,7 @@ namespace :db do
       def update_yaml_file(file, source)
         sh "curl #{source} -o #{file}"
         if Rails.env.development?
-          `git add #{file}; git commit -m 'update #{file.split('/').last}'`
+          `git add #{file}; git commit -m 'update #{file.to_s.split('/').last}'`
         end
       end
     end
