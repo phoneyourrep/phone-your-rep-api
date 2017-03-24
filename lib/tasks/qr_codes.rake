@@ -23,18 +23,9 @@ namespace :pyr do
       end
     end
 
-    def estimate_time(time)
-      minutes = (time / 60).round
-      if minutes > 1
-        "approx. #{minutes} minutes   "
-      elsif minutes < 1
-        '< 1 minute                   '
-      end
-    end
-
     desc 'Remove the image meta files and make the filenames predictable'
     task :clean do
-      dir = lookup_dir
+      dir = lookup_qr_code_dir
       Dir.chdir(dir.to_s) do
         sh 'rm *meta.yml'
         files = Dir.glob('*.png')
@@ -53,7 +44,7 @@ namespace :pyr do
 
     desc 'Upload images to S3 bucket'
     task :upload do
-      dir = lookup_dir
+      dir = lookup_qr_code_dir
       Dir.chdir(dir.to_s) do
         puts 'Uploading new images'
         sh "aws s3 cp . s3://#{S3_BUCKET}/ --recursive --grants"\
@@ -63,7 +54,7 @@ namespace :pyr do
 
     desc 'Delete images source file'
     task :delete do
-      dir = lookup_dir
+      dir = lookup_qr_code_dir
       sh "rm -rf #{dir}"
       puts 'Deleted local copies'
     end
@@ -71,17 +62,25 @@ namespace :pyr do
     desc 'Generate QR codes, upload to S3 bucket, and delete locally'
     task create: [:generate, :clean, :empty, :upload, :delete]
 
-    def lookup_dir
+    def estimate_time(time)
+      minutes = (time / 60).round
+      if minutes > 1
+        "approx. #{minutes} minutes   "
+      elsif minutes < 1
+        '< 1 minute                   '
+      end
+    end
+
+    def lookup_qr_code_dir
       if ENV['dir']
         ENV['dir']
       else
-        month = Date.today.month.to_s
-        day = Date.today.day.to_s
-        m = month.length == 1 ? "0#{month}" : month
-        d = day.length == 1 ? "0#{day}" : day
-        y = Date.today.year.to_s
+        date  = DateTime.now
+        year  = date.strftime('%Y')
+        month = date.strftime('%m')
+        day   = date.strftime('%d')
         Rails.root.join(
-          'public/system/dragonfly/development', y, m, d
+          'public/system/dragonfly/development', year, month, day
         )
       end
     end
