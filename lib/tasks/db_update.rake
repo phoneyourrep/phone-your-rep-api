@@ -72,7 +72,15 @@ namespace :db do
         update.call
       end
 
-      desc 'Update all rep and office_location data from default yaml files'
+      desc 'Update the raw YAML files only, without touching the database'
+      task raw_data: [
+        :fetch_retired_reps,
+        :fetch_current_reps,
+        :fetch_socials,
+        :fetch_office_locations
+      ]
+
+      desc 'Update all reps and office_locations in database from default yaml files'
       task all: [:retired_reps, :current_reps, :socials, :office_locations] do
         if ENV['qr_codes'] == 'true' && Rails.env.development?
           Rake::Task['pyr:qr_codes:create'].invoke
