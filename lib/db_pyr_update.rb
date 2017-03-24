@@ -167,9 +167,9 @@ module DbPyrUpdate
         next if yaml_office['offices'].blank?
         find_or_create_offices(yaml_office)
       end
-      district_offices = OfficeLocation.where(office_type: 'district')
+      district_offices = OfficeLocation.where(office_type: 'district').map(&:id)
       inactive_offices = district_offices - @active_offices
-      inactive_offices.each { |o| o.update(active: false) }
+      OfficeLocation.find(inactive_offices).each { |o| o.update(active: false) }
     end
 
     private
@@ -183,7 +183,7 @@ module DbPyrUpdate
         )
         update_location_info(office, yaml_off)
         update_other_office_info(office, yaml_off)
-        @active_offices << office
+        @active_offices << office.id
         puts "Updated #{office.rep.official_full}'s #{office.city} office"
       end
     end
