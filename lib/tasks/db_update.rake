@@ -4,40 +4,62 @@ require 'db_pyr_update'
 namespace :db do
   namespace :pyr do
     namespace :update do
-      def get_file(*default)
-        if ENV['file']
-          ENV['file']
-        else
-          Dir.glob(
-            Rails.root.join(*default)
-          ).last
-        end
+      desc 'Download updated legislators-historical.yaml'
+      task :fetch_retired_reps do
+        source = 'https://raw.githubusercontent.com/unitedstates/congress-legislators/'\
+          'master/legislators-historical.yaml'
+        file = get_file('lib', 'seeds', 'legislators-historical.yaml')
+        update_yaml_file(file, source)
       end
 
       desc 'Retire historical reps'
-      task :retired_reps do
-        file = get_file('lib', 'seeds', '*legislators-historical*.y*l')
+      task retired_reps: [:fetch_retired_reps] do
+        file = get_file('lib', 'seeds', 'legislators-historical.yaml')
         update = DbPyrUpdate::HistoricalReps.new(file)
         update.call
       end
 
+      desc 'Download updated legislators-current.yaml'
+      task :fetch_current_reps do
+        source = 'https://raw.githubusercontent.com/unitedstates/congress-legislators/'\
+          'master/legislators-current.yaml'
+        file = get_file('lib', 'seeds', 'legislators-current.yaml')
+        update_yaml_file(file, source)
+      end
+
       desc 'Update current reps in database from yaml data file'
-      task :current_reps do
-        file = get_file('lib', 'seeds', '*legislators-current*.y*l')
+      task current_reps: [:fetch_current_reps] do
+        file = get_file('lib', 'seeds', 'legislators-current.yaml')
         update = DbPyrUpdate::Reps.new(file)
         update.call
       end
 
+      desc 'Download updated legislators-social-media.yaml'
+      task :fetch_socials do
+        source = 'https://raw.githubusercontent.com/unitedstates/congress-legislators/'\
+          'master/legislators-social-media.yaml'
+        file = get_file('lib', 'seeds', 'legislators-social-media.yaml')
+        update_yaml_file(file, source)
+      end
+
       desc 'Update rep social media accounts from yaml data file'
-      task :socials do
-        file = get_file('lib', 'seeds', '*legislators-social-media*.y*l')
+      task socials: [:fetch_socials] do
+        file = get_file('lib', 'seeds', 'legislators-social-media.yaml')
         update = DbPyrUpdate::Socials.new(file)
         update.call
       end
 
+      desc 'Download updated legislators-district-offices.yaml'
+      task :fetch_office_locations do
+        source = 'https://raw.githubusercontent.com/thewalkers/congress-legislators/'\
+          'master/legislators-district-offices.yaml'
+        file = get_file('lib', 'seeds', 'legislators-district-offices.yaml')
+        update_yaml_file(file, source)
+      end
+
       desc 'Update office locations in database from yaml data file'
-      task :office_locations do
-        file = get_file('lib', 'seeds', '*legislators-district-offices*.y*l')
+      task office_locations: [:fetch_office_locations] do
+        file = get_file('lib', 'seeds', 'legislators-district-offices.yaml')
         update = DbPyrUpdate::OfficeLocations.new(file)
         update.call
       end
@@ -46,6 +68,23 @@ namespace :db do
       task all: [:retired_reps, :current_reps, :socials, :office_locations] do
         if ENV['qr_codes'] == 'true' && Rails.env.development?
           Rake::Task['pyr:qr_codes:create'].invoke
+        end
+      end
+
+      def get_file(*default)
+        if ENV['file']
+          ENV['file']
+        else
+          Dir.glob(
+              Rails.root.join(*default)
+          ).last
+        end
+      end
+
+      def update_yaml_file(file, source)
+        sh "curl #{source} -o #{file}"
+        if Rails.env.development?
+          `git add #{file}; git commit -m 'update #{file.split('/').last}'`
         end
       end
     end
