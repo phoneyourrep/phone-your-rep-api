@@ -93,7 +93,7 @@ rake db:seed zctas=true
 ```
 or
 ```
-rake db:setup zctas=true
+rake db:pyr:setup zctas=true
 ```
 
 Finally
