@@ -4,12 +4,12 @@ namespace :pyr do
     desc 'Export ZCTA district relationships to CSV'
     task :export do
       Dir.chdir(Rails.root.join('lib')) do
-        File.open('zctas.csv', 'w') do |file|
+        File.open('zctas.txt', 'w') do |file|
           file.write ZctaDistrict.order(:zip_code).to_csv
         end
         File.open('zctas.json', 'w') do |json|
           json.write(
-            JSON.pretty_generate(CSV.open('zctas.csv', headers: true).map do |row|
+            JSON.pretty_generate(CSV.open('zctas.txt', headers: true).map do |row|
               { zip: row['zip'], state: row['state'], district: row['district'] }
             end
             )
