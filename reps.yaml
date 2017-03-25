@@ -10,6 +10,7 @@ reps:
     state_code: '26'
     name: Michigan
     abbr: MI
+  active: true
   bioguide_id: S000770
   official_full: Debbie Stabenow
   role: United States Senator
@@ -186,6 +187,7 @@ reps:
     state_code: '39'
     name: Ohio
     abbr: OH
+  active: true
   bioguide_id: B000944
   official_full: Sherrod Brown
   role: United States Senator
@@ -320,6 +322,7 @@ reps:
     state_code: '48'
     name: Texas
     abbr: TX
+  active: true
   bioguide_id: C001056
   official_full: John Cornyn
   role: United States Senator
@@ -517,6 +520,7 @@ reps:
     state_code: '27'
     name: Minnesota
     abbr: MN
+  active: true
   bioguide_id: K000367
   official_full: Amy Klobuchar
   role: United States Senator
@@ -651,6 +655,7 @@ reps:
     state_code: '21'
     name: Kentucky
     abbr: KY
+  active: true
   bioguide_id: M000355
   official_full: Mitch McConnell
   role: United States Senator
@@ -827,6 +832,7 @@ reps:
     state_code: '12'
     name: Florida
     abbr: FL
+  active: true
   bioguide_id: N000032
   official_full: Bill Nelson
   role: United States Senator
@@ -1045,6 +1051,7 @@ reps:
     state_code: '44'
     name: Rhode Island
     abbr: RI
+  active: true
   bioguide_id: R000122
   official_full: Jack Reed
   role: United States Senator
@@ -1137,6 +1144,7 @@ reps:
     state_code: '24'
     name: Maryland
     abbr: MD
+  active: true
   bioguide_id: C000141
   official_full: Benjamin L. Cardin
   role: United States Senator
@@ -1297,6 +1305,7 @@ reps:
     full_code: '0627'
     code: '27'
     state_code: '06'
+  active: true
   bioguide_id: C001080
   official_full: Judy Chu
   role: United States Representative
@@ -1389,6 +1398,7 @@ reps:
     state_code: '06'
     name: California
     abbr: CA
+  active: true
   bioguide_id: F000062
   official_full: Dianne Feinstein
   role: United States Senator
@@ -1523,6 +1533,7 @@ reps:
     state_code: '40'
     name: Oklahoma
     abbr: OK
+  active: true
   bioguide_id: I000024
   official_full: James M. Inhofe
   role: United States Senator
@@ -1657,6 +1668,7 @@ reps:
     state_code: '29'
     name: Missouri
     abbr: MO
+  active: true
   bioguide_id: M001170
   official_full: Claire McCaskill
   role: United States Senator
@@ -1812,6 +1824,7 @@ reps:
     state_code: '30'
     name: Montana
     abbr: MT
+  active: true
   bioguide_id: T000464
   official_full: Jon Tester
   role: United States Senator
@@ -2030,6 +2043,7 @@ reps:
     state_code: '35'
     name: New Mexico
     abbr: NM
+  active: true
   bioguide_id: U000039
   official_full: Tom Udall
   role: United States Senator
@@ -2185,6 +2199,7 @@ reps:
     state_code: '56'
     name: Wyoming
     abbr: WY
+  active: true
   bioguide_id: E000285
   official_full: Michael B. Enzi
   role: United States Senator
@@ -2340,6 +2355,7 @@ reps:
     state_code: '17'
     name: Illinois
     abbr: IL
+  active: true
   bioguide_id: D000563
   official_full: Richard J. Durbin
   role: United States Senator
@@ -2479,6 +2495,7 @@ reps:
     full_code: '0806'
     code: '06'
     state_code: '08'
+  active: true
   bioguide_id: C001077
   official_full: Mike Coffman
   role: United States Representative
@@ -2550,6 +2567,7 @@ reps:
     state_code: '42'
     name: Pennsylvania
     abbr: PA
+  active: true
   bioguide_id: C001070
   official_full: Robert P. Casey, Jr.
   role: United States Senator
@@ -2747,6 +2765,7 @@ reps:
     state_code: '53'
     name: Washington
     abbr: WA
+  active: true
   bioguide_id: C000127
   official_full: Maria Cantwell
   role: United States Senator
@@ -2923,6 +2942,7 @@ reps:
     state_code: '47'
     name: Tennessee
     abbr: TN
+  active: true
   bioguide_id: A000360
   official_full: Lamar Alexander
   role: United States Senator
@@ -3099,6 +3119,7 @@ reps:
     state_code: '36'
     name: New York
     abbr: NY
+  active: true
   bioguide_id: G000555
   official_full: Kirsten E. Gillibrand
   role: United States Senator
@@ -3322,6 +3343,7 @@ reps:
     full_code: '4201'
     code: '01'
     state_code: '42'
+  active: true
   bioguide_id: B001227
   official_full: Robert A. Brady
   role: United States Representative
@@ -3461,6 +3483,7 @@ reps:
     full_code: '4506'
     code: '06'
     state_code: '45'
+  active: true
   bioguide_id: C000537
   official_full: James E. Clyburn
   role: United States Representative
@@ -3574,6 +3597,7 @@ reps:
     state_code: '22'
     name: Louisiana
     abbr: LA
+  active: true
   bioguide_id: C001075
   official_full: Bill Cassidy
   role: United States Senator
@@ -3776,6 +3800,7 @@ reps:
     full_code: '4801'
     code: '01'
     state_code: '48'
+  active: true
   bioguide_id: G000552
   official_full: Louie Gohmert
   role: United States Representative
@@ -3936,6 +3961,7 @@ reps:
     full_code: '4827'
     code: '27'
     state_code: '48'
+  active: true
   bioguide_id: F000460
   official_full: Blake Farenthold
   role: United States Representative
@@ -4033,6 +4059,7 @@ reps:
     full_code: '1807'
     code: '07'
     state_code: '18'
+  active: true
   bioguide_id: C001072
   official_full: André Carson
   role: United States Representative
@@ -4109,6 +4136,7 @@ reps:
     full_code: '4709'
     code: '09'
     state_code: '47'
+  active: true
   bioguide_id: C001068
   official_full: Steve Cohen
   role: United States Representative
@@ -4185,6 +4213,7 @@ reps:
     full_code: '2905'
     code: '05'
     state_code: '29'
+  active: true
   bioguide_id: C001061
   official_full: Emanuel Cleaver
   role: United States Representative
@@ -4298,6 +4327,7 @@ reps:
     state_code: '54'
     name: West Virginia
     abbr: WV
+  active: true
   bioguide_id: C001047
   official_full: Shelley Moore Capito
   role: United States Senator
@@ -4437,6 +4467,7 @@ reps:
     full_code: '0642'
     code: '42'
     state_code: '06'
+  active: true
   bioguide_id: C000059
   official_full: Ken Calvert
   role: United States Representative
@@ -4513,6 +4544,7 @@ reps:
     full_code: '0105'
     code: '05'
     state_code: '01'
+  active: true
   bioguide_id: B001274
   official_full: Mo Brooks
   role: United States Representative
@@ -4631,6 +4663,7 @@ reps:
     full_code: '4706'
     code: '06'
     state_code: '47'
+  active: true
   bioguide_id: B001273
   official_full: Diane Black
   role: United States Representative
@@ -4728,6 +4761,7 @@ reps:
     full_code: '4211'
     code: '11'
     state_code: '42'
+  active: true
   bioguide_id: B001269
   official_full: Lou Barletta
   role: United States Representative
@@ -4867,6 +4901,7 @@ reps:
     full_code: '1216'
     code: '16'
     state_code: '12'
+  active: true
   bioguide_id: B001260
   official_full: Vern Buchanan
   role: United States Representative
@@ -4964,6 +4999,7 @@ reps:
     full_code: '1212'
     code: '12'
     state_code: '12'
+  active: true
   bioguide_id: B001257
   official_full: Gus M. Bilirakis
   role: United States Representative
@@ -5061,6 +5097,7 @@ reps:
     full_code: '4826'
     code: '26'
     state_code: '48'
+  active: true
   bioguide_id: B001248
   official_full: Michael C. Burgess
   role: United States Representative
@@ -5132,6 +5169,7 @@ reps:
     state_code: '05'
     name: Arkansas
     abbr: AR
+  active: true
   bioguide_id: B001236
   official_full: John Boozman
   role: United States Senator
@@ -5334,6 +5372,7 @@ reps:
     full_code: '4808'
     code: '08'
     state_code: '48'
+  active: true
   bioguide_id: B000755
   official_full: Kevin Brady
   role: United States Representative
@@ -5431,6 +5470,7 @@ reps:
     full_code: '1302'
     code: '02'
     state_code: '13'
+  active: true
   bioguide_id: B000490
   official_full: Sanford D. Bishop, Jr.
   role: United States Representative
@@ -5549,6 +5589,7 @@ reps:
     full_code: '4806'
     code: '06'
     state_code: '48'
+  active: true
   bioguide_id: B000213
   official_full: Joe Barton
   role: United States Representative
@@ -5646,6 +5687,7 @@ reps:
     full_code: '2603'
     code: '03'
     state_code: '26'
+  active: true
   bioguide_id: A000367
   official_full: Justin Amash
   role: United States Representative
@@ -5738,6 +5780,7 @@ reps:
     state_code: '66'
     name: Guam
     abbr: GU
+  active: true
   bioguide_id: B001245
   official_full: Madeleine Z. Bordallo
   role: United States Representative
@@ -5814,6 +5857,7 @@ reps:
     full_code: '1214'
     code: '14'
     state_code: '12'
+  active: true
   bioguide_id: C001066
   official_full: Kathy Castor
   role: United States Representative
@@ -5890,6 +5934,7 @@ reps:
     full_code: '0616'
     code: '16'
     state_code: '06'
+  active: true
   bioguide_id: C001059
   official_full: Jim Costa
   role: United States Representative
@@ -5987,6 +6032,7 @@ reps:
     full_code: '4705'
     code: '05'
     state_code: '47'
+  active: true
   bioguide_id: C000754
   official_full: Jim Cooper
   role: United States Representative
@@ -6063,6 +6109,7 @@ reps:
     full_code: '4103'
     code: '03'
     state_code: '41'
+  active: true
   bioguide_id: B000574
   official_full: Earl Blumenauer
   role: United States Representative
@@ -6139,6 +6186,7 @@ reps:
     full_code: '5503'
     code: '03'
     state_code: '55'
+  active: true
   bioguide_id: K000188
   official_full: Ron Kind
   role: United States Representative
@@ -6236,6 +6284,7 @@ reps:
     full_code: '3906'
     code: '06'
     state_code: '39'
+  active: true
   bioguide_id: J000292
   official_full: Bill Johnson
   role: United States Representative
@@ -6375,6 +6424,7 @@ reps:
     full_code: '3911'
     code: '11'
     state_code: '39'
+  active: true
   bioguide_id: F000455
   official_full: Marcia L. Fudge
   role: United States Representative
@@ -6472,6 +6522,7 @@ reps:
     full_code: '3705'
     code: '05'
     state_code: '37'
+  active: true
   bioguide_id: F000450
   official_full: Virginia Foxx
   role: United States Representative
@@ -6569,6 +6620,7 @@ reps:
     full_code: '0408'
     code: '08'
     state_code: '04'
+  active: true
   bioguide_id: F000448
   official_full: Trent Franks
   role: United States Representative
@@ -6645,6 +6697,7 @@ reps:
     full_code: '0618'
     code: '18'
     state_code: '06'
+  active: true
   bioguide_id: E000215
   official_full: Anna G. Eshoo
   role: United States Representative
@@ -6721,6 +6774,7 @@ reps:
     full_code: '3616'
     code: '16'
     state_code: '36'
+  active: true
   bioguide_id: E000179
   official_full: Eliot L. Engel
   role: United States Representative
@@ -6839,6 +6893,7 @@ reps:
     full_code: '4503'
     code: '03'
     state_code: '45'
+  active: true
   bioguide_id: D000615
   official_full: Jeff Duncan
   role: United States Representative
@@ -6936,6 +6991,7 @@ reps:
     full_code: '0610'
     code: '10'
     state_code: '06'
+  active: true
   bioguide_id: D000612
   official_full: Jeff Denham
   role: United States Representative
@@ -7012,6 +7068,7 @@ reps:
     full_code: '4215'
     code: '15'
     state_code: '42'
+  active: true
   bioguide_id: D000604
   official_full: Charles W. Dent
   role: United States Representative
@@ -7151,6 +7208,7 @@ reps:
     full_code: '4702'
     code: '02'
     state_code: '47'
+  active: true
   bioguide_id: D000533
   official_full: John J. Duncan, Jr.
   role: United States Representative
@@ -7248,6 +7306,7 @@ reps:
     full_code: '4214'
     code: '14'
     state_code: '42'
+  active: true
   bioguide_id: D000482
   official_full: Michael F. Doyle
   role: United States Representative
@@ -7388,6 +7447,7 @@ reps:
     full_code: '0903'
     code: '03'
     state_code: '09'
+  active: true
   bioguide_id: D000216
   official_full: Rosa L. DeLauro
   role: United States Representative
@@ -7464,6 +7524,7 @@ reps:
     full_code: '0801'
     code: '01'
     state_code: '08'
+  active: true
   bioguide_id: D000197
   official_full: Diana DeGette
   role: United States Representative
@@ -7540,6 +7601,7 @@ reps:
     full_code: '0902'
     code: '02'
     state_code: '09'
+  active: true
   bioguide_id: C001069
   official_full: Joe Courtney
   role: United States Representative
@@ -7637,6 +7699,7 @@ reps:
     full_code: '4828'
     code: '28'
     state_code: '48'
+  active: true
   bioguide_id: C001063
   official_full: Henry Cuellar
   role: United States Representative
@@ -7776,6 +7839,7 @@ reps:
     full_code: '4004'
     code: '04'
     state_code: '40'
+  active: true
   bioguide_id: C001053
   official_full: Tom Cole
   role: United States Representative
@@ -7894,6 +7958,7 @@ reps:
     full_code: '3614'
     code: '14'
     state_code: '36'
+  active: true
   bioguide_id: C001038
   official_full: Joseph Crowley
   role: United States Representative
@@ -7991,6 +8056,7 @@ reps:
     full_code: '2613'
     code: '13'
     state_code: '26'
+  active: true
   bioguide_id: C000714
   official_full: John Conyers, Jr.
   role: United States Representative
@@ -8088,6 +8154,7 @@ reps:
     full_code: '0653'
     code: '53'
     state_code: '06'
+  active: true
   bioguide_id: D000598
   official_full: Susan A. Davis
   role: United States Representative
@@ -8164,6 +8231,7 @@ reps:
     full_code: '2102'
     code: '02'
     state_code: '21'
+  active: true
   bioguide_id: G000558
   official_full: Brett Guthrie
   role: United States Representative
@@ -8282,6 +8350,7 @@ reps:
     full_code: '0606'
     code: '06'
     state_code: '06'
+  active: true
   bioguide_id: M001163
   official_full: Doris O. Matsui
   role: United States Representative
@@ -8353,6 +8422,7 @@ reps:
     state_code: '15'
     name: Hawaii
     abbr: HI
+  active: true
   bioguide_id: H001042
   official_full: Mazie K. Hirono
   role: United States Senator
@@ -8429,6 +8499,7 @@ reps:
     full_code: '5401'
     code: '01'
     state_code: '54'
+  active: true
   bioguide_id: M001180
   official_full: David B. McKinley
   role: United States Representative
@@ -8547,6 +8618,7 @@ reps:
     full_code: '0604'
     code: '04'
     state_code: '06'
+  active: true
   bioguide_id: M001177
   official_full: Tom McClintock
   role: United States Representative
@@ -8623,6 +8695,7 @@ reps:
     full_code: '5305'
     code: '05'
     state_code: '53'
+  active: true
   bioguide_id: M001159
   official_full: Cathy McMorris Rodgers
   role: United States Representative
@@ -8741,6 +8814,7 @@ reps:
     full_code: '4824'
     code: '24'
     state_code: '48'
+  active: true
   bioguide_id: M001158
   official_full: Kenny Marchant
   role: United States Representative
@@ -8817,6 +8891,7 @@ reps:
     full_code: '3710'
     code: '10'
     state_code: '37'
+  active: true
   bioguide_id: M001156
   official_full: Patrick T. McHenry
   role: United States Representative
@@ -8935,6 +9010,7 @@ reps:
     full_code: '3904'
     code: '04'
     state_code: '39'
+  active: true
   bioguide_id: J000289
   official_full: Jim Jordan
   role: United States Representative
@@ -9053,6 +9129,7 @@ reps:
     full_code: '4803'
     code: '03'
     state_code: '48'
+  active: true
   bioguide_id: J000174
   official_full: Sam Johnson
   role: United States Representative
@@ -9129,6 +9206,7 @@ reps:
     full_code: '4818'
     code: '18'
     state_code: '48'
+  active: true
   bioguide_id: J000032
   official_full: Sheila Jackson Lee
   role: United States Representative
@@ -9268,6 +9346,7 @@ reps:
     full_code: '0649'
     code: '49'
     state_code: '06'
+  active: true
   bioguide_id: I000056
   official_full: Darrell E. Issa
   role: United States Representative
@@ -9365,6 +9444,7 @@ reps:
     full_code: '1714'
     code: '14'
     state_code: '17'
+  active: true
   bioguide_id: H001059
   official_full: Randy Hultgren
   role: United States Representative
@@ -9441,6 +9521,7 @@ reps:
     full_code: '2904'
     code: '04'
     state_code: '29'
+  active: true
   bioguide_id: H001053
   official_full: Vicky Hartzler
   role: United States Representative
@@ -9559,6 +9640,7 @@ reps:
     full_code: '0650'
     code: '50'
     state_code: '06'
+  active: true
   bioguide_id: H001048
   official_full: Duncan Hunter
   role: United States Representative
@@ -9656,6 +9738,7 @@ reps:
     full_code: '2405'
     code: '05'
     state_code: '24'
+  active: true
   bioguide_id: H000874
   official_full: Steny H. Hoyer
   role: United States Representative
@@ -9753,6 +9836,7 @@ reps:
     full_code: '5109'
     code: '09'
     state_code: '51'
+  active: true
   bioguide_id: G000568
   official_full: H. Morgan Griffith
   role: United States Representative
@@ -9871,6 +9955,7 @@ reps:
     full_code: '4504'
     code: '04'
     state_code: '45'
+  active: true
   bioguide_id: G000566
   official_full: Trey Gowdy
   role: United States Representative
@@ -9968,6 +10053,7 @@ reps:
     full_code: '1314'
     code: '14'
     state_code: '13'
+  active: true
   bioguide_id: G000560
   official_full: Tom Graves
   role: United States Representative
@@ -10065,6 +10151,7 @@ reps:
     full_code: '0403'
     code: '03'
     state_code: '04'
+  active: true
   bioguide_id: G000551
   official_full: Raúl M. Grijalva
   role: United States Representative
@@ -10183,6 +10270,7 @@ reps:
     full_code: '4812'
     code: '12'
     state_code: '48'
+  active: true
   bioguide_id: G000377
   official_full: Kay Granger
   role: United States Representative
@@ -10259,6 +10347,7 @@ reps:
     full_code: '2401'
     code: '01'
     state_code: '24'
+  active: true
   bioguide_id: H001052
   official_full: Andy Harris
   role: United States Representative
@@ -10377,6 +10466,7 @@ reps:
     full_code: '3612'
     code: '12'
     state_code: '36'
+  active: true
   bioguide_id: M000087
   official_full: Carolyn B. Maloney
   role: United States Representative
@@ -10491,6 +10581,7 @@ reps:
     state_code: '09'
     name: Connecticut
     abbr: CT
+  active: true
   bioguide_id: M001169
   official_full: Christopher Murphy
   role: United States Senator
@@ -10562,6 +10653,7 @@ reps:
     state_code: '04'
     name: Arizona
     abbr: AZ
+  active: true
   bioguide_id: M000303
   official_full: John McCain
   role: United States Senator
@@ -10680,6 +10772,7 @@ reps:
     full_code: '1804'
     code: '04'
     state_code: '18'
+  active: true
   bioguide_id: R000592
   official_full: Todd Rokita
   role: United States Representative
@@ -10778,6 +10871,7 @@ reps:
     full_code: '2202'
     code: '02'
     state_code: '22'
+  active: true
   bioguide_id: R000588
   official_full: Cedric L. Richmond
   role: United States Representative
@@ -10896,6 +10990,7 @@ reps:
     full_code: '3916'
     code: '16'
     state_code: '39'
+  active: true
   bioguide_id: R000586
   official_full: James B. Renacci
   role: United States Representative
@@ -10993,6 +11088,7 @@ reps:
     full_code: '4701'
     code: '01'
     state_code: '47'
+  active: true
   bioguide_id: R000582
   official_full: David P. Roe
   role: United States Representative
@@ -11090,6 +11186,7 @@ reps:
     full_code: '5308'
     code: '08'
     state_code: '53'
+  active: true
   bioguide_id: R000578
   official_full: David G. Reichert
   role: United States Representative
@@ -11187,6 +11284,7 @@ reps:
     full_code: '3913'
     code: '13'
     state_code: '39'
+  active: true
   bioguide_id: R000577
   official_full: Tim Ryan
   role: United States Representative
@@ -11305,6 +11403,7 @@ reps:
     full_code: '4218'
     code: '18'
     state_code: '42'
+  active: true
   bioguide_id: M001151
   official_full: Tim Murphy
   role: United States Representative
@@ -11402,6 +11501,7 @@ reps:
     full_code: '2704'
     code: '04'
     state_code: '27'
+  active: true
   bioguide_id: M001143
   official_full: Betty McCollum
   role: United States Representative
@@ -11473,6 +11573,7 @@ reps:
     state_code: '20'
     name: Kansas
     abbr: KS
+  active: true
   bioguide_id: M000934
   official_full: Jerry Moran
   role: United States Senator
@@ -11633,6 +11734,7 @@ reps:
     full_code: '2907'
     code: '07'
     state_code: '29'
+  active: true
   bioguide_id: L000576
   official_full: Billy Long
   role: United States Representative
@@ -11730,6 +11832,7 @@ reps:
     full_code: '3503'
     code: '03'
     state_code: '35'
+  active: true
   bioguide_id: L000570
   official_full: Ben Ray Luján
   role: United States Representative
@@ -11911,6 +12014,7 @@ reps:
     full_code: '3407'
     code: '07'
     state_code: '34'
+  active: true
   bioguide_id: L000567
   official_full: Leonard Lance
   role: United States Representative
@@ -12008,6 +12112,7 @@ reps:
     full_code: '1902'
     code: '02'
     state_code: '19'
+  active: true
   bioguide_id: L000565
   official_full: David Loebsack
   role: United States Representative
@@ -12105,6 +12210,7 @@ reps:
     full_code: '2508'
     code: '08'
     state_code: '25'
+  active: true
   bioguide_id: L000562
   official_full: Stephen F. Lynch
   role: United States Representative
@@ -12223,6 +12329,7 @@ reps:
     full_code: '5302'
     code: '02'
     state_code: '53'
+  active: true
   bioguide_id: L000560
   official_full: Rick Larsen
   role: United States Representative
@@ -12320,6 +12427,7 @@ reps:
     full_code: '0901'
     code: '01'
     state_code: '09'
+  active: true
   bioguide_id: L000557
   official_full: John B. Larson
   role: United States Representative
@@ -12396,6 +12504,7 @@ reps:
     full_code: '3402'
     code: '02'
     state_code: '34'
+  active: true
   bioguide_id: L000554
   official_full: Frank A. LoBiondo
   role: United States Representative
@@ -12472,6 +12581,7 @@ reps:
     full_code: '4003'
     code: '03'
     state_code: '40'
+  active: true
   bioguide_id: L000491
   official_full: Frank D. Lucas
   role: United States Representative
@@ -12548,6 +12658,7 @@ reps:
     full_code: '1305'
     code: '05'
     state_code: '13'
+  active: true
   bioguide_id: L000287
   official_full: John Lewis
   role: United States Representative
@@ -12619,6 +12730,7 @@ reps:
     state_code: '50'
     name: Vermont
     abbr: VT
+  active: true
   bioguide_id: L000174
   official_full: Patrick J. Leahy
   role: United States Senator
@@ -12716,6 +12828,7 @@ reps:
     full_code: '0103'
     code: '03'
     state_code: '01'
+  active: true
   bioguide_id: R000575
   official_full: Mike Rogers
   role: United States Representative
@@ -12813,6 +12926,7 @@ reps:
     full_code: '4822'
     code: '22'
     state_code: '48'
+  active: true
   bioguide_id: O000168
   official_full: Pete Olson
   role: United States Representative
@@ -12910,6 +13024,7 @@ reps:
     full_code: '1208'
     code: '08'
     state_code: '12'
+  active: true
   bioguide_id: P000599
   official_full: Bill Posey
   role: United States Representative
@@ -12986,6 +13101,7 @@ reps:
     full_code: '3409'
     code: '09'
     state_code: '34'
+  active: true
   bioguide_id: P000096
   official_full: Bill Pascrell, Jr.
   role: United States Representative
@@ -13125,6 +13241,7 @@ reps:
     full_code: '4813'
     code: '13'
     state_code: '48'
+  active: true
   bioguide_id: T000238
   official_full: Mac Thornberry
   role: United States Representative
@@ -13217,6 +13334,7 @@ reps:
     state_code: '46'
     name: South Dakota
     abbr: SD
+  active: true
   bioguide_id: T000250
   official_full: John Thune
   role: United States Senator
@@ -13335,6 +13453,7 @@ reps:
     full_code: '1801'
     code: '01'
     state_code: '18'
+  active: true
   bioguide_id: V000108
   official_full: Peter J. Visclosky
   role: United States Representative
@@ -13411,6 +13530,7 @@ reps:
     full_code: '2606'
     code: '06'
     state_code: '26'
+  active: true
   bioguide_id: U000031
   official_full: Fred Upton
   role: United States Representative
@@ -13508,6 +13628,7 @@ reps:
     full_code: '0803'
     code: '03'
     state_code: '08'
+  active: true
   bioguide_id: T000470
   official_full: Scott R. Tipton
   role: United States Representative
@@ -13647,6 +13768,7 @@ reps:
     full_code: '4205'
     code: '05'
     state_code: '42'
+  active: true
   bioguide_id: T000467
   official_full: Glenn Thompson
   role: United States Representative
@@ -13744,6 +13866,7 @@ reps:
     full_code: '3912'
     code: '12'
     state_code: '39'
+  active: true
   bioguide_id: T000462
   official_full: Patrick J. Tiberi
   role: United States Representative
@@ -13815,6 +13938,7 @@ reps:
     state_code: '42'
     name: Pennsylvania
     abbr: PA
+  active: true
   bioguide_id: T000461
   official_full: Patrick J. Toomey
   role: United States Senator
@@ -14017,6 +14141,7 @@ reps:
     full_code: '0639'
     code: '39'
     state_code: '06'
+  active: true
   bioguide_id: R000487
   official_full: Edward R. Royce
   role: United States Representative
@@ -14114,6 +14239,7 @@ reps:
     full_code: '1227'
     code: '27'
     state_code: '12'
+  active: true
   bioguide_id: R000435
   official_full: Ileana Ros-Lehtinen
   role: United States Representative
@@ -14190,6 +14316,7 @@ reps:
     full_code: '2105'
     code: '05'
     state_code: '21'
+  active: true
   bioguide_id: R000395
   official_full: Harold Rogers
   role: United States Representative
@@ -14303,6 +14430,7 @@ reps:
     state_code: '21'
     name: Kentucky
     abbr: KY
+  active: true
   bioguide_id: P000603
   official_full: Rand Paul
   role: United States Senator
@@ -14484,6 +14612,7 @@ reps:
     full_code: '2301'
     code: '01'
     state_code: '23'
+  active: true
   bioguide_id: P000597
   official_full: Chellie Pingree
   role: United States Representative
@@ -14581,6 +14710,7 @@ reps:
     full_code: '2703'
     code: '03'
     state_code: '27'
+  active: true
   bioguide_id: P000594
   official_full: Erik Paulsen
   role: United States Representative
@@ -14657,6 +14787,7 @@ reps:
     full_code: '0807'
     code: '07'
     state_code: '08'
+  active: true
   bioguide_id: P000593
   official_full: Ed Perlmutter
   role: United States Representative
@@ -14728,6 +14859,7 @@ reps:
     state_code: '39'
     name: Ohio
     abbr: OH
+  active: true
   bioguide_id: P000449
   official_full: Rob Portman
   role: United States Senator
@@ -14867,6 +14999,7 @@ reps:
     full_code: '3406'
     code: '06'
     state_code: '34'
+  active: true
   bioguide_id: P000034
   official_full: Frank Pallone, Jr.
   role: United States Representative
@@ -14959,6 +15092,7 @@ reps:
     state_code: '11'
     name: District of Columbia
     abbr: DC
+  active: true
   bioguide_id: N000147
   official_full: Eleanor Holmes Norton
   role: United States Representative
@@ -15056,6 +15190,7 @@ reps:
     full_code: '2501'
     code: '01'
     state_code: '25'
+  active: true
   bioguide_id: N000015
   official_full: Richard E. Neal
   role: United States Representative
@@ -15153,6 +15288,7 @@ reps:
     full_code: '3103'
     code: '03'
     state_code: '31'
+  active: true
   bioguide_id: S001172
   official_full: Adrian Smith
   role: United States Representative
@@ -15250,6 +15386,7 @@ reps:
     full_code: '2403'
     code: '03'
     state_code: '24'
+  active: true
   bioguide_id: S001168
   official_full: John P. Sarbanes
   role: United States Representative
@@ -15363,6 +15500,7 @@ reps:
     state_code: '41'
     name: Oregon
     abbr: OR
+  active: true
   bioguide_id: W000779
   official_full: Ron Wyden
   role: United States Senator
@@ -15544,6 +15682,7 @@ reps:
     full_code: '0200'
     code: '00'
     state_code: '02'
+  active: true
   bioguide_id: Y000033
   official_full: Don Young
   role: United States Representative
@@ -15641,6 +15780,7 @@ reps:
     full_code: '1224'
     code: '24'
     state_code: '12'
+  active: true
   bioguide_id: W000808
   official_full: Frederica S. Wilson
   role: United States Representative
@@ -15759,6 +15899,7 @@ reps:
     full_code: '1211'
     code: '11'
     state_code: '12'
+  active: true
   bioguide_id: W000806
   official_full: Daniel Webster
   role: United States Representative
@@ -15898,6 +16039,7 @@ reps:
     full_code: '5000'
     code: '00'
     state_code: '50'
+  active: true
   bioguide_id: W000800
   official_full: Peter Welch
   role: United States Representative
@@ -15974,6 +16116,7 @@ reps:
     full_code: '3201'
     code: '01'
     state_code: '32'
+  active: true
   bioguide_id: T000468
   official_full: Dina Titus
   role: United States Representative
@@ -16050,6 +16193,7 @@ reps:
     full_code: '0107'
     code: '07'
     state_code: '01'
+  active: true
   bioguide_id: S001185
   official_full: Terri A. Sewell
   role: United States Representative
@@ -16189,6 +16333,7 @@ reps:
     full_code: '4105'
     code: '05'
     state_code: '41'
+  active: true
   bioguide_id: S001180
   official_full: Kurt Schrader
   role: United States Representative
@@ -16286,6 +16431,7 @@ reps:
     full_code: '2201'
     code: '01'
     state_code: '22'
+  active: true
   bioguide_id: S001176
   official_full: Steve Scalise
   role: United States Representative
@@ -16425,6 +16571,7 @@ reps:
     full_code: '0638'
     code: '38'
     state_code: '06'
+  active: true
   bioguide_id: S001156
   official_full: Linda T. Sánchez
   role: United States Representative
@@ -16501,6 +16648,7 @@ reps:
     full_code: '0628'
     code: '28'
     state_code: '06'
+  active: true
   bioguide_id: S001150
   official_full: Adam B. Schiff
   role: United States Representative
@@ -16598,6 +16746,7 @@ reps:
     full_code: '1602'
     code: '02'
     state_code: '16'
+  active: true
   bioguide_id: S001148
   official_full: Michael K. Simpson
   role: United States Representative
@@ -16737,6 +16886,7 @@ reps:
     full_code: '5309'
     code: '09'
     state_code: '53'
+  active: true
   bioguide_id: S000510
   official_full: Adam Smith
   role: United States Representative
@@ -16960,6 +17110,7 @@ reps:
     full_code: '1715'
     code: '15'
     state_code: '17'
+  active: true
   bioguide_id: S000364
   official_full: John Shimkus
   role: United States Representative
@@ -17100,6 +17251,7 @@ reps:
     full_code: '0630'
     code: '30'
     state_code: '06'
+  active: true
   bioguide_id: S000344
   official_full: Brad Sherman
   role: United States Representative
@@ -17176,6 +17328,7 @@ reps:
     full_code: '4832'
     code: '32'
     state_code: '48'
+  active: true
   bioguide_id: S000250
   official_full: Pete Sessions
   role: United States Representative
@@ -17252,6 +17405,7 @@ reps:
     full_code: '3615'
     code: '15'
     state_code: '36'
+  active: true
   bioguide_id: S000248
   official_full: José E. Serrano
   role: United States Representative
@@ -17328,6 +17482,7 @@ reps:
     full_code: '5301'
     code: '01'
     state_code: '53'
+  active: true
   bioguide_id: D000617
   official_full: Suzan K. DelBene
   role: United States Representative
@@ -17425,6 +17580,7 @@ reps:
     full_code: '4101'
     code: '01'
     state_code: '41'
+  active: true
   bioguide_id: B001278
   official_full: Suzanne Bonamici
   role: United States Representative
@@ -17501,6 +17657,7 @@ reps:
     full_code: '0615'
     code: '15'
     state_code: '06'
+  active: true
   bioguide_id: S001193
   official_full: Eric Swalwell
   role: United States Representative
@@ -17577,6 +17734,7 @@ reps:
     full_code: '3404'
     code: '04'
     state_code: '34'
+  active: true
   bioguide_id: S000522
   official_full: Christopher H. Smith
   role: United States Representative
@@ -17695,6 +17853,7 @@ reps:
     full_code: '2701'
     code: '01'
     state_code: '27'
+  active: true
   bioguide_id: W000799
   official_full: Timothy J. Walz
   role: United States Representative
@@ -17792,6 +17951,7 @@ reps:
     full_code: '4002'
     code: '02'
     state_code: '40'
+  active: true
   bioguide_id: M001190
   official_full: Markwayne Mullin
   role: United States Representative
@@ -17889,6 +18049,7 @@ reps:
     full_code: '2504'
     code: '04'
     state_code: '25'
+  active: true
   bioguide_id: K000379
   official_full: Joseph P. Kennedy III
   role: United States Representative
@@ -17986,6 +18147,7 @@ reps:
     full_code: '1802'
     code: '02'
     state_code: '18'
+  active: true
   bioguide_id: W000813
   official_full: Jackie Walorski
   role: United States Representative
@@ -18083,6 +18245,7 @@ reps:
     full_code: '4507'
     code: '07'
     state_code: '45'
+  active: true
   bioguide_id: R000597
   official_full: Tom Rice
   role: United States Representative
@@ -18180,6 +18343,7 @@ reps:
     full_code: '5310'
     code: '10'
     state_code: '53'
+  active: true
   bioguide_id: H001064
   official_full: Denny Heck
   role: United States Representative
@@ -18277,6 +18441,7 @@ reps:
     full_code: '3702'
     code: '02'
     state_code: '37'
+  active: true
   bioguide_id: H001065
   official_full: George Holding
   role: United States Representative
@@ -18374,6 +18539,7 @@ reps:
     full_code: '3608'
     code: '08'
     state_code: '36'
+  active: true
   bioguide_id: J000294
   official_full: Hakeem S. Jeffries
   role: United States Representative
@@ -18471,6 +18637,7 @@ reps:
     full_code: '0647'
     code: '47'
     state_code: '06'
+  active: true
   bioguide_id: L000579
   official_full: Alan S. Lowenthal
   role: United States Representative
@@ -18547,6 +18714,7 @@ reps:
     full_code: '1309'
     code: '09'
     state_code: '13'
+  active: true
   bioguide_id: C001093
   official_full: Doug Collins
   role: United States Representative
@@ -18623,6 +18791,7 @@ reps:
     full_code: '4814'
     code: '14'
     state_code: '48'
+  active: true
   bioguide_id: W000814
   official_full: Randy K. Weber, Sr.
   role: United States Representative
@@ -18741,6 +18910,7 @@ reps:
     full_code: '5306'
     code: '06'
     state_code: '53'
+  active: true
   bioguide_id: K000381
   official_full: Derek Kilmer
   role: United States Representative
@@ -18859,6 +19029,7 @@ reps:
     full_code: '1203'
     code: '03'
     state_code: '12'
+  active: true
   bioguide_id: Y000065
   official_full: Ted S. Yoho
   role: United States Representative
@@ -18956,6 +19127,7 @@ reps:
     full_code: '2605'
     code: '05'
     state_code: '26'
+  active: true
   bioguide_id: K000380
   official_full: Daniel T. Kildee
   role: United States Representative
@@ -19032,6 +19204,7 @@ reps:
     full_code: '1717'
     code: '17'
     state_code: '17'
+  active: true
   bioguide_id: B001286
   official_full: Cheri Bustos
   role: United States Representative
@@ -19150,6 +19323,7 @@ reps:
     full_code: '1711'
     code: '11'
     state_code: '17'
+  active: true
   bioguide_id: F000454
   official_full: Bill Foster
   role: United States Representative
@@ -19247,6 +19421,7 @@ reps:
     full_code: '3709'
     code: '09'
     state_code: '37'
+  active: true
   bioguide_id: P000606
   official_full: Robert Pittenger
   role: United States Representative
@@ -19365,6 +19540,7 @@ reps:
     full_code: '0636'
     code: '36'
     state_code: '06'
+  active: true
   bioguide_id: R000599
   official_full: Raul Ruiz
   role: United States Representative
@@ -19462,6 +19638,7 @@ reps:
     full_code: '0608'
     code: '08'
     state_code: '06'
+  active: true
   bioguide_id: C001094
   official_full: Paul Cook
   role: United States Representative
@@ -19559,6 +19736,7 @@ reps:
     full_code: '0602'
     code: '02'
     state_code: '06'
+  active: true
   bioguide_id: H001068
   official_full: Jared Huffman
   role: United States Representative
@@ -19719,6 +19897,7 @@ reps:
     full_code: '3410'
     code: '10'
     state_code: '34'
+  active: true
   bioguide_id: P000604
   official_full: Donald M. Payne, Jr.
   role: United States Representative
@@ -19837,6 +20016,7 @@ reps:
     full_code: '0621'
     code: '21'
     state_code: '06'
+  active: true
   bioguide_id: V000129
   official_full: David G. Valadao
   role: United States Representative
@@ -19934,6 +20114,7 @@ reps:
     full_code: '0409'
     code: '09'
     state_code: '04'
+  active: true
   bioguide_id: S001191
   official_full: Kyrsten Sinema
   role: United States Representative
@@ -20010,6 +20191,7 @@ reps:
     full_code: '2104'
     code: '04'
     state_code: '21'
+  active: true
   bioguide_id: M001184
   official_full: Thomas Massie
   role: United States Representative
@@ -20128,6 +20310,7 @@ reps:
     full_code: '1712'
     code: '12'
     state_code: '17'
+  active: true
   bioguide_id: B001295
   official_full: Mike Bost
   role: United States Representative
@@ -20288,6 +20471,7 @@ reps:
     full_code: '2302'
     code: '02'
     state_code: '23'
+  active: true
   bioguide_id: P000611
   official_full: Bruce Poliquin
   role: United States Representative
@@ -20406,6 +20590,7 @@ reps:
     full_code: '3621'
     code: '21'
     state_code: '36'
+  active: true
   bioguide_id: S001196
   official_full: Elise M. Stefanik
   role: United States Representative
@@ -20524,6 +20709,7 @@ reps:
     full_code: '2706'
     code: '06'
     state_code: '27'
+  active: true
   bioguide_id: E000294
   official_full: Tom Emmer
   role: United States Representative
@@ -20600,6 +20786,7 @@ reps:
     full_code: '4005'
     code: '05'
     state_code: '40'
+  active: true
   bioguide_id: R000604
   official_full: Steve Russell
   role: United States Representative
@@ -20676,6 +20863,7 @@ reps:
     full_code: '2205'
     code: '05'
     state_code: '22'
+  active: true
   bioguide_id: A000374
   official_full: Ralph Lee Abraham
   role: United States Representative
@@ -20773,6 +20961,7 @@ reps:
     full_code: '3624'
     code: '24'
     state_code: '36'
+  active: true
   bioguide_id: K000386
   official_full: John Katko
   role: United States Representative
@@ -20912,6 +21101,7 @@ reps:
     full_code: '3708'
     code: '08'
     state_code: '37'
+  active: true
   bioguide_id: H001067
   official_full: Richard Hudson
   role: United States Representative
@@ -21009,6 +21199,7 @@ reps:
     full_code: '4204'
     code: '04'
     state_code: '42'
+  active: true
   bioguide_id: P000605
   official_full: Scott Perry
   role: United States Representative
@@ -21127,6 +21318,7 @@ reps:
     full_code: '3627'
     code: '27'
     state_code: '36'
+  active: true
   bioguide_id: C001092
   official_full: Chris Collins
   role: United States Representative
@@ -21224,6 +21416,7 @@ reps:
     full_code: '2902'
     code: '02'
     state_code: '29'
+  active: true
   bioguide_id: W000812
   official_full: Ann Wagner
   role: United States Representative
@@ -21300,6 +21493,7 @@ reps:
     full_code: '4902'
     code: '02'
     state_code: '49'
+  active: true
   bioguide_id: S001192
   official_full: Chris Stewart
   role: United States Representative
@@ -21397,6 +21591,7 @@ reps:
     full_code: '2106'
     code: '06'
     state_code: '21'
+  active: true
   bioguide_id: B001282
   official_full: Andy Barr
   role: United States Representative
@@ -21473,6 +21668,7 @@ reps:
     full_code: '4816'
     code: '16'
     state_code: '48'
+  active: true
   bioguide_id: O000170
   official_full: Beto O'Rourke
   role: United States Representative
@@ -21549,6 +21745,7 @@ reps:
     full_code: '4212'
     code: '12'
     state_code: '42'
+  active: true
   bioguide_id: R000598
   official_full: Keith J. Rothfus
   role: United States Representative
@@ -21667,6 +21864,7 @@ reps:
     full_code: '3902'
     code: '02'
     state_code: '39'
+  active: true
   bioguide_id: W000815
   official_full: Brad R. Wenstrup
   role: United States Representative
@@ -21785,6 +21983,7 @@ reps:
     full_code: '5502'
     code: '02'
     state_code: '55'
+  active: true
   bioguide_id: P000607
   official_full: Mark Pocan
   role: United States Representative
@@ -21882,6 +22081,7 @@ reps:
     full_code: '2505'
     code: '05'
     state_code: '25'
+  active: true
   bioguide_id: C001101
   official_full: Katherine M. Clark
   role: United States Representative
@@ -21979,6 +22179,7 @@ reps:
     full_code: '0101'
     code: '01'
     state_code: '01'
+  active: true
   bioguide_id: B001289
   official_full: Bradley Byrne
   role: United States Representative
@@ -22076,6 +22277,7 @@ reps:
     full_code: '1311'
     code: '11'
     state_code: '13'
+  active: true
   bioguide_id: L000583
   official_full: Barry Loudermilk
   role: United States Representative
@@ -22194,6 +22396,7 @@ reps:
     full_code: '1226'
     code: '26'
     state_code: '12'
+  active: true
   bioguide_id: C001107
   official_full: Carlos Curbelo
   role: United States Representative
@@ -22312,6 +22515,7 @@ reps:
     full_code: '3403'
     code: '03'
     state_code: '34'
+  active: true
   bioguide_id: M001193
   official_full: Thomas MacArthur
   role: United States Representative
@@ -22409,6 +22613,7 @@ reps:
     full_code: '0402'
     code: '02'
     state_code: '04'
+  active: true
   bioguide_id: M001197
   official_full: Martha McSally
   role: United States Representative
@@ -22506,6 +22711,7 @@ reps:
     full_code: '0502'
     code: '02'
     state_code: '05'
+  active: true
   bioguide_id: H001072
   official_full: J. French Hill
   role: United States Representative
@@ -22603,6 +22809,7 @@ reps:
     full_code: '0804'
     code: '04'
     state_code: '08'
+  active: true
   bioguide_id: B001297
   official_full: Ken Buck
   role: United States Representative
@@ -22700,6 +22907,7 @@ reps:
     full_code: '1901'
     code: '01'
     state_code: '19'
+  active: true
   bioguide_id: B001294
   official_full: Rod Blum
   role: United States Representative
@@ -22818,6 +23026,7 @@ reps:
     full_code: '3604'
     code: '04'
     state_code: '36'
+  active: true
   bioguide_id: R000602
   official_full: Kathleen M. Rice
   role: United States Representative
@@ -22894,6 +23103,7 @@ reps:
     full_code: '0635'
     code: '35'
     state_code: '06'
+  active: true
   bioguide_id: T000474
   official_full: Norma J. Torres
   role: United States Representative
@@ -22970,6 +23180,7 @@ reps:
     full_code: '1312'
     code: '12'
     state_code: '13'
+  active: true
   bioguide_id: A000372
   official_full: Rick W. Allen
   role: United States Representative
@@ -23109,6 +23320,7 @@ reps:
     full_code: '0645'
     code: '45'
     state_code: '06'
+  active: true
   bioguide_id: W000820
   official_full: Mimi Walters
   role: United States Representative
@@ -23185,6 +23397,7 @@ reps:
     full_code: '1310'
     code: '10'
     state_code: '13'
+  active: true
   bioguide_id: H001071
   official_full: Jody B. Hice
   role: United States Representative
@@ -23303,6 +23516,7 @@ reps:
     full_code: '5107'
     code: '07'
     state_code: '51'
+  active: true
   bioguide_id: B001290
   official_full: Dave Brat
   role: United States Representative
@@ -23395,6 +23609,7 @@ reps:
     state_code: '49'
     name: Utah
     abbr: UT
+  active: true
   bioguide_id: H000338
   official_full: Orrin G. Hatch
   role: United States Senator
@@ -23555,6 +23770,7 @@ reps:
     full_code: '5304'
     code: '04'
     state_code: '53'
+  active: true
   bioguide_id: N000189
   official_full: Dan Newhouse
   role: United States Representative
@@ -23652,6 +23868,7 @@ reps:
     full_code: '5403'
     code: '03'
     state_code: '54'
+  active: true
   bioguide_id: J000297
   official_full: Evan H. Jenkins
   role: United States Representative
@@ -23770,6 +23987,7 @@ reps:
     full_code: '4206'
     code: '06'
     state_code: '42'
+  active: true
   bioguide_id: C001106
   official_full: Ryan A. Costello
   role: United States Representative
@@ -23867,6 +24085,7 @@ reps:
     full_code: '4836'
     code: '36'
     state_code: '48'
+  active: true
   bioguide_id: B001291
   official_full: Brian Babin
   role: United States Representative
@@ -23985,6 +24204,7 @@ reps:
     full_code: '4904'
     code: '04'
     state_code: '49'
+  active: true
   bioguide_id: L000584
   official_full: Mia B. Love
   role: United States Representative
@@ -24061,6 +24281,7 @@ reps:
     full_code: '3706'
     code: '06'
     state_code: '37'
+  active: true
   bioguide_id: W000819
   official_full: Mark Walker
   role: United States Representative
@@ -24158,6 +24379,7 @@ reps:
     full_code: '2101'
     code: '01'
     state_code: '21'
+  active: true
   bioguide_id: C001108
   official_full: James Comer
   role: United States Representative
@@ -24255,6 +24477,7 @@ reps:
     full_code: '3301'
     code: '01'
     state_code: '33'
+  active: true
   bioguide_id: S001170
   official_full: Carol Shea-Porter
   role: United States Representative
@@ -24331,6 +24554,7 @@ reps:
     full_code: '4213'
     code: '13'
     state_code: '42'
+  active: true
   bioguide_id: B001296
   official_full: Brendan F. Boyle
   role: United States Representative
@@ -24470,6 +24694,7 @@ reps:
     full_code: '4823'
     code: '23'
     state_code: '48'
+  active: true
   bioguide_id: H001073
   official_full: Will Hurd
   role: United States Representative
@@ -24630,6 +24855,7 @@ reps:
     full_code: '0633'
     code: '33'
     state_code: '06'
+  active: true
   bioguide_id: L000582
   official_full: Ted Lieu
   role: United States Representative
@@ -24727,6 +24953,7 @@ reps:
     full_code: '2206'
     code: '06'
     state_code: '22'
+  active: true
   bioguide_id: G000577
   official_full: Garret Graves
   role: United States Representative
@@ -24845,6 +25072,7 @@ reps:
     full_code: '0611'
     code: '11'
     state_code: '06'
+  active: true
   bioguide_id: D000623
   official_full: Mark DeSaulnier
   role: United States Representative
@@ -24942,6 +25170,7 @@ reps:
     full_code: '2614'
     code: '14'
     state_code: '26'
+  active: true
   bioguide_id: L000581
   official_full: Brenda L. Lawrence
   role: United States Representative
@@ -25034,6 +25263,7 @@ reps:
     state_code: '32'
     name: Nevada
     abbr: NV
+  active: true
   bioguide_id: C001113
   official_full: Catherine Cortez Masto
   role: United States Senator
@@ -25131,6 +25361,7 @@ reps:
     full_code: '0401'
     code: '01'
     state_code: '04'
+  active: true
   bioguide_id: O000171
   official_full: Tom O'Halleran
   role: United States Representative
@@ -25228,6 +25459,7 @@ reps:
     full_code: '4202'
     code: '02'
     state_code: '42'
+  active: true
   bioguide_id: E000296
   official_full: Dwight Evans
   role: United States Representative
@@ -25299,6 +25531,7 @@ reps:
     state_code: '06'
     name: California
     abbr: CA
+  active: true
   bioguide_id: H001075
   official_full: Kamala D. Harris
   role: United States Senator
@@ -25459,6 +25692,7 @@ reps:
     full_code: '2404'
     code: '04'
     state_code: '24'
+  active: true
   bioguide_id: B001304
   official_full: Anthony G. Brown
   role: United States Representative
@@ -25535,6 +25769,7 @@ reps:
     full_code: '2801'
     code: '01'
     state_code: '28'
+  active: true
   bioguide_id: K000388
   official_full: Trent Kelly
   role: United States Representative
@@ -25695,6 +25930,7 @@ reps:
     full_code: '1000'
     code: '00'
     state_code: '10'
+  active: true
   bioguide_id: B001303
   official_full: Lisa Blunt Rochester
   role: United States Representative
@@ -25771,6 +26007,7 @@ reps:
     full_code: '2408'
     code: '08'
     state_code: '24'
+  active: true
   bioguide_id: R000606
   official_full: Jamie Raskin
   role: United States Representative
@@ -25847,6 +26084,7 @@ reps:
     full_code: '0620'
     code: '20'
     state_code: '06'
+  active: true
   bioguide_id: P000613
   official_full: Jimmy Panetta
   role: United States Representative
@@ -25944,6 +26182,7 @@ reps:
     full_code: '0405'
     code: '05'
     state_code: '04'
+  active: true
   bioguide_id: B001302
   official_full: Andy Biggs
   role: United States Representative
@@ -26020,6 +26259,7 @@ reps:
     full_code: '1218'
     code: '18'
     state_code: '12'
+  active: true
   bioguide_id: M001199
   official_full: Brian J. Mast
   role: United States Representative
@@ -26096,6 +26336,7 @@ reps:
     full_code: '1303'
     code: '03'
     state_code: '13'
+  active: true
   bioguide_id: F000465
   official_full: A. Drew Ferguson IV
   role: United States Representative
@@ -26172,6 +26413,7 @@ reps:
     full_code: '3405'
     code: '05'
     state_code: '34'
+  active: true
   bioguide_id: G000583
   official_full: Josh Gottheimer
   role: United States Representative
@@ -26248,6 +26490,7 @@ reps:
     full_code: '1809'
     code: '09'
     state_code: '18'
+  active: true
   bioguide_id: H001074
   official_full: Trey Hollingsworth
   role: United States Representative
@@ -26324,6 +26567,7 @@ reps:
     full_code: '0624'
     code: '24'
     state_code: '06'
+  active: true
   bioguide_id: C001112
   official_full: Salud O. Carbajal
   role: United States Representative
@@ -26421,6 +26665,7 @@ reps:
     full_code: '3603'
     code: '03'
     state_code: '36'
+  active: true
   bioguide_id: S001201
   official_full: Thomas R. Suozzi
   role: United States Representative
@@ -26497,6 +26742,7 @@ reps:
     full_code: '3622'
     code: '22'
     state_code: '36'
+  active: true
   bioguide_id: T000478
   official_full: Claudia Tenney
   role: United States Representative
@@ -26573,6 +26819,7 @@ reps:
     full_code: '4208'
     code: '08'
     state_code: '42'
+  active: true
   bioguide_id: F000466
   official_full: Brian K. Fitzpatrick
   role: United States Representative
@@ -26649,6 +26896,7 @@ reps:
     full_code: '1205'
     code: '05'
     state_code: '12'
+  active: true
   bioguide_id: L000586
   official_full: Al Lawson, Jr.
   role: United States Representative
@@ -26725,6 +26973,7 @@ reps:
     full_code: '1708'
     code: '08'
     state_code: '17'
+  active: true
   bioguide_id: K000391
   official_full: Raja Krishnamoorthi
   role: United States Representative
@@ -26801,6 +27050,7 @@ reps:
     full_code: '3613'
     code: '13'
     state_code: '36'
+  active: true
   bioguide_id: E000297
   official_full: Adriano Espaillat
   role: United States Representative
@@ -26898,6 +27148,7 @@ reps:
     full_code: '4708'
     code: '08'
     state_code: '47'
+  active: true
   bioguide_id: K000392
   official_full: David Kustoff
   role: United States Representative
@@ -27016,6 +27267,7 @@ reps:
     full_code: '2702'
     code: '02'
     state_code: '27'
+  active: true
   bioguide_id: L000587
   official_full: Jason Lewis
   role: United States Representative
@@ -27092,6 +27344,7 @@ reps:
     full_code: '1209'
     code: '09'
     state_code: '12'
+  active: true
   bioguide_id: S001200
   official_full: Darren Soto
   role: United States Representative
@@ -27168,6 +27421,7 @@ reps:
     full_code: '2001'
     code: '01'
     state_code: '20'
+  active: true
   bioguide_id: M001198
   official_full: Roger W. Marshall
   role: United States Representative
@@ -27244,6 +27498,7 @@ reps:
     full_code: '1204'
     code: '04'
     state_code: '12'
+  active: true
   bioguide_id: R000609
   official_full: John H. Rutherford
   role: United States Representative
@@ -27320,6 +27575,7 @@ reps:
     full_code: '2204'
     code: '04'
     state_code: '22'
+  active: true
   bioguide_id: J000299
   official_full: Mike Johnson
   role: United States Representative
@@ -27396,6 +27652,7 @@ reps:
     full_code: '0646'
     code: '46'
     state_code: '06'
+  active: true
   bioguide_id: C001110
   official_full: J. Luis Correa
   role: United States Representative
@@ -27451,6 +27708,7 @@ reps:
     full_code: '3102'
     code: '02'
     state_code: '31'
+  active: true
   bioguide_id: B001298
   official_full: Don Bacon
   role: United States Representative
@@ -27527,6 +27785,7 @@ reps:
     full_code: '5102'
     code: '02'
     state_code: '51'
+  active: true
   bioguide_id: T000477
   official_full: Scott Taylor
   role: United States Representative
@@ -27582,6 +27841,7 @@ reps:
     full_code: '3620'
     code: '20'
     state_code: '36'
+  active: true
   bioguide_id: T000469
   official_full: Paul Tonko
   role: United States Representative
@@ -27695,6 +27955,7 @@ reps:
     state_code: '69'
     name: Commonwealth of the Northern Mariana Islands
     abbr: MP
+  active: true
   bioguide_id: S001177
   official_full: Gregorio Kilili Camacho Sablan
   role: United States Representative
@@ -27813,6 +28074,7 @@ reps:
     full_code: '2607'
     code: '07'
     state_code: '26'
+  active: true
   bioguide_id: W000798
   official_full: Tim Walberg
   role: United States Representative
@@ -27889,6 +28151,7 @@ reps:
     full_code: '3607'
     code: '07'
     state_code: '36'
+  active: true
   bioguide_id: V000081
   official_full: Nydia M. Velázquez
   role: United States Representative
@@ -28002,6 +28265,7 @@ reps:
     state_code: '19'
     name: Iowa
     abbr: IA
+  active: true
   bioguide_id: E000295
   official_full: Joni Ernst
   role: United States Senator
@@ -28162,6 +28426,7 @@ reps:
     full_code: '0503'
     code: '03'
     state_code: '05'
+  active: true
   bioguide_id: W000809
   official_full: Steve Womack
   role: United States Representative
@@ -28275,6 +28540,7 @@ reps:
     state_code: '18'
     name: Indiana
     abbr: IN
+  active: true
   bioguide_id: Y000064
   official_full: Todd Young
   role: United States Senator
@@ -28409,6 +28675,7 @@ reps:
     state_code: '51'
     name: Virginia
     abbr: VA
+  active: true
   bioguide_id: W000805
   official_full: Mark R. Warner
   role: United States Senator
@@ -28569,6 +28836,7 @@ reps:
     full_code: '0643'
     code: '43'
     state_code: '06'
+  active: true
   bioguide_id: W000187
   official_full: Maxine Waters
   role: United States Representative
@@ -28640,6 +28908,7 @@ reps:
     state_code: '24'
     name: Maryland
     abbr: MD
+  active: true
   bioguide_id: V000128
   official_full: Chris Van Hollen
   role: United States Senator
@@ -28695,6 +28964,7 @@ reps:
     full_code: '0605'
     code: '05'
     state_code: '06'
+  active: true
   bioguide_id: T000460
   official_full: Mike Thompson
   role: United States Representative
@@ -28813,6 +29083,7 @@ reps:
     full_code: '2802'
     code: '02'
     state_code: '28'
+  active: true
   bioguide_id: T000193
   official_full: Bennie G. Thompson
   role: United States Representative
@@ -28994,6 +29265,7 @@ reps:
     full_code: '3915'
     code: '15'
     state_code: '39'
+  active: true
   bioguide_id: S001187
   official_full: Steve Stivers
   role: United States Representative
@@ -29107,6 +29379,7 @@ reps:
     state_code: '33'
     name: New Hampshire
     abbr: NH
+  active: true
   bioguide_id: S001181
   official_full: Jeanne Shaheen
   role: United States Senator
@@ -29288,6 +29561,7 @@ reps:
     full_code: '0614'
     code: '14'
     state_code: '06'
+  active: true
   bioguide_id: S001175
   official_full: Jackie Speier
   role: United States Representative
@@ -29364,6 +29638,7 @@ reps:
     full_code: '1313'
     code: '13'
     state_code: '13'
+  active: true
   bioguide_id: S001157
   official_full: David Scott
   role: United States Representative
@@ -29461,6 +29736,7 @@ reps:
     full_code: '4209'
     code: '09'
     state_code: '42'
+  active: true
   bioguide_id: S001154
   official_full: Bill Shuster
   role: United States Representative
@@ -29579,6 +29855,7 @@ reps:
     full_code: '3625'
     code: '25'
     state_code: '36'
+  active: true
   bioguide_id: S000480
   official_full: Louise McIntosh Slaughter
   role: United States Representative
@@ -29655,6 +29932,7 @@ reps:
     full_code: '5104'
     code: '04'
     state_code: '51'
+  active: true
   bioguide_id: M001200
   official_full: A. Donald McEachin
   role: United States Representative
@@ -29710,6 +29988,7 @@ reps:
     full_code: '4815'
     code: '15'
     state_code: '48'
+  active: true
   bioguide_id: G000581
   official_full: Vicente Gonzalez
   role: United States Representative
@@ -29786,6 +30065,7 @@ reps:
     full_code: '5600'
     code: '00'
     state_code: '56'
+  active: true
   bioguide_id: C001109
   official_full: Liz Cheney
   role: United States Representative
@@ -29904,6 +30184,7 @@ reps:
     full_code: '5508'
     code: '08'
     state_code: '55'
+  active: true
   bioguide_id: G000579
   official_full: Mike Gallagher
   role: United States Representative
@@ -29980,6 +30261,7 @@ reps:
     full_code: '5505'
     code: '05'
     state_code: '55'
+  active: true
   bioguide_id: S000244
   official_full: F. James Sensenbrenner, Jr.
   role: United States Representative
@@ -30056,6 +30338,7 @@ reps:
     full_code: '1706'
     code: '06'
     state_code: '17'
+  active: true
   bioguide_id: R000580
   official_full: Peter J. Roskam
   role: United States Representative
@@ -30153,6 +30436,7 @@ reps:
     full_code: '4802'
     code: '02'
     state_code: '48'
+  active: true
   bioguide_id: P000592
   official_full: Ted Poe
   role: United States Representative
@@ -30229,6 +30513,7 @@ reps:
     full_code: '1215'
     code: '15'
     state_code: '12'
+  active: true
   bioguide_id: R000593
   official_full: Dennis A. Ross
   role: United States Representative
@@ -30321,6 +30606,7 @@ reps:
     state_code: '01'
     name: Alabama
     abbr: AL
+  active: true
   bioguide_id: S000320
   official_full: Richard C. Shelby
   role: United States Senator
@@ -30481,6 +30767,7 @@ reps:
     full_code: '0102'
     code: '02'
     state_code: '01'
+  active: true
   bioguide_id: R000591
   official_full: Martha Roby
   role: United States Representative
@@ -30599,6 +30886,7 @@ reps:
     full_code: '3623'
     code: '23'
     state_code: '36'
+  active: true
   bioguide_id: R000585
   official_full: Tom Reed
   role: United States Representative
@@ -30759,6 +31047,7 @@ reps:
     full_code: '0640'
     code: '40'
     state_code: '06'
+  active: true
   bioguide_id: R000486
   official_full: Lucille Roybal-Allard
   role: United States Representative
@@ -30835,6 +31124,7 @@ reps:
     full_code: '0802'
     code: '02'
     state_code: '08'
+  active: true
   bioguide_id: P000598
   official_full: Jared Polis
   role: United States Representative
@@ -30948,6 +31238,7 @@ reps:
     state_code: '26'
     name: Michigan
     abbr: MI
+  active: true
   bioguide_id: P000595
   official_full: Gary C. Peters
   role: United States Senator
@@ -31150,6 +31441,7 @@ reps:
     full_code: '3704'
     code: '04'
     state_code: '37'
+  active: true
   bioguide_id: P000523
   official_full: David E. Price
   role: United States Representative
@@ -31268,6 +31560,7 @@ reps:
     full_code: '4600'
     code: '00'
     state_code: '46'
+  active: true
   bioguide_id: N000184
   official_full: Kristi L. Noem
   role: United States Representative
@@ -31428,6 +31721,7 @@ reps:
     full_code: '0632'
     code: '32'
     state_code: '06'
+  active: true
   bioguide_id: N000179
   official_full: Grace F. Napolitano
   role: United States Representative
@@ -31504,6 +31798,7 @@ reps:
     full_code: '3610'
     code: '10'
     state_code: '36'
+  active: true
   bioguide_id: N000002
   official_full: Jerrold Nadler
   role: United States Representative
@@ -31601,6 +31896,7 @@ reps:
     full_code: '4210'
     code: '10'
     state_code: '42'
+  active: true
   bioguide_id: M001179
   official_full: Tom Marino
   role: United States Representative
@@ -31714,6 +32010,7 @@ reps:
     state_code: '41'
     name: Oregon
     abbr: OR
+  active: true
   bioguide_id: M001176
   official_full: Jeff Merkley
   role: United States Senator
@@ -31895,6 +32192,7 @@ reps:
     full_code: '0609'
     code: '09'
     state_code: '06'
+  active: true
   bioguide_id: M001166
   official_full: Jerry McNerney
   role: United States Representative
@@ -31992,6 +32290,7 @@ reps:
     full_code: '5504'
     code: '04'
     state_code: '55'
+  active: true
   bioguide_id: M001160
   official_full: Gwen Moore
   role: United States Representative
@@ -32068,6 +32367,7 @@ reps:
     full_code: '4810'
     code: '10'
     state_code: '48'
+  active: true
   bioguide_id: M001157
   official_full: Michael T. McCaul
   role: United States Representative
@@ -32207,6 +32507,7 @@ reps:
     full_code: '3605'
     code: '05'
     state_code: '36'
+  active: true
   bioguide_id: M001137
   official_full: Gregory W. Meeks
   role: United States Representative
@@ -32300,6 +32601,7 @@ reps:
     state_code: '34'
     name: New Jersey
     abbr: NJ
+  active: true
   bioguide_id: M000639
   official_full: Robert Menendez
   role: United States Senator
@@ -32397,6 +32699,7 @@ reps:
     full_code: '3602'
     code: '02'
     state_code: '36'
+  active: true
   bioguide_id: K000210
   official_full: Peter T. King
   role: United States Representative
@@ -32473,6 +32776,7 @@ reps:
     full_code: '0904'
     code: '04'
     state_code: '09'
+  active: true
   bioguide_id: H001047
   official_full: James A. Himes
   role: United States Representative
@@ -32570,6 +32874,7 @@ reps:
     full_code: '1601'
     code: '01'
     state_code: '16'
+  active: true
   bioguide_id: L000573
   official_full: Raúl R. Labrador
   role: United States Representative
@@ -32688,6 +32993,7 @@ reps:
     full_code: '2502'
     code: '02'
     state_code: '25'
+  active: true
   bioguide_id: M000312
   official_full: James P. McGovern
   role: United States Representative
@@ -32801,6 +33107,7 @@ reps:
     state_code: '40'
     name: Oklahoma
     abbr: OK
+  active: true
   bioguide_id: L000575
   official_full: James Lankford
   role: United States Senator
@@ -32898,6 +33205,7 @@ reps:
     full_code: '2903'
     code: '03'
     state_code: '29'
+  active: true
   bioguide_id: L000569
   official_full: Blaine Luetkemeyer
   role: United States Representative
@@ -33016,6 +33324,7 @@ reps:
     full_code: '3905'
     code: '05'
     state_code: '39'
+  active: true
   bioguide_id: L000566
   official_full: Robert E. Latta
   role: United States Representative
@@ -33134,6 +33443,7 @@ reps:
     full_code: '1703'
     code: '03'
     state_code: '17'
+  active: true
   bioguide_id: L000563
   official_full: Daniel Lipinski
   role: United States Representative
@@ -33273,6 +33583,7 @@ reps:
     full_code: '0619'
     code: '19'
     state_code: '06'
+  active: true
   bioguide_id: L000397
   official_full: Zoe Lofgren
   role: United States Representative
@@ -33349,6 +33660,7 @@ reps:
     full_code: '2609'
     code: '09'
     state_code: '26'
+  active: true
   bioguide_id: L000263
   official_full: Sander M. Levin
   role: United States Representative
@@ -33426,6 +33738,7 @@ reps:
     full_code: '4203'
     code: '03'
     state_code: '42'
+  active: true
   bioguide_id: K000376
   official_full: Mike Kelly
   role: United States Representative
@@ -33565,6 +33878,7 @@ reps:
     full_code: '2002'
     code: '02'
     state_code: '20'
+  active: true
   bioguide_id: J000290
   official_full: Lynn Jenkins
   role: United States Representative
@@ -33662,6 +33976,7 @@ reps:
     full_code: '3703'
     code: '03'
     state_code: '37'
+  active: true
   bioguide_id: J000255
   official_full: Walter B. Jones
   role: United States Representative
@@ -33780,6 +34095,7 @@ reps:
     full_code: '4830'
     code: '30'
     state_code: '48'
+  active: true
   bioguide_id: J000126
   official_full: Eddie Bernice Johnson
   role: United States Representative
@@ -33851,6 +34167,7 @@ reps:
     state_code: '38'
     name: North Dakota
     abbr: ND
+  active: true
   bioguide_id: H001061
   official_full: John Hoeven
   role: United States Senator
@@ -34011,6 +34328,7 @@ reps:
     full_code: '2803'
     code: '03'
     state_code: '28'
+  active: true
   bioguide_id: H001045
   official_full: Gregg Harper
   role: United States Representative
@@ -34145,6 +34463,7 @@ reps:
     state_code: '32'
     name: Nevada
     abbr: NV
+  active: true
   bioguide_id: H001041
   official_full: Dean Heller
   role: United States Senator
@@ -34242,6 +34561,7 @@ reps:
     full_code: '4805'
     code: '05'
     state_code: '48'
+  active: true
   bioguide_id: H001036
   official_full: Jeb Hensarling
   role: United States Representative
@@ -34339,6 +34659,7 @@ reps:
     full_code: '0404'
     code: '04'
     state_code: '04'
+  active: true
   bioguide_id: G000565
   official_full: Paul A. Gosar
   role: United States Representative
@@ -34457,6 +34778,7 @@ reps:
     full_code: '3907'
     code: '07'
     state_code: '39'
+  active: true
   bioguide_id: G000563
   official_full: Bob Gibbs
   role: United States Representative
@@ -34554,6 +34876,7 @@ reps:
     full_code: '0603'
     code: '03'
     state_code: '06'
+  active: true
   bioguide_id: G000559
   official_full: John Garamendi
   role: United States Representative
@@ -34672,6 +34995,7 @@ reps:
     full_code: '4809'
     code: '09'
     state_code: '48'
+  active: true
   bioguide_id: G000553
   official_full: Al Green
   role: United States Representative
@@ -34748,6 +35072,7 @@ reps:
     full_code: '5106'
     code: '06'
     state_code: '51'
+  active: true
   bioguide_id: G000289
   official_full: Bob Goodlatte
   role: United States Representative
@@ -34887,6 +35212,7 @@ reps:
     full_code: '4704'
     code: '04'
     state_code: '47'
+  active: true
   bioguide_id: D000616
   official_full: Scott DesJarlais
   role: United States Representative
@@ -35026,6 +35352,7 @@ reps:
     full_code: '3701'
     code: '01'
     state_code: '37'
+  active: true
   bioguide_id: B001251
   official_full: G. K. Butterfield
   role: United States Representative
@@ -35123,6 +35450,7 @@ reps:
     full_code: '0601'
     code: '01'
     state_code: '06'
+  active: true
   bioguide_id: L000578
   official_full: Doug LaMalfa
   role: United States Representative
@@ -35236,6 +35564,7 @@ reps:
     state_code: '29'
     name: Missouri
     abbr: MO
+  active: true
   bioguide_id: B000575
   official_full: Roy Blunt
   role: United States Senator
@@ -35396,6 +35725,7 @@ reps:
     full_code: '3901'
     code: '01'
     state_code: '39'
+  active: true
   bioguide_id: C000266
   official_full: Steve Chabot
   role: United States Representative
@@ -35493,6 +35823,7 @@ reps:
     full_code: '4703'
     code: '03'
     state_code: '47'
+  active: true
   bioguide_id: F000459
   official_full: Charles J. "Chuck" Fleischmann
   role: United States Representative
@@ -35611,6 +35942,7 @@ reps:
     full_code: '3101'
     code: '01'
     state_code: '31'
+  active: true
   bioguide_id: F000449
   official_full: Jeff Fortenberry
   role: United States Representative
@@ -35729,6 +36061,7 @@ reps:
     full_code: '5507'
     code: '07'
     state_code: '55'
+  active: true
   bioguide_id: D000614
   official_full: Sean P. Duffy
   role: United States Representative
@@ -35847,6 +36180,7 @@ reps:
     full_code: '1225'
     code: '25'
     state_code: '12'
+  active: true
   bioguide_id: D000600
   official_full: Mario Diaz-Balart
   role: United States Representative
@@ -35944,6 +36278,7 @@ reps:
     full_code: '4835'
     code: '35'
     state_code: '48'
+  active: true
   bioguide_id: D000399
   official_full: Lloyd Doggett
   role: United States Representative
@@ -36041,6 +36376,7 @@ reps:
     full_code: '5111'
     code: '11'
     state_code: '51'
+  active: true
   bioguide_id: C001078
   official_full: Gerald E. Connolly
   role: United States Representative
@@ -36138,6 +36474,7 @@ reps:
     full_code: '4903'
     code: '03'
     state_code: '49'
+  active: true
   bioguide_id: C001076
   official_full: Jason Chaffetz
   role: United States Representative
@@ -36214,6 +36551,7 @@ reps:
     full_code: '4811'
     code: '11'
     state_code: '48'
+  active: true
   bioguide_id: C001062
   official_full: K. Michael Conaway
   role: United States Representative
@@ -36395,6 +36733,7 @@ reps:
     full_code: '4831'
     code: '31'
     state_code: '48'
+  active: true
   bioguide_id: C001051
   official_full: John R. Carter
   role: United States Representative
@@ -36492,6 +36831,7 @@ reps:
     full_code: '4807'
     code: '07'
     state_code: '48'
+  active: true
   bioguide_id: C001048
   official_full: John Abney Culberson
   role: United States Representative
@@ -36568,6 +36908,7 @@ reps:
     full_code: '2507'
     code: '07'
     state_code: '25'
+  active: true
   bioguide_id: C001037
   official_full: Michael E. Capuano
   role: United States Representative
@@ -36681,6 +37022,7 @@ reps:
     state_code: '16'
     name: Idaho
     abbr: ID
+  active: true
   bioguide_id: C000880
   official_full: Mike Crapo
   role: United States Senator
@@ -36862,6 +37204,7 @@ reps:
     full_code: '1808'
     code: '08'
     state_code: '18'
+  active: true
   bioguide_id: B001275
   official_full: Larry Bucshon
   role: United States Representative
@@ -37001,6 +37344,7 @@ reps:
     full_code: '0637'
     code: '37'
     state_code: '06'
+  active: true
   bioguide_id: B001270
   official_full: Karen Bass
   role: United States Representative
@@ -37072,6 +37416,7 @@ reps:
     state_code: '08'
     name: Colorado
     abbr: CO
+  active: true
   bioguide_id: B001267
   official_full: Michael F. Bennet
   role: United States Senator
@@ -37274,6 +37619,7 @@ reps:
     full_code: '4707'
     code: '07'
     state_code: '47'
+  active: true
   bioguide_id: B001243
   official_full: Marsha Blackburn
   role: United States Representative
@@ -37366,6 +37712,7 @@ reps:
     state_code: '37'
     name: North Carolina
     abbr: NC
+  active: true
   bioguide_id: B001135
   official_full: Richard Burr
   role: United States Senator
@@ -37505,6 +37852,7 @@ reps:
     full_code: '0652'
     code: '52'
     state_code: '06'
+  active: true
   bioguide_id: P000608
   official_full: Scott H. Peters
   role: United States Representative
@@ -37581,6 +37929,7 @@ reps:
     full_code: '3501'
     code: '01'
     state_code: '35'
+  active: true
   bioguide_id: L000580
   official_full: Michelle Lujan Grisham
   role: United States Representative
@@ -37657,6 +38006,7 @@ reps:
     full_code: '3609'
     code: '09'
     state_code: '36'
+  active: true
   bioguide_id: C001067
   official_full: Yvette D. Clarke
   role: United States Representative
@@ -37733,6 +38083,7 @@ reps:
     full_code: '0104'
     code: '04'
     state_code: '01'
+  active: true
   bioguide_id: A000055
   official_full: Robert B. Aderholt
   role: United States Representative
@@ -37867,6 +38218,7 @@ reps:
     state_code: '23'
     name: Maine
     abbr: ME
+  active: true
   bioguide_id: K000383
   official_full: Angus S. King, Jr.
   role: United States Senator
@@ -38006,6 +38358,7 @@ reps:
     full_code: '1805'
     code: '05'
     state_code: '18'
+  active: true
   bioguide_id: B001284
   official_full: Susan W. Brooks
   role: United States Representative
@@ -38103,6 +38456,7 @@ reps:
     full_code: '3606'
     code: '06'
     state_code: '36'
+  active: true
   bioguide_id: M001188
   official_full: Grace Meng
   role: United States Representative
@@ -38200,6 +38554,7 @@ reps:
     full_code: '2708'
     code: '08'
     state_code: '27'
+  active: true
   bioguide_id: N000127
   official_full: Richard M. Nolan
   role: United States Representative
@@ -38339,6 +38694,7 @@ reps:
     full_code: '0641'
     code: '41'
     state_code: '06'
+  active: true
   bioguide_id: T000472
   official_full: Mark Takano
   role: United States Representative
@@ -38415,6 +38771,7 @@ reps:
     full_code: '3914'
     code: '14'
     state_code: '39'
+  active: true
   bioguide_id: J000295
   official_full: David P. Joyce
   role: United States Representative
@@ -38512,6 +38869,7 @@ reps:
     full_code: '1502'
     code: '02'
     state_code: '15'
+  active: true
   bioguide_id: G000571
   official_full: Tulsi Gabbard
   role: United States Representative
@@ -38588,6 +38946,7 @@ reps:
     full_code: '3302'
     code: '02'
     state_code: '33'
+  active: true
   bioguide_id: K000382
   official_full: Ann M. Kuster
   role: United States Representative
@@ -38706,6 +39065,7 @@ reps:
     full_code: '4217'
     code: '17'
     state_code: '42'
+  active: true
   bioguide_id: C001090
   official_full: Matt Cartwright
   role: United States Representative
@@ -38845,6 +39205,7 @@ reps:
     full_code: '0607'
     code: '07'
     state_code: '06'
+  active: true
   bioguide_id: B001287
   official_full: Ami Bera
   role: United States Representative
@@ -38921,6 +39282,7 @@ reps:
     full_code: '3711'
     code: '11'
     state_code: '37'
+  active: true
   bioguide_id: M001187
   official_full: Mark Meadows
   role: United States Representative
@@ -39354,6 +39716,7 @@ reps:
     full_code: '4834'
     code: '34'
     state_code: '48'
+  active: true
   bioguide_id: V000132
   official_full: Filemon Vela
   role: United States Representative
@@ -39493,6 +39856,7 @@ reps:
     full_code: '3800'
     code: '00'
     state_code: '38'
+  active: true
   bioguide_id: C001096
   official_full: Kevin Cramer
   role: United States Representative
@@ -39632,6 +39996,7 @@ reps:
     full_code: '1713'
     code: '13'
     state_code: '17'
+  active: true
   bioguide_id: D000619
   official_full: Rodney Davis
   role: United States Representative
@@ -39813,6 +40178,7 @@ reps:
     full_code: '1707'
     code: '07'
     state_code: '17'
+  active: true
   bioguide_id: D000096
   official_full: Danny K. Davis
   role: United States Representative
@@ -39889,6 +40255,7 @@ reps:
     full_code: '2906'
     code: '06'
     state_code: '29'
+  active: true
   bioguide_id: G000546
   official_full: Sam Graves
   role: United States Representative
@@ -40007,6 +40374,7 @@ reps:
     full_code: '4825'
     code: '25'
     state_code: '48'
+  active: true
   bioguide_id: W000816
   official_full: Roger Williams
   role: United States Representative
@@ -40099,6 +40467,7 @@ reps:
     state_code: '17'
     name: Illinois
     abbr: IL
+  active: true
   bioguide_id: D000622
   official_full: Tammy Duckworth
   role: United States Senator
@@ -40175,6 +40544,7 @@ reps:
     full_code: '3412'
     code: '12'
     state_code: '34'
+  active: true
   bioguide_id: W000822
   official_full: Bonnie Watson Coleman
   role: United States Representative
@@ -40246,6 +40616,7 @@ reps:
     state_code: '16'
     name: Idaho
     abbr: ID
+  active: true
   bioguide_id: R000584
   official_full: James E. Risch
   role: United States Senator
@@ -40427,6 +40798,7 @@ reps:
     full_code: '4901'
     code: '01'
     state_code: '49'
+  active: true
   bioguide_id: B001250
   official_full: Rob Bishop
   role: United States Representative
@@ -40524,6 +40896,7 @@ reps:
     full_code: '4804'
     code: '04'
     state_code: '48'
+  active: true
   bioguide_id: R000601
   official_full: John Ratcliffe
   role: United States Representative
@@ -40642,6 +41015,7 @@ reps:
     full_code: '1301'
     code: '01'
     state_code: '13'
+  active: true
   bioguide_id: C001103
   official_full: Earl L. "Buddy" Carter
   role: United States Representative
@@ -40739,6 +41113,7 @@ reps:
     full_code: '0504'
     code: '04'
     state_code: '05'
+  active: true
   bioguide_id: W000821
   official_full: Bruce Westerman
   role: United States Representative
@@ -40878,6 +41253,7 @@ reps:
     full_code: '2608'
     code: '08'
     state_code: '26'
+  active: true
   bioguide_id: B001293
   official_full: Mike Bishop
   role: United States Representative
@@ -40954,6 +41330,7 @@ reps:
     full_code: '0631'
     code: '31'
     state_code: '06'
+  active: true
   bioguide_id: A000371
   official_full: Pete Aguilar
   role: United States Representative
@@ -41030,6 +41407,7 @@ reps:
     full_code: '5506'
     code: '06'
     state_code: '55'
+  active: true
   bioguide_id: G000576
   official_full: Glenn Grothman
   role: United States Representative
@@ -41106,6 +41484,7 @@ reps:
     full_code: '0651'
     code: '51'
     state_code: '06'
+  active: true
   bioguide_id: V000130
   official_full: Juan Vargas
   role: United States Representative
@@ -41203,6 +41582,7 @@ reps:
     full_code: '4820'
     code: '20'
     state_code: '48'
+  active: true
   bioguide_id: C001091
   official_full: Joaquin Castro
   role: United States Representative
@@ -41279,6 +41659,7 @@ reps:
     full_code: '0626'
     code: '26'
     state_code: '06'
+  active: true
   bioguide_id: B001285
   official_full: Julia Brownley
   role: United States Representative
@@ -41376,6 +41757,7 @@ reps:
     full_code: '0106'
     code: '06'
     state_code: '01'
+  active: true
   bioguide_id: P000609
   official_full: Gary J. Palmer
   role: United States Representative
@@ -41489,6 +41871,7 @@ reps:
     state_code: '46'
     name: South Dakota
     abbr: SD
+  active: true
   bioguide_id: R000605
   official_full: Mike Rounds
   role: United States Senator
@@ -41628,6 +42011,7 @@ reps:
     full_code: '4401'
     code: '01'
     state_code: '44'
+  active: true
   bioguide_id: C001084
   official_full: David N. Cicilline
   role: United States Representative
@@ -41704,6 +42088,7 @@ reps:
     full_code: '2901'
     code: '01'
     state_code: '29'
+  active: true
   bioguide_id: C001049
   official_full: Wm. Lacy Clay
   role: United States Representative
@@ -41817,6 +42202,7 @@ reps:
     state_code: '09'
     name: Connecticut
     abbr: CT
+  active: true
   bioguide_id: B001277
   official_full: Richard Blumenthal
   role: United States Senator
@@ -41914,6 +42300,7 @@ reps:
     full_code: '3411'
     code: '11'
     state_code: '34'
+  active: true
   bioguide_id: F000372
   official_full: Rodney P. Frelinghuysen
   role: United States Representative
@@ -41985,6 +42372,7 @@ reps:
     state_code: '27'
     name: Minnesota
     abbr: MN
+  active: true
   bioguide_id: F000457
   official_full: Al Franken
   role: United States Senator
@@ -42119,6 +42507,7 @@ reps:
     state_code: '51'
     name: Virginia
     abbr: VA
+  active: true
   bioguide_id: K000384
   official_full: Tim Kaine
   role: United States Senator
@@ -42300,6 +42689,7 @@ reps:
     full_code: '4501'
     code: '01'
     state_code: '45'
+  active: true
   bioguide_id: S000051
   official_full: Mark Sanford
   role: United States Representative
@@ -42392,6 +42782,7 @@ reps:
     state_code: '34'
     name: New Jersey
     abbr: NJ
+  active: true
   bioguide_id: B001288
   official_full: Cory A. Booker
   role: United States Senator
@@ -42489,6 +42880,7 @@ reps:
     full_code: '1903'
     code: '03'
     state_code: '19'
+  active: true
   bioguide_id: Y000066
   official_full: David Young
   role: United States Representative
@@ -42607,6 +42999,7 @@ reps:
     full_code: '0625'
     code: '25'
     state_code: '06'
+  active: true
   bioguide_id: K000387
   official_full: Stephen Knight
   role: United States Representative
@@ -42725,6 +43118,7 @@ reps:
     full_code: '3401'
     code: '01'
     state_code: '34'
+  active: true
   bioguide_id: N000188
   official_full: Donald Norcross
   role: United States Representative
@@ -42801,6 +43195,7 @@ reps:
     full_code: '2707'
     code: '07'
     state_code: '27'
+  active: true
   bioguide_id: P000258
   official_full: Collin C. Peterson
   role: United States Representative
@@ -42961,6 +43356,7 @@ reps:
     full_code: '0501'
     code: '01'
     state_code: '05'
+  active: true
   bioguide_id: C001087
   official_full: Eric A. "Rick" Crawford
   role: United States Representative
@@ -43074,6 +43470,7 @@ reps:
     state_code: '18'
     name: Indiana
     abbr: IN
+  active: true
   bioguide_id: D000607
   official_full: Joe Donnelly
   role: United States Senator
@@ -43255,6 +43652,7 @@ reps:
     full_code: '1704'
     code: '04'
     state_code: '17'
+  active: true
   bioguide_id: G000535
   official_full: Luis V. Gutiérrez
   role: United States Representative
@@ -43331,6 +43729,7 @@ reps:
     full_code: '0805'
     code: '05'
     state_code: '08'
+  active: true
   bioguide_id: L000564
   official_full: Doug Lamborn
   role: United States Representative
@@ -43407,6 +43806,7 @@ reps:
     full_code: '1217'
     code: '17'
     state_code: '12'
+  active: true
   bioguide_id: R000583
   official_full: Thomas J. Rooney
   role: United States Representative
@@ -43520,6 +43920,7 @@ reps:
     state_code: '12'
     name: Florida
     abbr: FL
+  active: true
   bioguide_id: R000595
   official_full: Marco Rubio
   role: United States Senator
@@ -43743,6 +44144,7 @@ reps:
     full_code: '4207'
     code: '07'
     state_code: '42'
+  active: true
   bioguide_id: M001181
   official_full: Patrick Meehan
   role: United States Representative
@@ -43903,6 +44305,7 @@ reps:
     full_code: '0623'
     code: '23'
     state_code: '06'
+  active: true
   bioguide_id: M001165
   official_full: Kevin McCarthy
   role: United States Representative
@@ -43974,6 +44377,7 @@ reps:
     state_code: '49'
     name: Utah
     abbr: UT
+  active: true
   bioguide_id: L000577
   official_full: Mike Lee
   role: United States Senator
@@ -44092,6 +44496,7 @@ reps:
     full_code: '3617'
     code: '17'
     state_code: '36'
+  active: true
   bioguide_id: L000480
   official_full: Nita M. Lowey
   role: United States Representative
@@ -44189,6 +44594,7 @@ reps:
     full_code: '1716'
     code: '16'
     state_code: '17'
+  active: true
   bioguide_id: K000378
   official_full: Adam Kinzinger
   role: United States Representative
@@ -44307,6 +44713,7 @@ reps:
     full_code: '2509'
     code: '09'
     state_code: '25'
+  active: true
   bioguide_id: K000375
   official_full: William R. Keating
   role: United States Representative
@@ -44425,6 +44832,7 @@ reps:
     full_code: '1304'
     code: '04'
     state_code: '13'
+  active: true
   bioguide_id: J000288
   official_full: Henry C. "Hank" Johnson, Jr.
   role: United States Representative
@@ -44501,6 +44909,7 @@ reps:
     full_code: '2602'
     code: '02'
     state_code: '26'
+  active: true
   bioguide_id: H001058
   official_full: Bill Huizenga
   role: United States Representative
@@ -44598,6 +45007,7 @@ reps:
     full_code: '3626'
     code: '26'
     state_code: '36'
+  active: true
   bioguide_id: H001038
   official_full: Brian Higgins
   role: United States Representative
@@ -44690,6 +45100,7 @@ reps:
     state_code: '08'
     name: Colorado
     abbr: CO
+  active: true
   bioguide_id: G000562
   official_full: Cory Gardner
   role: United States Senator
@@ -44913,6 +45324,7 @@ reps:
     full_code: '4817'
     code: '17'
     state_code: '48'
+  active: true
   bioguide_id: F000461
   official_full: Bill Flores
   role: United States Representative
@@ -45026,6 +45438,7 @@ reps:
     state_code: '04'
     name: Arizona
     abbr: AZ
+  active: true
   bioguide_id: F000444
   official_full: Jeff Flake
   role: United States Senator
@@ -45123,6 +45536,7 @@ reps:
     full_code: '2407'
     code: '07'
     state_code: '24'
+  active: true
   bioguide_id: C000984
   official_full: Elijah E. Cummings
   role: United States Representative
@@ -45241,6 +45655,7 @@ reps:
     full_code: '1718'
     code: '18'
     state_code: '17'
+  active: true
   bioguide_id: L000585
   official_full: Darin LaHood
   role: United States Representative
@@ -45380,6 +45795,7 @@ reps:
     full_code: '0622'
     code: '22'
     state_code: '06'
+  active: true
   bioguide_id: N000181
   official_full: Devin Nunes
   role: United States Representative
@@ -45477,6 +45893,7 @@ reps:
     full_code: '3903'
     code: '03'
     state_code: '39'
+  active: true
   bioguide_id: B001281
   official_full: Joyce Beatty
   role: United States Representative
@@ -45553,6 +45970,7 @@ reps:
     full_code: '4833'
     code: '33'
     state_code: '48'
+  active: true
   bioguide_id: V000131
   official_full: Marc A. Veasey
   role: United States Representative
@@ -45650,6 +46068,7 @@ reps:
     full_code: '2103'
     code: '03'
     state_code: '21'
+  active: true
   bioguide_id: Y000062
   official_full: John A. Yarmuth
   role: United States Representative
@@ -45726,6 +46145,7 @@ reps:
     full_code: '4502'
     code: '02'
     state_code: '45'
+  active: true
   bioguide_id: W000795
   official_full: Joe Wilson
   role: United States Representative
@@ -45823,6 +46243,7 @@ reps:
     full_code: '4102'
     code: '02'
     state_code: '41'
+  active: true
   bioguide_id: W000791
   official_full: Greg Walden
   role: United States Representative
@@ -45941,6 +46362,7 @@ reps:
     full_code: '2503'
     code: '03'
     state_code: '25'
+  active: true
   bioguide_id: T000465
   official_full: Niki Tsongas
   role: United States Representative
@@ -46101,6 +46523,7 @@ reps:
     full_code: '1308'
     code: '08'
     state_code: '13'
+  active: true
   bioguide_id: S001189
   official_full: Austin Scott
   role: United States Representative
@@ -46198,6 +46621,7 @@ reps:
     full_code: '3408'
     code: '08'
     state_code: '34'
+  active: true
   bioguide_id: S001165
   official_full: Albio Sires
   role: United States Representative
@@ -46316,6 +46740,7 @@ reps:
     full_code: '4821'
     code: '21'
     state_code: '48'
+  active: true
   bioguide_id: S000583
   official_full: Lamar Smith
   role: United States Representative
@@ -46434,6 +46859,7 @@ reps:
     full_code: '5103'
     code: '03'
     state_code: '51'
+  active: true
   bioguide_id: S000185
   official_full: Robert C. "Bobby" Scott
   role: United States Representative
@@ -46510,6 +46936,7 @@ reps:
     full_code: '1701'
     code: '01'
     state_code: '17'
+  active: true
   bioguide_id: R000515
   official_full: Bobby L. Rush
   role: United States Representative
@@ -46586,6 +47013,7 @@ reps:
     full_code: '2804'
     code: '04'
     state_code: '28'
+  active: true
   bioguide_id: P000601
   official_full: Steven M. Palazzo
   role: United States Representative
@@ -46704,6 +47132,7 @@ reps:
     full_code: '3502'
     code: '02'
     state_code: '35'
+  active: true
   bioguide_id: P000588
   official_full: Stevan Pearce
   role: United States Representative
@@ -46885,6 +47314,7 @@ reps:
     full_code: '1206'
     code: '06'
     state_code: '12'
+  active: true
   bioguide_id: D000621
   official_full: Ron DeSantis
   role: United States Representative
@@ -46982,6 +47412,7 @@ reps:
     full_code: '2406'
     code: '06'
     state_code: '24'
+  active: true
   bioguide_id: D000620
   official_full: John K. Delaney
   role: United States Representative
@@ -47079,6 +47510,7 @@ reps:
     full_code: '1806'
     code: '06'
     state_code: '18'
+  active: true
   bioguide_id: M001189
   official_full: Luke Messer
   role: United States Representative
@@ -47192,6 +47624,7 @@ reps:
     state_code: '30'
     name: Montana
     abbr: MT
+  active: true
   bioguide_id: D000618
   official_full: Steve Daines
   role: United States Senator
@@ -47415,6 +47848,7 @@ reps:
     full_code: '4001'
     code: '01'
     state_code: '40'
+  active: true
   bioguide_id: B001283
   official_full: Jim Bridenstine
   role: United States Representative
@@ -47491,6 +47925,7 @@ reps:
     full_code: '1307'
     code: '07'
     state_code: '13'
+  active: true
   bioguide_id: W000810
   official_full: Rob Woodall
   role: United States Representative
@@ -47567,6 +48002,7 @@ reps:
     full_code: '0629'
     code: '29'
     state_code: '06'
+  active: true
   bioguide_id: C001097
   official_full: Tony Cárdenas
   role: United States Representative
@@ -47643,6 +48079,7 @@ reps:
     full_code: '2908'
     code: '08'
     state_code: '29'
+  active: true
   bioguide_id: S001195
   official_full: Jason Smith
   role: United States Representative
@@ -47803,6 +48240,7 @@ reps:
     full_code: '3712'
     code: '12'
     state_code: '37'
+  active: true
   bioguide_id: A000370
   official_full: Alma S. Adams
   role: United States Representative
@@ -47879,6 +48317,7 @@ reps:
     full_code: '3601'
     code: '01'
     state_code: '36'
+  active: true
   bioguide_id: Z000017
   official_full: Lee M. Zeldin
   role: United States Representative
@@ -47976,6 +48415,7 @@ reps:
     full_code: '3611'
     code: '11'
     state_code: '36'
+  active: true
   bioguide_id: D000625
   official_full: Daniel M. Donovan, Jr.
   role: United States Representative
@@ -48073,6 +48513,7 @@ reps:
     full_code: '2203'
     code: '03'
     state_code: '22'
+  active: true
   bioguide_id: H001077
   official_full: Clay Higgins
   role: United States Representative
@@ -48128,6 +48569,7 @@ reps:
     full_code: '3707'
     code: '07'
     state_code: '37'
+  active: true
   bioguide_id: R000603
   official_full: David Rouzer
   role: United States Representative
@@ -48241,6 +48683,7 @@ reps:
     state_code: '31'
     name: Nebraska
     abbr: NE
+  active: true
   bioguide_id: S001197
   official_full: Ben Sasse
   role: United States Senator
@@ -48380,6 +48823,7 @@ reps:
     full_code: '2601'
     code: '01'
     state_code: '26'
+  active: true
   bioguide_id: B001301
   official_full: Jack Bergman
   role: United States Representative
@@ -48472,6 +48916,7 @@ reps:
     state_code: '60'
     name: American Samoa
     abbr: AS
+  active: true
   bioguide_id: R000600
   official_full: Aumua Amata Coleman Radewagen
   role: United States Representative
@@ -48543,6 +48988,7 @@ reps:
     state_code: '37'
     name: North Carolina
     abbr: NC
+  active: true
   bioguide_id: T000476
   official_full: Thom Tillis
   role: United States Senator
@@ -48703,6 +49149,7 @@ reps:
     full_code: '2611'
     code: '11'
     state_code: '26'
+  active: true
   bioguide_id: T000475
   official_full: David A. Trott
   role: United States Representative
@@ -48779,6 +49226,7 @@ reps:
     full_code: '2612'
     code: '12'
     state_code: '26'
+  active: true
   bioguide_id: D000624
   official_full: Debbie Dingell
   role: United States Representative
@@ -48876,6 +49324,7 @@ reps:
     full_code: '0407'
     code: '07'
     state_code: '04'
+  active: true
   bioguide_id: G000574
   official_full: Ruben Gallego
   role: United States Representative
@@ -48952,6 +49401,7 @@ reps:
     full_code: '2506'
     code: '06'
     state_code: '25'
+  active: true
   bioguide_id: M001196
   official_full: Seth Moulton
   role: United States Representative
@@ -49028,6 +49478,7 @@ reps:
     full_code: '1803'
     code: '03'
     state_code: '18'
+  active: true
   bioguide_id: B001299
   official_full: Jim Banks
   role: United States Representative
@@ -49104,6 +49555,7 @@ reps:
     full_code: '1210'
     code: '10'
     state_code: '12'
+  active: true
   bioguide_id: D000627
   official_full: Val Butler Demings
   role: United States Representative
@@ -49180,6 +49632,7 @@ reps:
     full_code: '0644'
     code: '44'
     state_code: '06'
+  active: true
   bioguide_id: B001300
   official_full: Nanette Diaz Barragán
   role: United States Representative
@@ -49277,6 +49730,7 @@ reps:
     full_code: '3908'
     code: '08'
     state_code: '39'
+  active: true
   bioguide_id: D000626
   official_full: Warren Davidson
   role: United States Representative
@@ -49395,6 +49849,7 @@ reps:
     full_code: '5105'
     code: '05'
     state_code: '51'
+  active: true
   bioguide_id: G000580
   official_full: Thomas A. Garrett, Jr.
   role: United States Representative
@@ -49492,6 +49947,7 @@ reps:
     full_code: '0617'
     code: '17'
     state_code: '06'
+  active: true
   bioguide_id: K000389
   official_full: Ro Khanna
   role: United States Representative
@@ -49568,6 +50024,7 @@ reps:
     full_code: '4819'
     code: '19'
     state_code: '48'
+  active: true
   bioguide_id: A000375
   official_full: Jodey C. Arrington
   role: United States Representative
@@ -49665,6 +50122,7 @@ reps:
     full_code: '1710'
     code: '10'
     state_code: '17'
+  active: true
   bioguide_id: S001190
   official_full: Bradley Scott Schneider
   role: United States Representative
@@ -49741,6 +50199,7 @@ reps:
     full_code: '3619'
     code: '19'
     state_code: '36'
+  active: true
   bioguide_id: F000464
   official_full: John J. Faso
   role: United States Representative
@@ -49859,6 +50318,7 @@ reps:
     full_code: '3713'
     code: '13'
     state_code: '37'
+  active: true
   bioguide_id: B001305
   official_full: Ted Budd
   role: United States Representative
@@ -49935,6 +50395,7 @@ reps:
     full_code: '3204'
     code: '04'
     state_code: '32'
+  active: true
   bioguide_id: K000390
   official_full: Ruben Kihuen
   role: United States Representative
@@ -50006,6 +50467,7 @@ reps:
     state_code: '22'
     name: Louisiana
     abbr: LA
+  active: true
   bioguide_id: K000393
   official_full: John Kennedy
   role: United States Senator
@@ -50061,6 +50523,7 @@ reps:
     full_code: '4216'
     code: '16'
     state_code: '42'
+  active: true
   bioguide_id: S001199
   official_full: Lloyd Smucker
   role: United States Representative
@@ -50137,6 +50600,7 @@ reps:
     full_code: '1501'
     code: '01'
     state_code: '15'
+  active: true
   bioguide_id: H001050
   official_full: Colleen Hanabusa
   role: United States Representative
@@ -50213,6 +50677,7 @@ reps:
     full_code: '5303'
     code: '03'
     state_code: '53'
+  active: true
   bioguide_id: H001056
   official_full: Jaime Herrera Beutler
   role: United States Representative
@@ -50310,6 +50775,7 @@ reps:
     full_code: '4402'
     code: '02'
     state_code: '44'
+  active: true
   bioguide_id: L000559
   official_full: James R. Langevin
   role: United States Representative
@@ -50381,6 +50847,7 @@ reps:
     state_code: '25'
     name: Massachusetts
     abbr: MA
+  active: true
   bioguide_id: M000133
   official_full: Edward J. Markey
   role: United States Senator
@@ -50499,6 +50966,7 @@ reps:
     full_code: '2003'
     code: '03'
     state_code: '20'
+  active: true
   bioguide_id: Y000063
   official_full: Kevin Yoder
   role: United States Representative
@@ -50575,6 +51043,7 @@ reps:
     full_code: '5101'
     code: '01'
     state_code: '51'
+  active: true
   bioguide_id: W000804
   official_full: Robert J. Wittman
   role: United States Representative
@@ -50693,6 +51162,7 @@ reps:
     full_code: '1223'
     code: '23'
     state_code: '12'
+  active: true
   bioguide_id: W000797
   official_full: Debbie Wasserman Schultz
   role: United States Representative
@@ -50790,6 +51260,7 @@ reps:
     full_code: '3910'
     code: '10'
     state_code: '39'
+  active: true
   bioguide_id: T000463
   official_full: Michael R. Turner
   role: United States Representative
@@ -50866,6 +51337,7 @@ reps:
     full_code: '0406'
     code: '06'
     state_code: '04'
+  active: true
   bioguide_id: S001183
   official_full: David Schweikert
   role: United States Representative
@@ -50942,6 +51414,7 @@ reps:
     full_code: '1709'
     code: '09'
     state_code: '17'
+  active: true
   bioguide_id: S001145
   official_full: Janice D. Schakowsky
   role: United States Representative
@@ -51060,6 +51533,7 @@ reps:
     full_code: '2402'
     code: '02'
     state_code: '24'
+  active: true
   bioguide_id: R000576
   official_full: C. A. Dutch Ruppersberger
   role: United States Representative
@@ -51136,6 +51610,7 @@ reps:
     full_code: '5501'
     code: '01'
     state_code: '55'
+  active: true
   bioguide_id: R000570
   official_full: Paul D. Ryan
   role: United States Representative
@@ -51254,6 +51729,7 @@ reps:
     full_code: '1705'
     code: '05'
     state_code: '17'
+  active: true
   bioguide_id: Q000023
   official_full: Mike Quigley
   role: United States Representative
@@ -51351,6 +51827,7 @@ reps:
     full_code: '0612'
     code: '12'
     state_code: '06'
+  active: true
   bioguide_id: P000197
   official_full: Nancy Pelosi
   role: United States Representative
@@ -51422,6 +51899,7 @@ reps:
     state_code: '54'
     name: West Virginia
     abbr: WV
+  active: true
   bioguide_id: M001183
   official_full: Joe Manchin, III
   role: United States Senator
@@ -51535,6 +52013,7 @@ reps:
     state_code: '02'
     name: Alaska
     abbr: AK
+  active: true
   bioguide_id: M001153
   official_full: Lisa Murkowski
   role: United States Senator
@@ -51716,6 +52195,7 @@ reps:
     full_code: '0613'
     code: '13'
     state_code: '06'
+  active: true
   bioguide_id: L000551
   official_full: Barbara Lee
   role: United States Representative
@@ -51871,6 +52351,7 @@ reps:
     state_code: '55'
     name: Wisconsin
     abbr: WI
+  active: true
   bioguide_id: J000293
   official_full: Ron Johnson
   role: United States Senator
@@ -51968,6 +52449,7 @@ reps:
     full_code: '1220'
     code: '20'
     state_code: '12'
+  active: true
   bioguide_id: H000324
   official_full: Alcee L. Hastings
   role: United States Representative
@@ -52065,6 +52547,7 @@ reps:
     full_code: '4829'
     code: '29'
     state_code: '48'
+  active: true
   bioguide_id: G000410
   official_full: Gene Green
   role: United States Representative
@@ -52162,6 +52645,7 @@ reps:
     full_code: '2705'
     code: '05'
     state_code: '27'
+  active: true
   bioguide_id: E000288
   official_full: Keith Ellison
   role: United States Representative
@@ -52238,6 +52722,7 @@ reps:
     full_code: '1222'
     code: '22'
     state_code: '12'
+  active: true
   bioguide_id: D000610
   official_full: Theodore E. Deutch
   role: United States Representative
@@ -52356,6 +52841,7 @@ reps:
     full_code: '4104'
     code: '04'
     state_code: '41'
+  active: true
   bioguide_id: D000191
   official_full: Peter A. DeFazio
   role: United States Representative
@@ -52469,6 +52955,7 @@ reps:
     state_code: '23'
     name: Maine
     abbr: ME
+  active: true
   bioguide_id: C001035
   official_full: Susan M. Collins
   role: United States Senator
@@ -52650,6 +53137,7 @@ reps:
     full_code: '3202'
     code: '02'
     state_code: '32'
+  active: true
   bioguide_id: A000369
   official_full: Mark E. Amodei
   role: United States Representative
@@ -52742,6 +53230,7 @@ reps:
     state_code: '28'
     name: Mississippi
     abbr: MS
+  active: true
   bioguide_id: C000567
   official_full: Thad Cochran
   role: United States Senator
@@ -52855,6 +53344,7 @@ reps:
     state_code: '10'
     name: Delaware
     abbr: DE
+  active: true
   bioguide_id: C000174
   official_full: Thomas R. Carper
   role: United States Senator
@@ -52973,6 +53463,7 @@ reps:
     full_code: '1702'
     code: '02'
     state_code: '17'
+  active: true
   bioguide_id: K000385
   official_full: Robin L. Kelly
   role: United States Representative
@@ -53086,6 +53577,7 @@ reps:
     state_code: '13'
     name: Georgia
     abbr: GA
+  active: true
   bioguide_id: I000055
   official_full: Johnny Isakson
   role: United States Senator
@@ -53157,6 +53649,7 @@ reps:
     state_code: '47'
     name: Tennessee
     abbr: TN
+  active: true
   bioguide_id: C001071
   official_full: Bob Corker
   role: United States Senator
@@ -53333,6 +53826,7 @@ reps:
     state_code: '56'
     name: Wyoming
     abbr: WY
+  active: true
   bioguide_id: B001261
   official_full: John Barrasso
   role: United States Senator
@@ -53493,6 +53987,7 @@ reps:
     full_code: '3618'
     code: '18'
     state_code: '36'
+  active: true
   bioguide_id: M001185
   official_full: Sean Patrick Maloney
   role: United States Representative
@@ -53569,6 +54064,7 @@ reps:
     full_code: '0905'
     code: '05'
     state_code: '09'
+  active: true
   bioguide_id: E000293
   official_full: Elizabeth H. Esty
   role: United States Representative
@@ -53645,6 +54141,7 @@ reps:
     full_code: '1221'
     code: '21'
     state_code: '12'
+  active: true
   bioguide_id: F000462
   official_full: Lois Frankel
   role: United States Representative
@@ -53716,6 +54213,7 @@ reps:
     state_code: '48'
     name: Texas
     abbr: TX
+  active: true
   bioguide_id: C001098
   official_full: Ted Cruz
   role: United States Senator
@@ -53892,6 +54390,7 @@ reps:
     state_code: '31'
     name: Nebraska
     abbr: NE
+  active: true
   bioguide_id: F000463
   official_full: Deb Fischer
   role: United States Senator
@@ -54031,6 +54530,7 @@ reps:
     full_code: '2604'
     code: '04'
     state_code: '26'
+  active: true
   bioguide_id: M001194
   official_full: John R. Moolenaar
   role: United States Representative
@@ -54128,6 +54628,7 @@ reps:
     full_code: '5402'
     code: '02'
     state_code: '54'
+  active: true
   bioguide_id: M001195
   official_full: Alexander X. Mooney
   role: United States Representative
@@ -54220,6 +54721,7 @@ reps:
     state_code: '78'
     name: United States Virgin Islands
     abbr: VI
+  active: true
   bioguide_id: P000610
   official_full: Stacey E. Plaskett
   role: United States Representative
@@ -54317,6 +54819,7 @@ reps:
     full_code: '0648'
     code: '48'
     state_code: '06'
+  active: true
   bioguide_id: R000409
   official_full: Dana Rohrabacher
   role: United States Representative
@@ -54388,6 +54891,7 @@ reps:
     state_code: '53'
     name: Washington
     abbr: WA
+  active: true
   bioguide_id: M001111
   official_full: Patty Murray
   role: United States Senator
@@ -54564,6 +55068,7 @@ reps:
     state_code: '02'
     name: Alaska
     abbr: AK
+  active: true
   bioguide_id: S001198
   official_full: Dan Sullivan
   role: United States Senator
@@ -54740,6 +55245,7 @@ reps:
     state_code: '44'
     name: Rhode Island
     abbr: RI
+  active: true
   bioguide_id: W000802
   official_full: Sheldon Whitehouse
   role: United States Senator
@@ -54811,6 +55317,7 @@ reps:
     state_code: '28'
     name: Mississippi
     abbr: MS
+  active: true
   bioguide_id: W000437
   official_full: Roger F. Wicker
   role: United States Senator
@@ -54945,6 +55452,7 @@ reps:
     state_code: '45'
     name: South Carolina
     abbr: SC
+  active: true
   bioguide_id: S001184
   official_full: Tim Scott
   role: United States Senator
@@ -55058,6 +55566,7 @@ reps:
     state_code: '36'
     name: New York
     abbr: NY
+  active: true
   bioguide_id: S000148
   official_full: Charles E. Schumer
   role: United States Senator
@@ -55276,6 +55785,7 @@ reps:
     state_code: '50'
     name: Vermont
     abbr: VT
+  active: true
   bioguide_id: S000033
   official_full: Bernard Sanders
   role: United States Senator
@@ -55368,6 +55878,7 @@ reps:
     state_code: '20'
     name: Kansas
     abbr: KS
+  active: true
   bioguide_id: R000307
   official_full: Pat Roberts
   role: United States Senator
@@ -55507,6 +56018,7 @@ reps:
     full_code: '1904'
     code: '04'
     state_code: '19'
+  active: true
   bioguide_id: K000362
   official_full: Steve King
   role: United States Representative
@@ -55667,6 +56179,7 @@ reps:
     full_code: '3909'
     code: '09'
     state_code: '39'
+  active: true
   bioguide_id: K000009
   official_full: Marcy Kaptur
   role: United States Representative
@@ -55780,6 +56293,7 @@ reps:
     state_code: '35'
     name: New Mexico
     abbr: NM
+  active: true
   bioguide_id: H001046
   official_full: Martin Heinrich
   role: United States Senator
@@ -55935,6 +56449,7 @@ reps:
     state_code: '19'
     name: Iowa
     abbr: IA
+  active: true
   bioguide_id: G000386
   official_full: Chuck Grassley
   role: United States Senator
@@ -56111,6 +56626,7 @@ reps:
     state_code: '45'
     name: South Carolina
     abbr: SC
+  active: true
   bioguide_id: G000359
   official_full: Lindsey Graham
   role: United States Senator
@@ -56287,6 +56803,7 @@ reps:
     state_code: '10'
     name: Delaware
     abbr: DE
+  active: true
   bioguide_id: C001088
   official_full: Christopher A. Coons
   role: United States Senator
@@ -56379,6 +56896,7 @@ reps:
     state_code: '05'
     name: Arkansas
     abbr: AR
+  active: true
   bioguide_id: C001095
   official_full: Tom Cotton
   role: United States Senator
@@ -56513,6 +57031,7 @@ reps:
     state_code: '25'
     name: Massachusetts
     abbr: MA
+  active: true
   bioguide_id: W000817
   official_full: Elizabeth Warren
   role: United States Senator
@@ -56605,6 +57124,7 @@ reps:
     state_code: '55'
     name: Wisconsin
     abbr: WI
+  active: true
   bioguide_id: B001230
   official_full: Tammy Baldwin
   role: United States Senator
@@ -56781,6 +57301,7 @@ reps:
     state_code: '38'
     name: North Dakota
     abbr: ND
+  active: true
   bioguide_id: H001069
   official_full: Heidi Heitkamp
   role: United States Senator
@@ -56936,6 +57457,7 @@ reps:
     state_code: '15'
     name: Hawaii
     abbr: HI
+  active: true
   bioguide_id: S001194
   official_full: Brian Schatz
   role: United States Senator
@@ -57007,6 +57529,7 @@ reps:
     state_code: '13'
     name: Georgia
     abbr: GA
+  active: true
   bioguide_id: P000612
   official_full: David Perdue
   role: United States Senator
@@ -57078,6 +57601,7 @@ reps:
     state_code: '01'
     name: Alabama
     abbr: AL
+  active: true
   bioguide_id: S001202
   official_full: Luther Strange
   role: United States Senator
@@ -57133,6 +57657,7 @@ reps:
     full_code: '5110'
     code: '10'
     state_code: '51'
+  active: true
   bioguide_id: C001105
   official_full: Barbara Comstock
   role: United States Representative
@@ -57230,6 +57755,7 @@ reps:
     full_code: '5108'
     code: '08'
     state_code: '51'
+  active: true
   bioguide_id: B001292
   official_full: Donald S. Beyer, Jr.
   role: United States Representative
@@ -57306,6 +57832,7 @@ reps:
     full_code: '1213'
     code: '13'
     state_code: '12'
+  active: true
   bioguide_id: C001111
   official_full: Charlie Crist
   role: United States Representative
@@ -57382,6 +57909,7 @@ reps:
     full_code: '1202'
     code: '02'
     state_code: '12'
+  active: true
   bioguide_id: D000628
   official_full: Neal P. Dunn
   role: United States Representative
@@ -57474,6 +58002,7 @@ reps:
     state_code: '72'
     name: Puerto Rico
     abbr: PR
+  active: true
   bioguide_id: G000582
   official_full: Jenniffer González-Colón
   role: United States Representative
@@ -57550,6 +58079,7 @@ reps:
     full_code: '1207'
     code: '07'
     state_code: '12'
+  active: true
   bioguide_id: M001202
   official_full: Stephanie N. Murphy
   role: United States Representative
@@ -57647,6 +58177,7 @@ reps:
     full_code: '5307'
     code: '07'
     state_code: '53'
+  active: true
   bioguide_id: J000298
   official_full: Pramila Jayapal
   role: United States Representative
@@ -57723,6 +58254,7 @@ reps:
     full_code: '1219'
     code: '19'
     state_code: '12'
+  active: true
   bioguide_id: R000607
   official_full: Francis Rooney
   role: United States Representative
@@ -57820,6 +58352,7 @@ reps:
     full_code: '2610'
     code: '10'
     state_code: '26'
+  active: true
   bioguide_id: M001201
   official_full: Paul Mitchell
   role: United States Representative
@@ -57891,6 +58424,7 @@ reps:
     state_code: '33'
     name: New Hampshire
     abbr: NH
+  active: true
   bioguide_id: H001076
   official_full: Margaret Wood Hassan
   role: United States Senator
@@ -57988,6 +58522,7 @@ reps:
     full_code: '1201'
     code: '01'
     state_code: '12'
+  active: true
   bioguide_id: G000578
   official_full: Matt Gaetz
   role: United States Representative
@@ -58064,6 +58599,7 @@ reps:
     full_code: '3203'
     code: '03'
     state_code: '32'
+  active: true
   bioguide_id: R000608
   official_full: Jacky Rosen
   role: United States Representative
