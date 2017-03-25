@@ -20,9 +20,10 @@ namespace :pyr do
             File.open('zctas.json', 'r', &:read)
           ).to_yaml
         end
-        return if Rails.env.production?
-        puts `git add zctas.*; git commit -m 'update zcta index files'`
-        puts `git push heroku master` if ENV['deploy'] == 'true'
+        if Rails.env.development?
+          puts `git add zctas.*; git commit -m 'update zcta index files'`
+          puts `git push heroku master` if ENV['deploy'] == 'true'
+        end
       end
     end
 
