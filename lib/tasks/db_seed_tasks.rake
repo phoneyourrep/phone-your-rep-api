@@ -42,6 +42,7 @@ namespace :db do
       )
       zcta.import
       puts "There are now #{Zcta.count} ZCTAs in the database."
+      Rake::Task['pyr:zcta_districts:export'].invoke
     end
 
     desc 'Generate VCards'

@@ -7,6 +7,21 @@ namespace :pyr do
         File.open('zctas.csv', 'w') do |file|
           file.write ZctaDistrict.order(:zip_code).to_csv
         end
+        File.open('zctas.json', 'w') do |json|
+          json.write(
+            JSON.pretty_generate(CSV.open('zctas.csv', headers: true).map do |row|
+              { zip: row['zip'], state: row['state'], district: row['district'] }
+            end
+            )
+          )
+        end
+        File.open('zctas.yaml', 'w') do |yaml|
+          yaml.write JSON.parse(
+            File.open('zctas.json', 'r', &:read)
+          ).to_yaml
+        end
+        puts `git add zctas.*; git commit -m 'update zcta index files'`
+        puts `git push heroku master` if ENV['deploy'] == 'true'
       end
     end
 
