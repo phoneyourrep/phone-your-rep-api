@@ -14,7 +14,7 @@ class RepsController < ApplicationController
       return if @reps.blank?
       @district = @reps.detect(&:district).try(:district)
     elsif params[:generate] == 'true'
-      @reps = Rep.active
+      @reps = Rep.active.order(:bioguide_id)
     else
       send_index_files
     end
