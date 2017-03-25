@@ -81,7 +81,7 @@ namespace :db do
         :fetch_office_locations
       ]
 
-      desc 'Export reps index to JSON file'
+      desc 'Export reps index to JSON and YAML files'
       task :export_reps do
         if Rails.env.development?
           sh "curl 'https://phone-your-rep.herokuapp.com/api/"\
@@ -92,6 +92,21 @@ namespace :db do
             ).to_yaml
           end
           puts `git add reps.*; git commit -m 'update reps index files'`
+          puts `git push heroku master` if ENV['deploy'] == 'true'
+        end
+      end
+
+      desc 'Export office_locations index to JSON and YAML files'
+      task :export_office_locations do
+        if Rails.env.development?
+          sh "curl 'https://phone-your-rep.herokuapp.com/api/"\
+            "beta/office_locations?generate=true' -o 'office_locations.json'"
+          File.open('office_locations.yaml', 'w') do |file|
+            file.write JSON.parse(
+              File.read('office_locations.json')
+            ).to_yaml
+          end
+          puts `git add office_locations.*; git commit -m 'update office_location index files'`
           puts `git push heroku master` if ENV['deploy'] == 'true'
         end
       end

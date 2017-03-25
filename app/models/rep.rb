@@ -89,11 +89,6 @@ class Rep < ApplicationRecord
     sorted_offices.each { |office| office.calculate_distance(coordinates) }
   end
 
-  # Return only active offices
-  def active_office_locations
-    office_locations.where(active: true)
-  end
-
   # Protect against nil type errors.
   def district_code
     district.code unless district_id.blank?
@@ -101,7 +96,7 @@ class Rep < ApplicationRecord
 
   # Return office_locations even if they were never sorted.
   def sorted_offices_array
-    sorted_offices || office_locations
+    sorted_offices || active_office_locations
   end
 
   def add_photo
