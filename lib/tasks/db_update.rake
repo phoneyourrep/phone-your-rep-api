@@ -84,13 +84,13 @@ namespace :db do
       desc 'Export reps index to JSON file'
       task :export_reps do
         return if Rails.env.production?
-        sh "curl 'localhost:3000/reps?generate=true' -o 'reps.json'"
+        sh "curl 'https://phone-your-rep.herokuapp.com/api/beta/reps?generate=true' -o 'reps.json'"
         File.open('reps.yaml', 'w') do |file|
           file.write JSON.parse(
             File.open('reps.json', 'r', &:read)
           ).to_yaml
         end
-        puts `git add reps.yaml reps.json; git commit -m 'update reps index files'`
+        puts `git add reps.*; git commit -m 'update reps index files'`
         puts `git push heroku master` if ENV['deploy'] == 'true'
       end
 
