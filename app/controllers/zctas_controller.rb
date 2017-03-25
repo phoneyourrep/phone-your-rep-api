@@ -3,9 +3,8 @@ class ZctasController < ApplicationController
   before_action :set_zcta, only: [:show]
 
   def index
-    @zctas = ZctaDistrict.all
     respond_to do |format|
-      format.csv { render plain: @zctas.to_csv }
+      format.csv { send_file 'lib/zctas.csv', filename: 'zctas.csv' }
     end
   end
 
