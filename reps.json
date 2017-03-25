@@ -2,7 +2,7 @@
   "total_records": 536,
   "_links": {
     "self": {
-      "href": "https://phone-your-rep.herokuapp.com/api/beta/reps?generate=true"
+      "href": "https://phone-your-rep.herokuapp.com/api/beta/reps"
     }
   },
   "reps": [
@@ -1300,7 +1300,7 @@
           "latitude": 39.0895234,
           "longitude": -77.1511348,
           "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C000141-rockville",
-          "downloads": 22,
+          "downloads": 32,
           "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C000141_rockville.png"
         },
         {
@@ -1415,7 +1415,7 @@
           "latitude": 38.8928318,
           "longitude": -77.0043625,
           "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C000141-capitol",
-          "downloads": 28,
+          "downloads": 29,
           "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C000141_capitol.png"
         }
       ]
@@ -5426,7 +5426,7 @@
           "latitude": 38.8871071,
           "longitude": -77.0104749,
           "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001260-capitol",
-          "downloads": 2,
+          "downloads": 3,
           "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001260_capitol.png"
         },
         {
@@ -28664,7 +28664,7 @@
           "latitude": 39.083791,
           "longitude": -77.1481645,
           "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/R000606-rockville",
-          "downloads": 8,
+          "downloads": 11,
           "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/R000606_rockville.png"
         },
         {
@@ -31604,7 +31604,7 @@
           "latitude": 38.8928318,
           "longitude": -77.0043625,
           "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/W000805-capitol",
-          "downloads": 37,
+          "downloads": 38,
           "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/W000805_capitol.png"
         },
         {
@@ -31627,7 +31627,7 @@
           "latitude": 37.5374358,
           "longitude": -77.4362913,
           "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/W000805-richmond",
-          "downloads": 21,
+          "downloads": 22,
           "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/W000805_richmond.png"
         },
         {
@@ -31860,7 +31860,7 @@
           "latitude": 38.8928318,
           "longitude": -77.0043625,
           "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/V000128-capitol",
-          "downloads": 42,
+          "downloads": 48,
           "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/V000128_capitol.png"
         }
       ]
@@ -52219,7 +52219,7 @@
           "latitude": 39.6410348,
           "longitude": -77.7207337,
           "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000620-hagerstown",
-          "downloads": 2,
+          "downloads": 5,
           "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000620_hagerstown.png"
         },
         {

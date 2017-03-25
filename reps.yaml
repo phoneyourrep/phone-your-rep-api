@@ -2,7 +2,7 @@
 total_records: 536
 _links:
   self:
-    href: https://phone-your-rep.herokuapp.com/api/beta/reps?generate=true
+    href: https://phone-your-rep.herokuapp.com/api/beta/reps
 reps:
 - self: https://phone-your-rep.herokuapp.com/api/beta/reps/S000770
   state:
@@ -1179,7 +1179,7 @@ reps:
     latitude: 39.0895234
     longitude: -77.1511348
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/C000141-rockville
-    downloads: 22
+    downloads: 32
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/C000141_rockville.png
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/C000141-cumberland
     rep: https://phone-your-rep.herokuapp.com/api/beta/reps/C000141
@@ -1284,7 +1284,7 @@ reps:
     latitude: 38.8928318
     longitude: -77.0043625
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/C000141-capitol
-    downloads: 28
+    downloads: 29
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/C000141_capitol.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/reps/C001080
   state:
@@ -4909,7 +4909,7 @@ reps:
     latitude: 38.8871071
     longitude: -77.0104749
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/B001260-capitol
-    downloads: 2
+    downloads: 3
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/B001260_capitol.png
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/B001260-bradenton
     rep: https://phone-your-rep.herokuapp.com/api/beta/reps/B001260
@@ -25813,7 +25813,7 @@ reps:
     latitude: 39.083791
     longitude: -77.1481645
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/R000606-rockville
-    downloads: 8
+    downloads: 11
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/R000606_rockville.png
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/R000606-capitol
     rep: https://phone-your-rep.herokuapp.com/api/beta/reps/R000606
@@ -28451,7 +28451,7 @@ reps:
     latitude: 38.8928318
     longitude: -77.0043625
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/W000805-capitol
-    downloads: 37
+    downloads: 38
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/W000805_capitol.png
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/W000805-richmond
     rep: https://phone-your-rep.herokuapp.com/api/beta/reps/W000805
@@ -28472,7 +28472,7 @@ reps:
     latitude: 37.5374358
     longitude: -77.4362913
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/W000805-richmond
-    downloads: 21
+    downloads: 22
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/W000805_richmond.png
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/W000805-abingdon
     rep: https://phone-your-rep.herokuapp.com/api/beta/reps/W000805
@@ -28682,7 +28682,7 @@ reps:
     latitude: 38.8928318
     longitude: -77.0043625
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/V000128-capitol
-    downloads: 42
+    downloads: 48
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/V000128_capitol.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/reps/T000460
   state:
@@ -47024,7 +47024,7 @@ reps:
     latitude: 39.6410348
     longitude: -77.7207337
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/D000620-hagerstown
-    downloads: 2
+    downloads: 5
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/D000620_hagerstown.png
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/D000620-capitol
     rep: https://phone-your-rep.herokuapp.com/api/beta/reps/D000620
