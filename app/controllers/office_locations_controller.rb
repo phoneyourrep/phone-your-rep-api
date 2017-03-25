@@ -16,6 +16,6 @@ class OfficeLocationsController < ApplicationController
   end
 
   def set_office_location
-    @office_location = OfficeLocation.find(params[:id])
+    @office_location = OfficeLocation.find_by(office_id: params[:id])
   end
 end

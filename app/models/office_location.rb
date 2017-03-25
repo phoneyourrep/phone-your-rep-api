@@ -12,7 +12,9 @@ class OfficeLocation < ApplicationRecord
 
   geocoded_by      :full_address
   after_validation :geocode, if: :needs_geocoding?
-  scope            :with_v_card, ->(id) { where(id: id).includes(:rep, :v_card) }
+  scope            :with_v_card, lambda { |office_id|
+    where(office_id: office_id).includes(:rep, :v_card)
+  }
   is_impressionable counter_cache: true, column_name: :downloads
 
   dragonfly_accessor :qr_code
@@ -59,9 +61,9 @@ class OfficeLocation < ApplicationRecord
 
   def v_card_link
     if Rails.env.production?
-      "https://phone-your-rep.herokuapp.com/v_cards/#{id}"
+      "https://phone-your-rep.herokuapp.com/v_cards/#{office_id}"
     elsif Rails.env.development?
-      "http://localhost:3000/v_cards/#{id}"
+      "http://localhost:3000/v_cards/#{office_id}"
     end
   end
 

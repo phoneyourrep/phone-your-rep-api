@@ -1,7 +1,9 @@
 # frozen_string_literal: true
-json.self office_location_url(office_location)
+json.self office_location_url(office_location.office_id)
+json.rep rep_url(office_location.rep.bioguide_id)
 json.extract! office_location,
-              :id,
+              :active,
+              :office_id,
               :bioguide_id,
               :office_type,
               :distance,
