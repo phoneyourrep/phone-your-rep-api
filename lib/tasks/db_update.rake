@@ -86,8 +86,11 @@ namespace :db do
         if Rails.env.development?
           sh "curl 'https://phone-your-rep.herokuapp.com/api/"\
             "beta/reps?generate=true' -o 'reps.json'"
-          File.open('reps.yaml', 'w') do |file|
-            file.write JSON.parse(
+          data = JSON.parse File.read('reps.json')
+          data['_links']['self']['href'].sub!('?generate=true', '')
+          File.open('reps.json', 'w') { |json| json.write JSON.pretty_generate(data) }
+          File.open('reps.yaml', 'w') do |yaml|
+            yaml.write JSON.parse(
               File.read('reps.json')
             ).to_yaml
           end
@@ -101,6 +104,9 @@ namespace :db do
         if Rails.env.development?
           sh "curl 'https://phone-your-rep.herokuapp.com/api/"\
             "beta/office_locations?generate=true' -o 'office_locations.json'"
+          data = JSON.parse File.read('office_locations.json')
+          data['_links']['self']['href'].sub!('?generate=true', '')
+          File.open('office_locations.json', 'w') { |json| json.write JSON.pretty_generate(data) }
           File.open('office_locations.yaml', 'w') do |file|
             file.write JSON.parse(
               File.read('office_locations.json')
