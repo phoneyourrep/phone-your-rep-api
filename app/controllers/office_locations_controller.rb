@@ -14,10 +14,10 @@ class OfficeLocationsController < ApplicationController
   def send_index_files
     respond_to do |format|
       format.html do
-        render file: 'offices_locations.json', layout: false, content_type: 'application/json'
+        render file: 'office_locations.json', layout: false, content_type: 'application/json'
       end
-      format.json { send_file 'offices_locations.json', filename: 'offices_locations.json' }
-      format.yaml { send_file 'offices_locations.yaml', filename: 'offices_locations.yaml' }
+      format.json { send_file 'office_locations.json', filename: 'office_locations.json' }
+      format.yaml { send_file 'office_locations.yaml', filename: 'office_locations.yaml' }
     end
   end
 
