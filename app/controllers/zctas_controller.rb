@@ -5,7 +5,7 @@ class ZctasController < ApplicationController
   def index
     respond_to do |format|
       format.html { render file: 'lib/zctas.json', layout: false, content_type: 'application/json'}
-      format.csv  { send_file 'lib/zctas.csv', filename: 'zctas.csv' }
+      format.csv  { send_file 'lib/zctas.csv', filename: 'zctas.txt' }
       format.json { send_file 'lib/zctas.json', filename: 'zctas.json' }
       format.yaml { send_file 'lib/zctas.yaml', filename: 'zctas.yaml' }
     end
