@@ -25,27 +25,6 @@ office_locations:
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/U000039-capitol
   downloads: 2
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/U000039_capitol.png
-- self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/B001260-capitol
-  rep: https://phone-your-rep.herokuapp.com/api/beta/reps/B001260
-  active: true
-  office_id: B001260-capitol
-  bioguide_id: B001260
-  office_type: capitol
-  distance: 
-  building: 
-  address: 2104 Rayburn House Office Building
-  suite: 
-  city: Washington
-  state: DC
-  zip: 20515-0916
-  phone: 202-225-5015
-  fax: 202-226-0828
-  hours: 
-  latitude: 38.8871071
-  longitude: -77.0104749
-  v_card_link: https://phone-your-rep.herokuapp.com/v_cards/B001260-capitol
-  downloads: 2
-  qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/B001260_capitol.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/B001236-capitol
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/B001236
   active: true
@@ -130,6 +109,27 @@ office_locations:
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/C001056-capitol
   downloads: 31
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/C001056_capitol.png
+- self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/B001260-capitol
+  rep: https://phone-your-rep.herokuapp.com/api/beta/reps/B001260
+  active: true
+  office_id: B001260-capitol
+  bioguide_id: B001260
+  office_type: capitol
+  distance: 
+  building: 
+  address: 2104 Rayburn House Office Building
+  suite: 
+  city: Washington
+  state: DC
+  zip: 20515-0916
+  phone: 202-225-5015
+  fax: 202-226-0828
+  hours: 
+  latitude: 38.8871071
+  longitude: -77.0104749
+  v_card_link: https://phone-your-rep.herokuapp.com/v_cards/B001260-capitol
+  downloads: 3
+  qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/B001260_capitol.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/C001053-capitol
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/C001053
   active: true
@@ -3635,7 +3635,7 @@ office_locations:
   latitude: 39.0895234
   longitude: -77.1511348
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/C000141-rockville
-  downloads: 22
+  downloads: 32
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/C000141_rockville.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/C001096-bismarck
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/C001096
@@ -8362,6 +8362,27 @@ office_locations:
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/W000815-cincinnati-1
   downloads: 4
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/W000815_cincinnati_1.png
+- self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/W000805-capitol
+  rep: https://phone-your-rep.herokuapp.com/api/beta/reps/W000805
+  active: true
+  office_id: W000805-capitol
+  bioguide_id: W000805
+  office_type: capitol
+  distance: 
+  building: 
+  address: 703 Hart Senate Office Building
+  suite: 
+  city: Washington
+  state: DC
+  zip: '20510'
+  phone: 202-224-2023
+  fax: 202-224-6295
+  hours: 
+  latitude: 38.8928318
+  longitude: -77.0043625
+  v_card_link: https://phone-your-rep.herokuapp.com/v_cards/W000805-capitol
+  downloads: 38
+  qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/W000805_capitol.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/T000465-lawrence
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/T000465
   active: true
@@ -8425,27 +8446,6 @@ office_locations:
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/T000472-riverside
   downloads: 2
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/T000472_riverside.png
-- self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/W000805-capitol
-  rep: https://phone-your-rep.herokuapp.com/api/beta/reps/W000805
-  active: true
-  office_id: W000805-capitol
-  bioguide_id: W000805
-  office_type: capitol
-  distance: 
-  building: 
-  address: 703 Hart Senate Office Building
-  suite: 
-  city: Washington
-  state: DC
-  zip: '20510'
-  phone: 202-224-2023
-  fax: 202-224-6295
-  hours: 
-  latitude: 38.8928318
-  longitude: -77.0043625
-  v_card_link: https://phone-your-rep.herokuapp.com/v_cards/W000805-capitol
-  downloads: 37
-  qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/W000805_capitol.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/V000108-merrillville
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/V000108
   active: true
@@ -10714,6 +10714,27 @@ office_locations:
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/Q000023-capitol
   downloads: 4
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/Q000023_capitol.png
+- self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/W000805-richmond
+  rep: https://phone-your-rep.herokuapp.com/api/beta/reps/W000805
+  active: true
+  office_id: W000805-richmond
+  bioguide_id: W000805
+  office_type: district
+  distance: 
+  building: ''
+  address: 919 E. Main St.
+  suite: Suite 630
+  city: Richmond
+  state: VA
+  zip: '23219'
+  phone: 804-775-2314
+  fax: ''
+  hours: ''
+  latitude: 37.5374358
+  longitude: -77.4362913
+  v_card_link: https://phone-your-rep.herokuapp.com/v_cards/W000805-richmond
+  downloads: 22
+  qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/W000805_richmond.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/P000197-capitol
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/P000197
   active: true
@@ -10819,27 +10840,6 @@ office_locations:
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/R000575-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/R000575_capitol.png
-- self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/W000805-richmond
-  rep: https://phone-your-rep.herokuapp.com/api/beta/reps/W000805
-  active: true
-  office_id: W000805-richmond
-  bioguide_id: W000805
-  office_type: district
-  distance: 
-  building: ''
-  address: 919 E. Main St.
-  suite: Suite 630
-  city: Richmond
-  state: VA
-  zip: '23219'
-  phone: 804-775-2314
-  fax: ''
-  hours: ''
-  latitude: 37.5374358
-  longitude: -77.4362913
-  v_card_link: https://phone-your-rep.herokuapp.com/v_cards/W000805-richmond
-  downloads: 21
-  qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/W000805_richmond.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/R000580-capitol
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/R000580
   active: true
@@ -16321,6 +16321,27 @@ office_locations:
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/F000448-glendale
   downloads: 2
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/F000448_glendale.png
+- self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/D000620-hagerstown
+  rep: https://phone-your-rep.herokuapp.com/api/beta/reps/D000620
+  active: true
+  office_id: D000620-hagerstown
+  bioguide_id: D000620
+  office_type: district
+  distance: 
+  building: ''
+  address: 38 S. Potomac St.
+  suite: Suite 205
+  city: Hagerstown
+  state: MD
+  zip: '21740'
+  phone: 301-733-2900
+  fax: ''
+  hours: M-F 9-5:30pm
+  latitude: 39.6410348
+  longitude: -77.7207337
+  v_card_link: https://phone-your-rep.herokuapp.com/v_cards/D000620-hagerstown
+  downloads: 5
+  qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/D000620_hagerstown.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/F000463-lincoln
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/F000463
   active: true
@@ -16741,27 +16762,6 @@ office_locations:
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/F000450-boone
   downloads: 1
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/F000450_boone.png
-- self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/D000620-hagerstown
-  rep: https://phone-your-rep.herokuapp.com/api/beta/reps/D000620
-  active: true
-  office_id: D000620-hagerstown
-  bioguide_id: D000620
-  office_type: district
-  distance: 
-  building: ''
-  address: 38 S. Potomac St.
-  suite: Suite 205
-  city: Hagerstown
-  state: MD
-  zip: '21740'
-  phone: 301-733-2900
-  fax: ''
-  hours: M-F 9-5:30pm
-  latitude: 39.6410348
-  longitude: -77.7207337
-  v_card_link: https://phone-your-rep.herokuapp.com/v_cards/D000620-hagerstown
-  downloads: 2
-  qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/D000620_hagerstown.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/E000293-new_britain
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/E000293
   active: true
@@ -22159,27 +22159,6 @@ office_locations:
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/S001154-indiana
   downloads: 1
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/S001154_indiana.png
-- self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/R000606-rockville
-  rep: https://phone-your-rep.herokuapp.com/api/beta/reps/R000606
-  active: true
-  office_id: R000606-rockville
-  bioguide_id: R000606
-  office_type: district
-  distance: 
-  building: ''
-  address: 51 Monroe St.
-  suite: Suite 507
-  city: Rockville
-  state: MD
-  zip: '20850'
-  phone: 301-354-1000
-  fax: ''
-  hours: ''
-  latitude: 39.083791
-  longitude: -77.1481645
-  v_card_link: https://phone-your-rep.herokuapp.com/v_cards/R000606-rockville
-  downloads: 8
-  qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/R000606_rockville.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/S000583-kerrville
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/S000583
   active: true
@@ -22474,6 +22453,27 @@ office_locations:
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/R000605-pierre
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/R000605_pierre.png
+- self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/R000606-rockville
+  rep: https://phone-your-rep.herokuapp.com/api/beta/reps/R000606
+  active: true
+  office_id: R000606-rockville
+  bioguide_id: R000606
+  office_type: district
+  distance: 
+  building: ''
+  address: 51 Monroe St.
+  suite: Suite 507
+  city: Rockville
+  state: MD
+  zip: '20850'
+  phone: 301-354-1000
+  fax: ''
+  hours: ''
+  latitude: 39.083791
+  longitude: -77.1481645
+  v_card_link: https://phone-your-rep.herokuapp.com/v_cards/R000606-rockville
+  downloads: 11
+  qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/R000606_rockville.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/R000608-las_vegas
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/R000608
   active: true
@@ -35348,6 +35348,27 @@ office_locations:
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/B000944-capitol
   downloads: 19
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/B000944_capitol.png
+- self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/C000141-capitol
+  rep: https://phone-your-rep.herokuapp.com/api/beta/reps/C000141
+  active: true
+  office_id: C000141-capitol
+  bioguide_id: C000141
+  office_type: capitol
+  distance: 
+  building: 
+  address: 509 Hart Senate Office Building
+  suite: 
+  city: Washington
+  state: DC
+  zip: '20510'
+  phone: 202-224-4524
+  fax: 202-224-1651
+  hours: 
+  latitude: 38.8928318
+  longitude: -77.0043625
+  v_card_link: https://phone-your-rep.herokuapp.com/v_cards/C000141-capitol
+  downloads: 29
+  qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/C000141_capitol.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/C000174-capitol
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/C000174
   active: true
@@ -35558,27 +35579,6 @@ office_locations:
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/B001273-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/B001273_capitol.png
-- self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/C000141-capitol
-  rep: https://phone-your-rep.herokuapp.com/api/beta/reps/C000141
-  active: true
-  office_id: C000141-capitol
-  bioguide_id: C000141
-  office_type: capitol
-  distance: 
-  building: 
-  address: 509 Hart Senate Office Building
-  suite: 
-  city: Washington
-  state: DC
-  zip: '20510'
-  phone: 202-224-4524
-  fax: 202-224-1651
-  hours: 
-  latitude: 38.8928318
-  longitude: -77.0043625
-  v_card_link: https://phone-your-rep.herokuapp.com/v_cards/C000141-capitol
-  downloads: 28
-  qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/C000141_capitol.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/E000285-capitol
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/E000285
   active: true
@@ -36753,7 +36753,7 @@ office_locations:
   latitude: 38.8928318
   longitude: -77.0043625
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/V000128-capitol
-  downloads: 42
+  downloads: 48
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/V000128_capitol.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/R000577-capitol
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/R000577
