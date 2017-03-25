@@ -9,22 +9,23 @@ class RepsController < ApplicationController
     address = params[:address]
     lat     = params[:lat]
     long    = params[:long]
-    # return the first result, or a random one
     if address || lat || long
       @reps = Rep.find_em address: address, lat: lat, long: long
       return if @reps.blank?
-      house_rep = @reps.detect { |rep| !rep.district.blank? }
-      @district = house_rep.district if house_rep
+      @district = @reps.detect(&:district).try(:district)
     elsif params[:generate] == 'true'
       @reps = Rep.where(active: true).includes(:office_locations, :district, :state)
     else
-      respond_to do |format|
+      send_index_files
+    end
+  end
+
+  def send_index_files
+    respond_to do |format|
       format.html { render file: 'reps.json', layout: false, content_type: 'application/json' }
       format.json { send_file 'reps.json', filename: 'reps.json' }
       format.yaml { send_file 'reps.yaml', filename: 'reps.yaml' }
-      end
     end
-    @self = request.url
   end
 
   # GET /reps/1
@@ -64,7 +65,6 @@ class RepsController < ApplicationController
   # Use callbacks to share common setup or constraints between actions.
   def set_rep
     @rep = Rep.find_by(bioguide_id: params[:id])
-    @pfx = request.protocol + request.host_with_port
   end
 
   def make_impression

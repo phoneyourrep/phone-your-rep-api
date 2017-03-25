@@ -84,7 +84,8 @@ namespace :db do
       desc 'Export reps index to JSON file'
       task :export_reps do
         if Rails.env.development?
-          sh "curl 'https://phone-your-rep.herokuapp.com/api/beta/reps?generate=true' -o 'reps.json'"
+          sh "curl 'https://phone-your-rep.herokuapp.com/api/"\
+            "beta/reps?generate=true' -o 'reps.json'"
           File.open('reps.yaml', 'w') do |file|
             file.write JSON.parse(
               File.open('reps.json', 'r', &:read)
