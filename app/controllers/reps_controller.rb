@@ -15,8 +15,14 @@ class RepsController < ApplicationController
       return if @reps.blank?
       house_rep = @reps.detect { |rep| !rep.district.blank? }
       @district = house_rep.district if house_rep
-    else
+    elsif params[:generate] == 'true'
       @reps = Rep.where(active: true).includes(:office_locations, :district, :state)
+    else
+      respond_to do |format|
+      format.html { render file: 'reps.json', layout: false, content_type: 'application/json' }
+      format.json { send_file 'reps.json', filename: 'reps.json' }
+      format.yaml { send_file 'reps.yaml', filename: 'reps.yaml' }
+      end
     end
     @self = request.url
   end

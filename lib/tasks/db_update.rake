@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 require 'db_pyr_update'
+# require 'config/application'
 
 namespace :db do
   namespace :pyr do
@@ -79,6 +80,19 @@ namespace :db do
         :fetch_socials,
         :fetch_office_locations
       ]
+
+      desc 'Export reps index to JSON file'
+      task :export_reps do
+        return if Rails.env.production?
+        sh "curl 'localhost:3000/reps?generate=true' -o 'reps.json'"
+        File.open('reps.yaml', 'w') do |file|
+          file.write JSON.parse(
+            File.open('reps.json', 'r', &:read)
+          ).to_yaml
+        end
+        puts `git add reps.yaml reps.json; git commit -m 'update reps index files'`
+        puts `git push heroku master` if ENV['deploy'] == 'true'
+      end
 
       desc 'Update all reps and office_locations in database from default yaml files'
       task all: [:retired_reps, :current_reps, :socials, :office_locations] do

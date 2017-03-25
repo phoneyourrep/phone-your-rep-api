@@ -2,7 +2,7 @@
 Rails.application.routes.draw do
   # allows access to the API via http://herokuapp.com/api/any_endpoint
   # namespace :api, defaults: { format: :json }, path: '/api' do
-  namespace :api, defaults: { format: 'json' } do
+  namespace :api do
     namespace :v1 do # version 1
       resources :zctas,            only: [:index, :show]
       resources :reps,             only: [:index, :show]
