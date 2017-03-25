@@ -88,7 +88,7 @@ namespace :db do
             "beta/reps?generate=true' -o 'reps.json'"
           File.open('reps.yaml', 'w') do |file|
             file.write JSON.parse(
-              File.open('reps.json', 'r', &:read)
+              File.read('reps.json')
             ).to_yaml
           end
           puts `git add reps.*; git commit -m 'update reps index files'`
