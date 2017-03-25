@@ -12,6 +12,7 @@ json.district do
 end
 
 json.extract! rep,
+              :active,
               :bioguide_id,
               :official_full,
               :role,

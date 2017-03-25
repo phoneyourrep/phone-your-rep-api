@@ -106,7 +106,7 @@ namespace :db do
               File.read('office_locations.json')
             ).to_yaml
           end
-          puts `git add office_locations.*; git commit -m 'update office_location index files'`
+          puts `git add office_locations.*; git commit -m 'update office_locations index files'`
           puts `git push heroku master` if ENV['deploy'] == 'true'
         end
       end
