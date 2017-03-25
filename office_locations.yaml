@@ -2,7 +2,7 @@
 total_records: 1925
 _links:
   self:
-    href: https://phone-your-rep.herokuapp.com/api/beta/office_locations?generate=true
+    href: https://phone-your-rep.herokuapp.com/api/beta/office_locations
 office_locations:
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/U000039-capitol
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/U000039
