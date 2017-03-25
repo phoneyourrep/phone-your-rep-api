@@ -12,9 +12,10 @@ class OfficeLocation < ApplicationRecord
 
   geocoded_by      :full_address
   after_validation :geocode, if: :needs_geocoding?
-  scope            :with_v_card, lambda { |office_id|
-    where(office_id: office_id).includes(:rep, :v_card)
-  }
+
+  scope :with_v_card, ->(office_id) { where(office_id: office_id).includes(:rep, :v_card) }
+  scope :active, -> { where(active: true) }
+
   is_impressionable counter_cache: true, column_name: :downloads
 
   dragonfly_accessor :qr_code

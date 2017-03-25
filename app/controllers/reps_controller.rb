@@ -14,7 +14,7 @@ class RepsController < ApplicationController
       return if @reps.blank?
       @district = @reps.detect(&:district).try(:district)
     elsif params[:generate] == 'true'
-      @reps = Rep.where(active: true).includes(:office_locations, :district, :state)
+      @reps = Rep.active
     else
       send_index_files
     end

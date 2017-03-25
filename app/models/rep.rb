@@ -7,8 +7,17 @@ class Rep < ApplicationRecord
              dependent: :destroy,
              foreign_key: :bioguide_id,
              primary_key: :bioguide_id
-  scope      :yours, lambda { |state:, district:|
+  has_many   :active_office_locations,
+             -> { where(active: true) },
+             class_name: 'OfficeLocation',
+             foreign_key: :bioguide_id,
+             primary_key: :bioguide_id
+
+  scope :yours, lambda { |state:, district:|
     where(district: district).or(Rep.where(state: state, district: nil))
+  }
+  scope :active, lambda {
+    where(active: true).includes(:district, :state, :active_office_locations)
   }
   serialize :committees, Array
   is_impressionable
