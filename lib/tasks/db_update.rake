@@ -85,16 +85,32 @@ namespace :db do
       task :export_reps do
         if Rails.env.development?
           sh "curl 'https://phone-your-rep.herokuapp.com/api/"\
-            "beta/reps?generate=true' -o 'reps.json'"
-          data = JSON.parse File.read('reps.json')
+            "beta/reps?generate=true' -o 'api_beta_reps.json'"
+          data = JSON.parse File.read('api_beta_reps.json')
           data['_links']['self']['href'].sub!('?generate=true', '')
-          File.open('reps.json', 'w') { |json| json.write JSON.pretty_generate(data) }
+          File.open('api_beta_reps.json', 'w') { |json| json.write JSON.pretty_generate(data) }
+          File.open('api_beta_reps.yaml', 'w') do |yaml|
+            yaml.write JSON.parse(
+              File.read('api_beta_reps.json')
+            ).to_yaml
+          end
+
+          reps = data['reps']
+          reps.each do |rep|
+            rep['self'].sub!('api/beta/', '')
+            rep['office_locations'].each do |office|
+              office['self'].sub!('api/beta/', '')
+              office['rep'].sub!('api/beta/', '')
+            end
+          end
+
+          File.open('reps.json', 'w') { |json| json.write JSON.pretty_generate(reps) }
           File.open('reps.yaml', 'w') do |yaml|
             yaml.write JSON.parse(
               File.read('reps.json')
             ).to_yaml
           end
-          puts `git add reps.*; git commit -m 'update reps index files'`
+          puts `git add *reps.*; git commit -m 'update reps index files'`
           puts `git push heroku master` if ENV['deploy'] == 'true'
         end
       end
@@ -103,16 +119,35 @@ namespace :db do
       task :export_office_locations do
         if Rails.env.development?
           sh "curl 'https://phone-your-rep.herokuapp.com/api/"\
-            "beta/office_locations?generate=true' -o 'office_locations.json'"
-          data = JSON.parse File.read('office_locations.json')
+            "beta/office_locations?generate=true' -o 'api_beta_office_locations.json'"
+          data = JSON.parse File.read('api_beta_office_locations.json')
           data['_links']['self']['href'].sub!('?generate=true', '')
-          File.open('office_locations.json', 'w') { |json| json.write JSON.pretty_generate(data) }
-          File.open('office_locations.yaml', 'w') do |file|
+          File.open('api_beta_office_locations.json', 'w') do |json|
+            json.write JSON.pretty_generate(data)
+          end
+
+          File.open('api_beta_office_locations.yaml', 'w') do |file|
             file.write JSON.parse(
+              File.read('api_beta_office_locations.json')
+            ).to_yaml
+          end
+
+          offices = data['office_locations']
+          offices.each do |office|
+            office['self'].sub!('api/beta/', '')
+            office['rep'].sub!('api/beta/', '')
+          end
+
+          File.open('office_locations.json', 'w') do |json|
+            json.write JSON.pretty_generate(offices)
+          end
+
+          File.open('office_locations.yaml', 'w') do |yaml|
+            yaml.write JSON.parse(
               File.read('office_locations.json')
             ).to_yaml
           end
-          puts `git add office_locations.*; git commit -m 'update office_locations index files'`
+          puts `git add *office_locations.*; git commit -m 'update office_locations index files'`
           puts `git push heroku master` if ENV['deploy'] == 'true'
         end
       end
