@@ -14,7 +14,9 @@ class ZctasController < ApplicationController
   def show
     return if @zcta.blank?
     if params[:reps] == 'true'
-      @reps = Rep.yours(state: @zcta.districts.first.state, district: @zcta.districts).distinct
+      @reps = Rep.yours(state: @zcta.districts.first.state, district: @zcta.districts).
+              active.
+              distinct
     else
       @districts = @zcta.districts
     end
