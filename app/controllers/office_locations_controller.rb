@@ -4,7 +4,7 @@ class OfficeLocationsController < ApplicationController
 
   def index
     if params[:generate] == 'true'
-      @office_locations = OfficeLocation.active.order(:bioguide_id)
+      @office_locations = OfficeLocation.active.order(:office_id)
       @self             = request.url
     else
       send_index_files
