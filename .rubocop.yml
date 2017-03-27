@@ -19,6 +19,11 @@ Metrics/MethodLength:
 Style/ClassAndModuleChildren:
   Exclude:
     - 'test/test_helper.rb'
+    - 'config/initializers/rack-attack.rb'
+
+Style/FileName:
+  Exclude:
+    - 'config/initializers/rack-attack.rb'
 
 Lint/AssignmentInCondition:
   Exclude:
