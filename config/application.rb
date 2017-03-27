@@ -39,5 +39,8 @@ module PhoneYourRepApi
         resource '*', headers: :any, methods: [:get, :post, :options]
       end
     end
+
+    # Use Rack::Attack to deter malicious attacks by throttling requests by IP.
+    config.middleware.use Rack::Attack
   end
 end
