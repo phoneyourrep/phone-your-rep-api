@@ -83,13 +83,7 @@ namespace :db do
 
       desc 'Export reps index to JSON and YAML files'
       task :export_reps do
-        if Rails.env.development?
-          url = 'https://phone-your-rep.herokuapp.com/api/beta/reps?generate=true'
-          data = refresh_pyr_index_data(url)
-
-          write_to_json_and_yaml 'api_beta_reps', data
-
-          reps = data['reps']
+        update_and_export_index(table_name: :reps) do |reps|
           reps.each do |rep|
             rep['self'].sub!('api/beta/', '')
             rep['office_locations'].each do |office|
@@ -97,30 +91,16 @@ namespace :db do
               office['rep'].sub!('api/beta/', '')
             end
           end
-
-          write_to_json_and_yaml 'reps', reps
-          puts `git add *reps.*; git commit -m 'update reps index files'`
-          puts `git push heroku master` if ENV['deploy'] == 'true'
         end
       end
 
       desc 'Export office_locations index to JSON and YAML files'
       task :export_office_locations do
-        if Rails.env.development?
-          url = 'https://phone-your-rep.herokuapp.com/api/beta/office_locations?generate=true'
-          data = refresh_pyr_index_data(url)
-
-          write_to_json_and_yaml 'api_beta_office_locations', data
-
-          offices = data['office_locations']
+        update_and_export_index(table_name: :office_locations) do |offices|
           offices.each do |office|
             office['self'].sub!('api/beta/', '')
             office['rep'].sub!('api/beta/', '')
           end
-
-          write_to_json_and_yaml 'office_locations', offices
-          puts `git add *office_locations.*; git commit -m 'update office_locations index files'`
-          puts `git push heroku master` if ENV['deploy'] == 'true'
         end
       end
 
@@ -129,6 +109,20 @@ namespace :db do
         if ENV['qr_codes'] == 'true' && Rails.env.development?
           Rake::Task['pyr:qr_codes:create'].invoke
         end
+      end
+
+      def update_and_export_index(table_name:)
+        return if Rails.env.production?
+        url  = "https://phone-your-rep.herokuapp.com/api/beta/#{table_name}?generate=true"
+        data = refresh_pyr_index_data(url)
+
+        write_to_json_and_yaml "api_beta_#{table_name}", data
+
+        altered_data = yield data[table_name.to_s]
+
+        write_to_json_and_yaml table_name.to_s, altered_data
+        puts `git add *#{table_name}.*; git commit -m 'update #{table_name} index files'`
+        puts `git push heroku master` if ENV['deploy'] == 'true'
       end
 
       def refresh_pyr_index_data(url)
