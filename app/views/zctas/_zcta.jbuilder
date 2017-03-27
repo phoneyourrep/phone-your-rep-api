@@ -9,7 +9,7 @@ if @districts
   end
 end
 
-unless @reps.blank?
+if @reps
   json.set! 'reps', @reps do |rep|
     json.partial! 'reps/rep', rep: rep
   end
