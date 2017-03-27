@@ -84,16 +84,10 @@ namespace :db do
       desc 'Export reps index to JSON and YAML files'
       task :export_reps do
         if Rails.env.development?
-          sh "curl 'https://phone-your-rep.herokuapp.com/api/"\
-            "beta/reps?generate=true' -o 'api_beta_reps.json'"
-          data = JSON.parse File.read('api_beta_reps.json')
-          data['_links']['self']['href'].sub!('?generate=true', '')
-          File.open('api_beta_reps.json', 'w') { |json| json.write JSON.pretty_generate(data) }
-          File.open('api_beta_reps.yaml', 'w') do |yaml|
-            yaml.write JSON.parse(
-              File.read('api_beta_reps.json')
-            ).to_yaml
-          end
+          url = 'https://phone-your-rep.herokuapp.com/api/beta/reps?generate=true'
+          data = refresh_pyr_index_data(url)
+
+          write_to_json_and_yaml 'api_beta_reps', data
 
           reps = data['reps']
           reps.each do |rep|
@@ -104,12 +98,7 @@ namespace :db do
             end
           end
 
-          File.open('reps.json', 'w') { |json| json.write JSON.pretty_generate(reps) }
-          File.open('reps.yaml', 'w') do |yaml|
-            yaml.write JSON.parse(
-              File.read('reps.json')
-            ).to_yaml
-          end
+          write_to_json_and_yaml 'reps', reps
           puts `git add *reps.*; git commit -m 'update reps index files'`
           puts `git push heroku master` if ENV['deploy'] == 'true'
         end
@@ -118,19 +107,10 @@ namespace :db do
       desc 'Export office_locations index to JSON and YAML files'
       task :export_office_locations do
         if Rails.env.development?
-          sh "curl 'https://phone-your-rep.herokuapp.com/api/"\
-            "beta/office_locations?generate=true' -o 'api_beta_office_locations.json'"
-          data = JSON.parse File.read('api_beta_office_locations.json')
-          data['_links']['self']['href'].sub!('?generate=true', '')
-          File.open('api_beta_office_locations.json', 'w') do |json|
-            json.write JSON.pretty_generate(data)
-          end
+          url = 'https://phone-your-rep.herokuapp.com/api/beta/office_locations?generate=true'
+          data = refresh_pyr_index_data(url)
 
-          File.open('api_beta_office_locations.yaml', 'w') do |file|
-            file.write JSON.parse(
-              File.read('api_beta_office_locations.json')
-            ).to_yaml
-          end
+          write_to_json_and_yaml 'api_beta_office_locations', data
 
           offices = data['office_locations']
           offices.each do |office|
@@ -138,15 +118,7 @@ namespace :db do
             office['rep'].sub!('api/beta/', '')
           end
 
-          File.open('office_locations.json', 'w') do |json|
-            json.write JSON.pretty_generate(offices)
-          end
-
-          File.open('office_locations.yaml', 'w') do |yaml|
-            yaml.write JSON.parse(
-              File.read('office_locations.json')
-            ).to_yaml
-          end
+          write_to_json_and_yaml 'office_locations', offices
           puts `git add *office_locations.*; git commit -m 'update office_locations index files'`
           puts `git push heroku master` if ENV['deploy'] == 'true'
         end
@@ -157,6 +129,19 @@ namespace :db do
         if ENV['qr_codes'] == 'true' && Rails.env.development?
           Rake::Task['pyr:qr_codes:create'].invoke
         end
+      end
+
+      def refresh_pyr_index_data(url)
+        json = JSON.parse `curl #{url}`
+        json['_links']['self']['href'].sub!('?generate=true', '')
+        json
+      end
+
+      def write_to_json_and_yaml(file_prefix, data_hash)
+        puts "Writing data in JSON format to #{file_prefix}.json"
+        File.open("#{file_prefix}.json", 'w') { |jsn| jsn.write JSON.pretty_generate(data_hash) }
+        puts "Writing data in YAML format to #{file_prefix}.yaml"
+        File.open("#{file_prefix}.yaml", 'w') { |yml| yml.write data_hash.to_yaml }
       end
 
       def get_source(default)
