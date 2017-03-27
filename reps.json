@@ -57,7 +57,7 @@
         "latitude": 38.8867621,
         "longitude": -77.0069216,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/A000055-capitol",
-        "downloads": 0,
+        "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/A000055_capitol.png"
       },
       {
@@ -229,7 +229,7 @@
         "latitude": 35.96172,
         "longitude": -83.917758,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/A000360-knoxville",
-        "downloads": 6,
+        "downloads": 7,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/A000360_knoxville.png"
       },
       {
@@ -256,6 +256,29 @@
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/A000360_jackson.png"
       },
       {
+        "self": "https://phone-your-rep.herokuapp.com/office_locations/A000360-chattanooga",
+        "rep": "https://phone-your-rep.herokuapp.com/reps/A000360",
+        "active": true,
+        "office_id": "A000360-chattanooga",
+        "bioguide_id": "A000360",
+        "office_type": "district",
+        "distance": null,
+        "building": "Joel E. Soloman Federal Building",
+        "address": "900 Georgia Ave.",
+        "suite": "#260",
+        "city": "Chattanooga",
+        "state": "TN",
+        "zip": "37402",
+        "phone": "423-752-5337",
+        "fax": "423-752-5342",
+        "hours": "",
+        "latitude": 35.0450875,
+        "longitude": -85.3082146,
+        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/A000360-chattanooga",
+        "downloads": 2,
+        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/A000360_chattanooga.png"
+      },
+      {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/A000360-nashville",
         "rep": "https://phone-your-rep.herokuapp.com/reps/A000360",
         "active": true,
@@ -277,29 +300,6 @@
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/A000360-nashville",
         "downloads": 9,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/A000360_nashville.png"
-      },
-      {
-        "self": "https://phone-your-rep.herokuapp.com/office_locations/A000360-chattanooga",
-        "rep": "https://phone-your-rep.herokuapp.com/reps/A000360",
-        "active": true,
-        "office_id": "A000360-chattanooga",
-        "bioguide_id": "A000360",
-        "office_type": "district",
-        "distance": null,
-        "building": "Joel E. Soloman Federal Building",
-        "address": "900 Georgia Ave.",
-        "suite": "#260",
-        "city": "Chattanooga",
-        "state": "TN",
-        "zip": "37402",
-        "phone": "423-752-5337",
-        "fax": "423-752-5342",
-        "hours": "",
-        "latitude": 35.0450875,
-        "longitude": -85.3082146,
-        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/A000360-chattanooga",
-        "downloads": 1,
-        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/A000360_chattanooga.png"
       },
       {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/A000360-memphis",
@@ -407,7 +407,7 @@
         "latitude": 42.3213842,
         "longitude": -85.1838246,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/A000367-battle_creek",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/A000367_battle_creek.png"
       },
       {
@@ -453,7 +453,7 @@
         "latitude": 42.9699746,
         "longitude": -85.6709742,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/A000367-grand_rapids",
-        "downloads": 4,
+        "downloads": 5,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/A000367_grand_rapids.png"
       }
     ]
@@ -847,6 +847,29 @@
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/A000372_dublin.png"
       },
       {
+        "self": "https://phone-your-rep.herokuapp.com/office_locations/A000372-augusta",
+        "rep": "https://phone-your-rep.herokuapp.com/reps/A000372",
+        "active": true,
+        "office_id": "A000372-augusta",
+        "bioguide_id": "A000372",
+        "office_type": "district",
+        "distance": null,
+        "building": "Bldg. 200",
+        "address": "2743 Perimeter Pkwy",
+        "suite": "Suite 225",
+        "city": "Augusta",
+        "state": "GA",
+        "zip": "30909",
+        "phone": "706-228-1980",
+        "fax": "706-228-1954",
+        "hours": "",
+        "latitude": 33.4875735,
+        "longitude": -82.0846666,
+        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/A000372-augusta",
+        "downloads": 2,
+        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/A000372_augusta.png"
+      },
+      {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/A000372-vidalia",
         "rep": "https://phone-your-rep.herokuapp.com/reps/A000372",
         "active": true,
@@ -868,29 +891,6 @@
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/A000372-vidalia",
         "downloads": 0,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/A000372_vidalia.png"
-      },
-      {
-        "self": "https://phone-your-rep.herokuapp.com/office_locations/A000372-augusta",
-        "rep": "https://phone-your-rep.herokuapp.com/reps/A000372",
-        "active": true,
-        "office_id": "A000372-augusta",
-        "bioguide_id": "A000372",
-        "office_type": "district",
-        "distance": null,
-        "building": "Bldg. 200",
-        "address": "2743 Perimeter Pkwy",
-        "suite": "Suite 225",
-        "city": "Augusta",
-        "state": "GA",
-        "zip": "30909",
-        "phone": "706-228-1980",
-        "fax": "706-228-1954",
-        "hours": "",
-        "latitude": 33.4875735,
-        "longitude": -82.0846666,
-        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/A000372-augusta",
-        "downloads": 1,
-        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/A000372_augusta.png"
       }
     ]
   },
@@ -1325,7 +1325,7 @@
         "latitude": 38.8871071,
         "longitude": -77.0104749,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B000490-capitol",
-        "downloads": 1,
+        "downloads": 2,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B000490_capitol.png"
       },
       {
@@ -1411,7 +1411,7 @@
         "latitude": 38.8867806,
         "longitude": -77.008414,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B000574-capitol",
-        "downloads": 4,
+        "downloads": 7,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B000574_capitol.png"
       },
       {
@@ -1434,7 +1434,7 @@
         "latitude": 45.5293348,
         "longitude": -122.6555902,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B000574-portland",
-        "downloads": 15,
+        "downloads": 21,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B000574_portland.png"
       }
     ]
@@ -1560,7 +1560,7 @@
         "latitude": 39.1021449,
         "longitude": -94.5825038,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B000575-kansas_city",
-        "downloads": 12,
+        "downloads": 13,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B000575_kansas_city.png"
       },
       {
@@ -1692,7 +1692,7 @@
         "latitude": 30.7240052,
         "longitude": -95.5535049,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B000755-huntsville",
-        "downloads": 0,
+        "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B000755_huntsville.png"
       },
       {
@@ -1795,7 +1795,7 @@
         "latitude": 41.4964399,
         "longitude": -81.6975439,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B000944-cleveland",
-        "downloads": 45,
+        "downloads": 46,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B000944_cleveland.png"
       },
       {
@@ -1841,7 +1841,7 @@
         "latitude": 39.1007745,
         "longitude": -84.5120256,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B000944-cincinnati",
-        "downloads": 32,
+        "downloads": 34,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B000944_cincinnati.png"
       },
       {
@@ -1921,7 +1921,7 @@
         "latitude": 35.594066,
         "longitude": -82.55792,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001135-asheville",
-        "downloads": 19,
+        "downloads": 20,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001135_asheville.png"
       },
       {
@@ -1944,7 +1944,7 @@
         "latitude": 34.2376985,
         "longitude": -77.9492582,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001135-wilmington",
-        "downloads": 15,
+        "downloads": 17,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001135_wilmington.png"
       },
       {
@@ -2271,7 +2271,7 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001230-capitol",
-        "downloads": 11,
+        "downloads": 12,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001230_capitol.png"
       },
       {
@@ -2317,7 +2317,7 @@
         "latitude": 43.0388214,
         "longitude": -87.9200848,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001230-milwaukee",
-        "downloads": 19,
+        "downloads": 23,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001230_milwaukee.png"
       },
       {
@@ -3137,7 +3137,7 @@
         "latitude": 28.261156,
         "longitude": -82.674347,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001257-new_port_richey",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001257_new_port_richey.png"
       },
       {
@@ -3544,7 +3544,7 @@
         "latitude": 39.734465,
         "longitude": -104.9852342,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001267-denver",
-        "downloads": 52,
+        "downloads": 54,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001267_denver.png"
       },
       {
@@ -3594,27 +3594,27 @@
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001267_alamosa.png"
       },
       {
-        "self": "https://phone-your-rep.herokuapp.com/office_locations/B001267-fort_collins",
+        "self": "https://phone-your-rep.herokuapp.com/office_locations/B001267-grand_junction",
         "rep": "https://phone-your-rep.herokuapp.com/reps/B001267",
         "active": true,
-        "office_id": "B001267-fort_collins",
+        "office_id": "B001267-grand_junction",
         "bioguide_id": "B001267",
         "office_type": "district",
         "distance": null,
         "building": "",
-        "address": "1200 S. College Ave.",
-        "suite": "Suite 211",
-        "city": "Fort Collins",
+        "address": "225 N. 5th St.",
+        "suite": "Suite 511",
+        "city": "Grand Junction",
         "state": "CO",
-        "zip": "80524",
-        "phone": "970-224-2200",
-        "fax": "970-224-2205",
+        "zip": "81501",
+        "phone": "970-241-6631",
+        "fax": "",
         "hours": "",
-        "latitude": 40.5716714,
-        "longitude": -105.0766516,
-        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001267-fort_collins",
-        "downloads": 12,
-        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001267_fort_collins.png"
+        "latitude": 39.0688046,
+        "longitude": -108.5648398,
+        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001267-grand_junction",
+        "downloads": 11,
+        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001267_grand_junction.png"
       },
       {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/B001267-pueblo",
@@ -3636,31 +3636,31 @@
         "latitude": 38.2795281,
         "longitude": -104.508253,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001267-pueblo",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001267_pueblo.png"
       },
       {
-        "self": "https://phone-your-rep.herokuapp.com/office_locations/B001267-grand_junction",
+        "self": "https://phone-your-rep.herokuapp.com/office_locations/B001267-fort_collins",
         "rep": "https://phone-your-rep.herokuapp.com/reps/B001267",
         "active": true,
-        "office_id": "B001267-grand_junction",
+        "office_id": "B001267-fort_collins",
         "bioguide_id": "B001267",
         "office_type": "district",
         "distance": null,
         "building": "",
-        "address": "225 N. 5th St.",
-        "suite": "Suite 511",
-        "city": "Grand Junction",
+        "address": "1200 S. College Ave.",
+        "suite": "Suite 211",
+        "city": "Fort Collins",
         "state": "CO",
-        "zip": "81501",
-        "phone": "970-241-6631",
-        "fax": "",
+        "zip": "80524",
+        "phone": "970-224-2200",
+        "fax": "970-224-2205",
         "hours": "",
-        "latitude": 39.0688046,
-        "longitude": -108.5648398,
-        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001267-grand_junction",
-        "downloads": 10,
-        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001267_grand_junction.png"
+        "latitude": 40.5716714,
+        "longitude": -105.0766516,
+        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001267-fort_collins",
+        "downloads": 13,
+        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001267_fort_collins.png"
       },
       {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/B001267-durango",
@@ -3791,7 +3791,7 @@
         "latitude": 40.9545235,
         "longitude": -75.9769174,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001269-hazleton",
-        "downloads": 0,
+        "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001269_hazleton.png"
       },
       {
@@ -3900,7 +3900,7 @@
         "latitude": 38.8871071,
         "longitude": -77.0104749,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001270-capitol",
-        "downloads": 3,
+        "downloads": 6,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001270_capitol.png"
       },
       {
@@ -3923,7 +3923,7 @@
         "latitude": 34.0626436,
         "longitude": -118.3381029,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001270-los_angeles",
-        "downloads": 6,
+        "downloads": 7,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001270_los_angeles.png"
       }
     ]
@@ -4376,7 +4376,7 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001277-capitol",
-        "downloads": 19,
+        "downloads": 20,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001277_capitol.png"
       },
       {
@@ -4399,7 +4399,7 @@
         "latitude": 41.1749972,
         "longitude": -73.1931954,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001277-bridgeport",
-        "downloads": 8,
+        "downloads": 9,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001277_bridgeport.png"
       },
       {
@@ -4422,7 +4422,7 @@
         "latitude": 41.7665316,
         "longitude": -72.6719747,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001277-hartford",
-        "downloads": 26,
+        "downloads": 27,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001277_hartford.png"
       }
     ]
@@ -4485,7 +4485,7 @@
         "latitude": 45.4900502,
         "longitude": -122.8078224,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001278-beaverton",
-        "downloads": 7,
+        "downloads": 8,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001278_beaverton.png"
       },
       {
@@ -4594,7 +4594,7 @@
         "latitude": 39.9633834,
         "longitude": -82.9878075,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001281-columbus",
-        "downloads": 1,
+        "downloads": 2,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001281_columbus.png"
       }
     ]
@@ -4984,7 +4984,7 @@
         "latitude": 34.1794905,
         "longitude": -118.8726791,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001285-thousand_oaks",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001285_thousand_oaks.png"
       }
     ]
@@ -5179,7 +5179,7 @@
         "latitude": 38.8867806,
         "longitude": -77.008414,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001287-capitol",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001287_capitol.png"
       },
       {
@@ -5718,7 +5718,7 @@
         "latitude": 38.8867806,
         "longitude": -77.008414,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001292-capitol",
-        "downloads": 5,
+        "downloads": 6,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001292_capitol.png"
       },
       {
@@ -5890,7 +5890,7 @@
         "latitude": 42.502919,
         "longitude": -90.6681282,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001294-dubuque",
-        "downloads": 0,
+        "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001294_dubuque.png"
       },
       {
@@ -6768,7 +6768,7 @@
         "latitude": 44.7066718,
         "longitude": -85.5961732,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001301-traverse_city",
-        "downloads": 1,
+        "downloads": 2,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001301_traverse_city.png"
       },
       {
@@ -6877,7 +6877,7 @@
         "latitude": 33.3712904,
         "longitude": -111.6870648,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001302-mesa",
-        "downloads": 3,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001302_mesa.png"
       }
     ]
@@ -7278,7 +7278,7 @@
         "latitude": 47.6585992,
         "longitude": -117.4260094,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C000127-spokane",
-        "downloads": 12,
+        "downloads": 13,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C000127_spokane.png"
       },
       {
@@ -7324,7 +7324,7 @@
         "latitude": 47.2535757,
         "longitude": -122.4390697,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C000127-tacoma",
-        "downloads": 21,
+        "downloads": 23,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C000127_tacoma.png"
       },
       {
@@ -7393,7 +7393,7 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C000127-capitol",
-        "downloads": 44,
+        "downloads": 46,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C000127_capitol.png"
       },
       {
@@ -7416,7 +7416,7 @@
         "latitude": 47.6045895,
         "longitude": -122.3354608,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C000127-seattle",
-        "downloads": 65,
+        "downloads": 68,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C000127_seattle.png"
       }
     ]
@@ -7473,7 +7473,7 @@
         "latitude": 39.0895234,
         "longitude": -77.1511348,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C000141-rockville",
-        "downloads": 32,
+        "downloads": 33,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C000141_rockville.png"
       },
       {
@@ -7565,7 +7565,7 @@
         "latitude": 39.2871649,
         "longitude": -76.6156372,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C000141-baltimore",
-        "downloads": 44,
+        "downloads": 45,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C000141_baltimore.png"
       },
       {
@@ -7588,7 +7588,7 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C000141-capitol",
-        "downloads": 30,
+        "downloads": 31,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C000141_capitol.png"
       }
     ]
@@ -7668,7 +7668,7 @@
         "latitude": 39.739183,
         "longitude": -75.5492666,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C000174-wilmington",
-        "downloads": 7,
+        "downloads": 8,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C000174_wilmington.png"
       },
       {
@@ -8253,7 +8253,7 @@
         "latitude": 36.1623269,
         "longitude": -86.7817797,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C000754-nashville",
-        "downloads": 1,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C000754_nashville.png"
       },
       {
@@ -8580,7 +8580,7 @@
         "latitude": 39.3030641,
         "longitude": -76.6191075,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C000984-baltimore",
-        "downloads": 3,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C000984_baltimore.png"
       },
       {
@@ -8861,7 +8861,7 @@
         "latitude": 38.8867806,
         "longitude": -77.008414,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001037-capitol",
-        "downloads": 4,
+        "downloads": 5,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001037_capitol.png"
       },
       {
@@ -9096,7 +9096,7 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001047-capitol",
-        "downloads": 7,
+        "downloads": 8,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001047_capitol.png"
       },
       {
@@ -9142,7 +9142,7 @@
         "latitude": 37.779625,
         "longitude": -81.188172,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001047-beckley",
-        "downloads": 0,
+        "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001047_beckley.png"
       },
       {
@@ -9796,7 +9796,7 @@
         "latitude": 32.3522862,
         "longitude": -95.3002871,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001056-tyler",
-        "downloads": 13,
+        "downloads": 15,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001056_tyler.png"
       },
       {
@@ -9819,7 +9819,7 @@
         "latitude": 32.9400414,
         "longitude": -96.8235975,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001056-dallas",
-        "downloads": 82,
+        "downloads": 83,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001056_dallas.png"
       },
       {
@@ -9842,7 +9842,7 @@
         "latitude": 29.7620629,
         "longitude": -95.4159532,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001056-houston",
-        "downloads": 62,
+        "downloads": 63,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001056_houston.png"
       },
       {
@@ -10238,7 +10238,7 @@
         "latitude": 30.7492439,
         "longitude": -98.6764682,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001062-llano",
-        "downloads": 0,
+        "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001062_llano.png"
       },
       {
@@ -10611,7 +10611,7 @@
         "latitude": 38.8871071,
         "longitude": -77.0104749,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001067-capitol",
-        "downloads": 0,
+        "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001067_capitol.png"
       },
       {
@@ -10634,7 +10634,7 @@
         "latitude": 40.6536853,
         "longitude": -73.9516805,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001067-brooklyn",
-        "downloads": 8,
+        "downloads": 9,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001067_brooklyn.png"
       }
     ]
@@ -10955,31 +10955,8 @@
         "latitude": 40.6010783,
         "longitude": -75.4749998,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001070-allentown",
-        "downloads": 24,
+        "downloads": 25,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001070_allentown.png"
-      },
-      {
-        "self": "https://phone-your-rep.herokuapp.com/office_locations/C001070-pittsburgh",
-        "rep": "https://phone-your-rep.herokuapp.com/reps/C001070",
-        "active": true,
-        "office_id": "C001070-pittsburgh",
-        "bioguide_id": "C001070",
-        "office_type": "district",
-        "distance": null,
-        "building": "Grant Building",
-        "address": "310 Grant St.",
-        "suite": "Suite 2415",
-        "city": "Pittsburgh",
-        "state": "PA",
-        "zip": "15219",
-        "phone": "412-803-7370",
-        "fax": "412-803-7379",
-        "hours": "",
-        "latitude": 40.4376694,
-        "longitude": -79.9974916,
-        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001070-pittsburgh",
-        "downloads": 47,
-        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001070_pittsburgh.png"
       },
       {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/C001070-erie",
@@ -11005,6 +10982,29 @@
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001070_erie.png"
       },
       {
+        "self": "https://phone-your-rep.herokuapp.com/office_locations/C001070-pittsburgh",
+        "rep": "https://phone-your-rep.herokuapp.com/reps/C001070",
+        "active": true,
+        "office_id": "C001070-pittsburgh",
+        "bioguide_id": "C001070",
+        "office_type": "district",
+        "distance": null,
+        "building": "Grant Building",
+        "address": "310 Grant St.",
+        "suite": "Suite 2415",
+        "city": "Pittsburgh",
+        "state": "PA",
+        "zip": "15219",
+        "phone": "412-803-7370",
+        "fax": "412-803-7379",
+        "hours": "",
+        "latitude": 40.4376694,
+        "longitude": -79.9974916,
+        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001070-pittsburgh",
+        "downloads": 49,
+        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001070_pittsburgh.png"
+      },
+      {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/C001070-harrisburg",
         "rep": "https://phone-your-rep.herokuapp.com/reps/C001070",
         "active": true,
@@ -11024,7 +11024,7 @@
         "latitude": 40.2619774,
         "longitude": -76.8829619,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001070-harrisburg",
-        "downloads": 20,
+        "downloads": 22,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001070_harrisburg.png"
       },
       {
@@ -11047,7 +11047,7 @@
         "latitude": 39.9532694,
         "longitude": -75.1736461,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001070-philadelphia",
-        "downloads": 75,
+        "downloads": 77,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001070_philadelphia.png"
       }
     ]
@@ -11150,7 +11150,7 @@
         "latitude": 35.0454311,
         "longitude": -85.309912,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001071-chattanooga",
-        "downloads": 4,
+        "downloads": 6,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001071_chattanooga.png"
       },
       {
@@ -11173,7 +11173,7 @@
         "latitude": 35.96172,
         "longitude": -83.917758,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001071-knoxville",
-        "downloads": 9,
+        "downloads": 10,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001071_knoxville.png"
       },
       {
@@ -11196,7 +11196,7 @@
         "latitude": 36.1400262,
         "longitude": -86.8199101,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001071-nashville",
-        "downloads": 17,
+        "downloads": 18,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001071_nashville.png"
       },
       {
@@ -12389,7 +12389,7 @@
         "latitude": 41.4093981,
         "longitude": -75.6643973,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001090-scranton",
-        "downloads": 1,
+        "downloads": 2,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001090_scranton.png"
       },
       {
@@ -12412,7 +12412,7 @@
         "latitude": 40.6908081,
         "longitude": -75.2111997,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001090-easton",
-        "downloads": 1,
+        "downloads": 2,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001090_easton.png"
       }
     ]
@@ -13272,7 +13272,7 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001098-capitol",
-        "downloads": 19,
+        "downloads": 20,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001098_capitol.png"
       },
       {
@@ -13341,7 +13341,7 @@
         "latitude": 32.3480097,
         "longitude": -95.3009807,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001098-tyler",
-        "downloads": 9,
+        "downloads": 10,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001098_tyler.png"
       },
       {
@@ -13387,7 +13387,7 @@
         "latitude": 32.8092691,
         "longitude": -96.8059281,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001098-dallas",
-        "downloads": 31,
+        "downloads": 32,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001098_dallas.png"
       }
     ]
@@ -13496,7 +13496,7 @@
         "latitude": 42.2787415,
         "longitude": -71.4170035,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001101-framingham",
-        "downloads": 4,
+        "downloads": 5,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001101_framingham.png"
       }
     ]
@@ -13777,7 +13777,7 @@
         "latitude": 40.3466277,
         "longitude": -75.9595672,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001106-wyomissing",
-        "downloads": 0,
+        "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001106_wyomissing.png"
       },
       {
@@ -13800,7 +13800,7 @@
         "latitude": 38.8867621,
         "longitude": -77.0069216,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001106-capitol",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001106_capitol.png"
       },
       {
@@ -13909,7 +13909,7 @@
         "latitude": 24.5505584,
         "longitude": -81.7973549,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001107-key_west",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001107_key_west.png"
       },
       {
@@ -14534,7 +14534,7 @@
         "latitude": 36.1651058,
         "longitude": -115.1424211,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001113-las_vegas",
-        "downloads": 1,
+        "downloads": 2,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001113_las_vegas.png"
       },
       {
@@ -14706,7 +14706,7 @@
         "latitude": 44.0516985,
         "longitude": -123.0857882,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000191-eugene",
-        "downloads": 7,
+        "downloads": 8,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000191_eugene.png"
       },
       {
@@ -14752,7 +14752,7 @@
         "latitude": 43.2087597,
         "longitude": -123.3445182,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000191-roseburg",
-        "downloads": 3,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000191_roseburg.png"
       },
       {
@@ -15119,7 +15119,7 @@
         "latitude": 38.8867621,
         "longitude": -77.0069216,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000482-capitol",
-        "downloads": 0,
+        "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000482_capitol.png"
       },
       {
@@ -15165,7 +15165,7 @@
         "latitude": 40.352477,
         "longitude": -79.858547,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000482-mckeesport",
-        "downloads": 0,
+        "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000482_mckeesport.png"
       },
       {
@@ -15211,7 +15211,7 @@
         "latitude": 40.4644937,
         "longitude": -79.8281138,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000482-penn_hills",
-        "downloads": 1,
+        "downloads": 2,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000482_penn_hills.png"
       }
     ]
@@ -15381,6 +15381,29 @@
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000563_carbondale.png"
       },
       {
+        "self": "https://phone-your-rep.herokuapp.com/office_locations/D000563-springfield",
+        "rep": "https://phone-your-rep.herokuapp.com/reps/D000563",
+        "active": true,
+        "office_id": "D000563-springfield",
+        "bioguide_id": "D000563",
+        "office_type": "district",
+        "distance": null,
+        "building": "",
+        "address": "525 S. 8th St.",
+        "suite": "",
+        "city": "Springfield",
+        "state": "IL",
+        "zip": "62703",
+        "phone": "217-492-4062",
+        "fax": "217-492-4382",
+        "hours": "8:30 am to 5:00 pm",
+        "latitude": 39.7965137,
+        "longitude": -89.6451404,
+        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000563-springfield",
+        "downloads": 16,
+        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000563_springfield.png"
+      },
+      {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/D000563-rock_island",
         "rep": "https://phone-your-rep.herokuapp.com/reps/D000563",
         "active": true,
@@ -15404,29 +15427,6 @@
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000563_rock_island.png"
       },
       {
-        "self": "https://phone-your-rep.herokuapp.com/office_locations/D000563-springfield",
-        "rep": "https://phone-your-rep.herokuapp.com/reps/D000563",
-        "active": true,
-        "office_id": "D000563-springfield",
-        "bioguide_id": "D000563",
-        "office_type": "district",
-        "distance": null,
-        "building": "",
-        "address": "525 S. 8th St.",
-        "suite": "",
-        "city": "Springfield",
-        "state": "IL",
-        "zip": "62703",
-        "phone": "217-492-4062",
-        "fax": "217-492-4382",
-        "hours": "8:30 am to 5:00 pm",
-        "latitude": 39.7965137,
-        "longitude": -89.6451404,
-        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000563-springfield",
-        "downloads": 15,
-        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000563_springfield.png"
-      },
-      {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/D000563-chicago",
         "rep": "https://phone-your-rep.herokuapp.com/reps/D000563",
         "active": true,
@@ -15446,7 +15446,7 @@
         "latitude": 41.8784454,
         "longitude": -87.63,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000563-chicago",
-        "downloads": 146,
+        "downloads": 151,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000563_chicago.png"
       },
       {
@@ -15754,29 +15754,6 @@
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000604_capitol.png"
       },
       {
-        "self": "https://phone-your-rep.herokuapp.com/office_locations/D000604-annville",
-        "rep": "https://phone-your-rep.herokuapp.com/reps/D000604",
-        "active": true,
-        "office_id": "D000604-annville",
-        "bioguide_id": "D000604",
-        "office_type": "district",
-        "distance": null,
-        "building": "",
-        "address": "342 W. Main St.",
-        "suite": "",
-        "city": "Annville",
-        "state": "PA",
-        "zip": "17003",
-        "phone": "717-867-1026",
-        "fax": "717-867-1540",
-        "hours": "Monday through Friday 9 AM to 5 PM",
-        "latitude": 40.32787,
-        "longitude": -76.521464,
-        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000604-annville",
-        "downloads": 1,
-        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000604_annville.png"
-      },
-      {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/D000604-allentown",
         "rep": "https://phone-your-rep.herokuapp.com/reps/D000604",
         "active": true,
@@ -15798,6 +15775,29 @@
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000604-allentown",
         "downloads": 6,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000604_allentown.png"
+      },
+      {
+        "self": "https://phone-your-rep.herokuapp.com/office_locations/D000604-annville",
+        "rep": "https://phone-your-rep.herokuapp.com/reps/D000604",
+        "active": true,
+        "office_id": "D000604-annville",
+        "bioguide_id": "D000604",
+        "office_type": "district",
+        "distance": null,
+        "building": "",
+        "address": "342 W. Main St.",
+        "suite": "",
+        "city": "Annville",
+        "state": "PA",
+        "zip": "17003",
+        "phone": "717-867-1026",
+        "fax": "717-867-1540",
+        "hours": "Monday through Friday 9 AM to 5 PM",
+        "latitude": 40.32787,
+        "longitude": -76.521464,
+        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000604-annville",
+        "downloads": 2,
+        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000604_annville.png"
       },
       {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/D000604-hershey",
@@ -15945,7 +15945,7 @@
         "latitude": 39.7689854,
         "longitude": -86.1559046,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000607-indianapolis",
-        "downloads": 22,
+        "downloads": 25,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000607_indianapolis.png"
       },
       {
@@ -15968,7 +15968,7 @@
         "latitude": 41.6153792,
         "longitude": -87.5212089,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000607-hammond",
-        "downloads": 8,
+        "downloads": 9,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000607_hammond.png"
       },
       {
@@ -16563,6 +16563,29 @@
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000616_winchester.png"
       },
       {
+        "self": "https://phone-your-rep.herokuapp.com/office_locations/D000616-cleveland",
+        "rep": "https://phone-your-rep.herokuapp.com/reps/D000616",
+        "active": true,
+        "office_id": "D000616-cleveland",
+        "bioguide_id": "D000616",
+        "office_type": "district",
+        "distance": null,
+        "building": "",
+        "address": "301 Keith St.",
+        "suite": "Suite 212",
+        "city": "Cleveland",
+        "state": "TN",
+        "zip": "37311",
+        "phone": "423-472-7500",
+        "fax": "423-472-7800",
+        "hours": "By appointment only",
+        "latitude": 35.160062,
+        "longitude": -84.8840222,
+        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000616-cleveland",
+        "downloads": 1,
+        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000616_cleveland.png"
+      },
+      {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/D000616-murfreesboro",
         "rep": "https://phone-your-rep.herokuapp.com/reps/D000616",
         "active": true,
@@ -16584,29 +16607,6 @@
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000616-murfreesboro",
         "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000616_murfreesboro.png"
-      },
-      {
-        "self": "https://phone-your-rep.herokuapp.com/office_locations/D000616-cleveland",
-        "rep": "https://phone-your-rep.herokuapp.com/reps/D000616",
-        "active": true,
-        "office_id": "D000616-cleveland",
-        "bioguide_id": "D000616",
-        "office_type": "district",
-        "distance": null,
-        "building": "",
-        "address": "301 Keith St.",
-        "suite": "Suite 212",
-        "city": "Cleveland",
-        "state": "TN",
-        "zip": "37311",
-        "phone": "423-472-7500",
-        "fax": "423-472-7800",
-        "hours": "By appointment only",
-        "latitude": 35.160062,
-        "longitude": -84.8840222,
-        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000616-cleveland",
-        "downloads": 0,
-        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000616_cleveland.png"
       },
       {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/D000616-capitol",
@@ -16737,7 +16737,7 @@
         "latitude": 47.7965458,
         "longitude": -122.2097757,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000617-bothell",
-        "downloads": 5,
+        "downloads": 6,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000617_bothell.png"
       }
     ]
@@ -17454,7 +17454,7 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000622-capitol",
-        "downloads": 105,
+        "downloads": 106,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000622_capitol.png"
       },
       {
@@ -17630,29 +17630,6 @@
     "instagram_id": null,
     "office_locations": [
       {
-        "self": "https://phone-your-rep.herokuapp.com/office_locations/D000624-ypsilanti",
-        "rep": "https://phone-your-rep.herokuapp.com/reps/D000624",
-        "active": true,
-        "office_id": "D000624-ypsilanti",
-        "bioguide_id": "D000624",
-        "office_type": "district",
-        "distance": null,
-        "building": "",
-        "address": "301 W. Michigan Ave.",
-        "suite": "Suite 400",
-        "city": "Ypsilanti",
-        "state": "MI",
-        "zip": "48197",
-        "phone": "734-481-1100",
-        "fax": "",
-        "hours": "",
-        "latitude": 42.2406978,
-        "longitude": -83.6164891,
-        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000624-ypsilanti",
-        "downloads": 4,
-        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000624_ypsilanti.png"
-      },
-      {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/D000624-dearborn",
         "rep": "https://phone-your-rep.herokuapp.com/reps/D000624",
         "active": true,
@@ -17676,6 +17653,29 @@
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000624_dearborn.png"
       },
       {
+        "self": "https://phone-your-rep.herokuapp.com/office_locations/D000624-ypsilanti",
+        "rep": "https://phone-your-rep.herokuapp.com/reps/D000624",
+        "active": true,
+        "office_id": "D000624-ypsilanti",
+        "bioguide_id": "D000624",
+        "office_type": "district",
+        "distance": null,
+        "building": "",
+        "address": "301 W. Michigan Ave.",
+        "suite": "Suite 400",
+        "city": "Ypsilanti",
+        "state": "MI",
+        "zip": "48197",
+        "phone": "734-481-1100",
+        "fax": "",
+        "hours": "",
+        "latitude": 42.2406978,
+        "longitude": -83.6164891,
+        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000624-ypsilanti",
+        "downloads": 5,
+        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000624_ypsilanti.png"
+      },
+      {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/D000624-capitol",
         "rep": "https://phone-your-rep.herokuapp.com/reps/D000624",
         "active": true,
@@ -17695,7 +17695,7 @@
         "latitude": 38.8867621,
         "longitude": -77.0069216,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000624-capitol",
-        "downloads": 3,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000624_capitol.png"
       }
     ]
@@ -17913,7 +17913,7 @@
         "latitude": 39.3317585,
         "longitude": -84.4066223,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000626-west_chester",
-        "downloads": 1,
+        "downloads": 2,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000626_west_chester.png"
       },
       {
@@ -17999,7 +17999,7 @@
         "latitude": 28.517804,
         "longitude": -81.4818644,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000627-orlando",
-        "downloads": 0,
+        "downloads": 2,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000627_orlando.png"
       },
       {
@@ -18022,7 +18022,7 @@
         "latitude": 38.8867621,
         "longitude": -77.0069216,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000627-capitol",
-        "downloads": 0,
+        "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000627_capitol.png"
       }
     ]
@@ -18349,7 +18349,7 @@
         "latitude": 37.4431725,
         "longitude": -122.1606451,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/E000215-palo_alto",
-        "downloads": 10,
+        "downloads": 11,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/E000215_palo_alto.png"
       }
     ]
@@ -18584,7 +18584,7 @@
         "latitude": 44.9918557,
         "longitude": -93.3071661,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/E000288-minneapolis",
-        "downloads": 8,
+        "downloads": 9,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/E000288_minneapolis.png"
       },
       {
@@ -18882,7 +18882,7 @@
         "latitude": 41.5864152,
         "longitude": -93.6201532,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/E000295-des_moines",
-        "downloads": 6,
+        "downloads": 7,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/E000295_des_moines.png"
       },
       {
@@ -19203,7 +19203,7 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/F000062-capitol",
-        "downloads": 87,
+        "downloads": 90,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/F000062_capitol.png"
       },
       {
@@ -19226,7 +19226,7 @@
         "latitude": 34.0476223,
         "longitude": -118.444656,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/F000062-los_angeles",
-        "downloads": 226,
+        "downloads": 235,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/F000062_los_angeles.png"
       },
       {
@@ -19249,7 +19249,7 @@
         "latitude": 37.7887748,
         "longitude": -122.4026656,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/F000062-san_francisco",
-        "downloads": 249,
+        "downloads": 257,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/F000062_san_francisco.png"
       },
       {
@@ -19272,7 +19272,7 @@
         "latitude": 32.7143481,
         "longitude": -117.1647085,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/F000062-san_diego",
-        "downloads": 86,
+        "downloads": 89,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/F000062_san_diego.png"
       },
       {
@@ -19484,7 +19484,7 @@
         "latitude": 33.5098565,
         "longitude": -112.0338808,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/F000444-phoenix",
-        "downloads": 52,
+        "downloads": 55,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/F000444_phoenix.png"
       }
     ]
@@ -19702,7 +19702,7 @@
         "latitude": 40.8108404,
         "longitude": -96.7033345,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/F000449-lincoln",
-        "downloads": 6,
+        "downloads": 8,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/F000449_lincoln.png"
       }
     ]
@@ -19920,7 +19920,7 @@
         "latitude": 41.758276,
         "longitude": -88.249771,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/F000454-aurora",
-        "downloads": 4,
+        "downloads": 5,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/F000454_aurora.png"
       }
     ]
@@ -20029,7 +20029,7 @@
         "latitude": 41.080905,
         "longitude": -81.565018,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/F000455-akron",
-        "downloads": 1,
+        "downloads": 2,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/F000455_akron.png"
       }
     ]
@@ -20310,7 +20310,7 @@
         "latitude": 35.0450875,
         "longitude": -85.3082146,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/F000459-chattanooga",
-        "downloads": 3,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/F000459_chattanooga.png"
       }
     ]
@@ -20614,7 +20614,7 @@
         "latitude": 26.3730924,
         "longitude": -80.1203093,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/F000462-boca_raton",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/F000462_boca_raton.png"
       },
       {
@@ -20717,7 +20717,7 @@
         "latitude": 41.2673318,
         "longitude": -96.0980857,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/F000463-omaha",
-        "downloads": 15,
+        "downloads": 17,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/F000463_omaha.png"
       },
       {
@@ -20740,7 +20740,7 @@
         "latitude": 40.8177383,
         "longitude": -96.7095183,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/F000463-lincoln",
-        "downloads": 7,
+        "downloads": 8,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/F000463_lincoln.png"
       },
       {
@@ -20872,7 +20872,7 @@
         "latitude": 42.2774942,
         "longitude": -74.9160098,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/F000464-delhi",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/F000464_delhi.png"
       },
       {
@@ -21090,7 +21090,7 @@
         "latitude": 40.2162341,
         "longitude": -74.9308492,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/F000466-langhorne",
-        "downloads": 5,
+        "downloads": 6,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/F000466_langhorne.png"
       }
     ]
@@ -21325,7 +21325,7 @@
         "latitude": 34.9245162,
         "longitude": -81.0247705,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/G000359-rock_hill",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/G000359_rock_hill.png"
       },
       {
@@ -21417,7 +21417,7 @@
         "latitude": 34.1974074,
         "longitude": -79.7733804,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/G000359-florence",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/G000359_florence.png"
       },
       {
@@ -21721,7 +21721,7 @@
         "latitude": 41.5864152,
         "longitude": -93.6201532,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/G000386-des_moines",
-        "downloads": 9,
+        "downloads": 11,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/G000386_des_moines.png"
       }
     ]
@@ -21916,7 +21916,7 @@
         "latitude": 41.9249703,
         "longitude": -87.7091868,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/G000535-chicago",
-        "downloads": 6,
+        "downloads": 7,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/G000535_chicago.png"
       }
     ]
@@ -22048,7 +22048,7 @@
         "latitude": 39.3060799,
         "longitude": -94.684966,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/G000546-kansas_city",
-        "downloads": 4,
+        "downloads": 5,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/G000546_kansas_city.png"
       }
     ]
@@ -22501,8 +22501,31 @@
         "latitude": 40.7707877,
         "longitude": -73.4102476,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/G000555-melville",
-        "downloads": 31,
+        "downloads": 32,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/G000555_melville.png"
+      },
+      {
+        "self": "https://phone-your-rep.herokuapp.com/office_locations/G000555-rochester",
+        "rep": "https://phone-your-rep.herokuapp.com/reps/G000555",
+        "active": true,
+        "office_id": "G000555-rochester",
+        "bioguide_id": "G000555",
+        "office_type": "district",
+        "distance": null,
+        "building": "Kenneth B. Keating Federal Office Building",
+        "address": "100 State St.",
+        "suite": "Room 4195",
+        "city": "Rochester",
+        "state": "NY",
+        "zip": "14614",
+        "phone": "585-263-6250",
+        "fax": "585-263-6247",
+        "hours": "",
+        "latitude": 43.1576631,
+        "longitude": -77.613515,
+        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/G000555-rochester",
+        "downloads": 23,
+        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/G000555_rochester.png"
       },
       {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/G000555-syracuse",
@@ -22526,29 +22549,6 @@
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/G000555-syracuse",
         "downloads": 22,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/G000555_syracuse.png"
-      },
-      {
-        "self": "https://phone-your-rep.herokuapp.com/office_locations/G000555-rochester",
-        "rep": "https://phone-your-rep.herokuapp.com/reps/G000555",
-        "active": true,
-        "office_id": "G000555-rochester",
-        "bioguide_id": "G000555",
-        "office_type": "district",
-        "distance": null,
-        "building": "Kenneth B. Keating Federal Office Building",
-        "address": "100 State St.",
-        "suite": "Room 4195",
-        "city": "Rochester",
-        "state": "NY",
-        "zip": "14614",
-        "phone": "585-263-6250",
-        "fax": "585-263-6247",
-        "hours": "",
-        "latitude": 43.1576631,
-        "longitude": -77.613515,
-        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/G000555-rochester",
-        "downloads": 22,
-        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/G000555_rochester.png"
       },
       {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/G000555-mahopac",
@@ -22593,7 +22593,7 @@
         "latitude": 43.786736,
         "longitude": -75.4918505,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/G000555-lowville",
-        "downloads": 5,
+        "downloads": 6,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/G000555_lowville.png"
       },
       {
@@ -22616,7 +22616,7 @@
         "latitude": 40.7550353,
         "longitude": -73.9718588,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/G000555-new_york",
-        "downloads": 183,
+        "downloads": 188,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/G000555_new_york.png"
       },
       {
@@ -22639,7 +22639,7 @@
         "latitude": 42.8747911,
         "longitude": -78.851165,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/G000555-buffalo",
-        "downloads": 27,
+        "downloads": 28,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/G000555_buffalo.png"
       },
       {
@@ -22685,7 +22685,7 @@
         "latitude": 42.655222,
         "longitude": -73.7492819,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/G000555-albany",
-        "downloads": 27,
+        "downloads": 29,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/G000555_albany.png"
       }
     ]
@@ -23299,7 +23299,7 @@
         "latitude": 39.0685649,
         "longitude": -108.5657085,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/G000562-grand_junction",
-        "downloads": 5,
+        "downloads": 6,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/G000562_grand_junction.png"
       }
     ]
@@ -24016,7 +24016,7 @@
         "latitude": 43.7522376,
         "longitude": -88.4509945,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/G000576-fond_du_lac",
-        "downloads": 2,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/G000576_fond_du_lac.png"
       },
       {
@@ -24406,7 +24406,7 @@
         "latitude": 36.5867166,
         "longitude": -79.389396,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/G000580-danville",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/G000580_danville.png"
       },
       {
@@ -24429,7 +24429,7 @@
         "latitude": 38.0847006,
         "longitude": -78.4784307,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/G000580-charlottesville",
-        "downloads": 2,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/G000580_charlottesville.png"
       },
       {
@@ -24452,7 +24452,7 @@
         "latitude": 38.8867621,
         "longitude": -77.0069216,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/G000580-capitol",
-        "downloads": 3,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/G000580_capitol.png"
       }
     ]
@@ -24916,7 +24916,7 @@
         "latitude": 40.7667476,
         "longitude": -111.8871382,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/H000338-salt_lake_city",
-        "downloads": 18,
+        "downloads": 21,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/H000338_salt_lake_city.png"
       },
       {
@@ -25312,7 +25312,7 @@
         "latitude": 43.0967702,
         "longitude": -79.0554227,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/H001038-niagara_falls",
-        "downloads": 0,
+        "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/H001038_niagara_falls.png"
       }
     ]
@@ -25369,7 +25369,7 @@
         "latitude": 39.5215352,
         "longitude": -119.810287,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/H001041-reno",
-        "downloads": 29,
+        "downloads": 30,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/H001041_reno.png"
       },
       {
@@ -25776,7 +25776,7 @@
         "latitude": 35.0833514,
         "longitude": -106.6521937,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/H001046-albuquerque",
-        "downloads": 4,
+        "downloads": 5,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/H001046_albuquerque.png"
       },
       {
@@ -27256,7 +27256,7 @@
         "latitude": 40.8035929,
         "longitude": -124.1682054,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/H001068-eureka",
-        "downloads": 6,
+        "downloads": 7,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/H001068_eureka.png"
       },
       {
@@ -27675,7 +27675,7 @@
         "latitude": 33.7942004,
         "longitude": -83.7130977,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/H001071-monroe",
-        "downloads": 2,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/H001071_monroe.png"
       }
     ]
@@ -27761,7 +27761,7 @@
         "latitude": 35.0868894,
         "longitude": -92.4381401,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/H001072-conway",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/H001072_conway.png"
       },
       {
@@ -28105,7 +28105,7 @@
         "latitude": 38.583455,
         "longitude": -121.4987519,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/H001075-sacramento",
-        "downloads": 51,
+        "downloads": 54,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/H001075_sacramento.png"
       },
       {
@@ -28128,7 +28128,7 @@
         "latitude": 36.7374775,
         "longitude": -119.7836709,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/H001075-fresno",
-        "downloads": 12,
+        "downloads": 13,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/H001075_fresno.png"
       },
       {
@@ -28151,7 +28151,7 @@
         "latitude": 34.0552049,
         "longitude": -118.241422,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/H001075-los_angeles",
-        "downloads": 110,
+        "downloads": 116,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/H001075_los_angeles.png"
       },
       {
@@ -28174,7 +28174,7 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/H001075-capitol",
-        "downloads": 76,
+        "downloads": 78,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/H001075_capitol.png"
       },
       {
@@ -28197,7 +28197,7 @@
         "latitude": 32.7182014,
         "longitude": -117.1587103,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/H001075-san_diego",
-        "downloads": 50,
+        "downloads": 51,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/H001075_san_diego.png"
       },
       {
@@ -28220,7 +28220,7 @@
         "latitude": 37.7804298,
         "longitude": -122.4144643,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/H001075-san_francisco",
-        "downloads": 110,
+        "downloads": 113,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/H001075_san_francisco.png"
       }
     ]
@@ -28535,7 +28535,7 @@
         "latitude": 35.5219627,
         "longitude": -97.5457597,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/I000024-oklahoma_city",
-        "downloads": 17,
+        "downloads": 18,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/I000024_oklahoma_city.png"
       }
     ]
@@ -28592,7 +28592,7 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/I000055-capitol",
-        "downloads": 36,
+        "downloads": 37,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/I000055_capitol.png"
       },
       {
@@ -28615,7 +28615,7 @@
         "latitude": 33.8841172,
         "longitude": -84.4539174,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/I000055-atlanta",
-        "downloads": 62,
+        "downloads": 64,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/I000055_atlanta.png"
       }
     ]
@@ -28724,7 +28724,7 @@
         "latitude": 33.1734619,
         "longitude": -117.2261545,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/I000056-vista",
-        "downloads": 10,
+        "downloads": 11,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/I000056_vista.png"
       }
     ]
@@ -29269,7 +29269,7 @@
         "latitude": 33.704214,
         "longitude": -84.1763731,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/J000288-decatur",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/J000288_decatur.png"
       }
     ]
@@ -29745,7 +29745,7 @@
         "latitude": 43.0382241,
         "longitude": -87.90456,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/J000293-milwaukee",
-        "downloads": 33,
+        "downloads": 35,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/J000293_milwaukee.png"
       },
       {
@@ -29854,7 +29854,7 @@
         "latitude": 40.6856283,
         "longitude": -73.9757756,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/J000294-brooklyn-1",
-        "downloads": 9,
+        "downloads": 10,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/J000294_brooklyn_1.png"
       },
       {
@@ -30049,7 +30049,7 @@
         "latitude": 38.8867806,
         "longitude": -77.008414,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/J000297-capitol",
-        "downloads": 4,
+        "downloads": 6,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/J000297_capitol.png"
       },
       {
@@ -30118,7 +30118,7 @@
         "latitude": 37.778036,
         "longitude": -81.190697,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/J000297-beckley",
-        "downloads": 1,
+        "downloads": 2,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/J000297_beckley.png"
       }
     ]
@@ -30485,7 +30485,7 @@
         "latitude": 38.8867806,
         "longitude": -77.008414,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/K000188-capitol",
-        "downloads": 3,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/K000188_capitol.png"
       },
       {
@@ -30944,7 +30944,7 @@
         "latitude": 44.9751443,
         "longitude": -93.2505863,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/K000367-minneapolis",
-        "downloads": 44,
+        "downloads": 48,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/K000367_minneapolis.png"
       }
     ]
@@ -31162,7 +31162,7 @@
         "latitude": 40.8580044,
         "longitude": -79.8948869,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/K000376-butler",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/K000376_butler.png"
       },
       {
@@ -31667,7 +31667,7 @@
         "latitude": 48.113181,
         "longitude": -123.431753,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/K000381-port_angeles",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/K000381_port_angeles.png"
       },
       {
@@ -31690,7 +31690,7 @@
         "latitude": 38.8867806,
         "longitude": -77.008414,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/K000381-capitol",
-        "downloads": 1,
+        "downloads": 2,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/K000381_capitol.png"
       }
     ]
@@ -31753,7 +31753,7 @@
         "latitude": 43.2048069,
         "longitude": -71.5355091,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/K000382-concord",
-        "downloads": 6,
+        "downloads": 8,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/K000382_concord.png"
       },
       {
@@ -31776,7 +31776,7 @@
         "latitude": 38.8867621,
         "longitude": -77.0069216,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/K000382-capitol",
-        "downloads": 3,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/K000382_capitol.png"
       },
       {
@@ -32361,7 +32361,7 @@
         "latitude": 38.8867806,
         "longitude": -77.008414,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/K000386-capitol",
-        "downloads": 0,
+        "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/K000386_capitol.png"
       },
       {
@@ -32430,7 +32430,7 @@
         "latitude": 43.072187,
         "longitude": -77.0368578,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/K000386-lyons",
-        "downloads": 1,
+        "downloads": 2,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/K000386_lyons.png"
       },
       {
@@ -32826,7 +32826,7 @@
         "latitude": 37.3494432,
         "longitude": -121.9434873,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/K000389-santa_clara",
-        "downloads": 5,
+        "downloads": 6,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/K000389_santa_clara.png"
       },
       {
@@ -32998,7 +32998,7 @@
         "latitude": 42.042839,
         "longitude": -88.0382131,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/K000391-schaumburg",
-        "downloads": 5,
+        "downloads": 6,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/K000391_schaumburg.png"
       },
       {
@@ -33267,8 +33267,31 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/L000174-capitol",
-        "downloads": 6,
+        "downloads": 7,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/L000174_capitol.png"
+      },
+      {
+        "self": "https://phone-your-rep.herokuapp.com/office_locations/L000174-burlington",
+        "rep": "https://phone-your-rep.herokuapp.com/reps/L000174",
+        "active": true,
+        "office_id": "L000174-burlington",
+        "bioguide_id": "L000174",
+        "office_type": "district",
+        "distance": null,
+        "building": "4th Floor",
+        "address": "199 Main St.",
+        "suite": "",
+        "city": "Burlington",
+        "state": "VT",
+        "zip": "05401",
+        "phone": "802-863-2525",
+        "fax": "800-642-3193",
+        "hours": "",
+        "latitude": 44.4755314,
+        "longitude": -73.2112826,
+        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/L000174-burlington",
+        "downloads": 7,
+        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/L000174_burlington.png"
       },
       {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/L000174-montpelier",
@@ -33292,29 +33315,6 @@
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/L000174-montpelier",
         "downloads": 6,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/L000174_montpelier.png"
-      },
-      {
-        "self": "https://phone-your-rep.herokuapp.com/office_locations/L000174-burlington",
-        "rep": "https://phone-your-rep.herokuapp.com/reps/L000174",
-        "active": true,
-        "office_id": "L000174-burlington",
-        "bioguide_id": "L000174",
-        "office_type": "district",
-        "distance": null,
-        "building": "4th Floor",
-        "address": "199 Main St.",
-        "suite": "",
-        "city": "Burlington",
-        "state": "VT",
-        "zip": "05401",
-        "phone": "802-863-2525",
-        "fax": "800-642-3193",
-        "hours": "",
-        "latitude": 44.4755314,
-        "longitude": -73.2112826,
-        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/L000174-burlington",
-        "downloads": 6,
-        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/L000174_burlington.png"
       }
     ]
   },
@@ -33399,7 +33399,7 @@
         "latitude": 42.495564,
         "longitude": -82.9385656,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/L000263-roseville",
-        "downloads": 0,
+        "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/L000263_roseville.png"
       }
     ]
@@ -33548,7 +33548,7 @@
         "latitude": 37.3475248,
         "longitude": -121.8993988,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/L000397-san_jose",
-        "downloads": 7,
+        "downloads": 8,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/L000397_san_jose.png"
       },
       {
@@ -33657,7 +33657,7 @@
         "latitude": 41.1497079,
         "longitude": -73.98993,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/L000480-new_city",
-        "downloads": 1,
+        "downloads": 2,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/L000480_new_city.png"
       },
       {
@@ -33680,7 +33680,7 @@
         "latitude": 41.0270474,
         "longitude": -73.7647888,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/L000480-white_plains",
-        "downloads": 3,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/L000480_white_plains.png"
       }
     ]
@@ -33921,7 +33921,7 @@
         "latitude": 37.7667491,
         "longitude": -122.2422766,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/L000551-alameda",
-        "downloads": 5,
+        "downloads": 6,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/L000551_alameda.png"
       },
       {
@@ -34288,7 +34288,7 @@
         "latitude": 38.8871071,
         "longitude": -77.0104749,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/L000560-capitol",
-        "downloads": 5,
+        "downloads": 6,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/L000560_capitol.png"
       },
       {
@@ -34793,7 +34793,7 @@
         "latitude": 41.6592803,
         "longitude": -91.5334445,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/L000565-iowa_city",
-        "downloads": 3,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/L000565_iowa_city.png"
       }
     ]
@@ -34902,7 +34902,7 @@
         "latitude": 41.038435,
         "longitude": -83.6516735,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/L000566-findlay",
-        "downloads": 0,
+        "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/L000566_findlay.png"
       },
       {
@@ -34988,7 +34988,7 @@
         "latitude": 40.651448,
         "longitude": -74.340343,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/L000567-westfield",
-        "downloads": 4,
+        "downloads": 5,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/L000567_westfield.png"
       },
       {
@@ -35011,7 +35011,7 @@
         "latitude": 40.5450411,
         "longitude": -74.8570729,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/L000567-flemington",
-        "downloads": 8,
+        "downloads": 9,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/L000567_flemington.png"
       },
       {
@@ -35367,7 +35367,7 @@
         "latitude": 35.6605914,
         "longitude": -105.9630964,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/L000570-santa_fe",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/L000570_santa_fe.png"
       }
     ]
@@ -35711,7 +35711,7 @@
         "latitude": 37.0555214,
         "longitude": -94.4831701,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/L000576-joplin",
-        "downloads": 0,
+        "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/L000576_joplin.png"
       }
     ]
@@ -35946,7 +35946,7 @@
         "latitude": 39.5034549,
         "longitude": -121.540378,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/L000578-oroville",
-        "downloads": 6,
+        "downloads": 7,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/L000578_oroville.png"
       },
       {
@@ -36141,7 +36141,7 @@
         "latitude": 35.0833514,
         "longitude": -106.6521937,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/L000580-albuquerque",
-        "downloads": 4,
+        "downloads": 5,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/L000580_albuquerque.png"
       }
     ]
@@ -36336,7 +36336,7 @@
         "latitude": 34.062551,
         "longitude": -118.3402319,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/L000582-los_angeles",
-        "downloads": 9,
+        "downloads": 11,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/L000582_los_angeles.png"
       },
       {
@@ -36359,7 +36359,7 @@
         "latitude": 33.9015419,
         "longitude": -118.383875,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/L000582-manhattan_beach",
-        "downloads": 4,
+        "downloads": 5,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/L000582_manhattan_beach.png"
       }
     ]
@@ -36491,7 +36491,7 @@
         "latitude": 33.8852658,
         "longitude": -84.4613029,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/L000583-atlanta",
-        "downloads": 3,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/L000583_atlanta.png"
       }
     ]
@@ -37116,7 +37116,7 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M000133-capitol",
-        "downloads": 22,
+        "downloads": 25,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M000133_capitol.png"
       },
       {
@@ -37139,7 +37139,7 @@
         "latitude": 42.1032165,
         "longitude": -72.5929441,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M000133-springfield",
-        "downloads": 18,
+        "downloads": 19,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M000133_springfield.png"
       },
       {
@@ -37162,7 +37162,7 @@
         "latitude": 42.3613091,
         "longitude": -71.0593927,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M000133-boston",
-        "downloads": 52,
+        "downloads": 57,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M000133_boston.png"
       }
     ]
@@ -37219,7 +37219,7 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M000303-capitol",
-        "downloads": 13,
+        "downloads": 14,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M000303_capitol.png"
       },
       {
@@ -37242,7 +37242,7 @@
         "latitude": 33.5085729,
         "longitude": -112.0337789,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M000303-phoenix",
-        "downloads": 36,
+        "downloads": 37,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M000303_phoenix.png"
       },
       {
@@ -37397,7 +37397,7 @@
         "latitude": 42.2628409,
         "longitude": -71.7903444,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M000312-worcester",
-        "downloads": 4,
+        "downloads": 5,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M000312_worcester.png"
       },
       {
@@ -37523,7 +37523,7 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M000355-capitol",
-        "downloads": 3,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M000355_capitol.png"
       },
       {
@@ -37695,7 +37695,7 @@
         "latitude": 40.7344571,
         "longitude": -74.1657213,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M000639-newark",
-        "downloads": 47,
+        "downloads": 48,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M000639_newark.png"
       },
       {
@@ -37718,7 +37718,7 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M000639-capitol",
-        "downloads": 29,
+        "downloads": 30,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M000639_capitol.png"
       }
     ]
@@ -37947,7 +37947,7 @@
         "latitude": 47.6045895,
         "longitude": -122.3354608,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001111-seattle",
-        "downloads": 31,
+        "downloads": 34,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001111_seattle.png"
       },
       {
@@ -38016,7 +38016,7 @@
         "latitude": 47.6575963,
         "longitude": -117.4232771,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001111-spokane",
-        "downloads": 6,
+        "downloads": 7,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001111_spokane.png"
       },
       {
@@ -38062,7 +38062,7 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001111-capitol",
-        "downloads": 30,
+        "downloads": 32,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001111_capitol.png"
       },
       {
@@ -38085,7 +38085,7 @@
         "latitude": 47.9781562,
         "longitude": -122.2076204,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001111-everett",
-        "downloads": 10,
+        "downloads": 11,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001111_everett.png"
       }
     ]
@@ -38427,29 +38427,6 @@
     "instagram_id": null,
     "office_locations": [
       {
-        "self": "https://phone-your-rep.herokuapp.com/office_locations/M001153-anchorage",
-        "rep": "https://phone-your-rep.herokuapp.com/reps/M001153",
-        "active": true,
-        "office_id": "M001153-anchorage",
-        "bioguide_id": "M001153",
-        "office_type": "district",
-        "distance": null,
-        "building": "",
-        "address": "510 L St.",
-        "suite": "Suite 600",
-        "city": "Anchorage",
-        "state": "AK",
-        "zip": "99501",
-        "phone": "907-271-3735",
-        "fax": "877-857-0322",
-        "hours": "",
-        "latitude": 61.2171561,
-        "longitude": -149.9043364,
-        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001153-anchorage",
-        "downloads": 3,
-        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001153_anchorage.png"
-      },
-      {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/M001153-kenai",
         "rep": "https://phone-your-rep.herokuapp.com/reps/M001153",
         "active": true,
@@ -38471,6 +38448,29 @@
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001153-kenai",
         "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001153_kenai.png"
+      },
+      {
+        "self": "https://phone-your-rep.herokuapp.com/office_locations/M001153-anchorage",
+        "rep": "https://phone-your-rep.herokuapp.com/reps/M001153",
+        "active": true,
+        "office_id": "M001153-anchorage",
+        "bioguide_id": "M001153",
+        "office_type": "district",
+        "distance": null,
+        "building": "",
+        "address": "510 L St.",
+        "suite": "Suite 600",
+        "city": "Anchorage",
+        "state": "AK",
+        "zip": "99501",
+        "phone": "907-271-3735",
+        "fax": "877-857-0322",
+        "hours": "",
+        "latitude": 61.2171561,
+        "longitude": -149.9043364,
+        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001153-anchorage",
+        "downloads": 4,
+        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001153_anchorage.png"
       },
       {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/M001153-wasilla",
@@ -38584,7 +38584,7 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001153-capitol",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001153_capitol.png"
       }
     ]
@@ -39089,7 +39089,7 @@
         "latitude": 47.6575963,
         "longitude": -117.4232771,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001159-spokane",
-        "downloads": 8,
+        "downloads": 9,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001159_spokane.png"
       }
     ]
@@ -39152,7 +39152,7 @@
         "latitude": 43.0344363,
         "longitude": -87.9056528,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001160-milwaukee",
-        "downloads": 4,
+        "downloads": 5,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001160_milwaukee.png"
       },
       {
@@ -39616,7 +39616,7 @@
         "latitude": 39.051963,
         "longitude": -94.590285,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001170-kansas_city",
-        "downloads": 13,
+        "downloads": 15,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001170_kansas_city.png"
       },
       {
@@ -39765,7 +39765,7 @@
         "latitude": 42.3266304,
         "longitude": -122.8712245,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001176-medford",
-        "downloads": 13,
+        "downloads": 14,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001176_medford.png"
       },
       {
@@ -39790,6 +39790,29 @@
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001176-pendleton",
         "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001176_pendleton.png"
+      },
+      {
+        "self": "https://phone-your-rep.herokuapp.com/office_locations/M001176-salem",
+        "rep": "https://phone-your-rep.herokuapp.com/reps/M001176",
+        "active": true,
+        "office_id": "M001176-salem",
+        "bioguide_id": "M001176",
+        "office_type": "district",
+        "distance": null,
+        "building": "",
+        "address": "161 High St.",
+        "suite": "Suite 250",
+        "city": "Salem",
+        "state": "OR",
+        "zip": "97301",
+        "phone": "503-362-8102",
+        "fax": "",
+        "hours": "",
+        "latitude": 44.9389422,
+        "longitude": -123.0380741,
+        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001176-salem",
+        "downloads": 14,
+        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001176_salem.png"
       },
       {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/M001176-bend",
@@ -39838,29 +39861,6 @@
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001176_eugene.png"
       },
       {
-        "self": "https://phone-your-rep.herokuapp.com/office_locations/M001176-salem",
-        "rep": "https://phone-your-rep.herokuapp.com/reps/M001176",
-        "active": true,
-        "office_id": "M001176-salem",
-        "bioguide_id": "M001176",
-        "office_type": "district",
-        "distance": null,
-        "building": "",
-        "address": "161 High St.",
-        "suite": "Suite 250",
-        "city": "Salem",
-        "state": "OR",
-        "zip": "97301",
-        "phone": "503-362-8102",
-        "fax": "",
-        "hours": "",
-        "latitude": 44.9389422,
-        "longitude": -123.0380741,
-        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001176-salem",
-        "downloads": 13,
-        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001176_salem.png"
-      },
-      {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/M001176-capitol",
         "rep": "https://phone-your-rep.herokuapp.com/reps/M001176",
         "active": true,
@@ -39880,7 +39880,7 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001176-capitol",
-        "downloads": 10,
+        "downloads": 13,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001176_capitol.png"
       },
       {
@@ -39903,7 +39903,7 @@
         "latitude": 45.5160884,
         "longitude": -122.6748937,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001176-portland",
-        "downloads": 47,
+        "downloads": 53,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001176_portland.png"
       }
     ]
@@ -39966,7 +39966,7 @@
         "latitude": 38.8871071,
         "longitude": -77.0104749,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001177-capitol",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001177_capitol.png"
       },
       {
@@ -39989,7 +39989,7 @@
         "latitude": 38.7438059,
         "longitude": -121.2464852,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001177-roseville",
-        "downloads": 17,
+        "downloads": 20,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001177_roseville.png"
       }
     ]
@@ -40343,29 +40343,6 @@
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001181_capitol.png"
       },
       {
-        "self": "https://phone-your-rep.herokuapp.com/office_locations/M001181-paradise",
-        "rep": "https://phone-your-rep.herokuapp.com/reps/M001181",
-        "active": true,
-        "office_id": "M001181-paradise",
-        "bioguide_id": "M001181",
-        "office_type": "district",
-        "distance": null,
-        "building": "",
-        "address": "2 Township Dr.",
-        "suite": "",
-        "city": "Paradise",
-        "state": "PA",
-        "zip": "17562",
-        "phone": "",
-        "fax": "",
-        "hours": "9am-2pm",
-        "latitude": 40.004637,
-        "longitude": -76.109313,
-        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001181-paradise",
-        "downloads": 0,
-        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001181_paradise.png"
-      },
-      {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/M001181-springfield",
         "rep": "https://phone-your-rep.herokuapp.com/reps/M001181",
         "active": true,
@@ -40410,6 +40387,29 @@
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001181-douglassville",
         "downloads": 0,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001181_douglassville.png"
+      },
+      {
+        "self": "https://phone-your-rep.herokuapp.com/office_locations/M001181-paradise",
+        "rep": "https://phone-your-rep.herokuapp.com/reps/M001181",
+        "active": true,
+        "office_id": "M001181-paradise",
+        "bioguide_id": "M001181",
+        "office_type": "district",
+        "distance": null,
+        "building": "",
+        "address": "2 Township Dr.",
+        "suite": "",
+        "city": "Paradise",
+        "state": "PA",
+        "zip": "17562",
+        "phone": "",
+        "fax": "",
+        "hours": "9am-2pm",
+        "latitude": 40.004637,
+        "longitude": -76.109313,
+        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001181-paradise",
+        "downloads": 1,
+        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001181_paradise.png"
       },
       {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/M001181-blue_bell",
@@ -40488,7 +40488,7 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001183-capitol",
-        "downloads": 7,
+        "downloads": 8,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001183_capitol.png"
       },
       {
@@ -40511,7 +40511,7 @@
         "latitude": 38.3590792,
         "longitude": -81.6350089,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001183-charleston",
-        "downloads": 5,
+        "downloads": 6,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001183_charleston.png"
       },
       {
@@ -40557,7 +40557,7 @@
         "latitude": 39.4846406,
         "longitude": -80.1429364,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001183-fairmont",
-        "downloads": 0,
+        "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001183_fairmont.png"
       }
     ]
@@ -40819,29 +40819,6 @@
     "instagram_id": null,
     "office_locations": [
       {
-        "self": "https://phone-your-rep.herokuapp.com/office_locations/M001187-brevard",
-        "rep": "https://phone-your-rep.herokuapp.com/reps/M001187",
-        "active": true,
-        "office_id": "M001187-brevard",
-        "bioguide_id": "M001187",
-        "office_type": "district",
-        "distance": null,
-        "building": "Community Services Building Second Floor, Conference Room A",
-        "address": "98 E. Morgan St.",
-        "suite": "",
-        "city": "Brevard",
-        "state": "NC",
-        "zip": "28712",
-        "phone": "828-693-5660",
-        "fax": "828-693-5603",
-        "hours": "By Appointment Only",
-        "latitude": 35.2312324,
-        "longitude": -82.7340135,
-        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001187-brevard",
-        "downloads": 0,
-        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001187_brevard.png"
-      },
-      {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/M001187-asheville",
         "rep": "https://phone-your-rep.herokuapp.com/reps/M001187",
         "active": true,
@@ -40861,8 +40838,31 @@
         "latitude": 35.4846372,
         "longitude": -82.5240931,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001187-asheville",
-        "downloads": 3,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001187_asheville.png"
+      },
+      {
+        "self": "https://phone-your-rep.herokuapp.com/office_locations/M001187-brevard",
+        "rep": "https://phone-your-rep.herokuapp.com/reps/M001187",
+        "active": true,
+        "office_id": "M001187-brevard",
+        "bioguide_id": "M001187",
+        "office_type": "district",
+        "distance": null,
+        "building": "Community Services Building Second Floor, Conference Room A",
+        "address": "98 E. Morgan St.",
+        "suite": "",
+        "city": "Brevard",
+        "state": "NC",
+        "zip": "28712",
+        "phone": "828-693-5660",
+        "fax": "828-693-5603",
+        "hours": "By Appointment Only",
+        "latitude": 35.2312324,
+        "longitude": -82.7340135,
+        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001187-brevard",
+        "downloads": 1,
+        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001187_brevard.png"
       },
       {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/M001187-bryson_city",
@@ -41022,7 +41022,7 @@
         "latitude": 35.6661262,
         "longitude": -82.023528,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001187-marion",
-        "downloads": 0,
+        "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001187_marion.png"
       },
       {
@@ -41118,29 +41118,6 @@
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001187_cherokee.png"
       },
       {
-        "self": "https://phone-your-rep.herokuapp.com/office_locations/M001187-hendersonville",
-        "rep": "https://phone-your-rep.herokuapp.com/reps/M001187",
-        "active": true,
-        "office_id": "M001187-hendersonville",
-        "bioguide_id": "M001187",
-        "office_type": "district",
-        "distance": null,
-        "building": "Henderson County Court House",
-        "address": "200 N. Grove St.",
-        "suite": "Suite 90",
-        "city": "Hendersonville",
-        "state": "NC",
-        "zip": "28792",
-        "phone": "828-693-5660",
-        "fax": "828-693-5603",
-        "hours": "M-F, 9:00 AM-5:00 PM",
-        "latitude": 35.3159633,
-        "longitude": -82.4568878,
-        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001187-hendersonville",
-        "downloads": 0,
-        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001187_hendersonville.png"
-      },
-      {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/M001187-murphy",
         "rep": "https://phone-your-rep.herokuapp.com/reps/M001187",
         "active": true,
@@ -41164,6 +41141,29 @@
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001187_murphy.png"
       },
       {
+        "self": "https://phone-your-rep.herokuapp.com/office_locations/M001187-hendersonville",
+        "rep": "https://phone-your-rep.herokuapp.com/reps/M001187",
+        "active": true,
+        "office_id": "M001187-hendersonville",
+        "bioguide_id": "M001187",
+        "office_type": "district",
+        "distance": null,
+        "building": "Henderson County Court House",
+        "address": "200 N. Grove St.",
+        "suite": "Suite 90",
+        "city": "Hendersonville",
+        "state": "NC",
+        "zip": "28792",
+        "phone": "828-693-5660",
+        "fax": "828-693-5603",
+        "hours": "M-F, 9:00 AM-5:00 PM",
+        "latitude": 35.3159633,
+        "longitude": -82.4568878,
+        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001187-hendersonville",
+        "downloads": 1,
+        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001187_hendersonville.png"
+      },
+      {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/M001187-waynesville",
         "rep": "https://phone-your-rep.herokuapp.com/reps/M001187",
         "active": true,
@@ -41183,7 +41183,7 @@
         "latitude": 35.4932599,
         "longitude": -82.9866694,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001187-waynesville",
-        "downloads": 0,
+        "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001187_waynesville.png"
       },
       {
@@ -41688,7 +41688,7 @@
         "latitude": 39.8840544,
         "longitude": -74.8916853,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001193-marlton",
-        "downloads": 4,
+        "downloads": 5,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001193_marlton.png"
       },
       {
@@ -41711,7 +41711,7 @@
         "latitude": 39.9526066,
         "longitude": -74.1967616,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001193-toms_river",
-        "downloads": 5,
+        "downloads": 7,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001193_toms_river.png"
       }
     ]
@@ -41774,7 +41774,7 @@
         "latitude": 38.8867621,
         "longitude": -77.0069216,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001194-capitol",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001194_capitol.png"
       },
       {
@@ -41797,7 +41797,7 @@
         "latitude": 43.6125894,
         "longitude": -84.2447609,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001194-midland",
-        "downloads": 3,
+        "downloads": 5,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001194_midland.png"
       },
       {
@@ -41992,7 +41992,7 @@
         "latitude": 38.8867806,
         "longitude": -77.008414,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001196-capitol",
-        "downloads": 3,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001196_capitol.png"
       },
       {
@@ -42015,7 +42015,7 @@
         "latitude": 42.5204343,
         "longitude": -70.8944236,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001196-salem",
-        "downloads": 6,
+        "downloads": 7,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001196_salem.png"
       }
     ]
@@ -42772,7 +42772,7 @@
         "latitude": 42.1049876,
         "longitude": -72.5831648,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/N000015-springfield",
-        "downloads": 3,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/N000015_springfield.png"
       }
     ]
@@ -42829,7 +42829,7 @@
         "latitude": 30.3193247,
         "longitude": -81.6563618,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/N000032-jacksonville",
-        "downloads": 35,
+        "downloads": 37,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/N000032_jacksonville.png"
       },
       {
@@ -42852,7 +42852,7 @@
         "latitude": 26.7135091,
         "longitude": -80.0544664,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/N000032-west_palm_beach",
-        "downloads": 26,
+        "downloads": 28,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/N000032_west_palm_beach.png"
       },
       {
@@ -42875,7 +42875,7 @@
         "latitude": 27.9514851,
         "longitude": -82.4580986,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/N000032-tampa",
-        "downloads": 47,
+        "downloads": 48,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/N000032_tampa.png"
       },
       {
@@ -42944,7 +42944,7 @@
         "latitude": 26.079503,
         "longitude": -80.2504042,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/N000032-fort_lauderdale",
-        "downloads": 23,
+        "downloads": 24,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/N000032_fort_lauderdale.png"
       },
       {
@@ -42967,7 +42967,7 @@
         "latitude": 25.7481437,
         "longitude": -80.2581661,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/N000032-coral_gables",
-        "downloads": 14,
+        "downloads": 15,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/N000032_coral_gables.png"
       },
       {
@@ -42990,7 +42990,7 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/N000032-capitol",
-        "downloads": 38,
+        "downloads": 40,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/N000032_capitol.png"
       },
       {
@@ -43793,7 +43793,7 @@
         "latitude": 38.8867806,
         "longitude": -77.008414,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/N000189-capitol",
-        "downloads": 0,
+        "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/N000189_capitol.png"
       },
       {
@@ -44034,7 +44034,7 @@
         "latitude": 31.759121,
         "longitude": -106.4890945,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/O000170-el_paso",
-        "downloads": 9,
+        "downloads": 10,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/O000170_el_paso.png"
       }
     ]
@@ -44648,7 +44648,7 @@
         "latitude": 44.9455663,
         "longitude": -95.7243254,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/P000258-montevideo",
-        "downloads": 0,
+        "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/P000258_montevideo.png"
       },
       {
@@ -44751,7 +44751,7 @@
         "latitude": 39.0993058,
         "longitude": -84.5103687,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/P000449-cincinnati",
-        "downloads": 44,
+        "downloads": 45,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/P000449_cincinnati.png"
       },
       {
@@ -44774,7 +44774,7 @@
         "latitude": 41.6518781,
         "longitude": -83.5353055,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/P000449-toledo",
-        "downloads": 27,
+        "downloads": 28,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/P000449_toledo.png"
       },
       {
@@ -45042,6 +45042,29 @@
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/P000588_roswell.png"
       },
       {
+        "self": "https://phone-your-rep.herokuapp.com/office_locations/P000588-alamogordo",
+        "rep": "https://phone-your-rep.herokuapp.com/reps/P000588",
+        "active": true,
+        "office_id": "P000588-alamogordo",
+        "bioguide_id": "P000588",
+        "office_type": "district",
+        "distance": null,
+        "building": "",
+        "address": "1101 New York Ave.",
+        "suite": "Room 115",
+        "city": "Alamogordo",
+        "state": "NM",
+        "zip": "88310",
+        "phone": "855-473-2723",
+        "fax": "",
+        "hours": "",
+        "latitude": 32.9009617,
+        "longitude": -105.9594593,
+        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/P000588-alamogordo",
+        "downloads": 2,
+        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/P000588_alamogordo.png"
+      },
+      {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/P000588-los_lunas",
         "rep": "https://phone-your-rep.herokuapp.com/reps/P000588",
         "active": true,
@@ -45063,29 +45086,6 @@
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/P000588-los_lunas",
         "downloads": 0,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/P000588_los_lunas.png"
-      },
-      {
-        "self": "https://phone-your-rep.herokuapp.com/office_locations/P000588-alamogordo",
-        "rep": "https://phone-your-rep.herokuapp.com/reps/P000588",
-        "active": true,
-        "office_id": "P000588-alamogordo",
-        "bioguide_id": "P000588",
-        "office_type": "district",
-        "distance": null,
-        "building": "",
-        "address": "1101 New York Ave.",
-        "suite": "Room 115",
-        "city": "Alamogordo",
-        "state": "NM",
-        "zip": "88310",
-        "phone": "855-473-2723",
-        "fax": "",
-        "hours": "",
-        "latitude": 32.9009617,
-        "longitude": -105.9594593,
-        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/P000588-alamogordo",
-        "downloads": 1,
-        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/P000588_alamogordo.png"
       },
       {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/P000588-socorro",
@@ -45491,8 +45491,31 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/P000595-capitol",
-        "downloads": 19,
+        "downloads": 20,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/P000595_capitol.png"
+      },
+      {
+        "self": "https://phone-your-rep.herokuapp.com/office_locations/P000595-rochester",
+        "rep": "https://phone-your-rep.herokuapp.com/reps/P000595",
+        "active": true,
+        "office_id": "P000595-rochester",
+        "bioguide_id": "P000595",
+        "office_type": "district",
+        "distance": null,
+        "building": "",
+        "address": "407 6th St.",
+        "suite": "Suite C",
+        "city": "Rochester",
+        "state": "MI",
+        "zip": "48307",
+        "phone": "248-608-8040",
+        "fax": "",
+        "hours": "",
+        "latitude": 42.682816,
+        "longitude": -83.137692,
+        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/P000595-rochester",
+        "downloads": 4,
+        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/P000595_rochester.png"
       },
       {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/P000595-traverse_city",
@@ -45516,29 +45539,6 @@
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/P000595-traverse_city",
         "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/P000595_traverse_city.png"
-      },
-      {
-        "self": "https://phone-your-rep.herokuapp.com/office_locations/P000595-rochester",
-        "rep": "https://phone-your-rep.herokuapp.com/reps/P000595",
-        "active": true,
-        "office_id": "P000595-rochester",
-        "bioguide_id": "P000595",
-        "office_type": "district",
-        "distance": null,
-        "building": "",
-        "address": "407 6th St.",
-        "suite": "Suite C",
-        "city": "Rochester",
-        "state": "MI",
-        "zip": "48307",
-        "phone": "248-608-8040",
-        "fax": "",
-        "hours": "",
-        "latitude": 42.682816,
-        "longitude": -83.137692,
-        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/P000595-rochester",
-        "downloads": 3,
-        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/P000595_rochester.png"
       },
       {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/P000595-lansing",
@@ -45606,7 +45606,7 @@
         "latitude": 42.9699746,
         "longitude": -85.6709742,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/P000595-grand_rapids",
-        "downloads": 19,
+        "downloads": 21,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/P000595_grand_rapids.png"
       },
       {
@@ -45629,7 +45629,7 @@
         "latitude": 42.3311478,
         "longitude": -83.0532168,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/P000595-detroit",
-        "downloads": 14,
+        "downloads": 15,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/P000595_detroit.png"
       }
     ]
@@ -45738,7 +45738,7 @@
         "latitude": 43.651525,
         "longitude": -70.254135,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/P000597-portland",
-        "downloads": 3,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/P000597_portland.png"
       }
     ]
@@ -45801,7 +45801,7 @@
         "latitude": 39.5744309,
         "longitude": -106.0975203,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/P000598-frisco",
-        "downloads": 0,
+        "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/P000598_frisco.png"
       },
       {
@@ -45956,7 +45956,7 @@
         "latitude": 28.246385,
         "longitude": -80.736905,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/P000599-melbourne",
-        "downloads": 4,
+        "downloads": 5,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/P000599_melbourne.png"
       }
     ]
@@ -46283,7 +46283,7 @@
         "latitude": 38.0134107,
         "longitude": -84.5524557,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/P000603-lexington",
-        "downloads": 11,
+        "downloads": 12,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/P000603_lexington.png"
       }
     ]
@@ -46742,7 +46742,7 @@
         "latitude": 43.0737508,
         "longitude": -89.3816999,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/P000607-madison",
-        "downloads": 7,
+        "downloads": 8,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/P000607_madison.png"
       },
       {
@@ -46874,7 +46874,7 @@
         "latitude": 32.8755637,
         "longitude": -117.2121916,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/P000608-san_diego",
-        "downloads": 9,
+        "downloads": 11,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/P000608_san_diego.png"
       }
     ]
@@ -47321,7 +47321,7 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/P000612-capitol",
-        "downloads": 19,
+        "downloads": 20,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/P000612_capitol.png"
       }
     ]
@@ -47384,7 +47384,7 @@
         "latitude": 36.9778501,
         "longitude": -122.0226351,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/P000613-santa_cruz",
-        "downloads": 5,
+        "downloads": 7,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/P000613_santa_cruz.png"
       },
       {
@@ -47430,7 +47430,7 @@
         "latitude": 38.8867621,
         "longitude": -77.0069216,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/P000613-capitol",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/P000613_capitol.png"
       }
     ]
@@ -47986,7 +47986,7 @@
         "latitude": 33.6576447,
         "longitude": -118.0019705,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/R000409-huntington_beach",
-        "downloads": 9,
+        "downloads": 10,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/R000409_huntington_beach.png"
       },
       {
@@ -48009,7 +48009,7 @@
         "latitude": 38.8871071,
         "longitude": -77.0104749,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/R000409-capitol",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/R000409_capitol.png"
       }
     ]
@@ -48789,7 +48789,7 @@
         "latitude": 41.099949,
         "longitude": -81.478217,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/R000577-akron",
-        "downloads": 3,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/R000577_akron.png"
       },
       {
@@ -48812,7 +48812,7 @@
         "latitude": 41.1012396,
         "longitude": -80.6529585,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/R000577-youngstown",
-        "downloads": 0,
+        "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/R000577_youngstown.png"
       },
       {
@@ -48898,7 +48898,7 @@
         "latitude": 47.5512594,
         "longitude": -122.0388342,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/R000578-issaquah",
-        "downloads": 3,
+        "downloads": 5,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/R000578_issaquah.png"
       },
       {
@@ -48921,7 +48921,7 @@
         "latitude": 38.8867806,
         "longitude": -77.008414,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/R000578-capitol",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/R000578_capitol.png"
       },
       {
@@ -49053,7 +49053,7 @@
         "latitude": 41.9067972,
         "longitude": -88.2549054,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/R000580-west_chicago",
-        "downloads": 4,
+        "downloads": 5,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/R000580_west_chicago.png"
       }
     ]
@@ -49374,7 +49374,7 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/R000584-capitol",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/R000584_capitol.png"
       },
       {
@@ -49466,7 +49466,7 @@
         "latitude": 43.618145,
         "longitude": -116.2024194,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/R000584-boise",
-        "downloads": 10,
+        "downloads": 11,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/R000584_boise.png"
       },
       {
@@ -49839,7 +49839,7 @@
         "latitude": 30.0318171,
         "longitude": -90.0643945,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/R000588-new_orleans",
-        "downloads": 3,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/R000588_new_orleans.png"
       },
       {
@@ -50453,7 +50453,7 @@
         "latitude": 26.8380427,
         "longitude": -80.1114094,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/R000595-palm_beach_gardens",
-        "downloads": 18,
+        "downloads": 20,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/R000595_palm_beach_gardens.png"
       },
       {
@@ -50499,7 +50499,7 @@
         "latitude": 27.945205,
         "longitude": -82.5314559,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/R000595-tampa",
-        "downloads": 38,
+        "downloads": 39,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/R000595_tampa.png"
       }
     ]
@@ -50849,7 +50849,7 @@
         "latitude": 33.7302529,
         "longitude": -116.3043432,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/R000599-palm_desert",
-        "downloads": 6,
+        "downloads": 7,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/R000599_palm_desert.png"
       }
     ]
@@ -51237,6 +51237,29 @@
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/R000603_capitol.png"
       },
       {
+        "self": "https://phone-your-rep.herokuapp.com/office_locations/R000603-wilmington",
+        "rep": "https://phone-your-rep.herokuapp.com/reps/R000603",
+        "active": true,
+        "office_id": "R000603-wilmington",
+        "bioguide_id": "R000603",
+        "office_type": "district",
+        "distance": null,
+        "building": "",
+        "address": "230 Government Center Dr.",
+        "suite": "Suite 113",
+        "city": "Wilmington",
+        "state": "NC",
+        "zip": "28403",
+        "phone": "910-395-0202",
+        "fax": "910-395-0209",
+        "hours": "",
+        "latitude": 34.2415626,
+        "longitude": -77.8669625,
+        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/R000603-wilmington",
+        "downloads": 2,
+        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/R000603_wilmington.png"
+      },
+      {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/R000603-bolivia",
         "rep": "https://phone-your-rep.herokuapp.com/reps/R000603",
         "active": true,
@@ -51258,29 +51281,6 @@
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/R000603-bolivia",
         "downloads": 0,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/R000603_bolivia.png"
-      },
-      {
-        "self": "https://phone-your-rep.herokuapp.com/office_locations/R000603-wilmington",
-        "rep": "https://phone-your-rep.herokuapp.com/reps/R000603",
-        "active": true,
-        "office_id": "R000603-wilmington",
-        "bioguide_id": "R000603",
-        "office_type": "district",
-        "distance": null,
-        "building": "",
-        "address": "230 Government Center Dr.",
-        "suite": "Suite 113",
-        "city": "Wilmington",
-        "state": "NC",
-        "zip": "28403",
-        "phone": "910-395-0202",
-        "fax": "910-395-0209",
-        "hours": "",
-        "latitude": 34.2415626,
-        "longitude": -77.8669625,
-        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/R000603-wilmington",
-        "downloads": 1,
-        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/R000603_wilmington.png"
       }
     ]
   },
@@ -51577,7 +51577,7 @@
         "latitude": 39.083791,
         "longitude": -77.1481645,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/R000606-rockville",
-        "downloads": 11,
+        "downloads": 12,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/R000606_rockville.png"
       },
       {
@@ -51600,7 +51600,7 @@
         "latitude": 38.8867621,
         "longitude": -77.0069216,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/R000606-capitol",
-        "downloads": 4,
+        "downloads": 5,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/R000606_capitol.png"
       }
     ]
@@ -51795,7 +51795,7 @@
         "latitude": 36.0278905,
         "longitude": -115.1159622,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/R000608-las_vegas",
-        "downloads": 3,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/R000608_las_vegas.png"
       }
     ]
@@ -51961,7 +51961,7 @@
         "latitude": 44.4802081,
         "longitude": -73.2130702,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S000033-burlington",
-        "downloads": 12,
+        "downloads": 14,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S000033_burlington.png"
       },
       {
@@ -52150,7 +52150,7 @@
         "latitude": 42.6551387,
         "longitude": -73.749201,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S000148-albany",
-        "downloads": 16,
+        "downloads": 17,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S000148_albany.png"
       },
       {
@@ -52219,7 +52219,7 @@
         "latitude": 43.1576631,
         "longitude": -77.613515,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S000148-rochester",
-        "downloads": 8,
+        "downloads": 9,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S000148_rochester.png"
       },
       {
@@ -52420,7 +52420,7 @@
         "latitude": 36.9788711,
         "longitude": -76.4304902,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S000185-newport_news",
-        "downloads": 0,
+        "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S000185_newport_news.png"
       }
     ]
@@ -52506,7 +52506,7 @@
         "latitude": 43.0288605,
         "longitude": -88.0784599,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S000244-brookfield",
-        "downloads": 5,
+        "downloads": 6,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S000244_brookfield.png"
       }
     ]
@@ -52762,29 +52762,6 @@
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S000320_mobile.png"
       },
       {
-        "self": "https://phone-your-rep.herokuapp.com/office_locations/S000320-huntsville",
-        "rep": "https://phone-your-rep.herokuapp.com/reps/S000320",
-        "active": true,
-        "office_id": "S000320-huntsville",
-        "bioguide_id": "S000320",
-        "office_type": "district",
-        "distance": null,
-        "building": "",
-        "address": "1000 Glenn Hearn Blvd.",
-        "suite": "#20127",
-        "city": "Huntsville",
-        "state": "AL",
-        "zip": "35824",
-        "phone": "256-772-0460",
-        "fax": "",
-        "hours": "",
-        "latitude": 34.6471339,
-        "longitude": -86.7746022,
-        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S000320-huntsville",
-        "downloads": 2,
-        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S000320_huntsville.png"
-      },
-      {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/S000320-montgomery",
         "rep": "https://phone-your-rep.herokuapp.com/reps/S000320",
         "active": true,
@@ -52806,6 +52783,29 @@
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S000320-montgomery",
         "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S000320_montgomery.png"
+      },
+      {
+        "self": "https://phone-your-rep.herokuapp.com/office_locations/S000320-huntsville",
+        "rep": "https://phone-your-rep.herokuapp.com/reps/S000320",
+        "active": true,
+        "office_id": "S000320-huntsville",
+        "bioguide_id": "S000320",
+        "office_type": "district",
+        "distance": null,
+        "building": "",
+        "address": "1000 Glenn Hearn Blvd.",
+        "suite": "#20127",
+        "city": "Huntsville",
+        "state": "AL",
+        "zip": "35824",
+        "phone": "256-772-0460",
+        "fax": "",
+        "hours": "",
+        "latitude": 34.6471339,
+        "longitude": -86.7746022,
+        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S000320-huntsville",
+        "downloads": 3,
+        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S000320_huntsville.png"
       },
       {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/S000320-tuscaloosa",
@@ -52850,7 +52850,7 @@
         "latitude": 33.517386,
         "longitude": -86.810488,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S000320-birmingham",
-        "downloads": 7,
+        "downloads": 9,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S000320_birmingham.png"
       }
     ]
@@ -52936,7 +52936,7 @@
         "latitude": 34.1615172,
         "longitude": -118.4483015,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S000344-sherman_oaks",
-        "downloads": 5,
+        "downloads": 6,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S000344_sherman_oaks.png"
       }
     ]
@@ -53355,7 +53355,7 @@
         "latitude": 47.5392077,
         "longitude": -122.2904189,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S000510-seattle",
-        "downloads": 0,
+        "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S000510_seattle.png"
       },
       {
@@ -53726,6 +53726,29 @@
     "instagram_id": null,
     "office_locations": [
       {
+        "self": "https://phone-your-rep.herokuapp.com/office_locations/S000770-east_lansing",
+        "rep": "https://phone-your-rep.herokuapp.com/reps/S000770",
+        "active": true,
+        "office_id": "S000770-east_lansing",
+        "bioguide_id": "S000770",
+        "office_type": "district",
+        "distance": null,
+        "building": "",
+        "address": "221 W. Lake Lansing Rd.",
+        "suite": "Suite 100",
+        "city": "East Lansing",
+        "state": "MI",
+        "zip": "48823",
+        "phone": "517-203-1760",
+        "fax": "",
+        "hours": "",
+        "latitude": 42.757677,
+        "longitude": -84.485392,
+        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S000770-east_lansing",
+        "downloads": 15,
+        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S000770_east_lansing.png"
+      },
+      {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/S000770-marquette",
         "rep": "https://phone-your-rep.herokuapp.com/reps/S000770",
         "active": true,
@@ -53747,29 +53770,6 @@
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S000770-marquette",
         "downloads": 8,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S000770_marquette.png"
-      },
-      {
-        "self": "https://phone-your-rep.herokuapp.com/office_locations/S000770-east_lansing",
-        "rep": "https://phone-your-rep.herokuapp.com/reps/S000770",
-        "active": true,
-        "office_id": "S000770-east_lansing",
-        "bioguide_id": "S000770",
-        "office_type": "district",
-        "distance": null,
-        "building": "",
-        "address": "221 W. Lake Lansing Rd.",
-        "suite": "Suite 100",
-        "city": "East Lansing",
-        "state": "MI",
-        "zip": "48823",
-        "phone": "517-203-1760",
-        "fax": "",
-        "hours": "",
-        "latitude": 42.757677,
-        "longitude": -84.485392,
-        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S000770-east_lansing",
-        "downloads": 14,
-        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S000770_east_lansing.png"
       },
       {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/S000770-traverse_city",
@@ -53814,7 +53814,7 @@
         "latitude": 43.037652,
         "longitude": -85.588081,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S000770-grand_rapids",
-        "downloads": 31,
+        "downloads": 32,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S000770_grand_rapids.png"
       },
       {
@@ -53860,7 +53860,7 @@
         "latitude": 42.3307555,
         "longitude": -83.048152,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S000770-detroit",
-        "downloads": 34,
+        "downloads": 38,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S000770_detroit.png"
       },
       {
@@ -53883,7 +53883,7 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S000770-capitol",
-        "downloads": 17,
+        "downloads": 19,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S000770_capitol.png"
       }
     ]
@@ -54170,7 +54170,7 @@
         "latitude": 43.4936265,
         "longitude": -112.0425928,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S001148-idaho_falls",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S001148_idaho_falls.png"
       }
     ]
@@ -55128,7 +55128,7 @@
         "latitude": 37.5496382,
         "longitude": -122.3167359,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S001175-san_mateo",
-        "downloads": 7,
+        "downloads": 8,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S001175_san_mateo.png"
       },
       {
@@ -55151,7 +55151,7 @@
         "latitude": 38.8871071,
         "longitude": -77.0104749,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S001175-capitol",
-        "downloads": 0,
+        "downloads": 2,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S001175_capitol.png"
       }
     ]
@@ -55495,7 +55495,7 @@
         "latitude": 45.3571432,
         "longitude": -122.6070483,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S001180-oregon_city",
-        "downloads": 1,
+        "downloads": 2,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S001180_oregon_city.png"
       },
       {
@@ -55579,29 +55579,6 @@
     "instagram_id": null,
     "office_locations": [
       {
-        "self": "https://phone-your-rep.herokuapp.com/office_locations/S001181-manchester",
-        "rep": "https://phone-your-rep.herokuapp.com/reps/S001181",
-        "active": true,
-        "office_id": "S001181-manchester",
-        "bioguide_id": "S001181",
-        "office_type": "district",
-        "distance": null,
-        "building": "",
-        "address": "2 Wall St.",
-        "suite": "Suite 220",
-        "city": "Manchester",
-        "state": "NH",
-        "zip": "03101",
-        "phone": "603-647-7500",
-        "fax": "603-647-9352",
-        "hours": "",
-        "latitude": 42.9940731,
-        "longitude": -71.4638668,
-        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S001181-manchester",
-        "downloads": 6,
-        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S001181_manchester.png"
-      },
-      {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/S001181-berlin",
         "rep": "https://phone-your-rep.herokuapp.com/reps/S001181",
         "active": true,
@@ -55623,6 +55600,29 @@
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S001181-berlin",
         "downloads": 2,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S001181_berlin.png"
+      },
+      {
+        "self": "https://phone-your-rep.herokuapp.com/office_locations/S001181-manchester",
+        "rep": "https://phone-your-rep.herokuapp.com/reps/S001181",
+        "active": true,
+        "office_id": "S001181-manchester",
+        "bioguide_id": "S001181",
+        "office_type": "district",
+        "distance": null,
+        "building": "",
+        "address": "2 Wall St.",
+        "suite": "Suite 220",
+        "city": "Manchester",
+        "state": "NH",
+        "zip": "03101",
+        "phone": "603-647-7500",
+        "fax": "603-647-9352",
+        "hours": "",
+        "latitude": 42.9940731,
+        "longitude": -71.4638668,
+        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S001181-manchester",
+        "downloads": 7,
+        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S001181_manchester.png"
       },
       {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/S001181-capitol",
@@ -55671,29 +55671,6 @@
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S001181_claremont.png"
       },
       {
-        "self": "https://phone-your-rep.herokuapp.com/office_locations/S001181-keene",
-        "rep": "https://phone-your-rep.herokuapp.com/reps/S001181",
-        "active": true,
-        "office_id": "S001181-keene",
-        "bioguide_id": "S001181",
-        "office_type": "district",
-        "distance": null,
-        "building": "",
-        "address": "12 Gilbo Ave.",
-        "suite": "Suite C",
-        "city": "Keene",
-        "state": "NH",
-        "zip": "03431",
-        "phone": "603-358-6604",
-        "fax": "",
-        "hours": "",
-        "latitude": 42.9323699,
-        "longitude": -72.2794587,
-        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S001181-keene",
-        "downloads": 4,
-        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S001181_keene.png"
-      },
-      {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/S001181-dover",
         "rep": "https://phone-your-rep.herokuapp.com/reps/S001181",
         "active": true,
@@ -55738,6 +55715,29 @@
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S001181-nashua",
         "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S001181_nashua.png"
+      },
+      {
+        "self": "https://phone-your-rep.herokuapp.com/office_locations/S001181-keene",
+        "rep": "https://phone-your-rep.herokuapp.com/reps/S001181",
+        "active": true,
+        "office_id": "S001181-keene",
+        "bioguide_id": "S001181",
+        "office_type": "district",
+        "distance": null,
+        "building": "",
+        "address": "12 Gilbo Ave.",
+        "suite": "Suite C",
+        "city": "Keene",
+        "state": "NH",
+        "zip": "03431",
+        "phone": "603-358-6604",
+        "fax": "",
+        "hours": "",
+        "latitude": 42.9323699,
+        "longitude": -72.2794587,
+        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S001181-keene",
+        "downloads": 5,
+        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S001181_keene.png"
       }
     ]
   },
@@ -56034,7 +56034,7 @@
         "latitude": 38.8871071,
         "longitude": -77.0104749,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S001185-capitol",
-        "downloads": 0,
+        "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S001185_capitol.png"
       },
       {
@@ -56061,29 +56061,6 @@
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S001185_selma.png"
       },
       {
-        "self": "https://phone-your-rep.herokuapp.com/office_locations/S001185-birmingham",
-        "rep": "https://phone-your-rep.herokuapp.com/reps/S001185",
-        "active": true,
-        "office_id": "S001185-birmingham",
-        "bioguide_id": "S001185",
-        "office_type": "district",
-        "distance": null,
-        "building": "",
-        "address": "Two 20th Street North",
-        "suite": "Suite 1130",
-        "city": "Birmingham",
-        "state": "AL",
-        "zip": "35203",
-        "phone": "205-254-1960",
-        "fax": "205-254-1974",
-        "hours": "",
-        "latitude": 33.5132889,
-        "longitude": -86.8058256,
-        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S001185-birmingham",
-        "downloads": 1,
-        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S001185_birmingham.png"
-      },
-      {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/S001185-tuscaloosa",
         "rep": "https://phone-your-rep.herokuapp.com/reps/S001185",
         "active": true,
@@ -56105,6 +56082,29 @@
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S001185-tuscaloosa",
         "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S001185_tuscaloosa.png"
+      },
+      {
+        "self": "https://phone-your-rep.herokuapp.com/office_locations/S001185-birmingham",
+        "rep": "https://phone-your-rep.herokuapp.com/reps/S001185",
+        "active": true,
+        "office_id": "S001185-birmingham",
+        "bioguide_id": "S001185",
+        "office_type": "district",
+        "distance": null,
+        "building": "",
+        "address": "Two 20th Street North",
+        "suite": "Suite 1130",
+        "city": "Birmingham",
+        "state": "AL",
+        "zip": "35203",
+        "phone": "205-254-1960",
+        "fax": "205-254-1974",
+        "hours": "",
+        "latitude": 33.5132889,
+        "longitude": -86.8058256,
+        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S001185-birmingham",
+        "downloads": 2,
+        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S001185_birmingham.png"
       }
     ]
   },
@@ -56430,7 +56430,7 @@
         "latitude": 42.1964098,
         "longitude": -87.9362154,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S001190-lincolnshire",
-        "downloads": 8,
+        "downloads": 9,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S001190_lincolnshire.png"
       }
     ]
@@ -56579,7 +56579,7 @@
         "latitude": 40.7686249,
         "longitude": -111.8789585,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S001192-salt_lake_city",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S001192_salt_lake_city.png"
       },
       {
@@ -57181,7 +57181,7 @@
         "latitude": 40.8084319,
         "longitude": -96.7048142,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S001197-lincoln",
-        "downloads": 6,
+        "downloads": 7,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S001197_lincoln.png"
       },
       {
@@ -57250,7 +57250,7 @@
         "latitude": 41.2618733,
         "longitude": -96.1778064,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S001197-omaha",
-        "downloads": 8,
+        "downloads": 9,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S001197_omaha.png"
       }
     ]
@@ -57307,7 +57307,7 @@
         "latitude": 61.2171561,
         "longitude": -149.9043364,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S001198-anchorage",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S001198_anchorage.png"
       },
       {
@@ -57330,7 +57330,7 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S001198-capitol",
-        "downloads": 3,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S001198_capitol.png"
       },
       {
@@ -57508,7 +57508,7 @@
         "latitude": 40.0368908,
         "longitude": -76.3031804,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S001199-lancaster",
-        "downloads": 5,
+        "downloads": 8,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S001199_lancaster.png"
       },
       {
@@ -57617,7 +57617,7 @@
         "latitude": 28.2906297,
         "longitude": -81.4123113,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S001200-kissimmee",
-        "downloads": 3,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S001200_kissimmee.png"
       }
     ]
@@ -57703,7 +57703,7 @@
         "latitude": 40.873976,
         "longitude": -73.411319,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S001201-huntington",
-        "downloads": 5,
+        "downloads": 6,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S001201_huntington.png"
       }
     ]
@@ -57760,7 +57760,7 @@
         "latitude": 38.8937864,
         "longitude": -77.0037567,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S001202-capitol",
-        "downloads": 3,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S001202_capitol.png"
       }
     ]
@@ -58282,7 +58282,7 @@
         "latitude": 38.8867621,
         "longitude": -77.0069216,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/T000460-capitol",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/T000460_capitol.png"
       },
       {
@@ -58412,29 +58412,6 @@
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/T000461_erie.png"
       },
       {
-        "self": "https://phone-your-rep.herokuapp.com/office_locations/T000461-pittsburgh",
-        "rep": "https://phone-your-rep.herokuapp.com/reps/T000461",
-        "active": true,
-        "office_id": "T000461-pittsburgh",
-        "bioguide_id": "T000461",
-        "office_type": "district",
-        "distance": null,
-        "building": "",
-        "address": "100 W. Station Square Dr.",
-        "suite": "Suite 225",
-        "city": "Pittsburgh",
-        "state": "PA",
-        "zip": "15219",
-        "phone": "412-803-3501",
-        "fax": "412-803-3504",
-        "hours": "",
-        "latitude": 40.433674,
-        "longitude": -80.003871,
-        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/T000461-pittsburgh",
-        "downloads": 1,
-        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/T000461_pittsburgh.png"
-      },
-      {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/T000461-allentown",
         "rep": "https://phone-your-rep.herokuapp.com/reps/T000461",
         "active": true,
@@ -58456,6 +58433,29 @@
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/T000461-allentown",
         "downloads": 0,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/T000461_allentown.png"
+      },
+      {
+        "self": "https://phone-your-rep.herokuapp.com/office_locations/T000461-harrisburg",
+        "rep": "https://phone-your-rep.herokuapp.com/reps/T000461",
+        "active": true,
+        "office_id": "T000461-harrisburg",
+        "bioguide_id": "T000461",
+        "office_type": "district",
+        "distance": null,
+        "building": "United States Federal Building",
+        "address": "228 Walnut St.",
+        "suite": "Suite 1104",
+        "city": "Harrisburg",
+        "state": "PA",
+        "zip": "17101",
+        "phone": "717-782-3951",
+        "fax": "717-782-4920",
+        "hours": "",
+        "latitude": 40.261919,
+        "longitude": -76.882739,
+        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/T000461-harrisburg",
+        "downloads": 3,
+        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/T000461_harrisburg.png"
       },
       {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/T000461-philadelphia",
@@ -58481,29 +58481,6 @@
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/T000461_philadelphia.png"
       },
       {
-        "self": "https://phone-your-rep.herokuapp.com/office_locations/T000461-harrisburg",
-        "rep": "https://phone-your-rep.herokuapp.com/reps/T000461",
-        "active": true,
-        "office_id": "T000461-harrisburg",
-        "bioguide_id": "T000461",
-        "office_type": "district",
-        "distance": null,
-        "building": "United States Federal Building",
-        "address": "228 Walnut St.",
-        "suite": "Suite 1104",
-        "city": "Harrisburg",
-        "state": "PA",
-        "zip": "17101",
-        "phone": "717-782-3951",
-        "fax": "717-782-4920",
-        "hours": "",
-        "latitude": 40.261919,
-        "longitude": -76.882739,
-        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/T000461-harrisburg",
-        "downloads": 2,
-        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/T000461_harrisburg.png"
-      },
-      {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/T000461-scranton",
         "rep": "https://phone-your-rep.herokuapp.com/reps/T000461",
         "active": true,
@@ -58523,8 +58500,31 @@
         "latitude": 41.407372,
         "longitude": -75.662826,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/T000461-scranton",
-        "downloads": 0,
+        "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/T000461_scranton.png"
+      },
+      {
+        "self": "https://phone-your-rep.herokuapp.com/office_locations/T000461-pittsburgh",
+        "rep": "https://phone-your-rep.herokuapp.com/reps/T000461",
+        "active": true,
+        "office_id": "T000461-pittsburgh",
+        "bioguide_id": "T000461",
+        "office_type": "district",
+        "distance": null,
+        "building": "",
+        "address": "100 W. Station Square Dr.",
+        "suite": "Suite 225",
+        "city": "Pittsburgh",
+        "state": "PA",
+        "zip": "15219",
+        "phone": "412-803-3501",
+        "fax": "412-803-3504",
+        "hours": "",
+        "latitude": 40.433674,
+        "longitude": -80.003871,
+        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/T000461-pittsburgh",
+        "downloads": 3,
+        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/T000461_pittsburgh.png"
       },
       {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/T000461-johnstown",
@@ -59045,8 +59045,31 @@
         "latitude": 38.8867806,
         "longitude": -77.008414,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/T000465-capitol",
-        "downloads": 3,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/T000465_capitol.png"
+      },
+      {
+        "self": "https://phone-your-rep.herokuapp.com/office_locations/T000465-lowell",
+        "rep": "https://phone-your-rep.herokuapp.com/reps/T000465",
+        "active": true,
+        "office_id": "T000465-lowell",
+        "bioguide_id": "T000465",
+        "office_type": "district",
+        "distance": null,
+        "building": "",
+        "address": "126 John St.",
+        "suite": "Suite 12",
+        "city": "Lowell",
+        "state": "MA",
+        "zip": "01852",
+        "phone": "978-459-0101",
+        "fax": "978-459-1907",
+        "hours": "",
+        "latitude": 42.6482229,
+        "longitude": -71.3081499,
+        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/T000465-lowell",
+        "downloads": 4,
+        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/T000465_lowell.png"
       },
       {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/T000465-haverhill",
@@ -59072,29 +59095,6 @@
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/T000465_haverhill.png"
       },
       {
-        "self": "https://phone-your-rep.herokuapp.com/office_locations/T000465-lowell",
-        "rep": "https://phone-your-rep.herokuapp.com/reps/T000465",
-        "active": true,
-        "office_id": "T000465-lowell",
-        "bioguide_id": "T000465",
-        "office_type": "district",
-        "distance": null,
-        "building": "",
-        "address": "126 John St.",
-        "suite": "Suite 12",
-        "city": "Lowell",
-        "state": "MA",
-        "zip": "01852",
-        "phone": "978-459-0101",
-        "fax": "978-459-1907",
-        "hours": "",
-        "latitude": 42.6482229,
-        "longitude": -71.3081499,
-        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/T000465-lowell",
-        "downloads": 3,
-        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/T000465_lowell.png"
-      },
-      {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/T000465-fitchburg",
         "rep": "https://phone-your-rep.herokuapp.com/reps/T000465",
         "active": true,
@@ -59114,7 +59114,7 @@
         "latitude": 42.5815108,
         "longitude": -71.7931826,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/T000465-fitchburg",
-        "downloads": 0,
+        "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/T000465_fitchburg.png"
       },
       {
@@ -59200,7 +59200,7 @@
         "latitude": 41.6261989,
         "longitude": -79.6749289,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/T000467-titusville",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/T000467_titusville.png"
       },
       {
@@ -59527,7 +59527,7 @@
         "latitude": 39.0688046,
         "longitude": -108.5648398,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/T000470-grand_junction",
-        "downloads": 3,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/T000470_grand_junction.png"
       },
       {
@@ -59877,7 +59877,7 @@
         "latitude": 42.563685,
         "longitude": -83.1359658,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/T000475-troy",
-        "downloads": 10,
+        "downloads": 11,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/T000475_troy.png"
       }
     ]
@@ -59938,29 +59938,6 @@
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/T000476_capitol.png"
       },
       {
-        "self": "https://phone-your-rep.herokuapp.com/office_locations/T000476-high_point",
-        "rep": "https://phone-your-rep.herokuapp.com/reps/T000476",
-        "active": true,
-        "office_id": "T000476-high_point",
-        "bioguide_id": "T000476",
-        "office_type": "district",
-        "distance": null,
-        "building": "",
-        "address": "1840 Eastchester Dr.",
-        "suite": "Suite 200",
-        "city": "High Point",
-        "state": "NC",
-        "zip": "27265",
-        "phone": "336-885-0685",
-        "fax": "336-885-0692",
-        "hours": "",
-        "latitude": 36.008425,
-        "longitude": -79.985673,
-        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/T000476-high_point",
-        "downloads": 10,
-        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/T000476_high_point.png"
-      },
-      {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/T000476-hendersonville",
         "rep": "https://phone-your-rep.herokuapp.com/reps/T000476",
         "active": true,
@@ -59984,6 +59961,29 @@
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/T000476_hendersonville.png"
       },
       {
+        "self": "https://phone-your-rep.herokuapp.com/office_locations/T000476-high_point",
+        "rep": "https://phone-your-rep.herokuapp.com/reps/T000476",
+        "active": true,
+        "office_id": "T000476-high_point",
+        "bioguide_id": "T000476",
+        "office_type": "district",
+        "distance": null,
+        "building": "",
+        "address": "1840 Eastchester Dr.",
+        "suite": "Suite 200",
+        "city": "High Point",
+        "state": "NC",
+        "zip": "27265",
+        "phone": "336-885-0685",
+        "fax": "336-885-0692",
+        "hours": "",
+        "latitude": 36.008425,
+        "longitude": -79.985673,
+        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/T000476-high_point",
+        "downloads": 11,
+        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/T000476_high_point.png"
+      },
+      {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/T000476-charlotte",
         "rep": "https://phone-your-rep.herokuapp.com/reps/T000476",
         "active": true,
@@ -60003,7 +60003,7 @@
         "latitude": 35.3458971,
         "longitude": -80.8466732,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/T000476-charlotte",
-        "downloads": 14,
+        "downloads": 15,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/T000476_charlotte.png"
       },
       {
@@ -60433,7 +60433,7 @@
         "latitude": 35.0833514,
         "longitude": -106.6521937,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/U000039-albuquerque",
-        "downloads": 15,
+        "downloads": 16,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/U000039_albuquerque.png"
       },
       {
@@ -60479,7 +60479,7 @@
         "latitude": 35.6913389,
         "longitude": -105.938628,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/U000039-santa_fe",
-        "downloads": 10,
+        "downloads": 11,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/U000039_santa_fe.png"
       }
     ]
@@ -60611,7 +60611,7 @@
         "latitude": 40.7085893,
         "longitude": -73.9592284,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/V000081-brooklyn",
-        "downloads": 7,
+        "downloads": 8,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/V000081_brooklyn.png"
       }
     ]
@@ -61081,7 +61081,7 @@
         "latitude": 32.7687234,
         "longitude": -96.8364642,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/V000131-dallas",
-        "downloads": 0,
+        "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/V000131_dallas.png"
       }
     ]
@@ -61299,7 +61299,7 @@
         "latitude": 38.8871071,
         "longitude": -77.0104749,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/W000187-capitol",
-        "downloads": 0,
+        "downloads": 1,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/W000187_capitol.png"
       },
       {
@@ -61402,7 +61402,7 @@
         "latitude": 32.294793,
         "longitude": -90.1837769,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/W000437-jackson",
-        "downloads": 5,
+        "downloads": 6,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/W000437_jackson.png"
       },
       {
@@ -61448,7 +61448,7 @@
         "latitude": 30.3665745,
         "longitude": -89.0969882,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/W000437-gulfport",
-        "downloads": 1,
+        "downloads": 2,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/W000437_gulfport.png"
       },
       {
@@ -61528,7 +61528,7 @@
         "latitude": 44.9304368,
         "longitude": -123.0290967,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/W000779-salem",
-        "downloads": 8,
+        "downloads": 9,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/W000779_salem.png"
       },
       {
@@ -61551,7 +61551,7 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/W000779-capitol",
-        "downloads": 6,
+        "downloads": 8,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/W000779_capitol.png"
       },
       {
@@ -61643,7 +61643,7 @@
         "latitude": 45.5293348,
         "longitude": -122.6555902,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/W000779-portland",
-        "downloads": 24,
+        "downloads": 27,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/W000779_portland.png"
       },
       {
@@ -61798,7 +61798,7 @@
         "latitude": 44.0598422,
         "longitude": -121.3117677,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/W000791-bend",
-        "downloads": 3,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/W000791_bend.png"
       }
     ]
@@ -62377,7 +62377,7 @@
         "latitude": 41.8235873,
         "longitude": -71.4113021,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/W000802-providence",
-        "downloads": 5,
+        "downloads": 6,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/W000802_providence.png"
       }
     ]
@@ -62566,7 +62566,7 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/W000805-capitol",
-        "downloads": 40,
+        "downloads": 41,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/W000805_capitol.png"
       },
       {
@@ -62589,7 +62589,7 @@
         "latitude": 37.5374358,
         "longitude": -77.4362913,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/W000805-richmond",
-        "downloads": 25,
+        "downloads": 27,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/W000805_richmond.png"
       },
       {
@@ -63811,7 +63811,7 @@
         "latitude": 42.1032165,
         "longitude": -72.5929441,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/W000817-springfield",
-        "downloads": 6,
+        "downloads": 7,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/W000817_springfield.png"
       },
       {
@@ -63834,7 +63834,7 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/W000817-capitol",
-        "downloads": 16,
+        "downloads": 17,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/W000817_capitol.png"
       },
       {
@@ -63857,7 +63857,7 @@
         "latitude": 42.3613091,
         "longitude": -71.0593927,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/W000817-boston",
-        "downloads": 41,
+        "downloads": 45,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/W000817_boston.png"
       }
     ]
@@ -64207,7 +64207,7 @@
         "latitude": 34.5131753,
         "longitude": -93.0513324,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/W000821-hot_springs",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/W000821_hot_springs.png"
       }
     ]
@@ -64356,7 +64356,7 @@
         "latitude": 38.8871071,
         "longitude": -77.0104749,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/Y000033-capitol",
-        "downloads": 1,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/Y000033_capitol.png"
       },
       {
@@ -64379,7 +64379,7 @@
         "latitude": 61.1821567,
         "longitude": -149.8834942,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/Y000033-anchorage",
-        "downloads": 4,
+        "downloads": 7,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/Y000033_anchorage.png"
       },
       {
@@ -64465,7 +64465,7 @@
         "latitude": 38.8867621,
         "longitude": -77.0069216,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/Y000062-capitol",
-        "downloads": 3,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/Y000062_capitol.png"
       },
       {
@@ -64488,7 +64488,7 @@
         "latitude": 38.2486082,
         "longitude": -85.7622452,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/Y000062-louisville",
-        "downloads": 3,
+        "downloads": 5,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/Y000062_louisville.png"
       }
     ]
@@ -64918,7 +64918,7 @@
         "latitude": 41.589826,
         "longitude": -93.6093349,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/Y000066-des_moines",
-        "downloads": 1,
+        "downloads": 2,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/Y000066_des_moines.png"
       },
       {
@@ -65031,29 +65031,6 @@
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/Z000017_capitol.png"
       },
       {
-        "self": "https://phone-your-rep.herokuapp.com/office_locations/Z000017-patchogue",
-        "rep": "https://phone-your-rep.herokuapp.com/reps/Z000017",
-        "active": true,
-        "office_id": "Z000017-patchogue",
-        "bioguide_id": "Z000017",
-        "office_type": "district",
-        "distance": null,
-        "building": "",
-        "address": "31 Oak St.",
-        "suite": "Suite 20",
-        "city": "Patchogue",
-        "state": "NY",
-        "zip": "11772",
-        "phone": "631-289-1097",
-        "fax": "631-289-1268",
-        "hours": "",
-        "latitude": 40.7671697,
-        "longitude": -73.0138358,
-        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/Z000017-patchogue",
-        "downloads": 6,
-        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/Z000017_patchogue.png"
-      },
-      {
         "self": "https://phone-your-rep.herokuapp.com/office_locations/Z000017-riverhead",
         "rep": "https://phone-your-rep.herokuapp.com/reps/Z000017",
         "active": true,
@@ -65075,6 +65052,29 @@
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/Z000017-riverhead",
         "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/Z000017_riverhead.png"
+      },
+      {
+        "self": "https://phone-your-rep.herokuapp.com/office_locations/Z000017-patchogue",
+        "rep": "https://phone-your-rep.herokuapp.com/reps/Z000017",
+        "active": true,
+        "office_id": "Z000017-patchogue",
+        "bioguide_id": "Z000017",
+        "office_type": "district",
+        "distance": null,
+        "building": "",
+        "address": "31 Oak St.",
+        "suite": "Suite 20",
+        "city": "Patchogue",
+        "state": "NY",
+        "zip": "11772",
+        "phone": "631-289-1097",
+        "fax": "631-289-1268",
+        "hours": "",
+        "latitude": 40.7671697,
+        "longitude": -73.0138358,
+        "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/Z000017-patchogue",
+        "downloads": 7,
+        "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/Z000017_patchogue.png"
       }
     ]
   }
