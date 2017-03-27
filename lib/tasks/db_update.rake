@@ -17,9 +17,8 @@ namespace :db do
 
       desc 'Retire historical reps'
       task retired_reps: [:fetch_retired_reps] do
-        file = get_file('lib', 'seeds', 'legislators-historical.yaml')
-        update = DbPyrUpdate::HistoricalReps.new(file)
-        update.call
+        update_database filename: 'legislators-historical.yaml',
+                        klass: DbPyrUpdate::HistoricalReps
       end
 
       desc 'Download updated legislators-current.yaml'
@@ -34,9 +33,8 @@ namespace :db do
 
       desc 'Update current reps in database from yaml data file'
       task current_reps: [:fetch_current_reps] do
-        file = get_file('lib', 'seeds', 'legislators-current.yaml')
-        update = DbPyrUpdate::Reps.new(file)
-        update.call
+        update_database filename: 'legislators-current.yaml',
+                        klass: DbPyrUpdate::Reps
       end
 
       desc 'Download updated legislators-social-media.yaml'
@@ -51,9 +49,8 @@ namespace :db do
 
       desc 'Update rep social media accounts from yaml data file'
       task socials: [:fetch_socials] do
-        file = get_file('lib', 'seeds', 'legislators-social-media.yaml')
-        update = DbPyrUpdate::Socials.new(file)
-        update.call
+        update_database filename: 'legislators-social-media.yaml',
+                        klass: DbPyrUpdate::Socials
       end
 
       desc 'Download updated legislators-district-offices.yaml'
@@ -68,9 +65,8 @@ namespace :db do
 
       desc 'Update office locations in database from yaml data file'
       task office_locations: [:fetch_office_locations] do
-        file = get_file('lib', 'seeds', 'legislators-district-offices.yaml')
-        update = DbPyrUpdate::OfficeLocations.new(file)
-        update.call
+        update_database filename: 'legislators-district-offices.yaml',
+                        klass: DbPyrUpdate::OfficeLocations
       end
 
       desc 'Update the raw YAML files only, without touching the database'
@@ -109,6 +105,12 @@ namespace :db do
         if ENV['qr_codes'] == 'true' && Rails.env.development?
           Rake::Task['pyr:qr_codes:create'].invoke
         end
+      end
+
+      def update_database(filename:, klass:)
+        file = get_file('lib', 'seeds', filename)
+        update = klass.new(file)
+        update.call
       end
 
       def update_and_export_index(table_name:)
