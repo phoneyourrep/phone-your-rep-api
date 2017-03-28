@@ -18,4 +18,16 @@ class ApplicationController < ActionController::API
   def set_self
     @self = request.url
   end
+
+  def send_index_files(table_name, source: nil)
+    source = table_name unless source
+    respond_to do |format|
+      format.html do
+        render file: "#{source}.json", layout: false, content_type: 'application/json'
+      end
+
+      format.json { send_file "#{source}.json", filename: "#{table_name}.json" }
+      format.yaml { send_file "#{source}.yaml", filename: "#{table_name}.yaml" }
+    end
+  end
 end

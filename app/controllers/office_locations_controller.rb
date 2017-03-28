@@ -7,17 +7,7 @@ class OfficeLocationsController < ApplicationController
       @office_locations = OfficeLocation.active.order(:office_id)
       @self             = request.url
     else
-      send_index_files
-    end
-  end
-
-  def send_index_files
-    respond_to do |format|
-      format.html do
-        render file: 'office_locations.json', layout: false, content_type: 'application/json'
-      end
-      format.json { send_file 'office_locations.json', filename: 'office_locations.json' }
-      format.yaml { send_file 'office_locations.yaml', filename: 'office_locations.yaml' }
+      send_index_files :office_locations
     end
   end
 

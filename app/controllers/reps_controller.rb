@@ -16,15 +16,7 @@ class RepsController < ApplicationController
     elsif params[:generate] == 'true'
       @reps = Rep.active.order(:bioguide_id)
     else
-      send_index_files
-    end
-  end
-
-  def send_index_files
-    respond_to do |format|
-      format.html { render file: 'reps.json', layout: false, content_type: 'application/json' }
-      format.json { send_file 'reps.json', filename: 'reps.json' }
-      format.yaml { send_file 'reps.yaml', filename: 'reps.yaml' }
+      send_index_files :reps
     end
   end
 
