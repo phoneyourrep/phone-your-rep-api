@@ -100,7 +100,7 @@ class Rep < ApplicationRecord
   end
 
   def add_photo
-    update photo: photo_slug
+    update photo: photo_slug if avatar.data
   end
 
   def photo_slug
@@ -109,7 +109,7 @@ class Rep < ApplicationRecord
 
   def fetch_avatar_data
     ava = avatar || build_avatar
-    ava.update data: open(photo, &:read)
+    ava.update data: open(photo_slug, &:read)
   rescue => e
     logger.error e
   end

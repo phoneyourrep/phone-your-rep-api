@@ -100,8 +100,8 @@ module DbPyrUpdate
     end
 
     def update_rep_photo(rep)
-      rep.add_photo
       rep.fetch_avatar_data
+      rep.add_photo
     end
     # End of private methods
   end
