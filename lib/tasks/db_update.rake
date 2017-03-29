@@ -107,6 +107,14 @@ namespace :db do
         end
       end
 
+      desc 'Fetch and update photo URLs'
+      task :photos do
+        Rep.active.each do |rep|
+          rep.fetch_avatar_data
+          rep.add_photo
+        end
+      end
+
       def update_database(filename:, klass:)
         file = get_file('lib', 'seeds', filename)
         update = klass.new(file)
