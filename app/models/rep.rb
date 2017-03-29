@@ -100,11 +100,11 @@ class Rep < ApplicationRecord
   end
 
   def add_photo
-    update photo: photo_slug if avatar.data
+    update photo: avatar.data ? photo_slug : nil
   end
 
   def photo_slug
-    "https://theunitedstates.io/images/congress/450x550/#{bioguide_id}.jpg"
+    "https://phoneyourrep.github.io/images/congress/450x550/#{bioguide_id}.jpg"
   end
 
   def fetch_avatar_data
