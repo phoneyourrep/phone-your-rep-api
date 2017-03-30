@@ -1,5 +1,5 @@
 {
-  "total_records": 1925,
+  "total_records": 1928,
   "_links": {
     "self": {
       "href": "https://phone-your-rep.herokuapp.com/api/beta/office_locations"
@@ -10468,7 +10468,7 @@
       "latitude": 38.8928318,
       "longitude": -77.0043625,
       "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000563-capitol",
-      "downloads": 43,
+      "downloads": 44,
       "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000563_capitol.png"
     },
     {
@@ -12124,7 +12124,7 @@
       "latitude": 42.2406978,
       "longitude": -83.6164891,
       "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000624-ypsilanti",
-      "downloads": 6,
+      "downloads": 7,
       "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000624_ypsilanti.png"
     },
     {
@@ -13182,7 +13182,7 @@
       "latitude": 37.7887748,
       "longitude": -122.4026656,
       "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/F000062-san_francisco",
-      "downloads": 259,
+      "downloads": 260,
       "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/F000062_san_francisco.png"
     },
     {
@@ -15482,7 +15482,7 @@
       "latitude": 40.7550353,
       "longitude": -73.9718588,
       "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/G000555-new_york",
-      "downloads": 190,
+      "downloads": 191,
       "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/G000555_new_york.png"
     },
     {
@@ -19371,6 +19371,52 @@
       "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/H001077-capitol",
       "downloads": 2,
       "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/H001077_capitol.png"
+    },
+    {
+      "self": "https://phone-your-rep.herokuapp.com/api/beta/office_locations/H001077-lafayette",
+      "rep": "https://phone-your-rep.herokuapp.com/api/beta/reps/H001077",
+      "active": true,
+      "office_id": "H001077-lafayette",
+      "bioguide_id": "H001077",
+      "office_type": "district",
+      "distance": null,
+      "building": "Chase Building",
+      "address": "600 Jefferson Street",
+      "suite": "Suite 808",
+      "city": "Lafayette",
+      "state": "LA",
+      "zip": "70501",
+      "phone": "337-703-6105",
+      "fax": "",
+      "hours": "",
+      "latitude": 30.22335,
+      "longitude": -92.01907,
+      "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/H001077-lafayette",
+      "downloads": 0,
+      "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/H001077_lafayette.png"
+    },
+    {
+      "self": "https://phone-your-rep.herokuapp.com/api/beta/office_locations/H001077-lake_charles",
+      "rep": "https://phone-your-rep.herokuapp.com/api/beta/reps/H001077",
+      "active": true,
+      "office_id": "H001077-lake_charles",
+      "bioguide_id": "H001077",
+      "office_type": "district",
+      "distance": null,
+      "building": "Capital One Building",
+      "address": "1 Lakeshore Drive",
+      "suite": "Suite 1670",
+      "city": "Lake Charles",
+      "state": "LA",
+      "zip": "70629",
+      "phone": "337-656-2833",
+      "fax": "",
+      "hours": "",
+      "latitude": 30.2305579,
+      "longitude": -93.2196295,
+      "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/H001077-lake_charles",
+      "downloads": 0,
+      "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/H001077_lake_charles.png"
     },
     {
       "self": "https://phone-your-rep.herokuapp.com/api/beta/office_locations/I000024-capitol",
@@ -28872,6 +28918,29 @@
       "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001200_capitol.png"
     },
     {
+      "self": "https://phone-your-rep.herokuapp.com/api/beta/office_locations/M001200-richmond",
+      "rep": "https://phone-your-rep.herokuapp.com/api/beta/reps/M001200",
+      "active": true,
+      "office_id": "M001200-richmond",
+      "bioguide_id": "M001200",
+      "office_type": "district",
+      "distance": null,
+      "building": "",
+      "address": "110 North Robinson Street",
+      "suite": "Suite 401",
+      "city": "Richmond",
+      "state": "VA",
+      "zip": "23220",
+      "phone": "804-486-1840",
+      "fax": "",
+      "hours": "",
+      "latitude": 37.5534549,
+      "longitude": -77.4731247,
+      "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001200-richmond",
+      "downloads": 1,
+      "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001200_richmond.png"
+    },
+    {
       "self": "https://phone-your-rep.herokuapp.com/api/beta/office_locations/M001201-capitol",
       "rep": "https://phone-your-rep.herokuapp.com/api/beta/reps/M001201",
       "active": true,
@@ -35354,7 +35423,7 @@
       "latitude": 38.8928318,
       "longitude": -77.0043625,
       "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S000033-capitol",
-      "downloads": 8,
+      "downloads": 9,
       "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S000033_capitol.png"
     },
     {
@@ -42438,7 +42507,7 @@
       "latitude": 38.8871071,
       "longitude": -77.0104749,
       "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/W000800-capitol",
-      "downloads": 8,
+      "downloads": 9,
       "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/W000800_capitol.png"
     },
     {
