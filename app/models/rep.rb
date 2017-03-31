@@ -96,7 +96,7 @@ class Rep < ApplicationRecord
 
   # Return office_locations even if they were never sorted.
   def sorted_offices_array
-    sorted_offices || active_office_locations
+    sorted_offices || active_office_locations.order(:office_id)
   end
 
   def add_photo
