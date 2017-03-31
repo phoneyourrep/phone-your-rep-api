@@ -91,7 +91,7 @@ class Rep < ApplicationRecord
 
   # Protect against nil type errors.
   def district_code
-    district.code unless district_id.blank?
+    district.try(:code)
   end
 
   # Return office_locations even if they were never sorted.
