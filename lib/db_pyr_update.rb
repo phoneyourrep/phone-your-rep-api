@@ -108,9 +108,8 @@ module DbPyrUpdate
 
   class HistoricalReps < Base
     def call
-      @reps.each do |h_rep|
-        rep = Rep.find_by(bioguide_id: h_rep['id']['bioguide'])
-        next if rep.blank?
+      bioguide_ids = @reps.map { |h_rep| h_rep['id']['bioguide'] }
+      Rep.where(bioguide_id: bioguide_ids).each do |rep|
         rep.update(active: false)
         rep.office_locations.each { |office| office.update(active: false) }
         puts "Retired #{rep.official_full}"
