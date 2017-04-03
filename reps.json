@@ -19272,7 +19272,7 @@
         "latitude": 32.7143481,
         "longitude": -117.1647085,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/F000062-san_diego",
-        "downloads": 96,
+        "downloads": 97,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/F000062_san_diego.png"
       },
       {
@@ -19295,7 +19295,7 @@
         "latitude": 37.7887748,
         "longitude": -122.4026656,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/F000062-san_francisco",
-        "downloads": 263,
+        "downloads": 264,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/F000062_san_francisco.png"
       }
     ]
@@ -36810,7 +36810,7 @@
     "suffix": null,
     "contact_form": null,
     "url": "https://lawson.house.gov",
-    "photo": null,
+    "photo": "https://phoneyourrep.github.io/images/congress/450x550/L000586.jpg",
     "twitter": "RepAlLawsonJr",
     "facebook": "RepAlLawsonJr",
     "youtube": null,
