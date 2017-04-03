@@ -26,7 +26,7 @@ namespace :pyr do
     desc 'Remove the image meta files and make the filenames predictable'
     task :clean do
       dir = lookup_qr_code_dir
-      Dir.chdir(dir.to_s) do
+      Dir.chdir(dir) do
         sh 'rm *meta.yml'
         files = Dir.glob('*.png')
         files.each do |old_filename|
@@ -45,10 +45,26 @@ namespace :pyr do
     desc 'Upload images to S3 bucket'
     task :upload do
       dir = lookup_qr_code_dir
-      Dir.chdir(dir.to_s) do
+      Dir.chdir(dir) do
         puts 'Uploading new images'
         sh "aws s3 cp . s3://#{S3_BUCKET}/ --recursive --grants"\
           ' read=uri=http://acs.amazonaws.com/groups/global/AllUsers'
+      end
+    end
+
+    desc 'Push to github'
+    task :push do
+      dir = lookup_qr_code_dir
+      Dir.chdir('../qr_codes') do
+        sh 'git pull'
+      end
+      Dir.chdir(dir) do
+        Dir.glob('*.png').each do |filename|
+          FileUtils.mv(filename, "../../../../../../../../qr_codes/congress/#{filename}")
+        end
+      end
+      Dir.chdir('../qr_codes') do
+        sh "git add congress/*.png && git commit -m 'update QR codes #{Time.now}' && git push"
       end
     end
 
@@ -60,7 +76,7 @@ namespace :pyr do
     end
 
     desc 'Generate QR codes, upload to S3 bucket, and delete locally'
-    task create: [:generate, :clean, :empty, :upload, :delete]
+    task create: [:generate, :clean, :empty, :upload, :push, :delete]
 
     def estimate_time(time)
       minutes = (time / 60).round
