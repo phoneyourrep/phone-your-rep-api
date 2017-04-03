@@ -32,5 +32,3 @@
 /public/system/dragonfly
 # Ignore application configuration
 /config/application.yml
-
-cron*
