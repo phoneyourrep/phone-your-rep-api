@@ -5305,7 +5305,7 @@
         "latitude": 40.7344571,
         "longitude": -74.1657213,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001288-newark",
-        "downloads": 27,
+        "downloads": 28,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001288_newark.png"
       }
     ]
@@ -6745,7 +6745,7 @@
         "latitude": 38.8867621,
         "longitude": -77.0069216,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001301-capitol",
-        "downloads": 6,
+        "downloads": 7,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001301_capitol.png"
       },
       {
@@ -6791,7 +6791,7 @@
         "latitude": 44.7066718,
         "longitude": -85.5961732,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001301-traverse_city",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001301_traverse_city.png"
       }
     ]
@@ -22501,7 +22501,7 @@
         "latitude": 42.655222,
         "longitude": -73.7492819,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/G000555-albany",
-        "downloads": 31,
+        "downloads": 32,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/G000555_albany.png"
       },
       {
@@ -22639,7 +22639,7 @@
         "latitude": 40.7550353,
         "longitude": -73.9718588,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/G000555-new_york",
-        "downloads": 197,
+        "downloads": 198,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/G000555_new_york.png"
       },
       {
@@ -24484,7 +24484,7 @@
     "suffix": null,
     "contact_form": null,
     "url": "https://gonzalez.house.gov",
-    "photo": null,
+    "photo": "https://phoneyourrep.github.io/images/congress/450x550/G000581.jpg",
     "twitter": "RepGonzalez",
     "facebook": "USCongressmanVicenteGonzalez",
     "youtube": null,
@@ -37833,7 +37833,7 @@
         "latitude": 40.7344571,
         "longitude": -74.1657213,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M000639-newark",
-        "downloads": 52,
+        "downloads": 53,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M000639_newark.png"
       }
     ]
@@ -39376,7 +39376,7 @@
         "latitude": 38.583455,
         "longitude": -121.4987519,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/M001163-sacramento",
-        "downloads": 12,
+        "downloads": 13,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/M001163_sacramento.png"
       }
     ]
@@ -42967,7 +42967,7 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/N000032-capitol",
-        "downloads": 40,
+        "downloads": 41,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/N000032_capitol.png"
       },
       {
@@ -45606,7 +45606,7 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/P000595-capitol",
-        "downloads": 21,
+        "downloads": 22,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/P000595_capitol.png"
       },
       {
@@ -45767,7 +45767,7 @@
         "latitude": 44.7556947,
         "longitude": -85.6448991,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/P000595-traverse_city",
-        "downloads": 1,
+        "downloads": 2,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/P000595_traverse_city.png"
       }
     ]
@@ -50568,7 +50568,7 @@
         "latitude": 26.8380427,
         "longitude": -80.1114094,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/R000595-palm_beach_gardens",
-        "downloads": 20,
+        "downloads": 21,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/R000595_palm_beach_gardens.png"
       },
       {
@@ -53883,7 +53883,7 @@
         "latitude": 38.8928318,
         "longitude": -77.0043625,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S000770-capitol",
-        "downloads": 22,
+        "downloads": 23,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S000770_capitol.png"
       },
       {
@@ -54021,7 +54021,7 @@
         "latitude": 44.7222478,
         "longitude": -85.642375,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S000770-traverse_city",
-        "downloads": 9,
+        "downloads": 10,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S000770_traverse_city.png"
       }
     ]
@@ -54371,7 +54371,7 @@
         "latitude": 34.1815906,
         "longitude": -118.3083786,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S001150-burbank",
-        "downloads": 7,
+        "downloads": 8,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S001150_burbank.png"
       },
       {
@@ -54853,7 +54853,7 @@
         "latitude": 40.7248331,
         "longitude": -74.0607631,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S001165-jersey_city",
-        "downloads": 2,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S001165_jersey_city.png"
       },
       {
@@ -62412,7 +62412,7 @@
         "latitude": 44.4626812,
         "longitude": -73.2177683,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/W000800-burlington",
-        "downloads": 9,
+        "downloads": 10,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/W000800_burlington.png"
       },
       {
@@ -63949,7 +63949,7 @@
         "latitude": 42.3613091,
         "longitude": -71.0593927,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/W000817-boston",
-        "downloads": 49,
+        "downloads": 50,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/W000817_boston.png"
       },
       {
@@ -64924,7 +64924,7 @@
         "latitude": 38.8867621,
         "longitude": -77.0069216,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/Y000065-capitol",
-        "downloads": 2,
+        "downloads": 3,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/Y000065_capitol.png"
       },
       {
