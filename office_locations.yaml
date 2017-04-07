@@ -20767,7 +20767,7 @@
   latitude: 44.4755314
   longitude: -73.2112826
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/L000174-burlington
-  downloads: 8
+  downloads: 9
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/L000174_burlington.png
 - self: https://phone-your-rep.herokuapp.com/office_locations/L000174-capitol
   rep: https://phone-your-rep.herokuapp.com/reps/L000174
@@ -32951,7 +32951,7 @@
   latitude: 32.3752753
   longitude: -86.3089916
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/S000320-montgomery
-  downloads: 1
+  downloads: 2
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/S000320_montgomery.png
 - self: https://phone-your-rep.herokuapp.com/office_locations/S000320-tuscaloosa
   rep: https://phone-your-rep.herokuapp.com/reps/S000320
