@@ -4,11 +4,11 @@ return json.error 'Record not found' if rep.blank?
 json.self api_beta_rep_url(rep.bioguide_id)
 
 json.state do
-  json.partial! 'states/state', state: rep.state
+  json.partial! 'api/beta/states/state', state: rep.state
 end
 
 json.district do
-  json.partial! 'districts/district', district: rep.district if rep.district
+  json.partial! 'api/beta/districts/district', district: rep.district if rep.district
 end
 
 json.extract! rep,
