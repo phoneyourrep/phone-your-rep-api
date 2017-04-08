@@ -10,6 +10,7 @@ Rails.application.routes.draw do
       resources :office_locations, only: [:index, :show]
       resources :districts,        only: [:index, :show]
       resources :states,           only: [:index, :show]
+      resources :v_cards,          only: [:show]
     end
 
     namespace :beta do # beta version
@@ -19,6 +20,7 @@ Rails.application.routes.draw do
       resources :office_locations, only: [:index, :show]
       resources :districts,        only: [:index, :show]
       resources :states,           only: [:index, :show]
+      resources :v_cards,          only: [:show]
     end
   end
 
@@ -30,7 +32,8 @@ Rails.application.routes.draw do
   resources :office_locations, only: [:index, :show]
   resources :districts,        only: [:index, :show]
   resources :states,           only: [:index, :show]
-  get '/v_cards/:id', to: 'v_cards#show'
+  resources :v_cards,          only: [:show]
+  # get '/v_cards/:id', to: 'v_cards#show'
   get '/', to: 'reps#index', as: 'root'
 
   # OSDI STUFF!
