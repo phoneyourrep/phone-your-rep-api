@@ -549,7 +549,7 @@ reps:
   googleplus: 
   twitter_id: '2916086925'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCPI9ao1Cr1nxEUD2r-usRjQ
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/A000370-capitol
@@ -626,7 +626,7 @@ reps:
   googleplus: 
   twitter_id: '3018670151'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCxwbFLOlKDsXrwizV5jah7g
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/A000371-capitol
@@ -703,7 +703,7 @@ reps:
   googleplus: 
   twitter_id: '2964287128'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCZPoYXHFDAV17BGLMzGAmpg
   instagram_id: '1666787116'
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/A000372-augusta
@@ -2460,12 +2460,12 @@ reps:
   photo: https://phoneyourrep.github.io/images/congress/450x550/B001245.jpg
   twitter: 
   facebook: madeleine.bordallo
-  youtube: 
+  youtube: RepMadeleineBordallo
   instagram: 
   googleplus: 
   twitter_id: 
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCmHdfm0Nyslc8LOoq3KIATg
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/B001245-capitol
@@ -5021,7 +5021,7 @@ reps:
   googleplus: 
   twitter_id: '2929491549'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCPVEZgw-VbDRbLV1MRGVQNQ
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/B001291-capitol
@@ -5140,7 +5140,7 @@ reps:
   googleplus: 
   twitter_id: '2962868158'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCPJGVbOVcAVGiBwq8qr_T9w
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/B001292-alexandria
@@ -5217,7 +5217,7 @@ reps:
   googleplus: 
   twitter_id: '2914571740'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCeG5_Zwq-4KXnGWufThSKRQ
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/B001293-brighton
@@ -5294,7 +5294,7 @@ reps:
   googleplus: 
   twitter_id: '2965083477'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCACYUrK1zFAZzKcmz9ibEAg
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/B001294-capitol
@@ -5413,7 +5413,7 @@ reps:
   googleplus: 
   twitter_id: '2964877294'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCYA1psY06vSf3QadHuCrmjQ
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/B001295-alton
@@ -5574,7 +5574,7 @@ reps:
   googleplus: 
   twitter_id: '4304448314'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCMP_Anj7lz4eZuSh8GwFqQQ
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/B001296-capitol
@@ -5714,7 +5714,7 @@ reps:
   googleplus: 
   twitter_id: '2862577383'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCHK7Wcwij7NoxXGTeSHUWzg
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/B001297-capitol
@@ -5812,7 +5812,7 @@ reps:
   googleplus: 
   twitter_id: '818975124460335106'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCR9abI1lZzAZ6HwQXc-dLFQ
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/B001298-capitol
@@ -5889,7 +5889,7 @@ reps:
   googleplus: 
   twitter_id: '816131319033950208'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UC_FR6TySW9uxvhjozkis6Xg
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/B001299-capitol
@@ -6059,7 +6059,7 @@ reps:
   photo: https://phoneyourrep.github.io/images/congress/450x550/B001301.jpg
   twitter: RepJackBergman
   facebook: RepJackBergman
-  youtube: 
+  youtube: RepJackBergman
   instagram: RepJackBergman
   googleplus: 
   twitter_id: '815241612154417152'
@@ -6162,7 +6162,7 @@ reps:
   googleplus: 
   twitter_id: '816652616625168388'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCqSq9kWOxk9yNTeILBCVC1w
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/B001302-capitol
@@ -6309,12 +6309,12 @@ reps:
   contact_form: 
   url: https://anthonybrown.house.gov
   photo: https://phoneyourrep.github.io/images/congress/450x550/B001304.jpg
-  twitter: 
+  twitter: RepAnthonyBrown
   facebook: 
-  youtube: 
+  youtube: RepAnthonyBrown
   instagram: 
   googleplus: 
-  twitter_id: 
+  twitter_id: '823552974253342721'
   facebook_id: 
   youtube_id: 
   instagram_id: 
@@ -8180,7 +8180,7 @@ reps:
   photo: https://phoneyourrep.github.io/images/congress/450x550/C001047.jpg
   twitter: SenCapito
   facebook: senshelley
-  youtube: UCbiXdR4XQ3vD9Xp5lfR9QXw
+  youtube: 
   instagram: sencapito
   googleplus: 
   twitter_id: '193794406'
@@ -12210,7 +12210,7 @@ reps:
   googleplus: 
   twitter_id: '2973870195'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCHQm49T6ikD_ioMAt50AwKQ
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/C001103-brunswick
@@ -12308,7 +12308,7 @@ reps:
   googleplus: 
   twitter_id: '2933760046'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UC2IBUvBd51zgaE56fPcZeVA
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/C001105-capitol
@@ -12406,7 +12406,7 @@ reps:
   googleplus: 
   twitter_id: '2953922782'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCJzU_8Bwz1lUyP1qz84L5jw
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/C001106-capitol
@@ -12504,7 +12504,7 @@ reps:
   googleplus: 
   twitter_id: '2853309155'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UC6SRoWRNiv5U4a7ovRICwaw
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/C001107-capitol
@@ -12840,7 +12840,7 @@ reps:
   googleplus: 
   twitter_id: '815985039485837312'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCIKJJp4QJIDjnjodc23qKkw
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/C001110-capitol
@@ -12968,7 +12968,7 @@ reps:
   photo: https://phoneyourrep.github.io/images/congress/450x550/C001112.jpg
   twitter: RepCarbajal
   facebook: repsaludcarbajal
-  youtube: 
+  youtube: repcarbajal
   instagram: repcarbajal
   googleplus: 
   twitter_id: '816157667882373120'
@@ -13066,7 +13066,7 @@ reps:
   googleplus: 
   twitter_id: '811313565760163844'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCip_83SiKUqwnUT57VOXrCg
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/C001113-capitol
@@ -15896,7 +15896,7 @@ reps:
   googleplus: 
   twitter_id: '2970279814'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCnoP3KLT-HOvzDfC1-I-9lQ
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/D000624-capitol
@@ -15994,7 +15994,7 @@ reps:
   googleplus: 
   twitter_id: '3353670647'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCT8-VskXvxCqDuSGzR5sWWg
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/D000625-brooklyn
@@ -16092,7 +16092,7 @@ reps:
   googleplus: 
   twitter_id: '742735530287304704'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCMzuyZWzk44YRNesFzPTeUw
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/D000626-capitol
@@ -16211,7 +16211,7 @@ reps:
   googleplus: 
   twitter_id: '798973032362606600'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCkcshqwFNJG6XeduOforhig
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/D000627-capitol
@@ -16288,7 +16288,7 @@ reps:
   googleplus: 
   twitter_id: '815952318487298048'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCRTGfrYP-RuDzJ2KGok7TRA
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/D000628-capitol
@@ -16887,7 +16887,7 @@ reps:
   photo: https://phoneyourrep.github.io/images/congress/450x550/E000294.jpg
   twitter: RepTomEmmer
   facebook: reptomemmer
-  youtube: 
+  youtube: RepTomEmmer
   instagram: reptomemmer
   googleplus: 
   twitter_id: '2914515430'
@@ -17202,7 +17202,7 @@ reps:
   googleplus: 
   twitter_id: '817076257770835968'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCi0niBYFhEY70Dz8InbX5OQ
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/E000297-bronx
@@ -17600,12 +17600,12 @@ reps:
   photo: https://phoneyourrep.github.io/images/congress/450x550/F000448.jpg
   twitter: RepTrentFranks
   facebook: TrentFranks
-  youtube: 
+  youtube: RepTrentFranks
   instagram: reptrentfranks
   googleplus: 
   twitter_id: '24773493'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCiCvsANemtLvJu7qA8EN89Q
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/F000448-capitol
@@ -18897,7 +18897,7 @@ reps:
   googleplus: 
   twitter_id: '806583915012046854'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCuK7_j2sREWi_7wBAN477bg
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/F000465-capitol
@@ -18974,7 +18974,7 @@ reps:
   googleplus: 
   twitter_id: '816303263586914304'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCYMNcgHss4_Q5JY2vSvMpgw
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/F000466-capitol
@@ -21635,7 +21635,7 @@ reps:
   googleplus: 
   twitter_id: '2976606250'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCui4k83Cot4aeVW_8T33fgg
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/G000576-capitol
@@ -21712,7 +21712,7 @@ reps:
   googleplus: 
   twitter_id: '2951574214'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCQLg9GGwTDluEFJtXf8seTA
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/G000577-baton_rouge
@@ -21831,7 +21831,7 @@ reps:
   googleplus: 
   twitter_id: '818948638890217473'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UClqXcJew_A3s8qiX-T4a9CA
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/G000578-capitol
@@ -21985,7 +21985,7 @@ reps:
   googleplus: 
   twitter_id: '818460870573441028'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UC_lWS6tnQPcBPlmD2e99zKw
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/G000580-capitol
@@ -22083,7 +22083,7 @@ reps:
   googleplus: 
   twitter_id: '818536152588238849'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UC5H6oYLKQ_xIXO5CG7fh4hw
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/G000581-capitol
@@ -22155,7 +22155,7 @@ reps:
   googleplus: 
   twitter_id: '819744763020775425'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCZj99h3-GNKjGGeyp7AJeXw
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/G000582-capitol
@@ -24869,7 +24869,7 @@ reps:
   googleplus: 
   twitter_id: '2975091705'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCzUMsS8DusN2QLpgweFthgQ
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/H001071-capitol
@@ -24988,7 +24988,7 @@ reps:
   googleplus: 
   twitter_id: '2953974395'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCT8uWroJtkwSsCJlVg0IKvQ
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/H001072-capitol
@@ -25086,7 +25086,7 @@ reps:
   googleplus: 
   twitter_id: '2963445730'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCjWcn2lgGCZbwPs6lKxlziQ
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/H001073-capitol
@@ -25247,7 +25247,7 @@ reps:
   googleplus: 
   twitter_id: '811986281177772032'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCTgS8a_zLg8HpUnk5WXY5ag
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/H001074-capitol
@@ -25566,12 +25566,12 @@ reps:
   contact_form: 
   url: https://clayhiggins.house.gov
   photo: https://phoneyourrep.github.io/images/congress/450x550/H001077.jpg
-  twitter: 
+  twitter: RepClayHiggins
   facebook: 
   youtube: 
   instagram: 
   googleplus: 
-  twitter_id: 
+  twitter_id: '843636970538618880'
   facebook_id: 
   youtube_id: 
   instagram_id: 
@@ -27112,7 +27112,7 @@ reps:
   googleplus: 
   twitter_id: '2953713339'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCSy2mmlbZCv0p07KOw8-m7Q
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/J000297-beckley
@@ -27231,7 +27231,7 @@ reps:
   googleplus: 
   twitter_id: '815733290955112448'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCmyD0_-2Oowkfwc_Raghclw
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/J000298-capitol
@@ -27308,7 +27308,7 @@ reps:
   googleplus: 
   twitter_id: '827279765287559171'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCzqBEpeIaDEfvAtsA53Fx2Q
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/J000299-bossier_city
@@ -29379,7 +29379,7 @@ reps:
   googleplus: 
   twitter_id: '2974648323'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCNfnbtkP6hGUq1TLFQ3fD5Q
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/K000387-capitol
@@ -29498,7 +29498,7 @@ reps:
   googleplus: 
   twitter_id: '3317799825'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCtDrz-8tdg4ZgOAQHToSWaQ
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/K000388-capitol
@@ -29659,7 +29659,7 @@ reps:
   googleplus: 
   twitter_id: '816298918468259841'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCr4KOYv1o1oEQhy1jhhm3pQ
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/K000389-capitol
@@ -29890,7 +29890,7 @@ reps:
   googleplus: 
   twitter_id: '816012124505931780'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCK6U4plOKKMrCjv_h59spGQ
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/K000392-capitol
@@ -32699,7 +32699,7 @@ reps:
   googleplus: 
   twitter_id: '2863006655'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCf0USy9GNigkB8O9sS1dodw
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/L000581-capitol
@@ -32797,7 +32797,7 @@ reps:
   googleplus: 
   twitter_id: '3044993235'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UC9qcJxTqfDNBnVul1IojlFg
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/L000582-capitol
@@ -32895,7 +32895,7 @@ reps:
   googleplus: 
   twitter_id: '2914163523'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UC2Kfw8fjca8k3w3KpzL5tNg
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/L000583-atlanta
@@ -33014,7 +33014,7 @@ reps:
   googleplus: 
   twitter_id: '2976598347'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCqHVv1qerDPYaH9NbyWyxtg
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/L000584-capitol
@@ -33401,7 +33401,7 @@ reps:
   photo: https://phoneyourrep.github.io/images/congress/450x550/M000087.jpg
   twitter: RepMaloney
   facebook: 
-  youtube: 
+  youtube: carolynbmaloney
   instagram: 
   googleplus: 
   twitter_id: '258900199'
@@ -37553,7 +37553,7 @@ reps:
   googleplus: 
   twitter_id: '1060370282'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCLQlm-cbGbJj9baZC6oFsag
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/M001190-capitol
@@ -37651,7 +37651,7 @@ reps:
   googleplus: 
   twitter_id: '2962994194'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCLD7s-g8XgSd_wvuUWATKkQ
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/M001193-capitol
@@ -37749,7 +37749,7 @@ reps:
   googleplus: 
   twitter_id: '2696643955'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCnMvVN4a8roZu4crE0UW2DA
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/M001194-cadillac
@@ -37847,7 +37847,7 @@ reps:
   googleplus: 
   twitter_id: '2964526557'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCw9CGkF4Re3areluI43TGyA
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/M001195-capitol
@@ -37945,7 +37945,7 @@ reps:
   googleplus: 
   twitter_id: '3091316093'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UC5w5qn7nj5Ljy69LTV7a_fQ
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/M001196-capitol
@@ -38022,7 +38022,7 @@ reps:
   googleplus: 
   twitter_id: '2964949642'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCfHMG2Db0TJ_RatSBHuH8NA
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/M001197-capitol
@@ -38192,7 +38192,7 @@ reps:
   photo: https://phoneyourrep.github.io/images/congress/450x550/M001199.jpg
   twitter: repbrianmast
   facebook: repbrianmast
-  youtube: 
+  youtube: repbrianmast
   instagram: 
   googleplus: 
   twitter_id: '814103950404239360'
@@ -38274,7 +38274,7 @@ reps:
   googleplus: 
   twitter_id: '816181091673448448'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCMoPYHuZ3fZho0ZixZCfiFg
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/M001200-capitol
@@ -38351,7 +38351,7 @@ reps:
   googleplus: 
   twitter_id: '811632636598910976'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCisQXodHJRZDaLtFMq_TzWg
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/M001201-capitol
@@ -38423,7 +38423,7 @@ reps:
   photo: https://phoneyourrep.github.io/images/congress/450x550/M001202.jpg
   twitter: RepStephMurphy
   facebook: RepStephMurphy
-  youtube: 
+  youtube: RepStephMurphy
   instagram: RepStephMurphy
   googleplus: 
   twitter_id: '796183515998068736'
@@ -39587,7 +39587,7 @@ reps:
   googleplus: 
   twitter_id: '2930635215'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCllbsv_aoIaPS6W3aSonZlw
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/N000189-capitol
@@ -41889,7 +41889,7 @@ reps:
   googleplus: 
   twitter_id: '1155335864'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCTG_SeYsOgbngjv1Donyu0w
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/P000604-capitol
@@ -42421,7 +42421,7 @@ reps:
   googleplus: 
   twitter_id: '2861616083'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCYZfP-cNIvlJY3AcAc9OPpQ
   instagram_id: '1551536636'
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/P000609-birmingham
@@ -42535,7 +42535,7 @@ reps:
   googleplus: 
   twitter_id: '2724095695'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UC3V7biFZHDFHDFZy6cCSZUA
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/P000610-capitol
@@ -42633,7 +42633,7 @@ reps:
   googleplus: 
   twitter_id: '2932617195'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCFk3paQ30PAME40YgJkuH4Q
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/P000611-bangor
@@ -42747,7 +42747,7 @@ reps:
   googleplus: 
   twitter_id: '2863210809'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCXHsrkPP4TAm0s0qB1C31Lw
   instagram_id: '1650058430'
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/P000612-atlanta
@@ -42824,7 +42824,7 @@ reps:
   googleplus: 
   twitter_id: '796736612554117120'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCmw-aERG51C96edMDPN7fXQ
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/P000613-capitol
@@ -45030,12 +45030,12 @@ reps:
   photo: https://phoneyourrep.github.io/images/congress/450x550/R000588.jpg
   twitter: RepRichmond
   facebook: RepRichmond
-  youtube: 
+  youtube: RepCedricRichmond
   instagram: 
   googleplus: 
   twitter_id: '267854863'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCsB66Dq8sCGwr5K3g1kqTrA
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/R000588-baton_rouge
@@ -46076,7 +46076,7 @@ reps:
   googleplus: 
   twitter_id: '2847221717'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCo37eRsRga4fUYijDa6j6oA
   instagram_id: '1679501092'
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/R000601-capitol
@@ -46195,7 +46195,7 @@ reps:
   googleplus: 
   twitter_id: '2970462034'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCLYLmjrGtzzCFXMWPBxHAug
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/R000602-capitol
@@ -46272,7 +46272,7 @@ reps:
   googleplus: 
   twitter_id: '834069080'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCBvOxpqoGi1HlHjX9v_gHZw
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/R000603-bolivia
@@ -46391,7 +46391,7 @@ reps:
   googleplus: 
   twitter_id: '2966758114'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UC2z7ACZuDophcPphXdJfbZQ
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/R000604-capitol
@@ -46463,7 +46463,7 @@ reps:
   googleplus: 
   twitter_id: '2955485182'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UC-pvzimyBdpdkcIfsicrfrQ
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/R000605-aberdeen
@@ -46603,7 +46603,7 @@ reps:
   googleplus: 
   twitter_id: '806906355214852096'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UChxDE6vho5BfBTOqiBsDmKg
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/R000606-capitol
@@ -46680,7 +46680,7 @@ reps:
   googleplus: 
   twitter_id: '816111677917851649'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UC5dLBbrW1JwIGs9h248lk6g
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/R000607-cape_coral
@@ -50953,7 +50953,7 @@ reps:
   photo: https://phoneyourrep.github.io/images/congress/450x550/S001190.jpg
   twitter: repschneider
   facebook: CongressmanBradSchneider
-  youtube: 
+  youtube: RepBradSchneider
   instagram: repschneider
   googleplus: 
   twitter_id: '1071840474'
@@ -51520,7 +51520,7 @@ reps:
   googleplus: 
   twitter_id: '2962813893'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCHvf42C8Vw6QnjwO2L2ukKA
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/S001196-capitol
@@ -51634,7 +51634,7 @@ reps:
   googleplus: 
   twitter_id: '2962923040'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCYaNGwcM2Dl5yDcDqS6xV2g
   instagram_id: '1636974433'
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/S001197-capitol
@@ -51769,7 +51769,7 @@ reps:
   googleplus: 
   twitter_id: '2891210047'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UC7tXCm8gKlAhTFo2kuf5ylw
   instagram_id: '1660873387'
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/S001198-anchorage
@@ -51951,7 +51951,7 @@ reps:
   googleplus: 
   twitter_id: '41417564'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCs5iMvWy-oTHyf5HuwB7FCg
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/S001199-capitol
@@ -52023,7 +52023,7 @@ reps:
   photo: https://phoneyourrep.github.io/images/congress/450x550/S001200.jpg
   twitter: RepDarrenSoto
   facebook: CongressmanDarrenSoto
-  youtube: 
+  youtube: repdarrensoto
   instagram: 
   googleplus: 
   twitter_id: '818713465653051392'
@@ -53989,7 +53989,7 @@ reps:
   googleplus: 
   twitter_id: '236279233'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCvWY4qKP6--o3pIJY7hhKDg
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/T000474-capitol
@@ -54066,7 +54066,7 @@ reps:
   googleplus: 
   twitter_id: '2869746172'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCkIE7mLSCRV6QidM2fuil4w
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/T000475-capitol
@@ -54292,14 +54292,14 @@ reps:
   contact_form: 
   url: https://taylor.house.gov
   photo: https://phoneyourrep.github.io/images/congress/450x550/T000477.jpg
-  twitter: 
+  twitter: RepScottTaylor
   facebook: 
   youtube: 
   instagram: 
   googleplus: 
-  twitter_id: 
+  twitter_id: '837722935095930883'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCL_UCG7VqJRfneFTwg8UVmg
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/T000477-capitol
@@ -55222,7 +55222,7 @@ reps:
   photo: https://phoneyourrep.github.io/images/congress/450x550/V000132.jpg
   twitter: RepFilemonVela
   facebook: USCongressmanFilemonVela
-  youtube: 
+  youtube: RepFilemonVela
   instagram: 
   googleplus: 
   twitter_id: '1083448909'
@@ -57729,7 +57729,7 @@ reps:
   googleplus: 
   twitter_id: '2966205003'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UC2w0KJe43jr0Hlhi6J5smhg
   instagram_id: '1638422078'
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/W000819-capitol
@@ -57827,7 +57827,7 @@ reps:
   googleplus: 
   twitter_id: '47798449'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCyFubcwlZVLVLg-T-2PuooQ
   instagram_id: '301820337'
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/W000820-capitol
@@ -57904,7 +57904,7 @@ reps:
   googleplus: 
   twitter_id: '2852998461'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCNshPbmupCwP5a7Hi79jETQ
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/W000821-capitol
@@ -58606,7 +58606,7 @@ reps:
   googleplus: 
   twitter_id: '314205957'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCD2SzM1kn4iZfHccN4bocQA
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/Y000066-capitol
@@ -58725,7 +58725,7 @@ reps:
   googleplus: 
   twitter_id: '2750127259'
   facebook_id: 
-  youtube_id: 
+  youtube_id: UCHzZuesCPDka2NhZO8icqzA
   instagram_id: 
   office_locations:
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/Z000017-capitol
