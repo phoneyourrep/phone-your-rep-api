@@ -163,6 +163,9 @@ You can also specify an alternative data source (as long as it's in YAML format)
 This is deployed on Heroku. Deploying a geo-spatially enabled database to Heroku can be a bit of a challenge. Docs for that will come soon.
 
 # Usage
+
+### Ruby developers can try the [pyr gem](https://www.github.com/phoneyourrep/pyr)
+
 This API is in beta. An example request to the API looks like this:
 ```
 https://phone-your-rep.herokuapp.com/api/beta/reps?lat=42.3134848&long=-71.2072321
