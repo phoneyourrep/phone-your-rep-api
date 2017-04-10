@@ -56,8 +56,9 @@ class Rep < ApplicationRecord
   # Reset attribute values, set the coordinates and address if available.
   def self.init(address, lat, long)
     self.reps        = nil
-    self.coordinates = [lat.to_f, long.to_f] - [0.0]
     self.state       = nil
+    self.district    = nil
+    self.coordinates = [lat.to_f, long.to_f] - [0.0]
     self.address     = address
     return unless coordinates.blank?
     find_coordinates_by_address if address
