@@ -2514,7 +2514,7 @@
     id: C000984-catonsville
   - address: 8267 Main St.
     building: ''
-    city: Ellicott
+    city: Ellicott City
     fax: 410-465-8740
     hours: M-F 8:30AM to 5PM
     phone: 410-465-8259
@@ -2842,7 +2842,7 @@
     id: C001053-norman
   - address: 100 E. 13th St.
     building: ''
-    city: ada
+    city: Ada
     fax: 580-436-5451
     hours: ''
     phone: 580-436-5375
@@ -4275,7 +4275,7 @@
     govtrack: 400093
     thomas: '01477'
   offices:
-  - address: 2746 W. Madison St.
+  - address: 2813-15 W. Fifth Ave.
     building: ''
     city: Chicago
     fax: 773-533-7530
@@ -4284,8 +4284,8 @@
     state: IL
     suite: ''
     zip: '60612'
-    latitude: 41.88125790000001
-    longitude: -87.69572930000001
+    latitude: 41.8807415
+    longitude: -87.6990211
     id: D000096-chicago
 - id:
     bioguide: D000191
@@ -9281,7 +9281,7 @@
     latitude: 46.6766073
     longitude: -67.9956649
     id: K000383-presque_isle
-  - address: 383 Route
+  - address: 383 Route 1
     building: ''
     city: Scarborough
     fax: ''
@@ -12668,7 +12668,7 @@
     govtrack: 400295
     thomas: '00868'
   offices:
-  - address: 90 K St.
+  - address: 90 K St. NE
     building: ''
     city: Washington
     fax: 202-408-9048
@@ -12680,17 +12680,17 @@
     latitude: 38.9031719
     longitude: -77.00662319999999
     id: N000147-washington
-  - address: 2041 Martin Luther King Jr Ave.
+  - address: 2235 Shannon Place SE
     building: ''
     city: Washington
     fax: 202-678-8844
     hours: M-F 9-5:30pm
     phone: 202-678-8900
     state: DC
-    suite: Suite 238
+    suite: Suite 2032-A
     zip: '20020'
-    latitude: 38.8659837
-    longitude: -76.9897997
+    latitude: 38.86535
+    longitude: -76.99073
     id: N000147-washington-1
 - id:
     bioguide: N000179
@@ -14830,18 +14830,6 @@
     latitude: 30.438114
     longitude: -84.281289
     id: R000595-tallahassee
-  - address: 5201 W. Kennedy Blvd.
-    building: ''
-    city: Tampa
-    fax: ''
-    hours: ''
-    phone: 813-287-5035
-    state: FL
-    suite: Suite 530
-    zip: '33609'
-    latitude: 27.945205
-    longitude: -82.5314559
-    id: R000595-tampa
 - id:
     bioguide: R000597
     govtrack: 412572
@@ -15588,54 +15576,6 @@
     govtrack: 400379
     thomas: '01528'
   offices:
-  - address: 15590 Lake Hills Blvd.
-    building: Lake Hills Library
-    city: Bellevue
-    fax: ''
-    hours: January 10th and February 14th, 10am-1pm
-    phone: ''
-    state: WA
-    suite: ''
-    zip: '98007'
-    latitude: 47.6035492
-    longitude: -122.1313916
-    id: S000510-bellevue
-  - address: 34200 1st Way S.
-    building: Federal Way Library
-    city: Federal Way
-    fax: ''
-    hours: 'January 9th and February 6th: 10am-1pm'
-    phone: 425-793-5180
-    state: WA
-    suite: ''
-    zip: '98003'
-    latitude: 47.2945815
-    longitude: -122.3317517
-    id: S000510-federal_way
-  - address: 212 2nd Ave.
-    building: Kent Regional Library
-    city: Kent
-    fax: ''
-    hours: 10am-1pm
-    phone: ''
-    state: WA
-    suite: ''
-    zip: '98032'
-    latitude: 47.3826063
-    longitude: -122.2342107
-    id: S000510-kent
-  - address: 4400 88th Ave.
-    building: Mercer Island Library
-    city: Mercer Island
-    fax: ''
-    hours: January 4th and February 8th  11 am - 1 pm
-    phone: ''
-    state: WA
-    suite: ''
-    zip: '98040'
-    latitude: 47.5669511
-    longitude: -122.2211918
-    id: S000510-mercer_island
   - address: 15 S. Grady Way.
     building: 101 Evergreen Building
     city: Renton
@@ -15648,42 +15588,6 @@
     latitude: 47.469273
     longitude: -122.2153306
     id: S000510-renton
-  - address: 7058 32nd Ave.
-    building: ''
-    city: Seattle
-    fax: ''
-    hours: January 19th and February 16th 12pm-2pm
-    phone: ''
-    state: WA
-    suite: Ste 104
-    zip: '98118'
-    latitude: 47.5392077
-    longitude: -122.2904189
-    id: S000510-seattle
-  - address: 2821 Beacon Ave.
-    building: ''
-    city: Seattle
-    fax: ''
-    hours: 11am-1pm
-    phone: ''
-    state: WA
-    suite: ''
-    zip: '98144'
-    latitude: 47.5779906
-    longitude: -122.3114032
-    id: S000510-seattle-1
-  - address: 700 Dearborn Pl.
-    building: The Good Will Industries
-    city: Seattle
-    fax: ''
-    hours: January 12th and February 9th 11am-1pm
-    phone: 202-225-8901
-    state: WA
-    suite: ''
-    zip: '98144'
-    latitude: 47.59627
-    longitude: -122.3121966
-    id: S000510-seattle-2
 - id:
     bioguide: S000522
     govtrack: 400380
@@ -17183,17 +17087,17 @@
     latitude: 40.261919
     longitude: -76.882739
     id: T000461-harrisburg
-  - address: 1628 John F. Kennedy Blvd
-    building: 8 Penn Center
+  - address: 200 Chestnut Street
+    building: US Custom House
     city: Philadelphia
     fax: 215-241-1095
     hours: ''
     phone: 215-241-1090
     state: PA
-    suite: Suite 1702
-    zip: '19103'
-    latitude: 39.953754
-    longitude: -75.167981
+    suite: Suite 600
+    zip: '19106'
+    latitude: 39.94829
+    longitude: -75.1441
     id: T000461-philadelphia
   - address: 100 W. Station Square Dr.
     building: ''
@@ -19332,3 +19236,47 @@
     latitude: 30.2305579
     longitude: -93.2196295
     id: H001077-lake_charles
+- id:
+    bioguide: T000477
+    govtrack: 412727
+  offices:
+  - address: 1 Columbus Center
+    building: ''
+    city: Virginia Beach
+    fax: ''
+    hours: ''
+    phone: 757-364-7650
+    state: VA
+    suite: Suite 900
+    zip: '23462'
+    latitude: 36.8425
+    longitude: -76.13196
+    id: T000477-virginia_beach
+- id:
+    bioguide: V000128
+    govtrack: 400415
+  offices:
+    - address: 111 Rockville Pike
+      building: ''
+      city: Rockville
+      fax: ''
+      hours: ''
+      phone: 301-545-1500
+      state: MD
+      suite: Suite 960
+      zip: '20850'
+      latitude: 39.08895
+      longitude: -77.15119
+      id: V000128-rockville
+    - address: 32 West Washington Street
+      building: ''
+      city: Hagerstown
+      fax: ''
+      hours: ''
+      phone: 301-797-2826
+      state: MD
+      suite: Suite 203
+      zip: '21740'
+      latitude: 39.64151
+      longitude: -77.7191
+      id: V000128-hagerstown
