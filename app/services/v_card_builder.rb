@@ -1,7 +1,14 @@
 # frozen_string_literal: true
-module VCardable
+module VCardBuilder
   TEL_TYPES  = %w(home work cell pager other fax).freeze
   ADDR_TYPES = %w(home other).freeze
+
+  attr_accessor :office_location, :rep
+
+  def initialize(office_location, rep)
+    @office_location = office_location
+    @rep             = rep
+  end
 
   def make_v_card(photo: true)
     @phones = []
@@ -21,7 +28,7 @@ module VCardable
   def add_secondary_office(maker)
     index = 0
     rep.office_locations.order('office_type DESC').each do |office|
-      next if office == self
+      next if office == office_location
       add_secondary_address(maker, office, index)
       add_secondary_phone(maker, office, index)
       index += 1
@@ -55,11 +62,17 @@ module VCardable
     maker.add_addr do |addr|
       addr.preferred  = true
       addr.location   = 'work'
-      addr.street     = suite ? "#{address}, #{suite}" : address
-      addr.locality   = city
-      addr.region     = state
-      addr.postalcode = zip
+      addr.street     = address_and_suite
+      addr.locality   = office_location.city
+      addr.region     = office_location.state
+      addr.postalcode = office_location.zip
     end
+  end
+
+  def address_and_suite
+    suite   = office_location.suite
+    address = office_location.address
+    suite ? "#{address}, #{suite}" : address
   end
 
   def add_contact_url(maker)
@@ -71,6 +84,7 @@ module VCardable
   end
 
   def add_primary_phone(maker)
+    phone = office_location.phone
     return if phone.blank?
     @phones << phone
     maker.add_tel(phone) do |tel|
