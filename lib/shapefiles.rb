@@ -5,7 +5,7 @@ class Shapefiles
   attr_reader :file
 
   def initialize(*args)
-    @file = Rails.root.join(*args).to_s
+    @file = Rails.root.join(*args)
   end
 
   def import(model:, model_attr:, record_attr:)

@@ -25,7 +25,7 @@ gem 'rack-attack', '~> 5.0.0', '>= 5.0.1'
 gem 'rack-cors', '~> 0.4.0'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'responders'
-gem 'rgeo-shapefile', '~> 0.4'
+gem 'rgeo-shapefile', '0.4.2'
 gem 'rqrcode', '~> 0.10.1'
 gem 'simple_token_authentication', '~> 1.0'
 gem 'vpim', '~> 13.11', '>= 13.11.11'
@@ -39,6 +39,7 @@ end
 
 group :development do
   gem 'listen', '~> 3.0.5'
+  gem 'rubocop'
   gem 'spring', '~> 2.0'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
