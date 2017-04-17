@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 class OfficeLocation < ApplicationRecord
-  include VCardable
+  # include VCardable
 
   # Set a "PYR_S3_BUCKET" environment variable to your own S3 Bucket
   # if you want to use your own generated QR Codes.
@@ -46,6 +46,11 @@ class OfficeLocation < ApplicationRecord
     v_card = VCard.find_or_create_by(office_location_id: id)
     v_card.data = make_v_card.to_s
     update_attribute :v_card, v_card
+  end
+
+  def make_v_card(photo: true)
+    v_card_builder = VCardBuilder.new self, rep
+    v_card_builder.make_v_card(photo: photo)
   end
 
   def full_address
