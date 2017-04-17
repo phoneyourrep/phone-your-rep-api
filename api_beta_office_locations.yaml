@@ -5588,7 +5588,7 @@ office_locations:
   latitude: 42.329238
   longitude: -71.095479
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/C001037-roxbury_crossing
-  downloads: 5
+  downloads: 6
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/C001037_roxbury_crossing.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/C001038-bronx
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/C001038
@@ -9042,7 +9042,7 @@ office_locations:
   office_type: capitol
   distance: 
   building: 
-  address: B40A Dirksen Senate Office Building
+  address: 204 Russell Senate Office Building
   suite: 
   city: Washington
   state: DC
@@ -9600,7 +9600,7 @@ office_locations:
   latitude: 41.8784454
   longitude: -87.63
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/D000563-chicago
-  downloads: 157
+  downloads: 158
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/D000563_chicago.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/D000563-rock_island
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/D000563
@@ -10944,7 +10944,7 @@ office_locations:
   latitude: 41.8784454
   longitude: -87.63
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/D000622-chicago
-  downloads: 12
+  downloads: 13
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/D000622_chicago.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/D000623-capitol
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/D000623
@@ -11952,7 +11952,7 @@ office_locations:
   latitude: 38.8928318
   longitude: -77.0043625
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/F000062-capitol
-  downloads: 98
+  downloads: 100
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/F000062_capitol.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/F000062-fresno
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/F000062
@@ -14010,7 +14010,7 @@ office_locations:
   latitude: 42.655222
   longitude: -73.7492819
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/G000555-albany
-  downloads: 35
+  downloads: 36
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/G000555_albany.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/G000555-buffalo
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/G000555
@@ -17611,7 +17611,7 @@ office_locations:
   office_type: capitol
   distance: 
   building: 
-  address: B85 Russell Senate Office Building
+  address: 330 Hart Senate Office Building
   suite: 
   city: Washington
   state: DC
@@ -21277,7 +21277,7 @@ office_locations:
   latitude: 38.8871071
   longitude: -77.0104749
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/L000559-capitol
-  downloads: 2
+  downloads: 3
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/L000559_capitol.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/L000559-warwick
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/L000559
@@ -21298,7 +21298,7 @@ office_locations:
   latitude: 41.6944274
   longitude: -71.4705546
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/L000559-warwick
-  downloads: 2
+  downloads: 3
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/L000559_warwick.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/L000560-bellingham
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/L000560
@@ -22348,7 +22348,7 @@ office_locations:
   latitude: 38.9527935
   longitude: -121.0815891
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/L000578-auburn
-  downloads: 6
+  downloads: 7
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/L000578_auburn.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/L000578-capitol
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/L000578
@@ -29584,7 +29584,7 @@ office_locations:
   office_type: capitol
   distance: 
   building: 
-  address: 383 Russell Senate Office Building
+  address: 455 Russell Senate Office Building
   suite: 
   city: Washington
   state: DC
@@ -29742,7 +29742,7 @@ office_locations:
   latitude: 38.8928318
   longitude: -77.0043625
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/R000122-capitol
-  downloads: 1
+  downloads: 2
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/R000122_capitol.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/R000122-cranston
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/R000122
@@ -29763,7 +29763,7 @@ office_locations:
   latitude: 41.7566184
   longitude: -71.4607281
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/R000122-cranston
-  downloads: 1
+  downloads: 2
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/R000122_cranston.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/R000122-providence
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/R000122
@@ -29784,7 +29784,7 @@ office_locations:
   latitude: 41.8262057
   longitude: -71.4109836
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/R000122-providence
-  downloads: 3
+  downloads: 4
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/R000122_providence.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/R000307-capitol
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/R000307
@@ -32494,7 +32494,7 @@ office_locations:
   latitude: 42.6551387
   longitude: -73.749201
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/S000148-albany
-  downloads: 23
+  downloads: 24
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/S000148_albany.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/S000148-binghamton
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/S000148
@@ -33566,7 +33566,7 @@ office_locations:
   latitude: 42.0466618
   longitude: -87.6829625
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/S001145-evanston
-  downloads: 6
+  downloads: 7
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/S001145_evanston.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/S001145-glenview
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/S001145
@@ -37451,7 +37451,7 @@ office_locations:
   latitude: 43.0900861
   longitude: -75.2786079
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/T000478-new_hartford
-  downloads: 9
+  downloads: 10
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/T000478_new_hartford.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/U000031-capitol
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/U000031
@@ -38795,7 +38795,7 @@ office_locations:
   latitude: 38.8928318
   longitude: -77.0043625
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/W000802-capitol
-  downloads: 2
+  downloads: 3
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/W000802_capitol.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/W000802-providence
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/W000802
@@ -38816,7 +38816,7 @@ office_locations:
   latitude: 41.8235873
   longitude: -71.4113021
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/W000802-providence
-  downloads: 6
+  downloads: 7
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/W000802_providence.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/W000804-capitol
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/W000804
@@ -40149,7 +40149,7 @@ office_locations:
   office_type: capitol
   distance: 
   building: 
-  address: B33 Russell Senate Office Building
+  address: 400 Russell Senate Office Building
   suite: 
   city: Washington
   state: DC
