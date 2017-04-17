@@ -16,9 +16,7 @@ class ZctasController < ApplicationController
     return if @zcta.blank?
     @districts = @zcta.districts
     return if params[:reps] != 'true'
-    @reps = Rep.yours(state: @zcta.districts.first.state, district: @zcta.districts).
-            active.
-            distinct
+    @reps = Rep.by_location(state: @zcta.districts.first.state, district: @zcta.districts)
   end
 
   private
