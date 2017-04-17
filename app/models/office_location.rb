@@ -5,19 +5,24 @@ class OfficeLocation < ApplicationRecord
   S3_BUCKET = ENV['PYR_S3_BUCKET'] || 'phone-your-rep-images'
 
   belongs_to    :rep, foreign_key: :bioguide_id, primary_key: :bioguide_id
-  has_many      :issues
   has_one       :v_card, dependent: :destroy
+  has_many      :issues
 
   geocoded_by      :full_address
+
   after_validation :geocode, if: :needs_geocoding?
 
-  scope :with_v_card, ->(office_id) { where(office_id: office_id).includes(:rep, :v_card) }
   scope :active, -> { where(active: true) }
+
+  scope :with_v_card, ->(office_id) { where(office_id: office_id).includes(:rep, :v_card) }
+
   scope :sorted_by_distance, ->(coordinates) { near(coordinates, 4000).merge(all).distinct }
+
 
   is_impressionable counter_cache: true, column_name: :downloads
 
   dragonfly_accessor :qr_code
+
   attr_reader        :distance
 
   FACTORY = RGeo::Geographic.simple_mercator_factory

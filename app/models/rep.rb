@@ -16,15 +16,20 @@ class Rep < ApplicationRecord
   scope :by_location, lambda { |state:, district:|
     where(district: district).or(Rep.where(state: state, district: nil)).active.distinct
   }
+
   scope :active, lambda {
     where(active: true).includes(:district, :state, :active_office_locations)
   }
 
   scope :republican, -> { where party: 'Republican' }
+
   scope :democrat, -> { where party: 'Democrat' }
+
   scope :independent, -> { where party: 'Independent' }
 
+
   serialize :committees, Array
+
   is_impressionable
 
   # Instance attribute that holds offices sorted by location after calling the :sort_offices method.
