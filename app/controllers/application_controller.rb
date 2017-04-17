@@ -11,6 +11,10 @@ class ApplicationController < ActionController::API
 
   private
 
+  def geo_params
+    [params[:address], params[:lat], params[:long], params[:radius]]
+  end
+
   def set_prefix
     @pfx = request.protocol + request.host_with_port
   end

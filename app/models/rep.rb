@@ -13,72 +13,22 @@ class Rep < ApplicationRecord
              foreign_key: :bioguide_id,
              primary_key: :bioguide_id
 
-  scope :yours, lambda { |state:, district:|
-    where(district: district).or(Rep.where(state: state, district: nil))
+  scope :by_location, lambda { |state:, district:|
+    where(district: district).or(Rep.where(state: state, district: nil)).active.distinct
   }
   scope :active, lambda {
     where(active: true).includes(:district, :state, :active_office_locations)
   }
+
+  scope :republican, -> { where party: 'Republican' }
+  scope :democrat, -> { where party: 'Democrat' }
+  scope :independent, -> { where party: 'Independent' }
+
   serialize :committees, Array
   is_impressionable
 
-  # Open up Rep Metaclass to set Class attributes --------------------------------------------------
-  class << self
-    # Address value from params.
-    attr_accessor :address
-    # Lat/lon coordinates taken from params request, or geocoded from :address.
-    attr_accessor :coordinates
-    # The State that the :district belongs to.
-    attr_accessor :state
-    # Voting district found by a GIS database query to find the geometry that
-    # contains the :coordinates.
-    attr_accessor :district
-    # Rep records that are associated to the district and state.
-    attr_accessor :reps
-  end # Metaclass ----------------------------------------------------------------------------------
-
   # Instance attribute that holds offices sorted by location after calling the :sort_offices method.
   attr_accessor :sorted_offices
-
-  # Find the reps in the db associated to location, and sort the offices by distance.
-  def self.find_em(address: nil, lat: nil, long: nil)
-    init(address, lat, long)
-    return [] if coordinates.blank?
-    find_district_and_state
-    return [] if district.blank?
-    self.reps = Rep.yours(state: state, district: district).
-                where(active: true).
-                includes(:office_locations)
-    self.reps = reps.distinct
-    reps.each { |rep| rep.sort_offices(coordinates) }
-  end
-
-  # Reset attribute values, set the coordinates and address if available.
-  def self.init(address, lat, long)
-    self.reps        = nil
-    self.state       = nil
-    self.district    = nil
-    self.coordinates = [lat.to_f, long.to_f] - [0.0]
-    self.address     = address
-    return unless coordinates.blank?
-    find_coordinates_by_address if address
-  end
-
-  # Geocode address into [lat, lon] coordinates.
-  def self.find_coordinates_by_address
-    self.coordinates = Geocoder.coordinates(address)
-  end
-
-  # Find the district geometry that contains the coordinates,
-  # and the district and state it belongs to.
-  def self.find_district_and_state
-    lat           = coordinates.first
-    lon           = coordinates.last
-    district_geom = DistrictGeom.containing_latlon(lat, lon).includes(district: :state).take
-    return if district_geom.blank?
-    self.district = district_geom.district
-    self.state    = district.state
-  end
 
   # Sort the offices by proximity to the request coordinates,
   # making sure to not miss offices that aren't geocoded.

@@ -10,30 +10,33 @@ class GeoLookup
   attr_accessor :district
   # Rep records that are associated to the district and state.
   attr_accessor :reps
+  # OfficeLocation records that are associated to the district and state.
+  attr_accessor :office_locations
+  # Radius of the lookup for office_locations
+  attr_accessor :radius
+
+  def initialize(address: nil, lat: nil, long: nil, radius: nil)
+    self.coordinates = [lat.to_f, long.to_f] - [0.0]
+    self.address = address
+    self.radius  = radius
+    find_coordinates_by_address if coordinates.blank? && address
+    find_district_and_state unless coordinates.blank?
+  end
 
   # Find the reps in the db associated to location, and sort the offices by distance.
-  def find_em(address: nil, lat: nil, long: nil)
-    init(address, lat, long)
-    return [] if coordinates.blank?
-    find_district_and_state
-    return [] if district.blank?
-    self.reps = Rep.yours(state: state, district: district).
-        where(active: true).
-        includes(:office_locations)
-    self.reps = reps.distinct
+  def find_reps
+    return Rep.none if district.blank?
+    self.reps = Rep.by_location(state: state, district: district).includes(:office_locations)
     reps.each { |rep| rep.sort_offices(coordinates) }
   end
 
-  # Reset attribute values, set the coordinates and address if available.
-  def init(address, lat, long)
-    self.reps        = nil
-    self.state       = nil
-    self.district    = nil
-    self.coordinates = [lat.to_f, long.to_f] - [0.0]
-    self.address     = address
-    return unless coordinates.blank?
-    find_coordinates_by_address if address
+  def find_office_locations
+    return OfficeLocation.none if district.blank?
+    self.office_locations = OfficeLocation.active.near coordinates, radius
+    office_locations.each { |off| off.calculate_distance coordinates }
   end
+
+  private
 
   # Geocode address into [lat, lon] coordinates.
   def find_coordinates_by_address

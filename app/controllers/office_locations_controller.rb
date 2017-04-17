@@ -3,9 +3,13 @@ class OfficeLocationsController < ApplicationController
   before_action :set_office_location, only: [:show]
 
   def index
-    if params[:generate] == 'true'
+    address, lat, long, radius = geo_params
+
+    if address || lat || long && radius
+      geo = GeoLookup.new address: address, lat: lat, long: long, radius: radius
+      @office_locations = geo.find_office_locations
+    elsif params[:generate] == 'true'
       @office_locations = OfficeLocation.active.order(:office_id)
-      @self             = request.url
     else
       send_index_files :office_locations
     end

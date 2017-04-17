@@ -3,18 +3,23 @@ class RepsController < ApplicationController
   acts_as_token_authentication_handler_for User, only: [:create, :update, :destroy]
   before_action :set_rep, only: [:show, :update, :destroy]
   after_action :make_impression, only: [:index]
+  has_scope :independent,
+            :republican,
+            :democrat,
+            type: :boolean,
+            only: [:index]
 
   # GET /reps
   def index
-    address = params[:address]
-    lat     = params[:lat]
-    long    = params[:long]
+    address, lat, long = geo_params
+
     if address || lat || long
-      @reps = Rep.find_em address: address, lat: lat, long: long
+      geo   = GeoLookup.new address: address, lat: lat, long: long
+      @reps = geo.find_reps
       return if @reps.blank?
       @district = @reps.detect(&:district).try(:district)
     elsif params[:generate] == 'true'
-      @reps = Rep.active.order(:bioguide_id)
+      @reps = apply_scopes(Rep).active.order(:bioguide_id)
     else
       send_index_files :reps
     end
