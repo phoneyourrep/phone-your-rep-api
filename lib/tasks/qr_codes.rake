@@ -76,7 +76,7 @@ namespace :pyr do
     end
 
     desc 'Generate QR codes, upload to S3 bucket, and delete locally'
-    task create: [:generate, :clean, :empty, :upload, :push, :delete]
+    task create: %i[generate clean empty upload push delete]
 
     def estimate_time(time)
       minutes = (time / 60).round

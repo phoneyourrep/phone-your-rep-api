@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 class DistrictsController < ApplicationController
   before_action :set_district, only: [:show]
 

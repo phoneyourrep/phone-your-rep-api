@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 json.motd 'Welcome to the PYR OSDI API Entry Point (AEP)'
 
 json._links do

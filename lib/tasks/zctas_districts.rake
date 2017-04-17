@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 namespace :pyr do
   namespace :zcta_districts do
     desc 'Export ZCTA district relationships to CSV'

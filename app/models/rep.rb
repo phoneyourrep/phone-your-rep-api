@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 class Rep < ApplicationRecord
   belongs_to :district
   belongs_to :state
@@ -26,7 +27,6 @@ class Rep < ApplicationRecord
   scope :democrat, -> { where party: 'Democrat' }
 
   scope :independent, -> { where party: 'Independent' }
-
 
   serialize :committees, Array
 

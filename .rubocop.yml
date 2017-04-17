@@ -1,4 +1,9 @@
 # inherit_from: .rubocop_todo.yml
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - 'app/models/office_location.rb'
+    - 'app/models/rep.rb'
+    - 'app/models/state.rb'
 
 Metrics/LineLength:
   Max: 100

@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 class OfficeLocation < ApplicationRecord
   # Set a "PYR_S3_BUCKET" environment variable to your own S3 Bucket
   # if you want to use your own generated QR Codes.
@@ -17,7 +18,6 @@ class OfficeLocation < ApplicationRecord
   scope :with_v_card, ->(office_id) { where(office_id: office_id).includes(:rep, :v_card) }
 
   scope :sorted_by_distance, ->(coordinates) { near(coordinates, 4000).merge(all).distinct }
-
 
   is_impressionable counter_cache: true, column_name: :downloads
 

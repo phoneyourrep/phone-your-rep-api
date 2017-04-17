@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 class AddColumnsToZctaDistricts < ActiveRecord::Migration[5.0]
   def change
     add_column :zcta_districts, :zip_code, :string

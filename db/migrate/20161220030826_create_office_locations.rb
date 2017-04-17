@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 class CreateOfficeLocations < ActiveRecord::Migration[5.0]
   def change
     create_table :office_locations do |t|

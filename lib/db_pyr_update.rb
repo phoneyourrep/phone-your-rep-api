@@ -1,10 +1,13 @@
 # frozen_string_literal: true
+
 require_relative '../config/environment'
 
 module DbPyrUpdate
   class Base
-    def initialize(file)
-      @reps = YAML.load(File.open(file))
+    def initialize(file_name)
+      File.open file_name do |file|
+        @reps = YAML.safe_load(file)
+      end
     end
   end
 

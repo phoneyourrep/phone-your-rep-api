@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 class CreateStateGeoms < ActiveRecord::Migration[5.0]
   def change
     create_table :state_geoms do |t|

@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 json.address_lines do
   json.array! [ol.address, ol.suite].reject(&:blank?)
 end

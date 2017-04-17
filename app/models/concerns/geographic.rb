@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module Geographic
   FACTORY = RGeo::Geographic.simple_mercator_factory
   EWKB = RGeo::WKRep::WKBGenerator.new(

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class GeoLookup
   # Address value from params.
   attr_accessor :address

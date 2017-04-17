@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'db_pyr_update'
 # require 'config/application'
 
@@ -70,11 +71,11 @@ namespace :db do
       end
 
       desc 'Update the raw YAML files only, without touching the database'
-      task raw_data: [
-        :fetch_retired_reps,
-        :fetch_current_reps,
-        :fetch_socials,
-        :fetch_office_locations
+      task raw_data: %i[
+        fetch_retired_reps
+        fetch_current_reps
+        fetch_socials
+        fetch_office_locations
       ]
 
       desc 'Export reps index to JSON and YAML files'
@@ -101,7 +102,7 @@ namespace :db do
       end
 
       desc 'Update all reps and office_locations in database from default yaml files'
-      task all: [:retired_reps, :current_reps, :socials, :office_locations] do
+      task all: %i[retired_reps current_reps socials office_locations] do
         if ENV['qr_codes'] == 'true' && Rails.env.development?
           Rake::Task['pyr:qr_codes:create'].invoke
         end

@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 json.self zcta_url(zcta.zcta)
 json.extract! zcta,
               :zcta

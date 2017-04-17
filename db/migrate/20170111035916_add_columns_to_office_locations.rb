@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 class AddColumnsToOfficeLocations < ActiveRecord::Migration[5.0]
   def change
     add_column    :office_locations, :bioguide_id, :string

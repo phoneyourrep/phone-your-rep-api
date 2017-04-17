@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -53,14 +54,14 @@ ActiveRecord::Schema.define(version: 20_170_407_201_305) do
     t.text     'params'
     t.datetime 'created_at'
     t.datetime 'updated_at'
-    t.index %w(controller_name action_name ip_address), name: 'controlleraction_ip_index', using: :btree
-    t.index %w(controller_name action_name request_hash), name: 'controlleraction_request_index', using: :btree
-    t.index %w(controller_name action_name session_hash), name: 'controlleraction_session_index', using: :btree
-    t.index %w(impressionable_type impressionable_id ip_address), name: 'poly_ip_index', using: :btree
-    t.index %w(impressionable_type impressionable_id params), name: 'poly_params_request_index', using: :btree
-    t.index %w(impressionable_type impressionable_id request_hash), name: 'poly_request_index', using: :btree
-    t.index %w(impressionable_type impressionable_id session_hash), name: 'poly_session_index', using: :btree
-    t.index %w(impressionable_type message impressionable_id), name: 'impressionable_type_message_index', using: :btree
+    t.index %w[controller_name action_name ip_address], name: 'controlleraction_ip_index', using: :btree
+    t.index %w[controller_name action_name request_hash], name: 'controlleraction_request_index', using: :btree
+    t.index %w[controller_name action_name session_hash], name: 'controlleraction_session_index', using: :btree
+    t.index %w[impressionable_type impressionable_id ip_address], name: 'poly_ip_index', using: :btree
+    t.index %w[impressionable_type impressionable_id params], name: 'poly_params_request_index', using: :btree
+    t.index %w[impressionable_type impressionable_id request_hash], name: 'poly_request_index', using: :btree
+    t.index %w[impressionable_type impressionable_id session_hash], name: 'poly_session_index', using: :btree
+    t.index %w[impressionable_type message impressionable_id], name: 'impressionable_type_message_index', using: :btree
     t.index ['user_id'], name: 'index_impressions_on_user_id', using: :btree
   end
 

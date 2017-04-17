@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 class ChangeColumnsInReps < ActiveRecord::Migration[5.0]
   def change
     add_column    :reps, :nickname, :string

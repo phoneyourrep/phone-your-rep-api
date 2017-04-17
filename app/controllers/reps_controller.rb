@@ -1,7 +1,8 @@
 # frozen_string_literal: true
+
 class RepsController < ApplicationController
-  acts_as_token_authentication_handler_for User, only: [:create, :update, :destroy]
-  before_action :set_rep, only: [:show, :update, :destroy]
+  acts_as_token_authentication_handler_for User, only: %i[create update destroy]
+  before_action :set_rep, only: %i[show update destroy]
   after_action :make_impression, only: [:index]
   has_scope :independent,
             :republican,

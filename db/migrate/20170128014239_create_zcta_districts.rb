@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 class CreateZctaDistricts < ActiveRecord::Migration[5.0]
   def change
     create_table :zcta_districts do |t|

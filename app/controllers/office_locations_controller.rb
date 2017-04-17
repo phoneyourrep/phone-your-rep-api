@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 class OfficeLocationsController < ApplicationController
   before_action :set_office_location, only: [:show]
 

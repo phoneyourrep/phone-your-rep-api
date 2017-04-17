@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 json.total_records @office_locations.count
 json.set! '_links' do
   json.self do

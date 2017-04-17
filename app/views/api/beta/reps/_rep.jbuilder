@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 return json.error 'Record not found' if rep.blank?
 
 json.self api_beta_rep_url(rep.bioguide_id)

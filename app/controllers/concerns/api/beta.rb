@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module Api
   module Beta
     def send_index_files(table_name)

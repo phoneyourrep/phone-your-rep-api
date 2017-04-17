@@ -1,7 +1,8 @@
 # frozen_string_literal: true
+
 class VCardBuilder
-  TEL_TYPES  = %w(home work cell pager other fax).freeze
-  ADDR_TYPES = %w(home other).freeze
+  TEL_TYPES  = %w[home work cell pager other fax].freeze
+  ADDR_TYPES = %w[home other].freeze
 
   attr_accessor :office_location, :rep
 
