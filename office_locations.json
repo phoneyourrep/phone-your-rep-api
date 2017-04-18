@@ -3653,7 +3653,7 @@
     "latitude": 40.7344571,
     "longitude": -74.1657213,
     "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001288-newark",
-    "downloads": 28,
+    "downloads": 29,
     "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001288_newark.png"
   },
   {
@@ -4941,7 +4941,7 @@
     "latitude": 47.6045895,
     "longitude": -122.3354608,
     "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C000127-seattle",
-    "downloads": 76,
+    "downloads": 77,
     "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C000127_seattle.png"
   },
   {
@@ -6114,7 +6114,7 @@
     "latitude": 42.329238,
     "longitude": -71.095479,
     "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001037-roxbury_crossing",
-    "downloads": 6,
+    "downloads": 7,
     "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001037_roxbury_crossing.png"
   },
   {
@@ -25174,7 +25174,7 @@
     "suite": "",
     "city": "Brooklyn",
     "state": "NY",
-    "zip": "11211-222",
+    "zip": "11211-2228",
     "phone": "718-349-5972",
     "fax": "212-860-0704",
     "hours": "Tuesday 9:00am – 5:00pm",
