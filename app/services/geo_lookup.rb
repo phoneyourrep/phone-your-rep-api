@@ -14,7 +14,7 @@ class GeoLookup
   attr_accessor :reps
   # OfficeLocation records that are associated to the district and state.
   attr_accessor :office_locations
-  # Radius of the lookup for office_locations
+  # Radius of the gem lookup for office_locations
   attr_accessor :radius
 
   def initialize(address: nil, lat: nil, long: nil, radius: nil)
