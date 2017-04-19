@@ -6114,7 +6114,7 @@
     "latitude": 42.329238,
     "longitude": -71.095479,
     "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/C001037-roxbury_crossing",
-    "downloads": 7,
+    "downloads": 8,
     "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/C001037_roxbury_crossing.png"
   },
   {
@@ -19247,7 +19247,7 @@
     "latitude": 32.7182014,
     "longitude": -117.1587103,
     "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/H001075-san_diego",
-    "downloads": 56,
+    "downloads": 57,
     "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/H001075_san_diego.png"
   },
   {
@@ -22701,6 +22701,29 @@
     "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/K000392_memphis.png"
   },
   {
+    "self": "https://phone-your-rep.herokuapp.com/office_locations/K000393-alexandria",
+    "rep": "https://phone-your-rep.herokuapp.com/reps/K000393",
+    "active": true,
+    "office_id": "K000393-alexandria",
+    "bioguide_id": "K000393",
+    "office_type": "district",
+    "distance": null,
+    "building": "",
+    "address": "6501 Coliseum Blvd",
+    "suite": "Suite 700A",
+    "city": "Alexandria",
+    "state": "LA",
+    "zip": "71303",
+    "phone": "318-445-2892",
+    "fax": "",
+    "hours": "",
+    "latitude": 31.2934776,
+    "longitude": -92.5156529,
+    "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/K000393-alexandria",
+    "downloads": 0,
+    "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/K000393_alexandria.png"
+  },
+  {
     "self": "https://phone-your-rep.herokuapp.com/office_locations/K000393-capitol",
     "rep": "https://phone-your-rep.herokuapp.com/reps/K000393",
     "active": true,
@@ -22722,6 +22745,52 @@
     "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/K000393-capitol",
     "downloads": 16,
     "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/K000393_capitol.png"
+  },
+  {
+    "self": "https://phone-your-rep.herokuapp.com/office_locations/K000393-lafayette",
+    "rep": "https://phone-your-rep.herokuapp.com/reps/K000393",
+    "active": true,
+    "office_id": "K000393-lafayette",
+    "bioguide_id": "K000393",
+    "office_type": "district",
+    "distance": null,
+    "building": "",
+    "address": "101 La Rue France",
+    "suite": "Suite 503",
+    "city": "Lafayette",
+    "state": "LA",
+    "zip": "70508",
+    "phone": "337-269-5980",
+    "fax": "",
+    "hours": "",
+    "latitude": 30.1948666,
+    "longitude": -92.014654,
+    "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/K000393-lafayette",
+    "downloads": 0,
+    "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/K000393_lafayette.png"
+  },
+  {
+    "self": "https://phone-your-rep.herokuapp.com/office_locations/K000393-monroe",
+    "rep": "https://phone-your-rep.herokuapp.com/reps/K000393",
+    "active": true,
+    "office_id": "K000393-monroe",
+    "bioguide_id": "K000393",
+    "office_type": "district",
+    "distance": null,
+    "building": "",
+    "address": "1651 Louisville Avenue",
+    "suite": "Suite 108",
+    "city": "Monroe",
+    "state": "LA",
+    "zip": "71201",
+    "phone": "318-361-1489",
+    "fax": "",
+    "hours": "",
+    "latitude": 32.5175209,
+    "longitude": -92.1087384,
+    "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/K000393-monroe",
+    "downloads": 0,
+    "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/K000393_monroe.png"
   },
   {
     "self": "https://phone-your-rep.herokuapp.com/office_locations/L000174-burlington",
@@ -22996,7 +23065,7 @@
     "latitude": 41.0270474,
     "longitude": -73.7647888,
     "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/L000480-white_plains",
-    "downloads": 7,
+    "downloads": 8,
     "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/L000480_white_plains.png"
   },
   {
@@ -29390,7 +29459,7 @@
     "latitude": 28.546165,
     "longitude": -81.3744028,
     "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/N000032-orlando",
-    "downloads": 52,
+    "downloads": 53,
     "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/N000032_orlando.png"
   },
   {
