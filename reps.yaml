@@ -664,7 +664,7 @@
     latitude: 34.068627
     longitude: -117.270925
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/A000371-san_bernardino
-    downloads: 4
+    downloads: 5
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/A000371_san_bernardino.png
 - self: https://phone-your-rep.herokuapp.com/reps/A000372
   state:
@@ -1620,7 +1620,7 @@
     latitude: 39.1007745
     longitude: -84.5120256
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/B000944-cincinnati
-    downloads: 34
+    downloads: 35
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/B000944_cincinnati.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/B000944-cleveland
     rep: https://phone-your-rep.herokuapp.com/reps/B000944
@@ -1641,7 +1641,7 @@
     latitude: 41.4964399
     longitude: -81.6975439
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/B000944-cleveland
-    downloads: 50
+    downloads: 51
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/B000944_cleveland.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/B000944-columbus
     rep: https://phone-your-rep.herokuapp.com/reps/B000944
@@ -2270,7 +2270,7 @@
     latitude: 34.7456872
     longitude: -92.2865752
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/B001236-little_rock
-    downloads: 13
+    downloads: 14
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/B001236_little_rock.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/B001236-lowell
     rep: https://phone-your-rep.herokuapp.com/reps/B001236
@@ -3993,7 +3993,7 @@
     latitude: 41.7665316
     longitude: -72.6719747
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/B001277-hartford
-    downloads: 35
+    downloads: 36
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/B001277_hartford.png
 - self: https://phone-your-rep.herokuapp.com/reps/B001278
   state:
@@ -7192,7 +7192,7 @@
   nickname: 
   suffix: 
   contact_form: https://www.cochran.senate.gov/public/index.cfm/email-me
-  url: http://www.cochran.senate.gov
+  url: https://www.cochran.senate.gov
   photo: https://phoneyourrep.github.io/images/congress/450x550/C000567.jpg
   twitter: SenThadCochran
   facebook: 
@@ -7480,7 +7480,7 @@
   middle: D.
   nickname: 
   suffix: 
-  contact_form: http://www.crapo.senate.gov/contact/email.cfm
+  contact_form: https://www.crapo.senate.gov/contact
   url: https://www.crapo.senate.gov
   photo: https://phoneyourrep.github.io/images/congress/450x550/C000880.jpg
   twitter: MikeCrapo
@@ -7777,7 +7777,7 @@
   nickname: 
   suffix: 
   contact_form: http://www.collins.senate.gov/contact
-  url: https://www.collins.senate.gov
+  url: http://www.collins.senate.gov
   photo: https://phoneyourrep.github.io/images/congress/450x550/C001035.jpg
   twitter: SenatorCollins
   facebook: susancollins
@@ -9816,7 +9816,7 @@
     latitude: 40.6010783
     longitude: -75.4749998
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/C001070-allentown
-    downloads: 26
+    downloads: 27
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/C001070_allentown.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/C001070-bellefonte
     rep: https://phone-your-rep.herokuapp.com/reps/C001070
@@ -11658,7 +11658,7 @@
     latitude: 34.7456872
     longitude: -92.2865752
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/C001095-little_rock
-    downloads: 4
+    downloads: 5
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/C001095_little_rock.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/C001095-springdale
     rep: https://phone-your-rep.herokuapp.com/reps/C001095
@@ -12325,7 +12325,7 @@
     latitude: 38.8867621
     longitude: -77.0069216
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/C001105-capitol
-    downloads: 2
+    downloads: 3
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/C001105_capitol.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/C001105-sterling
     rep: https://phone-your-rep.herokuapp.com/reps/C001105
@@ -12346,7 +12346,7 @@
     latitude: 39.0191653
     longitude: -77.3782613
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/C001105-sterling
-    downloads: 9
+    downloads: 10
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/C001105_sterling.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/C001105-winchester
     rep: https://phone-your-rep.herokuapp.com/reps/C001105
@@ -12367,7 +12367,7 @@
     latitude: 39.185574
     longitude: -78.1625238
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/C001105-winchester
-    downloads: 1
+    downloads: 2
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/C001105_winchester.png
 - self: https://phone-your-rep.herokuapp.com/reps/C001106
   state:
@@ -15386,7 +15386,7 @@
     latitude: 40.090932
     longitude: -88.2501244
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/D000619-champaign
-    downloads: 2
+    downloads: 4
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/D000619_champaign.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/D000619-decatur
     rep: https://phone-your-rep.herokuapp.com/reps/D000619
@@ -16950,7 +16950,7 @@
   nickname: 
   suffix: 
   contact_form: https://www.ernst.senate.gov/public/index.cfm/contact
-  url: http://www.ernst.senate.gov/public
+  url: https://www.ernst.senate.gov/public
   photo: https://phoneyourrep.github.io/images/congress/450x550/E000295.jpg
   twitter: SenJoniErnst
   facebook: senjoniernst
@@ -17263,6 +17263,62 @@
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/E000297-new_york
     downloads: 2
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/E000297_new_york.png
+- self: https://phone-your-rep.herokuapp.com/reps/E000298
+  state:
+    self: https://phone-your-rep.herokuapp.com/api/beta/states/20
+    state_code: '20'
+    name: Kansas
+    abbr: KS
+  district:
+    self: https://phone-your-rep.herokuapp.com/api/beta/districts/2004
+    full_code: '2004'
+    code: '04'
+    state_code: '20'
+  active: true
+  bioguide_id: E000298
+  official_full: Ron Estes
+  role: United States Representative
+  party: Republican
+  senate_class: 
+  last: Estes
+  first: Ron
+  middle: 
+  nickname: 
+  suffix: 
+  contact_form: https://estes.house.gov/contact/email
+  url: https://estes.house.gov
+  photo: 
+  twitter: RepRonEstes
+  facebook: RepRonEstes
+  youtube: 
+  instagram: 
+  googleplus: 
+  twitter_id: 
+  facebook_id: 
+  youtube_id: 
+  instagram_id: 
+  office_locations:
+  - self: https://phone-your-rep.herokuapp.com/office_locations/E000298-capitol
+    rep: https://phone-your-rep.herokuapp.com/reps/E000298
+    active: true
+    office_id: E000298-capitol
+    bioguide_id: E000298
+    office_type: capitol
+    distance: 
+    building: 
+    address: 2452 Rayburn House Office Building
+    suite: 
+    city: Washington
+    state: DC
+    zip: 20515-1604
+    phone: 202-225-6216
+    fax: 
+    hours: 
+    latitude: 38.8870651
+    longitude: -77.0105254
+    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/E000298-capitol
+    downloads: 0
+    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/E000298_capitol.png
 - self: https://phone-your-rep.herokuapp.com/reps/F000062
   state:
     self: https://phone-your-rep.herokuapp.com/api/beta/states/06
@@ -17354,7 +17410,7 @@
     latitude: 34.0476223
     longitude: -118.444656
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/F000062-los_angeles
-    downloads: 256
+    downloads: 259
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/F000062_los_angeles.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/F000062-san_diego
     rep: https://phone-your-rep.herokuapp.com/reps/F000062
@@ -20390,7 +20446,7 @@
     latitude: 40.7707877
     longitude: -73.4102476
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/G000555-melville
-    downloads: 34
+    downloads: 35
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/G000555_melville.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/G000555-new_york
     rep: https://phone-your-rep.herokuapp.com/reps/G000555
@@ -20411,7 +20467,7 @@
     latitude: 40.7550353
     longitude: -73.9718588
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/G000555-new_york
-    downloads: 222
+    downloads: 224
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/G000555_new_york.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/G000555-rochester
     rep: https://phone-your-rep.herokuapp.com/reps/G000555
@@ -25047,7 +25103,7 @@
     latitude: 34.7651263
     longitude: -92.3397715
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/H001072-little_rock
-    downloads: 1
+    downloads: 2
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/H001072_little_rock.png
 - self: https://phone-your-rep.herokuapp.com/reps/H001073
   state:
@@ -25895,7 +25951,7 @@
     latitude: 38.8871071
     longitude: -77.0104749
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/I000056-capitol
-    downloads: 3
+    downloads: 4
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/I000056_capitol.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/I000056-dana_point
     rep: https://phone-your-rep.herokuapp.com/reps/I000056
@@ -27682,7 +27738,7 @@
     latitude: 40.6785193
     longitude: -73.4556272
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/K000210-massapequa_park
-    downloads: 5
+    downloads: 6
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/K000210_massapequa_park.png
 - self: https://phone-your-rep.herokuapp.com/reps/K000362
   state:
@@ -29712,7 +29768,7 @@
     state_code: '32'
   active: true
   bioguide_id: K000390
-  official_full: Ruben Kihuen
+  official_full: Ruben J. Kihuen
   role: United States Representative
   party: Democrat
   senate_class: 
@@ -30031,7 +30087,7 @@
     office_type: capitol
     distance: 
     building: 
-    address: B11 Russell Senate Office Building
+    address: 383 Russell Senate Office Building
     suite: 
     city: Washington
     state: DC
@@ -30724,7 +30780,7 @@
     latitude: 37.7784791
     longitude: -122.2250837
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/L000551-oakland-1
-    downloads: 7
+    downloads: 8
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/L000551_oakland_1.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/L000551-san_leandro
     rep: https://phone-your-rep.herokuapp.com/reps/L000551
@@ -34187,7 +34243,7 @@
   nickname: 
   suffix: 
   contact_form: https://www.moran.senate.gov/public/index.cfm/e-mail-jerry
-  url: http://www.moran.senate.gov
+  url: https://www.moran.senate.gov
   photo: https://phoneyourrep.github.io/images/congress/450x550/M000934.jpg
   twitter: JerryMoran
   facebook: jerrymoran
@@ -36636,7 +36692,7 @@
   nickname: 
   suffix: III
   contact_form: http://www.manchin.senate.gov/public/index.cfm/contact-form
-  url: http://www.manchin.senate.gov/public
+  url: https://www.manchin.senate.gov/public
   photo: https://phoneyourrep.github.io/images/congress/450x550/M001183.jpg
   twitter: Sen_JoeManchin
   facebook: JoeManchinIII
@@ -40551,7 +40607,7 @@
     latitude: 41.5047711
     longitude: -81.6917985
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/P000449-cleveland
-    downloads: 87
+    downloads: 88
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/P000449_cleveland.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/P000449-columbus
     rep: https://phone-your-rep.herokuapp.com/reps/P000449
@@ -44266,7 +44322,7 @@
     latitude: 38.8867806
     longitude: -77.008414
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/R000578-capitol
-    downloads: 4
+    downloads: 5
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/R000578_capitol.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/R000578-issaquah
     rep: https://phone-your-rep.herokuapp.com/reps/R000578
@@ -44643,7 +44699,7 @@
   nickname: 
   suffix: 
   contact_form: http://www.risch.senate.gov/public/index.cfm?p=Email
-  url: http://www.risch.senate.gov
+  url: https://www.risch.senate.gov
   photo: https://phoneyourrep.github.io/images/congress/450x550/R000584.jpg
   twitter: SenatorRisch
   facebook: 
@@ -45059,7 +45115,7 @@
     latitude: 41.0476588
     longitude: -81.7276415
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/R000586-wadsworth
-    downloads: 1
+    downloads: 2
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/R000586_wadsworth.png
 - self: https://phone-your-rep.herokuapp.com/reps/R000588
   state:
@@ -47261,7 +47317,7 @@
     latitude: 40.7708436
     longitude: -73.4078757
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/S000148-melville
-    downloads: 21
+    downloads: 22
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/S000148_melville.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/S000148-new_york
     rep: https://phone-your-rep.herokuapp.com/reps/S000148
@@ -52057,8 +52113,8 @@
   middle: 
   nickname: 
   suffix: 
-  contact_form: ''
-  url: https://www.senate.gov/senators/115thCongress/Luther_Strange.htm
+  contact_form: https://www.strange.senate.gov/content/contact-senator
+  url: https://www.strange.senate.gov
   photo: https://phoneyourrep.github.io/images/congress/450x550/S001202.jpg
   twitter: SenatorStrange
   facebook: 
@@ -52078,7 +52134,7 @@
     office_type: capitol
     distance: 
     building: 
-    address: G-12 Dirksen Senate Office Building
+    address: 326 Russell Senate Office Building
     suite: 
     city: Washington
     state: DC
@@ -56453,7 +56509,7 @@
   nickname: 
   suffix: 
   contact_form: http://www.warner.senate.gov/public/index.cfm?p=Contact
-  url: http://www.warner.senate.gov
+  url: https://www.warner.senate.gov
   photo: https://phoneyourrep.github.io/images/congress/450x550/W000805.jpg
   twitter: MarkWarner
   facebook: MarkRWarner
