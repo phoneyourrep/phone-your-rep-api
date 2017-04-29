@@ -13947,7 +13947,7 @@
     latitude: 39.7965137
     longitude: -89.6451404
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/D000563-springfield
-    downloads: 19
+    downloads: 20
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/D000563_springfield.png
 - self: https://phone-your-rep.herokuapp.com/reps/D000598
   state:
@@ -15738,7 +15738,7 @@
     latitude: 38.8928318
     longitude: -77.0043625
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/D000622-capitol
-    downloads: 110
+    downloads: 111
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/D000622_capitol.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/D000622-chicago
     rep: https://phone-your-rep.herokuapp.com/reps/D000622
@@ -17317,7 +17317,7 @@
     latitude: 38.8870651
     longitude: -77.0105254
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/E000298-capitol
-    downloads: 0
+    downloads: 1
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/E000298_capitol.png
 - self: https://phone-your-rep.herokuapp.com/reps/F000062
   state:
