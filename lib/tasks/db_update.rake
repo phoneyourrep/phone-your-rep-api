@@ -110,10 +110,7 @@ namespace :db do
 
       desc 'Fetch and update photo URLs'
       task :photos do
-        Rep.active.each do |rep|
-          rep.fetch_avatar_data
-          rep.add_photo
-        end
+        Rep.active.each(&:add_photo)
       end
 
       def update_database(filename:, klass:)
@@ -127,12 +124,13 @@ namespace :db do
         url  = "https://phone-your-rep.herokuapp.com/api/beta/#{table_name}?generate=true"
         data = refresh_pyr_index_data(url)
 
-        write_to_json_and_yaml "api_beta_#{table_name}", data
+        write_to_json_and_yaml "index_files/api_beta_#{table_name}", data
 
         altered_data = yield data[table_name.to_s]
 
-        write_to_json_and_yaml table_name.to_s, altered_data
-        puts `git add *#{table_name}.*; git commit -m 'update #{table_name} index files'`
+        write_to_json_and_yaml "index_files/#{table_name}", altered_data
+        puts `git add index_files/*#{table_name}.*`
+        puts `git commit -m 'update #{table_name} index files'`
         puts `git push heroku master` if ENV['deploy'] == 'true'
       end
 

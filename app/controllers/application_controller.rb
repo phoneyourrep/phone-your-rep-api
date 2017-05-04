@@ -28,11 +28,11 @@ class ApplicationController < ActionController::API
     source = table_name unless source
     respond_to do |format|
       format.html do
-        render file: "#{source}.json", layout: false, content_type: 'application/json'
+        render file: "index_files/#{source}.json", layout: false, content_type: 'application/json'
       end
 
-      format.json { send_file "#{source}.json", filename: "#{table_name}.json" }
-      format.yaml { send_file "#{source}.yaml", filename: "#{table_name}.yaml" }
+      format.json { send_file "index_files/#{source}.json", filename: "#{table_name}.json" }
+      format.yaml { send_file "index_files/#{source}.yaml", filename: "#{table_name}.yaml" }
     end
   end
 end
