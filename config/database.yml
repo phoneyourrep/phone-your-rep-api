@@ -21,7 +21,9 @@ development:
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  <<: *default
+  adapter: postgis
+  encoding: unicode
+  postgis_extension: postgis
   database: phonerep_test
   host: localhost
 
