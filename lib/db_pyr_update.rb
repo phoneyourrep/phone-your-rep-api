@@ -28,7 +28,7 @@ module DbPyrUpdate
       db_rep.tap do |rep|
         update_rep_name(rep, name)
         update_rep_term_info(rep, term)
-        update_rep_photo(rep)
+        rep.add_photo
         update_rep_capitol_office(rep, term)
         rep.active = true
       end
@@ -100,11 +100,6 @@ module DbPyrUpdate
                     join(' ').
                     delete(';').
                     sub('HOB', 'House Office Building')
-    end
-
-    def update_rep_photo(rep)
-      rep.fetch_avatar_data
-      rep.add_photo
     end
     # End of private methods
   end

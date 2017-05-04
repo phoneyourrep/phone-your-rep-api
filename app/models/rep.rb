@@ -56,6 +56,7 @@ class Rep < ApplicationRecord
   end
 
   def add_photo
+    fetch_avatar_data
     update photo: avatar.data ? photo_slug : nil
   end
 
@@ -65,8 +66,6 @@ class Rep < ApplicationRecord
 
   def fetch_avatar_data
     ava = avatar || build_avatar
-    ava.update data: open(photo_slug, &:read)
-  rescue => e
-    logger.error e
+    ava.fetch_data photo_slug
   end
 end
