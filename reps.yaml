@@ -3424,7 +3424,7 @@
     latitude: 40.3042318
     longitude: -76.8076698
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/B001269-harrisburg
-    downloads: 2
+    downloads: 3
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/B001269_harrisburg.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/B001269-hazleton
     rep: https://phone-your-rep.herokuapp.com/reps/B001269
@@ -4497,7 +4497,7 @@
     latitude: 34.1794905
     longitude: -118.8726791
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/B001285-thousand_oaks
-    downloads: 3
+    downloads: 4
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/B001285_thousand_oaks.png
 - self: https://phone-your-rep.herokuapp.com/reps/B001286
   state:
@@ -5353,7 +5353,7 @@
     latitude: 41.9773904
     longitude: -91.6653664
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/B001294-cedar_rapids
-    downloads: 3
+    downloads: 4
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/B001294_cedar_rapids.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/B001294-dubuque
     rep: https://phone-your-rep.herokuapp.com/reps/B001294
@@ -13083,7 +13083,7 @@
     latitude: 38.8928318
     longitude: -77.0043625
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/C001113-capitol
-    downloads: 12
+    downloads: 13
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/C001113_capitol.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/C001113-las_vegas
     rep: https://phone-your-rep.herokuapp.com/reps/C001113
@@ -13104,7 +13104,7 @@
     latitude: 36.1651058
     longitude: -115.1424211
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/C001113-las_vegas
-    downloads: 3
+    downloads: 4
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/C001113_las_vegas.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/C001113-reno
     rep: https://phone-your-rep.herokuapp.com/reps/C001113
@@ -13863,7 +13863,7 @@
     latitude: 38.8928318
     longitude: -77.0043625
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/D000563-capitol
-    downloads: 47
+    downloads: 48
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/D000563_capitol.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/D000563-carbondale
     rep: https://phone-your-rep.herokuapp.com/reps/D000563
@@ -13905,7 +13905,7 @@
     latitude: 41.8784454
     longitude: -87.63
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/D000563-chicago
-    downloads: 158
+    downloads: 159
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/D000563_chicago.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/D000563-rock_island
     rep: https://phone-your-rep.herokuapp.com/reps/D000563
@@ -15288,7 +15288,7 @@
     latitude: 46.8699041
     longitude: -113.9930208
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/D000618-missoula
-    downloads: 5
+    downloads: 6
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/D000618_missoula.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/D000618-sidney
     rep: https://phone-your-rep.herokuapp.com/reps/D000618
@@ -15407,7 +15407,7 @@
     latitude: 39.8396384
     longitude: -88.954852
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/D000619-decatur
-    downloads: 1
+    downloads: 2
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/D000619_decatur.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/D000619-maryville
     rep: https://phone-your-rep.herokuapp.com/reps/D000619
@@ -15738,7 +15738,7 @@
     latitude: 38.8928318
     longitude: -77.0043625
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/D000622-capitol
-    downloads: 111
+    downloads: 112
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/D000622_capitol.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/D000622-chicago
     rep: https://phone-your-rep.herokuapp.com/reps/D000622
@@ -17410,7 +17410,7 @@
     latitude: 34.0476223
     longitude: -118.444656
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/F000062-los_angeles
-    downloads: 259
+    downloads: 260
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/F000062_los_angeles.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/F000062-san_diego
     rep: https://phone-your-rep.herokuapp.com/reps/F000062
@@ -17452,7 +17452,7 @@
     latitude: 37.7887748
     longitude: -122.4026656
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/F000062-san_francisco
-    downloads: 269
+    downloads: 270
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/F000062_san_francisco.png
 - self: https://phone-your-rep.herokuapp.com/reps/F000372
   state:
@@ -17508,7 +17508,7 @@
     latitude: 38.8871071
     longitude: -77.0104749
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/F000372-capitol
-    downloads: 4
+    downloads: 5
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/F000372_capitol.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/F000372-morristown
     rep: https://phone-your-rep.herokuapp.com/reps/F000372
@@ -19208,7 +19208,7 @@
     latitude: 38.1477382
     longitude: -79.0742178
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/G000289-staunton
-    downloads: 4
+    downloads: 5
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/G000289_staunton.png
 - self: https://phone-your-rep.herokuapp.com/reps/G000359
   state:
@@ -20509,7 +20509,7 @@
     latitude: 43.0501042
     longitude: -76.1543204
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/G000555-syracuse
-    downloads: 24
+    downloads: 25
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/G000555_syracuse.png
 - self: https://phone-your-rep.herokuapp.com/reps/G000558
   state:
@@ -21925,7 +21925,7 @@
     latitude: 30.4670273
     longitude: -87.2032093
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/G000578-pensacola
-    downloads: 4
+    downloads: 5
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/G000578_pensacola.png
 - self: https://phone-your-rep.herokuapp.com/reps/G000579
   state:
@@ -22925,7 +22925,7 @@
     latitude: 38.8928318
     longitude: -77.0043625
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/H001041-capitol
-    downloads: 25
+    downloads: 26
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/H001041_capitol.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/H001041-las_vegas
     rep: https://phone-your-rep.herokuapp.com/reps/H001041
@@ -26483,7 +26483,7 @@
     latitude: 33.704214
     longitude: -84.1763731
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/J000288-decatur
-    downloads: 3
+    downloads: 4
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/J000288_decatur.png
 - self: https://phone-your-rep.herokuapp.com/reps/J000289
   state:
@@ -38895,7 +38895,7 @@
     latitude: 26.079503
     longitude: -80.2504042
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/N000032-fort_lauderdale
-    downloads: 24
+    downloads: 25
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/N000032_fort_lauderdale.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/N000032-fort_myers
     rep: https://phone-your-rep.herokuapp.com/reps/N000032
@@ -39548,7 +39548,7 @@
     latitude: 44.0816004
     longitude: -103.2614256
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/N000184-rapid_city
-    downloads: 2
+    downloads: 3
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/N000184_rapid_city.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/N000184-sioux_falls
     rep: https://phone-your-rep.herokuapp.com/reps/N000184
@@ -40353,7 +40353,7 @@
     latitude: 37.7791976
     longitude: -122.4121784
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/P000197-san_francisco
-    downloads: 20
+    downloads: 21
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/P000197_san_francisco.png
 - self: https://phone-your-rep.herokuapp.com/reps/P000258
   state:
@@ -43503,7 +43503,7 @@
     latitude: 38.8871071
     longitude: -77.0104749
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/R000409-capitol
-    downloads: 3
+    downloads: 5
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/R000409_capitol.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/R000409-huntington_beach
     rep: https://phone-your-rep.herokuapp.com/reps/R000409
@@ -43524,7 +43524,7 @@
     latitude: 33.6576447
     longitude: -118.0019705
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/R000409-huntington_beach
-    downloads: 10
+    downloads: 11
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/R000409_huntington_beach.png
 - self: https://phone-your-rep.herokuapp.com/reps/R000435
   state:
@@ -44343,7 +44343,7 @@
     latitude: 47.5512594
     longitude: -122.0388342
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/R000578-issaquah
-    downloads: 6
+    downloads: 7
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/R000578_issaquah.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/R000578-wenatchee
     rep: https://phone-your-rep.herokuapp.com/reps/R000578
@@ -45685,7 +45685,7 @@
     latitude: 28.5400755
     longitude: -81.3780508
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/R000595-orlando
-    downloads: 38
+    downloads: 39
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/R000595_orlando.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/R000595-palm_beach_gardens
     rep: https://phone-your-rep.herokuapp.com/reps/R000595
@@ -47182,7 +47182,7 @@
     latitude: 32.8060149
     longitude: -79.8879337
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/S000051-mount_pleasant
-    downloads: 0
+    downloads: 1
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/S000051_mount_pleasant.png
 - self: https://phone-your-rep.herokuapp.com/reps/S000148
   state:
@@ -49009,7 +49009,7 @@
     latitude: 34.1014609
     longitude: -118.3095706
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/S001150-los_angeles
-    downloads: 12
+    downloads: 13
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/S001150_los_angeles.png
 - self: https://phone-your-rep.herokuapp.com/reps/S001154
   state:
@@ -50002,8 +50002,8 @@
     phone: 670-532-2647
     fax: 670-532-2649
     hours: ''
-    latitude: 14.14017
-    longitude: 145.142499
+    latitude: 14.1508752
+    longitude: 145.2148736
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/S001177-rota
     downloads: 0
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/S001177_rota.png
@@ -53061,7 +53061,7 @@
     latitude: 45.783552
     longitude: -108.509375
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/T000464-billings
-    downloads: 5
+    downloads: 6
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/T000464_billings.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/T000464-bozeman
     rep: https://phone-your-rep.herokuapp.com/reps/T000464
@@ -57156,7 +57156,7 @@
     latitude: 38.5980031
     longitude: -90.4902674
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/W000812-ballwin
-    downloads: 4
+    downloads: 5
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/W000812_ballwin.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/W000812-capitol
     rep: https://phone-your-rep.herokuapp.com/reps/W000812
@@ -57177,7 +57177,7 @@
     latitude: 38.8867621
     longitude: -77.0069216
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/W000812-capitol
-    downloads: 1
+    downloads: 2
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/W000812_capitol.png
 - self: https://phone-your-rep.herokuapp.com/reps/W000813
   state:
