@@ -36,6 +36,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'pry', '~> 0.10.4'
   gem 'pry-byebug'
+  gem 'rspec-rails', '~> 3.5.0'
   gem 'rubocop', '~> 0.48.0', '>= 0.48.1'
 end
 
