@@ -49,3 +49,8 @@ Style/Documentation:
 Rails/Output:
   Exclude:
     - 'lib/shapefiles.rb'
+
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    '%i': '[]'
+    '%w': '[]'

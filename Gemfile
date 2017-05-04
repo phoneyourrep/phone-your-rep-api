@@ -37,7 +37,6 @@ group :development, :test do
   gem 'pry', '~> 0.10.4'
   gem 'pry-byebug'
   gem 'rubocop', '~> 0.48.0', '>= 0.48.1'
-
 end
 
 group :development do
