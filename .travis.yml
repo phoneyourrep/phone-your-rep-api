@@ -14,6 +14,10 @@ before_install:
   - gem install bundler
   - gem update bundler
 
+before_script:
+  - psql -c 'create database phonerep_test;' -U postgres
+  - psql -U postgres -c 'create extension postgis'
+
 notifications:
   email:
     on_success: never
