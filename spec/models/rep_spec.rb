@@ -1,4 +1,4 @@
-#frozen_string_literal: true
+# frozen_string_literal: true
 
 require 'rails_helper'
 
@@ -32,7 +32,7 @@ describe Rep, type: :model do
   end
 
   it 'has a photo_slug' do
-    photo_slug = "https://phoneyourrep.github.io/images/congress/450x550/S000033.jpg"
+    photo_slug = 'https://phoneyourrep.github.io/images/congress/450x550/S000033.jpg'
 
     expect(@rep.photo_slug).to eq(photo_slug)
   end

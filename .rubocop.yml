@@ -39,6 +39,7 @@ Metrics/BlockLength:
     - 'db/schema.rb'
     - '**/*.rake'
     - 'config/routes.rb'
+    - 'spec/**/*'
 
 Style/DotPosition:
   EnforcedStyle: trailing
