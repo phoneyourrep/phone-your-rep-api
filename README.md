@@ -20,11 +20,8 @@ If you are too busy to do the manual installation, you can download a Vagrant BO
 https://s3.amazonaws.com/debugpyr/pyr.box
 
 # Installation
-
-Be sure to use Ruby 2.3.3.
-
 ```
-rbenv install 2.3.3 or rvm install 2.3.3
+rbenv install 2.4.1 or rvm install 2.4.1
 ```
 Make sure you have PostgreSQL installed, and then install the PostGIS extension. If you're using MacOS you can try installing with Homebrew. Otherwise it's recommended that you use the Vagrant box.
 ```
@@ -37,26 +34,25 @@ Mac users can also download the [Heroku PostgreSQL app](https://postgresapp.com/
 Then
 
 ```
-gem install rails --no-ri --no-rdoc
 gem install bundler
 bundle install
 ```
 You can setup and then fully seed the database with one command
 ```
-rake db:pyr:setup
+bundle exec rake db:pyr:setup
 ```
 If you've already configured and seeded the database before and just need to update, skip ahead to #Updating. If you need to set up for the first time, or reset and seed from scratch, then use `rake db:pyr:setup`. It'll take a few, so grab a cold one. If you're on MacOS, you can get an alert when it's finished by running this instead
  ```
-rake db:pyr:setup_alert
+bundle exec rake db:pyr:setup_alert
  ```
  If you're configuring for the first time and you're getting errors, or you don't want to do a complete reset, or you're some kind of control freak, here are the manual steps broken down
 
 #### Step 1: Creating the spatial database and migrating
 ```
-rake db:drop # skip this unless you're resetting
-rake db:create
-rake db:gis:setup # enables the PostGIS extension
-rake db:migrate
+bundle exec rake db:drop # skip this unless you're resetting
+bundle exec rake db:create
+bundle exec rake db:gis:setup # enables the PostGIS extension
+bundle exec rake db:migrate
 ```
 Migrating is your first test that you have a properly configured database. If you get errors while migrating, you may have PostGIS configuration issues and your database is not recognizing the geospatial datatypes. Read up on the documentation for RGeo and ActiveRecord PostGIS Adapter to troubleshoot.
 
@@ -71,35 +67,35 @@ after_validation :geocode, if: :needs_geocoding?
 ```
 Then seed the db
 ```
-rake db:seed
+bundle exec rake db:seed
 ```
 The `seeds.rb` file invokes a handful of discreet seeding tasks. If you want to isolate any of these, or seed manually, here they are broken down:
 ```
-rake db:pyr:seed_states
-rake db:pyr:seed_districts
+bundle exec rake db:pyr:seed_states
+bundle exec rake db:pyr:seed_districts
 ```
 The two tasks above load the basic state and district data such as names and codes.
 ```
-rake db:pyr:shapefiles
+bundle exec rake db:pyr:shapefiles
 ```
 The `shapefiles` task loads the geographic boundary data for the states and districts, and is the last test that your database is configured properly for GIS.
 ```
-rake db:pyr:seed_reps
+bundle exec rake db:pyr:seed_reps
 ```
 The `seed_reps` task loads all of the rep and office location data and generates VCards for each office.
 
 If you want to be able to look up congressional districts by ZCTA, pass `zctas=true` as a variable to the rake task, e.g.
 ```
-rake db:seed zctas=true
+bundle exec rake db:seed zctas=true
 ```
 or
 ```
-rake db:pyr:setup zctas=true
+bundle exec rake db:pyr:setup zctas=true
 ```
 
 Finally
 ```
-rails s
+bundle exec rails s
 ```
 #### Congrats! You've set up a geospatial database! Have a few cold ones, you deserve it.
 The app is configured to get QR code images from the `phone-your-rep-images` S3 bucket by default. These QR codes are kept up to date with the current data. If you are adapting this app for a different data set and wish to generate your own, you can do so easily by following these steps:

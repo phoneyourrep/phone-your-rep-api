@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
-ruby '2.3.3'
+ruby '2.4.1'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?('/')
@@ -15,7 +15,7 @@ gem 'dragonfly', '~> 1.1.1'
 gem 'faker', '~> 1.6', '>= 1.6.6'
 gem 'figaro', '~> 1.1.0', '>= 1.1.1'
 gem 'geocoder', '~> 1.4.0', '>= 1.4.1'
-gem 'has_scope', '0.7.0'
+gem 'has_scope', '~> 0.7.1'
 gem 'impressionist', '~> 1.5.0', '>= 1.5.2'
 gem 'jbuilder', '~> 2.4.0', '>= 2.4.1'
 gem 'multi_json', '~> 1.12.0', '>= 1.12.1'
@@ -24,9 +24,9 @@ gem 'pg', '~> 0.19.0'
 gem 'puma', '~> 3.0'
 gem 'rack-attack', '~> 5.0.0', '>= 5.0.1'
 gem 'rack-cors', '~> 0.4.0'
-gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
+gem 'rails', '~> 5.0.1'
 gem 'responders', '~> 2.3.0'
-gem 'rgeo-shapefile', '0.4.2'
+gem 'rgeo-shapefile', '~> 0.4.2'
 gem 'rqrcode', '~> 0.10.1'
 gem 'simple_token_authentication', '~> 1.0'
 gem 'vpim', '~> 13.11', '>= 13.11.11'
