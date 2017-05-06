@@ -5,11 +5,11 @@ class OfficeLocation < ApplicationRecord
   # if you want to use your own generated QR Codes.
   S3_BUCKET = ENV['PYR_S3_BUCKET'] || 'phone-your-rep-images'
 
-  belongs_to    :rep, foreign_key: :bioguide_id, primary_key: :bioguide_id
-  has_one       :v_card, dependent: :destroy
-  has_many      :issues
+  belongs_to :rep, foreign_key: :bioguide_id, primary_key: :bioguide_id
+  has_one    :v_card, dependent: :destroy
+  has_many   :issues
 
-  geocoded_by      :full_address
+  geocoded_by :full_address
 
   after_validation :geocode, if: :needs_geocoding?
 

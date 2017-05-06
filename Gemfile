@@ -34,6 +34,7 @@ gem 'yajl-ruby', '~> 1.3.0'
 
 group :development, :test do
   gem 'database_cleaner'
+  gem 'factory_girl_rails', '~> 4.8.0'
   gem 'pry', '~> 0.10.4'
   gem 'pry-byebug'
   gem 'rspec-rails', '~> 3.5.0'

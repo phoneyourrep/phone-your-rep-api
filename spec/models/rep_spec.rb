@@ -4,14 +4,17 @@ require 'rails_helper'
 
 describe Rep, type: :model do
   before :all do
-    @state = State.create
-    @district = District.create state: @state
+    @state    = create :state
+    @district = create :district, state: @state
+    @office   = create :office_location
+    @avatar   = create :avatar
 
-    @rep = Rep.create(
-      bioguide_id: 'S000033',
-      official_full: 'Bernard Sanders',
+    @rep = create(
+      :rep,
       state: @state,
-      district: @district
+      district: @district,
+      office_locations: [@office],
+      avatar: @avatar
     )
   end
 
@@ -23,12 +26,22 @@ describe Rep, type: :model do
     expect(@rep.official_full).to eq('Bernard Sanders')
   end
 
-  it 'has a state' do
-    expect(@rep.state).to eq(@state)
+  it 'belongs_to a state' do
+    expect(@rep.state).to be(@state)
   end
 
-  it 'has a district' do
-    expect(@rep.district).to eq(@district)
+  it 'belongs_to a district' do
+    expect(@rep.district).to be(@district)
+  end
+
+  it 'has office_locations' do
+    expect(@rep.office_locations).to be_a(ActiveRecord::Relation)
+    expect(@rep.office_locations.count).to eq(1)
+    expect(@rep.office_locations.first).to be(@office)
+  end
+
+  it 'has an avatar' do
+    expect(@rep.avatar).to be(@avatar)
   end
 
   it 'has a photo_slug' do
