@@ -8,12 +8,14 @@ describe Rep, type: :model do
 
     @state      = create :state
     @district   = create :district, state: @state
-    @office_one = create :office_location
-    @office_two = create :office_location
+    @office_one = create :office_location, active: false
+    @office_two = create :office_location, active: true
     @avatar     = create :avatar
 
     @rep = create(
       :rep,
+      bioguide_id: 'S000033',
+      official_full: 'Bernard Sanders',
       state: @state,
       district: @district,
       office_locations: [@office_one, @office_two],
@@ -42,6 +44,13 @@ describe Rep, type: :model do
     expect(@rep.office_locations.count).to eq(2)
     expect(@rep.office_locations.first).to be(@office_one)
     expect(@rep.office_locations.last).to be(@office_two)
+  end
+
+  it 'has many active_office_locations' do
+    expect(@rep.active_office_locations).to be_a(ActiveRecord::Relation)
+    expect(@rep.active_office_locations.count).to eq(1)
+    expect(@rep.active_office_locations).not_to include(@office_one)
+    expect(@rep.active_office_locations).to include(@office_two)
   end
 
   it 'has an avatar' do
