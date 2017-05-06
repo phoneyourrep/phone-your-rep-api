@@ -4,16 +4,19 @@ require 'rails_helper'
 
 describe Rep, type: :model do
   before :all do
-    @state    = create :state
-    @district = create :district, state: @state
-    @office   = create :office_location
-    @avatar   = create :avatar
+    [Rep, State, District, OfficeLocation, Avatar].each(&:destroy_all)
+
+    @state        = create :state
+    @district     = create :district, state: @state
+    @office_one   = create :office_location
+    @office_two   = create :office_location
+    @avatar       = create :avatar
 
     @rep = create(
       :rep,
       state: @state,
       district: @district,
-      office_locations: [@office],
+      office_locations: [@office_one, @office_two],
       avatar: @avatar
     )
   end
@@ -34,10 +37,11 @@ describe Rep, type: :model do
     expect(@rep.district).to be(@district)
   end
 
-  it 'has office_locations' do
+  it 'has many office_locations' do
     expect(@rep.office_locations).to be_a(ActiveRecord::Relation)
-    expect(@rep.office_locations.count).to eq(1)
-    expect(@rep.office_locations.first).to be(@office)
+    expect(@rep.office_locations.count).to eq(2)
+    expect(@rep.office_locations.first).to be(@office_one)
+    expect(@rep.office_locations.last).to be(@office_two)
   end
 
   it 'has an avatar' do
