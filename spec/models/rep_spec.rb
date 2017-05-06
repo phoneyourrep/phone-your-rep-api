@@ -6,11 +6,11 @@ describe Rep, type: :model do
   before :all do
     [Rep, State, District, OfficeLocation, Avatar].each(&:destroy_all)
 
-    @state        = create :state
-    @district     = create :district, state: @state
-    @office_one   = create :office_location
-    @office_two   = create :office_location
-    @avatar       = create :avatar
+    @state      = create :state
+    @district   = create :district, state: @state
+    @office_one = create :office_location
+    @office_two = create :office_location
+    @avatar     = create :avatar
 
     @rep = create(
       :rep,
