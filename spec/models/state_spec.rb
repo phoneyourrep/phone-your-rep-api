@@ -9,8 +9,8 @@ describe State, type: :model do
     @state        = create :state
     @district_one = create :district, state: @state
     @district_two = create :district, state: @state
-    @rep_one        = create :rep, state: @state
-    @rep_two        = create :rep, state: @state
+    @rep_one      = create :rep, state: @state
+    @rep_two      = create :rep, state: @state
   end
 
   it 'has many districts' do
