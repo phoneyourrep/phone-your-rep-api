@@ -57,11 +57,11 @@ describe OfficeLocation, type: :model do
   end
 
   it 'concatenates city, state, and zip' do
-    expect(office.city_state_zip).to eq('New York NY 10002')
+    expect(office.city_state_zip).to eq("#{office.city} #{office.state} #{office.zip}")
   end
 
   it 'concatenates a full_address' do
-    expect(office.full_address).to eq('220 Henry St, New York NY 10002')
+    expect(office.full_address).to eq("#{office.address}, #{office.city_state_zip}")
   end
 
   it 'geocodes by full_address' do
@@ -73,11 +73,13 @@ describe OfficeLocation, type: :model do
     expect(address).to include(office.zip)
   end
 
-  it 'makes a v_card' do
+  it 'makes a v_card with the right data' do
     office.rep = rep
     v_card = office.make_v_card photo: false
 
     expect(v_card).to be_a(Vpim::Vcard)
     expect(v_card.to_s).to include('BEGIN:VCARD')
+    expect(v_card.address.street).to eq(office.address)
+    expect(v_card.org.first).to eq(rep.role)
   end
 end
