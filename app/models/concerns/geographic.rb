@@ -12,14 +12,10 @@ module Geographic
     base.extend(ClassMethods)
   end
 
-  def contains?(point)
-    point.within?(geom)
-  end
-
   module ClassMethods
     def containing_latlon(lat, lon)
-      ewkb = EWKB.generate(FACTORY.point(lon, lat).projection)
-      where('ST_Intersects(geom, ST_GeomFromEWKB(E?))', "\\\\x#{ewkb}")
+      point = FACTORY.point(lon, lat)
+      containing_point(point)
     end
 
     def containing_point(point)

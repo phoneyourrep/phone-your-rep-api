@@ -25,12 +25,6 @@ class OfficeLocation < ApplicationRecord
 
   attr_reader :distance
 
-  FACTORY = RGeo::Geographic.simple_mercator_factory
-
-  def set_lonlat
-    update lonlat: FACTORY.point(longitude, latitude)
-  end
-
   def needs_geocoding?
     latitude.blank? || longitude.blank?
   end
