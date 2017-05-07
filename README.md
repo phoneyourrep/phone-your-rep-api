@@ -1,6 +1,7 @@
 # Phone Your Rep API
 [![Code Climate](https://codeclimate.com/github/phoneyourrep/phone-your-rep-api/badges/gpa.svg)](https://codeclimate.com/github/phoneyourrep/phone-your-rep-api)
 [![Build Status](https://travis-ci.org/msimonborg/phone-your-rep-api.svg?branch=master)](https://travis-ci.org/msimonborg/phone-your-rep-api)
+[![Coverage Status](https://coveralls.io/repos/github/msimonborg/phone-your-rep-api/badge.svg?branch=master)](https://coveralls.io/github/msimonborg/phone-your-rep-api?branch=master)
 
 The companion to [the Phone Your Rep frontend](https://github.com/kylebutts/phone_your_rep).
 
