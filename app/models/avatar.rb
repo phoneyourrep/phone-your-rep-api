@@ -7,5 +7,6 @@ class Avatar < ApplicationRecord
     update data: open(photo_url, &:read)
   rescue OpenURI::HTTPError => e
     logger.error e
+    update data: nil if data
   end
 end

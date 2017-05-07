@@ -63,7 +63,7 @@ describe Rep, type: :model do
     expect(@rep.avatar).to be(@avatar)
   end
 
-  it 'has a photo_slug' do
+  it 'has a photo_slug based on its bioguide_id' do
     photo_slug = 'https://phoneyourrep.github.io/images/congress/450x550/S000033.jpg'
 
     expect(@rep.photo_slug).to eq(photo_slug)
@@ -77,6 +77,38 @@ describe Rep, type: :model do
 
     expect(@avatar.data).not_to be(nil)
     expect(@avatar.data).to eq(data)
+  end
+
+  it '#fetch_avatar_data creates an avatar if one does not already exist' do
+    rep = create :rep
+    expect(rep.avatar).to be(nil)
+    rep.add_photo
+    expect(rep.avatar).to be_a(Avatar)
+  end
+
+  it '#add_photo updates the photo attribute if the #photo_slug returns valid data' do
+    expect(@rep.photo).to be(nil)
+
+    @rep.add_photo
+
+    expect(@rep.photo).to eq(@rep.photo_slug)
+  end
+
+  it '#add_photo ensures the photo attribute is nil if #photo_slug does not return valid data' do
+    rep = create :rep, bioguide_id: 'not-found'
+    rep.add_photo
+
+    expect(rep.photo).to be(nil)
+  end
+
+  it '#district_code returns the district#code when a district is present' do
+    expect(@rep.district_code).to eq(@district.code)
+  end
+
+  it '#district_code returns nil when a district is not present' do
+    @rep.district = nil
+
+    expect(@rep.district_code).to be(nil)
   end
 
   context '#sorted_offices_array' do
