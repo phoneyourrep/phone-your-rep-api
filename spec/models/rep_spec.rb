@@ -7,9 +7,9 @@ describe Rep, type: :model do
     @state        = create :state
     @district     = create :district, state: @state
     @office_one   = create :office_location, active: false
-    @office_two   = create :office_location, active: true, latitude: 4.0, longitude: 4.0
-    @office_three = create :office_location, active: true, latitude: 2.0, longitude: 2.0
-    @office_four  = create :office_location, active: true, latitude: 3.0, longitude: 3.0
+    @office_two   = create :office_location, latitude: 4.0, longitude: 4.0
+    @office_three = create :office_location, latitude: 2.0, longitude: 2.0
+    @office_four  = create :office_location, latitude: 3.0, longitude: 3.0
     @avatar       = create :avatar
 
     @rep = create(
