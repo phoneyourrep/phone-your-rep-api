@@ -20,6 +20,9 @@
 # Ignore Byebug command history file.
 .byebug_history
 
+# Ignore SimpleCov report directory
+/coverage/
+
 # Ignore RubyMine IDE project settings
 .idea/
 
