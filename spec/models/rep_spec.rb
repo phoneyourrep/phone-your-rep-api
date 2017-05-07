@@ -69,6 +69,16 @@ describe Rep, type: :model do
     expect(@rep.photo_slug).to eq(photo_slug)
   end
 
+  it '#fetch_avatar_data updates its avatar with data for its own photo_slug' do
+    expect(@avatar.data).to be(nil)
+
+    @rep.fetch_avatar_data
+    data = open(@rep.photo_slug, &:read)
+
+    expect(@avatar.data).not_to be(nil)
+    expect(@avatar.data).to eq(data)
+  end
+
   context '#sorted_offices_array' do
     context 'when #sort_offices is not called' do
       it 'will return its active_office_locations unsorted' do
