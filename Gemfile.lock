@@ -243,7 +243,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord-postgis-adapter (~> 4.0, >= 4.0.2)
   bugsnag (~> 5.1.0)
-  coveralls
+  coveralls (~> 0.8.0)
   database_cleaner
   devise (~> 4.2.0)
   dragonfly (~> 1.1.1)
@@ -271,7 +271,7 @@ DEPENDENCIES
   rspec-rails (~> 3.5.0)
   rubocop (~> 0.48.0, >= 0.48.1)
   simple_token_authentication (~> 1.0)
-  simplecov
+  simplecov (~> 0.14.0)
   spring (~> 2.0)
   spring-watcher-listen (~> 2.0.0)
   tzinfo-data
