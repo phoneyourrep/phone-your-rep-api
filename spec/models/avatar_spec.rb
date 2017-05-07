@@ -22,8 +22,9 @@ describe Avatar, type: :model do
     end
 
     it 'rescues HTTP errors and does not update the data attribute when given a bad URI' do
+      photo_not_found = 'https://phoneyourrep.github.io/images/congress/450x550/not-found.jpg'
       expect(avatar.data).to be(nil)
-      expect { avatar.fetch_data('ww.not-a-valid-uri.') }.not_to raise_error(OpenURI::HTTPError)
+      expect { avatar.fetch_data(photo_not_found) }.not_to raise_error
       expect(avatar.data).to be(nil)
     end
   end
