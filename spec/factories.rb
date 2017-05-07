@@ -7,4 +7,6 @@ FactoryGirl.define do
   factory :office_location
   factory :avatar
   factory :impression
+  factory :v_card
+  factory :zcta
 end

@@ -23,7 +23,7 @@ class OfficeLocation < ApplicationRecord
 
   dragonfly_accessor :qr_code
 
-  attr_reader        :distance
+  attr_reader :distance
 
   FACTORY = RGeo::Geographic.simple_mercator_factory
 
@@ -72,7 +72,7 @@ class OfficeLocation < ApplicationRecord
   def v_card_link
     if Rails.env.production?
       "https://phone-your-rep.herokuapp.com/v_cards/#{office_id}"
-    elsif Rails.env.development?
+    else
       "http://localhost:3000/v_cards/#{office_id}"
     end
   end
