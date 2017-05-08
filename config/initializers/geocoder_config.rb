@@ -2,7 +2,7 @@
 
 module GeocoderConfig
   def self.production_options
-    {
+    @production_options ||= {
       # Geocoding options
       timeout: 5,                      # geocoding service timeout (secs)
       lookup: :google,                 # name of geocoding service (symbol)
