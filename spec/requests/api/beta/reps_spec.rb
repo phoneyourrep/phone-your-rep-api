@@ -2,29 +2,29 @@
 
 require 'rails_helper'
 
-describe 'Reps API' do
+describe 'Reps Beta API' do
   it 'sends a list of cached reps in JSON format' do
-    cache = File.open(Rails.root.join('index_files/reps.json')) do |file|
+    cache = File.open(Rails.root.join('index_files/api_beta_reps.json')) do |file|
       JSON.parse(file.read)
     end
 
-    get '/reps'
+    get '/api/beta/reps'
 
     expect(response).to be_success
     expect(json).to eq(cache)
 
-    get '/reps.json'
+    get '/api/beta/reps.json'
 
     expect(response).to be_success
     expect(json).to eq(cache)
   end
 
   it 'sends a list of cached reps in YAML format' do
-    cache = File.open(Rails.root.join('index_files/reps.yaml')) do |file|
+    cache = File.open(Rails.root.join('index_files/api_beta_reps.yaml')) do |file|
       YAML.safe_load(file.read)
     end
 
-    get '/reps.yaml'
+    get '/api/beta/reps.yaml'
 
     expect(response).to be_success
     expect(yaml).to eq(cache)
@@ -32,16 +32,17 @@ describe 'Reps API' do
 
   it 'sends a list of generated reps' do
     create_list(:rep, 10)
-    get '/reps?generate=true'
+    get '/api/beta/reps?generate=true'
 
     expect(response).to be_success
-    expect(json.length).to eq(10)
-    json.each { |json_rep| expect(json_rep['bioguide_id']).to eq('bioguide_id') }
+    expect(json['total_records']).to eq(10)
+    expect(json['reps'].length).to eq(10)
+    json['reps'].each { |json_rep| expect(json_rep['bioguide_id']).to eq('bioguide_id') }
   end
 
   it 'retrieves a specific rep' do
     rep = create :rep
-    get "/reps/#{rep.bioguide_id}"
+    get "/api/beta/reps/#{rep.bioguide_id}"
 
     expect(response).to be_success
     expect(json['bioguide_id']).to eq(rep.bioguide_id)
@@ -56,31 +57,33 @@ describe 'Reps API' do
     let! :rep_three { create :rep }
 
     it 'with coordinates retrieves a set of reps' do
-      get '/reps?lat=41.0&long=-100.0'
+      get '/api/beta/reps?lat=41.0&long=-100.0'
 
       expect(response).to be_success
-      expect(json.length).to eq(2)
+      expect(json['total_records']).to eq(2)
+      expect(json['reps'].length).to eq(2)
 
-      bioguide_ids = json.map { |rep| rep['bioguide_id'] }
+      bioguide_ids = json['reps'].map { |rep| rep['bioguide_id'] }
 
       expect(bioguide_ids).to include(rep_one.bioguide_id)
       expect(bioguide_ids).to include(rep_two.bioguide_id)
     end
 
     it 'with an address retrieves a set of reps' do
-      get '/reps?address=Cozad%20Nebraska'
+      get '/api/beta/reps?address=Cozad%20Nebraska'
 
       expect(response).to be_success
-      expect(json.length).to eq(2)
+      expect(json['total_records']).to eq(2)
+      expect(json['reps'].length).to eq(2)
 
-      bioguide_ids = json.map { |rep| rep['bioguide_id'] }
+      bioguide_ids = json['reps'].map { |rep| rep['bioguide_id'] }
 
       expect(bioguide_ids).to include(rep_one.bioguide_id)
       expect(bioguide_ids).to include(rep_two.bioguide_id)
     end
 
     it 'leaves an impression' do
-      get '/reps?lat=41.0&long=-100.0'
+      get '/api/beta/reps?lat=41.0&long=-100.0'
 
       expect(Impression.count).to eq(1)
       expect(Impression.last.impressionable_type).to eq('District')
@@ -90,11 +93,11 @@ describe 'Reps API' do
     it 'only leaves unique impressions by IP' do
       expect(Impression.count).to eq(0)
 
-      get '/reps?lat=41.0&long=-100.0'
+      get '/api/beta/reps?lat=41.0&long=-100.0'
 
       expect(Impression.count).to eq(1)
 
-      get '/reps?lat=41.0&long=-100.0'
+      get '/api/beta/reps?lat=41.0&long=-100.0'
 
       expect(Impression.count).to eq(1)
     end
