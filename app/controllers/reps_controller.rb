@@ -1,9 +1,8 @@
 # frozen_string_literal: true
 
 class RepsController < ApplicationController
-  acts_as_token_authentication_handler_for User, only: %i[create update destroy]
-  before_action :set_rep, only: %i[show update destroy]
-  after_action :make_impression, only: [:index]
+  before_action :set_rep, only: :show
+  after_action :make_impression, only: :index
   has_scope :independent,
             :republican,
             :democrat,
@@ -29,36 +28,7 @@ class RepsController < ApplicationController
   # GET /reps/1
   def show; end
 
-  # POST /reps
-  def create
-    @rep = Rep.new(rep_params)
-
-    if @rep.save
-      render json: @rep, status: :created, location: @rep
-    else
-      render json: @rep.errors, status: :unprocessable_entity
-    end
-  end
-
-  # PATCH/PUT /reps/1
-  def update
-    if @rep.update(rep_params)
-      render json: @rep
-    else
-      render json: @rep.errors, status: :unprocessable_entity
-    end
-  end
-
-  # DELETE /reps/1
-  def destroy
-    @rep.destroy
-  end
-
   private
-
-  def rep_params
-    params.require(:rep).permit(:id, :bioguide_id)
-  end
 
   # Use callbacks to share common setup or constraints between actions.
   def set_rep
