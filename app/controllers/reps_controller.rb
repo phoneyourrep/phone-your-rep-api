@@ -3,11 +3,12 @@
 class RepsController < ApplicationController
   before_action :set_rep, only: :show
   after_action :make_impression, only: :index
+  has_scope :state, :party, :chamber, only: :index
   has_scope :independent,
             :republican,
             :democrat,
             type: :boolean,
-            only: [:index]
+            only: :index
 
   # GET /reps
   def index

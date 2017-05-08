@@ -28,6 +28,24 @@ class Rep < ApplicationRecord
 
   scope :independent, -> { where party: 'Independent' }
 
+  scope :state, lambda { |name|
+    joins(:state).
+      where(states: { name: name.capitalize }).
+      or(joins(:state).where(states: { abbr: name.upcase }))
+  }
+
+  scope :party, ->(name) { where party: name.capitalize }
+
+  scope :chamber, lambda { |chamber|
+    if chamber.to_sym == :upper
+      where(role: 'United States Senator')
+    elsif chamber.to_sym == :lower
+      where(role: 'United States Representative')
+    else
+      Rep.none
+    end
+  }
+
   serialize :committees, Array
 
   is_impressionable
