@@ -37,15 +37,21 @@ Then
 ```
 gem install bundler
 bundle install
-```
-You can setup and then fully seed the database with one command
-```
 bundle exec rake db:pyr:setup
 ```
-If you've already configured and seeded the database before and just need to update, skip ahead to #Updating. If you need to set up for the first time, or reset and seed from scratch, then use `rake db:pyr:setup`. It'll take a few, so grab a cold one. If you're on MacOS, you can get an alert when it's finished by running this instead
- ```
-bundle exec rake db:pyr:setup_alert
- ```
+
+Run the tests
+```
+bundle exec rake
+```
+
+If you didn't get any errors during setup and the tests are passing, you can seed the database. It will take a little while, so grab a cold one
+```
+bundle exec rake db:seed
+```
+
+If you've already configured and seeded the database before and just need to update to the most current data, skip ahead to #Updating. If you want to reset the database and seed with one command run `bundle exec rake db:pyr:setup_and_seed`
+
  If you're configuring for the first time and you're getting errors, or you don't want to do a complete reset, or you're some kind of control freak, here are the manual steps broken down
 
 #### Step 1: Creating the spatial database and migrating
@@ -66,10 +72,7 @@ If you don't want to geocode any of the offices at all, comment out this line in
 ```ruby
 after_validation :geocode, if: :needs_geocoding?
 ```
-Then seed the db
-```
-bundle exec rake db:seed
-```
+
 The `seeds.rb` file invokes a handful of discreet seeding tasks. If you want to isolate any of these, or seed manually, here they are broken down:
 ```
 bundle exec rake db:pyr:seed_states
@@ -85,13 +88,13 @@ bundle exec rake db:pyr:seed_reps
 ```
 The `seed_reps` task loads all of the rep and office location data and generates VCards for each office.
 
-If you want to be able to look up congressional districts by ZCTA, pass `zctas=true` as a variable to the rake task, e.g.
+If you want to be able to look up congressional districts by ZCTA, run `bundle exec rake db:pyr:zctas`, or if starting from scratch you can pass `zctas=true` as a variable to the seeds task, e.g.
 ```
 bundle exec rake db:seed zctas=true
 ```
 or
 ```
-bundle exec rake db:pyr:setup zctas=true
+bundle exec rake db:pyr:setup_and_seed zctas=true
 ```
 
 Finally
@@ -136,7 +139,7 @@ This updates all of the active district offices for all reps, adds new ones, and
 
 If you need to generate updated QR codes you can run the update command as `rake db:pyr:update:all qr_codes=true`
 
-All of the raw data is stored in the code base as YAML files which track files from [unitedstates](https://www.github.com/unitedstates/congress-legislators) and [TheWalkers](https://www.github.com/thewalkers/congress-legislators). Each database update task automatically updates the YAML file first by `curl`-ing its online source and committing any changes. These files may be updated often, so it's recommended that you check for updates tasks once a week or so.
+All of the raw data is stored in the code base as YAML files which track files from [unitedstates](https://www.github.com/unitedstates/congress-legislators) and [TheWalkers](https://www.github.com/thewalkers/congress-legislators). Each database update task automatically updates the YAML file first by `curl`-ing its online source and committing any changes. These files may be updated often, so it's recommended that you check for updates once a week or so.
 
 The full database update is a little time consuming. Fetching the raw data first can let you check for changes and save you from running the entire database update task if there are no changes made.
 
@@ -159,6 +162,10 @@ You can also specify an alternative data source (as long as it's in YAML format)
 # Deployment
 
 This is deployed on Heroku. Deploying a geo-spatially enabled database to Heroku can be a bit of a challenge. Docs for that will come soon.
+
+# Contributing
+
+Contributions are encouraged! Write test coverage for all new code and commit your changes to a feature branch. Make sure the build passes with `bundle exec rake`, and fix any broken tests and Rubocop style issues. Then submit a pull request!
 
 # Usage
 

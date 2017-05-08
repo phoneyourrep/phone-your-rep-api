@@ -6,16 +6,16 @@ namespace :db do
     task :setup do
       if Rails.env.development?
         `rm db/schema.rb`
-        sh 'rake db:drop'
-        sh 'rake db:create'
+        sh 'bundle exec rake db:drop'
+        sh 'bundle exec rake db:create'
       end
-      sh 'rake db:gis:setup'
-      sh 'rake db:migrate'
-      sh 'rake db:seed'
+      sh 'bundle exec rake db:gis:setup'
+      sh 'bundle exec rake db:migrate'
     end
 
     desc 'Rebuild the database with an alert at completion for MacOS'
-    task setup_alert: [:setup] do
+    task setup_and_seed: [:setup] do
+      sh 'bundle exec rake db:seed'
       `say -v Fiona "Bring me a cold one, I'm exhausted"`
     end
   end
