@@ -33,8 +33,8 @@ describe 'VCards API' do
   it 'does not send a v_card if office_location cannot be found' do
     get '/v_cards/invalid'
 
+    expect(response).to be_not_found
     expect(response.body).to eq('404 VCard not found')
-    expect(response.status).to eq(404)
   end
 
   it 'records a unique Impression by IP' do
