@@ -8,10 +8,6 @@ Dragonfly.app.configure do
 
   secret '33aea43cd89b2ea879999b5d039d06b94045669272fbe009d7ff0360c7ac0875'
 
-  if Rails.env.production?
-    url_host 'https://s3.amazonaws.com/phone-your-rep-images'
-  end
-
   url_format '/media/:job/:name'
 
   datastore :file,

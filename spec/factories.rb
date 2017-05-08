@@ -11,6 +11,7 @@ FactoryGirl.define do
   factory :impression
   factory :v_card
   factory :zcta
+  factory :zcta_district
 
   factory :state_geom do
     geom GeomSpecHelper.nebraska_geometry
