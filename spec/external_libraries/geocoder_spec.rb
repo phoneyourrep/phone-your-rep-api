@@ -3,7 +3,7 @@
 require 'rails_helper'
 
 describe Geocoder do
-  let(:production_options) { GeocoderConfig::PRODUCTION_OPTIONS }
+  let(:production_options) { GeocoderConfig.production_options }
   let(:config) { Geocoder.config }
 
   context 'in the development environment' do
