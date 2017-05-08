@@ -55,8 +55,11 @@ describe 'Reps API' do
 
       expect(response).to be_success
       expect(json.length).to eq(2)
-      expect(json.first['bioguide_id']).to eq(rep_one.bioguide_id)
-      expect(json.last['bioguide_id']).to eq(rep_two.bioguide_id)
+
+      bioguide_ids = json.map { |rep| rep['bioguide_id'] }
+
+      expect(bioguide_ids).to include(rep_one.bioguide_id)
+      expect(bioguide_ids).to include(rep_two.bioguide_id)
     end
 
     it 'with an address retrieves a set of reps' do
@@ -64,8 +67,11 @@ describe 'Reps API' do
 
       expect(response).to be_success
       expect(json.length).to eq(2)
-      expect(json.first['bioguide_id']).to eq(rep_one.bioguide_id)
-      expect(json.last['bioguide_id']).to eq(rep_two.bioguide_id)
+
+      bioguide_ids = json.map { |rep| rep['bioguide_id'] }
+
+      expect(bioguide_ids).to include(rep_one.bioguide_id)
+      expect(bioguide_ids).to include(rep_two.bioguide_id)
     end
 
     it 'leaves an impression' do
