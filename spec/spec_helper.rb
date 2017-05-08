@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require_relative 'support/request_helpers'
+
 require 'simplecov'
 require 'coveralls'
 SimpleCov.formatters = [
@@ -119,4 +121,7 @@ RSpec.configure do |config|
   config.after(:each) do
     DatabaseCleaner.clean
   end
+
+  # Request helper methods
+  config.include Requests::JsonHelpers, type: :request
 end
