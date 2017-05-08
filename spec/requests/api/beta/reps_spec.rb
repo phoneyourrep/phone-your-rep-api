@@ -56,7 +56,7 @@ describe 'Reps Beta API' do
     let! :rep_two { create :rep, bioguide_id: 'rep_two', state: state }
     let! :rep_three { create :rep }
 
-    it 'with coordinates retrieves a set of reps' do
+    it 'with coordinates retrieves the right set of reps' do
       get '/api/beta/reps?lat=41.0&long=-100.0'
 
       expect(response).to be_success
@@ -67,9 +67,10 @@ describe 'Reps Beta API' do
 
       expect(bioguide_ids).to include(rep_one.bioguide_id)
       expect(bioguide_ids).to include(rep_two.bioguide_id)
+      expect(bioguide_ids).not_to include(rep_three.bioguide_id)
     end
 
-    it 'with an address retrieves a set of reps' do
+    it 'with an address retrieves the right set of reps' do
       get '/api/beta/reps?address=Cozad%20Nebraska'
 
       expect(response).to be_success
@@ -80,6 +81,7 @@ describe 'Reps Beta API' do
 
       expect(bioguide_ids).to include(rep_one.bioguide_id)
       expect(bioguide_ids).to include(rep_two.bioguide_id)
+      expect(bioguide_ids).not_to include(rep_three.bioguide_id)
     end
 
     it 'leaves an impression' do
