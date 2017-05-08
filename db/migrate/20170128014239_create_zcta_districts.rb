@@ -1,5 +1,9 @@
 # frozen_string_literal: true
 
+ActiveSupport::Inflector.inflections(:en) do |inflect|
+  inflect.irregular 'zcta', 'zcta'
+end
+
 class CreateZctaDistricts < ActiveRecord::Migration[5.0]
   def change
     create_table :zcta_districts do |t|

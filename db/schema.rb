@@ -85,9 +85,9 @@ ActiveRecord::Schema.define(version: 20_170_407_201_305) do
     t.string   'zip'
     t.float    'latitude'
     t.float    'longitude'
-    t.geometry 'lonlat', limit: { srid: 0, type: 'point' }
-    t.datetime 'created_at',                                                     null: false
-    t.datetime 'updated_at',                                                     null: false
+    t.geometry 'lonlat', limit: { srid: 0, type: 'st_point' }
+    t.datetime 'created_at',                                                        null: false
+    t.datetime 'updated_at',                                                        null: false
     t.string   'bioguide_id'
     t.string   'fax'
     t.string   'hours'

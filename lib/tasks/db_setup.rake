@@ -11,6 +11,7 @@ namespace :db do
       end
       sh 'bundle exec rake db:gis:setup'
       sh 'bundle exec rake db:migrate'
+      sh 'bundle exec rubocop db --auto-correct'
     end
 
     desc 'Rebuild the database with an alert at completion for MacOS'
