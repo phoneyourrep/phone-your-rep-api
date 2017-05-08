@@ -2480,7 +2480,7 @@ office_locations:
   latitude: 40.9545235
   longitude: -75.9769174
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/B001269-hazleton
-  downloads: 1
+  downloads: 2
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/B001269_hazleton.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/B001269-sunbury
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/B001269
@@ -6953,7 +6953,7 @@ office_locations:
   latitude: 41.4073687
   longitude: -75.6654743
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/C001070-scranton
-  downloads: 15
+  downloads: 16
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/C001070_scranton.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/C001071-capitol
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/C001071
@@ -7520,7 +7520,7 @@ office_locations:
   latitude: 34.1367185
   longitude: -118.1327226
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/C001080-pasadena
-  downloads: 6
+  downloads: 7
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/C001080_pasadena.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/C001084-capitol
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/C001084
@@ -9558,7 +9558,7 @@ office_locations:
   latitude: 38.8928318
   longitude: -77.0043625
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/D000563-capitol
-  downloads: 49
+  downloads: 50
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/D000563_capitol.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/D000563-carbondale
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/D000563
@@ -25479,7 +25479,7 @@ office_locations:
   latitude: 39.0486598
   longitude: -84.5777416
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/M001184-crescent_springs
-  downloads: 1
+  downloads: 2
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/M001184_crescent_springs.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/M001184-la_grange
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/M001184
@@ -28503,7 +28503,7 @@ office_locations:
   latitude: 42.3311478
   longitude: -83.0532168
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/P000595-detroit
-  downloads: 17
+  downloads: 18
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/P000595_detroit.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/P000595-grand_rapids
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/P000595
@@ -33482,7 +33482,7 @@ office_locations:
   latitude: 42.3307555
   longitude: -83.048152
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/S000770-detroit
-  downloads: 44
+  downloads: 45
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/S000770_detroit.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/S000770-east_lansing
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/S000770
@@ -34280,7 +34280,7 @@ office_locations:
   latitude: 40.9168985
   longitude: -98.3583418
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/S001172-grand_island
-  downloads: 1
+  downloads: 2
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/S001172_grand_island.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/S001172-scottsbluff
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/S001172
@@ -35645,7 +35645,7 @@ office_locations:
   latitude: 41.2618733
   longitude: -96.1778064
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/S001197-omaha
-  downloads: 9
+  downloads: 10
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/S001197_omaha.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/S001197-scottsbluff
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/S001197
@@ -36506,7 +36506,7 @@ office_locations:
   latitude: 41.407372
   longitude: -75.662826
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/T000461-scranton
-  downloads: 1
+  downloads: 2
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/T000461_scranton.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/T000462-capitol
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/T000462
@@ -37304,7 +37304,7 @@ office_locations:
   latitude: 38.8867806
   longitude: -77.008414
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/T000475-capitol
-  downloads: 7
+  downloads: 8
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/T000475_capitol.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/T000475-troy
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/T000475
@@ -37325,7 +37325,7 @@ office_locations:
   latitude: 42.563685
   longitude: -83.1359658
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/T000475-troy
-  downloads: 11
+  downloads: 12
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/T000475_troy.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/T000476-capitol
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/T000476
