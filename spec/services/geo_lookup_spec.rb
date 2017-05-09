@@ -59,11 +59,10 @@ describe GeoLookup do
       expect(reps.first.sorted_offices.first.distance).to be_a(Float)
     end
 
-    it 'returns an empty ActiveRecord::Relation if a district can\'t be found' do
+    it 'returns an empty array if a district can\'t be found' do
       reps = geo_lookup_with_no_district.find_reps
 
-      expect(reps).to be_a(ActiveRecord::Relation)
-      expect(reps.empty?).to be(true)
+      expect(reps).to eq([])
     end
   end
 
@@ -83,11 +82,10 @@ describe GeoLookup do
       expect(office_locations.second.distance).to be > office_locations.first.distance
     end
 
-    it 'returns an empty ActiveRecord::Relation if a district can\'t be found' do
-      office_locations = geo_lookup_with_no_district.find_reps
+    it 'returns an empty array if a district can\'t be found' do
+      office_locations = geo_lookup_with_no_district.find_office_locations
 
-      expect(office_locations).to be_a(ActiveRecord::Relation)
-      expect(office_locations.empty?).to be(true)
+      expect(office_locations).to eq([])
     end
   end
 end

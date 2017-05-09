@@ -48,7 +48,7 @@ class Rep < ApplicationRecord
     case chamber.to_sym.downcase
     when :upper then 'United States Senator'
     when :lower then 'United States Representative'
-    else Rep.none
+    else 'Invalid input - must be :upper or :lower'
     end
   end
 

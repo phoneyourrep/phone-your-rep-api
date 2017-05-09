@@ -17,41 +17,38 @@ class GeoLookup
   # Radius of the gem lookup for office_locations
   attr_accessor :radius
 
-  def initialize(address: nil, lat: nil, long: nil, radius: nil)
-    self.coordinates = [lat.to_f, long.to_f] - [0.0]
-    self.address = address
-    self.radius  = radius
-    find_coordinates_by_address if coordinates.blank? && address
-    find_district_and_state unless coordinates.blank?
+  def initialize(address: '', lat: 0.0, long: 0.0, radius: 0.0)
+    self.coordinates = Coordinates.new(lat: lat, long: long)
+    self.address = address.to_s
+    self.radius  = radius.to_f
+    find_coordinates_by_address if coordinates.empty?
+    find_district_and_state
   end
 
   # Find the reps in the db associated to location, and sort the offices by distance.
   def find_reps
-    return Rep.none if district.blank?
+    return [] if district.blank?
     self.reps = Rep.by_location(state: state, district: district).includes(:office_locations)
-    reps.each { |rep| rep.sort_offices(coordinates) }
+    reps.each { |rep| rep.sort_offices(coordinates.latlon) }
   end
 
   def find_office_locations
-    return OfficeLocation.none if district.blank?
-    self.office_locations = OfficeLocation.active.near coordinates, radius
-    office_locations.each { |off| off.calculate_distance coordinates }
+    return [] if coordinates.latlon.empty?
+    self.office_locations = OfficeLocation.active.near coordinates.latlon, radius
+    office_locations.each { |off| off.calculate_distance coordinates.latlon }
   end
 
   private
 
   # Geocode address into [lat, lon] coordinates.
   def find_coordinates_by_address
-    self.coordinates = Geocoder.coordinates(address)
+    self.coordinates = Coordinates.new(latlon: Geocoder.coordinates(address))
   end
 
   # Find the district geometry that contains the coordinates,
   # and the district and state it belongs to.
   def find_district_and_state
-    lat           = coordinates.first
-    lon           = coordinates.last
-    district_geom = DistrictGeom.containing_latlon(lat, lon).includes(district: :state).take
-    return if district_geom.blank?
+    district_geom = coordinates.find_district_geom
     self.district = district_geom.district
     self.state    = district.state
   end
