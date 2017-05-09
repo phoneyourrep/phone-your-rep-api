@@ -10,7 +10,7 @@ class OfficeLocationsController < ApplicationController
       @office_locations = apply_scopes(geo.find_office_locations).each do |off|
         off.calculate_distance(geo.coordinates.latlon)
       end
-    elsif params[:generate] == 'true'
+    elsif scopes_present?
       @office_locations = apply_scopes(OfficeLocation).active.order(:office_id)
     else
       send_index_files :office_locations

@@ -12,6 +12,10 @@ class ApplicationController < ActionController::API
 
   private
 
+  def scopes_present?
+    params[:generate] == 'true' || scopes_configuration.any? { |scope, _options| params.key? scope }
+  end
+
   def geo_params
     params.permit(:address, :lat, :long, :radius)
   end

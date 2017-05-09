@@ -18,7 +18,7 @@ class RepsController < ApplicationController
         rep.sort_offices(geo.coordinates.latlon)
       end
       @district = geo.district
-    elsif params[:generate] == 'true'
+    elsif scopes_present?
       @reps = apply_scopes(Rep).active.order(:bioguide_id)
     else
       send_index_files :reps
