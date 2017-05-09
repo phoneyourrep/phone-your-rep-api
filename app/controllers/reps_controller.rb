@@ -12,13 +12,12 @@ class RepsController < ApplicationController
 
   # GET /reps
   def index
-    address, lat, long = geo_params
-
-    if address || lat || long
-      geo   = GeoLookup.new address: address, lat: lat, long: long
-      @reps = geo.find_reps
-      return if @reps.blank?
-      @district = @reps.detect(&:district).try(:district)
+    geo = GeoLookup.new geo_params
+    if !geo.district.blank?
+      @reps = apply_scopes(geo.find_reps).each do |rep|
+        rep.sort_offices(geo.coordinates.latlon)
+      end
+      @district = geo.district
     elsif params[:generate] == 'true'
       @reps = apply_scopes(Rep).active.order(:bioguide_id)
     else

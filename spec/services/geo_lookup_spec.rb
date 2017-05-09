@@ -53,12 +53,6 @@ describe GeoLookup do
       expect(reps).not_to include(inactive_rep)
     end
 
-    it 'sorts the office_locations of the reps it returns' do
-      expect(reps.first.sorted_offices).not_to be(nil)
-      expect(reps.first.sorted_offices).to eq(reps.first.sorted_offices_array)
-      expect(reps.first.sorted_offices.first.distance).to be_a(Float)
-    end
-
     it 'returns an empty array if a district can\'t be found' do
       reps = geo_lookup_with_no_district.find_reps
 
@@ -75,11 +69,6 @@ describe GeoLookup do
       expect(office_locations).to include(office_location_two)
       expect(office_locations).not_to include(office_location_three)
       expect(office_locations).not_to include(inactive_office_location)
-    end
-
-    it 'calculates the distance for the office_locations it returns' do
-      expect(office_locations.first.distance).to be > 0.0
-      expect(office_locations.second.distance).to be > office_locations.first.distance
     end
 
     it 'returns an empty array if a district can\'t be found' do

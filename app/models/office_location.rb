@@ -17,7 +17,11 @@ class OfficeLocation < ApplicationRecord
 
   scope :with_v_card, ->(office_id) { where(office_id: office_id).includes(:rep, :v_card) }
 
-  scope :sorted_by_distance, ->(coordinates) { near(coordinates, 4000).merge(all).distinct }
+  scope :sorted_by_distance, ->(coordinates) { near(coordinates, 4000) }
+
+  scope :capitol, -> { where office_type: 'capitol' }
+
+  scope :district, -> { where office_type: 'district' }
 
   is_impressionable counter_cache: true, column_name: :downloads
 

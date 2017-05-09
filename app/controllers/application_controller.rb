@@ -13,7 +13,7 @@ class ApplicationController < ActionController::API
   private
 
   def geo_params
-    [params[:address], params[:lat], params[:long], params[:radius]]
+    params.permit(:address, :lat, :long, :radius)
   end
 
   def set_prefix
