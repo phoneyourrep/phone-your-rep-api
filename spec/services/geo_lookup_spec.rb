@@ -53,10 +53,11 @@ describe GeoLookup do
       expect(reps).not_to include(inactive_rep)
     end
 
-    it 'returns an empty array if a district can\'t be found' do
+    it 'returns an empty ActiveRecord::Relation if a district can\'t be found' do
       reps = geo_lookup_with_no_district.find_reps
 
-      expect(reps).to eq([])
+      expect(reps).to be_a(ActiveRecord::Relation)
+      expect(reps).to be_empty
     end
   end
 
@@ -71,10 +72,11 @@ describe GeoLookup do
       expect(office_locations).not_to include(inactive_office_location)
     end
 
-    it 'returns an empty array if a district can\'t be found' do
+    it 'returns an empty ActiveRecord::Relation if coordinates can\'t be found' do
       office_locations = geo_lookup_with_no_district.find_office_locations
 
-      expect(office_locations).to eq([])
+      expect(office_locations).to be_a(ActiveRecord::Relation)
+      expect(office_locations).to be_empty
     end
   end
 end

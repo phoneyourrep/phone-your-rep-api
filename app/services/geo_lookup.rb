@@ -29,12 +29,12 @@ class GeoLookup
 
   # Find the reps in the db associated to location, and sort the offices by distance.
   def find_reps
-    return [] if district.blank?
+    return Rep.none if district.blank?
     self.reps = Rep.by_location(state: state, district: district).includes(:office_locations)
   end
 
   def find_office_locations
-    return [] if coordinates.latlon.empty?
+    return OfficeLocation.none if coordinates.latlon.empty?
     self.office_locations = OfficeLocation.active.near coordinates.latlon, radius
   end
 
