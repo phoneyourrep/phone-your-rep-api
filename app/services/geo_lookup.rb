@@ -18,11 +18,11 @@ class GeoLookup
   attr_accessor :radius
 
   def initialize(params = {})
-    lat  = params.fetch(:lat) { 0.0 }
-    long = params.fetch(:long) { 0.0 }
+    lat              = params.fetch(:lat) { 0.0 }
+    long             = params.fetch(:long) { 0.0 }
+    self.address     = params.fetch(:address) { '' }
+    self.radius      = params.fetch(:radius) { 0.0 }.to_f
     self.coordinates = Coordinates.new(lat: lat, long: long)
-    self.address = params.fetch(:address) { '' }
-    self.radius  = params.fetch(:radius) { 0.0 }.to_f
     find_coordinates_by_address if coordinates.empty?
     find_district_and_state
   end
