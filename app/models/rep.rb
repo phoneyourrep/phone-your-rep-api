@@ -34,17 +34,23 @@ class Rep < ApplicationRecord
       or(joins(:state).where(states: { abbr: name.upcase }))
   }
 
+  scope :district, lambda { |code|
+    joins(:district).
+      where(districts: { code: code }).
+      or(joins(:district).where(districts: { full_code: code }))
+  }
+
   scope :party, ->(name) { where party: name.capitalize }
 
-  scope :chamber, lambda { |chamber|
-    if chamber.to_sym == :upper
-      where(role: 'United States Senator')
-    elsif chamber.to_sym == :lower
-      where(role: 'United States Representative')
-    else
-      Rep.none
+  scope :chamber, ->(chamber) { where role: pick_a_chamber(chamber) }
+
+  def self.pick_a_chamber(chamber)
+    case chamber.to_sym.downcase
+    when :upper then 'United States Senator'
+    when :lower then 'United States Representative'
+    else Rep.none
     end
-  }
+  end
 
   serialize :committees, Array
 
