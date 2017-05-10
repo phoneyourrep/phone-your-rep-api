@@ -6,7 +6,7 @@ class OfficeLocationsController < ApplicationController
 
   def index
     if geo_params.keys.any?
-      geo = GeoLookup.new geo_params
+      geo = GeoLookup.new geo_params.to_h.symbolize_keys
       @office_locations = apply_scopes(geo.find_office_locations).each do |off|
         off.calculate_distance(geo.coordinates.latlon)
       end

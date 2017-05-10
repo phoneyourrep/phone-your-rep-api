@@ -12,7 +12,7 @@ class RepsController < ApplicationController
 
   # GET /reps
   def index
-    geo = GeoLookup.new geo_params
+    geo = GeoLookup.new geo_params.to_h.symbolize_keys
     if !geo.district.blank?
       @reps = apply_scopes(geo.find_reps).each do |rep|
         rep.sort_offices(geo.coordinates.latlon)

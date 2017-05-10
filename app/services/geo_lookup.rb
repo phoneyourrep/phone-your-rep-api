@@ -17,14 +17,12 @@ class GeoLookup
   # Radius of the gem lookup for office_locations
   attr_accessor :radius
 
-  def initialize(params = {})
-    lat              = params.fetch(:lat) { 0.0 }
-    long             = params.fetch(:long) { 0.0 }
-    self.address     = params.fetch(:address) { '' }
-    self.radius      = params.fetch(:radius) { 0.0 }.to_f
-    self.coordinates = Coordinates.new(lat: lat, long: long)
-    find_coordinates_by_address if coordinates.empty?
-    find_district_and_state
+  def initialize(address: '', lat: 0.0, long: 0.0, radius: 0.0)
+    self.address     = address.to_s
+    self.radius      = radius.to_f
+    self.coordinates = Coordinates.new(lat: lat, long: long, address: self.address)
+    self.district    = coordinates.find_district
+    self.state       = district.state
   end
 
   # Find the reps in the db associated to location, and sort the offices by distance.
@@ -36,20 +34,5 @@ class GeoLookup
   def find_office_locations
     return OfficeLocation.none if coordinates.latlon.empty?
     self.office_locations = OfficeLocation.active.near coordinates.latlon, radius
-  end
-
-  private
-
-  # Geocode address into [lat, lon] coordinates.
-  def find_coordinates_by_address
-    self.coordinates = Coordinates.new(latlon: Geocoder.coordinates(address))
-  end
-
-  # Find the district geometry that contains the coordinates,
-  # and the district and state it belongs to.
-  def find_district_and_state
-    district_geom = coordinates.find_district_geom
-    self.district = district_geom.district
-    self.state    = district.state
   end
 end
