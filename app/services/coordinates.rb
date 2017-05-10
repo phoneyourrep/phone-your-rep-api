@@ -6,7 +6,7 @@ class Coordinates
   attr_reader :latlon
 
   def initialize(latlon: nil, lat: 0.0, long: 0.0, address: '')
-    @latlon = latlon ? Array(latlon) : [lat.to_f, long.to_f] - [0.0]
+    @latlon = latlon ? Array(latlon).map(&:to_f) : [lat.to_f, long.to_f] - [0.0]
     @latlon = Array(Geocoder.coordinates(address)) if @latlon.empty?
   end
 

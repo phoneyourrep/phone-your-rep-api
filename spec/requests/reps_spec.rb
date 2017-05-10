@@ -146,6 +146,8 @@ describe 'Reps API' do
                district: @ca_two,
                role: 'United States Representative'
       end
+
+      create :rep, party: 'Independent'
     end
 
     it 'returns all reps whose district code matches the district param' do
@@ -225,6 +227,12 @@ describe 'Reps API' do
       expect(response).to be_success
       expect(json.length).to eq(6)
       expect(json.all? { |rep| rep['party'] == 'Democrat' }).to be(true)
+
+      get '/reps?independent=true'
+
+      expect(response).to be_success
+      expect(json.length).to eq(1)
+      expect(json.first['party']).to eq('Independent')
     end
 
     it 'returns the reps whose chamber matches the chamber param' do
@@ -239,6 +247,13 @@ describe 'Reps API' do
       expect(response).to be_success
       expect(json.length).to eq(4)
       expect(json.all? { |rep| rep['role'] == 'United States Senator' }).to be(true)
+    end
+
+    it 'returns nothing if the chamber can\'t be found' do
+      get '/reps?chamber=unknown'
+
+      expect(response).to be_success
+      expect(json.length).to eq(0)
     end
 
     it 'can combine scopes' do
