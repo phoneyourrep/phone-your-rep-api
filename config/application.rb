@@ -34,7 +34,7 @@ module PhoneYourRepApi
 
     # For example, this will allow GET, POST or OPTIONS requests from any
     # origin on any resource.
-    config.middleware.insert_before 0, 'Rack::Cors' do
+    config.middleware.insert_before 0, Rack::Cors do
       allow do
         origins '*'
         resource '*', headers: :any, methods: %i[get post options]
