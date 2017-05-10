@@ -54,12 +54,20 @@ describe Coordinates do
       expect([coord[0], coord[1]]).to eq(coord.latlon)
     end
 
-    it '#empty? and #blank? return true when the latlon array is empty' do
+    it '#empty? returns true when the latlon array is empty' do
       expect(coord.empty?).to be(false)
 
       coord.instance_variable_set(:@latlon, [])
 
       expect(coord.empty?).to be(true)
+    end
+
+    it '#blank? returns true when the latlon array is blank' do
+      expect(coord.blank?).to be(false)
+
+      coord.instance_variable_set(:@latlon, '')
+
+      expect(coord.blank?).to be(true)
     end
   end
 end
