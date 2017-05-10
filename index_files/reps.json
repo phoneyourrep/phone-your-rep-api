@@ -16955,7 +16955,7 @@
         "latitude": 46.8699041,
         "longitude": -113.9930208,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000618-missoula",
-        "downloads": 6,
+        "downloads": 7,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000618_missoula.png"
       },
       {
@@ -43191,7 +43191,7 @@
         "latitude": 30.3193247,
         "longitude": -81.6563618,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/N000032-jacksonville",
-        "downloads": 37,
+        "downloads": 38,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/N000032_jacksonville.png"
       },
       {
@@ -50631,7 +50631,7 @@
         "latitude": 30.3159309,
         "longitude": -81.6524971,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/R000595-jacksonville",
-        "downloads": 21,
+        "downloads": 22,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/R000595_jacksonville.png"
       },
       {
@@ -59045,7 +59045,7 @@
         "latitude": 46.8704714,
         "longitude": -113.9961779,
         "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/T000464-missoula",
-        "downloads": 3,
+        "downloads": 4,
         "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/T000464_missoula.png"
       }
     ]
