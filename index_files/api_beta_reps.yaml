@@ -8797,7 +8797,7 @@ reps:
     latitude: 32.9400414
     longitude: -96.8235975
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/C001056-dallas
-    downloads: 88
+    downloads: 89
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/C001056_dallas.png
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/C001056-harlingen
     rep: https://phone-your-rep.herokuapp.com/api/beta/reps/C001056
@@ -20472,7 +20472,7 @@ reps:
     latitude: 40.7550353
     longitude: -73.9718588
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/G000555-new_york
-    downloads: 229
+    downloads: 230
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/G000555_new_york.png
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/G000555-rochester
     rep: https://phone-your-rep.herokuapp.com/api/beta/reps/G000555
