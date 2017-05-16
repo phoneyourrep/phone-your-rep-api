@@ -39,14 +39,10 @@ class Coordinates
   end
 
   def find_district
-    find_district_geom.district
+    latlon.empty? ? NullObject.new : find_district_geom.district
   end
 
   def find_district_geom
-    if latlon.empty?
-      NullObject.new
-    else
-      DistrictGeom.containing_latlon(lat, lon).includes(district: :state).take
-    end
+    DistrictGeom.containing_latlon(lat, lon).includes(district: :state).take || NullObject.new
   end
 end

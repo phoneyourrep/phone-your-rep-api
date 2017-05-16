@@ -85,6 +85,30 @@ describe 'Reps API' do
       expect(bioguide_ids).not_to include(rep_three.bioguide_id)
     end
 
+    it 'returns an empty array when lat and long params are given but are empty' do
+      get '/reps?lat=&long='
+
+      expect(response).to be_success
+      expect(json.length).to eq(0)
+      expect(json).to eq([])
+    end
+
+    it 'returns an empty array when address param is given but is empty' do
+      get '/reps?address='
+
+      expect(response).to be_success
+      expect(json.length).to eq(0)
+      expect(json).to eq([])
+    end
+
+    it 'returns an empty array when location params are not null but a district cannot be found' do
+      get '/reps?lat=0.0&long=0.0'
+
+      expect(response).to be_success
+      expect(json.length).to eq(0)
+      expect(json).to eq([])
+    end
+
     it 'leaves an impression' do
       get '/reps?lat=41.0&long=-100.0'
 
