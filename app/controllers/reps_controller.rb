@@ -12,13 +12,12 @@ class RepsController < ApplicationController
 
   # GET /reps
   def index
-    geo = GeoLookup.new geo_params.to_h.symbolize_keys
-    binding.pry
-    if !geo.coordinates.blank?
-      @reps = apply_scopes(geo.find_reps).each do |rep|
+    if geo_params.keys.any?
+      geo = GeoLookup.new(geo_params.to_h.symbolize_keys)
+      @district = geo.district
+      @reps     = apply_scopes(geo.find_reps).each do |rep|
         rep.sort_offices(geo.coordinates.latlon)
       end
-      @district = geo.district
     elsif scopes_present?
       @reps = apply_scopes(Rep).active.order(:bioguide_id)
     else
