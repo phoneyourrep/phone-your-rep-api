@@ -2181,7 +2181,7 @@
     "latitude": 38.8871071,
     "longitude": -77.0104749,
     "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001257-capitol",
-    "downloads": 0,
+    "downloads": 1,
     "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001257_capitol.png"
   },
   {
@@ -2204,7 +2204,7 @@
     "latitude": 28.261156,
     "longitude": -82.674347,
     "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001257-new_port_richey",
-    "downloads": 5,
+    "downloads": 6,
     "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001257_new_port_richey.png"
   },
   {
@@ -2227,7 +2227,7 @@
     "latitude": 28.121418,
     "longitude": -82.741612,
     "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/B001257-tarpon_springs",
-    "downloads": 5,
+    "downloads": 6,
     "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/B001257_tarpon_springs.png"
   },
   {
@@ -29367,7 +29367,7 @@
     "latitude": 38.8928318,
     "longitude": -77.0043625,
     "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/N000032-capitol",
-    "downloads": 41,
+    "downloads": 42,
     "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/N000032_capitol.png"
   },
   {
@@ -29390,7 +29390,7 @@
     "latitude": 25.7481437,
     "longitude": -80.2581661,
     "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/N000032-coral_gables",
-    "downloads": 15,
+    "downloads": 16,
     "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/N000032_coral_gables.png"
   },
   {
@@ -29413,7 +29413,7 @@
     "latitude": 26.079503,
     "longitude": -80.2504042,
     "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/N000032-fort_lauderdale",
-    "downloads": 25,
+    "downloads": 26,
     "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/N000032_fort_lauderdale.png"
   },
   {
@@ -29436,7 +29436,7 @@
     "latitude": 26.6412123,
     "longitude": -81.8719405,
     "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/N000032-fort_myers",
-    "downloads": 16,
+    "downloads": 17,
     "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/N000032_fort_myers.png"
   },
   {
@@ -29459,7 +29459,7 @@
     "latitude": 30.3193247,
     "longitude": -81.6563618,
     "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/N000032-jacksonville",
-    "downloads": 38,
+    "downloads": 39,
     "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/N000032_jacksonville.png"
   },
   {
@@ -29482,7 +29482,7 @@
     "latitude": 28.546165,
     "longitude": -81.3744028,
     "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/N000032-orlando",
-    "downloads": 53,
+    "downloads": 54,
     "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/N000032_orlando.png"
   },
   {
@@ -29505,7 +29505,7 @@
     "latitude": 30.4432698,
     "longitude": -84.2813422,
     "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/N000032-tallahassee",
-    "downloads": 11,
+    "downloads": 12,
     "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/N000032_tallahassee.png"
   },
   {
@@ -29528,7 +29528,7 @@
     "latitude": 27.9514851,
     "longitude": -82.4580986,
     "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/N000032-tampa",
-    "downloads": 52,
+    "downloads": 53,
     "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/N000032_tampa.png"
   },
   {
@@ -29551,7 +29551,7 @@
     "latitude": 26.7135091,
     "longitude": -80.0544664,
     "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/N000032-west_palm_beach",
-    "downloads": 30,
+    "downloads": 31,
     "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/N000032_west_palm_beach.png"
   },
   {
