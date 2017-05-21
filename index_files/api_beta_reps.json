@@ -15384,7 +15384,7 @@
           "latitude": 38.8928318,
           "longitude": -77.0043625,
           "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000563-capitol",
-          "downloads": 50,
+          "downloads": 51,
           "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000563_capitol.png"
         },
         {
@@ -15430,7 +15430,7 @@
           "latitude": 41.8784454,
           "longitude": -87.63,
           "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000563-chicago",
-          "downloads": 163,
+          "downloads": 164,
           "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000563_chicago.png"
         },
         {
@@ -17461,7 +17461,7 @@
           "latitude": 38.8928318,
           "longitude": -77.0043625,
           "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000622-capitol",
-          "downloads": 114,
+          "downloads": 115,
           "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000622_capitol.png"
         },
         {
@@ -17484,7 +17484,7 @@
           "latitude": 41.8784454,
           "longitude": -87.63,
           "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/D000622-chicago",
-          "downloads": 15,
+          "downloads": 16,
           "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/D000622_chicago.png"
         }
       ]
@@ -19319,7 +19319,7 @@
           "latitude": 34.0476223,
           "longitude": -118.444656,
           "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/F000062-los_angeles",
-          "downloads": 263,
+          "downloads": 264,
           "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/F000062_los_angeles.png"
         },
         {
@@ -28221,7 +28221,7 @@
           "latitude": 34.0552049,
           "longitude": -118.241422,
           "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/H001075-los_angeles",
-          "downloads": 126,
+          "downloads": 127,
           "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/H001075_los_angeles.png"
         },
         {
@@ -48521,7 +48521,7 @@
           "latitude": 33.918593,
           "longitude": -117.9008,
           "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/R000487-brea",
-          "downloads": 2,
+          "downloads": 3,
           "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/R000487_brea.png"
         },
         {
@@ -54039,7 +54039,7 @@
           "latitude": 38.8871071,
           "longitude": -77.0104749,
           "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S001145-capitol",
-          "downloads": 6,
+          "downloads": 7,
           "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S001145_capitol.png"
         },
         {
@@ -54062,7 +54062,7 @@
           "latitude": 41.9827237,
           "longitude": -87.6595983,
           "v_card_link": "https://phone-your-rep.herokuapp.com/v_cards/S001145-chicago",
-          "downloads": 6,
+          "downloads": 7,
           "qr_code_link": "https://s3.amazonaws.com/phone-your-rep-images/S001145_chicago.png"
         },
         {
