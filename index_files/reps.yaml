@@ -34337,7 +34337,7 @@
     latitude: 38.927647
     longitude: -94.8584293
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/M000934-olathe
-    downloads: 9
+    downloads: 10
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/M000934_olathe.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/M000934-pittsburg
     rep: https://phone-your-rep.herokuapp.com/reps/M000934
@@ -43286,7 +43286,7 @@
     latitude: 38.9280229
     longitude: -94.7243276
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/R000307-overland_park
-    downloads: 13
+    downloads: 14
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/R000307_overland_park.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/R000307-topeka
     rep: https://phone-your-rep.herokuapp.com/reps/R000307
@@ -50002,8 +50002,8 @@
     phone: 670-532-2647
     fax: 670-532-2649
     hours: ''
-    latitude: 14.155406
-    longitude: 145.202448
+    latitude: 14.1508752
+    longitude: 145.2148736
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/S001177-rota
     downloads: 0
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/S001177_rota.png
