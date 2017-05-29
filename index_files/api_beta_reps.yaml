@@ -34477,7 +34477,7 @@ reps:
     latitude: 47.6045895
     longitude: -122.3354608
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/M001111-seattle
-    downloads: 40
+    downloads: 41
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/M001111_seattle.png
   - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/M001111-spokane
     rep: https://phone-your-rep.herokuapp.com/api/beta/reps/M001111
@@ -45970,7 +45970,7 @@ reps:
     latitude: 40.5510747
     longitude: -80.0239448
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/R000598-pittsburgh
-    downloads: 3
+    downloads: 4
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/R000598_pittsburgh.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/reps/R000599
   state:
