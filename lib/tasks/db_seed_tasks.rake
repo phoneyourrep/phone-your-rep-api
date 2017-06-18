@@ -11,6 +11,7 @@ namespace :db do
     task :shapefiles do
       StateGeom.destroy_all
       DistrictGeom.destroy_all
+      StateDistrictGeom.destroy_all
       states = Shapefiles.new(
         'lib',
         'shapefiles',
@@ -34,6 +35,8 @@ namespace :db do
         model_attr:    :full_code,
         record_attr:   'GEOID'
       )
+
+      Rake::Task['pyr:state_districts:load_shapefiles'].invoke
     end
 
     desc 'Import ZCTAs'
