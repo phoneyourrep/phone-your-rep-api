@@ -17,28 +17,36 @@ describe GeoLookup do
   let!(:rep_two) { create :rep }
   let!(:rep_three) { create :rep }
   let!(:inactive_rep) { create :rep, active: false }
-  let!(:district_geom) { create :district_geom, full_code: '1' }
+  let!(:congressional_district_geom) { create :congressional_district_geom, full_code: '1' }
 
-  let!(:district) do
-    create :district, full_code: '1', state_code: '1', reps: [rep_one, inactive_rep]
+  let!(:congressional_district) do
+    create :congressional_district, full_code: '1', state_code: '1', reps: [rep_one, inactive_rep]
   end
 
   let!(:state) do
     create :state, state_code: '1', reps: [rep_two, inactive_rep]
   end
 
-  after(:all) { [Rep, OfficeLocation, District, State, DistrictGeom].each(&:destroy_all) }
+  after(:all) do
+    [
+      Rep,
+      OfficeLocation,
+      CongressionalDistrict,
+      State,
+      CongressionalDistrictGeom
+    ].each(&:destroy_all)
+  end
 
   context '#initialize' do
-    it 'finds the correct District and State when passed coordinates' do
-      expect(geo_lookup.congressional_district).to eq(district)
+    it 'finds the correct Congressional District and State when passed coordinates' do
+      expect(geo_lookup.congressional_district).to eq(congressional_district)
       expect(geo_lookup.state).to eq(state)
     end
 
-    it 'finds the correct District and state when passed an address' do
+    it 'finds the correct Congressional District and state when passed an address' do
       geo_lookup_by_address = GeoLookup.new(address: 'Cozad, NE 69130, USA')
 
-      expect(geo_lookup_by_address.congressional_district).to eq(district)
+      expect(geo_lookup_by_address.congressional_district).to eq(congressional_district)
       expect(geo_lookup_by_address.state).to eq(state)
     end
   end

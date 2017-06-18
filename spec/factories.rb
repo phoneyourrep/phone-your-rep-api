@@ -22,6 +22,7 @@ FactoryGirl.define do
   factory :office_location { office_id 'office_id' }
   factory :v_card
   factory :state { state_code 'state_code' }
+  factory :congressional_district
   factory :district
   factory :avatar
   factory :impression
@@ -29,4 +30,5 @@ FactoryGirl.define do
   factory :zcta_district
   factory :state_geom { geom GeomSpecHelper.nebraska_geometry }
   factory :district_geom { geom GeomSpecHelper.nebraska_geometry }
+  factory :congressional_district_geom { geom GeomSpecHelper.nebraska_geometry }
 end

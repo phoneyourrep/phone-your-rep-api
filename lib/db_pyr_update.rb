@@ -49,7 +49,7 @@ module DbPyrUpdate
       dis_code = dis_code.size == 1 ? "0#{dis_code}" : dis_code if dis_code
       rep.role = determine_current_rep_role(term)
       rep.state    = State.find_by(abbr: term['state'])
-      rep.district = District.where(code: dis_code, state: rep.state).take
+      rep.district = CongressionalDistrict.where(code: dis_code, state: rep.state).take
       rep.party         = term['party']
       rep.url           = term['url']
       rep.contact_form  = term['contact_form']

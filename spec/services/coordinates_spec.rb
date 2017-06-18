@@ -3,8 +3,10 @@
 require 'rails_helper'
 
 describe Coordinates do
-  let!(:district_geom) { create :district_geom }
-  let!(:district) { create :district, district_geoms: [district_geom] }
+  let!(:congressional_district_geom) { create :congressional_district_geom }
+  let!(:congressional_district) do
+    create :congressional_district, district_geoms: [congressional_district_geom]
+  end
 
   context '#initialize' do
     it 'sets latlon when passed an address' do

@@ -3,7 +3,7 @@
 require 'rails_helper'
 
 describe DistrictGeom, type: :model do
-  let!(:nebraska_at_large) { create :district_geom }
+  let!(:nebraska_at_large) { create :congressional_district_geom }
   let(:cozad_ne) { [41.0, -100.0] }
 
   context '.containing_latlon' do

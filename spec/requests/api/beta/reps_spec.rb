@@ -50,9 +50,9 @@ describe 'Reps Beta API' do
 
   context 'searching by location' do
     let! :state { create :state }
-    let! :district { create :district, full_code: '1', state: state }
-    let! :district_geom { create :district_geom, full_code: '1' }
-    let! :rep_one { create :rep, bioguide_id: 'rep_one', district: district }
+    let! :congressional_district { create :congressional_district, full_code: '1', state: state }
+    let! :congressional_district_geom { create :congressional_district_geom, full_code: '1' }
+    let! :rep_one { create :rep, bioguide_id: 'rep_one', district: congressional_district }
     let! :rep_two { create :rep, bioguide_id: 'rep_two', state: state }
     let! :rep_three { create :rep }
 
@@ -116,7 +116,7 @@ describe 'Reps Beta API' do
 
       expect(Impression.count).to eq(1)
       expect(Impression.last.impressionable_type).to eq('District')
-      expect(Impression.last.impressionable_id).to eq(district.id)
+      expect(Impression.last.impressionable_id).to eq(congressional_district.id)
     end
 
     it 'only leaves unique impressions by IP' do

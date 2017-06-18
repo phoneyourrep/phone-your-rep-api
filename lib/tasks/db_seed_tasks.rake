@@ -10,7 +10,7 @@ namespace :db do
     desc 'Import shapefiles'
     task :shapefiles do
       StateGeom.destroy_all
-      DistrictGeom.destroy_all
+      CongressionalDistrictGeom.destroy_all
       states = Shapefiles.new(
         'lib',
         'shapefiles',
@@ -30,7 +30,7 @@ namespace :db do
         'cb_2015_us_cd114_500k.shp'
       )
       districts.import(
-        model:         DistrictGeom,
+        model:         CongressionalDistrictGeom,
         model_attr:    :full_code,
         record_attr:   'GEOID'
       )
@@ -75,12 +75,12 @@ namespace :db do
     end
 
     desc 'Destroy all Districts and seed from Scratch'
-    task :seed_districts do
-      District.destroy_all
+    task seed_districts: [:seed_state_districts] do
+      CongressionalDistrict.destroy_all
       csv_district_text = File.read(Rails.root.join('lib', 'seeds', 'districts.csv'))
       csv_districts = CSV.parse(csv_district_text, headers: true, encoding: 'ISO-8859-1')
       csv_districts.each do |row|
-        District.new do |d|
+        CongressionalDistrict.new do |d|
           d.code       = row['code']
           d.state_code = row['state_code']
           d.full_code  = row['full_code']
@@ -88,7 +88,7 @@ namespace :db do
           puts "District #{d.code} of #{d.state.name} saved in database."
         end
       end
-      puts "There are now #{District.count} districts in the database."
+      puts "There are now #{CongressionalDistrict.count} districts in the database."
     end
 
     desc 'Destroy all State Districts and seed from scratch'

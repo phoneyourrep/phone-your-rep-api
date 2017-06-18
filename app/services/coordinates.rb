@@ -43,31 +43,49 @@ class Coordinates
                       NullObject.new
                     else
                       {
-                        congress: district_geom.district,
-                        state_lower: state_lower_district_geom.state_district,
-                        state_upper: state_upper_district_geom.state_district
+                        congress: congressional_district,
+                        state_lower: state_lower_district,
+                        state_upper: state_upper_district
                       }
                     end
   end
 
-  def district_geom
-    @_district_geom ||= begin
-      DistrictGeom.containing_latlon(lat, lon).includes(district: :state).take || NullObject.new
+  def district_geoms
+    @_district_geoms ||= begin
+      DistrictGeom.containing_latlon(lat, lon).includes(district: :state) || NullObject.new
+    end
+  end
+
+  def congressional_district_geom
+    @_congressional_district_geom ||= district_geoms.detect do |dis_geom|
+      dis_geom.type == 'CongressionalDistrictGeom'
     end
   end
 
   def state_district_geoms
-    @_state_district_geoms ||= begin
-      StateDistrictGeom.containing_latlon(lat, lon).includes(:state_district) || NullObject.new
+    @_state_district_geoms ||= district_geoms.select do |dis_geom|
+      dis_geom.type == 'StateDistrictGeom'
     end
   end
 
   def state_lower_district_geom
-    state_district_geoms.lower.take || NullObject.new
+    state_district_geoms.detect { |d| d.chamber == 'lower' } || NullObject.new
   end
 
   def state_upper_district_geom
-    state_district_geoms.upper.take || NullObject.new
+    state_district_geoms.detect { |d| d.chamber == 'upper' } || NullObject.new
+  end
+
+  def congressional_district
+    @_congressional_district ||= congressional_district_geom.district
+  end
+
+  def state_lower_district
+    @_state_lower_district ||= state_lower_district_geom.district
+  end
+
+  def state_upper_district
+    @_state_upper_district ||= state_upper_district_geom.district
   end
 
   def state
