@@ -31,14 +31,14 @@ describe GeoLookup do
 
   context '#initialize' do
     it 'finds the correct District and State when passed coordinates' do
-      expect(geo_lookup.district).to eq(district)
+      expect(geo_lookup.congressional_district).to eq(district)
       expect(geo_lookup.state).to eq(state)
     end
 
     it 'finds the correct District and state when passed an address' do
       geo_lookup_by_address = GeoLookup.new(address: 'Cozad, NE 69130, USA')
 
-      expect(geo_lookup_by_address.district).to eq(district)
+      expect(geo_lookup_by_address.congressional_district).to eq(district)
       expect(geo_lookup_by_address.state).to eq(state)
     end
   end

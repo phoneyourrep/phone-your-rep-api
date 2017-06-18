@@ -38,11 +38,35 @@ class Coordinates
     latlon.blank?
   end
 
-  def find_district
-    latlon.empty? ? NullObject.new : find_district_geom.district
+  def districts
+    @_districts ||= if latlon.empty?
+                      NullObject.new
+                    else
+                      {
+                        congress: find_district_geom.district,
+                        state: find_state_district_geom.state_district
+                      }
+                    end
   end
 
   def find_district_geom
     DistrictGeom.containing_latlon(lat, lon).includes(district: :state).take || NullObject.new
+  end
+
+  def find_state_district_geom
+    StateDistrictGeom.containing_latlon(lat, lon).includes(:state_district).take || NullObject.new
+  end
+
+  def state
+    raise StandardError, 'Districts found have mismatching states' if mismatching_states?
+    @_state ||= districts[:congress].state
+  end
+
+  def mismatching_states?
+    if !districts[:state].blank? && districts[:congress].state != districts[:state].state
+      true
+    else
+      false
+    end
   end
 end

@@ -14,7 +14,7 @@ class RepsController < ApplicationController
   def index
     if geo_params.keys.any?
       geo = GeoLookup.new(geo_params.to_h.symbolize_keys)
-      @district = geo.district
+      @district = geo.congressional_district
       @reps     = apply_scopes(geo.find_reps).each do |rep|
         rep.sort_offices(geo.coordinates.latlon)
       end

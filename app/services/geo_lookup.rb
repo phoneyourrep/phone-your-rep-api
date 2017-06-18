@@ -5,11 +5,11 @@ class GeoLookup
   attr_accessor :address
   # Lat/lon coordinates taken from params request, or geocoded from :address.
   attr_accessor :coordinates
-  # The State that the :district belongs to.
+  # The State that the :districts belong to.
   attr_accessor :state
-  # Voting district found by a GIS database query to find the geometry that
+  # Voting districts found by a GIS database query to find the geometry that
   # contains the :coordinates.
-  attr_accessor :district
+  attr_accessor :districts
   # Rep records that are associated to the district and state.
   attr_accessor :reps
   # OfficeLocation records that are associated to the district and state.
@@ -21,18 +21,28 @@ class GeoLookup
     self.address     = address.to_s
     self.radius      = radius.to_f
     self.coordinates = Coordinates.new(lat: lat, long: long, address: self.address)
-    self.district    = coordinates.find_district
-    self.state       = district.state
+    self.districts   = coordinates.districts
+    self.state       = coordinates.state
   end
 
   # Find the reps in the db associated to location, and sort the offices by distance.
   def find_reps
-    return Rep.none if district.blank?
-    self.reps = Rep.by_location(state: state, district: district).includes(:office_locations)
+    return Rep.none if districts.blank?
+    self.reps = Rep.by_location(
+      state: state, district: districts[:congress]
+    ).includes(:office_locations)
   end
 
   def find_office_locations
     return OfficeLocation.none if coordinates.latlon.empty?
     self.office_locations = OfficeLocation.active.near coordinates.latlon, radius
+  end
+
+  def congressional_district
+    districts[:congress]
+  end
+
+  def state_district
+    districts[:state]
   end
 end
