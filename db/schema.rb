@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20_170_618_182_609) do
+ActiveRecord::Schema.define(version: 20_170_618_224_207) do
   # These are extensions that must be enabled in order to support this database
   enable_extension 'plpgsql'
   enable_extension 'postgis'
@@ -132,6 +132,11 @@ ActiveRecord::Schema.define(version: 20_170_618_182_609) do
     t.string   'youtube_id'
     t.string   'twitter_id'
     t.boolean  'active', default: true
+    t.string   'type'
+    t.string   'chamber'
+    t.string   'state_leg_id'
+    t.string   'photo_url'
+    t.string   'level'
     t.index ['district_id'], name: 'index_reps_on_district_id', using: :btree
     t.index ['state_id'], name: 'index_reps_on_state_id', using: :btree
   end

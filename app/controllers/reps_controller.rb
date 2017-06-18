@@ -7,6 +7,8 @@ class RepsController < ApplicationController
   has_scope :independent,
             :republican,
             :democrat,
+            :lower,
+            :upper,
             type: :boolean,
             only: :index
 

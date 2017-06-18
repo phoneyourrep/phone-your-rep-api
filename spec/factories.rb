@@ -14,6 +14,11 @@ FactoryGirl.define do
     requests 0
   end
 
+  factory :congressional_rep do
+    bioguide_id 'bioguide_id'
+    state
+  end
+
   factory :rep do
     bioguide_id 'bioguide_id'
     state

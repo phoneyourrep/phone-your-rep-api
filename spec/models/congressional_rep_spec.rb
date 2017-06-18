@@ -2,7 +2,7 @@
 
 require 'rails_helper'
 
-describe Rep, type: :model do
+describe CongressionalRep, type: :model do
   before :all do
     @state        = create :state
     @district     = create :district, state: @state
@@ -13,7 +13,7 @@ describe Rep, type: :model do
     @avatar       = create :avatar
 
     @rep = create(
-      :rep,
+      :congressional_rep,
       bioguide_id: 'S000033',
       official_full: 'Bernard Sanders',
       state: @state,
@@ -63,39 +63,39 @@ describe Rep, type: :model do
     expect(@rep.avatar).to be(@avatar)
   end
 
-  it 'has a photo_slug based on its bioguide_id' do
-    photo_slug = 'https://phoneyourrep.github.io/images/congress/450x550/S000033.jpg'
+  it 'has a photo_url based on its bioguide_id' do
+    photo_url = 'https://phoneyourrep.github.io/images/congress/450x550/S000033.jpg'
 
-    expect(@rep.photo_slug).to eq(photo_slug)
+    expect(@rep.photo_url).to eq(photo_url)
   end
 
-  it '#fetch_avatar_data updates its avatar with data for its own photo_slug' do
+  it '#fetch_avatar_data updates its avatar with data for its own photo_url' do
     expect(@avatar.data).to be(nil)
 
     @rep.fetch_avatar_data
-    data = open(@rep.photo_slug, &:read)
+    data = open(@rep.photo_url, &:read)
 
     expect(@avatar.data).not_to be(nil)
     expect(@avatar.data).to eq(data)
   end
 
   it '#fetch_avatar_data creates an avatar if one does not already exist' do
-    rep = create :rep
+    rep = create :congressional_rep
     expect(rep.avatar).to be(nil)
     rep.add_photo
     expect(rep.avatar).to be_a(Avatar)
   end
 
-  it '#add_photo updates the photo attribute if the #photo_slug returns valid data' do
+  it '#add_photo updates the photo attribute if the #photo_url returns valid data' do
     expect(@rep.photo).to be(nil)
 
     @rep.add_photo
 
-    expect(@rep.photo).to eq(@rep.photo_slug)
+    expect(@rep.photo).to eq(@rep.photo_url)
   end
 
-  it '#add_photo ensures the photo attribute is nil if #photo_slug does not return valid data' do
-    rep = create :rep, bioguide_id: 'not-found'
+  it '#add_photo ensures the photo attribute is nil if #photo_url does not return valid data' do
+    rep = create :congressional_rep, bioguide_id: 'not-found'
     rep.add_photo
 
     expect(rep.photo).to be(nil)

@@ -14,8 +14,11 @@ end
 
 json.extract! rep,
               :active,
+              :level,
               :bioguide_id,
+              :state_leg_id,
               :official_full,
+              :chamber,
               :role,
               :party,
               :senate_class,

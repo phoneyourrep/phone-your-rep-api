@@ -42,15 +42,13 @@ class Rep < ApplicationRecord
 
   scope :party, ->(name) { where party: name.capitalize }
 
-  scope :chamber, ->(chamber) { where role: pick_a_chamber(chamber) }
+  scope :chamber, ->(chamber) { where chamber: chamber }
 
-  def self.pick_a_chamber(chamber)
-    case chamber.to_sym.downcase
-    when :upper then 'United States Senator'
-    when :lower then 'United States Representative'
-    else 'Invalid input - must be :upper or :lower'
-    end
-  end
+  scope :lower, -> { where chamber: 'lower' }
+
+  scope :upper, -> { where chamber: 'upper' }
+
+  before_save :set_level
 
   serialize :committees, Array
 
@@ -58,6 +56,13 @@ class Rep < ApplicationRecord
 
   # Instance attribute that holds offices sorted by location after calling the :sort_offices method.
   attr_accessor :sorted_offices
+
+  def set_level
+    self.level = case type
+                 when 'CongressionalRep' then 'national'
+                 when 'StateRep' then 'state'
+                 end
+  end
 
   # Sort the offices by proximity to the request coordinates,
   # making sure to not miss offices that aren't geocoded.
@@ -79,15 +84,11 @@ class Rep < ApplicationRecord
 
   def add_photo
     fetch_avatar_data
-    update photo: avatar.data ? photo_slug : nil
-  end
-
-  def photo_slug
-    "https://phoneyourrep.github.io/images/congress/450x550/#{bioguide_id}.jpg"
+    update photo: avatar.data ? photo_url : nil
   end
 
   def fetch_avatar_data
     ava = avatar || build_avatar
-    ava.fetch_data photo_slug
+    ava.fetch_data photo_url
   end
 end

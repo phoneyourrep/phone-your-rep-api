@@ -84,6 +84,7 @@ namespace :db do
           d.code       = row['code']
           d.state_code = row['state_code']
           d.full_code  = row['full_code']
+          d.chamber    = 'lower'
           d.save
           puts "District #{d.code} of #{d.state.name} saved in database."
         end

@@ -144,31 +144,37 @@ describe 'Reps API' do
         create :rep,
                party: 'Republican',
                state: @new_york,
-               role: 'United States Senator'
+               role: 'United States Senator',
+               chamber: 'upper'
         create :rep,
                party: 'Democrat',
                state: @new_york,
                district: @ny_one,
-               role: 'United States Representative'
+               role: 'United States Representative',
+               chamber: 'lower'
         create :rep,
                party: 'Democrat',
                state: @new_york,
                district: @ny_two,
-               role: 'United States Representative'
+               role: 'United States Representative',
+               chamber: 'lower'
         create :rep,
                party: 'Democrat',
                state: @california,
-               role: 'United States Senator'
+               role: 'United States Senator',
+               chamber: 'upper'
         create :rep,
                party: 'Republican',
                state: @california,
                district: @ca_one,
-               role: 'United States Representative'
+               role: 'United States Representative',
+               chamber: 'lower'
         create :rep,
                party: 'Republican',
                state: @california,
                district: @ca_two,
-               role: 'United States Representative'
+               role: 'United States Representative',
+               chamber: 'lower'
       end
 
       create :rep, party: 'Independent'
