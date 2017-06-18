@@ -10,6 +10,7 @@
 
 Rake::Task['db:pyr:seed_states'].invoke
 Rake::Task['db:pyr:seed_districts'].invoke
+Rake::Task['db:pyr:seed_state_districts'].invoke
 Rake::Task['db:pyr:shapefiles'].invoke
 Rake::Task['db:pyr:seed_reps'].invoke
 Rake::Task['db:pyr:zctas'].invoke if ENV['zctas'] == 'true'

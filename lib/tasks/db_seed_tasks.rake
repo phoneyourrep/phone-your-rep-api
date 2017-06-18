@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
-require 'shapefiles'
-require 'import_zcta'
 require 'db_pyr_update'
+require 'import_zcta'
+require 'shapefiles'
+require 'state_district_importer'
 
 namespace :db do
   namespace :pyr do
@@ -86,6 +87,11 @@ namespace :db do
         end
       end
       puts "There are now #{District.count} districts in the database."
+    end
+
+    desc 'Destroy all State Districts and seed from scratch'
+    task :seed_state_districts do
+      Rake::Task['pyr:state_districts:import'].invoke
     end
 
     desc 'Destroy all Reps and seed from Scratch'

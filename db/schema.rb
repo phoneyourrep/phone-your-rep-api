@@ -132,14 +132,14 @@ ActiveRecord::Schema.define(version: 20_170_618_143_425) do
   end
 
   create_table 'state_districts', force: :cascade do |t|
-    t.integer  'state_id'
     t.string   'state_code'
     t.string   'code'
     t.string   'full_code'
     t.string   'name'
-    t.datetime 'created_at', null: false
-    t.datetime 'updated_at', null: false
-    t.index ['state_id'], name: 'index_state_districts_on_state_id', using: :btree
+    t.string   'chamber'
+    t.integer  'requests', default: 0
+    t.datetime 'created_at',             null: false
+    t.datetime 'updated_at',             null: false
   end
 
   create_table 'state_geoms', force: :cascade do |t|

@@ -44,7 +44,7 @@ class StateDistrictExporter
 
   def generate_csv_data
     CSV.generate do |csv|
-      csv << %w[state_code code full_code name]
+      csv << %w[state_code code full_code name chamber]
       RGeo::Shapefile::Reader.open(shapefile, factory: Geographic::FACTORY) do |file|
         puts "File contains #{file.num_records} records."
         file.each do |record|
@@ -55,17 +55,28 @@ class StateDistrictExporter
   end
 
   def extract_data_from_shapefile(record)
-    short_code = if csv_filename == 'upper.csv'
-                   record.attributes['SLDUST']
-                 else
-                   record.attributes['SLDLST']
-                 end
-
     [
       record.attributes['STATEFP'],
-      short_code,
-      record.attributes['GEOID'],
-      record.attributes['NAME']
+      short_code(record),
+      full_code(record),
+      record.attributes['NAME'],
+      chamber
     ]
+  end
+
+  def short_code(record)
+    if chamber == 'upper'
+      record.attributes['SLDUST']
+    else
+      record.attributes['SLDLST']
+    end
+  end
+
+  def full_code(record)
+    "#{record.attributes['GEOID']}-#{chamber}"
+  end
+
+  def chamber
+    @_chamber ||= csv_filename.delete('.csv')
   end
 end

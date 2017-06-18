@@ -8,6 +8,8 @@ FactoryGirl.define do
     code 'MyString'
     full_code 'MyString'
     name 'MyString'
+    chamber 'MyString'
+    requests 0
   end
 
   factory :rep do

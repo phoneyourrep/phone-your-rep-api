@@ -1,41 +1,41 @@
-state_code,code,full_code,name
-25,001,25001,First Suffolk
-25,020,25020,First Essex & Middlesex
-25,039,25039,Plymouth & Barnstable
-25,006,25006,"Hampshire, Franklin & Worcester"
-25,032,25032,"Norfolk, Bristol & Plymouth"
-25,017,25017,"Norfolk, Bristol & Middlesex"
-25,031,25031,Bristol & Norfolk
-25,040,25040,Cape & Islands
-25,030,25030,Norfolk & Suffolk
-25,016,25016,Third Middlesex
-25,012,25012,Worcester & Norfolk
-25,007,25007,First Hampden & Hampshire
-25,008,25008,"Worcester, Hampden, Hampshire & Middlesex"
-25,036,25036,First Plymouth & Bristol
-25,026,25026,Middlesex & Suffolk
-25,009,25009,Worcester & Middlesex
-25,034,25034,Plymouth & Norfolk
-25,019,25019,First Essex
-25,022,25022,Third Essex
-25,037,25037,First Bristol & Plymouth
-25,033,25033,Norfolk & Plymouth
-25,004,25004,"Berkshire, Hampshire, Franklin & Hampden"
-25,029,25029,First Middlesex & Norfolk
-25,028,25028,Second Suffolk & Middlesex
-25,014,25014,Middlesex & Worcester
-25,025,25025,Second Middlesex
-25,035,25035,Second Plymouth & Bristol
-25,010,25010,First Worcester
-25,038,25038,Second Bristol & Plymouth
-25,021,25021,Second Essex
-25,027,25027,First Suffolk & Middlesex
-25,023,25023,Fifth Middlesex
-25,005,25005,Second Hampden & Hampshire
-25,024,25024,Fourth Middlesex
-25,013,25013,First Middlesex
-25,002,25002,Second Suffolk
-25,018,25018,Second Essex & Middlesex
-25,011,25011,Second Worcester
-25,003,25003,Hampden
-25,015,25015,Second Middlesex & Norfolk
+state_code,code,full_code,name,chamber
+25,001,25001-upper,First Suffolk,upper
+25,020,25020-upper,First Essex & Middlesex,upper
+25,039,25039-upper,Plymouth & Barnstable,upper
+25,006,25006-upper,"Hampshire, Franklin & Worcester",upper
+25,032,25032-upper,"Norfolk, Bristol & Plymouth",upper
+25,017,25017-upper,"Norfolk, Bristol & Middlesex",upper
+25,031,25031-upper,Bristol & Norfolk,upper
+25,040,25040-upper,Cape & Islands,upper
+25,030,25030-upper,Norfolk & Suffolk,upper
+25,016,25016-upper,Third Middlesex,upper
+25,012,25012-upper,Worcester & Norfolk,upper
+25,007,25007-upper,First Hampden & Hampshire,upper
+25,008,25008-upper,"Worcester, Hampden, Hampshire & Middlesex",upper
+25,036,25036-upper,First Plymouth & Bristol,upper
+25,026,25026-upper,Middlesex & Suffolk,upper
+25,009,25009-upper,Worcester & Middlesex,upper
+25,034,25034-upper,Plymouth & Norfolk,upper
+25,019,25019-upper,First Essex,upper
+25,022,25022-upper,Third Essex,upper
+25,037,25037-upper,First Bristol & Plymouth,upper
+25,033,25033-upper,Norfolk & Plymouth,upper
+25,004,25004-upper,"Berkshire, Hampshire, Franklin & Hampden",upper
+25,029,25029-upper,First Middlesex & Norfolk,upper
+25,028,25028-upper,Second Suffolk & Middlesex,upper
+25,014,25014-upper,Middlesex & Worcester,upper
+25,025,25025-upper,Second Middlesex,upper
+25,035,25035-upper,Second Plymouth & Bristol,upper
+25,010,25010-upper,First Worcester,upper
+25,038,25038-upper,Second Bristol & Plymouth,upper
+25,021,25021-upper,Second Essex,upper
+25,027,25027-upper,First Suffolk & Middlesex,upper
+25,023,25023-upper,Fifth Middlesex,upper
+25,005,25005-upper,Second Hampden & Hampshire,upper
+25,024,25024-upper,Fourth Middlesex,upper
+25,013,25013-upper,First Middlesex,upper
+25,002,25002-upper,Second Suffolk,upper
+25,018,25018-upper,Second Essex & Middlesex,upper
+25,011,25011-upper,Second Worcester,upper
+25,003,25003-upper,Hampden,upper
+25,015,25015-upper,Second Middlesex & Norfolk,upper
