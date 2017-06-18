@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20_170_618_143_425) do
+ActiveRecord::Schema.define(version: 20_170_618_161_141) do
   # These are extensions that must be enabled in order to support this database
   enable_extension 'plpgsql'
   enable_extension 'postgis'
@@ -129,6 +129,13 @@ ActiveRecord::Schema.define(version: 20_170_618_143_425) do
     t.boolean  'active', default: true
     t.index ['district_id'], name: 'index_reps_on_district_id', using: :btree
     t.index ['state_id'], name: 'index_reps_on_state_id', using: :btree
+  end
+
+  create_table 'state_district_geoms', force: :cascade do |t|
+    t.string   'full_code'
+    t.geometry 'geom', limit: { srid: 3857, type: 'geometry' }
+    t.datetime 'created_at',                                          null: false
+    t.datetime 'updated_at',                                          null: false
   end
 
   create_table 'state_districts', force: :cascade do |t|

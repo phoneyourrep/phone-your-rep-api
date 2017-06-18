@@ -11,7 +11,6 @@ namespace :db do
     task :shapefiles do
       StateGeom.destroy_all
       DistrictGeom.destroy_all
-      StateDistrictGeom.destroy_all
       states = Shapefiles.new(
         'lib',
         'shapefiles',

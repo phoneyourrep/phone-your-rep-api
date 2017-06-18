@@ -3,6 +3,8 @@
 require_relative 'geom_spec_helper'
 
 FactoryGirl.define do
+  factory :state_district_geom { full_code 'MyString' }
+
   factory :state_district do
     state_code 'MyString'
     code 'MyString'

@@ -11,6 +11,7 @@ class StateDistrictExporter
   end
 
   def self.geoms_to_database
+    StateDistrictGeom.destroy_all
     export(:load_geoms_into_database)
   end
 
