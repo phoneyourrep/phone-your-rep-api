@@ -48,6 +48,8 @@ class Rep < ApplicationRecord
 
   scope :upper, -> { where chamber: 'upper' }
 
+  scope :level, ->(level) { where level: level }
+
   before_save :set_level
 
   serialize :committees, Array
