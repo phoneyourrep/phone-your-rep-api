@@ -5,9 +5,7 @@ AllCops:
 
 Lint/AmbiguousBlockAssociation:
   Exclude:
-    - 'app/models/office_location.rb'
-    - 'app/models/rep.rb'
-    - 'app/models/state.rb'
+    - 'app/models/**/*'
 
 Metrics/LineLength:
   Max: 100

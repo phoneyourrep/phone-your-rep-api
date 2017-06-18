@@ -42,7 +42,11 @@ class GeoLookup
     districts[:congress]
   end
 
-  def state_district
-    districts[:state]
+  def state_lower_district
+    districts[:state_lower]
+  end
+
+  def state_upper_district
+    districts[:state_upper]
   end
 end

@@ -43,18 +43,31 @@ class Coordinates
                       NullObject.new
                     else
                       {
-                        congress: find_district_geom.district,
-                        state: find_state_district_geom.state_district
+                        congress: district_geom.district,
+                        state_lower: state_lower_district_geom.state_district,
+                        state_upper: state_upper_district_geom.state_district
                       }
                     end
   end
 
-  def find_district_geom
-    DistrictGeom.containing_latlon(lat, lon).includes(district: :state).take || NullObject.new
+  def district_geom
+    @_district_geom ||= begin
+      DistrictGeom.containing_latlon(lat, lon).includes(district: :state).take || NullObject.new
+    end
   end
 
-  def find_state_district_geom
-    StateDistrictGeom.containing_latlon(lat, lon).includes(:state_district).take || NullObject.new
+  def state_district_geoms
+    @_state_district_geoms ||= begin
+      StateDistrictGeom.containing_latlon(lat, lon).includes(:state_district) || NullObject.new
+    end
+  end
+
+  def state_lower_district_geom
+    state_district_geoms.lower.take || NullObject.new
+  end
+
+  def state_upper_district_geom
+    state_district_geoms.upper.take || NullObject.new
   end
 
   def state
@@ -63,7 +76,8 @@ class Coordinates
   end
 
   def mismatching_states?
-    if !districts[:state].blank? && districts[:congress].state != districts[:state].state
+    if !districts[:state_upper].blank? &&
+       districts[:congress].state != districts[:state_upper].state
       true
     else
       false

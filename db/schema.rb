@@ -133,6 +133,7 @@ ActiveRecord::Schema.define(version: 20_170_618_161_141) do
 
   create_table 'state_district_geoms', force: :cascade do |t|
     t.string   'full_code'
+    t.string   'chamber'
     t.geometry 'geom', limit: { srid: 3857, type: 'geometry' }
     t.datetime 'created_at',                                          null: false
     t.datetime 'updated_at',                                          null: false

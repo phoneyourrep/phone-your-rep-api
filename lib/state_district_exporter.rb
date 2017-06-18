@@ -48,6 +48,7 @@ class StateDistrictExporter
         record.geometry.projection.each do |poly|
           StateDistrictGeom.create(
             full_code: full_code(record),
+            chamber: chamber,
             geom: poly
           )
         end
