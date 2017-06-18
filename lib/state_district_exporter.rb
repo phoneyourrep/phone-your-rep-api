@@ -6,7 +6,7 @@ class StateDistrictExporter
 
   def self.call
     state_district_shapefiles.each do |shapefile|
-      exporter = self.new(shapefile)
+      exporter = new(shapefile)
       exporter.export
     end
   end
@@ -18,10 +18,10 @@ class StateDistrictExporter
   def initialize(shapefile)
     self.shapefile = shapefile
     self.csv_filename = if shapefile.match?(/sldu/)
-      'upper.csv'
-    else
-      'lower.csv'
-    end
+                          'upper.csv'
+                        else
+                          'lower.csv'
+                        end
   end
 
   def export
@@ -56,10 +56,10 @@ class StateDistrictExporter
 
   def extract_data_from_shapefile(record)
     short_code = if csv_filename == 'upper.csv'
-      record.attributes['SLDUST']
-    else
-      record.attributes['SLDLST']
-    end
+                   record.attributes['SLDUST']
+                 else
+                   record.attributes['SLDLST']
+                 end
 
     [
       record.attributes['STATEFP'],
