@@ -3,7 +3,7 @@
 class RepsController < ApplicationController
   before_action :set_rep, only: :show
   after_action :make_impression, only: :index
-  has_scope :state, :party, :chamber, :district, only: :index
+  has_scope :state, :party, :chamber, :district, :level, only: :index
   has_scope :independent,
             :republican,
             :democrat,
@@ -34,7 +34,7 @@ class RepsController < ApplicationController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_rep
-    @rep = Rep.find_by(bioguide_id: params[:id])
+    @rep = Rep.find_by(official_id: params[:id])
   end
 
   def make_impression

@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20_170_618_224_207) do
+ActiveRecord::Schema.define(version: 20_170_619_031_543) do
   # These are extensions that must be enabled in order to support this database
   enable_extension 'plpgsql'
   enable_extension 'postgis'
@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20_170_618_224_207) do
     t.geometry 'geom', limit: { srid: 3857, type: 'geometry' }
     t.string   'chamber'
     t.string   'type'
+    t.string   'level'
     t.index ['district_id'], name: 'index_district_geoms_on_district_id', using: :btree
   end
 
@@ -42,6 +43,7 @@ ActiveRecord::Schema.define(version: 20_170_618_224_207) do
     t.string  'name'
     t.string  'chamber'
     t.string  'type'
+    t.string  'level'
   end
 
   create_table 'impressions', force: :cascade do |t|
@@ -101,6 +103,9 @@ ActiveRecord::Schema.define(version: 20_170_618_224_207) do
     t.integer  'downloads', default: 0
     t.string   'office_id'
     t.boolean  'active', default: true
+    t.string   'official_id'
+    t.string   'state_leg_id'
+    t.string   'level'
   end
 
   create_table 'reps', force: :cascade do |t|
@@ -137,6 +142,7 @@ ActiveRecord::Schema.define(version: 20_170_618_224_207) do
     t.string   'state_leg_id'
     t.string   'photo_url'
     t.string   'level'
+    t.string   'official_id'
     t.index ['district_id'], name: 'index_reps_on_district_id', using: :btree
     t.index ['state_id'], name: 'index_reps_on_state_id', using: :btree
   end

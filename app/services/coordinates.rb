@@ -69,11 +69,11 @@ class Coordinates
   end
 
   def state_lower_district_geom
-    state_district_geoms.detect { |d| d.chamber == 'lower' } || NullObject.new
+    state_district_geoms.detect { |d| d.chamber == 'lower' }
   end
 
   def state_upper_district_geom
-    state_district_geoms.detect { |d| d.chamber == 'upper' } || NullObject.new
+    state_district_geoms.detect { |d| d.chamber == 'upper' }
   end
 
   def congressional_district
@@ -81,11 +81,11 @@ class Coordinates
   end
 
   def state_lower_district
-    @_state_lower_district ||= state_lower_district_geom.district
+    @_state_lower_district ||= state_lower_district_geom&.district
   end
 
   def state_upper_district
-    @_state_upper_district ||= state_upper_district_geom.district
+    @_state_upper_district ||= state_upper_district_geom&.district
   end
 
   def state

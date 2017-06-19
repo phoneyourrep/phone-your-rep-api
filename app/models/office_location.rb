@@ -1,17 +1,22 @@
 # frozen_string_literal: true
 
 class OfficeLocation < ApplicationRecord
+  include HasOfficialID
+  include HasLevel
+
   # Set a "PYR_S3_BUCKET" environment variable to your own S3 Bucket
   # if you want to use your own generated QR Codes.
   S3_BUCKET = ENV['PYR_S3_BUCKET'] || 'phone-your-rep-images'
 
-  belongs_to :rep, foreign_key: :bioguide_id, primary_key: :bioguide_id
+  belongs_to :rep, foreign_key: :official_id, primary_key: :official_id
   has_one    :v_card, dependent: :destroy
   has_many   :issues
 
   geocoded_by :full_address
 
   after_validation :geocode, if: :needs_geocoding?
+
+  before_save :set_official_id, :set_bioguide_or_state_leg_id, :set_office_id, :set_level
 
   scope :active, -> { where(active: true) }
 
@@ -28,6 +33,23 @@ class OfficeLocation < ApplicationRecord
   dragonfly_accessor :qr_code
 
   attr_reader :distance
+
+  def set_office_id
+    return unless office_id.blank?
+    self.office_id = if office_type == 'capitol'
+                       "#{official_id}-capitol"
+                     else
+                       "#{official_id}-#{city}"
+                     end
+  end
+
+  def set_bioguide_or_state_leg_id
+    if rep.is_a?(CongressionalRep) && bioguide_id.blank?
+      self.bioguide_id = official_id
+    elsif rep.is_a?(StateRep) && state_leg_id.blank?
+      self.state_leg_id = official_id
+    end
+  end
 
   def needs_geocoding?
     latitude.blank? || longitude.blank?
