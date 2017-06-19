@@ -14,7 +14,7 @@ module DbPyrUpdate
   class Reps < Base
     def call
       @reps.each do |yaml_rep|
-        db_rep = Rep.find_or_create_by(bioguide_id: yaml_rep['id']['bioguide'])
+        db_rep = CongressionalRep.find_or_create_by(official_id: yaml_rep['id']['bioguide'])
         update_rep(db_rep, yaml_rep)
         puts "Updated #{db_rep.official_full}"
       end
@@ -47,7 +47,7 @@ module DbPyrUpdate
     def update_rep_term_info(rep, term)
       dis_code = format('%d', term['district']) if term['district']
       dis_code = dis_code.size == 1 ? "0#{dis_code}" : dis_code if dis_code
-      rep.role = determine_current_rep_role(term)
+      rep.chamber  = determine_current_rep_chamber(term)
       rep.state    = State.find_by(abbr: term['state'])
       rep.district = CongressionalDistrict.where(code: dis_code, state: rep.state).take
       rep.party         = term['party']
@@ -56,13 +56,11 @@ module DbPyrUpdate
       rep.senate_class  = format('0%o', term['class']) if term['class']
     end
 
-    def determine_current_rep_role(term)
-      if term['type'] == 'sen'
-        'United States Senator'
-      elsif term['type'] == 'rep'
-        'United States Representative'
-      else
-        term['type']
+    def determine_current_rep_chamber(term)
+      case term['type']
+      when 'sen' then 'upper'
+      when 'rep' then 'lower'
+      else term['type']
       end
     end
 
@@ -70,7 +68,7 @@ module DbPyrUpdate
       address_ary = term['address'].split(' ')
       cap_office  = OfficeLocation.find_or_create_by(
         office_type: 'capitol',
-        bioguide_id: rep.bioguide_id
+        official_id: rep.official_id
       )
       cap_office.tap do |off|
         update_basic_office_info(off, rep)
@@ -81,7 +79,7 @@ module DbPyrUpdate
     end
 
     def update_basic_office_info(off, rep)
-      off.office_id = "#{rep.bioguide_id}-capitol"
+      off.office_id = "#{rep.official_id}-capitol"
       off.rep       = rep
       off.active    = true
     end
@@ -107,7 +105,7 @@ module DbPyrUpdate
   class HistoricalReps < Base
     def call
       bioguide_ids = @reps.map { |h_rep| h_rep['id']['bioguide'] }
-      Rep.where(bioguide_id: bioguide_ids).each do |rep|
+      CongressionalRep.where(official_id: bioguide_ids).each do |rep|
         rep.update(active: false)
         rep.office_locations.each { |office| office.update(active: false) }
         puts "Retired #{rep.official_full}"
@@ -118,7 +116,7 @@ module DbPyrUpdate
   class Socials < Base
     def call
       @reps.each do |social|
-        rep = Rep.find_or_create_by(bioguide_id: social['id']['bioguide'])
+        rep = CongressionalRep.find_or_create_by(official_id: social['id']['bioguide'])
         update_rep_socials(rep, social)
         rep.save
         puts "Updated socials for #{rep.official_full}"
@@ -174,7 +172,7 @@ module DbPyrUpdate
     def find_or_create_offices(yaml_office)
       yaml_office['offices'].each do |yaml_off|
         office = OfficeLocation.find_or_create_by(
-          bioguide_id: yaml_office['id']['bioguide'],
+          official_id: yaml_office['id']['bioguide'],
           office_id:   yaml_off['id'],
           office_type: 'district'
         )

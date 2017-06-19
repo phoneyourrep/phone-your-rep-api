@@ -34,7 +34,7 @@ class RepsController < ApplicationController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_rep
-    @rep = Rep.find_by(bioguide_id: params[:id])
+    @rep = Rep.find_by(official_id: params[:id])
   end
 
   def make_impression

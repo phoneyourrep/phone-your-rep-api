@@ -1,18 +1,22 @@
 # frozen_string_literal: true
 
 class Rep < ApplicationRecord
+  include HasOfficialID
+  include HasLevel
+  include HasChamber
+
   belongs_to :district
   belongs_to :state
   has_one    :avatar, dependent: :destroy
   has_many   :office_locations,
              dependent: :destroy,
-             foreign_key: :bioguide_id,
-             primary_key: :bioguide_id
+             foreign_key: :official_id,
+             primary_key: :official_id
   has_many   :active_office_locations,
              -> { where(active: true) },
              class_name: 'OfficeLocation',
-             foreign_key: :bioguide_id,
-             primary_key: :bioguide_id
+             foreign_key: :official_id,
+             primary_key: :official_id
 
   scope :by_location, lambda { |state:, district:|
     where(district: district).or(Rep.where(state: state, district: nil)).active.distinct
@@ -42,15 +46,7 @@ class Rep < ApplicationRecord
 
   scope :party, ->(name) { where party: name.capitalize }
 
-  scope :chamber, ->(chamber) { where chamber: chamber }
-
-  scope :lower, -> { where chamber: 'lower' }
-
-  scope :upper, -> { where chamber: 'upper' }
-
-  scope :level, ->(level) { where level: level }
-
-  before_save :set_level
+  before_save :set_level, :set_official_id
 
   serialize :committees, Array
 
@@ -58,13 +54,6 @@ class Rep < ApplicationRecord
 
   # Instance attribute that holds offices sorted by location after calling the :sort_offices method.
   attr_accessor :sorted_offices
-
-  def set_level
-    self.level = case type
-                 when 'CongressionalRep' then 'national'
-                 when 'StateRep' then 'state'
-                 end
-  end
 
   # Sort the offices by proximity to the request coordinates,
   # making sure to not miss offices that aren't geocoded.

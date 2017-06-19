@@ -5,6 +5,6 @@ json.extract! district,
               :full_code,
               :code,
               :state_code,
+              :level,
               :chamber,
-              :name,
-              :type
+              :name

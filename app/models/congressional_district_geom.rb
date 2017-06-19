@@ -1,3 +1,5 @@
 # frozen_string_literal: true
 
-class CongressionalDistrictGeom < DistrictGeom; end
+class CongressionalDistrictGeom < DistrictGeom
+  include LowerChamberByDefault
+end

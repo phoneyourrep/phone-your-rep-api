@@ -2,7 +2,7 @@
 
 return json.error 'Record not found' if rep.blank?
 
-json.self api_beta_rep_url(rep.bioguide_id)
+json.self api_beta_rep_url(rep.official_id)
 
 json.state do
   json.partial! 'api/beta/states/state', state: rep.state
@@ -14,6 +14,7 @@ end
 
 json.extract! rep,
               :active,
+              :official_id,
               :level,
               :bioguide_id,
               :state_leg_id,

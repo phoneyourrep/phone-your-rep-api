@@ -29,7 +29,7 @@ class GeoLookup
   def find_reps
     return Rep.none if districts.blank?
     self.reps = Rep.by_location(
-      state: state, district: districts[:congress]
+      state: state, district: districts.values.compact
     ).includes(:office_locations)
   end
 
