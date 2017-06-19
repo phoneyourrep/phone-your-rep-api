@@ -2,7 +2,7 @@
 
 class OfficeLocationsController < ApplicationController
   before_action :set_office_location, only: [:show]
-  has_scope :district, :capitol, type: :boolean, only: :index
+  has_scope :district, :capitol, :level, type: :boolean, only: :index
 
   def index
     if geo_params.keys.any?
