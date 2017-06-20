@@ -5,7 +5,7 @@ require 'rails_helper'
 describe CongressionalRep, type: :model do
   before :all do
     @state        = create :state
-    @district     = create :district, state: @state
+    @district     = create :congressional_district, state: @state
     @office_one   = create :office_location, active: false
     @office_two   = create :office_location, latitude: 4.0, longitude: 4.0
     @office_three = create :office_location, latitude: 2.0, longitude: 2.0

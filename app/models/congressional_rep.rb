@@ -3,8 +3,10 @@
 class CongressionalRep < Rep
   before_save :set_photo_url, :set_bioguide_id, :set_role
 
+  belongs_to :district, class_name: 'CongressionalDistrict'
+
   def set_photo_url
-    self.photo_url = "https://phoneyourrep.github.io/images/congress/450x550/#{bioguide_id}.jpg"
+    self.photo_url = "https://phoneyourrep.github.io/images/congress/450x550/#{official_id}.jpg"
   end
 
   def set_bioguide_id

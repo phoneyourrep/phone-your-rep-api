@@ -55,9 +55,16 @@ describe 'Reps API' do
     let! :state { create :state }
     let! :congressional_district { create :congressional_district, full_code: '1', state: state }
     let! :congressional_district_geom { create :congressional_district_geom, full_code: '1' }
-    let! :rep_one { create :rep, bioguide_id: 'rep_one', district: congressional_district }
-    let! :rep_two { create :rep, bioguide_id: 'rep_two', state: state }
-    let! :rep_three { create :rep }
+
+    let! :rep_one do
+      create :congressional_rep, bioguide_id: 'rep_one', district: congressional_district
+    end
+
+    let! :rep_two do
+      create :congressional_rep, bioguide_id: 'rep_two', state: state
+    end
+
+    let! :rep_three { create :congressional_rep }
 
     it 'with coordinates retrieves the right set of reps' do
       get '/reps?lat=41.0&long=-100.0'
@@ -141,43 +148,37 @@ describe 'Reps API' do
       @ny_one_geom = create :congressional_district_geom, full_code: '11'
 
       2.times do
-        create :rep,
+        create :congressional_rep,
                party: 'Republican',
                state: @new_york,
-               role: 'United States Senator',
                chamber: 'upper'
-        create :rep,
+        create :congressional_rep,
                party: 'Democrat',
                state: @new_york,
                district: @ny_one,
-               role: 'United States Representative',
                chamber: 'lower'
-        create :rep,
+        create :congressional_rep,
                party: 'Democrat',
                state: @new_york,
                district: @ny_two,
-               role: 'United States Representative',
                chamber: 'lower'
-        create :rep,
+        create :congressional_rep,
                party: 'Democrat',
                state: @california,
-               role: 'United States Senator',
                chamber: 'upper'
-        create :rep,
+        create :congressional_rep,
                party: 'Republican',
                state: @california,
                district: @ca_one,
-               role: 'United States Representative',
                chamber: 'lower'
-        create :rep,
+        create :congressional_rep,
                party: 'Republican',
                state: @california,
                district: @ca_two,
-               role: 'United States Representative',
                chamber: 'lower'
       end
 
-      create :rep, party: 'Independent'
+      create :congressional_rep, party: 'Independent'
     end
 
     it 'returns all reps whose district code matches the district param' do

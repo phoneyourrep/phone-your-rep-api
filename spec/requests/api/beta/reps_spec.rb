@@ -31,7 +31,7 @@ describe 'Reps Beta API' do
   end
 
   it 'sends a list of generated reps' do
-    create_list(:rep, 10)
+    create_list(:congressional_rep, 10)
     get '/api/beta/reps?generate=true'
 
     expect(response).to be_success
@@ -41,7 +41,7 @@ describe 'Reps Beta API' do
   end
 
   it 'retrieves a specific rep' do
-    rep = create :rep
+    rep = create :congressional_rep
     get "/api/beta/reps/#{rep.bioguide_id}"
 
     expect(response).to be_success
@@ -52,9 +52,16 @@ describe 'Reps Beta API' do
     let! :state { create :state }
     let! :congressional_district { create :congressional_district, full_code: '1', state: state }
     let! :congressional_district_geom { create :congressional_district_geom, full_code: '1' }
-    let! :rep_one { create :rep, bioguide_id: 'rep_one', district: congressional_district }
-    let! :rep_two { create :rep, bioguide_id: 'rep_two', state: state }
-    let! :rep_three { create :rep }
+
+    let! :rep_one do
+      create :congressional_rep, bioguide_id: 'rep_one', district: congressional_district
+    end
+
+    let! :rep_two do
+      create :congressional_rep, bioguide_id: 'rep_two', state: state
+    end
+
+    let! :rep_three { create :congressional_rep }
 
     it 'with coordinates retrieves the right set of reps' do
       get '/api/beta/reps?lat=41.0&long=-100.0'

@@ -2,17 +2,19 @@
 
 require 'rails_helper'
 
-describe District, type: :model do
+describe CongressionalDistrict, type: :model do
   before(:all) { [State, District, Rep, DistrictGeom].each(&:destroy_all) }
 
   after(:all) { [State, District, Rep, DistrictGeom].each(&:destroy_all) }
 
-  let!(:rep_one) { create :rep }
-  let!(:rep_two) { create :rep }
+  let!(:rep_one) { create :congressional_rep }
+  let!(:rep_two) { create :congressional_rep }
   let!(:state) { create :state, state_code: '1' }
-  let!(:district_geom_one) { create :district_geom, full_code: '1' }
-  let!(:district_geom_two) { create :district_geom, full_code: '2' }
-  let!(:district) { create :district, full_code: '1', state_code: '1', reps: [rep_one, rep_two] }
+  let!(:district_geom_one) { create :congressional_district_geom, full_code: '1' }
+  let!(:district_geom_two) { create :congressional_district_geom, full_code: '2' }
+  let!(:district) do
+    create :congressional_district, full_code: '1', state_code: '1', reps: [rep_one, rep_two]
+  end
 
   it 'belongs_to a state' do
     expect(district.state).to eq(state)

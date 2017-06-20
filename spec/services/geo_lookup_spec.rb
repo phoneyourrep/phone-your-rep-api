@@ -13,10 +13,13 @@ describe GeoLookup do
     create :office_location, latitude: 41.0, longitude: -100.0, active: false
   end
 
-  let!(:rep_one) { create :rep, office_locations: [office_location_one, office_location_two] }
-  let!(:rep_two) { create :rep }
-  let!(:rep_three) { create :rep }
-  let!(:inactive_rep) { create :rep, active: false }
+  let!(:rep_one) do
+    create :congressional_rep, office_locations: [office_location_one, office_location_two]
+  end
+
+  let!(:rep_two) { create :congressional_rep }
+  let!(:rep_three) { create :congressional_rep }
+  let!(:inactive_rep) { create :congressional_rep, active: false }
   let!(:congressional_district_geom) { create :congressional_district_geom, full_code: '1' }
 
   let!(:congressional_district) do
@@ -31,9 +34,9 @@ describe GeoLookup do
     [
       Rep,
       OfficeLocation,
-      CongressionalDistrict,
+      District,
       State,
-      CongressionalDistrictGeom
+      DistrictGeom
     ].each(&:destroy_all)
   end
 
