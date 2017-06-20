@@ -1365,7 +1365,7 @@
   latitude: 35.594066
   longitude: -82.55792
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/B001135-asheville
-  downloads: 24
+  downloads: 25
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/B001135_asheville.png
 - self: https://phone-your-rep.herokuapp.com/office_locations/B001135-capitol
   rep: https://phone-your-rep.herokuapp.com/reps/B001135
@@ -1725,7 +1725,7 @@
   latitude: 43.0388214
   longitude: -87.9200848
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/B001230-milwaukee
-  downloads: 26
+  downloads: 27
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/B001230_milwaukee.png
 - self: https://phone-your-rep.herokuapp.com/office_locations/B001230-wausau
   rep: https://phone-your-rep.herokuapp.com/reps/B001230
