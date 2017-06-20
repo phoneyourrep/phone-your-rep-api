@@ -108,7 +108,7 @@ namespace :db do
       end
 
       desc 'Update all reps and office_locations in database from default yaml files'
-      task all: %i[retired_reps current_reps socials office_locations] do
+      task all: %i[retired_reps current_reps socials office_locations governors] do
         if ENV['qr_codes'] == 'true' && Rails.env.development?
           Rake::Task['pyr:qr_codes:create'].invoke
         end

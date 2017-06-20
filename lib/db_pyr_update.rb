@@ -20,6 +20,7 @@ module DbPyrUpdate
         db_gov = Governor.find_or_create_by(official_full: gov.official_full, state: state)
         update_basic_info(db_gov, gov)
         db_gov.add_photo
+        db_gov.active = true
         db_gov.save
         gov.office_locations.each { |off| update_office(db_gov, off) }
         puts "Updated #{db_gov.official_full}"
@@ -34,6 +35,7 @@ module DbPyrUpdate
       o.phone       = off[:phone]
       o.fax         = off[:fax]
       o.office_type = off[:office_type]
+      o.active      = true
       o.save
       o.add_v_card
     end
