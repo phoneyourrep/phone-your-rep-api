@@ -52,7 +52,7 @@ class GovernorScraper
 
     def address_array
       @_address_array ||=
-          address_panel.css('p').first.text.delete("\t\n").sub('Address:', '').split(' ') - [' ']
+        address_panel.css('p').first.text.delete("\t\n").sub('Address:', '').split(' ') - [' ']
     end
 
     def address
@@ -88,10 +88,9 @@ class GovernorScraper
     end
 
     def alt_address_array
-      if alt_office_present?
-        @_alt_address_array ||=
-            alt_address_panel.css('p').first.text.delete("\t\n").sub('Address:', '').split(' ') - [' ']
-      end
+      return unless alt_office_present?
+      @_alt_address_array ||=
+        alt_address_panel.css('p').first.text.delete("\t\n").sub('Address:', '').split(' ') - [' ']
     end
 
     def alt_building
@@ -119,24 +118,18 @@ class GovernorScraper
     end
 
     def alt_phone
-      if alt_office_present?
-        @_alt_phone ||= alt_address_panel.css('p')[4].text.delete("\t\nPhone: ").strip.sub('/', '-')
-      end
+      return unless alt_office_present?
+      @_alt_phone ||= alt_address_panel.css('p')[4].text.delete("\t\nPhone: ").strip.sub('/', '-')
     end
 
     def alt_fax
-      if alt_office_present?
-        @_alt_fax ||= alt_address_panel.css('p')[5]&.text&.delete("\t\nFax:")&.strip&.sub('/', '-')
-      end
+      return unless alt_office_present?
+      @_alt_fax ||= alt_address_panel.css('p')[5]&.text&.delete("\t\nFax:")&.strip&.sub('/', '-')
     end
 
     def alt_office_type
       return unless alt_office_present?
-      if alt_state == 'DC'
-        'dc'
-      else
-        'district'
-      end
+      alt_state == 'DC' ? 'dc' : 'district'
     end
   end
 end

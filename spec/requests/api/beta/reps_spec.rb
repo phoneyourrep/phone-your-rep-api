@@ -63,32 +63,36 @@ describe 'Reps Beta API' do
 
     let! :rep_three { create :congressional_rep }
 
+    let! :governor { create :governor, state: state }
+
     it 'with coordinates retrieves the right set of reps' do
       get '/api/beta/reps?lat=41.0&long=-100.0'
 
       expect(response).to be_success
-      expect(json['total_records']).to eq(2)
-      expect(json['reps'].length).to eq(2)
+      expect(json['total_records']).to eq(3)
+      expect(json['reps'].length).to eq(3)
 
-      bioguide_ids = json['reps'].map { |rep| rep['bioguide_id'] }
+      official_ids = json['reps'].map { |rep| rep['official_id'] }
 
-      expect(bioguide_ids).to include(rep_one.bioguide_id)
-      expect(bioguide_ids).to include(rep_two.bioguide_id)
-      expect(bioguide_ids).not_to include(rep_three.bioguide_id)
+      expect(official_ids).to include(rep_one.official_id)
+      expect(official_ids).to include(rep_two.official_id)
+      expect(official_ids).to include(governor.official_id)
+      expect(official_ids).not_to include(rep_three.official_id)
     end
 
     it 'with an address retrieves the right set of reps' do
       get '/api/beta/reps?address=Cozad%20Nebraska'
 
       expect(response).to be_success
-      expect(json['total_records']).to eq(2)
-      expect(json['reps'].length).to eq(2)
+      expect(json['total_records']).to eq(3)
+      expect(json['reps'].length).to eq(3)
 
-      bioguide_ids = json['reps'].map { |rep| rep['bioguide_id'] }
+      official_ids = json['reps'].map { |rep| rep['official_id'] }
 
-      expect(bioguide_ids).to include(rep_one.bioguide_id)
-      expect(bioguide_ids).to include(rep_two.bioguide_id)
-      expect(bioguide_ids).not_to include(rep_three.bioguide_id)
+      expect(official_ids).to include(rep_one.official_id)
+      expect(official_ids).to include(rep_two.official_id)
+      expect(official_ids).to include(governor.official_id)
+      expect(official_ids).not_to include(rep_three.official_id)
     end
 
     it 'returns an empty array when lat and long params are given but are empty' do

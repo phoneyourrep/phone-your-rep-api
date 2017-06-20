@@ -28,6 +28,8 @@ class Rep < ApplicationRecord
 
   scope :legislators, -> { where.not type: 'Governor' }
 
+  scope :governors, -> { where type: 'Governor' }
+
   scope :republican, -> { where party: 'Republican' }
 
   scope :democrat, -> { where party: 'Democrat' }

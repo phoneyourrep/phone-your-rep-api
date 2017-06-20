@@ -14,10 +14,10 @@ class GovernorScraper
 
     def governor_name
       @_governor_name ||= raw.css('.governors-state a').
-          first.
-          text.
-          sub('Governor ', '').
-          gsub('  ', ' ')
+                          first.
+                          text.
+                          sub('Governor ', '').
+                          gsub('  ', ' ')
     end
 
     def state

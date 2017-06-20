@@ -12,13 +12,13 @@ describe Governor, type: :model do
     @avatar       = create :avatar
 
     @rep = create(
-        :governor,
-        official_full: 'Phil Scott',
-        first: 'Phil',
-        last: 'Scott',
-        state: @state,
-        office_locations: [@office_one, @office_two, @office_three, @office_four],
-        avatar: @avatar
+      :governor,
+      official_full: 'Phil Scott',
+      first: 'Phil',
+      last: 'Scott',
+      state: @state,
+      office_locations: [@office_one, @office_two, @office_three, @office_four],
+      avatar: @avatar
     )
   end
 

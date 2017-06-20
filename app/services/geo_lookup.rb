@@ -33,6 +33,10 @@ class GeoLookup
     ).includes(:office_locations)
   end
 
+  def find_legislators_only
+    self.reps = find_reps.legislators
+  end
+
   def find_office_locations
     return OfficeLocation.none if coordinates.latlon.empty?
     self.office_locations = OfficeLocation.active.near coordinates.latlon, radius

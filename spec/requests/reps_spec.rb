@@ -61,10 +61,12 @@ describe 'Reps API' do
     end
 
     let! :rep_two do
-      create :governor, bioguide_id: 'rep_two', state: state
+      create :congressional_rep, bioguide_id: 'rep_two', state: state
     end
 
     let! :rep_three { create :congressional_rep }
+
+    let! :governor { create :governor, state: state }
 
     it 'with coordinates retrieves the right set of reps' do
       get '/reps?lat=41.0&long=-100.0'
@@ -72,11 +74,12 @@ describe 'Reps API' do
       expect(response).to be_success
       expect(json.length).to eq(2)
 
-      bioguide_ids = json.map { |rep| rep['bioguide_id'] }
+      official_ids = json.map { |rep| rep['official_id'] }
 
-      expect(bioguide_ids).to include(rep_one.bioguide_id)
-      expect(bioguide_ids).to include(rep_two.bioguide_id)
-      expect(bioguide_ids).not_to include(rep_three.bioguide_id)
+      expect(official_ids).to include(rep_one.official_id)
+      expect(official_ids).to include(rep_two.official_id)
+      expect(official_ids).not_to include(rep_three.official_id)
+      expect(official_ids).not_to include(governor.official_id)
     end
 
     it 'with an address retrieves the right set of reps' do
@@ -85,11 +88,12 @@ describe 'Reps API' do
       expect(response).to be_success
       expect(json.length).to eq(2)
 
-      bioguide_ids = json.map { |rep| rep['bioguide_id'] }
+      official_ids = json.map { |rep| rep['official_id'] }
 
-      expect(bioguide_ids).to include(rep_one.bioguide_id)
-      expect(bioguide_ids).to include(rep_two.bioguide_id)
-      expect(bioguide_ids).not_to include(rep_three.bioguide_id)
+      expect(official_ids).to include(rep_one.official_id)
+      expect(official_ids).to include(rep_two.official_id)
+      expect(official_ids).not_to include(rep_three.official_id)
+      expect(official_ids).not_to include(governor.official_id)
     end
 
     it 'returns an empty array when lat and long params are given but are empty' do

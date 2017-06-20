@@ -9,7 +9,8 @@ class Governor < Rep
   validates :state, :official_full, presence: true
 
   def set_official_id
-    self.official_id = "#{state.abbr}-#{official_full.downcase.split(' ').join('-')}"
+    self.official_id = "#{state.abbr}-#{official_full.downcase.split(' ').join('-')}".
+                       delete('".')
   end
 
   def set_photo_url

@@ -18,29 +18,35 @@ module DbPyrUpdate
       GovernorScraper.governors.each do |gov|
         state  = State.find_by(name: gov.state_name)
         db_gov = Governor.find_or_create_by(official_full: gov.official_full, state: state)
-        db_gov.photo_url = gov.photo_url
-        db_gov.url       = gov.url
-        db_gov.party     = gov.party
-        db_gov.first     = gov.first
-        db_gov.last      = gov.last
-        db_gov.middle    = gov.middle
-        db_gov.nickname  = gov.nickname
-        db_gov.suffix    = gov.suffix
+        update_basic_info(db_gov, gov)
         db_gov.add_photo
         db_gov.save
-        gov.office_locations.each do |off|
-          o = OfficeLocation.find_or_create_by(rep: db_gov, address: off[:address])
-          o.city        = off[:city]
-          o.state       = off[:state]
-          o.zip         = off[:zip]
-          o.phone       = off[:phone]
-          o.fax         = off[:fax]
-          o.office_type = off[:office_type]
-          o.save
-          o.add_v_card
-        end
+        gov.office_locations.each { |off| update_office(db_gov, off) }
         puts "Updated #{db_gov.official_full}"
       end
+    end
+
+    def update_office(db_gov, off)
+      o = OfficeLocation.find_or_create_by(rep: db_gov, address: off[:address])
+      o.city        = off[:city]
+      o.state       = off[:state]
+      o.zip         = off[:zip]
+      o.phone       = off[:phone]
+      o.fax         = off[:fax]
+      o.office_type = off[:office_type]
+      o.save
+      o.add_v_card
+    end
+
+    def update_basic_info(db_gov, gov)
+      db_gov.photo_url = gov.photo_url
+      db_gov.url       = gov.url
+      db_gov.party     = gov.party
+      db_gov.first     = gov.first
+      db_gov.last      = gov.last
+      db_gov.middle    = gov.middle
+      db_gov.nickname  = gov.nickname
+      db_gov.suffix    = gov.suffix
     end
   end
 

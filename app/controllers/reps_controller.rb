@@ -9,6 +9,8 @@ class RepsController < ApplicationController
             :democrat,
             :lower,
             :upper,
+            :legislators,
+            :governors,
             type: :boolean,
             only: :index
 
@@ -17,7 +19,7 @@ class RepsController < ApplicationController
     if geo_params.keys.any?
       geo = GeoLookup.new(geo_params.to_h.symbolize_keys)
       @district = geo.congressional_district
-      @reps     = apply_scopes(geo.find_reps).each do |rep|
+      @reps     = apply_scopes(geo.find_legislators_only).each do |rep|
         rep.sort_offices(geo.coordinates.latlon)
       end
     elsif scopes_present?
