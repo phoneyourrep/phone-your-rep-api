@@ -12,7 +12,7 @@ class OfficeLocation < ApplicationRecord
   has_one    :v_card, dependent: :destroy
   has_many   :issues
 
-  geocoded_by :full_address
+  geocoded_by :geocoder_address
 
   after_validation :geocode, if: :needs_geocoding?
 
@@ -82,6 +82,14 @@ class OfficeLocation < ApplicationRecord
 
   def city_state_zip
     [city, state, zip].join(' ')
+  end
+
+  def geocoder_address
+    if rep.is_a?(Governor)
+      city_state_zip
+    else
+      full_address
+    end
   end
 
   def calculate_distance(coordinates)
