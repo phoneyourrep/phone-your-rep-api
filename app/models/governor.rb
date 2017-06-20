@@ -18,7 +18,7 @@ class Governor < Rep
   end
 
   def set_role
-    self.role = 'United States Governor'
+    self.role = 'Governor'
   end
 
   def set_level
