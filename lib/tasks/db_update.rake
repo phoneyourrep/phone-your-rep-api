@@ -38,6 +38,12 @@ namespace :db do
                         klass: DbPyrUpdate::Reps
       end
 
+      desc 'Scrape and update current Governors from NGA website'
+      task :governors do
+        update = DbPyrUpdate::Governors.new
+        update.call
+      end
+
       desc 'Download updated legislators-social-media.yaml'
       task :fetch_socials do
         source = get_source(

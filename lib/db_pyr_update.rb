@@ -1,12 +1,45 @@
 # frozen_string_literal: true
 
 require_relative '../config/environment'
+require 'governor_scraper'
 
 module DbPyrUpdate
   class Base
     def initialize(file_name)
       File.open file_name do |file|
         @reps = YAML.safe_load(file)
+      end
+    end
+  end
+
+  class Governors
+    def call
+      GovernorScraper.scrape
+      GovernorScraper.governors.each do |gov|
+        state  = State.find_by(name: gov.state_name)
+        db_gov = Governor.find_or_create_by(official_full: gov.official_full, state: state)
+        db_gov.photo_url = gov.photo_url
+        db_gov.url       = gov.url
+        db_gov.party     = gov.party
+        db_gov.first     = gov.first
+        db_gov.last      = gov.last
+        db_gov.middle    = gov.middle
+        db_gov.nickname  = gov.nickname
+        db_gov.suffix    = gov.suffix
+        db_gov.add_photo
+        db_gov.save
+        gov.office_locations.each do |off|
+          o = OfficeLocation.find_or_create_by(rep: db_gov, address: off[:address])
+          o.city        = off[:city]
+          o.state       = off[:state]
+          o.zip         = off[:zip]
+          o.phone       = off[:phone]
+          o.fax         = off[:fax]
+          o.office_type = off[:office_type]
+          o.save
+          o.add_v_card
+        end
+        puts "Updated #{db_gov.official_full}"
       end
     end
   end

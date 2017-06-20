@@ -61,7 +61,7 @@ describe 'Reps API' do
     end
 
     let! :rep_two do
-      create :congressional_rep, bioguide_id: 'rep_two', state: state
+      create :governor, bioguide_id: 'rep_two', state: state
     end
 
     let! :rep_three { create :congressional_rep }

@@ -21,7 +21,12 @@ class GovernorScraper
     end
 
     def state
-      @_state ||= raw.css('.governors-state h3').first.text
+      state = raw.css('.governors-state h3').first.text
+      case state
+      when 'Northern Mariana Islands' then 'Commonwealth of the ' + state
+      when 'Virgin Islands' then 'United States ' + state
+      else state
+      end
     end
   end
 end

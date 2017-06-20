@@ -24,6 +24,11 @@ FactoryGirl.define do
     state
   end
 
+  factory :governor do
+    official_full 'Official Full'
+    state
+  end
+
   factory :office_location { office_id 'office_id' }
   factory :v_card
   factory :state { state_code 'state_code' }

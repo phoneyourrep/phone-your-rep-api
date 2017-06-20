@@ -26,6 +26,8 @@ class Rep < ApplicationRecord
     where(active: true).includes(:district, :state, :active_office_locations)
   }
 
+  scope :legislators, -> { where.not type: 'Governor' }
+
   scope :republican, -> { where party: 'Republican' }
 
   scope :democrat, -> { where party: 'Democrat' }

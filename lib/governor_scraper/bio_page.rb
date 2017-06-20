@@ -79,6 +79,10 @@ class GovernorScraper
       @_fax ||= address_panel.css('p')[5]&.text&.delete("\t\nFax:")&.strip&.sub('/', '-')
     end
 
+    def office_type
+      'capitol'
+    end
+
     def alt_address_panel
       @_alt_address_panel ||= raw.css('address')[2] if alt_office_present?
     end
@@ -123,6 +127,15 @@ class GovernorScraper
     def alt_fax
       if alt_office_present?
         @_alt_fax ||= alt_address_panel.css('p')[5]&.text&.delete("\t\nFax:")&.strip&.sub('/', '-')
+      end
+    end
+
+    def alt_office_type
+      return unless alt_office_present?
+      if alt_state == 'DC'
+        'dc'
+      else
+        'district'
       end
     end
   end
