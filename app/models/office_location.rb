@@ -39,7 +39,7 @@ class OfficeLocation < ApplicationRecord
     self.office_id = if office_type == 'capitol'
                        "#{official_id}-capitol"
                      else
-                       "#{official_id}-#{city}"
+                       "#{official_id}-#{city.downcase}"
                      end
   end
 

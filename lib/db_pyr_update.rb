@@ -28,13 +28,14 @@ module DbPyrUpdate
     end
 
     def update_office(db_gov, off)
-      o = OfficeLocation.find_or_create_by(rep: db_gov, address: off[:address])
+      o = OfficeLocation.find_or_create_by(
+        rep: db_gov, address: off[:address], office_type: off[:office_type]
+      )
       o.city        = off[:city]
       o.state       = off[:state]
       o.zip         = off[:zip]
       o.phone       = off[:phone]
       o.fax         = off[:fax]
-      o.office_type = off[:office_type]
       o.active      = true
       o.save
       o.add_v_card
