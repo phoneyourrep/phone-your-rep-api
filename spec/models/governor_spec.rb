@@ -2,10 +2,9 @@
 
 require 'rails_helper'
 
-describe CongressionalRep, type: :model do
+describe Governor, type: :model do
   before :all do
-    @state        = create :state
-    @district     = create :congressional_district, state: @state
+    @state        = create :state, abbr: 'VT'
     @office_one   = create :office_location, active: false
     @office_two   = create :office_location, latitude: 4.0, longitude: 4.0
     @office_three = create :office_location, latitude: 2.0, longitude: 2.0
@@ -13,32 +12,28 @@ describe CongressionalRep, type: :model do
     @avatar       = create :avatar
 
     @rep = create(
-      :congressional_rep,
-      bioguide_id: 'S000033',
-      official_full: 'Bernard Sanders',
+      :governor,
+      official_full: 'Phil Scott',
+      first: 'Phil',
+      last: 'Scott',
       state: @state,
-      district: @district,
       office_locations: [@office_one, @office_two, @office_three, @office_four],
       avatar: @avatar
     )
   end
 
-  after(:all) { [Rep, State, District, OfficeLocation, Avatar].each(&:destroy_all) }
-
-  it 'has a bioguide_id' do
-    expect(@rep.bioguide_id).to eq('S000033')
-  end
+  after(:all) { [Rep, State, OfficeLocation, Avatar].each(&:destroy_all) }
 
   it 'has an official full name' do
-    expect(@rep.official_full).to eq('Bernard Sanders')
+    expect(@rep.official_full).to eq('Phil Scott')
+  end
+
+  it 'constructs an official_id based on the name and state' do
+    expect(@rep.official_id).to eq('VT-phil-scott')
   end
 
   it 'belongs_to a state' do
     expect(@rep.state).to eq(@state)
-  end
-
-  it 'belongs_to a district' do
-    expect(@rep.district).to eq(@district)
   end
 
   it 'has many office_locations' do
@@ -63,8 +58,8 @@ describe CongressionalRep, type: :model do
     expect(@rep.avatar).to be(@avatar)
   end
 
-  it 'has a photo_url based on its bioguide_id' do
-    photo_url = 'https://phoneyourrep.github.io/images/congress/450x550/S000033.jpg'
+  it 'has constructs a photo_url based on its bioguide_id' do
+    photo_url = 'https://www.nga.org/files/live/sites/NGA/files/images/govportraits/VT-PhilScott.jpg'
 
     expect(@rep.photo_url).to eq(photo_url)
   end
@@ -80,7 +75,7 @@ describe CongressionalRep, type: :model do
   end
 
   it '#fetch_avatar_data creates an avatar if one does not already exist' do
-    rep = create :congressional_rep
+    rep = create :governor
     expect(rep.avatar).to be(nil)
     rep.add_photo
     expect(rep.avatar).to be_a(Avatar)
@@ -95,20 +90,10 @@ describe CongressionalRep, type: :model do
   end
 
   it '#add_photo ensures the photo attribute is nil if #photo_url does not return valid data' do
-    rep = create :congressional_rep, bioguide_id: 'not-found'
+    rep = create :governor, bioguide_id: 'not-found'
     rep.add_photo
 
     expect(rep.photo).to be(nil)
-  end
-
-  it '#district_code returns the district#code when a district is present' do
-    expect(@rep.district_code).to eq(@district.code)
-  end
-
-  it '#district_code returns nil when a district is not present' do
-    @rep.district = nil
-
-    expect(@rep.district_code).to be(nil)
   end
 
   context '#sorted_offices_array' do

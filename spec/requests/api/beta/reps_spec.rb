@@ -31,7 +31,7 @@ describe 'Reps Beta API' do
   end
 
   it 'sends a list of generated reps' do
-    create_list(:rep, 10)
+    create_list(:congressional_rep, 10)
     get '/api/beta/reps?generate=true'
 
     expect(response).to be_success
@@ -41,7 +41,7 @@ describe 'Reps Beta API' do
   end
 
   it 'retrieves a specific rep' do
-    rep = create :rep
+    rep = create :congressional_rep
     get "/api/beta/reps/#{rep.bioguide_id}"
 
     expect(response).to be_success
@@ -52,36 +52,47 @@ describe 'Reps Beta API' do
     let! :state { create :state }
     let! :congressional_district { create :congressional_district, full_code: '1', state: state }
     let! :congressional_district_geom { create :congressional_district_geom, full_code: '1' }
-    let! :rep_one { create :rep, bioguide_id: 'rep_one', district: congressional_district }
-    let! :rep_two { create :rep, bioguide_id: 'rep_two', state: state }
-    let! :rep_three { create :rep }
+
+    let! :rep_one do
+      create :congressional_rep, bioguide_id: 'rep_one', district: congressional_district
+    end
+
+    let! :rep_two do
+      create :congressional_rep, bioguide_id: 'rep_two', state: state
+    end
+
+    let! :rep_three { create :congressional_rep }
+
+    let! :governor { create :governor, state: state }
 
     it 'with coordinates retrieves the right set of reps' do
       get '/api/beta/reps?lat=41.0&long=-100.0'
 
       expect(response).to be_success
-      expect(json['total_records']).to eq(2)
-      expect(json['reps'].length).to eq(2)
+      expect(json['total_records']).to eq(3)
+      expect(json['reps'].length).to eq(3)
 
-      bioguide_ids = json['reps'].map { |rep| rep['bioguide_id'] }
+      official_ids = json['reps'].map { |rep| rep['official_id'] }
 
-      expect(bioguide_ids).to include(rep_one.bioguide_id)
-      expect(bioguide_ids).to include(rep_two.bioguide_id)
-      expect(bioguide_ids).not_to include(rep_three.bioguide_id)
+      expect(official_ids).to include(rep_one.official_id)
+      expect(official_ids).to include(rep_two.official_id)
+      expect(official_ids).to include(governor.official_id)
+      expect(official_ids).not_to include(rep_three.official_id)
     end
 
     it 'with an address retrieves the right set of reps' do
       get '/api/beta/reps?address=Cozad%20Nebraska'
 
       expect(response).to be_success
-      expect(json['total_records']).to eq(2)
-      expect(json['reps'].length).to eq(2)
+      expect(json['total_records']).to eq(3)
+      expect(json['reps'].length).to eq(3)
 
-      bioguide_ids = json['reps'].map { |rep| rep['bioguide_id'] }
+      official_ids = json['reps'].map { |rep| rep['official_id'] }
 
-      expect(bioguide_ids).to include(rep_one.bioguide_id)
-      expect(bioguide_ids).to include(rep_two.bioguide_id)
-      expect(bioguide_ids).not_to include(rep_three.bioguide_id)
+      expect(official_ids).to include(rep_one.official_id)
+      expect(official_ids).to include(rep_two.official_id)
+      expect(official_ids).to include(governor.official_id)
+      expect(official_ids).not_to include(rep_three.official_id)
     end
 
     it 'returns an empty array when lat and long params are given but are empty' do

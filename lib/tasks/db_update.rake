@@ -38,6 +38,12 @@ namespace :db do
                         klass: DbPyrUpdate::Reps
       end
 
+      desc 'Scrape and update current Governors from NGA website'
+      task :governors do
+        update = DbPyrUpdate::Governors.new
+        update.call
+      end
+
       desc 'Download updated legislators-social-media.yaml'
       task :fetch_socials do
         source = get_source(
@@ -102,7 +108,7 @@ namespace :db do
       end
 
       desc 'Update all reps and office_locations in database from default yaml files'
-      task all: %i[retired_reps current_reps socials office_locations] do
+      task all: %i[retired_reps current_reps socials office_locations governors] do
         if ENV['qr_codes'] == 'true' && Rails.env.development?
           Rake::Task['pyr:qr_codes:create'].invoke
         end
