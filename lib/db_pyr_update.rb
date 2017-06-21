@@ -40,15 +40,17 @@ module DbPyrUpdate
     end
 
     def update_basic_info(db_gov, gov)
-      db_gov.photo_url = gov.photo_url
-      db_gov.url       = gov.url
-      db_gov.party     = gov.party
-      db_gov.first     = gov.first
-      db_gov.last      = gov.last
-      db_gov.middle    = gov.middle
-      db_gov.nickname  = gov.nickname
-      db_gov.suffix    = gov.suffix
-      db_gov.twitter   = gov.twitter
+      db_gov.photo_url    = gov.photo_url
+      db_gov.url          = gov.url
+      db_gov.party        = gov.party
+      db_gov.first        = gov.first
+      db_gov.last         = gov.last
+      db_gov.middle       = gov.middle
+      db_gov.nickname     = gov.nickname
+      db_gov.suffix       = gov.suffix
+      db_gov.twitter      = gov.twitter
+      db_gov.facebook     = gov.facebook
+      db_gov.contact_form = gov.contact_form
     end
   end
 
