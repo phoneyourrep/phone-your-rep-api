@@ -28,9 +28,8 @@ module DbPyrUpdate
 
     def update_office(db_gov, off)
       o = OfficeLocation.find_or_create_by(
-        rep: db_gov, address: off[:address], office_type: off[:office_type]
+        rep: db_gov, address: off[:address], office_type: off[:office_type], city: off[:city]
       )
-      o.city        = off[:city]
       o.state       = off[:state]
       o.zip         = off[:zip]
       o.phone       = off[:phone]
