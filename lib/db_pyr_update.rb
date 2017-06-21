@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require_relative '../config/environment'
-require 'governor_scraper'
 
 module DbPyrUpdate
   class Base
@@ -14,8 +13,8 @@ module DbPyrUpdate
 
   class Governors
     def call
-      GovernorScraper.scrape
-      GovernorScraper.governors.each do |gov|
+      Governator.scrape!
+      Governator.governors.each do |gov|
         state  = State.find_by(name: gov.state_name)
         db_gov = Governor.find_or_create_by(official_full: gov.official_full, state: state)
         update_basic_info(db_gov, gov)
@@ -50,6 +49,7 @@ module DbPyrUpdate
       db_gov.middle    = gov.middle
       db_gov.nickname  = gov.nickname
       db_gov.suffix    = gov.suffix
+      db_gov.twitter   = gov.twitter
     end
   end
 
