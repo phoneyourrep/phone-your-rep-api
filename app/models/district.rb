@@ -9,6 +9,8 @@ class District < ApplicationRecord
   has_many :zcta_districts, dependent: :destroy
   has_many :zctas, through: :zcta_districts
 
+  validates :state, presence: true
+
   before_save :set_level
 
   is_impressionable counter_cache: true, column_name: :requests

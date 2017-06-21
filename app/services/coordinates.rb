@@ -77,7 +77,7 @@ class Coordinates
   end
 
   def congressional_district
-    @_congressional_district ||= congressional_district_geom.district
+    @_congressional_district ||= congressional_district_geom&.district
   end
 
   def state_lower_district
@@ -90,7 +90,7 @@ class Coordinates
 
   def state
     raise StandardError, 'Districts found have mismatching states' if mismatching_states?
-    @_state ||= districts[:congress].state
+    @_state ||= districts[:congress]&.state
   end
 
   def mismatching_states?

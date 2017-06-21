@@ -22,12 +22,12 @@ describe GeoLookup do
   let!(:inactive_rep) { create :congressional_rep, active: false }
   let!(:congressional_district_geom) { create :congressional_district_geom, full_code: '1' }
 
-  let!(:congressional_district) do
-    create :congressional_district, full_code: '1', state_code: '1', reps: [rep_one, inactive_rep]
-  end
-
   let!(:state) do
     create :state, state_code: '1', reps: [rep_two, inactive_rep]
+  end
+
+  let!(:congressional_district) do
+    create :congressional_district, full_code: '1', state_code: '1', reps: [rep_one, inactive_rep]
   end
 
   after(:all) do

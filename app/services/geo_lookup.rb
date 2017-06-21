@@ -27,7 +27,7 @@ class GeoLookup
 
   # Find the reps in the db associated to location, and sort the offices by distance.
   def find_reps
-    return Rep.none if districts.blank?
+    return Rep.none if state.blank?
     self.reps = Rep.by_location(
       state: state, district: districts.values.compact
     ).includes(:office_locations)

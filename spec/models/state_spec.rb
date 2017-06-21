@@ -5,13 +5,13 @@ require 'rails_helper'
 describe State, type: :model do
   before(:all) { [State, District, Rep].each(&:destroy_all) }
 
-  let!(:district_one) { create :district, state_code: '1' }
-  let!(:district_two) { create :district, state_code: '2' }
-  let!(:rep_one) { create :rep }
-  let!(:rep_two) { create :rep }
   let!(:state_geom_one) { create :state_geom, state_code: '1' }
   let!(:state_geom_two) { create :state_geom, state_code: '2' }
   let!(:state) { create :state, state_code: '1', reps: [rep_one, rep_two] }
+  let!(:district_one) { create :district, state_code: '1' }
+  let!(:district_two) { create :district }
+  let!(:rep_one) { create :rep }
+  let!(:rep_two) { create :rep }
 
   it 'has many districts' do
     expect(state.districts).to be_a(ActiveRecord::Relation)

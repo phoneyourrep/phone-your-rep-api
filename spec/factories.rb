@@ -32,8 +32,8 @@ FactoryGirl.define do
   factory :office_location { office_id 'office_id' }
   factory :v_card
   factory :state { state_code 'state_code' }
-  factory :congressional_district
-  factory :district
+  factory :congressional_district { state }
+  factory :district { state }
   factory :avatar
   factory :impression
   factory :zcta
