@@ -1,5 +1,5 @@
 ---
-total_records: 2009
+total_records: 2008
 _links:
   self:
     href: https://phone-your-rep.herokuapp.com/api/beta/office_locations
@@ -815,8 +815,8 @@ office_locations:
   phone: 907-465-3500
   fax: 907-465-3532
   hours: 
-  latitude: 38.8942557
-  longitude: -76.9997311
+  latitude: 58.48
+  longitude: -134.15
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/AK-bill-walker-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/AK_bill_walker_capitol.png
@@ -839,8 +839,8 @@ office_locations:
   phone: 334-242-7100
   fax: 334-353-0004
   hours: 
-  latitude: 32.3774333
-  longitude: -86.3005881
+  latitude: 32.3777405
+  longitude: -86.2990026
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/AL-kay-ivey-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/AL_kay_ivey_capitol.png
@@ -863,8 +863,8 @@ office_locations:
   phone: 501-682-2345
   fax: 501-682-1382
   hours: 
-  latitude: 40.7774076
-  longitude: -111.8881773
+  latitude: 34.7499657
+  longitude: -92.2852014
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/AR-asa-hutchinson-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/AR_asa_hutchinson_capitol.png
@@ -887,8 +887,8 @@ office_locations:
   phone: 202-220-1340
   fax: 202-220-1344
   hours: 
-  latitude: 38.9274265
-  longitude: -77.0090596
+  latitude: 38.912068
+  longitude: -77.0190228
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/AR-asa-hutchinson-washington
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/AR_asa_hutchinson_washington.png
@@ -911,8 +911,8 @@ office_locations:
   phone: 011-684/633-4116
   fax: 011-684/633-2269
   hours: 
-  latitude: 38.8975917
-  longitude: -77.0386685
+  latitude: -14.2782029
+  longitude: -170.6821998
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/AS-lolo-matalasi-moliga-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/AS_lolo_matalasi_moliga_capitol.png
@@ -935,8 +935,8 @@ office_locations:
   phone: 602-542-4331
   fax: 602-542-7601
   hours: 
-  latitude: 33.4481116
-  longitude: -112.0970839
+  latitude: 33.4462721
+  longitude: -112.0893682
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/AZ-doug-ducey-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/AZ_doug_ducey_capitol.png
@@ -7082,7 +7082,7 @@ office_locations:
   latitude: 38.8928318
   longitude: -77.0043625
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/C001056-capitol
-  downloads: 34
+  downloads: 35
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/C001056_capitol.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/C001056-dallas
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/C001056
@@ -10559,8 +10559,8 @@ office_locations:
   phone: 916-445-2841
   fax: 916-558-3160
   hours: 
-  latitude: 44.9384725
-  longitude: -123.030478
+  latitude: 38.5824933
+  longitude: -121.4941738
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/CA-edmund-g-brown-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/CA_edmund_g_brown_capitol.png
@@ -10583,8 +10583,8 @@ office_locations:
   phone: 202-624-5270
   fax: 202-624-5280
   hours: 
-  latitude: 38.9274265
-  longitude: -77.0090596
+  latitude: 38.912068
+  longitude: -77.0190228
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/CA-edmund-g-brown-washington
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/CA_edmund_g_brown_washington.png
@@ -10607,8 +10607,8 @@ office_locations:
   phone: 303-866-2471
   fax: 303-866-2003
   hours: 
-  latitude: 34.7461489
-  longitude: -92.2895585
+  latitude: 39.7312095
+  longitude: -104.9826965
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/CO-john-hickenlooper-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/CO_john_hickenlooper_capitol.png
@@ -10631,8 +10631,8 @@ office_locations:
   phone: 800-406-1527
   fax: 860-524-7395
   hours: 
-  latitude: 41.5581416
-  longitude: -72.9975967
+  latitude: 41.743111
+  longitude: -72.7038047
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/CT-dan-malloy-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/CT_dan_malloy_capitol.png
@@ -10655,8 +10655,8 @@ office_locations:
   phone: 202-347-4535
   fax: 202-347-7151
   hours: 
-  latitude: 38.9274265
-  longitude: -77.0090596
+  latitude: 38.912068
+  longitude: -77.0190228
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/CT-dan-malloy-washington
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/CT_dan_malloy_washington.png
@@ -13224,8 +13224,8 @@ office_locations:
   phone: 302-744-4101
   fax: 302-739-2775
   hours: 
-  latitude: 39.1569207
-  longitude: -75.5213061
+  latitude: 39.2081349
+  longitude: -75.4577775
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/DE-john-carney-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/DE_john_carney_capitol.png
@@ -15312,8 +15312,8 @@ office_locations:
   phone: 850-488-7146
   fax: 850-487-0801
   hours: 
-  latitude: 30.4380598
-  longitude: -84.2820709
+  latitude: 30.3848991
+  longitude: -84.2291968
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/FL-rick-scott-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/FL_rick_scott_capitol.png
@@ -15336,8 +15336,8 @@ office_locations:
   phone: 202-624-5885
   fax: 202-624-5886
   hours: 
-  latitude: 47.6045278
-  longitude: -122.5471223
+  latitude: 38.912068
+  longitude: -77.0190228
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/FL-rick-scott-washington
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/FL_rick_scott_washington.png
@@ -16515,7 +16515,7 @@ office_locations:
   latitude: 40.7550353
   longitude: -73.9718588
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/G000555-new_york
-  downloads: 241
+  downloads: 242
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/G000555_new_york.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/G000555-rochester
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/G000555
@@ -17952,8 +17952,8 @@ office_locations:
   phone: 404-656-1776
   fax: 404-657-7332
   hours: 
-  latitude: 34.7466159
-  longitude: -92.2887955
+  latitude: 33.7476898
+  longitude: -84.3880433
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/GA-nathan-deal-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/GA_nathan_deal_capitol.png
@@ -17976,8 +17976,8 @@ office_locations:
   phone: 202-652-2299
   fax: 202-347-1142
   hours: 
-  latitude: 32.783847
-  longitude: -96.7983453
+  latitude: 38.8951382
+  longitude: -77.0226217
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/GA-nathan-deal-washington
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/GA_nathan_deal_washington.png
@@ -18000,8 +18000,8 @@ office_locations:
   phone: 671-472-8931
   fax: 671-477-4826
   hours: 
-  latitude: 42.6526528
-  longitude: -73.7574293
+  latitude: 13.475721
+  longitude: 144.746085
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/GU-eddie-baza-calvo-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/GU_eddie_baza_calvo_capitol.png
@@ -18024,8 +18024,8 @@ office_locations:
   phone: 202-434-4855
   fax: 202-434-4856
   hours: 
-  latitude: -34.925812
-  longitude: 138.6049997
+  latitude: 38.912068
+  longitude: -77.0190228
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/GU-eddie-baza-calvo-washington
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/GU_eddie_baza_calvo_washington.png
@@ -20736,8 +20736,8 @@ office_locations:
   phone: 808-586-0034
   fax: 808-586-0006
   hours: 
-  latitude: 42.6526528
-  longitude: -73.7574293
+  latitude: 21.3136151
+  longitude: -157.8480364
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/HI-david-ige-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/HI_david_ige_capitol.png
@@ -21000,8 +21000,8 @@ office_locations:
   phone: 515-281-5211
   fax: 515-281-6611
   hours: 
-  latitude: 44.9384725
-  longitude: -123.030478
+  latitude: 41.5910453
+  longitude: -93.6027866
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/IA-kim-reynolds-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/IA_kim_reynolds_capitol.png
@@ -21024,8 +21024,8 @@ office_locations:
   phone: 208-334-2100
   fax: 208-334-2175
   hours: 
-  latitude: 38.2541959
-  longitude: -85.7623158
+  latitude: 43.6624385
+  longitude: -116.1630431
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/ID-c-l-butch-otter-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/ID_c_l_butch_otter_capitol.png
@@ -21048,8 +21048,8 @@ office_locations:
   phone: 217-782-0244
   fax: 217-524-4049
   hours: 
-  latitude: 43.2063171
-  longitude: -71.538038
+  latitude: 39.7999871
+  longitude: -89.654138
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/IL-bruce-rauner-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/IL_bruce_rauner_capitol.png
@@ -21072,8 +21072,8 @@ office_locations:
   phone: 202-624-7762
   fax: 202-724-0689
   hours: 
-  latitude: 32.783847
-  longitude: -96.7983453
+  latitude: 38.912068
+  longitude: -77.0190228
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/IL-bruce-rauner-washington
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/IL_bruce_rauner_washington.png
@@ -21096,8 +21096,8 @@ office_locations:
   phone: 317-232-4567
   fax: 317-232-3443
   hours: 
-  latitude: 44.2625716
-  longitude: -72.5805276
+  latitude: 39.7713425
+  longitude: -86.1573709
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/IN-eric-holcomb-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/IN_eric_holcomb_capitol.png
@@ -24408,8 +24408,8 @@ office_locations:
   phone: 785-296-3232
   fax: 785-296-7973
   hours: 
-  latitude: 38.8845329
-  longitude: -77.0258575
+  latitude: 39.0397435
+  longitude: -95.6799816
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/KS-sam-brownback-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/KS_sam_brownback_capitol.png
@@ -24456,8 +24456,8 @@ office_locations:
   phone: 502-564-2611
   fax: 502-564-0437
   hours: 
-  latitude: 37.7167605
-  longitude: -122.4589284
+  latitude: 38.2009055
+  longitude: -84.8732835
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/KY-matt-bevin-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/KY_matt_bevin_capitol.png
@@ -24480,8 +24480,8 @@ office_locations:
   phone: 202-220-1350
   fax: 
   hours: 
-  latitude: 38.9274265
-  longitude: -77.0090596
+  latitude: 38.912068
+  longitude: -77.0190228
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/KY-matt-bevin-washington
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/KY_matt_bevin_washington.png
@@ -31203,11 +31203,35 @@ office_locations:
   phone: 617-725-4005
   fax: 617-727-9725
   hours: 
-  latitude: 42.3587596
-  longitude: -71.063803
+  latitude: 42.2572472
+  longitude: -71.1125435
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/MA-charlie-baker-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/MA_charlie_baker_capitol.png
+- self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/MA-charlie-baker-washington
+  rep: https://phone-your-rep.herokuapp.com/api/beta/reps/MA-charlie-baker
+  active: true
+  official_id: MA-charlie-baker
+  level: state
+  office_id: MA-charlie-baker-washington
+  bioguide_id: 
+  state_leg_id: 
+  office_type: dc
+  distance: 
+  building: 
+  address: 444 North Capitol Street
+  suite: Suite 208
+  city: Washington
+  state: DC
+  zip: '20001'
+  phone: 202-624-7713
+  fax: 202-624-7714
+  hours: 
+  latitude: 38.912068
+  longitude: -77.0190228
+  v_card_link: https://phone-your-rep.herokuapp.com/v_cards/MA-charlie-baker-washington
+  downloads: 1
+  qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/MA_charlie_baker_washington.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/MA-charlie-baker-washington
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/MA-charlie-baker
   active: true
@@ -31227,10 +31251,10 @@ office_locations:
   phone: 202-624-7713
   fax: 202-624-7714
   hours: 
-  latitude: 29.7628028
-  longitude: -95.3690073
+  latitude: 47.7510741
+  longitude: -120.7401386
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/MA-charlie-baker-washington
-  downloads: 1
+  downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/MA_charlie_baker_washington.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/MD-larry-hogan-capitol
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/MD-larry-hogan
@@ -31251,8 +31275,8 @@ office_locations:
   phone: 410-974-3901
   fax: 410-974-3275
   hours: 
-  latitude: 40.3399187
-  longitude: -111.7177476
+  latitude: 38.979434
+  longitude: -76.4919706
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/MD-larry-hogan-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/MD_larry_hogan_capitol.png
@@ -31275,8 +31299,8 @@ office_locations:
   phone: 202-624-1430
   fax: 202-783-3061
   hours: 
-  latitude: 38.9274265
-  longitude: -77.0090596
+  latitude: 38.912068
+  longitude: -77.0190228
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/MD-larry-hogan-washington
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/MD_larry_hogan_washington.png
@@ -31299,8 +31323,8 @@ office_locations:
   phone: 207-287-3531
   fax: 207-287-1034
   hours: 
-  latitude: 44.3082087
-  longitude: -69.7810512
+  latitude: 44.3071455
+  longitude: -69.7816395
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/ME-paul-lepage-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/ME_paul_lepage_capitol.png
@@ -31323,8 +31347,8 @@ office_locations:
   phone: 517-373-3400
   fax: 517-335-6863
   hours: 
-  latitude: 33.6455771
-  longitude: -84.0160185
+  latitude: 42.68
+  longitude: -84.5
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/MI-rick-snyder-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/MI_rick_snyder_capitol.png
@@ -31347,8 +31371,8 @@ office_locations:
   phone: 202-624-5840
   fax: 202-624-5841
   hours: 
-  latitude: 38.9274265
-  longitude: -77.0090596
+  latitude: 38.912068
+  longitude: -77.0190228
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/MI-rick-snyder-washington
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/MI_rick_snyder_washington.png
@@ -31371,8 +31395,8 @@ office_locations:
   phone: 651-201-3400
   fax: 651-797-1850
   hours: 
-  latitude: 44.95515
-  longitude: -93.102233
+  latitude: 44.9527456
+  longitude: -93.102088
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/MN-mark-dayton-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/MN_mark_dayton_capitol.png
@@ -31395,8 +31419,8 @@ office_locations:
   phone: 202-236-3717
   fax: 
   hours: 
-  latitude: 40.669217
-  longitude: -73.9846192
+  latitude: 38.9052763
+  longitude: -76.9815877
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/MN-mark-dayton-washington
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/MN_mark_dayton_washington.png
@@ -31419,8 +31443,8 @@ office_locations:
   phone: 573-751-3222
   fax: 573-526-3291
   hours: 
-  latitude: 38.8544271
-  longitude: -76.9384749
+  latitude: 38.5
+  longitude: -92.15
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/MO-eric-greitens-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/MO_eric_greitens_capitol.png
@@ -31443,8 +31467,8 @@ office_locations:
   phone: 670-664-2280
   fax: 670-664-2211
   hours: 
-  latitude: 40.7215805
-  longitude: -73.9404929
+  latitude: 15.1850483
+  longitude: 145.7467259
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/MP-ralph-deleon-guerrero-torres-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/MP_ralph_deleon_guerrero_torres_capitol.png
@@ -31467,8 +31491,8 @@ office_locations:
   phone: 601-359-3150
   fax: 601-359-3741
   hours: 
-  latitude: -1.284041
-  longitude: 34.437787
+  latitude: 32.3503996
+  longitude: -90.1529468
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/MS-phil-bryant-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/MS_phil_bryant_capitol.png
@@ -31491,8 +31515,8 @@ office_locations:
   phone: 406-444-3111
   fax: 406-444-5529
   hours: 
-  latitude: 44.9384725
-  longitude: -123.030478
+  latitude: 46.53
+  longitude: -112.16
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/MT-steve-bullock-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/MT_steve_bullock_capitol.png
@@ -32451,8 +32475,8 @@ office_locations:
   phone: 919-814-2000
   fax: 919-733-2120
   hours: 
-  latitude: 43.5865169
-  longitude: -71.2054878
+  latitude: 35.67
+  longitude: -78.66
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/NC-roy-cooper-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/NC_roy_cooper_capitol.png
@@ -32475,8 +32499,8 @@ office_locations:
   phone: 701-328-2200
   fax: 701-328-2205
   hours: 
-  latitude: 40.462731
-  longitude: -86.1245481
+  latitude: 46.8148517
+  longitude: -100.778067
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/ND-doug-burgum-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/ND_doug_burgum_capitol.png
@@ -32523,8 +32547,8 @@ office_locations:
   phone: 603-271-2121
   fax: 603-271-7640
   hours: 
-  latitude: 43.2069959
-  longitude: -71.5381999
+  latitude: 43.2086343
+  longitude: -71.5486562
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/NH-chris-sununu-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/NH_chris_sununu_capitol.png
@@ -32547,8 +32571,8 @@ office_locations:
   phone: 609-292-6000
   fax: 609-777-2922
   hours: 
-  latitude: -4.0686791
-  longitude: 39.681657
+  latitude: 40.2207029
+  longitude: -74.760833
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/NJ-christopher-christie-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/NJ_christopher_christie_capitol.png
@@ -32571,8 +32595,8 @@ office_locations:
   phone: 202-638-0631
   fax: 202-638-2296
   hours: 
-  latitude: 40.5728846
-  longitude: -89.6463306
+  latitude: 38.912068
+  longitude: -77.0190228
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/NJ-christopher-christie-washington
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/NJ_christopher_christie_washington.png
@@ -32595,8 +32619,8 @@ office_locations:
   phone: 505-476-2200
   fax: 505-476-2226
   hours: 
-  latitude: 30.2746652
-  longitude: -97.7403505
+  latitude: 35.7135437
+  longitude: -105.8407722
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/NM-susana-martinez-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/NM_susana_martinez_capitol.png
@@ -32619,8 +32643,8 @@ office_locations:
   phone: 202-220-1348
   fax: 202-220-1349
   hours: 
-  latitude: 40.5728846
-  longitude: -89.6463306
+  latitude: 38.912068
+  longitude: -77.0190228
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/NM-susana-martinez-washington
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/NM_susana_martinez_washington.png
@@ -32643,8 +32667,8 @@ office_locations:
   phone: 775-684-5670
   fax: 775-684-5683
   hours: 
-  latitude: 38.8899389
-  longitude: -77.0090505
+  latitude: 39.1297282
+  longitude: -119.6730939
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/NV-brian-sandoval-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/NV_brian_sandoval_capitol.png
@@ -32667,8 +32691,8 @@ office_locations:
   phone: 202-624-5405
   fax: 202-624-8181
   hours: 
-  latitude: -37.809305
-  longitude: 144.9824061
+  latitude: 38.912068
+  longitude: -77.0190228
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/NV-brian-sandoval-washington
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/NV_brian_sandoval_washington.png
@@ -32691,10 +32715,10 @@ office_locations:
   phone: 518-474-8390
   fax: 
   hours: 
-  latitude: 44.9384725
-  longitude: -123.030478
+  latitude: 42.6516306
+  longitude: -73.7550307
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/NY-andrew-cuomo-capitol
-  downloads: 0
+  downloads: 2
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/NY_andrew_cuomo_capitol.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/NY-andrew-cuomo-washington
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/NY-andrew-cuomo
@@ -32715,8 +32739,8 @@ office_locations:
   phone: 202-434-7100
   fax: 202-434-7110
   hours: 
-  latitude: 40.5728846
-  longitude: -89.6463306
+  latitude: 38.912068
+  longitude: -77.0190228
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/NY-andrew-cuomo-washington
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/NY_andrew_cuomo_washington.png
@@ -32931,8 +32955,8 @@ office_locations:
   phone: 614-466-3555
   fax: 614-466-9354
   hours: 
-  latitude: 39.9604462
-  longitude: -83.0011738
+  latitude: 39.9602601
+  longitude: -83.0092803
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/OH-john-kasich-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/OH_john_kasich_capitol.png
@@ -32955,8 +32979,8 @@ office_locations:
   phone: 202-624-5844
   fax: 202-624-5847
   hours: 
-  latitude: 29.7901185
-  longitude: -95.2025908
+  latitude: 38.912068
+  longitude: -77.0190228
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/OH-john-kasich-washington
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/OH_john_kasich_washington.png
@@ -32979,8 +33003,8 @@ office_locations:
   phone: 405-521-2342
   fax: 405-521-3353
   hours: 
-  latitude: 34.0016006
-  longitude: -118.4683835
+  latitude: 35.5208639
+  longitude: -97.5057737
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/OK-mary-fallin-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/OK_mary_fallin_capitol.png
@@ -33003,37 +33027,11 @@ office_locations:
   phone: 503-378-4582
   fax: 503-378-8970
   hours: 
-  latitude: 44.9384725
-  longitude: -123.030478
+  latitude: 44.9464822
+  longitude: -123.0018941
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/OR-kate-brown-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/OR_kate_brown_capitol.png
-- self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/OR-kate-brown-washington%20d.c.
-  rep: https://phone-your-rep.herokuapp.com/api/beta/reps/OR-kate-brown
-  active: true
-  official_id: OR-kate-brown
-  level: state
-  office_id: OR-kate-brown-washington d.c.
-  bioguide_id: 
-  state_leg_id: 
-  office_type: district
-  distance: 
-  building: 
-  address: "– Suite 400"
-  suite: 
-  city: Washington D.C.
-  state: OR
-  zip: '20001'
-  phone: Fax202-624-7785
-  fax: 
-  hours: 
-  latitude: 32.783847
-  longitude: -96.7983453
-  v_card_link: https://phone-your-rep.herokuapp.com/v_cards/OR-kate-brown-washington
-    d.c.
-  downloads: 0
-  qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/OR_kate_brown_washington
-    d.c..png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/P000034-capitol
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/P000034
   active: true
@@ -35429,37 +35427,11 @@ office_locations:
   phone: 717-787-2500
   fax: 717-772-8284
   hours: 
-  latitude: 39.9566003
-  longitude: -82.9933363
+  latitude: 40.2651105
+  longitude: -76.8843467
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/PA-tom-wolf-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/PA_tom_wolf_capitol.png
-- self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/PA-tom-wolf-washington%20d.c.
-  rep: https://phone-your-rep.herokuapp.com/api/beta/reps/PA-tom-wolf
-  active: true
-  official_id: PA-tom-wolf
-  level: state
-  office_id: PA-tom-wolf-washington d.c.
-  bioguide_id: 
-  state_leg_id: 
-  office_type: district
-  distance: 
-  building: 
-  address: ''
-  suite: 
-  city: Washington D.C.
-  state: PA
-  zip: '20037'
-  phone: Fax202-772-1660
-  fax: 
-  hours: 
-  latitude: 38.8987709
-  longitude: -77.0351295
-  v_card_link: https://phone-your-rep.herokuapp.com/v_cards/PA-tom-wolf-washington
-    d.c.
-  downloads: 0
-  qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/PA_tom_wolf_washington
-    d.c..png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/PR-ricardo-rossell%C3%B3-capitol
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/PR-ricardo-rossell%C3%B3
   active: true
@@ -35479,8 +35451,8 @@ office_locations:
   phone: 787-721-7000
   fax: 787-721-5072
   hours: 
-  latitude: 19.6500131
-  longitude: -99.002533
+  latitude: 18.4662189
+  longitude: -66.1057405
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/PR-ricardo-rosselló-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/PR_ricardo_rosselló_capitol.png
@@ -38576,8 +38548,8 @@ office_locations:
   phone: 401-222-2080
   fax: 401-222-8096
   hours: 
-  latitude: 42.3587772
-  longitude: -71.0638101
+  latitude: 41.816736
+  longitude: -71.4091563
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/RI-gina-raimondo-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/RI_gina_raimondo_capitol.png
@@ -42633,8 +42605,8 @@ office_locations:
   phone: 803-734-2100
   fax: 803-734-5167
   hours: 
-  latitude: 33.9989843
-  longitude: -81.0319029
+  latitude: 33.9873389
+  longitude: -81.0368211
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/SC-henry-mcmaster-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/SC_henry_mcmaster_capitol.png
@@ -42657,8 +42629,8 @@ office_locations:
   phone: Fax202-624-7800
   fax: 
   hours: 
-  latitude: 40.5728846
-  longitude: -89.6463306
+  latitude: 38.912068
+  longitude: -77.0190228
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/SC-henry-mcmaster-washington
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/SC_henry_mcmaster_washington.png
@@ -42681,8 +42653,8 @@ office_locations:
   phone: 605-773-3212
   fax: 605-773-4711
   hours: 
-  latitude: 32.299643
-  longitude: -90.18146
+  latitude: 44.3683156
+  longitude: -100.3509665
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/SD-dennis-daugaard-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/SD_dennis_daugaard_capitol.png
@@ -44505,8 +44477,8 @@ office_locations:
   phone: 615-741-2001
   fax: 615-532-9711
   hours: 
-  latitude: 36.165849
-  longitude: -86.7842941
+  latitude: 36.1635337
+  longitude: -86.7816953
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/TN-bill-haslam-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/TN_bill_haslam_capitol.png
@@ -44529,8 +44501,8 @@ office_locations:
   phone: 512-463-2000
   fax: 512-463-5571
   hours: 
-  latitude: 41.717515
-  longitude: -74.3929533
+  latitude: 30.2781094
+  longitude: -97.738445
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/TX-greg-abbott-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/TX_greg_abbott_capitol.png
@@ -44553,8 +44525,8 @@ office_locations:
   phone: 202-638-3927
   fax: 202-628-1943
   hours: 
-  latitude: 33.760502
-  longitude: -84.387168
+  latitude: 38.9052763
+  longitude: -76.9815877
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/TX-greg-abbott-washington
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/TX_greg_abbott_washington.png
@@ -44793,8 +44765,8 @@ office_locations:
   phone: 801-538-1000
   fax: 801-538-1557
   hours: 
-  latitude: 40.7773126
-  longitude: -111.8878794
+  latitude: 40.75959
+  longitude: -111.88815
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/UT-gary-richard-herbert-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/UT_gary_richard_herbert_capitol.png
@@ -45369,8 +45341,8 @@ office_locations:
   phone: 804-786-2211
   fax: 804-371-6351
   hours: 
-  latitude: 40.7469829
-  longitude: -73.985343
+  latitude: 37.5410261
+  longitude: -77.4386429
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/VA-terry-mcauliffe-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/VA_terry_mcauliffe_capitol.png
@@ -45393,8 +45365,8 @@ office_locations:
   phone: 202-783-1769
   fax: 202-783-7687
   hours: 
-  latitude: 37.7905249
-  longitude: -122.432128
+  latitude: 38.912068
+  longitude: -77.0190228
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/VA-terry-mcauliffe-washington
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/VA_terry_mcauliffe_washington.png
@@ -45417,8 +45389,8 @@ office_locations:
   phone: 340-774-0001
   fax: 340-693-4374
   hours: 
-  latitude: 18.3424426
-  longitude: -64.9292362
+  latitude: 18.3380965
+  longitude: -64.8940946
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/VI-kenneth-mapp-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/VI_kenneth_mapp_capitol.png
@@ -45441,10 +45413,10 @@ office_locations:
   phone: 802-828-3333
   fax: 802-828-3339
   hours: 
-  latitude: 44.261321
-  longitude: -72.579589
+  latitude: 44.2570052
+  longitude: -72.5695293
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/VT-phil-scott-capitol
-  downloads: 0
+  downloads: 1
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/VT_phil_scott_capitol.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/W000187-capitol
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/W000187
@@ -47601,8 +47573,8 @@ office_locations:
   phone: 360-902-4111
   fax: 360-753-4110
   hours: 
-  latitude: 43.2069959
-  longitude: -71.5381999
+  latitude: 47.04
+  longitude: -122.89
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/WA-jay-inslee-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/WA_jay_inslee_capitol.png
@@ -47625,8 +47597,8 @@ office_locations:
   phone: 608-266-1212
   fax: 608-267-8983
   hours: 
-  latitude: 42.7841443
-  longitude: -84.5426623
+  latitude: 43.1
+  longitude: -89.3199999
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/WI-scott-walker-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/WI_scott_walker_capitol.png
@@ -47649,8 +47621,8 @@ office_locations:
   phone: 202-624-5870
   fax: 202-624-5871
   hours: 
-  latitude: -34.9259749
-  longitude: 138.6051649
+  latitude: 38.912068
+  longitude: -77.0190228
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/WI-scott-walker-washington
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/WI_scott_walker_washington.png
@@ -47673,8 +47645,8 @@ office_locations:
   phone: 304-558-2000
   fax: 304-342-7025
   hours: 
-  latitude: 38.9876009
-  longitude: -76.9791258
+  latitude: 38.3379699
+  longitude: -81.6107001
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/WV-jim-justice-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/WV_jim_justice_capitol.png
@@ -47697,8 +47669,8 @@ office_locations:
   phone: 307-777-7434
   fax: 307-632-3909
   hours: 
-  latitude: 40.7774076
-  longitude: -111.8881773
+  latitude: 41.14
+  longitude: -104.8199999
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/WY-matthew-mead-capitol
   downloads: 0
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/WY_matthew_mead_capitol.png
