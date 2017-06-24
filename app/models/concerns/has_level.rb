@@ -17,11 +17,3 @@ module HasLevel
                  end
   end
 end
-
-districts.reduce([]) do |memo, district|
-   unless StateDistrict.find_by(state: State.find_by(abbr: district.abbr.upcase), chamber: district.chamber, name: district.name)
-     memo << district
-   else
-     memo
-   end
-end

@@ -1,0 +1,520 @@
+state,chamber,name,code
+DC,upper,3,003
+DC,upper,6,006
+DC,upper,5,005
+DC,upper,7,007
+DC,upper,2,002
+DC,upper,8,008
+DC,upper,4,004
+DC,upper,1,001
+LA,lower,State House Districts not defined,ZZZ
+LA,upper,State Senate Districts not defined,ZZZ
+MD,lower,State House Districts not defined,ZZZ
+MD,upper,State Senate Districts not defined,ZZZ
+MA,lower,5th Hampden,106
+MA,lower,3rd Worcester,205
+MA,lower,5th Barnstable,156
+MA,lower,6th Essex,088
+MA,lower,31st Middlesex,148
+MA,lower,"Barnstable, Dukes & Nantucket",064
+MA,lower,State House Districts not defined,ZZZ
+MA,lower,28th Middlesex,145
+MA,lower,10th Essex,092
+MA,lower,16th Worcester,218
+MA,lower,3rd Barnstable,062
+MA,lower,15th Norfolk,171
+MA,lower,4th Worcester,206
+MA,lower,10th Norfolk,166
+MA,lower,12th Norfolk,168
+MA,lower,2nd Berkshire,066
+MA,lower,3rd Berkshire,067
+MA,lower,3rd Middlesex,120
+MA,lower,2nd Franklin,101
+MA,lower,17th Worcester,219
+MA,lower,4th Barnstable,063
+MA,lower,1st Middlesex,118
+MA,lower,5th Plymouth,176
+MA,lower,9th Plymouth,180
+MA,lower,9th Essex,091
+MA,lower,6th Hampden,107
+MA,lower,3rd Plymouth,174
+MA,lower,5th Bristol,073
+MA,lower,3rd Norfolk,159
+MA,lower,23rd Middlesex,140
+MA,lower,35th Middlesex,152
+MA,lower,3rd Suffolk,186
+MA,lower,37th Middlesex,154
+MA,lower,4th Suffolk,187
+MA,lower,1st Barnstable,060
+MA,lower,15th Middlesex,132
+MA,lower,5th Suffolk,188
+MA,lower,10th Middlesex,127
+MA,lower,2nd Plymouth,173
+MA,lower,36th Middlesex,153
+MA,lower,19th Middlesex,136
+MA,lower,5th Middlesex,122
+MA,lower,6th Norfolk,162
+MA,lower,7th Bristol,075
+MA,lower,11th Plymouth,182
+MA,lower,10th Worcester,212
+MA,lower,1st Worcester,203
+MA,lower,8th Essex,090
+MA,lower,7th Essex,089
+MA,lower,30th Middlesex,147
+MA,lower,9th Worcester,211
+MA,lower,7th Norfolk,163
+MA,lower,3rd Bristol,071
+MA,lower,33rd Middlesex,150
+MA,lower,3rd Hampshire,117
+MA,lower,17th Suffolk,200
+MA,lower,15th Essex,097
+MA,lower,16th Essex,098
+MA,lower,2nd Essex,084
+MA,lower,29th Middlesex,146
+MA,lower,11th Suffolk,194
+MA,lower,8th Middlesex,125
+MA,lower,11th Norfolk,167
+MA,lower,15th Suffolk,198
+MA,lower,11th Worcester,213
+MA,lower,9th Bristol,077
+MA,lower,13th Bristol,081
+MA,lower,22nd Middlesex,139
+MA,lower,12th Essex,094
+MA,lower,13th Essex,095
+MA,lower,14th Bristol,082
+MA,lower,10th Plymouth,181
+MA,lower,1st Norfolk,157
+MA,lower,8th Bristol,076
+MA,lower,2nd Bristol,070
+MA,lower,2nd Middlesex,119
+MA,lower,2nd Worcester,204
+MA,lower,7th Plymouth,178
+MA,lower,8th Hampden,109
+MA,lower,7th Suffolk,190
+MA,lower,15th Worcester,217
+MA,lower,11th Middlesex,128
+MA,lower,8th Worcester,210
+MA,lower,1st Bristol,069
+MA,lower,34th Middlesex,151
+MA,lower,9th Middlesex,126
+MA,lower,1st Essex,083
+MA,lower,27th Middlesex,144
+MA,lower,18th Worcester,155
+MA,lower,1st Plymouth,172
+MA,lower,4th Bristol,072
+MA,lower,11th Bristol,079
+MA,lower,26th Middlesex,143
+MA,lower,1st Berkshire,065
+MA,lower,18th Middlesex,135
+MA,lower,18th Suffolk,201
+MA,lower,21st Middlesex,138
+MA,lower,8th Plymouth,179
+MA,lower,1st Hampshire,115
+MA,lower,6th Middlesex,123
+MA,lower,4th Essex,086
+MA,lower,25th Middlesex,142
+MA,lower,1st Hampden,102
+MA,lower,13th Middlesex,130
+MA,lower,24th Middlesex,141
+MA,lower,13th Suffolk,196
+MA,lower,9th Suffolk,192
+MA,lower,9th Norfolk,165
+MA,lower,6th Worcester,208
+MA,lower,16th Middlesex,133
+MA,lower,18th Essex,114
+MA,lower,9th Hampden,110
+MA,lower,6th Suffolk,189
+MA,lower,10th Suffolk,193
+MA,lower,5th Norfolk,161
+MA,lower,11th Essex,093
+MA,lower,5th Essex,087
+MA,lower,4th Middlesex,121
+MA,lower,4th Plymouth,175
+MA,lower,14th Essex,096
+MA,lower,3rd Hampden,104
+MA,lower,12th Hampden,113
+MA,lower,5th Worcester,207
+MA,lower,1st Suffolk,184
+MA,lower,8th Suffolk,191
+MA,lower,14th Middlesex,131
+MA,lower,12th Worcester,214
+MA,lower,10th Bristol,078
+MA,lower,8th Norfolk,164
+MA,lower,4th Hampden,105
+MA,lower,12th Middlesex,129
+MA,lower,20th Middlesex,137
+MA,lower,2nd Norfolk,158
+MA,lower,32nd Middlesex,149
+MA,lower,11th Hampden,112
+MA,lower,17th Essex,099
+MA,lower,17th Middlesex,134
+MA,lower,19th Suffolk,202
+MA,lower,3rd Essex,085
+MA,lower,14th Suffolk,197
+MA,lower,4th Berkshire,068
+MA,lower,7th Middlesex,124
+MA,lower,14th Worcester,216
+MA,lower,2nd Barnstable,061
+MA,lower,2nd Hampshire,116
+MA,lower,2nd Suffolk,185
+MA,lower,10th Hampden,111
+MA,lower,16th Suffolk,199
+MA,lower,4th Norfolk,160
+MA,lower,6th Plymouth,177
+MA,lower,2nd Hampden,103
+MA,lower,14th Norfolk,170
+MA,lower,12th Plymouth,183
+MA,lower,7th Hampden,108
+MA,lower,12th Bristol,080
+MA,lower,1st Franklin,100
+MA,lower,13th Worcester,215
+MA,lower,7th Worcester,209
+MA,lower,6th Bristol,074
+MA,lower,13th Norfolk,169
+MA,lower,12th Suffolk,195
+MA,upper,First Essex & Middlesex,020
+MA,upper,Plymouth & Barnstable,039
+MA,upper,"Hampshire, Franklin & Worcester",006
+MA,upper,"Norfolk, Bristol & Plymouth",032
+MA,upper,"Norfolk, Bristol & Middlesex",017
+MA,upper,Bristol & Norfolk,031
+MA,upper,Cape & Islands,040
+MA,upper,Norfolk & Suffolk,030
+MA,upper,Worcester & Norfolk,012
+MA,upper,First Hampden & Hampshire,007
+MA,upper,"Worcester, Hampden, Hampshire & Middlesex",008
+MA,upper,First Plymouth & Bristol,036
+MA,upper,Middlesex & Suffolk,026
+MA,upper,Worcester & Middlesex,009
+MA,upper,Plymouth & Norfolk,034
+MA,upper,First Bristol & Plymouth,037
+MA,upper,Norfolk & Plymouth,033
+MA,upper,"Berkshire, Hampshire, Franklin & Hampden",004
+MA,upper,First Middlesex & Norfolk,029
+MA,upper,Second Suffolk & Middlesex,028
+MA,upper,Middlesex & Worcester,014
+MA,upper,Second Plymouth & Bristol,035
+MA,upper,Second Bristol & Plymouth,038
+MA,upper,First Suffolk & Middlesex,027
+MA,upper,Second Hampden & Hampshire,005
+MA,upper,Second Essex & Middlesex,018
+MA,upper,Second Middlesex & Norfolk,015
+MI,lower,State House Districts not defined,ZZZ
+MN,lower,08B,08B
+MN,lower,03A,03A
+MN,lower,01B,01B
+MN,lower,01A,01A
+MN,lower,02A,02A
+MN,lower,04B,04B
+MN,lower,09A,09A
+MN,lower,03B,03B
+MN,lower,09B,09B
+MN,lower,05A,05A
+MN,lower,05B,05B
+MN,lower,06B,06B
+MN,lower,07B,07B
+MN,lower,02B,02B
+MN,lower,06A,06A
+MN,lower,08A,08A
+MN,lower,07A,07A
+MN,lower,04A,04A
+MN,upper,01,001
+MN,upper,09,009
+MN,upper,08,008
+MN,upper,05,005
+MN,upper,02,002
+MN,upper,04,004
+MN,upper,03,003
+MN,upper,07,007
+MN,upper,06,006
+NH,lower,Hillsborough County No. 16,516
+NH,lower,Cheshire County No. 2,202
+NH,lower,Hillsborough County No. 23,523
+NH,lower,Grafton County No. 11,411
+NH,lower,Rockingham County No. 26,726
+NH,lower,Rockingham County No. 17,717
+NH,lower,Coos County No. 1,301
+NH,lower,Hillsborough County No. 28,528
+NH,lower,Rockingham County No. 11,711
+NH,lower,Rockingham County No. 1,701
+NH,lower,Merrimack County No. 16,616
+NH,lower,Hillsborough County No. 20,520
+NH,lower,Strafford County No. 2,802
+NH,lower,Hillsborough County No. 24,524
+NH,lower,Hillsborough County No. 17,517
+NH,lower,Strafford County No. 3,803
+NH,lower,Grafton County No. 10,410
+NH,lower,Merrimack County No. 18,618
+NH,lower,Hillsborough County No. 26,526
+NH,lower,Merrimack County No. 14,614
+NH,lower,Cheshire County No. 7,207
+NH,lower,Hillsborough County No. 25,525
+NH,lower,Strafford County No. 6,806
+NH,lower,Hillsborough County No. 32,532
+NH,lower,Hillsborough County No. 30,530
+NH,lower,Sullivan County No. 4,904
+NH,lower,Hillsborough County No. 34,534
+NH,lower,Strafford County No. 13,813
+NH,lower,Strafford County No. 4,804
+NH,lower,Rockingham County No. 29,729
+NH,lower,Hillsborough County No. 8,508
+NH,lower,Rockingham County No. 9,709
+NH,lower,Belknap County No. 7,007
+NH,lower,Carroll County No. 1,101
+NH,lower,Rockingham County No. 12,712
+NH,lower,Hillsborough County No. 12,512
+NH,lower,Rockingham County No. 6,706
+NH,lower,Coos County No. 3,303
+NH,lower,Merrimack County No. 15,615
+NH,lower,Cheshire County No. 13,213
+NH,lower,Cheshire County No. 4,204
+NH,lower,Grafton County No. 8,408
+NH,lower,Hillsborough County No. 14,514
+NH,lower,Merrimack County No. 4,604
+NH,lower,Rockingham County No. 10,710
+NH,lower,Hillsborough County No. 7,507
+NH,lower,Hillsborough County No. 1,501
+NH,lower,Hillsborough County No. 5,505
+NH,lower,Coos County No. 5,305
+NH,lower,Hillsborough County No. 11,511
+NH,lower,Hillsborough County No. 19,519
+NH,lower,Rockingham County No. 25,725
+NH,lower,Hillsborough County No. 15,515
+NH,lower,Rockingham County No. 7,707
+NH,lower,Hillsborough County No. 21,521
+NH,lower,Rockingham County No. 24,724
+NH,lower,Strafford County No. 14,814
+NH,lower,Rockingham County No. 23,723
+NH,lower,Strafford County No. 7,807
+NH,lower,Grafton County No. 13,413
+NH,lower,Rockingham County No. 15,715
+NH,lower,Cheshire County No. 12,212
+NH,lower,Carroll County No. 3,103
+NH,lower,Hillsborough County No. 18,518
+NH,lower,Merrimack County No. 6,606
+NH,lower,Strafford County No. 10,810
+NH,lower,Merrimack County No. 17,617
+NH,lower,Sullivan County No. 3,903
+NH,lower,Coos County No. 6,306
+NH,lower,Hillsborough County No. 3,503
+NH,lower,Sullivan County No. 6,906
+NH,lower,Hillsborough County No. 2,502
+NH,lower,Rockingham County No. 13,713
+NH,lower,Merrimack County No. 10,610
+NH,lower,Grafton County No. 6,406
+NH,lower,Belknap County No. 2,002
+NH,lower,Strafford County No. 15,815
+NH,lower,Carroll County No. 6,106
+NH,lower,Rockingham County No. 27,727
+NH,lower,Merrimack County No. 19,619
+NH,lower,Rockingham County No. 22,722
+NH,lower,Cheshire County No. 11,211
+NH,lower,Cheshire County No. 10,210
+NH,lower,Cheshire County No. 3,203
+NH,lower,Strafford County No. 8,808
+NH,lower,Merrimack County No. 9,609
+NH,lower,Hillsborough County No. 9,509
+NH,lower,Grafton County No. 4,404
+NH,lower,Strafford County No. 18,818
+NH,lower,Hillsborough County No. 33,533
+NH,lower,Rockingham County No. 18,718
+NH,lower,Merrimack County No. 13,613
+NH,lower,Hillsborough County No. 37,537
+NH,lower,Carroll County No. 4,104
+NH,lower,Cheshire County No. 5,205
+NH,lower,Coos County No. 2,302
+NH,lower,Strafford County No. 11,811
+NH,lower,Hillsborough County No. 35,535
+NH,lower,Rockingham County No. 20,720
+NH,lower,Belknap County No. 1,001
+NH,lower,Strafford County No. 17,817
+NH,lower,Sullivan County No. 2,902
+NH,lower,Strafford County No. 16,816
+NH,lower,Rockingham County No. 28,728
+NH,lower,Hillsborough County No. 4,504
+NH,lower,Grafton County No. 12,412
+NH,lower,Merrimack County No. 21,621
+NH,lower,Strafford County No. 9,809
+NH,lower,Grafton County No. 5,405
+NH,lower,Hillsborough County No. 36,536
+NH,lower,Belknap County No. 4,004
+NH,lower,Rockingham County No. 16,716
+NH,lower,Merrimack County No. 7,607
+NH,lower,Merrimack County No. 11,611
+NH,lower,Grafton County No. 1,401
+NH,lower,Hillsborough County No. 13,513
+NH,lower,Merrimack County No. 5,605
+NH,lower,Strafford County No. 1,801
+NH,lower,Rockingham County No. 14,714
+NH,lower,Cheshire County No. 1,201
+NH,lower,Carroll County No. 5,105
+NH,lower,Belknap County No. 6,006
+NH,lower,Merrimack County No. 12,612
+NH,lower,Strafford County No. 12,812
+NH,lower,Rockingham County No. 3,703
+NH,lower,Merrimack County No. 23,623
+NH,lower,Rockingham County No. 2,702
+NH,lower,Belknap County No. 3,003
+NH,lower,Merrimack County No. 8,608
+NH,lower,Merrimack County No. 3,603
+NH,lower,Sullivan County No. 5,905
+NH,lower,Rockingham County No. 4,704
+NH,lower,Strafford County No. 5,805
+NH,lower,Sullivan County No. 7,907
+NH,lower,Belknap County No. 5,005
+NH,lower,Rockingham County No. 8,708
+NH,lower,Grafton County No. 3,403
+NH,lower,Rockingham County No. 5,705
+NH,lower,Cheshire County No. 9,209
+NH,lower,Sullivan County No. 1,901
+NH,lower,Rockingham County No. 21,721
+NH,lower,Merrimack County No. 20,620
+NH,lower,Merrimack County No. 24,624
+NH,lower,Hillsborough County No. 22,522
+NH,lower,Cheshire County No. 6,206
+NH,lower,Coos County No. 4,304
+NH,lower,Hillsborough County No. 29,529
+NH,lower,Grafton County No. 7,407
+NH,lower,Grafton County No. 2,402
+NH,lower,Grafton County No. 9,409
+NH,lower,Cheshire County No. 8,208
+NH,lower,Merrimack County No. 1,601
+NH,lower,Merrimack County No. 22,622
+NH,lower,Merrimack County No. 2,602
+NH,lower,Hillsborough County No. 6,506
+NH,lower,Hillsborough County No. 31,531
+NH,lower,Rockingham County No. 19,719
+NH,lower,Hillsborough County No. 27,527
+NH,lower,Carroll County No. 2,102
+NH,lower,Sullivan County No. 8,908
+NH,lower,Hillsborough County No. 10,510
+OH,lower,State House Districts not defined,ZZZ
+OH,upper,State Senate Districts not defined,ZZZ
+PR,lower,State House Districts not defined,ZZZ
+PR,upper,State Senate Districts not defined,ZZZ
+SC,lower,HD-100,100
+SC,lower,HD-060,060
+SC,lower,HD-042,042
+SC,lower,HD-085,085
+SC,lower,HD-008,008
+SC,lower,HD-071,071
+SC,lower,HD-045,045
+SC,lower,HD-114,114
+SC,lower,HD-029,029
+SC,lower,HD-070,070
+SC,lower,HD-001,001
+SC,lower,HD-118,118
+SC,lower,HD-040,040
+SC,lower,HD-010,010
+SC,lower,HD-084,084
+SC,lower,HD-122,122
+SC,lower,HD-035,035
+SC,lower,HD-013,013
+SC,lower,HD-025,025
+SC,lower,HD-064,064
+SC,lower,HD-050,050
+SC,lower,HD-065,065
+SC,lower,HD-012,012
+SC,lower,HD-082,082
+SC,lower,HD-054,054
+SC,lower,HD-066,066
+SC,lower,HD-097,097
+SC,lower,HD-086,086
+SC,lower,HD-007,007
+SC,lower,HD-004,004
+SC,lower,HD-093,093
+SC,lower,HD-090,090
+SC,lower,HD-002,002
+SC,lower,HD-073,073
+SC,lower,HD-024,024
+SC,lower,HD-017,017
+SC,lower,HD-102,102
+SC,lower,HD-062,062
+SC,lower,HD-121,121
+SC,lower,HD-067,067
+SC,lower,HD-101,101
+SC,lower,HD-080,080
+SC,lower,HD-052,052
+SC,lower,HD-105,105
+SC,lower,HD-014,014
+SC,lower,HD-028,028
+SC,lower,HD-119,119
+SC,lower,HD-116,116
+SC,lower,HD-044,044
+SC,lower,HD-041,041
+SC,lower,HD-016,016
+SC,lower,HD-120,120
+SC,lower,HD-043,043
+SC,lower,HD-003,003
+SC,lower,HD-039,039
+SC,lower,HD-058,058
+SC,lower,HD-095,095
+SC,lower,HD-057,057
+SC,lower,HD-103,103
+SC,lower,HD-030,030
+SC,lower,HD-053,053
+SC,lower,HD-115,115
+SC,lower,HD-049,049
+SC,lower,HD-091,091
+SC,lower,HD-055,055
+SC,lower,HD-033,033
+SC,lower,HD-061,061
+SC,lower,HD-077,077
+SC,lower,HD-111,111
+SC,lower,HD-006,006
+SC,lower,HD-027,027
+SC,lower,HD-112,112
+SC,lower,HD-069,069
+SC,lower,HD-018,018
+SC,lower,HD-063,063
+SC,lower,HD-056,056
+SC,lower,HD-107,107
+SC,lower,HD-011,011
+SC,lower,HD-089,089
+SC,lower,HD-108,108
+SC,lower,HD-047,047
+SC,lower,HD-113,113
+SC,lower,HD-072,072
+SC,lower,HD-009,009
+SC,lower,HD-078,078
+SC,lower,HD-092,092
+SC,lower,HD-110,110
+SC,lower,HD-068,068
+SC,lower,HD-075,075
+SC,lower,HD-036,036
+SC,lower,HD-081,081
+SC,lower,HD-038,038
+SC,lower,HD-096,096
+SC,lower,HD-104,104
+SC,lower,HD-124,124
+SC,lower,HD-046,046
+SC,lower,HD-022,022
+SC,lower,HD-023,023
+SC,lower,HD-079,079
+SC,lower,HD-019,019
+SC,lower,HD-034,034
+SC,lower,HD-037,037
+SC,lower,HD-109,109
+SC,lower,HD-032,032
+SC,lower,HD-031,031
+SC,lower,HD-123,123
+SC,lower,HD-021,021
+SC,lower,HD-098,098
+SC,lower,HD-099,099
+SC,lower,HD-117,117
+SC,lower,HD-048,048
+SC,lower,HD-015,015
+SC,lower,HD-083,083
+SC,lower,HD-051,051
+SC,lower,HD-094,094
+SC,lower,HD-076,076
+SC,lower,HD-059,059
+SC,lower,HD-087,087
+SC,lower,HD-106,106
+SC,lower,HD-020,020
+SC,lower,HD-005,005
+SC,lower,HD-088,088
+SC,lower,HD-074,074
+SC,lower,HD-026,026
+VT,lower,Grand-Isle-Chittenden,GIC
+VT,upper,Grand-Isle-Chittenden,CGI

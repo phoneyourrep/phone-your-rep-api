@@ -7,7 +7,7 @@ module OpenStates
 
     api.add_resource :legislators do
       optional_params :state, :first_name, :last_name, :chamber,
-                      :active, :term, :district, :party
+                      :active, :term, :district, :party, :lat, :long
 
       add_attributes :first_name, :last_name, :middle_name, :district, :chamber,
                      :url, :created_at, :updated_at, :email, :active, :state,
