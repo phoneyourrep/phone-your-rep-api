@@ -42,6 +42,7 @@ group :development, :test do
   gem 'factory_girl_rails', '~> 4.8.0'
   gem 'pry', '~> 0.10.4'
   gem 'pry-byebug'
+  gem 'pry-rails'
   gem 'rspec-rails', '~> 3.5.0'
   gem 'rubocop', '~> 0.48.0', '>= 0.48.1'
   gem 'simplecov', '~> 0.14.0', require: false
