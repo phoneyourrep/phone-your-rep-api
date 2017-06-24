@@ -1,5 +1,5 @@
 ---
-total_records: 2008
+total_records: 2009
 _links:
   self:
     href: https://phone-your-rep.herokuapp.com/api/beta/office_locations
@@ -1202,7 +1202,7 @@ office_locations:
   latitude: 38.8928318
   longitude: -77.0043625
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/B000575-capitol
-  downloads: 11
+  downloads: 12
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/B000575_capitol.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/B000575-clayton
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/B000575
@@ -1250,7 +1250,7 @@ office_locations:
   latitude: 38.9507077
   longitude: -92.3262317
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/B000575-columbia
-  downloads: 8
+  downloads: 9
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/B000575_columbia.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/B000575-kansas_city
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/B000575
@@ -4226,7 +4226,7 @@ office_locations:
   latitude: 38.8086036
   longitude: -77.165008
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/B001292-alexandria
-  downloads: 12
+  downloads: 13
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/B001292_alexandria.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/B001292-capitol
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/B001292
@@ -7154,7 +7154,7 @@ office_locations:
   latitude: 29.7620629
   longitude: -95.4159532
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/C001056-houston
-  downloads: 73
+  downloads: 74
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/C001056_houston.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/C001056-lubbock
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/C001056
@@ -11619,7 +11619,7 @@ office_locations:
   latitude: 41.6153792
   longitude: -87.5212089
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/D000607-hammond
-  downloads: 9
+  downloads: 10
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/D000607_hammond.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/D000607-indianapolis
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/D000607
@@ -16251,7 +16251,7 @@ office_locations:
   latitude: 32.5447093
   longitude: -94.367349
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/G000552-marshall
-  downloads: 0
+  downloads: 1
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/G000552_marshall.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/G000552-nacogdoches
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/G000552
@@ -17933,6 +17933,30 @@ office_locations:
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/G000583-glen_rock
   downloads: 7
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/G000583_glen_rock.png
+- self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/G000584-capitol
+  rep: https://phone-your-rep.herokuapp.com/api/beta/reps/G000584
+  active: true
+  official_id: G000584
+  level: national
+  office_id: G000584-capitol
+  bioguide_id: G000584
+  state_leg_id: 
+  office_type: capitol
+  distance: 
+  building: 
+  address: 1419 Longworth House Office Building
+  suite: 
+  city: Washington
+  state: DC
+  zip: 20515-2600
+  phone: 202-225-3211
+  fax: 202-225-5687
+  hours: 
+  latitude: 38.887205
+  longitude: -77.0084953
+  v_card_link: https://phone-your-rep.herokuapp.com/v_cards/G000584-capitol
+  downloads: 0
+  qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/G000584_capitol.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/GA-nathan-deal-capitol
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/GA-nathan-deal
   active: true
@@ -20499,7 +20523,7 @@ office_locations:
   latitude: 34.0552049
   longitude: -118.241422
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/H001075-los_angeles
-  downloads: 130
+  downloads: 131
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/H001075_los_angeles.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/H001075-sacramento
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/H001075
@@ -21051,7 +21075,7 @@ office_locations:
   latitude: 39.7999871
   longitude: -89.654138
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/IL-bruce-rauner-capitol
-  downloads: 0
+  downloads: 1
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/IL_bruce_rauner_capitol.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/IL-bruce-rauner-washington
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/IL-bruce-rauner
@@ -22755,7 +22779,7 @@ office_locations:
   latitude: 41.6344958
   longitude: -70.9266835
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/K000375-new_bedford
-  downloads: 4
+  downloads: 5
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/K000375_new_bedford.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/K000375-plymouth
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/K000375
@@ -23595,7 +23619,7 @@ office_locations:
   latitude: 36.842768
   longitude: -76.133277
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/K000384-virginia_beach
-  downloads: 12
+  downloads: 13
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/K000384_virginia_beach.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/K000385-capitol
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/K000385
@@ -25708,7 +25732,7 @@ office_locations:
   latitude: 38.8871071
   longitude: -77.0104749
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/L000569-capitol
-  downloads: 1
+  downloads: 2
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/L000569_capitol.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/L000569-jefferson_city
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/L000569
@@ -25732,7 +25756,7 @@ office_locations:
   latitude: 38.5813109
   longitude: -92.2067952
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/L000569-jefferson_city
-  downloads: 2
+  downloads: 3
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/L000569_jefferson_city.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/L000569-washington
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/L000569
@@ -27557,7 +27581,7 @@ office_locations:
   latitude: 38.2469833
   longitude: -85.7624677
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/M000355-louisville
-  downloads: 20
+  downloads: 21
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/M000355_louisville.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/M000355-paducah
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/M000355
@@ -27869,7 +27893,7 @@ office_locations:
   latitude: 47.6045895
   longitude: -122.3354608
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/M001111-seattle
-  downloads: 42
+  downloads: 45
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/M001111_seattle.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/M001111-spokane
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/M001111
@@ -29022,7 +29046,7 @@ office_locations:
   latitude: 38.952407
   longitude: -92.328281
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/M001170-columbia
-  downloads: 4
+  downloads: 5
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/M001170_columbia.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/M001170-kansas_city
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/M001170
@@ -31219,30 +31243,6 @@ office_locations:
   office_type: dc
   distance: 
   building: 
-  address: 444 North Capitol Street
-  suite: Suite 208
-  city: Washington
-  state: DC
-  zip: '20001'
-  phone: 202-624-7713
-  fax: 202-624-7714
-  hours: 
-  latitude: 38.912068
-  longitude: -77.0190228
-  v_card_link: https://phone-your-rep.herokuapp.com/v_cards/MA-charlie-baker-washington
-  downloads: 1
-  qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/MA_charlie_baker_washington.png
-- self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/MA-charlie-baker-washington
-  rep: https://phone-your-rep.herokuapp.com/api/beta/reps/MA-charlie-baker
-  active: true
-  official_id: MA-charlie-baker
-  level: state
-  office_id: MA-charlie-baker-washington
-  bioguide_id: 
-  state_leg_id: 
-  office_type: dc
-  distance: 
-  building: 
   address: Capitol Street – Suite
   suite: 
   city: Washington
@@ -31255,6 +31255,30 @@ office_locations:
   longitude: -120.7401386
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/MA-charlie-baker-washington
   downloads: 0
+  qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/MA_charlie_baker_washington.png
+- self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/MA-charlie-baker-washington
+  rep: https://phone-your-rep.herokuapp.com/api/beta/reps/MA-charlie-baker
+  active: true
+  official_id: MA-charlie-baker
+  level: state
+  office_id: MA-charlie-baker-washington
+  bioguide_id: 
+  state_leg_id: 
+  office_type: dc
+  distance: 
+  building: 
+  address: 444 North Capitol Street
+  suite: Suite 208
+  city: Washington
+  state: DC
+  zip: '20001'
+  phone: 202-624-7713
+  fax: 202-624-7714
+  hours: 
+  latitude: 38.912068
+  longitude: -77.0190228
+  v_card_link: https://phone-your-rep.herokuapp.com/v_cards/MA-charlie-baker-washington
+  downloads: 1
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/MA_charlie_baker_washington.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/MD-larry-hogan-capitol
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/MD-larry-hogan
@@ -35910,7 +35934,7 @@ office_locations:
   latitude: 25.7238346
   longitude: -80.3128082
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/R000435-miami
-  downloads: 5
+  downloads: 6
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/R000435_miami.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/R000486-capitol
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/R000486
@@ -43400,7 +43424,7 @@ office_locations:
   latitude: 45.783552
   longitude: -108.509375
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/T000464-billings
-  downloads: 6
+  downloads: 7
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/T000464_billings.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/T000464-bozeman
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/T000464
@@ -46352,7 +46376,7 @@ office_locations:
   latitude: 38.8928318
   longitude: -77.0043625
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/W000805-capitol
-  downloads: 44
+  downloads: 45
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/W000805_capitol.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/W000805-norfolk
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/W000805
@@ -47912,7 +47936,7 @@ office_locations:
   latitude: 41.0737372
   longitude: -85.1404535
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/Y000064-fort_wayne
-  downloads: 1
+  downloads: 2
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/Y000064_fort_wayne.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/Y000064-indianapolis
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/Y000064
@@ -47936,7 +47960,7 @@ office_locations:
   latitude: 39.770723
   longitude: -86.15703
   v_card_link: https://phone-your-rep.herokuapp.com/v_cards/Y000064-indianapolis
-  downloads: 3
+  downloads: 4
   qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/Y000064_indianapolis.png
 - self: https://phone-your-rep.herokuapp.com/api/beta/office_locations/Y000064-new_albany
   rep: https://phone-your-rep.herokuapp.com/api/beta/reps/Y000064
