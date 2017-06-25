@@ -15,6 +15,9 @@ module OpenStates
                      :level, :fax
 
       add_collections :offices
+
+      add_scopes democrat: -> { where party: 'Democratic' },
+                 republican: -> { where party: 'Republican' }
     end
 
     api.add_resource :offices do
@@ -22,7 +25,7 @@ module OpenStates
     end
 
     api.add_resource :districts do
-      add_attributes :abbr, :boundary_id, :chamber, :id, :name, :num_seats
+      add_attributes :abbr, :boundary_id, :chamber, :id, :name, :num_seats, :shape
 
       add_collections :legislators
     end
