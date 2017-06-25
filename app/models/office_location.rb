@@ -52,13 +52,13 @@ class OfficeLocation < ApplicationRecord
   end
 
   def extract_state_from_full_address
-    self.state = address.match(/\s[A-Z]{2}(\s|,)?\z/).to_s
+    self.state = address.match(/\s+[A-Z]{2}(\s|,)?\z/).to_s
     address.sub!(state, '')
     state.delete!("\n ,")
   end
 
   def extract_zip_from_full_address
-    self.zip = address.match(/\s\d{5}(?:[-\s]\d{4})?$\z/).to_s
+    self.zip = address.match(/\s+\d{5}(?:[-\s]\d{4})?$\z/).to_s
     address.sub!(zip, '')
     zip.delete!("\n ,")
   end
