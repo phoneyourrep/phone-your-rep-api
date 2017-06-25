@@ -18,9 +18,8 @@ class OfficeLocation < ApplicationRecord
   after_validation :geocode, if: :needs_geocoding?
 
   reverse_geocoded_by :latitude, :longitude do |obj, results|
-    if geo = results.first
-      obj.state = geo.state_code
-    end
+    geo = results.first
+    obj.state = geo.state_code if geo
   end
 
   after_validation :reverse_geocode, if: -> { state.blank? }
@@ -44,17 +43,24 @@ class OfficeLocation < ApplicationRecord
   attr_reader :distance
 
   def set_city_state_and_zip
-    self.zip = address.match(/\s\d{5}(?:[-\s]\d{4})?$\z/).to_s
-    address.sub!(zip, '')
-    zip.delete!("\n ,")
-
-    self.state = address.match(/\s[A-Z]{2}(\s|,)?\z/).to_s
-    address.sub!(state, '')
-    state.delete!("\n ,")
+    extract_zip_from_full_address
+    extract_state_from_full_address
 
     address_array = address.gsub("\n", ', ').split(', ')
     self.city     = address_array.pop.delete(',')
     self.address  = address_array.join("\n")
+  end
+
+  def extract_state_from_full_address
+    self.state = address.match(/\s[A-Z]{2}(\s|,)?\z/).to_s
+    address.sub!(state, '')
+    state.delete!("\n ,")
+  end
+
+  def extract_zip_from_full_address
+    self.zip = address.match(/\s\d{5}(?:[-\s]\d{4})?$\z/).to_s
+    address.sub!(zip, '')
+    zip.delete!("\n ,")
   end
 
   def set_office_id

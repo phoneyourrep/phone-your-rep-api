@@ -106,7 +106,8 @@ class VCardBuilder
   end
 
   def add_rep_photo(maker)
-    return unless data = rep.fetch_photo_data
+    data = rep.fetch_photo_data
+    return unless data
     maker.add_photo do |photo|
       photo.image = data
       photo.type  = 'JPEG'

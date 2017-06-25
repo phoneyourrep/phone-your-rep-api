@@ -35,21 +35,31 @@ class StateRepUpdater
     rep = StateRep.find_or_initialize_by(
       official_id: os_rep.leg_id, district: district, state: state
     )
-    rep.official_full  = os_rep.full_name
-    rep.last           = os_rep.last_name
-    rep.first          = os_rep.first_name
-    rep.middle         = os_rep.middle_name
-    rep.party          = os_rep.party
-    rep.contact_form   = os_rep.email
-    rep.active         = os_rep.active
-    rep.photo_url      = os_rep.photo_url
-    rep.level          = os_rep.level
-    rep.url            = os_rep.url
-    rep.chamber        = os_rep.chamber
-    rep.suffix         = os_rep.suffixes
+
+    update_personal_info(rep, os_rep)
+    update_political_info(rep, os_rep)
     add_or_update_office_locations(rep, os_rep)
+
     rep.add_photo if rep.photo_url != rep.photo
     rep.save
+  end
+
+  def update_political_info(rep, os_rep)
+    rep.party        = os_rep.party
+    rep.contact_form = os_rep.email
+    rep.active       = os_rep.active
+    rep.photo_url    = os_rep.photo_url
+    rep.level        = os_rep.level
+    rep.url          = os_rep.url
+    rep.chamber      = os_rep.chamber
+  end
+
+  def update_personal_info(rep, os_rep)
+    rep.official_full = os_rep.full_name
+    rep.last          = os_rep.last_name
+    rep.first         = os_rep.first_name
+    rep.middle        = os_rep.middle_name
+    rep.suffix        = os_rep.suffixes
   end
 
   def add_or_update_office_locations(rep, os_rep)

@@ -6,8 +6,11 @@ describe 'VCards API' do
   before :all do
     [OfficeLocation, Rep, Impression].each(&:destroy_all)
     @rep = create :rep, official_full: 'Official Full', role: 'rep'
+
     @office = create :office_location, rep: @rep, city: 'City',
-                     address: 'Address', state: 'State', zip: 'Zip'
+                                       address: 'Address',
+                                       state: 'State', zip: 'Zip'
+
     @v_card = @office.make_v_card(photo: false).to_s
   end
 

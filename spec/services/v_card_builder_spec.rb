@@ -38,8 +38,6 @@ describe VCardBuilder do
                                          phone: 'Phone2',
                                          rep: @rep
 
-
-
     @photo_data = @rep.fetch_photo_data
   end
 

@@ -94,7 +94,6 @@ describe OfficeLocation, type: :model do
     expect(v_card.org.first).to eq(rep.role)
   end
 
-
   it '#add_qr_code_img creates a qr_code image from v_card data' do
     dragonfly_test_directory = Rails.root.join('public/system/dragonfly/test')
 
