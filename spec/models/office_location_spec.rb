@@ -3,9 +3,7 @@
 require 'rails_helper'
 
 describe OfficeLocation, type: :model do
-  after :all { [OfficeLocation, Rep, VCard].each(&:destroy_all) }
-
-  let! :v_card { create :v_card }
+  after :all { [OfficeLocation, Rep].each(&:destroy_all) }
 
   let! :rep do
     create :rep, official_full: 'Full Name', role: 'Rep'
@@ -18,16 +16,11 @@ describe OfficeLocation, type: :model do
            state: 'NY',
            zip: '10002',
            office_id: 'office_id',
-           v_card: v_card,
            rep: rep
   end
 
   it 'belongs_to a rep' do
     expect(office.rep).to eq(rep)
-  end
-
-  it 'has_one v_card' do
-    expect(office.v_card).to eq(v_card)
   end
 
   it 'knows when it needs_geocoding' do
@@ -101,15 +94,6 @@ describe OfficeLocation, type: :model do
     expect(v_card.org.first).to eq(rep.role)
   end
 
-  it '#add_v_card updates its v_card with the right data' do
-    expect(office.v_card.data).to be(nil)
-
-    office.add_v_card
-    v_card.reload
-
-    expect(office.v_card).to eq(v_card)
-    expect(v_card.data).to eq(office.make_v_card.to_s)
-  end
 
   it '#add_qr_code_img creates a qr_code image from v_card data' do
     dragonfly_test_directory = Rails.root.join('public/system/dragonfly/test')

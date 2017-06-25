@@ -36,7 +36,6 @@ module DbPyrUpdate
       o.fax    = off.fax
       o.active = true
       o.save
-      o.add_v_card
     end
 
     def update_basic_info(db_gov, gov)
@@ -118,7 +117,6 @@ module DbPyrUpdate
         update_phone_fax_and_hours(off, term)
         update_cap_office_address(address_ary, off)
       end
-      cap_office.add_v_card
     end
 
     def update_basic_office_info(off, rep)
@@ -243,7 +241,6 @@ module DbPyrUpdate
       office.fax    = yaml_off['fax']
       office.hours  = yaml_off['hours']
       office.active = true
-      office.add_v_card
     end
     # End of private methods
   end

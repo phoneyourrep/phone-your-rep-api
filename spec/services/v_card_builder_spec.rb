@@ -4,41 +4,46 @@ require 'rails_helper'
 
 describe VCardBuilder do
   before :all do
-    @office = create :office_location,
-                     address: 'Address',
-                     city: 'City',
-                     state: 'State',
-                     zip: 'Zip',
-                     phone: 'Phone'
-
-    @secondary_office = create :office_location,
-                               address: 'Address2',
-                               city: 'City2',
-                               state: 'State2',
-                               zip: 'Zip2',
-                               phone: 'Phone2'
-
-    @duplicate_secondary_office = create :office_location,
-                                         address: 'Address2',
-                                         city: 'City2',
-                                         state: 'State2',
-                                         zip: 'Zip2',
-                                         phone: 'Phone2'
-
-    @avatar = create :avatar, data: 'Data'
-
-    @rep = create :rep,
+    @rep = create :congressional_rep,
+                  chamber: 'lower',
                   official_full: 'First Last, Suffix',
                   first: 'First',
                   last: 'Last',
                   suffix: 'Suffix',
                   role: 'Rep',
                   contact_form: 'Contact Form',
-                  avatar: @avatar,
-                  office_locations: [@office, @secondary_office, @duplicate_secondary_office]
+                  bioguide_id: 'S000033'
+
+    @office = create :office_location,
+                     address: 'Address',
+                     city: 'City',
+                     state: 'State',
+                     zip: 'Zip',
+                     phone: 'Phone',
+                     rep: @rep
+
+    @secondary_office = create :office_location,
+                               address: 'Address2',
+                               city: 'City2',
+                               state: 'State2',
+                               zip: 'Zip2',
+                               phone: 'Phone2',
+                               rep: @rep
+
+    @duplicate_secondary_office = create :office_location,
+                                         address: 'Address2',
+                                         city: 'City2',
+                                         state: 'State2',
+                                         zip: 'Zip2',
+                                         phone: 'Phone2',
+                                         rep: @rep
+
+
+
+    @photo_data = @rep.fetch_photo_data
   end
 
-  after(:all) { [Rep, OfficeLocation, Avatar].each(&:destroy_all) }
+  after(:all) { [Rep, OfficeLocation].each(&:destroy_all) }
 
   let :v_card { VCardBuilder.new(@office, @rep).make_v_card(photo: true) }
 
@@ -84,7 +89,7 @@ describe VCardBuilder do
   end
 
   it 'has accurate photo data' do
-    expect(v_card.photos.first).to eq(@rep.avatar.data)
+    expect(v_card.photos.first).to eq(@photo_data)
   end
 
   it 'has accurate secondary address info' do

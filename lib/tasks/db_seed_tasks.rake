@@ -49,14 +49,6 @@ namespace :db do
       Rake::Task['pyr:zcta_districts:export'].invoke
     end
 
-    desc 'Generate VCards'
-    task :v_cards do
-      OfficeLocation.all.each do |off|
-        off.add_v_card
-        puts "Added VCard for #{off.office_id}"
-      end
-    end
-
     desc 'Destroy all States and seed from scratch'
     task :seed_states do
       State.destroy_all

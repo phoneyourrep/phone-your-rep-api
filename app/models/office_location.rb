@@ -9,7 +9,6 @@ class OfficeLocation < ApplicationRecord
   S3_BUCKET = ENV['PYR_S3_BUCKET'] || 'phone-your-rep-images'
 
   belongs_to :rep, foreign_key: :official_id, primary_key: :official_id
-  has_one    :v_card, dependent: :destroy
   has_many   :issues
 
   geocoded_by :geocoder_address
@@ -20,7 +19,7 @@ class OfficeLocation < ApplicationRecord
 
   reverse_geocoded_by :latitude, :longitude do |obj, results|
     if geo = results.first
-      obj.state = results.state_code
+      obj.state = geo.state_code
     end
   end
 
@@ -31,8 +30,6 @@ class OfficeLocation < ApplicationRecord
   before_save :set_city_state_and_zip, if: -> { rep.type == 'StateRep' && !address.blank? }
 
   scope :active, -> { where(active: true) }
-
-  scope :with_v_card, ->(office_id) { where(office_id: office_id).includes(:rep, :v_card) }
 
   scope :sorted_by_distance, ->(coordinates) { near(coordinates, 4000) }
 
@@ -91,12 +88,6 @@ class OfficeLocation < ApplicationRecord
     ).as_png(size: 360).to_string
     qr_code.name = "#{office_id}.png"
     save
-  end
-
-  def add_v_card
-    v_card = VCard.find_or_create_by(office_location_id: id)
-    v_card.data = make_v_card.to_s
-    update_attribute :v_card, v_card
   end
 
   def make_v_card(photo: true)
