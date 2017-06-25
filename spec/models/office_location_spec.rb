@@ -139,6 +139,17 @@ describe OfficeLocation, type: :model do
       expect(office.state).to eq('IL')
       expect(office.zip).to eq('62565')
       expect(office.address).to eq('203 N. Cedar Street')
+
+      office = OfficeLocation.new(
+        address: '104B East Wing PO Box 202182 Harrisburg, PA 17120-2182',
+        rep: StateRep.new
+      )
+      office.set_city_state_and_zip
+
+      expect(office.city).to eq('Harrisburg')
+      expect(office.state).to eq('PA')
+      expect(office.zip).to eq('17120-2182')
+      expect(office.address).to eq('104B East Wing PO Box 202182')
     end
 
     it '#set_city_state_and_zip parses a full address with line breaks into separate fields' do
