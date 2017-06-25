@@ -14,9 +14,13 @@ class OfficeLocation < ApplicationRecord
 
   geocoded_by :geocoder_address
 
+  validates :rep, presence: true
+
   after_validation :geocode, if: :needs_geocoding?
 
   before_save :set_official_id, :set_bioguide_or_state_leg_id, :set_office_id, :set_level
+
+  before_save :set_city_state_and_zip, if: -> { rep.type == 'StateRep' && !address.blank? }
 
   scope :active, -> { where(active: true) }
 
@@ -34,12 +38,28 @@ class OfficeLocation < ApplicationRecord
 
   attr_reader :distance
 
+  def set_city_state_and_zip
+    self.zip = address.match(/\s\d{5}(?:[-\s]\d{4})?$\z/).to_s
+    address.sub!(zip, '')
+    zip.delete!("\n ,")
+
+    self.state = address.match(/\s[A-Z]{2}(\s|,|\z)/).to_s
+    address.sub!(state, '')
+    state.delete!("\n ,")
+
+    address_array = address.gsub("\n", ', ').split(', ')
+    self.city     = address_array.pop.delete(',')
+    self.address  = address_array.join("\n")
+  end
+
   def set_office_id
     return unless office_id.blank?
     self.office_id = if office_type == 'capitol'
                        "#{official_id}-capitol"
+                     elsif rep.is_a?(StateRep)
+                       "#{official_id}-#{office_type}"
                      else
-                       "#{official_id}-#{city.downcase}"
+                       "#{official_id}-#{city}"
                      end
   end
 
