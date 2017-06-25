@@ -21,7 +21,7 @@ describe CongressionalRep, type: :model do
     )
   end
 
-  after(:all) { [Rep, State, District, OfficeLocation, Avatar].each(&:destroy_all) }
+  after(:all) { [Rep, State, District, OfficeLocation].each(&:destroy_all) }
 
   it 'has a bioguide_id' do
     expect(@rep.bioguide_id).to eq('S000033')

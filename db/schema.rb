@@ -12,18 +12,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20_170_619_031_543) do
+ActiveRecord::Schema.define(version: 20_170_625_060_914) do
   # These are extensions that must be enabled in order to support this database
   enable_extension 'plpgsql'
   enable_extension 'postgis'
-
-  create_table 'avatars', force: :cascade do |t|
-    t.integer  'rep_id'
-    t.datetime 'created_at', null: false
-    t.datetime 'updated_at', null: false
-    t.binary   'data'
-    t.index ['rep_id'], name: 'index_avatars_on_rep_id', using: :btree
-  end
 
   create_table 'district_geoms', force: :cascade do |t|
     t.integer  'district_id'
@@ -179,14 +171,6 @@ ActiveRecord::Schema.define(version: 20_170_619_031_543) do
     t.index ['reset_password_token'], name: 'index_users_on_reset_password_token', unique: true, using: :btree
   end
 
-  create_table 'v_cards', force: :cascade do |t|
-    t.text     'data'
-    t.integer  'office_location_id'
-    t.datetime 'created_at',         null: false
-    t.datetime 'updated_at',         null: false
-    t.index ['office_location_id'], name: 'index_v_cards_on_office_location_id', using: :btree
-  end
-
   create_table 'zcta_districts', force: :cascade do |t|
     t.integer  'zcta_id'
     t.integer  'district_id'
@@ -205,10 +189,8 @@ ActiveRecord::Schema.define(version: 20_170_619_031_543) do
     t.string   'zcta'
   end
 
-  add_foreign_key 'avatars', 'reps'
   add_foreign_key 'district_geoms', 'districts'
   add_foreign_key 'state_geoms', 'states'
-  add_foreign_key 'v_cards', 'office_locations'
   add_foreign_key 'zcta_districts', 'districts'
   add_foreign_key 'zcta_districts', 'zctas'
 end

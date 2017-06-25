@@ -20,7 +20,7 @@ describe Governor, type: :model do
     )
   end
 
-  after(:all) { [Rep, State, OfficeLocation, Avatar].each(&:destroy_all) }
+  after(:all) { [Rep, State, OfficeLocation].each(&:destroy_all) }
 
   it 'has an official full name' do
     expect(@rep.official_full).to eq('Phil Scott')
