@@ -12,7 +12,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20_170_625_060_914) do
+ActiveRecord::Schema.define(version: 20_170_625_072_350) do
   # These are extensions that must be enabled in order to support this database
   enable_extension 'plpgsql'
   enable_extension 'postgis'
@@ -150,6 +150,8 @@ ActiveRecord::Schema.define(version: 20_170_625_060_914) do
     t.string 'state_code'
     t.string 'name'
     t.string 'abbr'
+    t.string 'upper_chamber_title'
+    t.string 'lower_chamber_title'
   end
 
   create_table 'users', force: :cascade do |t|
