@@ -52,10 +52,10 @@ class VCardBuilder
     maker.add_addr do |addr|
       addr.preferred  = false
       addr.location   = ADDR_TYPES[index]
-      addr.street     = office.suite ? "#{office.address}, #{office.suite}" : office.address
-      addr.locality   = office.city
-      addr.region     = office.state
-      addr.postalcode = office.zip
+      addr.street     = address_and_suite(office) if office.address
+      addr.locality   = office.city                        if office.city
+      addr.region     = office.state                       if office.state
+      addr.postalcode = office.zip                         if office.zip
     end
   end
 
@@ -63,14 +63,14 @@ class VCardBuilder
     maker.add_addr do |addr|
       addr.preferred  = true
       addr.location   = 'work'
-      addr.street     = address_and_suite
-      addr.locality   = office_location.city
-      addr.region     = office_location.state
-      addr.postalcode = office_location.zip
+      addr.street     = address_and_suite(office_location) if office_location.address
+      addr.locality   = office_location.city               if office_location.city
+      addr.region     = office_location.state              if office_location.state
+      addr.postalcode = office_location.zip                if office_location.zip
     end
   end
 
-  def address_and_suite
+  def address_and_suite(office_location)
     suite   = office_location.suite
     address = office_location.address
     suite ? "#{address}, #{suite}" : address
