@@ -118,13 +118,25 @@ describe OfficeLocation, type: :model do
       expect(office.zip).to eq('10000')
       expect(office.address).to eq('123 Main St.')
 
-      office = OfficeLocation.new address: '123 Main St., Anytown,  NY    10000', rep: StateRep.new
+      office = OfficeLocation.new address: "250-W Stratton Office Building\nSpringfield, IL   62706\n",
+                                  rep: StateRep.new
       office.set_city_state_and_zip
 
-      expect(office.city).to eq('Anytown')
-      expect(office.state).to eq('NY')
-      expect(office.zip).to eq('10000')
-      expect(office.address).to eq('123 Main St.')
+      expect(office.city).to eq('Springfield')
+      expect(office.state).to eq('IL')
+      expect(office.zip).to eq('62706')
+      expect(office.address).to eq('250-W Stratton Office Building')
+
+      office = OfficeLocation.new(
+        address: "203 N. Cedar Street\nShelbyville, IL  62565\nAdditional District Addresses",
+        rep: StateRep.new
+      )
+      office.set_city_state_and_zip
+
+      expect(office.city).to eq('Shelbyville')
+      expect(office.state).to eq('IL')
+      expect(office.zip).to eq('62565')
+      expect(office.address).to eq('203 N. Cedar Street')
     end
 
     it '#set_city_state_and_zip parses a full address with line breaks into separate fields' do

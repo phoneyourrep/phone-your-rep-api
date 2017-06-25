@@ -43,24 +43,30 @@ class OfficeLocation < ApplicationRecord
   attr_reader :distance
 
   def set_city_state_and_zip
+    trim = address.match(/[A-Za-z\s\p{Zs}]+\z/)
+    address.sub!(trim.to_s, '') unless trim.to_s == "\n"
     extract_zip_from_full_address
     extract_state_from_full_address
 
     address_array = address.gsub("\n", ', ').split(', ')
-    self.city     = address_array.pop.delete(',')
+    self.city     = address_array.pop.delete(",\n#{nbsp}")
     self.address  = address_array.join("\n")
   end
 
   def extract_state_from_full_address
     self.state = address.match(/\s+[A-Z]{2}(\s|,)?\z/).to_s
     address.sub!(state, '')
-    state.delete!("\n ,")
+    state.delete!("\n ,#{nbsp}")
   end
 
   def extract_zip_from_full_address
-    self.zip = address.match(/\s+\d{5}(?:[-\s]\d{4})?$\z/).to_s
+    self.zip = address.match(/(\p{Zs}|\s)+\d{5}(?:[-\s]\d{4})?(\s+)?\z/).to_s
     address.sub!(zip, '')
-    zip.delete!("\n ,")
+    zip.delete!("\n ,#{nbsp}")
+  end
+
+  def nbsp
+    Nokogiri::HTML('&nbsp;').text
   end
 
   def set_office_id
