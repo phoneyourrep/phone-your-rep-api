@@ -2,7 +2,7 @@
 
 class StateRep < Rep
   before_save :set_state_leg_id
-  before_save :set_role, if: -> { role.blank? }
+  before_save :set_role
   before_save :set_party_as_democrat, if: -> { party == 'Democratic' }
 
   def set_state_leg_id
@@ -10,7 +10,7 @@ class StateRep < Rep
   end
 
   def set_role
-    self.role = "#{state.name} Legislator #{chamber.capitalize} Chamber"
+    self.role = "#{state.name} State #{state.send("#{chamber}_chamber_title")}"
   end
 
   def set_party_as_democrat

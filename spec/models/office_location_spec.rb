@@ -152,7 +152,7 @@ describe OfficeLocation, type: :model do
     end
 
     it 'calls #set_city_state_and_zip before_save only if it\'s rep is a StateRep' do
-      rep = StateRep.create(state: State.new, chamber: 'chamber')
+      rep = StateRep.create(state: State.new, chamber: 'lower')
       office = OfficeLocation.new address: '123 Main St., Anytown, NY 10000', rep: rep
       office.save
 

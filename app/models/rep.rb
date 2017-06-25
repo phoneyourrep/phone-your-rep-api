@@ -91,5 +91,8 @@ class Rep < ApplicationRecord
   rescue OpenSSL::SSL::SSLError => e
     logger.error e
     e.message
+  rescue Encoding::UndefinedConversionError => e
+    logger.error e
+    e.message
   end
 end

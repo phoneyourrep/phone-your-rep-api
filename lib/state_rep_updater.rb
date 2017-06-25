@@ -10,6 +10,14 @@ class StateRepUpdater
   attr_reader :state, :open_states_reps
 
   def self.update!
+    metadata = OpenStates.call(:metadata).objects
+    metadata.each do |meta|
+      state    = State.find_by(abbr: meta.abbreviation.upcase)
+      chambers = meta.chambers
+      state.upper_chamber_title = chambers['upper']['title']
+      state.lower_chamber_title = chambers['lower']['title'] if chambers['lower']
+    end
+
     STATE_ABBREVIATIONS.each do |state_abbr|
       open_states_reps = OpenStates.call(:legislators) { |r| r.state = state_abbr }.objects
       updater          = new(open_states_reps, state_abbr)
