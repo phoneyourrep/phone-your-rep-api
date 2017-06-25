@@ -18,6 +18,14 @@ class OfficeLocation < ApplicationRecord
 
   after_validation :geocode, if: :needs_geocoding?
 
+  reverse_geocoded_by :latitude, :longitude do |obj, results|
+    if geo = results.first
+      obj.state = results.state_code
+    end
+  end
+
+  after_validation :reverse_geocode, if: -> { state.blank? }
+
   before_save :set_official_id, :set_bioguide_or_state_leg_id, :set_office_id, :set_level
 
   before_save :set_city_state_and_zip, if: -> { rep.type == 'StateRep' && !address.blank? }
@@ -43,7 +51,7 @@ class OfficeLocation < ApplicationRecord
     address.sub!(zip, '')
     zip.delete!("\n ,")
 
-    self.state = address.match(/\s[A-Z]{2}(\s|,|\z)/).to_s
+    self.state = address.match(/\s[A-Z]{2}(\s|,)?\z/).to_s
     address.sub!(state, '')
     state.delete!("\n ,")
 
