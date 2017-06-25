@@ -34,11 +34,9 @@ FactoryGirl.define do
     rep
   end
 
-  factory :v_card
   factory :state { state_code 'state_code' }
   factory :congressional_district { state }
   factory :district { state }
-  factory :avatar
   factory :impression
   factory :zcta
   factory :zcta_district

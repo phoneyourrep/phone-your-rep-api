@@ -9,7 +9,6 @@ describe Governor, type: :model do
     @office_two   = create :office_location, latitude: 4.0, longitude: 4.0
     @office_three = create :office_location, latitude: 2.0, longitude: 2.0
     @office_four  = create :office_location, latitude: 3.0, longitude: 3.0
-    @avatar       = create :avatar
 
     @rep = create(
       :governor,
@@ -17,8 +16,7 @@ describe Governor, type: :model do
       first: 'Phil',
       last: 'Scott',
       state: @state,
-      office_locations: [@office_one, @office_two, @office_three, @office_four],
-      avatar: @avatar
+      office_locations: [@office_one, @office_two, @office_three, @office_four]
     )
   end
 
@@ -54,31 +52,10 @@ describe Governor, type: :model do
     expect(@rep.active_office_locations).to include(@office_four)
   end
 
-  it 'has an avatar' do
-    expect(@rep.avatar).to be(@avatar)
-  end
-
-  it 'has constructs a photo_url based on its bioguide_id' do
+  it 'has constructs a photo_url based on its official_id' do
     photo_url = 'https://www.nga.org/files/live/sites/NGA/files/images/govportraits/VT-PhilScott.jpg'
 
     expect(@rep.photo_url).to eq(photo_url)
-  end
-
-  it '#fetch_avatar_data updates its avatar with data for its own photo_url' do
-    expect(@avatar.data).to be(nil)
-
-    @rep.fetch_avatar_data
-    data = open(@rep.photo_url, &:read)
-
-    expect(@avatar.data).not_to be(nil)
-    expect(@avatar.data).to eq(data)
-  end
-
-  it '#fetch_avatar_data creates an avatar if one does not already exist' do
-    rep = create :governor
-    expect(rep.avatar).to be(nil)
-    rep.add_photo
-    expect(rep.avatar).to be_a(Avatar)
   end
 
   it '#add_photo updates the photo attribute if the #photo_url returns valid data' do

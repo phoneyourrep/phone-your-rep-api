@@ -106,9 +106,9 @@ class VCardBuilder
   end
 
   def add_rep_photo(maker)
-    return if rep.avatar.blank? || rep.avatar.data.blank?
+    return unless data = rep.fetch_photo_data
     maker.add_photo do |photo|
-      photo.image = rep.avatar.data
+      photo.image = data
       photo.type  = 'JPEG'
     end
   end

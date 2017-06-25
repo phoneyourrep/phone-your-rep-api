@@ -42,12 +42,13 @@ class StateRepUpdater
     rep.party          = os_rep.party
     rep.contact_form   = os_rep.email
     rep.active         = os_rep.active
-    rep.photo          = os_rep.photo_url
+    rep.photo_url      = os_rep.photo_url
     rep.level          = os_rep.level
     rep.url            = os_rep.url
     rep.chamber        = os_rep.chamber
     rep.suffix         = os_rep.suffixes
     add_or_update_office_locations(rep, os_rep)
+    rep.add_photo if rep.photo_url != rep.photo
     rep.save
   end
 

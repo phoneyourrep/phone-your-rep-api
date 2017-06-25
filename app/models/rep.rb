@@ -7,7 +7,6 @@ class Rep < ApplicationRecord
 
   belongs_to :district
   belongs_to :state
-  has_one    :avatar, dependent: :destroy
   has_many   :office_locations,
              dependent: :destroy,
              foreign_key: :official_id,
@@ -78,12 +77,19 @@ class Rep < ApplicationRecord
   end
 
   def add_photo
-    fetch_avatar_data
-    update photo: avatar.data ? photo_url : nil
+    update photo: fetch_photo_data ? photo_url : nil
   end
 
-  def fetch_avatar_data
-    ava = avatar || build_avatar
-    ava.fetch_data photo_url
+  def fetch_photo_data
+    open(photo_url, &:read) unless photo_url.blank?
+  rescue OpenURI::HTTPError => e
+    logger.error e
+    false
+  rescue URI::InvalidURIError => e
+    logger.error e
+    false
+  rescue OpenSSL::SSL::SSLError => e
+    logger.error e
+    e.message
   end
 end
