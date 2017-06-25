@@ -151,6 +151,20 @@ describe OfficeLocation, type: :model do
       expect(office.address).to eq('123 Main St.')
     end
 
+    it '#add_fields_for_phone_only sets city, state and zip if there\'s no address' do
+      state  = State.create(abbr: 'NY')
+      office = OfficeLocation.new address: 'Oneonta Phone',
+                                  rep: Rep.new(state: state)
+      office.set_city_state_and_zip
+
+      expect(office.city).to eq('Oneonta')
+      expect(office.state).to eq('NY')
+      expect(office.zip).to eq('13820')
+      expect(office.address).to eq('')
+      expect(office.latitude).to_not be(nil)
+      expect(office.longitude).to_not be(nil)
+    end
+
     it 'calls #set_city_state_and_zip before_save only if it\'s rep is a StateRep' do
       rep = StateRep.create(state: State.new, chamber: 'lower')
       office = OfficeLocation.new address: '123 Main St., Anytown, NY 10000', rep: rep
