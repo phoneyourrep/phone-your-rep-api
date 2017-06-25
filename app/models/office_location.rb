@@ -103,8 +103,7 @@ class OfficeLocation < ApplicationRecord
   end
 
   def make_v_card(photo: true)
-    v_card_builder = VCardBuilder.new self, rep
-    v_card_builder.make_v_card(photo: photo)
+    VCardBuilder.new(self, rep).make_v_card(photo: photo)
   end
 
   def full_address
@@ -116,11 +115,7 @@ class OfficeLocation < ApplicationRecord
   end
 
   def geocoder_address
-    if rep.is_a?(Governor)
-      city_state_zip
-    else
-      full_address
-    end
+    rep.is_a?(Governor) ? city_state_zip : full_address
   end
 
   def calculate_distance(coordinates)
