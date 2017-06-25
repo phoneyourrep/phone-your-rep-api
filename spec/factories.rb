@@ -29,7 +29,11 @@ FactoryGirl.define do
     state
   end
 
-  factory :office_location { office_id 'office_id' }
+  factory :office_location do
+    office_id 'office_id'
+    rep
+  end
+
   factory :v_card
   factory :state { state_code 'state_code' }
   factory :congressional_district { state }

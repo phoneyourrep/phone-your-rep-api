@@ -124,4 +124,46 @@ describe OfficeLocation, type: :model do
 
     `rm -rf #{dragonfly_test_directory}`
   end
+
+  context 'when belongs to a StateRep' do
+    it '#set_city_state_and_zip parses a full address with commas into separate fields' do
+      office = OfficeLocation.new address: '123 Main St., Anytown, NY 10000', rep: StateRep.new
+      office.set_city_state_and_zip
+
+      expect(office.city).to eq('Anytown')
+      expect(office.state).to eq('NY')
+      expect(office.zip).to eq('10000')
+      expect(office.address).to eq('123 Main St.')
+    end
+
+    it '#set_city_state_and_zip parses a full address with line breaks into separate fields' do
+      office = OfficeLocation.new address: "123 Main St.\nAnytown\nNY 10000-1234", rep: StateRep.new
+      office.set_city_state_and_zip
+
+      expect(office.city).to eq('Anytown')
+      expect(office.state).to eq('NY')
+      expect(office.zip).to eq('10000-1234')
+      expect(office.address).to eq('123 Main St.')
+    end
+
+    it 'calls #set_city_state_and_zip before_save only if it\'s rep is a StateRep' do
+      rep = StateRep.create(state: State.new, chamber: 'chamber')
+      office = OfficeLocation.new address: '123 Main St., Anytown, NY 10000', rep: rep
+      office.save
+
+      expect(office.address).to eq('123 Main St.')
+      expect(office.city).to eq('Anytown')
+      expect(office.state).to eq('NY')
+      expect(office.zip).to eq('10000')
+
+      rep = Rep.create
+      office = OfficeLocation.new address: "123 Main St.\nAnytown\nNY 10000-1234", rep: rep
+      office.save
+
+      expect(office.address).to_not eq('123 Main St.')
+      expect(office.city).to_not eq('Anytown')
+      expect(office.state).to_not eq('NY')
+      expect(office.zip).to_not eq('10000-1234')
+    end
+  end
 end
