@@ -16,7 +16,7 @@ module DbPyrUpdate
       Governator.scrape!
       Governator.governors.each do |gov|
         state  = State.find_by(name: gov.state_name)
-        db_gov = Governor.find_or_create_by(official_full: gov.official_full, state: state)
+        db_gov = Governor.find_or_initialize_by(official_full: gov.official_full, state: state)
         update_basic_info(db_gov, gov)
         db_gov.add_photo
         db_gov.active = true
@@ -27,7 +27,7 @@ module DbPyrUpdate
     end
 
     def update_office(db_gov, off)
-      o = OfficeLocation.find_or_create_by(
+      o = OfficeLocation.find_or_initialize_by(
         rep: db_gov, address: off.address, office_type: off.office_type, city: off.city
       )
       o.state  = off.state
@@ -112,11 +112,10 @@ module DbPyrUpdate
         office_type: 'capitol',
         official_id: rep.official_id
       )
-      cap_office.tap do |off|
-        update_basic_office_info(off, rep)
-        update_phone_fax_and_hours(off, term)
-        update_cap_office_address(address_ary, off)
-      end
+      update_basic_office_info(cap_office, rep)
+      update_phone_fax_and_hours(cap_office, term)
+      update_cap_office_address(address_ary, cap_office)
+      cap_office.save
     end
 
     def update_basic_office_info(off, rep)
@@ -219,6 +218,7 @@ module DbPyrUpdate
         )
         update_location_info(office, yaml_off)
         update_other_office_info(office, yaml_off)
+        office.save
         @active_offices << office.id
         puts "Updated #{office.rep.official_full}'s #{office.city} office"
       end

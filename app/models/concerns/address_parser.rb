@@ -32,12 +32,14 @@ module AddressParser
   end
 
   def split_city_on_digits
-    split_city_on_digits = city.split(/\d/)
+    split_city_on_digits = city&.split(/\d/)
+    return if split_city_on_digits.blank?
     address << city.sub(split_city_on_digits.last, '')
     self.city = split_city_on_digits.last.strip
   end
 
   def set_city_state_and_zip
+    return unless address_changed?
     phone_only = address.match(/[\p{Zs}\s]+Phone(\s?)+\z/)
     return add_fields_for_phone_only(phone_only) if phone_only
     trim_address_tail
@@ -45,7 +47,7 @@ module AddressParser
     extract_state_from_full_address
 
     address_array = address.gsub("\n", ', ').split(', ')
-    self.city     = address_array.pop.delete(",\n#{nbsp}")
+    self.city     = address_array.pop&.delete(",\n#{nbsp}")
     self.address  = address_array.join("\n")
 
     split_city_on_digits

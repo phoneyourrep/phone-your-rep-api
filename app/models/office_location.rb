@@ -12,11 +12,15 @@ class OfficeLocation < ApplicationRecord
   belongs_to :rep, foreign_key: :official_id, primary_key: :official_id
   has_many   :issues
 
-  geocoded_by :geocoder_address
-
   validates :rep, presence: true
 
-  after_validation :geocode, if: :needs_geocoding?
+  before_validation :geocode, if: :needs_geocoding?
+
+  geocoded_by :geocoder_address
+
+  after_validation :set_city_state_and_zip, if: -> { rep.type == 'StateRep' && !address.blank? }
+
+  before_save :reverse_geocode, if: -> { state.blank? }
 
   reverse_geocoded_by :latitude, :longitude do |obj, results|
     geo = results.first
@@ -26,11 +30,7 @@ class OfficeLocation < ApplicationRecord
     end
   end
 
-  after_validation :reverse_geocode, if: -> { state.blank? }
-
   before_save :set_official_id, :set_bioguide_or_state_leg_id, :set_office_id, :set_level
-
-  before_save :set_city_state_and_zip, if: -> { rep.type == 'StateRep' && !address.blank? }
 
   scope :active, -> { where(active: true) }
 

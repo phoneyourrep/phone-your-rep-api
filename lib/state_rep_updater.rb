@@ -2,27 +2,21 @@
 
 # Scrapes data from OpenStates.org and loads into the database
 class StateRepUpdater
-  STATE_ABBREVIATIONS = %w[AL AK AZ AR CA CO CT DE DC FL GA HI ID IL
-                           IN IA KS KY LA ME MD MA MI MN MS MO MT NE
-                           NV NH NJ NM NY NC ND OH OK OR PA PR RI SC
-                           SD TN TX UT VT VA WA WV WI WY].freeze
-
   attr_reader :state, :open_states_reps
 
   def self.update!
-    metadata = OpenStates.call(:metadata).objects
+    metadata = OpenStates.metadata.objects
     metadata.each do |meta|
-      state    = State.find_by(abbr: meta.abbreviation.upcase)
-      chambers = meta.chambers
+      state_abbr = meta.abbreviation.upcase
+      state      = State.find_by(abbr: state_abbr)
+      chambers   = meta.chambers
       state.upper_chamber_title = chambers['upper']['title']
       state.lower_chamber_title = chambers['lower']['title'] if chambers['lower']
-    end
+      state.save
 
-    STATE_ABBREVIATIONS.each do |state_abbr|
-      open_states_reps = OpenStates.call(:legislators) { |r| r.state = state_abbr }.objects
-      updater          = new(open_states_reps, state_abbr)
-
-      updater.update!
+      open_states_reps = OpenStates.legislators { |r| r.state = state_abbr }.objects
+      new(open_states_reps, state_abbr).update!
+      OpenStates::Legislator.destroy_all
     end
   end
 
@@ -40,26 +34,25 @@ class StateRepUpdater
   end
 
   def add_or_update_rep(os_rep, district)
-    rep = StateRep.find_or_initialize_by(
-      official_id: os_rep.leg_id, district: district, state: state
-    )
-
+    rep          = StateRep.find_or_initialize_by(official_id: os_rep.leg_id)
+    rep.district = district
+    rep.state    = state
     update_personal_info(rep, os_rep)
     update_political_info(rep, os_rep)
-    add_or_update_office_locations(rep, os_rep)
-
     rep.add_photo if rep.photo_url != rep.photo
     rep.save
+
+    add_or_update_office_locations(rep, os_rep)
   end
 
   def update_political_info(rep, os_rep)
+    rep.chamber      = os_rep.chamber
     rep.party        = os_rep.party
     rep.contact_form = os_rep.email
     rep.active       = os_rep.active
     rep.photo_url    = os_rep.photo_url
     rep.level        = os_rep.level
     rep.url          = os_rep.url
-    rep.chamber      = os_rep.chamber
   end
 
   def update_personal_info(rep, os_rep)
@@ -75,9 +68,14 @@ class StateRepUpdater
       off = rep.office_locations.find_or_initialize_by(
         office_type: os_off.type, rep: rep
       )
-      off.fax     = os_off.fax     if os_off.fax
-      off.phone   = os_off.phone   if os_off.phone
-      off.address = os_off.address if os_off.address
+      update_fax_phone_and_address(off, os_off)
+      off.save
     end
+  end
+
+  def update_fax_phone_and_address(off, os_off)
+    off.fax     = !os_off.fax.blank?     ? os_off.fax     : off.fax
+    off.phone   = !os_off.phone.blank?   ? os_off.phone   : off.phone
+    off.address = !os_off.address.blank? ? os_off.address : off.address
   end
 end

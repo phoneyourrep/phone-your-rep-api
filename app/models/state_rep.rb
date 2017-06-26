@@ -1,8 +1,7 @@
 # frozen_string_literal: true
 
 class StateRep < Rep
-  before_save :set_state_leg_id
-  before_save :set_role
+  before_save :set_state_leg_id, :set_role
   before_save :set_party_as_democrat, if: -> { party == 'Democratic' }
 
   def set_state_leg_id
