@@ -89,15 +89,22 @@ namespace :db do
       Rake::Task['pyr:state_districts:import'].invoke
     end
 
-    desc 'Destroy all Reps and seed from Scratch'
+    desc 'Destroy all Goverors and CongressionalReps and seed from Scratch'
     task :seed_reps do
-      Rep.destroy_all
+      Rep.where.not(type: 'StateRep').destroy_all
       Rake::Task['db:pyr:update:current_reps'].invoke
       puts "There are now #{Rep.count} reps and #{OfficeLocation.count} offices in the database."
       Rake::Task['db:pyr:update:socials'].invoke
-      OfficeLocation.destroy_all(office_type: 'district')
+      OfficeLocation.joins(:rep).
+        where.
+        not(reps: { type: 'StateRep' }).
+        destroy_all(office_type: 'district')
       Rake::Task['db:pyr:update:office_locations'].invoke
       puts "There are now #{OfficeLocation.count} office locations in the database."
+      Rake::Task['db:pyr:update:governors'].invoke
+      puts "there are now #{Governor.count} governors with "\
+        "#{OfficeLocation.joins(:rep).where(reps: { type: 'Governor' }).count} office locations "\
+        'in the database.'
     end
   end
 end
