@@ -33,6 +33,15 @@ class StateRepUpdater
       next unless district || %w[At-Large Chairman].include?(os_rep.district)
       add_or_update_rep(os_rep, district)
     end
+
+    destroy_offices_with_no_phone_or_address
+  end
+
+  def destroy_offices_with_no_phone_or_address
+    OfficeLocation.
+      includes(:rep).
+      where(address: nil, phone: nil, reps: { type: 'StateRep' }).
+      destroy_all
   end
 
   def add_or_update_rep(os_rep, district)
