@@ -1,10 +1,9 @@
-state_code,code,full_code,name,chamber
-72,005,72005-upper,V,upper
-72,004,72004-upper,IV,upper
-72,001,72001-upper,I,upper
-72,003,72003-upper,III,upper
-72,002,72002-upper,II,upper
-72,007,72007-upper,VII,upper
-72,ZZZ,72ZZZ-upper,State Senate Districts not defined,upper
-72,006,72006-upper,VI,upper
-72,008,72008-upper,VIII,upper
+code,state_code,full_code,name,chamber,type,level,open_states_name
+002,72,72002-upper,II,upper,StateDistrict,state,II
+003,72,72003-upper,III,upper,StateDistrict,state,III
+004,72,72004-upper,IV,upper,StateDistrict,state,IV
+005,72,72005-upper,V,upper,StateDistrict,state,V
+007,72,72007-upper,VII,upper,StateDistrict,state,VII
+008,72,72008-upper,VIII,upper,StateDistrict,state,VIII
+001,72,72001-upper,I,upper,StateDistrict,state,I
+006,72,72006-upper,VI,upper,StateDistrict,state,VI

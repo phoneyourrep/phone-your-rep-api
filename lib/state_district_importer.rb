@@ -24,10 +24,9 @@ class StateDistrictImporter
     csv_state_districts = CSV.open(filename, headers: true, encoding: 'ISO-8859-1')
     csv_state_districts.each do |row|
       StateDistrict.find_or_create_by(full_code: row['full_code']) do |d|
-        d.code       = row['code']
-        d.state_code = row['state_code']
-        d.name       = row['name']
-        d.chamber    = row['chamber']
+        %w[code state_code name chamber type level open_states_name].each do |attribute|
+          d.send("#{attribute}=", row[attribute])
+        end
         puts "State #{d.chamber.capitalize} Legislative District #{d.code} of #{d.state.name} "\
           'saved in database.'
       end

@@ -1,0 +1,9 @@
+code,state_code,full_code,name,chamber,type,level,open_states_name
+001,11,11001-upper,1,upper,StateDistrict,state,Ward 1
+002,11,11002-upper,2,upper,StateDistrict,state,Ward 2
+003,11,11003-upper,3,upper,StateDistrict,state,Ward 3
+004,11,11004-upper,4,upper,StateDistrict,state,Ward 4
+005,11,11005-upper,5,upper,StateDistrict,state,Ward 5
+006,11,11006-upper,6,upper,StateDistrict,state,Ward 6
+007,11,11007-upper,7,upper,StateDistrict,state,Ward 7
+008,11,11008-upper,8,upper,StateDistrict,state,Ward 8

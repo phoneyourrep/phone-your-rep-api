@@ -15,20 +15,22 @@ class StateRepUpdater
       state.save
 
       open_states_reps = OpenStates.legislators { |r| r.state = state_abbr }.objects
-      new(open_states_reps, state_abbr).update!
+      new(open_states_reps, state).update!
       OpenStates::Legislator.destroy_all
     end
   end
 
-  def initialize(open_states_reps, state_abbr)
-    @state = State.find_by(abbr: state_abbr.upcase)
+  def initialize(open_states_reps, state)
+    @state = state
     @open_states_reps = open_states_reps
   end
 
   def update!
     open_states_reps.each do |os_rep|
-      district = StateDistrict.find_by(state: state, name: os_rep.district, chamber: os_rep.chamber)
-      next unless district
+      district = StateDistrict.find_by(
+        state: state, open_states_name: os_rep.district, chamber: os_rep.chamber
+      )
+      next unless district || %w[At-Large Chairman].include?(os_rep.district)
       add_or_update_rep(os_rep, district)
     end
   end
