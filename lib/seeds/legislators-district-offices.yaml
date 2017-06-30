@@ -2523,7 +2523,7 @@
     zip: '21043'
     latitude: 39.2675157
     longitude: -76.7991703
-    id: C000984-ellicott
+    id: C000984-ellicott_city
 - id:
     bioguide: C001035
     govtrack: 300025
@@ -5286,7 +5286,7 @@
     city: Orlando
     fax: ''
     hours: ''
-    phone: ''
+    phone: 321-388-9808
     state: FL
     suite: Suite 301
     zip: '32835'
@@ -7188,9 +7188,9 @@
   - address: Ave Juan Ponce De León
     building: Edificio Antigua Escuela de Medicina Tropica
     city: San Juan
-    fax: ''
+    fax: 787-729-6824
     hours: ''
-    phone: ''
+    phone: 787-723-6333
     state: PR
     suite: ''
     zip: '00901'
@@ -11192,17 +11192,17 @@
     latitude: 61.2171561
     longitude: -149.9043364
     id: M001153-anchorage
-  - address: 101 12th Ave.
-    building: Federal Building
+  - address: 250 Cushman St
+    building: Courthouse Square
     city: Fairbanks
     fax: 907-451-7146
     hours: ''
     phone: 907-456-0233
     state: AK
-    suite: Suite 329
+    suite: '#2D'
     zip: '99701'
-    latitude: 64.8383052
-    longitude: -147.7082477
+    latitude: 64.8427991
+    longitude: -147.7219443
     id: M001153-fairbanks
   - address: 800 Glacier Ave.
     building: ''
@@ -19280,6 +19280,30 @@
     latitude: 39.64151
     longitude: -77.7191
     id: V000128-hagerstown
+  - address: 1900 North Howard Street
+    building: ''
+    city: Baltimore
+    fax: 301-545-1512
+    hours: ''
+    phone: 667-212-4610
+    state: MD
+    suite: Suite 100
+    zip: '21218'
+    latitude: 39.3114748
+    longitude: -76.6216137
+    id: V000128-baltimore
+  - address: 60 West Street
+    building: ''
+    city: Annapolis
+    fax: ''
+    hours: ''
+    phone: 410-263-1325
+    state: MD
+    suite: Suite 107
+    zip: '21401'
+    latitude: 38.9785971
+    longitude: -76.4976378
+    id: V000128-annapolis
 - id:
     bioguide: K000393
     govtrack: 412679
@@ -19320,3 +19344,99 @@
     latitude: 31.2934776
     longitude: -92.51565289999999
     id: K000393-alexandria
+- id:
+    bioguide: C001110
+    govtrack: 412688
+  offices:
+  - address: 2323 N. Broadway
+    building: Rancho Santiago Community College Building
+    city: Santa Ana
+    fax: ''
+    hours: ''
+    phone: 714-621-0102
+    state: CA
+    suite: Suite 319
+    zip: '92706'
+    latitude: 33.7673604
+    longitude: -117.8703812
+    id: C001110-santa_ana
+- id:
+    bioguide: E000298
+    govtrack: 412735
+  offices:
+  - address: 7701 E Kellogg Ave
+    building: ''
+    city: Wichita
+    fax: 316-262-5309
+    hours: ''
+    phone: 316-262-8992
+    state: KS
+    suite: Suite 510
+    zip: '67207'
+    id: E000298-wichita
+    latitude: 37.6780708
+    longitude: -97.24667099999999
+- id:
+    bioguide: S001202
+    govtrack: 412734
+  offices:
+  - address: 1 Church Street
+    building: ''
+    city: Montgomery
+    fax: 334-293-9349
+    hours: ''
+    phone: 334-230-0698
+    state: AL
+    suite: Suite 500B
+    zip: '36104'
+    id: S001202-montgomery
+    latitude: 32.374321
+    longitude: -86.30993869999999
+  - address: 100 W Troy Street
+    building: ''
+    city: Dothan
+    fax: 334-792-4928
+    hours: ''
+    phone: 334-792-4924
+    state: AL
+    suite: Room 302
+    zip: '36303'
+    id: S001202-dothan
+    latitude: 31.2254045
+    longitude: -85.3925445
+  - address: 1800 5th Avenue N
+    building: Vance Federal Building
+    city: Birmingham
+    fax: 205-731-0221
+    hours: ''
+    phone: 205-731-1500
+    state: AL
+    suite: ''
+    zip: 35203-2171
+    id: S001202-birmingham
+    latitude: 33.517386
+    longitude: -86.81048799999999
+  - address: 200 Clinton Avenue W
+    building: ''
+    city: Huntsville
+    fax: 256-533-0745
+    hours: ''
+    phone: 256-533-0979
+    state: AL
+    suite: Suite 802
+    zip: 35801-4932
+    id: S001202-huntsville
+    latitude: 34.7307434
+    longitude: -86.5882087
+  - address: 41 West I-65 Service Road N
+    building: BB&T Centre
+    city: Mobile
+    fax: 251-414-5845
+    hours: ''
+    phone: 251-414-3083
+    state: AL
+    suite: Suite 2300-A
+    zip: 36608-1291
+    id: S001202-mobile
+    latitude: 30.690756
+    longitude: -88.12684589999999
