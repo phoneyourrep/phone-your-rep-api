@@ -2101,7 +2101,7 @@
     latitude: 36.0960116
     longitude: -80.2748025
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/B001135-winston_salem
-    downloads: 31
+    downloads: 32
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/B001135_winston_salem.png
 - self: https://phone-your-rep.herokuapp.com/reps/B001227
   state:
@@ -3693,7 +3693,7 @@
     latitude: 38.8928318
     longitude: -77.0043625
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/B001267-capitol
-    downloads: 24
+    downloads: 25
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/B001267_capitol.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/B001267-colorado_springs
     rep: https://phone-your-rep.herokuapp.com/reps/B001267
@@ -3741,7 +3741,7 @@
     latitude: 39.734465
     longitude: -104.9852342
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/B001267-denver
-    downloads: 61
+    downloads: 62
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/B001267_denver.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/B001267-durango
     rep: https://phone-your-rep.herokuapp.com/reps/B001267
@@ -8949,12 +8949,12 @@
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/C000984-catonsville
     downloads: 3
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/C000984_catonsville.png
-  - self: https://phone-your-rep.herokuapp.com/office_locations/C000984-ellicott
+  - self: https://phone-your-rep.herokuapp.com/office_locations/C000984-ellicott_city
     rep: https://phone-your-rep.herokuapp.com/reps/C000984
     active: true
     official_id: C000984
     level: national
-    office_id: C000984-ellicott
+    office_id: C000984-ellicott_city
     bioguide_id: C000984
     state_leg_id: 
     office_type: district
@@ -8970,9 +8970,9 @@
     hours: M-F 8:30AM to 5PM
     latitude: 39.2675157
     longitude: -76.7991703
-    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/C000984-ellicott
+    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/C000984-ellicott_city
     downloads: 0
-    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/C000984_ellicott.png
+    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/C000984_ellicott_city.png
 - self: https://phone-your-rep.herokuapp.com/reps/C001035
   state:
     self: https://phone-your-rep.herokuapp.com/api/beta/states/23
@@ -10999,7 +10999,7 @@
     latitude: 27.9771817
     longitude: -82.4852065
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/C001066-tampa
-    downloads: 5
+    downloads: 6
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/C001066_tampa.png
 - self: https://phone-your-rep.herokuapp.com/reps/C001067
   state:
@@ -11893,7 +11893,7 @@
     latitude: 30.423884
     longitude: -91.1325791
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/C001075-baton_rouge
-    downloads: 7
+    downloads: 8
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/C001075_baton_rouge.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/C001075-capitol
     rep: https://phone-your-rep.herokuapp.com/reps/C001075
@@ -11917,7 +11917,7 @@
     latitude: 38.8928318
     longitude: -77.0043625
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/C001075-capitol
-    downloads: 5
+    downloads: 6
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/C001075_capitol.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/C001075-lafayette
     rep: https://phone-your-rep.herokuapp.com/reps/C001075
@@ -11941,7 +11941,7 @@
     latitude: 30.1948666
     longitude: -92.014654
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/C001075-lafayette
-    downloads: 5
+    downloads: 6
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/C001075_lafayette.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/C001075-lake_charles
     rep: https://phone-your-rep.herokuapp.com/reps/C001075
@@ -11965,7 +11965,7 @@
     latitude: 30.2305579
     longitude: -93.2196294
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/C001075-lake_charles
-    downloads: 2
+    downloads: 3
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/C001075_lake_charles.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/C001075-metairie
     rep: https://phone-your-rep.herokuapp.com/reps/C001075
@@ -11989,7 +11989,7 @@
     latitude: 30.0112259
     longitude: -90.1541748
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/C001075-metairie
-    downloads: 19
+    downloads: 20
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/C001075_metairie.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/C001075-monroe
     rep: https://phone-your-rep.herokuapp.com/reps/C001075
@@ -12013,7 +12013,7 @@
     latitude: 32.5175209
     longitude: -92.1087384
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/C001075-monroe
-    downloads: 1
+    downloads: 2
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/C001075_monroe.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/C001075-shreveport
     rep: https://phone-your-rep.herokuapp.com/reps/C001075
@@ -14871,6 +14871,30 @@
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/C001110-capitol
     downloads: 1
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/C001110_capitol.png
+  - self: https://phone-your-rep.herokuapp.com/office_locations/C001110-santa_ana
+    rep: https://phone-your-rep.herokuapp.com/reps/C001110
+    active: true
+    official_id: C001110
+    level: national
+    office_id: C001110-santa_ana
+    bioguide_id: C001110
+    state_leg_id: 
+    office_type: district
+    distance: 
+    building: Rancho Santiago Community College Building
+    address: 2323 N. Broadway
+    suite: Suite 319
+    city: Santa Ana
+    state: CA
+    zip: '92706'
+    phone: 714-621-0102
+    fax: ''
+    hours: ''
+    latitude: 33.7673604
+    longitude: -117.8703812
+    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/C001110-santa_ana
+    downloads: 0
+    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/C001110_santa_ana.png
 - self: https://phone-your-rep.herokuapp.com/reps/C001111
   state:
     self: https://phone-your-rep.herokuapp.com/api/beta/states/12
@@ -15497,7 +15521,7 @@
     latitude: 39.7260392
     longitude: -104.9832743
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/D000197-denver
-    downloads: 14
+    downloads: 15
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/D000197_denver.png
 - self: https://phone-your-rep.herokuapp.com/reps/D000216
   state:
@@ -18790,7 +18814,7 @@
     city: Orlando
     state: FL
     zip: '32835'
-    phone: ''
+    phone: 321-388-9808
     fax: ''
     hours: ''
     latitude: 28.517804
@@ -20036,6 +20060,30 @@
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/E000298-capitol
     downloads: 1
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/E000298_capitol.png
+  - self: https://phone-your-rep.herokuapp.com/office_locations/E000298-wichita
+    rep: https://phone-your-rep.herokuapp.com/reps/E000298
+    active: true
+    official_id: E000298
+    level: national
+    office_id: E000298-wichita
+    bioguide_id: E000298
+    state_leg_id: 
+    office_type: district
+    distance: 
+    building: ''
+    address: 7701 E Kellogg Ave
+    suite: Suite 510
+    city: Wichita
+    state: KS
+    zip: '67207'
+    phone: 316-262-8992
+    fax: 316-262-5309
+    hours: ''
+    latitude: 37.6780708
+    longitude: -97.246671
+    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/E000298-wichita
+    downloads: 0
+    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/E000298_wichita.png
 - self: https://phone-your-rep.herokuapp.com/reps/F000062
   state:
     self: https://phone-your-rep.herokuapp.com/api/beta/states/06
@@ -20092,7 +20140,7 @@
     latitude: 38.8928318
     longitude: -77.0043625
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/F000062-capitol
-    downloads: 102
+    downloads: 103
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/F000062_capitol.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/F000062-fresno
     rep: https://phone-your-rep.herokuapp.com/reps/F000062
@@ -20336,7 +20384,7 @@
     latitude: 38.8928318
     longitude: -77.0043625
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/F000444-capitol
-    downloads: 21
+    downloads: 22
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/F000444_capitol.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/F000444-phoenix
     rep: https://phone-your-rep.herokuapp.com/reps/F000444
@@ -20360,7 +20408,7 @@
     latitude: 33.5098565
     longitude: -112.0338808
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/F000444-phoenix
-    downloads: 64
+    downloads: 65
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/F000444_phoenix.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/F000444-tucson
     rep: https://phone-your-rep.herokuapp.com/reps/F000444
@@ -23530,7 +23578,7 @@
     latitude: 42.655222
     longitude: -73.7492819
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/G000555-albany
-    downloads: 39
+    downloads: 40
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/G000555_albany.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/G000555-buffalo
     rep: https://phone-your-rep.herokuapp.com/reps/G000555
@@ -23554,7 +23602,7 @@
     latitude: 42.8747911
     longitude: -78.851165
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/G000555-buffalo
-    downloads: 29
+    downloads: 30
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/G000555_buffalo.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/G000555-capitol
     rep: https://phone-your-rep.herokuapp.com/reps/G000555
@@ -23602,7 +23650,7 @@
     latitude: 43.786736
     longitude: -75.4918505
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/G000555-lowville
-    downloads: 7
+    downloads: 8
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/G000555_lowville.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/G000555-mahopac
     rep: https://phone-your-rep.herokuapp.com/reps/G000555
@@ -23626,7 +23674,7 @@
     latitude: 41.372316
     longitude: -73.733465
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/G000555-mahopac
-    downloads: 21
+    downloads: 22
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/G000555_mahopac.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/G000555-melville
     rep: https://phone-your-rep.herokuapp.com/reps/G000555
@@ -23698,7 +23746,7 @@
     latitude: 43.1576631
     longitude: -77.613515
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/G000555-rochester
-    downloads: 24
+    downloads: 25
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/G000555_rochester.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/G000555-syracuse
     rep: https://phone-your-rep.herokuapp.com/reps/G000555
@@ -24218,7 +24266,7 @@
     latitude: 39.7494865
     longitude: -104.994834
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/G000562-denver
-    downloads: 63
+    downloads: 64
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/G000562_denver.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/G000562-durango
     rep: https://phone-your-rep.herokuapp.com/reps/G000562
@@ -25226,7 +25274,7 @@
     latitude: 38.8867621
     longitude: -77.0069216
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/G000577-capitol
-    downloads: 1
+    downloads: 2
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/G000577_capitol.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/G000577-livingston
     rep: https://phone-your-rep.herokuapp.com/reps/G000577
@@ -25250,7 +25298,7 @@
     latitude: 30.4830241
     longitude: -90.7486419
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/G000577-livingston
-    downloads: 0
+    downloads: 1
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/G000577_livingston.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/G000577-thibodaux
     rep: https://phone-your-rep.herokuapp.com/reps/G000577
@@ -25734,8 +25782,8 @@
     city: San Juan
     state: PR
     zip: '00901'
-    phone: ''
-    fax: ''
+    phone: 787-723-6333
+    fax: 787-729-6824
     hours: ''
     latitude: 18.4669792
     longitude: -66.1040007
@@ -29440,7 +29488,7 @@
     latitude: 38.8928318
     longitude: -77.0043625
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/H001075-capitol
-    downloads: 85
+    downloads: 86
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/H001075_capitol.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/H001075-fresno
     rep: https://phone-your-rep.herokuapp.com/reps/H001075
@@ -29560,7 +29608,7 @@
     latitude: 37.7804298
     longitude: -122.4144643
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/H001075-san_francisco
-    downloads: 129
+    downloads: 130
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/H001075_san_francisco.png
 - self: https://phone-your-rep.herokuapp.com/reps/H001076
   state:
@@ -29782,6 +29830,72 @@
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/H001077-lake_charles
     downloads: 0
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/H001077_lake_charles.png
+- self: https://phone-your-rep.herokuapp.com/reps/H001078
+  state:
+    self: https://phone-your-rep.herokuapp.com/api/beta/states/13
+    state_code: '13'
+    name: Georgia
+    abbr: GA
+  district:
+    self: https://phone-your-rep.herokuapp.com/api/beta/districts/1306
+    full_code: '1306'
+    code: '06'
+    state_code: '13'
+    level: national
+    chamber: lower
+    name: 
+  active: true
+  official_id: H001078
+  level: national
+  bioguide_id: H001078
+  state_leg_id: 
+  official_full: Karen Handel
+  chamber: lower
+  role: United States Representative
+  party: Republican
+  senate_class: 
+  last: Handel
+  first: Karen
+  middle: 
+  nickname: 
+  suffix: 
+  contact_form: 
+  url: https://handel.house.gov
+  photo: 
+  twitter: 
+  facebook: 
+  youtube: 
+  instagram: 
+  googleplus: 
+  twitter_id: 
+  facebook_id: 
+  youtube_id: 
+  instagram_id: 
+  office_locations:
+  - self: https://phone-your-rep.herokuapp.com/office_locations/H001078-capitol
+    rep: https://phone-your-rep.herokuapp.com/reps/H001078
+    active: true
+    official_id: H001078
+    level: national
+    office_id: H001078-capitol
+    bioguide_id: H001078
+    state_leg_id: 
+    office_type: capitol
+    distance: 
+    building: 
+    address: 1211 Longworth House Office Building
+    suite: 
+    city: Washington
+    state: DC
+    zip: 20515-2600
+    phone: 202-225-4501
+    fax: 
+    hours: 
+    latitude: 38.887205
+    longitude: -77.0084953
+    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/H001078-capitol
+    downloads: 0
+    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/H001078_capitol.png
 - self: https://phone-your-rep.herokuapp.com/reps/I000024
   state:
     self: https://phone-your-rep.herokuapp.com/api/beta/states/40
@@ -30904,7 +31018,7 @@
     latitude: 38.8867806
     longitude: -77.008414
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/J000290-capitol
-    downloads: 2
+    downloads: 3
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/J000290_capitol.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/J000290-pittsburg
     rep: https://phone-your-rep.herokuapp.com/reps/J000290
@@ -30928,7 +31042,7 @@
     latitude: 37.4174839
     longitude: -94.7048524
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/J000290-pittsburg
-    downloads: 2
+    downloads: 3
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/J000290_pittsburg.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/J000290-topeka
     rep: https://phone-your-rep.herokuapp.com/reps/J000290
@@ -30952,7 +31066,7 @@
     latitude: 39.0608999
     longitude: -95.720894
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/J000290-topeka
-    downloads: 6
+    downloads: 7
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/J000290_topeka.png
 - self: https://phone-your-rep.herokuapp.com/reps/J000292
   state:
@@ -33024,7 +33138,7 @@
     latitude: 38.8867621
     longitude: -77.0069216
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/K000379-capitol
-    downloads: 2
+    downloads: 3
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/K000379_capitol.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/K000379-newton
     rep: https://phone-your-rep.herokuapp.com/reps/K000379
@@ -34884,7 +34998,7 @@
     latitude: 38.8928318
     longitude: -77.0043625
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/K000393-capitol
-    downloads: 16
+    downloads: 17
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/K000393_capitol.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/K000393-lafayette
     rep: https://phone-your-rep.herokuapp.com/reps/K000393
@@ -34908,7 +35022,7 @@
     latitude: 30.1948666
     longitude: -92.014654
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/K000393-lafayette
-    downloads: 0
+    downloads: 1
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/K000393_lafayette.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/K000393-monroe
     rep: https://phone-your-rep.herokuapp.com/reps/K000393
@@ -34932,7 +35046,7 @@
     latitude: 32.5175209
     longitude: -92.1087384
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/K000393-monroe
-    downloads: 0
+    downloads: 1
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/K000393_monroe.png
 - self: https://phone-your-rep.herokuapp.com/reps/L000174
   state:
@@ -34990,7 +35104,7 @@
     latitude: 44.4755314
     longitude: -73.2112826
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/L000174-burlington
-    downloads: 10
+    downloads: 11
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/L000174_burlington.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/L000174-capitol
     rep: https://phone-your-rep.herokuapp.com/reps/L000174
@@ -38882,7 +38996,7 @@
     latitude: 40.7674409
     longitude: -73.9203228
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/M000087-astoria
-    downloads: 4
+    downloads: 5
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/M000087_astoria.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/M000087-brooklyn
     rep: https://phone-your-rep.herokuapp.com/reps/M000087
@@ -39012,7 +39126,7 @@
     latitude: 42.3613091
     longitude: -71.0593927
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/M000133-boston
-    downloads: 60
+    downloads: 61
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/M000133_boston.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/M000133-capitol
     rep: https://phone-your-rep.herokuapp.com/reps/M000133
@@ -39352,7 +39466,7 @@
     latitude: 42.2628409
     longitude: -71.7903444
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/M000312-worcester
-    downloads: 7
+    downloads: 8
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/M000312_worcester.png
 - self: https://phone-your-rep.herokuapp.com/reps/M000355
   state:
@@ -39766,7 +39880,7 @@
     latitude: 39.1928877
     longitude: -96.6064052
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/M000934-manhattan
-    downloads: 3
+    downloads: 4
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/M000934_manhattan.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/M000934-olathe
     rep: https://phone-your-rep.herokuapp.com/reps/M000934
@@ -40453,17 +40567,17 @@
     state_leg_id: 
     office_type: district
     distance: 
-    building: Federal Building
-    address: 101 12th Ave.
-    suite: Suite 329
+    building: Courthouse Square
+    address: 250 Cushman St
+    suite: "#2D"
     city: Fairbanks
     state: AK
     zip: '99701'
     phone: 907-456-0233
     fax: 907-451-7146
     hours: ''
-    latitude: 64.8383052
-    longitude: -147.7082477
+    latitude: 64.8427991
+    longitude: -147.7219443
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/M001153-fairbanks
     downloads: 4
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/M001153_fairbanks.png
@@ -44117,7 +44231,7 @@
     latitude: 38.8867806
     longitude: -77.008414
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/M001196-capitol
-    downloads: 4
+    downloads: 5
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/M001196_capitol.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/M001196-salem
     rep: https://phone-your-rep.herokuapp.com/reps/M001196
@@ -44141,7 +44255,7 @@
     latitude: 42.5204343
     longitude: -70.8944236
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/M001196-salem
-    downloads: 7
+    downloads: 8
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/M001196_salem.png
 - self: https://phone-your-rep.herokuapp.com/reps/M001197
   state:
@@ -45183,7 +45297,7 @@
     latitude: 27.9514851
     longitude: -82.4580986
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/N000032-tampa
-    downloads: 56
+    downloads: 57
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/N000032_tampa.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/N000032-west_palm_beach
     rep: https://phone-your-rep.herokuapp.com/reps/N000032
@@ -46071,6 +46185,72 @@
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/N000189-yakima
     downloads: 3
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/N000189_yakima.png
+- self: https://phone-your-rep.herokuapp.com/reps/N000190
+  state:
+    self: https://phone-your-rep.herokuapp.com/api/beta/states/45
+    state_code: '45'
+    name: South Carolina
+    abbr: SC
+  district:
+    self: https://phone-your-rep.herokuapp.com/api/beta/districts/4505
+    full_code: '4505'
+    code: '05'
+    state_code: '45'
+    level: national
+    chamber: lower
+    name: 
+  active: true
+  official_id: N000190
+  level: national
+  bioguide_id: N000190
+  state_leg_id: 
+  official_full: Ralph Norman
+  chamber: lower
+  role: United States Representative
+  party: Republican
+  senate_class: 
+  last: Norman
+  first: Ralph
+  middle: 
+  nickname: 
+  suffix: Jr.
+  contact_form: 
+  url: https://norman.house.gov
+  photo: 
+  twitter: 
+  facebook: 
+  youtube: 
+  instagram: 
+  googleplus: 
+  twitter_id: 
+  facebook_id: 
+  youtube_id: 
+  instagram_id: 
+  office_locations:
+  - self: https://phone-your-rep.herokuapp.com/office_locations/N000190-capitol
+    rep: https://phone-your-rep.herokuapp.com/reps/N000190
+    active: true
+    official_id: N000190
+    level: national
+    office_id: N000190-capitol
+    bioguide_id: N000190
+    state_leg_id: 
+    office_type: capitol
+    distance: 
+    building: 
+    address: 2350 Rayburn House Office Building
+    suite: 
+    city: Washington
+    state: DC
+    zip: 20515-2600
+    phone: 202-225-5501
+    fax: 
+    hours: 
+    latitude: 38.8871071
+    longitude: -77.0104749
+    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/N000190-capitol
+    downloads: 0
+    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/N000190_capitol.png
 - self: https://phone-your-rep.herokuapp.com/reps/O000168
   state:
     self: https://phone-your-rep.herokuapp.com/api/beta/states/48
@@ -46204,12 +46384,12 @@
   level: national
   bioguide_id: O000170
   state_leg_id: 
-  official_full: Beto O'Rourke
+  official_full: Beto O’Rourke
   chamber: lower
   role: United States Representative
   party: Democrat
   senate_class: 
-  last: O'Rourke
+  last: O’Rourke
   first: Beto
   middle: 
   nickname: 
@@ -46294,12 +46474,12 @@
   level: national
   bioguide_id: O000171
   state_leg_id: 
-  official_full: Tom O'Halleran
+  official_full: Tom O’Halleran
   chamber: lower
   role: United States Representative
   party: Democrat
   senate_class: 
-  last: O'Halleran
+  last: O’Halleran
   first: Tom
   middle: 
   nickname: 
@@ -49767,7 +49947,7 @@
     latitude: 38.8867621
     longitude: -77.0069216
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/P000613-capitol
-    downloads: 3
+    downloads: 4
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/P000613_capitol.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/P000613-salinas
     rep: https://phone-your-rep.herokuapp.com/reps/P000613
@@ -49791,7 +49971,7 @@
     latitude: 36.6737182
     longitude: -121.6575375
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/P000613-salinas
-    downloads: 6
+    downloads: 7
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/P000613_salinas.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/P000613-santa_cruz
     rep: https://phone-your-rep.herokuapp.com/reps/P000613
@@ -50093,7 +50273,7 @@
     latitude: 38.8928318
     longitude: -77.0043625
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/R000307-capitol
-    downloads: 12
+    downloads: 13
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/R000307_capitol.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/R000307-dodge_city
     rep: https://phone-your-rep.herokuapp.com/reps/R000307
@@ -50117,7 +50297,7 @@
     latitude: 37.7540807
     longitude: -100.0164714
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/R000307-dodge_city
-    downloads: 1
+    downloads: 2
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/R000307_dodge_city.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/R000307-overland_park
     rep: https://phone-your-rep.herokuapp.com/reps/R000307
@@ -50141,7 +50321,7 @@
     latitude: 38.9280229
     longitude: -94.7243276
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/R000307-overland_park
-    downloads: 15
+    downloads: 16
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/R000307_overland_park.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/R000307-topeka
     rep: https://phone-your-rep.herokuapp.com/reps/R000307
@@ -50165,7 +50345,7 @@
     latitude: 39.0529221
     longitude: -95.670288
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/R000307-topeka
-    downloads: 12
+    downloads: 13
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/R000307_topeka.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/R000307-wichita
     rep: https://phone-your-rep.herokuapp.com/reps/R000307
@@ -54714,7 +54894,7 @@
     latitude: 42.6551387
     longitude: -73.749201
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/S000148-albany
-    downloads: 25
+    downloads: 26
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/S000148_albany.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/S000148-binghamton
     rep: https://phone-your-rep.herokuapp.com/reps/S000148
@@ -54738,7 +54918,7 @@
     latitude: 42.1008749
     longitude: -75.9123579
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/S000148-binghamton
-    downloads: 12
+    downloads: 13
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/S000148_binghamton.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/S000148-buffalo
     rep: https://phone-your-rep.herokuapp.com/reps/S000148
@@ -54906,7 +55086,7 @@
     latitude: 43.0501042
     longitude: -76.1543204
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/S000148-syracuse
-    downloads: 14
+    downloads: 16
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/S000148_syracuse.png
 - self: https://phone-your-rep.herokuapp.com/reps/S000185
   state:
@@ -60375,6 +60555,30 @@
   youtube_id: 
   instagram_id: 
   office_locations:
+  - self: https://phone-your-rep.herokuapp.com/office_locations/S001202-birmingham
+    rep: https://phone-your-rep.herokuapp.com/reps/S001202
+    active: true
+    official_id: S001202
+    level: national
+    office_id: S001202-birmingham
+    bioguide_id: S001202
+    state_leg_id: 
+    office_type: district
+    distance: 
+    building: Vance Federal Building
+    address: 1800 5th Avenue N
+    suite: ''
+    city: Birmingham
+    state: AL
+    zip: 35203-2171
+    phone: 205-731-1500
+    fax: 205-731-0221
+    hours: ''
+    latitude: 33.517386
+    longitude: -86.810488
+    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/S001202-birmingham
+    downloads: 0
+    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/S001202_birmingham.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/S001202-capitol
     rep: https://phone-your-rep.herokuapp.com/reps/S001202
     active: true
@@ -60399,6 +60603,102 @@
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/S001202-capitol
     downloads: 4
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/S001202_capitol.png
+  - self: https://phone-your-rep.herokuapp.com/office_locations/S001202-dothan
+    rep: https://phone-your-rep.herokuapp.com/reps/S001202
+    active: true
+    official_id: S001202
+    level: national
+    office_id: S001202-dothan
+    bioguide_id: S001202
+    state_leg_id: 
+    office_type: district
+    distance: 
+    building: ''
+    address: 100 W Troy Street
+    suite: Room 302
+    city: Dothan
+    state: AL
+    zip: '36303'
+    phone: 334-792-4924
+    fax: 334-792-4928
+    hours: ''
+    latitude: 31.2254045
+    longitude: -85.3925445
+    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/S001202-dothan
+    downloads: 0
+    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/S001202_dothan.png
+  - self: https://phone-your-rep.herokuapp.com/office_locations/S001202-huntsville
+    rep: https://phone-your-rep.herokuapp.com/reps/S001202
+    active: true
+    official_id: S001202
+    level: national
+    office_id: S001202-huntsville
+    bioguide_id: S001202
+    state_leg_id: 
+    office_type: district
+    distance: 
+    building: ''
+    address: 200 Clinton Avenue W
+    suite: Suite 802
+    city: Huntsville
+    state: AL
+    zip: 35801-4932
+    phone: 256-533-0979
+    fax: 256-533-0745
+    hours: ''
+    latitude: 34.7307434
+    longitude: -86.5882087
+    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/S001202-huntsville
+    downloads: 0
+    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/S001202_huntsville.png
+  - self: https://phone-your-rep.herokuapp.com/office_locations/S001202-mobile
+    rep: https://phone-your-rep.herokuapp.com/reps/S001202
+    active: true
+    official_id: S001202
+    level: national
+    office_id: S001202-mobile
+    bioguide_id: S001202
+    state_leg_id: 
+    office_type: district
+    distance: 
+    building: BB&T Centre
+    address: 41 West I-65 Service Road N
+    suite: Suite 2300-A
+    city: Mobile
+    state: AL
+    zip: 36608-1291
+    phone: 251-414-3083
+    fax: 251-414-5845
+    hours: ''
+    latitude: 30.690756
+    longitude: -88.1268459
+    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/S001202-mobile
+    downloads: 0
+    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/S001202_mobile.png
+  - self: https://phone-your-rep.herokuapp.com/office_locations/S001202-montgomery
+    rep: https://phone-your-rep.herokuapp.com/reps/S001202
+    active: true
+    official_id: S001202
+    level: national
+    office_id: S001202-montgomery
+    bioguide_id: S001202
+    state_leg_id: 
+    office_type: district
+    distance: 
+    building: ''
+    address: 1 Church Street
+    suite: Suite 500B
+    city: Montgomery
+    state: AL
+    zip: '36104'
+    phone: 334-230-0698
+    fax: 334-293-9349
+    hours: ''
+    latitude: 32.374321
+    longitude: -86.3099387
+    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/S001202-montgomery
+    downloads: 0
+    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/S001202_montgomery.png
 - self: https://phone-your-rep.herokuapp.com/reps/T000193
   state:
     self: https://phone-your-rep.herokuapp.com/api/beta/states/28
@@ -63519,6 +63819,54 @@
   youtube_id: UCkpfJWu1N9Okd6PE_NidtBQ
   instagram_id: '268595235'
   office_locations:
+  - self: https://phone-your-rep.herokuapp.com/office_locations/V000128-annapolis
+    rep: https://phone-your-rep.herokuapp.com/reps/V000128
+    active: true
+    official_id: V000128
+    level: national
+    office_id: V000128-annapolis
+    bioguide_id: V000128
+    state_leg_id: 
+    office_type: district
+    distance: 
+    building: ''
+    address: 60 West Street
+    suite: Suite 107
+    city: Annapolis
+    state: MD
+    zip: '21401'
+    phone: 410-263-1325
+    fax: ''
+    hours: ''
+    latitude: 38.9785971
+    longitude: -76.4976378
+    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/V000128-annapolis
+    downloads: 0
+    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/V000128_annapolis.png
+  - self: https://phone-your-rep.herokuapp.com/office_locations/V000128-baltimore
+    rep: https://phone-your-rep.herokuapp.com/reps/V000128
+    active: true
+    official_id: V000128
+    level: national
+    office_id: V000128-baltimore
+    bioguide_id: V000128
+    state_leg_id: 
+    office_type: district
+    distance: 
+    building: ''
+    address: 1900 North Howard Street
+    suite: Suite 100
+    city: Baltimore
+    state: MD
+    zip: '21218'
+    phone: 667-212-4610
+    fax: 301-545-1512
+    hours: ''
+    latitude: 39.3114748
+    longitude: -76.6216137
+    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/V000128-baltimore
+    downloads: 0
+    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/V000128_baltimore.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/V000128-capitol
     rep: https://phone-your-rep.herokuapp.com/reps/V000128
     active: true
@@ -65175,7 +65523,7 @@
     latitude: 44.4626812
     longitude: -73.2177683
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/W000800-burlington
-    downloads: 13
+    downloads: 14
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/W000800_burlington.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/W000800-capitol
     rep: https://phone-your-rep.herokuapp.com/reps/W000800
@@ -66305,7 +66653,7 @@
     latitude: 41.6614853
     longitude: -86.1788818
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/W000813-mishawaka
-    downloads: 5
+    downloads: 6
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/W000813_mishawaka.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/W000813-rochester
     rep: https://phone-your-rep.herokuapp.com/reps/W000813
@@ -68097,6 +68445,750 @@
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/Z000017-riverhead
     downloads: 4
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/Z000017_riverhead.png
+- self: https://phone-your-rep.herokuapp.com/reps/MI-rick-snyder
+  state:
+    self: https://phone-your-rep.herokuapp.com/api/beta/states/26
+    state_code: '26'
+    name: Michigan
+    abbr: MI
+  active: true
+  official_id: MI-rick-snyder
+  level: state
+  bioguide_id: 
+  state_leg_id: 
+  official_full: Rick Snyder
+  chamber: 
+  role: Governor
+  party: Republican
+  senate_class: 
+  last: Snyder
+  first: Rick
+  middle: 
+  nickname: 
+  suffix: 
+  contact_form: https://somgovweb.state.mi.us/GovRelations/ShareOpinion.aspx
+  url: http://www.michigan.gov/gov
+  photo: https://cdn.civil.services/us-governors/headshots/512x512/richard-snyder.jpg
+  twitter: onetoughnerd
+  facebook: GovernorRickSnyder
+  youtube: 
+  instagram: 
+  googleplus: 
+  twitter_id: 
+  facebook_id: 
+  youtube_id: 
+  instagram_id: 
+  office_locations:
+  - self: https://phone-your-rep.herokuapp.com/office_locations/MI-rick-snyder-capitol
+    rep: https://phone-your-rep.herokuapp.com/reps/MI-rick-snyder
+    active: true
+    official_id: MI-rick-snyder
+    level: state
+    office_id: MI-rick-snyder-capitol
+    bioguide_id: 
+    state_leg_id: 
+    office_type: capitol
+    distance: 
+    building: 
+    address: P.O. Box 30013
+    suite: 
+    city: Lansing
+    state: MI
+    zip: '48909'
+    phone: 517-373-3400
+    fax: 517-335-6863
+    hours: 
+    latitude: 42.68
+    longitude: -84.5
+    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/MI-rick-snyder-capitol
+    downloads: 0
+    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/MI_rick_snyder_capitol.png
+  - self: https://phone-your-rep.herokuapp.com/office_locations/MI-rick-snyder-washington
+    rep: https://phone-your-rep.herokuapp.com/reps/MI-rick-snyder
+    active: true
+    official_id: MI-rick-snyder
+    level: state
+    office_id: MI-rick-snyder-washington
+    bioguide_id: 
+    state_leg_id: 
+    office_type: dc
+    distance: 
+    building: 
+    address: North Capitol Street –
+    suite: 
+    city: Washington
+    state: DC
+    zip: '20001'
+    phone: 202-624-5840
+    fax: 202-624-5841
+    hours: 
+    latitude: 38.912068
+    longitude: -77.0190228
+    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/MI-rick-snyder-washington
+    downloads: 0
+    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/MI_rick_snyder_washington.png
+- self: https://phone-your-rep.herokuapp.com/reps/ID-c-l-butch-otter
+  state:
+    self: https://phone-your-rep.herokuapp.com/api/beta/states/16
+    state_code: '16'
+    name: Idaho
+    abbr: ID
+  active: true
+  official_id: ID-c-l-butch-otter
+  level: state
+  bioguide_id: 
+  state_leg_id: 
+  official_full: C. L. "Butch" Otter
+  chamber: 
+  role: Governor
+  party: Republican
+  senate_class: 
+  last: Otter
+  first: C. L.
+  middle: 
+  nickname: '"Butch"'
+  suffix: 
+  contact_form: https://gov.idaho.gov/ourgov/contact.html
+  url: http://gov.idaho.gov/
+  photo: https://cdn.civil.services/us-governors/headshots/512x512/clement-otter.jpg
+  twitter: butchotter
+  facebook: Governor-C-L-Butch-Otter-292986829831/
+  youtube: 
+  instagram: 
+  googleplus: 
+  twitter_id: 
+  facebook_id: 
+  youtube_id: 
+  instagram_id: 
+  office_locations:
+  - self: https://phone-your-rep.herokuapp.com/office_locations/ID-c-l-butch-otter-capitol
+    rep: https://phone-your-rep.herokuapp.com/reps/ID-c-l-butch-otter
+    active: true
+    official_id: ID-c-l-butch-otter
+    level: state
+    office_id: ID-c-l-butch-otter-capitol
+    bioguide_id: 
+    state_leg_id: 
+    office_type: capitol
+    distance: 
+    building: 
+    address: 700 West Jefferson Second Floor
+    suite: 
+    city: Boise
+    state: ID
+    zip: '83702'
+    phone: 208-334-2100
+    fax: 208-334-2175
+    hours: 
+    latitude: 43.6624385
+    longitude: -116.1630431
+    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/ID-c-l-butch-otter-capitol
+    downloads: 0
+    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/ID_c_l_butch_otter_capitol.png
+- self: https://phone-your-rep.herokuapp.com/reps/MS-phil-bryant
+  state:
+    self: https://phone-your-rep.herokuapp.com/api/beta/states/28
+    state_code: '28'
+    name: Mississippi
+    abbr: MS
+  active: true
+  official_id: MS-phil-bryant
+  level: state
+  bioguide_id: 
+  state_leg_id: 
+  official_full: Phil Bryant
+  chamber: 
+  role: Governor
+  party: Republican
+  senate_class: 
+  last: Bryant
+  first: Phil
+  middle: 
+  nickname: 
+  suffix: 
+  contact_form: http://www.governorbryant.ms.gov/Pages/Contact.aspx
+  url: http://www.governorbryant.com/
+  photo: https://cdn.civil.services/us-governors/headshots/512x512/dewey-bryant.jpg
+  twitter: PhilBryantMS
+  facebook: im4phil
+  youtube: 
+  instagram: 
+  googleplus: 
+  twitter_id: 
+  facebook_id: 
+  youtube_id: 
+  instagram_id: 
+  office_locations:
+  - self: https://phone-your-rep.herokuapp.com/office_locations/MS-phil-bryant-capitol
+    rep: https://phone-your-rep.herokuapp.com/reps/MS-phil-bryant
+    active: true
+    official_id: MS-phil-bryant
+    level: state
+    office_id: MS-phil-bryant-capitol
+    bioguide_id: 
+    state_leg_id: 
+    office_type: capitol
+    distance: 
+    building: 
+    address: P.O. Box 139
+    suite: 
+    city: Jackson
+    state: MS
+    zip: '39205'
+    phone: 601-359-3150
+    fax: 601-359-3741
+    hours: 
+    latitude: 32.3503996
+    longitude: -90.1529468
+    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/MS-phil-bryant-capitol
+    downloads: 0
+    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/MS_phil_bryant_capitol.png
+- self: https://phone-your-rep.herokuapp.com/reps/DE-john-carney
+  state:
+    self: https://phone-your-rep.herokuapp.com/api/beta/states/10
+    state_code: '10'
+    name: Delaware
+    abbr: DE
+  active: true
+  official_id: DE-john-carney
+  level: state
+  bioguide_id: 
+  state_leg_id: 
+  official_full: John Carney
+  chamber: 
+  role: Governor
+  party: Democrat
+  senate_class: 
+  last: Carney
+  first: John
+  middle: 
+  nickname: 
+  suffix: 
+  contact_form: http://delaware.gov/help/degov-contact.shtml
+  url: http://governor.delaware.gov/
+  photo: https://cdn.civil.services/us-governors/headshots/512x512/john-carney.jpg
+  twitter: JohnCarneyDE
+  facebook: JohnCarneyDE
+  youtube: 
+  instagram: 
+  googleplus: 
+  twitter_id: 
+  facebook_id: 
+  youtube_id: 
+  instagram_id: 
+  office_locations:
+  - self: https://phone-your-rep.herokuapp.com/office_locations/DE-john-carney-capitol
+    rep: https://phone-your-rep.herokuapp.com/reps/DE-john-carney
+    active: true
+    official_id: DE-john-carney
+    level: state
+    office_id: DE-john-carney-capitol
+    bioguide_id: 
+    state_leg_id: 
+    office_type: capitol
+    distance: 
+    building: 
+    address: Legislative Hall
+    suite: 
+    city: Dover
+    state: DE
+    zip: '19901'
+    phone: 302-744-4101
+    fax: 302-739-2775
+    hours: 
+    latitude: 39.2081349
+    longitude: -75.4577775
+    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/DE-john-carney-capitol
+    downloads: 0
+    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/DE_john_carney_capitol.png
+- self: https://phone-your-rep.herokuapp.com/reps/AS-lolo-matalasi-moliga
+  state:
+    self: https://phone-your-rep.herokuapp.com/api/beta/states/60
+    state_code: '60'
+    name: American Samoa
+    abbr: AS
+  active: true
+  official_id: AS-lolo-matalasi-moliga
+  level: state
+  bioguide_id: 
+  state_leg_id: 
+  official_full: Lolo Matalasi Moliga
+  chamber: 
+  role: Governor
+  party: Independent
+  senate_class: 
+  last: Moliga
+  first: Lolo
+  middle: Matalasi
+  nickname: 
+  suffix: 
+  contact_form: 
+  url: http://www.americansamoa.gov/
+  photo: https://www.nga.org/files/live/sites/NGA/files/images/govportraits/AS-LMMoliga.jpg
+  twitter: 
+  facebook: 
+  youtube: 
+  instagram: 
+  googleplus: 
+  twitter_id: 
+  facebook_id: 
+  youtube_id: 
+  instagram_id: 
+  office_locations:
+  - self: https://phone-your-rep.herokuapp.com/office_locations/AS-lolo-matalasi-moliga-capitol
+    rep: https://phone-your-rep.herokuapp.com/reps/AS-lolo-matalasi-moliga
+    active: true
+    official_id: AS-lolo-matalasi-moliga
+    level: state
+    office_id: AS-lolo-matalasi-moliga-capitol
+    bioguide_id: 
+    state_leg_id: 
+    office_type: capitol
+    distance: 
+    building: 
+    address: Executive Office Building Third Floor
+    suite: 
+    city: Utulei Pago Pago
+    state: AS
+    zip: '96799'
+    phone: 011-684/633-4116
+    fax: 011-684/633-2269
+    hours: 
+    latitude: -14.2782029
+    longitude: -170.6821998
+    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/AS-lolo-matalasi-moliga-capitol
+    downloads: 0
+    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/AS_lolo_matalasi_moliga_capitol.png
+- self: https://phone-your-rep.herokuapp.com/reps/MT-steve-bullock
+  state:
+    self: https://phone-your-rep.herokuapp.com/api/beta/states/30
+    state_code: '30'
+    name: Montana
+    abbr: MT
+  active: true
+  official_id: MT-steve-bullock
+  level: state
+  bioguide_id: 
+  state_leg_id: 
+  official_full: Steve Bullock
+  chamber: 
+  role: Governor
+  party: Democrat
+  senate_class: 
+  last: Bullock
+  first: Steve
+  middle: 
+  nickname: 
+  suffix: 
+  contact_form: http://governor.mt.gov/Home/Contact/shareopinion
+  url: http://governor.mt.gov/
+  photo: https://cdn.civil.services/us-governors/headshots/512x512/stephen-bullock.jpg
+  twitter: GovernorBullock
+  facebook: GovernorBullock
+  youtube: 
+  instagram: 
+  googleplus: 
+  twitter_id: 
+  facebook_id: 
+  youtube_id: 
+  instagram_id: 
+  office_locations:
+  - self: https://phone-your-rep.herokuapp.com/office_locations/MT-steve-bullock-capitol
+    rep: https://phone-your-rep.herokuapp.com/reps/MT-steve-bullock
+    active: true
+    official_id: MT-steve-bullock
+    level: state
+    office_id: MT-steve-bullock-capitol
+    bioguide_id: 
+    state_leg_id: 
+    office_type: capitol
+    distance: 
+    building: 
+    address: State Capitol
+    suite: 
+    city: Helena
+    state: MT
+    zip: 59620-0801
+    phone: 406-444-3111
+    fax: 406-444-5529
+    hours: 
+    latitude: 46.53
+    longitude: -112.16
+    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/MT-steve-bullock-capitol
+    downloads: 0
+    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/MT_steve_bullock_capitol.png
+- self: https://phone-your-rep.herokuapp.com/reps/IN-eric-holcomb
+  state:
+    self: https://phone-your-rep.herokuapp.com/api/beta/states/18
+    state_code: '18'
+    name: Indiana
+    abbr: IN
+  active: true
+  official_id: IN-eric-holcomb
+  level: state
+  bioguide_id: 
+  state_leg_id: 
+  official_full: Eric Holcomb
+  chamber: 
+  role: Governor
+  party: Republican
+  senate_class: 
+  last: Holcomb
+  first: Eric
+  middle: 
+  nickname: 
+  suffix: 
+  contact_form: http://www.in.gov/core/help.html
+  url: http://www.in.gov/gov/index.htm
+  photo: https://cdn.civil.services/us-governors/headshots/512x512/eric-holcomb.jpg
+  twitter: GovHolcomb
+  facebook: GovHolcomb
+  youtube: 
+  instagram: 
+  googleplus: 
+  twitter_id: 
+  facebook_id: 
+  youtube_id: 
+  instagram_id: 
+  office_locations:
+  - self: https://phone-your-rep.herokuapp.com/office_locations/IN-eric-holcomb-capitol
+    rep: https://phone-your-rep.herokuapp.com/reps/IN-eric-holcomb
+    active: true
+    official_id: IN-eric-holcomb
+    level: state
+    office_id: IN-eric-holcomb-capitol
+    bioguide_id: 
+    state_leg_id: 
+    office_type: capitol
+    distance: 
+    building: 
+    address: State House Room 206
+    suite: 
+    city: Indianapolis
+    state: IN
+    zip: 46204-2797
+    phone: 317-232-4567
+    fax: 317-232-3443
+    hours: 
+    latitude: 39.7713425
+    longitude: -86.1573709
+    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/IN-eric-holcomb-capitol
+    downloads: 0
+    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/IN_eric_holcomb_capitol.png
+- self: https://phone-your-rep.herokuapp.com/reps/NV-brian-sandoval
+  state:
+    self: https://phone-your-rep.herokuapp.com/api/beta/states/32
+    state_code: '32'
+    name: Nevada
+    abbr: NV
+  active: true
+  official_id: NV-brian-sandoval
+  level: state
+  bioguide_id: 
+  state_leg_id: 
+  official_full: Brian Sandoval
+  chamber: 
+  role: Governor
+  party: Republican
+  senate_class: 
+  last: Sandoval
+  first: Brian
+  middle: 
+  nickname: 
+  suffix: 
+  contact_form: http://gov.nv.gov/Contact/Email-the-Governor/
+  url: http://gov.nv.gov/
+  photo: https://cdn.civil.services/us-governors/headshots/512x512/brian-sandoval.jpg
+  twitter: BrianSandoval
+  facebook: BrianSandoval
+  youtube: 
+  instagram: 
+  googleplus: 
+  twitter_id: 
+  facebook_id: 
+  youtube_id: 
+  instagram_id: 
+  office_locations:
+  - self: https://phone-your-rep.herokuapp.com/office_locations/NV-brian-sandoval-capitol
+    rep: https://phone-your-rep.herokuapp.com/reps/NV-brian-sandoval
+    active: true
+    official_id: NV-brian-sandoval
+    level: state
+    office_id: NV-brian-sandoval-capitol
+    bioguide_id: 
+    state_leg_id: 
+    office_type: capitol
+    distance: 
+    building: 
+    address: Capitol Building
+    suite: 
+    city: Carson City
+    state: NV
+    zip: '89701'
+    phone: 775-684-5670
+    fax: 775-684-5683
+    hours: 
+    latitude: 39.1297282
+    longitude: -119.6730939
+    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/NV-brian-sandoval-capitol
+    downloads: 0
+    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/NV_brian_sandoval_capitol.png
+  - self: https://phone-your-rep.herokuapp.com/office_locations/NV-brian-sandoval-washington
+    rep: https://phone-your-rep.herokuapp.com/reps/NV-brian-sandoval
+    active: true
+    official_id: NV-brian-sandoval
+    level: state
+    office_id: NV-brian-sandoval-washington
+    bioguide_id: 
+    state_leg_id: 
+    office_type: dc
+    distance: 
+    building: 
+    address: "– Suite 209"
+    suite: 
+    city: Washington
+    state: DC
+    zip: '20001'
+    phone: 202-624-5405
+    fax: 202-624-8181
+    hours: 
+    latitude: 38.912068
+    longitude: -77.0190228
+    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/NV-brian-sandoval-washington
+    downloads: 0
+    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/NV_brian_sandoval_washington.png
+- self: https://phone-your-rep.herokuapp.com/reps/AL-kay-ivey
+  state:
+    self: https://phone-your-rep.herokuapp.com/api/beta/states/01
+    state_code: '01'
+    name: Alabama
+    abbr: AL
+  active: true
+  official_id: AL-kay-ivey
+  level: state
+  bioguide_id: 
+  state_leg_id: 
+  official_full: Kay Ivey
+  chamber: 
+  role: Governor
+  party: Republican
+  senate_class: 
+  last: Ivey
+  first: Kay
+  middle: 
+  nickname: 
+  suffix: 
+  contact_form: http://governor.alabama.gov/contact
+  url: http://www.governor.alabama.gov/
+  photo: https://cdn.civil.services/us-governors/headshots/512x512/kay-ivey.jpg
+  twitter: GovernorKayIvey
+  facebook: KayIveyAL
+  youtube: 
+  instagram: 
+  googleplus: 
+  twitter_id: 
+  facebook_id: 
+  youtube_id: 
+  instagram_id: 
+  office_locations:
+  - self: https://phone-your-rep.herokuapp.com/office_locations/AL-kay-ivey-capitol
+    rep: https://phone-your-rep.herokuapp.com/reps/AL-kay-ivey
+    active: true
+    official_id: AL-kay-ivey
+    level: state
+    office_id: AL-kay-ivey-capitol
+    bioguide_id: 
+    state_leg_id: 
+    office_type: capitol
+    distance: 
+    building: 
+    address: State Capitol 600 Dexter Avenue
+    suite: 
+    city: Montgomery
+    state: AL
+    zip: 36130-2751
+    phone: 334-242-7100
+    fax: 334-353-0004
+    hours: 
+    latitude: 32.3777405
+    longitude: -86.2990026
+    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/AL-kay-ivey-capitol
+    downloads: 0
+    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/AL_kay_ivey_capitol.png
+- self: https://phone-your-rep.herokuapp.com/reps/OK-mary-fallin
+  state:
+    self: https://phone-your-rep.herokuapp.com/api/beta/states/40
+    state_code: '40'
+    name: Oklahoma
+    abbr: OK
+  active: true
+  official_id: OK-mary-fallin
+  level: state
+  bioguide_id: 
+  state_leg_id: 
+  official_full: Mary Fallin
+  chamber: 
+  role: Governor
+  party: Republican
+  senate_class: 
+  last: Fallin
+  first: Mary
+  middle: 
+  nickname: 
+  suffix: 
+  contact_form: https://www.ok.gov/triton/modules/formbuilder/form.php?form_id=0d5f27f90f279a5b64535ec11836feaa07db37cbb20807e960b2c0aa58b9f358
+  url: http://www.gov.ok.gov/
+  photo: https://cdn.civil.services/us-governors/headshots/512x512/mary-fallin.jpg
+  twitter: GovMaryFallin
+  facebook: GovernorMaryFallin
+  youtube: 
+  instagram: 
+  googleplus: 
+  twitter_id: 
+  facebook_id: 
+  youtube_id: 
+  instagram_id: 
+  office_locations:
+  - self: https://phone-your-rep.herokuapp.com/office_locations/OK-mary-fallin-capitol
+    rep: https://phone-your-rep.herokuapp.com/reps/OK-mary-fallin
+    active: true
+    official_id: OK-mary-fallin
+    level: state
+    office_id: OK-mary-fallin-capitol
+    bioguide_id: 
+    state_leg_id: 
+    office_type: capitol
+    distance: 
+    building: 
+    address: Capitol Building 2300 Lincoln Blvd., Rm. 212
+    suite: 
+    city: Oklahoma City
+    state: OK
+    zip: '73105'
+    phone: 405-521-2342
+    fax: 405-521-3353
+    hours: 
+    latitude: 35.5208639
+    longitude: -97.5057737
+    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/OK-mary-fallin-capitol
+    downloads: 0
+    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/OK_mary_fallin_capitol.png
+- self: https://phone-your-rep.herokuapp.com/reps/MP-ralph-deleon-guerrero-torres
+  state:
+    self: https://phone-your-rep.herokuapp.com/api/beta/states/69
+    state_code: '69'
+    name: Commonwealth of the Northern Mariana Islands
+    abbr: MP
+  active: true
+  official_id: MP-ralph-deleon-guerrero-torres
+  level: state
+  bioguide_id: 
+  state_leg_id: 
+  official_full: Ralph Deleon Guerrero Torres
+  chamber: 
+  role: Governor
+  party: Republican
+  senate_class: 
+  last: Torres
+  first: Ralph
+  middle: Deleon Guerrero
+  nickname: 
+  suffix: 
+  contact_form: 
+  url: http://gov.mp/
+  photo: https://www.nga.org/files/live/sites/NGA/files/images/govportraits/CNMI-RalphTorres.jpg
+  twitter: 
+  facebook: 
+  youtube: 
+  instagram: 
+  googleplus: 
+  twitter_id: 
+  facebook_id: 
+  youtube_id: 
+  instagram_id: 
+  office_locations:
+  - self: https://phone-your-rep.herokuapp.com/office_locations/MP-ralph-deleon-guerrero-torres-capitol
+    rep: https://phone-your-rep.herokuapp.com/reps/MP-ralph-deleon-guerrero-torres
+    active: true
+    official_id: MP-ralph-deleon-guerrero-torres
+    level: state
+    office_id: MP-ralph-deleon-guerrero-torres-capitol
+    bioguide_id: 
+    state_leg_id: 
+    office_type: capitol
+    distance: 
+    building: 
+    address: Caller Box 10007
+    suite: 
+    city: Saipan
+    state: MP
+    zip: '96950'
+    phone: 670-664-2280
+    fax: 670-664-2211
+    hours: 
+    latitude: 15.1850483
+    longitude: 145.7467259
+    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/MP-ralph-deleon-guerrero-torres-capitol
+    downloads: 0
+    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/MP_ralph_deleon_guerrero_torres_capitol.png
+- self: https://phone-your-rep.herokuapp.com/reps/OR-kate-brown
+  state:
+    self: https://phone-your-rep.herokuapp.com/api/beta/states/41
+    state_code: '41'
+    name: Oregon
+    abbr: OR
+  active: true
+  official_id: OR-kate-brown
+  level: state
+  bioguide_id: 
+  state_leg_id: 
+  official_full: Kate Brown
+  chamber: 
+  role: Governor
+  party: Democrat
+  senate_class: 
+  last: Brown
+  first: Kate
+  middle: 
+  nickname: 
+  suffix: 
+  contact_form: http://www.oregon.gov/gov/Pages/share-your-opinion.aspx
+  url: http://www.oregon.gov/gov/pages/index.aspx
+  photo: https://cdn.civil.services/us-governors/headshots/512x512/katherine-brown.jpg
+  twitter: OregonGovBrown
+  facebook: oregongovernor
+  youtube: 
+  instagram: 
+  googleplus: 
+  twitter_id: 
+  facebook_id: 
+  youtube_id: 
+  instagram_id: 
+  office_locations:
+  - self: https://phone-your-rep.herokuapp.com/office_locations/OR-kate-brown-capitol
+    rep: https://phone-your-rep.herokuapp.com/reps/OR-kate-brown
+    active: true
+    official_id: OR-kate-brown
+    level: state
+    office_id: OR-kate-brown-capitol
+    bioguide_id: 
+    state_leg_id: 
+    office_type: capitol
+    distance: 
+    building: 
+    address: State Capitol, Room 160 900 Court St. N.
+    suite: 
+    city: Salem
+    state: OR
+    zip: '97301'
+    phone: 503-378-4582
+    fax: 503-378-8970
+    hours: 
+    latitude: 44.9464822
+    longitude: -123.0018941
+    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/OR-kate-brown-capitol
+    downloads: 0
+    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/OR_kate_brown_capitol.png
 - self: https://phone-your-rep.herokuapp.com/reps/PA-tom-wolf
   state:
     self: https://phone-your-rep.herokuapp.com/api/beta/states/42
@@ -70709,32 +71801,32 @@
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/TN-bill-haslam-capitol
     downloads: 0
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/TN_bill_haslam_capitol.png
-- self: https://phone-your-rep.herokuapp.com/reps/NY-andrew-cuomo
+- self: https://phone-your-rep.herokuapp.com/reps/CO-john-hickenlooper
   state:
-    self: https://phone-your-rep.herokuapp.com/api/beta/states/36
-    state_code: '36'
-    name: New York
-    abbr: NY
+    self: https://phone-your-rep.herokuapp.com/api/beta/states/08
+    state_code: '08'
+    name: Colorado
+    abbr: CO
   active: true
-  official_id: NY-andrew-cuomo
+  official_id: CO-john-hickenlooper
   level: state
   bioguide_id: 
   state_leg_id: 
-  official_full: Andrew Cuomo
+  official_full: John Hickenlooper
   chamber: 
   role: Governor
   party: Democrat
   senate_class: 
-  last: Cuomo
-  first: Andrew
+  last: Hickenlooper
+  first: John
   middle: 
   nickname: 
   suffix: 
-  contact_form: http://www.governor.ny.gov/contact-iframe
-  url: http://www.governor.ny.gov/
-  photo: https://cdn.civil.services/us-governors/headshots/512x512/andrew-cuomo.jpg
-  twitter: NYGovCuomo
-  facebook: GovernorAndrewCuomo
+  contact_form: https://www.colorado.gov/governor/contact
+  url: http://www.colorado.gov/governor/
+  photo: https://cdn.civil.services/us-governors/headshots/512x512/john-hickenlooper.jpg
+  twitter: hickforco
+  facebook: JohnHickenlooper
   youtube: 
   instagram: 
   googleplus: 
@@ -70743,54 +71835,30 @@
   youtube_id: 
   instagram_id: 
   office_locations:
-  - self: https://phone-your-rep.herokuapp.com/office_locations/NY-andrew-cuomo-capitol
-    rep: https://phone-your-rep.herokuapp.com/reps/NY-andrew-cuomo
+  - self: https://phone-your-rep.herokuapp.com/office_locations/CO-john-hickenlooper-capitol
+    rep: https://phone-your-rep.herokuapp.com/reps/CO-john-hickenlooper
     active: true
-    official_id: NY-andrew-cuomo
+    official_id: CO-john-hickenlooper
     level: state
-    office_id: NY-andrew-cuomo-capitol
+    office_id: CO-john-hickenlooper-capitol
     bioguide_id: 
     state_leg_id: 
     office_type: capitol
     distance: 
     building: 
-    address: State Capitol
+    address: 136 State Capitol
     suite: 
-    city: Albany
-    state: NY
-    zip: '12224'
-    phone: 518-474-8390
-    fax: 
+    city: Denver
+    state: CO
+    zip: 80203-1792
+    phone: 303-866-2471
+    fax: 303-866-2003
     hours: 
-    latitude: 42.6516306
-    longitude: -73.7550307
-    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/NY-andrew-cuomo-capitol
-    downloads: 2
-    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/NY_andrew_cuomo_capitol.png
-  - self: https://phone-your-rep.herokuapp.com/office_locations/NY-andrew-cuomo-washington
-    rep: https://phone-your-rep.herokuapp.com/reps/NY-andrew-cuomo
-    active: true
-    official_id: NY-andrew-cuomo
-    level: state
-    office_id: NY-andrew-cuomo-washington
-    bioguide_id: 
-    state_leg_id: 
-    office_type: dc
-    distance: 
-    building: 
-    address: 444 North Capitol Street
-    suite: 
-    city: Washington
-    state: DC
-    zip: '20001'
-    phone: 202-434-7100
-    fax: 202-434-7110
-    hours: 
-    latitude: 38.912068
-    longitude: -77.0190228
-    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/NY-andrew-cuomo-washington
-    downloads: 0
-    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/NY_andrew_cuomo_washington.png
+    latitude: 39.7312095
+    longitude: -104.9826965
+    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/CO-john-hickenlooper-capitol
+    downloads: 1
+    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/CO_john_hickenlooper_capitol.png
 - self: https://phone-your-rep.herokuapp.com/reps/ME-paul-lepage
   state:
     self: https://phone-your-rep.herokuapp.com/api/beta/states/23
@@ -70849,64 +71917,6 @@
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/ME-paul-lepage-capitol
     downloads: 0
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/ME_paul_lepage_capitol.png
-- self: https://phone-your-rep.herokuapp.com/reps/CO-john-hickenlooper
-  state:
-    self: https://phone-your-rep.herokuapp.com/api/beta/states/08
-    state_code: '08'
-    name: Colorado
-    abbr: CO
-  active: true
-  official_id: CO-john-hickenlooper
-  level: state
-  bioguide_id: 
-  state_leg_id: 
-  official_full: John Hickenlooper
-  chamber: 
-  role: Governor
-  party: Democrat
-  senate_class: 
-  last: Hickenlooper
-  first: John
-  middle: 
-  nickname: 
-  suffix: 
-  contact_form: https://www.colorado.gov/governor/contact
-  url: http://www.colorado.gov/governor/
-  photo: https://cdn.civil.services/us-governors/headshots/512x512/john-hickenlooper.jpg
-  twitter: hickforco
-  facebook: JohnHickenlooper
-  youtube: 
-  instagram: 
-  googleplus: 
-  twitter_id: 
-  facebook_id: 
-  youtube_id: 
-  instagram_id: 
-  office_locations:
-  - self: https://phone-your-rep.herokuapp.com/office_locations/CO-john-hickenlooper-capitol
-    rep: https://phone-your-rep.herokuapp.com/reps/CO-john-hickenlooper
-    active: true
-    official_id: CO-john-hickenlooper
-    level: state
-    office_id: CO-john-hickenlooper-capitol
-    bioguide_id: 
-    state_leg_id: 
-    office_type: capitol
-    distance: 
-    building: 
-    address: 136 State Capitol
-    suite: 
-    city: Denver
-    state: CO
-    zip: 80203-1792
-    phone: 303-866-2471
-    fax: 303-866-2003
-    hours: 
-    latitude: 39.7312095
-    longitude: -104.9826965
-    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/CO-john-hickenlooper-capitol
-    downloads: 0
-    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/CO_john_hickenlooper_capitol.png
 - self: https://phone-your-rep.herokuapp.com/reps/MA-charlie-baker
   state:
     self: https://phone-your-rep.herokuapp.com/api/beta/states/25
@@ -70963,7 +71973,7 @@
     latitude: 42.2572472
     longitude: -71.1125435
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/MA-charlie-baker-capitol
-    downloads: 0
+    downloads: 1
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/MA_charlie_baker_capitol.png
   - self: https://phone-your-rep.herokuapp.com/office_locations/MA-charlie-baker-washington
     rep: https://phone-your-rep.herokuapp.com/reps/MA-charlie-baker
@@ -70989,112 +71999,6 @@
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/MA-charlie-baker-washington
     downloads: 1
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/MA_charlie_baker_washington.png
-  - self: https://phone-your-rep.herokuapp.com/office_locations/MA-charlie-baker-washington
-    rep: https://phone-your-rep.herokuapp.com/reps/MA-charlie-baker
-    active: true
-    official_id: MA-charlie-baker
-    level: state
-    office_id: MA-charlie-baker-washington
-    bioguide_id: 
-    state_leg_id: 
-    office_type: dc
-    distance: 
-    building: 
-    address: Capitol Street – Suite
-    suite: 
-    city: Washington
-    state: DC
-    zip: '20001'
-    phone: 202-624-7713
-    fax: 202-624-7714
-    hours: 
-    latitude: 47.7510741
-    longitude: -120.7401386
-    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/MA-charlie-baker-washington
-    downloads: 0
-    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/MA_charlie_baker_washington.png
-- self: https://phone-your-rep.herokuapp.com/reps/NV-brian-sandoval
-  state:
-    self: https://phone-your-rep.herokuapp.com/api/beta/states/32
-    state_code: '32'
-    name: Nevada
-    abbr: NV
-  active: true
-  official_id: NV-brian-sandoval
-  level: state
-  bioguide_id: 
-  state_leg_id: 
-  official_full: Brian Sandoval
-  chamber: 
-  role: Governor
-  party: Republican
-  senate_class: 
-  last: Sandoval
-  first: Brian
-  middle: 
-  nickname: 
-  suffix: 
-  contact_form: http://gov.nv.gov/Contact/Email-the-Governor/
-  url: http://gov.nv.gov/
-  photo: https://cdn.civil.services/us-governors/headshots/512x512/brian-sandoval.jpg
-  twitter: BrianSandoval
-  facebook: BrianSandoval
-  youtube: 
-  instagram: 
-  googleplus: 
-  twitter_id: 
-  facebook_id: 
-  youtube_id: 
-  instagram_id: 
-  office_locations:
-  - self: https://phone-your-rep.herokuapp.com/office_locations/NV-brian-sandoval-capitol
-    rep: https://phone-your-rep.herokuapp.com/reps/NV-brian-sandoval
-    active: true
-    official_id: NV-brian-sandoval
-    level: state
-    office_id: NV-brian-sandoval-capitol
-    bioguide_id: 
-    state_leg_id: 
-    office_type: capitol
-    distance: 
-    building: 
-    address: Capitol Building
-    suite: 
-    city: Carson City
-    state: NV
-    zip: '89701'
-    phone: 775-684-5670
-    fax: 775-684-5683
-    hours: 
-    latitude: 39.1297282
-    longitude: -119.6730939
-    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/NV-brian-sandoval-capitol
-    downloads: 0
-    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/NV_brian_sandoval_capitol.png
-  - self: https://phone-your-rep.herokuapp.com/office_locations/NV-brian-sandoval-washington
-    rep: https://phone-your-rep.herokuapp.com/reps/NV-brian-sandoval
-    active: true
-    official_id: NV-brian-sandoval
-    level: state
-    office_id: NV-brian-sandoval-washington
-    bioguide_id: 
-    state_leg_id: 
-    office_type: dc
-    distance: 
-    building: 
-    address: "– Suite 209"
-    suite: 
-    city: Washington
-    state: DC
-    zip: '20001'
-    phone: 202-624-5405
-    fax: 202-624-8181
-    hours: 
-    latitude: 38.912068
-    longitude: -77.0190228
-    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/NV-brian-sandoval-washington
-    downloads: 0
-    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/NV_brian_sandoval_washington.png
 - self: https://phone-your-rep.herokuapp.com/reps/NM-susana-martinez
   state:
     self: https://phone-your-rep.herokuapp.com/api/beta/states/35
@@ -71177,32 +72081,32 @@
     v_card_link: https://phone-your-rep.herokuapp.com/v_cards/NM-susana-martinez-washington
     downloads: 0
     qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/NM_susana_martinez_washington.png
-- self: https://phone-your-rep.herokuapp.com/reps/MT-steve-bullock
+- self: https://phone-your-rep.herokuapp.com/reps/NY-andrew-cuomo
   state:
-    self: https://phone-your-rep.herokuapp.com/api/beta/states/30
-    state_code: '30'
-    name: Montana
-    abbr: MT
+    self: https://phone-your-rep.herokuapp.com/api/beta/states/36
+    state_code: '36'
+    name: New York
+    abbr: NY
   active: true
-  official_id: MT-steve-bullock
+  official_id: NY-andrew-cuomo
   level: state
   bioguide_id: 
   state_leg_id: 
-  official_full: Steve Bullock
+  official_full: Andrew Cuomo
   chamber: 
   role: Governor
   party: Democrat
   senate_class: 
-  last: Bullock
-  first: Steve
+  last: Cuomo
+  first: Andrew
   middle: 
   nickname: 
   suffix: 
-  contact_form: http://governor.mt.gov/Home/Contact/shareopinion
-  url: http://governor.mt.gov/
-  photo: https://cdn.civil.services/us-governors/headshots/512x512/stephen-bullock.jpg
-  twitter: GovernorBullock
-  facebook: GovernorBullock
+  contact_form: http://www.governor.ny.gov/contact-iframe
+  url: http://www.governor.ny.gov/
+  photo: https://cdn.civil.services/us-governors/headshots/512x512/andrew-cuomo.jpg
+  twitter: NYGovCuomo
+  facebook: GovernorAndrewCuomo
   youtube: 
   instagram: 
   googleplus: 
@@ -71211,12 +72115,12 @@
   youtube_id: 
   instagram_id: 
   office_locations:
-  - self: https://phone-your-rep.herokuapp.com/office_locations/MT-steve-bullock-capitol
-    rep: https://phone-your-rep.herokuapp.com/reps/MT-steve-bullock
+  - self: https://phone-your-rep.herokuapp.com/office_locations/NY-andrew-cuomo-capitol
+    rep: https://phone-your-rep.herokuapp.com/reps/NY-andrew-cuomo
     active: true
-    official_id: MT-steve-bullock
+    official_id: NY-andrew-cuomo
     level: state
-    office_id: MT-steve-bullock-capitol
+    office_id: NY-andrew-cuomo-capitol
     bioguide_id: 
     state_leg_id: 
     office_type: capitol
@@ -71224,618 +72128,38 @@
     building: 
     address: State Capitol
     suite: 
-    city: Helena
-    state: MT
-    zip: 59620-0801
-    phone: 406-444-3111
-    fax: 406-444-5529
+    city: Albany
+    state: NY
+    zip: '12224'
+    phone: 518-474-8390
+    fax: 
     hours: 
-    latitude: 46.53
-    longitude: -112.16
-    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/MT-steve-bullock-capitol
-    downloads: 0
-    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/MT_steve_bullock_capitol.png
-- self: https://phone-your-rep.herokuapp.com/reps/ID-c-l-butch-otter
-  state:
-    self: https://phone-your-rep.herokuapp.com/api/beta/states/16
-    state_code: '16'
-    name: Idaho
-    abbr: ID
-  active: true
-  official_id: ID-c-l-butch-otter
-  level: state
-  bioguide_id: 
-  state_leg_id: 
-  official_full: C. L. "Butch" Otter
-  chamber: 
-  role: Governor
-  party: Republican
-  senate_class: 
-  last: Otter
-  first: C. L.
-  middle: 
-  nickname: '"Butch"'
-  suffix: 
-  contact_form: https://gov.idaho.gov/ourgov/contact.html
-  url: http://gov.idaho.gov/
-  photo: https://cdn.civil.services/us-governors/headshots/512x512/clement-otter.jpg
-  twitter: butchotter
-  facebook: Governor-C-L-Butch-Otter-292986829831/
-  youtube: 
-  instagram: 
-  googleplus: 
-  twitter_id: 
-  facebook_id: 
-  youtube_id: 
-  instagram_id: 
-  office_locations:
-  - self: https://phone-your-rep.herokuapp.com/office_locations/ID-c-l-butch-otter-capitol
-    rep: https://phone-your-rep.herokuapp.com/reps/ID-c-l-butch-otter
+    latitude: 42.6516306
+    longitude: -73.7550307
+    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/NY-andrew-cuomo-capitol
+    downloads: 3
+    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/NY_andrew_cuomo_capitol.png
+  - self: https://phone-your-rep.herokuapp.com/office_locations/NY-andrew-cuomo-washington
+    rep: https://phone-your-rep.herokuapp.com/reps/NY-andrew-cuomo
     active: true
-    official_id: ID-c-l-butch-otter
+    official_id: NY-andrew-cuomo
     level: state
-    office_id: ID-c-l-butch-otter-capitol
-    bioguide_id: 
-    state_leg_id: 
-    office_type: capitol
-    distance: 
-    building: 
-    address: 700 West Jefferson Second Floor
-    suite: 
-    city: Boise
-    state: ID
-    zip: '83702'
-    phone: 208-334-2100
-    fax: 208-334-2175
-    hours: 
-    latitude: 43.6624385
-    longitude: -116.1630431
-    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/ID-c-l-butch-otter-capitol
-    downloads: 0
-    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/ID_c_l_butch_otter_capitol.png
-- self: https://phone-your-rep.herokuapp.com/reps/MI-rick-snyder
-  state:
-    self: https://phone-your-rep.herokuapp.com/api/beta/states/26
-    state_code: '26'
-    name: Michigan
-    abbr: MI
-  active: true
-  official_id: MI-rick-snyder
-  level: state
-  bioguide_id: 
-  state_leg_id: 
-  official_full: Rick Snyder
-  chamber: 
-  role: Governor
-  party: Republican
-  senate_class: 
-  last: Snyder
-  first: Rick
-  middle: 
-  nickname: 
-  suffix: 
-  contact_form: https://somgovweb.state.mi.us/GovRelations/ShareOpinion.aspx
-  url: http://www.michigan.gov/gov
-  photo: https://cdn.civil.services/us-governors/headshots/512x512/richard-snyder.jpg
-  twitter: onetoughnerd
-  facebook: GovernorRickSnyder
-  youtube: 
-  instagram: 
-  googleplus: 
-  twitter_id: 
-  facebook_id: 
-  youtube_id: 
-  instagram_id: 
-  office_locations:
-  - self: https://phone-your-rep.herokuapp.com/office_locations/MI-rick-snyder-capitol
-    rep: https://phone-your-rep.herokuapp.com/reps/MI-rick-snyder
-    active: true
-    official_id: MI-rick-snyder
-    level: state
-    office_id: MI-rick-snyder-capitol
-    bioguide_id: 
-    state_leg_id: 
-    office_type: capitol
-    distance: 
-    building: 
-    address: P.O. Box 30013
-    suite: 
-    city: Lansing
-    state: MI
-    zip: '48909'
-    phone: 517-373-3400
-    fax: 517-335-6863
-    hours: 
-    latitude: 42.68
-    longitude: -84.5
-    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/MI-rick-snyder-capitol
-    downloads: 0
-    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/MI_rick_snyder_capitol.png
-  - self: https://phone-your-rep.herokuapp.com/office_locations/MI-rick-snyder-washington
-    rep: https://phone-your-rep.herokuapp.com/reps/MI-rick-snyder
-    active: true
-    official_id: MI-rick-snyder
-    level: state
-    office_id: MI-rick-snyder-washington
+    office_id: NY-andrew-cuomo-washington
     bioguide_id: 
     state_leg_id: 
     office_type: dc
     distance: 
     building: 
-    address: North Capitol Street –
+    address: 444 North Capitol Street
     suite: 
     city: Washington
     state: DC
     zip: '20001'
-    phone: 202-624-5840
-    fax: 202-624-5841
+    phone: 202-434-7100
+    fax: 202-434-7110
     hours: 
     latitude: 38.912068
     longitude: -77.0190228
-    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/MI-rick-snyder-washington
-    downloads: 0
-    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/MI_rick_snyder_washington.png
-- self: https://phone-your-rep.herokuapp.com/reps/MS-phil-bryant
-  state:
-    self: https://phone-your-rep.herokuapp.com/api/beta/states/28
-    state_code: '28'
-    name: Mississippi
-    abbr: MS
-  active: true
-  official_id: MS-phil-bryant
-  level: state
-  bioguide_id: 
-  state_leg_id: 
-  official_full: Phil Bryant
-  chamber: 
-  role: Governor
-  party: Republican
-  senate_class: 
-  last: Bryant
-  first: Phil
-  middle: 
-  nickname: 
-  suffix: 
-  contact_form: http://www.governorbryant.ms.gov/Pages/Contact.aspx
-  url: http://www.governorbryant.com/
-  photo: https://cdn.civil.services/us-governors/headshots/512x512/dewey-bryant.jpg
-  twitter: PhilBryantMS
-  facebook: im4phil
-  youtube: 
-  instagram: 
-  googleplus: 
-  twitter_id: 
-  facebook_id: 
-  youtube_id: 
-  instagram_id: 
-  office_locations:
-  - self: https://phone-your-rep.herokuapp.com/office_locations/MS-phil-bryant-capitol
-    rep: https://phone-your-rep.herokuapp.com/reps/MS-phil-bryant
-    active: true
-    official_id: MS-phil-bryant
-    level: state
-    office_id: MS-phil-bryant-capitol
-    bioguide_id: 
-    state_leg_id: 
-    office_type: capitol
-    distance: 
-    building: 
-    address: P.O. Box 139
-    suite: 
-    city: Jackson
-    state: MS
-    zip: '39205'
-    phone: 601-359-3150
-    fax: 601-359-3741
-    hours: 
-    latitude: 32.3503996
-    longitude: -90.1529468
-    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/MS-phil-bryant-capitol
-    downloads: 0
-    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/MS_phil_bryant_capitol.png
-- self: https://phone-your-rep.herokuapp.com/reps/DE-john-carney
-  state:
-    self: https://phone-your-rep.herokuapp.com/api/beta/states/10
-    state_code: '10'
-    name: Delaware
-    abbr: DE
-  active: true
-  official_id: DE-john-carney
-  level: state
-  bioguide_id: 
-  state_leg_id: 
-  official_full: John Carney
-  chamber: 
-  role: Governor
-  party: Democrat
-  senate_class: 
-  last: Carney
-  first: John
-  middle: 
-  nickname: 
-  suffix: 
-  contact_form: http://delaware.gov/help/degov-contact.shtml
-  url: http://governor.delaware.gov/
-  photo: https://cdn.civil.services/us-governors/headshots/512x512/john-carney.jpg
-  twitter: JohnCarneyDE
-  facebook: JohnCarneyDE
-  youtube: 
-  instagram: 
-  googleplus: 
-  twitter_id: 
-  facebook_id: 
-  youtube_id: 
-  instagram_id: 
-  office_locations:
-  - self: https://phone-your-rep.herokuapp.com/office_locations/DE-john-carney-capitol
-    rep: https://phone-your-rep.herokuapp.com/reps/DE-john-carney
-    active: true
-    official_id: DE-john-carney
-    level: state
-    office_id: DE-john-carney-capitol
-    bioguide_id: 
-    state_leg_id: 
-    office_type: capitol
-    distance: 
-    building: 
-    address: Legislative Hall
-    suite: 
-    city: Dover
-    state: DE
-    zip: '19901'
-    phone: 302-744-4101
-    fax: 302-739-2775
-    hours: 
-    latitude: 39.2081349
-    longitude: -75.4577775
-    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/DE-john-carney-capitol
-    downloads: 0
-    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/DE_john_carney_capitol.png
-- self: https://phone-your-rep.herokuapp.com/reps/IN-eric-holcomb
-  state:
-    self: https://phone-your-rep.herokuapp.com/api/beta/states/18
-    state_code: '18'
-    name: Indiana
-    abbr: IN
-  active: true
-  official_id: IN-eric-holcomb
-  level: state
-  bioguide_id: 
-  state_leg_id: 
-  official_full: Eric Holcomb
-  chamber: 
-  role: Governor
-  party: Republican
-  senate_class: 
-  last: Holcomb
-  first: Eric
-  middle: 
-  nickname: 
-  suffix: 
-  contact_form: http://www.in.gov/core/help.html
-  url: http://www.in.gov/gov/index.htm
-  photo: https://cdn.civil.services/us-governors/headshots/512x512/eric-holcomb.jpg
-  twitter: GovHolcomb
-  facebook: GovHolcomb
-  youtube: 
-  instagram: 
-  googleplus: 
-  twitter_id: 
-  facebook_id: 
-  youtube_id: 
-  instagram_id: 
-  office_locations:
-  - self: https://phone-your-rep.herokuapp.com/office_locations/IN-eric-holcomb-capitol
-    rep: https://phone-your-rep.herokuapp.com/reps/IN-eric-holcomb
-    active: true
-    official_id: IN-eric-holcomb
-    level: state
-    office_id: IN-eric-holcomb-capitol
-    bioguide_id: 
-    state_leg_id: 
-    office_type: capitol
-    distance: 
-    building: 
-    address: State House Room 206
-    suite: 
-    city: Indianapolis
-    state: IN
-    zip: 46204-2797
-    phone: 317-232-4567
-    fax: 317-232-3443
-    hours: 
-    latitude: 39.7713425
-    longitude: -86.1573709
-    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/IN-eric-holcomb-capitol
-    downloads: 0
-    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/IN_eric_holcomb_capitol.png
-- self: https://phone-your-rep.herokuapp.com/reps/AS-lolo-matalasi-moliga
-  state:
-    self: https://phone-your-rep.herokuapp.com/api/beta/states/60
-    state_code: '60'
-    name: American Samoa
-    abbr: AS
-  active: true
-  official_id: AS-lolo-matalasi-moliga
-  level: state
-  bioguide_id: 
-  state_leg_id: 
-  official_full: Lolo Matalasi Moliga
-  chamber: 
-  role: Governor
-  party: Independent
-  senate_class: 
-  last: Moliga
-  first: Lolo
-  middle: Matalasi
-  nickname: 
-  suffix: 
-  contact_form: 
-  url: http://www.americansamoa.gov/
-  photo: https://www.nga.org/files/live/sites/NGA/files/images/govportraits/AS-LMMoliga.jpg
-  twitter: 
-  facebook: 
-  youtube: 
-  instagram: 
-  googleplus: 
-  twitter_id: 
-  facebook_id: 
-  youtube_id: 
-  instagram_id: 
-  office_locations:
-  - self: https://phone-your-rep.herokuapp.com/office_locations/AS-lolo-matalasi-moliga-capitol
-    rep: https://phone-your-rep.herokuapp.com/reps/AS-lolo-matalasi-moliga
-    active: true
-    official_id: AS-lolo-matalasi-moliga
-    level: state
-    office_id: AS-lolo-matalasi-moliga-capitol
-    bioguide_id: 
-    state_leg_id: 
-    office_type: capitol
-    distance: 
-    building: 
-    address: Executive Office Building Third Floor
-    suite: 
-    city: Utulei Pago Pago
-    state: AS
-    zip: '96799'
-    phone: 011-684/633-4116
-    fax: 011-684/633-2269
-    hours: 
-    latitude: -14.2782029
-    longitude: -170.6821998
-    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/AS-lolo-matalasi-moliga-capitol
-    downloads: 0
-    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/AS_lolo_matalasi_moliga_capitol.png
-- self: https://phone-your-rep.herokuapp.com/reps/AL-kay-ivey
-  state:
-    self: https://phone-your-rep.herokuapp.com/api/beta/states/01
-    state_code: '01'
-    name: Alabama
-    abbr: AL
-  active: true
-  official_id: AL-kay-ivey
-  level: state
-  bioguide_id: 
-  state_leg_id: 
-  official_full: Kay Ivey
-  chamber: 
-  role: Governor
-  party: Republican
-  senate_class: 
-  last: Ivey
-  first: Kay
-  middle: 
-  nickname: 
-  suffix: 
-  contact_form: http://governor.alabama.gov/contact
-  url: http://www.governor.alabama.gov/
-  photo: https://cdn.civil.services/us-governors/headshots/512x512/kay-ivey.jpg
-  twitter: GovernorKayIvey
-  facebook: KayIveyAL
-  youtube: 
-  instagram: 
-  googleplus: 
-  twitter_id: 
-  facebook_id: 
-  youtube_id: 
-  instagram_id: 
-  office_locations:
-  - self: https://phone-your-rep.herokuapp.com/office_locations/AL-kay-ivey-capitol
-    rep: https://phone-your-rep.herokuapp.com/reps/AL-kay-ivey
-    active: true
-    official_id: AL-kay-ivey
-    level: state
-    office_id: AL-kay-ivey-capitol
-    bioguide_id: 
-    state_leg_id: 
-    office_type: capitol
-    distance: 
-    building: 
-    address: State Capitol 600 Dexter Avenue
-    suite: 
-    city: Montgomery
-    state: AL
-    zip: 36130-2751
-    phone: 334-242-7100
-    fax: 334-353-0004
-    hours: 
-    latitude: 32.3777405
-    longitude: -86.2990026
-    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/AL-kay-ivey-capitol
-    downloads: 0
-    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/AL_kay_ivey_capitol.png
-- self: https://phone-your-rep.herokuapp.com/reps/OK-mary-fallin
-  state:
-    self: https://phone-your-rep.herokuapp.com/api/beta/states/40
-    state_code: '40'
-    name: Oklahoma
-    abbr: OK
-  active: true
-  official_id: OK-mary-fallin
-  level: state
-  bioguide_id: 
-  state_leg_id: 
-  official_full: Mary Fallin
-  chamber: 
-  role: Governor
-  party: Republican
-  senate_class: 
-  last: Fallin
-  first: Mary
-  middle: 
-  nickname: 
-  suffix: 
-  contact_form: https://www.ok.gov/triton/modules/formbuilder/form.php?form_id=0d5f27f90f279a5b64535ec11836feaa07db37cbb20807e960b2c0aa58b9f358
-  url: http://www.gov.ok.gov/
-  photo: https://cdn.civil.services/us-governors/headshots/512x512/mary-fallin.jpg
-  twitter: GovMaryFallin
-  facebook: GovernorMaryFallin
-  youtube: 
-  instagram: 
-  googleplus: 
-  twitter_id: 
-  facebook_id: 
-  youtube_id: 
-  instagram_id: 
-  office_locations:
-  - self: https://phone-your-rep.herokuapp.com/office_locations/OK-mary-fallin-capitol
-    rep: https://phone-your-rep.herokuapp.com/reps/OK-mary-fallin
-    active: true
-    official_id: OK-mary-fallin
-    level: state
-    office_id: OK-mary-fallin-capitol
-    bioguide_id: 
-    state_leg_id: 
-    office_type: capitol
-    distance: 
-    building: 
-    address: Capitol Building 2300 Lincoln Blvd., Rm. 212
-    suite: 
-    city: Oklahoma City
-    state: OK
-    zip: '73105'
-    phone: 405-521-2342
-    fax: 405-521-3353
-    hours: 
-    latitude: 35.5208639
-    longitude: -97.5057737
-    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/OK-mary-fallin-capitol
-    downloads: 0
-    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/OK_mary_fallin_capitol.png
-- self: https://phone-your-rep.herokuapp.com/reps/MP-ralph-deleon-guerrero-torres
-  state:
-    self: https://phone-your-rep.herokuapp.com/api/beta/states/69
-    state_code: '69'
-    name: Commonwealth of the Northern Mariana Islands
-    abbr: MP
-  active: true
-  official_id: MP-ralph-deleon-guerrero-torres
-  level: state
-  bioguide_id: 
-  state_leg_id: 
-  official_full: Ralph Deleon Guerrero Torres
-  chamber: 
-  role: Governor
-  party: Republican
-  senate_class: 
-  last: Torres
-  first: Ralph
-  middle: Deleon Guerrero
-  nickname: 
-  suffix: 
-  contact_form: 
-  url: http://gov.mp/
-  photo: https://www.nga.org/files/live/sites/NGA/files/images/govportraits/CNMI-RalphTorres.jpg
-  twitter: 
-  facebook: 
-  youtube: 
-  instagram: 
-  googleplus: 
-  twitter_id: 
-  facebook_id: 
-  youtube_id: 
-  instagram_id: 
-  office_locations:
-  - self: https://phone-your-rep.herokuapp.com/office_locations/MP-ralph-deleon-guerrero-torres-capitol
-    rep: https://phone-your-rep.herokuapp.com/reps/MP-ralph-deleon-guerrero-torres
-    active: true
-    official_id: MP-ralph-deleon-guerrero-torres
-    level: state
-    office_id: MP-ralph-deleon-guerrero-torres-capitol
-    bioguide_id: 
-    state_leg_id: 
-    office_type: capitol
-    distance: 
-    building: 
-    address: Caller Box 10007
-    suite: 
-    city: Saipan
-    state: MP
-    zip: '96950'
-    phone: 670-664-2280
-    fax: 670-664-2211
-    hours: 
-    latitude: 15.1850483
-    longitude: 145.7467259
-    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/MP-ralph-deleon-guerrero-torres-capitol
-    downloads: 0
-    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/MP_ralph_deleon_guerrero_torres_capitol.png
-- self: https://phone-your-rep.herokuapp.com/reps/OR-kate-brown
-  state:
-    self: https://phone-your-rep.herokuapp.com/api/beta/states/41
-    state_code: '41'
-    name: Oregon
-    abbr: OR
-  active: true
-  official_id: OR-kate-brown
-  level: state
-  bioguide_id: 
-  state_leg_id: 
-  official_full: Kate Brown
-  chamber: 
-  role: Governor
-  party: Democrat
-  senate_class: 
-  last: Brown
-  first: Kate
-  middle: 
-  nickname: 
-  suffix: 
-  contact_form: http://www.oregon.gov/gov/Pages/share-your-opinion.aspx
-  url: http://www.oregon.gov/gov/pages/index.aspx
-  photo: https://cdn.civil.services/us-governors/headshots/512x512/katherine-brown.jpg
-  twitter: OregonGovBrown
-  facebook: oregongovernor
-  youtube: 
-  instagram: 
-  googleplus: 
-  twitter_id: 
-  facebook_id: 
-  youtube_id: 
-  instagram_id: 
-  office_locations:
-  - self: https://phone-your-rep.herokuapp.com/office_locations/OR-kate-brown-capitol
-    rep: https://phone-your-rep.herokuapp.com/reps/OR-kate-brown
-    active: true
-    official_id: OR-kate-brown
-    level: state
-    office_id: OR-kate-brown-capitol
-    bioguide_id: 
-    state_leg_id: 
-    office_type: capitol
-    distance: 
-    building: 
-    address: State Capitol, Room 160 900 Court St. N.
-    suite: 
-    city: Salem
-    state: OR
-    zip: '97301'
-    phone: 503-378-4582
-    fax: 503-378-8970
-    hours: 
-    latitude: 44.9464822
-    longitude: -123.0018941
-    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/OR-kate-brown-capitol
-    downloads: 0
-    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/OR_kate_brown_capitol.png
+    v_card_link: https://phone-your-rep.herokuapp.com/v_cards/NY-andrew-cuomo-washington
+    downloads: 1
+    qr_code_link: https://s3.amazonaws.com/phone-your-rep-images/NY_andrew_cuomo_washington.png
