@@ -1,10 +1,10 @@
 GIT
   remote: https://github.com/msimonborg/lapi
-  revision: 5e1a33eaa1ef8cb82150e91103fccee121e1c49a
+  revision: 4bf69e590d3cc77e4aa71e98631d37978f926d55
   specs:
     lapi (0.1.0)
       httparty (>= 0.15.0)
-      lazy_record (>= 0.6.0)
+      lazy_record (>= 0.6.3)
 
 GEM
   remote: https://rubygems.org/
@@ -125,7 +125,7 @@ GEM
       activesupport (>= 3.0.0, < 5.1)
       multi_json (~> 1.2)
     json (2.1.0)
-    lazy_record (0.6.2)
+    lazy_record (0.6.3)
       activesupport (~> 5.0)
       scoped_attr_accessor (~> 1.0, >= 1.0.3)
     listen (3.0.8)

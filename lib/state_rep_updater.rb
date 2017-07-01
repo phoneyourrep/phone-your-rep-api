@@ -85,13 +85,14 @@ class StateRepUpdater
   end
 
   def update_fax_phone_and_address(rep, off, os_off)
-    return set_michigan_senator_office_info(off, os_off) if a_michigan_senator?(rep, state)
+    return set_michigan_senator_office_info(off, os_off) if a_michigan_senator?(rep)
+    trim_maryland_legislator_office_address(os_off) if a_maryland_legislator?
     off.fax     = !os_off.fax.blank?     ? os_off.fax     : off.fax
     off.phone   = !os_off.phone.blank?   ? os_off.phone   : off.phone
     off.address = !os_off.address.blank? ? os_off.address : off.address
   end
 
-  def a_michigan_senator?(rep, state)
+  def a_michigan_senator?(rep)
     rep.chamber == 'upper' && state.abbr == 'MI'
   end
 
@@ -101,5 +102,14 @@ class StateRepUpdater
     address      = os_off.address.match?(/Binsfeld/) ? '201 Townsend Street' : '100 N. Capitol Ave '
     off.building = os_off.address
     off.address  = "#{address}\nLansing\nMI\n48933"
+  end
+
+  def a_maryland_legislator?
+    state.abbr == 'MD'
+  end
+
+  def trim_maryland_legislator_office_address(os_off)
+    trim = os_off.address.match(/Fax:(\w|\W)+\z/)
+    os_off.address.sub!(trim.to_s, '') if trim
   end
 end
