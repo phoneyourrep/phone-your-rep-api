@@ -34,8 +34,22 @@ module AddressParser
   def split_city_on_digits
     split_city_on_digits = city&.split(/\d/)
     return if split_city_on_digits.blank?
-    address << city.sub(split_city_on_digits.last, '')
+    address << city&.sub(split_city_on_digits.last, '')&.strip
     self.city = split_city_on_digits.last.strip
+  end
+
+  def extract_building
+    match = address.match(/\A(\w|\W)+(B|b)uilding\s/)
+    return unless match
+    self.building = match.to_s.strip
+    address.sub!(match.to_s, '').strip!
+  end
+
+  def extract_suite
+    match = address.match(/([Rr](oo)?m|[Ss](ui)?te)\.?\s\d+/)
+    return unless match
+    self.suite = match.to_s.strip
+    address.sub!(match.to_s, '').strip!
   end
 
   def set_city_state_and_zip
@@ -51,5 +65,7 @@ module AddressParser
     self.address  = address_array.join("\n")
 
     split_city_on_digits
+    extract_building
+    extract_suite
   end
 end
