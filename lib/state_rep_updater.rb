@@ -79,14 +79,27 @@ class StateRepUpdater
       off = rep.office_locations.find_or_initialize_by(
         office_type: os_off.type, rep: rep
       )
-      update_fax_phone_and_address(off, os_off)
+      update_fax_phone_and_address(rep, off, os_off)
       off.save
     end
   end
 
-  def update_fax_phone_and_address(off, os_off)
+  def update_fax_phone_and_address(rep, off, os_off)
+    return set_michigan_senator_office_info(off, os_off) if a_michigan_senator?(rep, state)
     off.fax     = !os_off.fax.blank?     ? os_off.fax     : off.fax
     off.phone   = !os_off.phone.blank?   ? os_off.phone   : off.phone
     off.address = !os_off.address.blank? ? os_off.address : off.address
+  end
+
+  def a_michigan_senator?(rep, state)
+    rep.chamber == 'upper' && state.abbr == 'MI'
+  end
+
+  def set_michigan_senator_office_info(off, os_off)
+    off.fax      = os_off.fax
+    off.phone    = os_off.phone
+    address      = os_off.address.match?(/Binsfeld/) ? '201 Townsend Street' : '100 N. Capitol Ave '
+    off.building = os_off.address
+    off.address  = "#{address}\nLansing\nMI\n48933"
   end
 end
