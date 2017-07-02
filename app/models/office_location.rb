@@ -40,6 +40,8 @@ class OfficeLocation < ApplicationRecord
 
   scope :district, -> { where office_type: 'district' }
 
+  scope :rep_type, ->(type) { joins(:rep).where(reps: { type: type }) }
+
   is_impressionable counter_cache: true, column_name: :downloads
 
   dragonfly_accessor :qr_code

@@ -203,7 +203,7 @@ module DbPyrUpdate
         next if yaml_office['offices'].blank?
         find_or_create_offices(yaml_office)
       end
-      district_offices = OfficeLocation.where(office_type: 'district').map(&:id)
+      district_offices = OfficeLocation.rep_type('CongressionalRep').district.map(&:id)
       inactive_offices = district_offices - @active_offices
       OfficeLocation.find(inactive_offices).each { |o| o.update(active: false) }
     end
