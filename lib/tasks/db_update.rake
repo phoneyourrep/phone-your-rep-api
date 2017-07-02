@@ -44,6 +44,11 @@ namespace :db do
         update.call
       end
 
+      desc 'Scrape and update current StateReps from OpenStates API'
+      task :state_reps do
+        StateRepUpdater.update!
+      end
+
       desc 'Download updated legislators-social-media.yaml'
       task :fetch_socials do
         source = get_source(
