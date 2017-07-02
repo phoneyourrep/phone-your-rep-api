@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'db_pyr_update'
+require 'state_rep_updater'
 # require 'config/application'
 
 namespace :db do
