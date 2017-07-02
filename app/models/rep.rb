@@ -35,6 +35,8 @@ class Rep < ApplicationRecord
 
   scope :independent, -> { where party: 'Independent' }
 
+  scope :last_name, ->(last) { where 'last ILIKE ?', "%#{last}%" }
+
   scope :state, lambda { |name|
     joins(:state).
       where(states: { name: name.capitalize }).
