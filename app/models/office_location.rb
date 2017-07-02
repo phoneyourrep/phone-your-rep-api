@@ -18,7 +18,7 @@ class OfficeLocation < ApplicationRecord
 
   geocoded_by :geocoder_address
 
-  after_validation :set_city_state_and_zip, if: -> { %w[StateRep Governor].include?(rep.type) }
+  after_validation :set_city_state_and_zip, if: -> { rep.type == 'StateRep' }
 
   before_save :reverse_geocode, if: -> { state.blank? }
 
