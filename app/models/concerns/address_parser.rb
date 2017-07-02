@@ -12,7 +12,7 @@ module AddressParser
   end
 
   def extract_state_from_full_address
-    self.state = address.match(/\s+[A-Z]{2}(\s|,)?\z/).to_s
+    self.state = address.match(/,?\s+[A-Z]{2}(\s|,)?\z/).to_s
     address.sub!(state, '')
     state.delete!("\n ,#{nbsp}")
   end
@@ -39,7 +39,7 @@ module AddressParser
   end
 
   def extract_building
-    match = address.match(/\A(\w|\W)+(B|b)uilding\s/)
+    match = address.match(/\A[\w\W]+[Bb]uilding\s?/)
     return unless match
     self.building = match.to_s.strip
     address.sub!(match.to_s, '').strip!
@@ -57,15 +57,34 @@ module AddressParser
     phone_only = address.match(/[\p{Zs}\s]+Phone(\s?)+\z/)
     return add_fields_for_phone_only(phone_only) if phone_only
     trim_address_tail
-    extract_zip_from_full_address
-    extract_state_from_full_address
+    extract_zip_and_state_from_full_address
 
     address_array = address.gsub("\n", ', ').split(', ')
-    self.city     = address_array.pop&.delete(",\n#{nbsp}")
-    self.address  = address_array.join("\n")
+    address_array.length <= 1 ? geocode_city : extract_city_from_address_array(address_array)
 
+    extract_building_and_suite
+    self.address = nil if address.blank?
+  end
+
+  def extract_city_from_address_array(address_array)
+    self.city    = address_array.pop&.delete(",\n#{nbsp}")
+    self.address = address_array.join("\n")
     split_city_on_digits
+  end
+
+  def geocode_city
+    geo = Geocoder.search("#{address}#{state}#{zip}").first
+    self.city = geo&.city
+    address.sub!(city, '').strip!
+  end
+
+  def extract_building_and_suite
     extract_building
     extract_suite
+  end
+
+  def extract_zip_and_state_from_full_address
+    extract_zip_from_full_address
+    extract_state_from_full_address
   end
 end

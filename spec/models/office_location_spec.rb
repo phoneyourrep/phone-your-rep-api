@@ -158,6 +158,21 @@ describe OfficeLocation, type: :model do
       expect(office.address).to eq('104B East Wing PO Box 202182')
     end
 
+    it '#set_city_state_and_zip parses a full address with spaces into separate fields' do
+      office = OfficeLocation.new(
+        address: '320-A Coverdell Legislative Office Building Atlanta GA 30334',
+        rep: StateRep.new
+      )
+      office.set_city_state_and_zip
+
+      expect(office.city).to eq('Atlanta')
+      expect(office.building).to eq('320-A Coverdell Legislative Office Building')
+      expect(office.suite).to eq(nil)
+      expect(office.state).to eq('GA')
+      expect(office.zip).to eq('30334')
+      expect(office.address).to eq(nil)
+    end
+
     it '#set_city_state_and_zip parses a full address with line breaks into separate fields' do
       office = OfficeLocation.new address: "123 Main St.\nAnytown\nNY 10000-1234", rep: StateRep.new
       office.set_city_state_and_zip
