@@ -81,7 +81,7 @@ class StateRepUpdater
         office_type: os_off.type, rep: rep
       )
       update_fax_phone_and_address(rep, off, os_off)
-      off.save
+      off.save unless off.address.blank? && off.phone.blank?
     end
   end
 

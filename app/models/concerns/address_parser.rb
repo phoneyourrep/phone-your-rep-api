@@ -75,6 +75,7 @@ module AddressParser
   def geocode_city
     geo = Geocoder.search("#{address}#{state}#{zip}").first
     self.city = geo&.city
+    return if city.blank?
     address&.sub!(city, '')&.strip!
   end
 
