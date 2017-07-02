@@ -182,7 +182,7 @@ describe OfficeLocation, type: :model do
       expect(office.longitude).to_not be(nil)
     end
 
-    it 'calls #set_city_state_and_zip before_save only if it\'s rep is a StateRep' do
+    it 'calls #set_city_state_and_zip before_save only if it\'s rep is not a CongressionalRep' do
       rep = StateRep.create(state: State.new, chamber: 'lower')
       office = OfficeLocation.new address: '123 Main St., Anytown, NY 10000', rep: rep
       office.save
@@ -192,7 +192,16 @@ describe OfficeLocation, type: :model do
       expect(office.state).to eq('NY')
       expect(office.zip).to eq('10000')
 
-      rep = Rep.create
+      rep = Governor.create(state: State.new)
+      office = OfficeLocation.new address: '123 Main St., Anytown, NY 10000', rep: rep
+      office.save
+
+      expect(office.address).to eq('123 Main St.')
+      expect(office.city).to eq('Anytown')
+      expect(office.state).to eq('NY')
+      expect(office.zip).to eq('10000')
+
+      rep = CongressionalRep.create(state: State.new, chamber: 'lower')
       office = OfficeLocation.new address: "123 Main St.\nAnytown\nNY 10000-1234", rep: rep
       office.save
 

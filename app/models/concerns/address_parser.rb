@@ -53,7 +53,7 @@ module AddressParser
   end
 
   def set_city_state_and_zip
-    return unless address_changed?
+    return unless address && address_changed?
     phone_only = address.match(/[\p{Zs}\s]+Phone(\s?)+\z/)
     return add_fields_for_phone_only(phone_only) if phone_only
     trim_address_tail

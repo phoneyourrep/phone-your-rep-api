@@ -33,8 +33,8 @@ class GeoLookup
     ).includes(:office_locations)
   end
 
-  def find_legislators_only
-    self.reps = find_reps.legislators
+  def find_national_legislators_only
+    self.reps = find_reps.legislators.level('national')
   end
 
   def find_office_locations
