@@ -111,27 +111,27 @@ describe OfficeLocation, type: :model do
   context 'when belongs to a StateRep' do
     it '#set_city_state_and_zip parses a full address with commas into separate fields' do
       office = OfficeLocation.new(
-        address: 'Senate Building 123 Main St. Room 12, Anytown, NY 10000',
+        address: 'Senate Building 123 Main St. Annex Room 12, Anytown, NY 10000',
         rep: StateRep.new
       )
       office.set_city_state_and_zip
 
       expect(office.city).to eq('Anytown')
       expect(office.building).to eq('Senate Building')
-      expect(office.suite).to eq('Room 12')
+      expect(office.suite).to eq('Annex Room 12')
       expect(office.state).to eq('NY')
       expect(office.zip).to eq('10000')
       expect(office.address).to eq('123 Main St.')
 
       office = OfficeLocation.new(
-        address: "250-W Stratton Office Building\nRoom 12\nSpringfield, IL   62706\n",
+        address: "250-W Stratton Office Building\nRoom 12-D\nSpringfield, IL   62706\n",
         rep: StateRep.new
       )
       office.set_city_state_and_zip
 
       expect(office.city).to eq('Springfield')
       expect(office.building).to eq('250-W Stratton Office Building')
-      expect(office.suite).to eq('Room 12')
+      expect(office.suite).to eq('Room 12-D')
       expect(office.state).to eq('IL')
       expect(office.zip).to eq('62706')
 

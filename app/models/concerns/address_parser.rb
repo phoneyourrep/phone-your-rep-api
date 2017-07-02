@@ -46,7 +46,7 @@ module AddressParser
   end
 
   def extract_suite
-    match = address.match(/([Rr](oo)?m|[Ss](ui)?te)\.?\s\d+/)
+    match = address.match(/(Annex\s)?([Rr](oo)?m|[Ss](ui)?te)\.?\s\w+(-\w+)?/)
     return unless match
     self.suite = match.to_s.strip
     address.sub!(match.to_s, '').strip!
