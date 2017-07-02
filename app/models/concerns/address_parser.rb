@@ -75,7 +75,7 @@ module AddressParser
   def geocode_city
     geo = Geocoder.search("#{address}#{state}#{zip}").first
     self.city = geo&.city
-    address.sub!(city, '').strip!
+    address&.sub!(city, '')&.strip!
   end
 
   def extract_building_and_suite
