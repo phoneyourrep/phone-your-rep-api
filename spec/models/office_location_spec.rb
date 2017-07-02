@@ -124,7 +124,7 @@ describe OfficeLocation, type: :model do
       expect(office.address).to eq('123 Main St.')
 
       office = OfficeLocation.new(
-        address: "250-W Stratton Office Building\nRoom 12-D\nSpringfield, IL   62706\n",
+        address: "250-W Stratton Office Building Room 12-D\nSpringfield, IL   62706\n",
         rep: StateRep.new
       )
       office.set_city_state_and_zip

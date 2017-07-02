@@ -28,13 +28,14 @@ module DbPyrUpdate
 
     def update_office(db_gov, off)
       o = OfficeLocation.find_or_initialize_by(
-        rep: db_gov, address: off.address, office_type: off.office_type, city: off.city
+        rep: db_gov, office_type: off.office_type, city: off.city
       )
-      o.state  = off.state
-      o.zip    = off.zip
-      o.phone  = off.phone
-      o.fax    = off.fax
-      o.active = true
+      o.address = off.address
+      o.state   = off.state
+      o.zip     = off.zip
+      o.phone   = off.phone
+      o.fax     = off.fax
+      o.active  = true
       o.save
     end
 
@@ -42,9 +43,9 @@ module DbPyrUpdate
       db_gov.photo_url    = gov.photo_url
       db_gov.url          = gov.url
       db_gov.party        = gov.party
-      db_gov.first        = gov.first
-      db_gov.last         = gov.last
-      db_gov.middle       = gov.middle
+      db_gov.first        = gov.first_name
+      db_gov.last         = gov.last_name
+      db_gov.middle       = gov.middle_name
       db_gov.nickname     = gov.nickname
       db_gov.suffix       = gov.suffix
       db_gov.twitter      = gov.twitter

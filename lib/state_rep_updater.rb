@@ -62,6 +62,7 @@ class StateRepUpdater
     rep.contact_form = os_rep.email
     rep.active       = os_rep.active
     rep.photo_url    = os_rep.photo_url
+    rep.photo        = os_rep.photo_url
     rep.level        = os_rep.level
     rep.url          = os_rep.url
   end
