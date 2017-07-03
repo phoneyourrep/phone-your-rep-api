@@ -119,10 +119,10 @@ class OfficeLocation < ApplicationRecord
   def qr_code_link
     return unless office_id
     sub_directory = case rep.type
-    when 'CongressionalRep' then 'congress'
-    when 'Governor' then 'governors'
-    when 'StateRep' then rep.state.abbr.downcase
-    end
+                    when 'CongressionalRep' then 'congress'
+                    when 'Governor'         then 'governors'
+                    when 'StateRep'         then rep.state.abbr.downcase
+                    end
     "https://s3.amazonaws.com/#{S3_BUCKET}/#{sub_directory}/#{office_id.tr('-', '_')}.png"
   end
 end

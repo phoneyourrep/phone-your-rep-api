@@ -11,11 +11,12 @@ namespace :pyr do
     task :generate, [:rep_set] do |_t, args|
       args.with_defaults(rep_set: 'congress')
       offices = case args[:rep_set]
-      when 'congress' then OfficeLocation.active.rep_type('CongressionalRep')
-      when 'governors' then OfficeLocation.active.rep_type('Governor')
-      else OfficeLocation.active.rep_type('StateRep').state(args[:rep_set])
-      end
+                when 'congress'  then OfficeLocation.active.rep_type('CongressionalRep')
+                when 'governors' then OfficeLocation.active.rep_type('Governor')
+                else OfficeLocation.active.rep_type('StateRep').state(args[:rep_set])
+                end
       offices_count = offices.count
+      next if offices_count.zero?
       i = 1
       start = Time.now
       offices.each do |office|
@@ -31,6 +32,7 @@ namespace :pyr do
     desc 'Remove the image meta files and make the filenames predictable'
     task :clean do
       dir = lookup_qr_code_dir
+      next unless Dir.exist?(dir)
       Dir.chdir(dir) do
         sh 'rm *meta.yml'
         files = Dir.glob('*.png')
@@ -45,8 +47,8 @@ namespace :pyr do
     task :empty, [:rep_set] do |_t, args|
       args.with_defaults(rep_set: 'congress')
       dir = lookup_qr_code_dir
+      next unless Dir.exist?(dir)
       Dir.chdir(dir) do
-        files = Dir.glob('*.png').join(" --include ")
         puts "Emptying contents of the #{S3_BUCKET} S3 bucket"
         sh "aws s3 rm s3://#{S3_BUCKET}/#{args[:rep_set]} --recursive"
       end
@@ -56,6 +58,7 @@ namespace :pyr do
     task :upload, [:rep_set] do |_t, args|
       args.with_defaults(rep_set: 'congress')
       dir = lookup_qr_code_dir
+      next unless Dir.exist?(dir)
       Dir.chdir(dir) do
         puts 'Uploading new images'
         sh "aws s3 cp . s3://#{S3_BUCKET}/#{args[:rep_set]} --recursive --grants"\
@@ -67,6 +70,7 @@ namespace :pyr do
     task :push, [:rep_set] do |_t, args|
       args.with_defaults(rep_set: 'congress')
       dir = lookup_qr_code_dir
+      next unless Dir.exist?(dir)
       Dir.chdir('../qr_codes') do
         sh 'git pull'
         Dir.mkdir(args[:rep_set]) unless Dir.exist?(args[:rep_set])
@@ -85,6 +89,7 @@ namespace :pyr do
     desc 'Delete images source file'
     task :delete do
       dir = lookup_qr_code_dir
+      next unless Dir.exist?(dir)
       sh "rm -rf #{dir}"
       puts 'Deleted local copies'
     end
@@ -97,7 +102,7 @@ namespace :pyr do
       args = State.all.pluck(:abbr)
       args += %w[congress governors]
       args.each do |arg|
-        Rake::Task[:create].invoke(arg)
+        sh "bundle exec rake pyr:qr_codes:create[#{arg.downcase}]"
       end
     end
 

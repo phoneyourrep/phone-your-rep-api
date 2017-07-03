@@ -54,8 +54,8 @@ describe OfficeLocation, type: :model do
   end
 
   it 'has a qr_code_link' do
-    office = create :office_location, office_id: 'office-id'
-    url    = 'https://s3.amazonaws.com/phone-your-rep-images/office_id.png'
+    office = create :office_location, office_id: 'office-id', rep: create(:congressional_rep)
+    url    = 'https://s3.amazonaws.com/phone-your-rep-images/congress/office_id.png'
 
     expect(office.qr_code_link).to eq(url)
   end
