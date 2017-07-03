@@ -74,6 +74,7 @@ namespace :pyr do
       Dir.chdir('../qr_codes') do
         sh 'git pull'
         Dir.mkdir(args[:rep_set]) unless Dir.exist?(args[:rep_set])
+        FileUtils.rm Dir.glob("#{args[:rep_set]}/*.png")
       end
       Dir.chdir(dir) do
         Dir.glob('*.png').each do |filename|
