@@ -37,6 +37,11 @@ class Rep < ApplicationRecord
 
   scope :last_name, ->(last) { where 'last ILIKE ?', "%#{last}%" }
 
+  scope :official_ids, lambda { |ids|
+    ids = ids.is_a?(String) ? ids.split(',') : ids
+    where official_id: ids
+  }
+
   scope :state, lambda { |name|
     joins(:state).
       where(states: { name: name.capitalize }).
