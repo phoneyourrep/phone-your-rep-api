@@ -8,15 +8,20 @@ namespace :pyr do
     S3_BUCKET = ENV['PYR_S3_BUCKET']
 
     desc 'Generate QR code images for all office locations'
-    task :generate do
-      active_offices = OfficeLocation.where(active: true)
-      active_offices_count = active_offices.count
+    task :generate, [:rep_set] do |_t, args|
+      args.with_defaults(rep_set: 'congress')
+      offices = case args[:rep_set]
+      when 'congress' then OfficeLocation.active.rep_type('CongressionalRep')
+      when 'governors' then OfficeLocation.active.rep_type('Governor')
+      else OfficeLocation.active.rep_type('StateRep').state(args[:rep_set])
+      end
+      offices_count = offices.count
       i = 1
       start = Time.now
-      active_offices.each do |office|
+      offices.each do |office|
         office.add_qr_code_img
         finish = Time.now
-        remaining = active_offices_count - i
+        remaining = offices_count - i
         time_remaining = (finish - start) / i * remaining
         print "\rcreated #{i} QR code(s), #{remaining} remaining, #{estimate_time(time_remaining)}"
         i += 1
@@ -37,34 +42,43 @@ namespace :pyr do
     end
 
     desc 'Empty the S3 bucket'
-    task :empty do
-      puts "Emptying contents of the #{S3_BUCKET} S3 bucket"
-      sh "aws s3 rm s3://#{S3_BUCKET} --recursive"
+    task :empty, [:rep_set] do |_t, args|
+      args.with_defaults(rep_set: 'congress')
+      dir = lookup_qr_code_dir
+      Dir.chdir(dir) do
+        files = Dir.glob('*.png').join(" --include ")
+        puts "Emptying contents of the #{S3_BUCKET} S3 bucket"
+        sh "aws s3 rm s3://#{S3_BUCKET}/#{args[:rep_set]} --recursive"
+      end
     end
 
     desc 'Upload images to S3 bucket'
-    task :upload do
+    task :upload, [:rep_set] do |_t, args|
+      args.with_defaults(rep_set: 'congress')
       dir = lookup_qr_code_dir
       Dir.chdir(dir) do
         puts 'Uploading new images'
-        sh "aws s3 cp . s3://#{S3_BUCKET}/ --recursive --grants"\
+        sh "aws s3 cp . s3://#{S3_BUCKET}/#{args[:rep_set]} --recursive --grants"\
           ' read=uri=http://acs.amazonaws.com/groups/global/AllUsers'
       end
     end
 
     desc 'Push to github'
-    task :push do
+    task :push, [:rep_set] do |_t, args|
+      args.with_defaults(rep_set: 'congress')
       dir = lookup_qr_code_dir
       Dir.chdir('../qr_codes') do
         sh 'git pull'
+        Dir.mkdir(args[:rep_set]) unless Dir.exist?(args[:rep_set])
       end
       Dir.chdir(dir) do
         Dir.glob('*.png').each do |filename|
-          FileUtils.mv(filename, "../../../../../../../../qr_codes/congress/#{filename}")
+          FileUtils.mv(filename, "../../../../../../../../qr_codes/#{args[:rep_set]}/#{filename}")
         end
       end
       Dir.chdir('../qr_codes') do
-        sh "git add congress/*.png && git commit -m 'update QR codes #{Time.now}' && git push"
+        sh "git add #{args[:rep_set]}/*.png && git commit -m "\
+          "'update QR codes #{Time.now}' && git push"
       end
     end
 
@@ -75,8 +89,17 @@ namespace :pyr do
       puts 'Deleted local copies'
     end
 
-    desc 'Generate QR codes, upload to S3 bucket, and delete locally'
-    task create: %i[generate clean empty upload push delete]
+    desc 'Generate QR codes, upload to S3 bucket, and delete locally for Congress by default'
+    task :create, [:rep_set] => %i[generate clean empty upload push delete]
+
+    desc 'Generate QR codes, upload to S3 bucket, and delete locally for all reps'
+    task :create_all do
+      args = State.all.pluck(:abbr)
+      args += %w[congress governors]
+      args.each do |arg|
+        Rake::Task[:create].invoke(arg)
+      end
+    end
 
     def estimate_time(time)
       minutes = (time / 60).round

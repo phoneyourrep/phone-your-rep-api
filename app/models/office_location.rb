@@ -42,6 +42,12 @@ class OfficeLocation < ApplicationRecord
 
   scope :rep_type, ->(type) { joins(:rep).where(reps: { type: type }) }
 
+  scope :state, lambda { |name|
+    where(
+      id: Rep.state(name).joins(:office_locations).pluck('office_locations.id')
+    )
+  }
+
   is_impressionable counter_cache: true, column_name: :downloads
 
   dragonfly_accessor :qr_code
@@ -112,6 +118,11 @@ class OfficeLocation < ApplicationRecord
 
   def qr_code_link
     return unless office_id
-    "https://s3.amazonaws.com/#{S3_BUCKET}/#{office_id.tr('-', '_')}.png"
+    sub_directory = case rep.type
+    when 'CongressionalRep' then 'congress'
+    when 'Governor' then 'governors'
+    when 'StateRep' then rep.state.abbr.downcase
+    end
+    "https://s3.amazonaws.com/#{S3_BUCKET}/#{sub_directory}/#{office_id.tr('-', '_')}.png"
   end
 end
