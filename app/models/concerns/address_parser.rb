@@ -38,17 +38,10 @@ module AddressParser
     self.city = split_city_on_digits.last.strip
   end
 
-  def extract_building
-    match = address.match(/\A[\w\W]+[Bb]uilding\s?/)
+  def extract_building_or_suite(attribute, regex)
+    match = address.match(regex)
     return unless match
-    self.building = match.to_s.strip
-    address.sub!(match.to_s, '').strip!
-  end
-
-  def extract_suite
-    match = address.match(/(Annex\s)?([Rr](oo)?m|[Ss](ui)?te)\.?\s\w+(-\w+)?/)
-    return unless match
-    self.suite = match.to_s.strip
+    send "#{attribute}=", match.to_s.strip
     address.sub!(match.to_s, '').strip!
   end
 
@@ -80,8 +73,8 @@ module AddressParser
   end
 
   def extract_building_and_suite
-    extract_building
-    extract_suite
+    extract_building_or_suite :building, /\A[\w\W]+[Bb]uilding\s?/
+    extract_building_or_suite :suite, /(Annex\s)?([Rr](oo)?m|[Ss](ui)?te)\.?\s\w+(-\w+)?/
   end
 
   def extract_zip_and_state_from_full_address

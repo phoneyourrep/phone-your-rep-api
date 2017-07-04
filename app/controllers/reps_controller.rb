@@ -16,10 +16,14 @@ class RepsController < ApplicationController
 
   # GET /reps
   def index
+    execute_index_with_geo_method :find_national_legislators_only
+  end
+
+  def execute_index_with_geo_method(method)
     if geo_params.keys.any?
       geo = GeoLookup.new(geo_params.to_h.symbolize_keys)
       @district = geo.congressional_district
-      @reps     = apply_scopes(geo.find_national_legislators_only).each do |rep|
+      @reps     = apply_scopes(geo.send(method)).each do |rep|
         rep.sort_offices(geo.coordinates.latlon)
       end
     elsif scopes_present?
