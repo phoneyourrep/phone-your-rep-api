@@ -30,7 +30,11 @@ class OfficeLocation < ApplicationRecord
     end
   end
 
-  before_save :set_official_id, :set_bioguide_or_state_leg_id, :set_office_id, :set_level
+  before_save :set_official_id,
+              :set_bioguide_or_state_leg_id,
+              :set_office_id,
+              :set_level,
+              :set_qr_code_link
 
   scope :active, -> { where(active: true) }
 
@@ -116,13 +120,14 @@ class OfficeLocation < ApplicationRecord
     end
   end
 
-  def qr_code_link
+  def set_qr_code_link
     return unless office_id
     sub_directory = case rep.type
                     when 'CongressionalRep' then 'congress'
                     when 'Governor'         then 'governors'
                     when 'StateRep'         then rep.state.abbr.downcase
                     end
-    "https://s3.amazonaws.com/#{S3_BUCKET}/#{sub_directory}/#{office_id.tr('-', '_')}.png"
+    self.qr_code_link =
+      "https://s3.amazonaws.com/#{S3_BUCKET}/#{sub_directory}/#{office_id.tr('-', '_')}.png"
   end
 end

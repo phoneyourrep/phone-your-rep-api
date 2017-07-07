@@ -9,6 +9,8 @@ describe OfficeLocation, type: :model do
     create :rep, official_full: 'Full Name', role: 'Rep'
   end
 
+  let! :state { create :state, abbr: 'NY' }
+
   let! :office do
     create :office_location,
            address: '220 Henry St',
@@ -184,7 +186,6 @@ describe OfficeLocation, type: :model do
     end
 
     it '#add_fields_for_phone_only sets city, state and zip if there\'s no address' do
-      state  = State.create(abbr: 'NY')
       office = OfficeLocation.new address: 'Oneonta Phone',
                                   rep: Rep.new(state: state)
       office.set_city_state_and_zip
@@ -198,7 +199,7 @@ describe OfficeLocation, type: :model do
     end
 
     it 'calls #set_city_state_and_zip before_save only if it\'s rep is a StateRep' do
-      rep = StateRep.create(state: State.new, chamber: 'lower')
+      rep = StateRep.create(state: state, chamber: 'lower')
       office = OfficeLocation.new address: '123 Main St., Anytown, NY 10000', rep: rep
       office.save
 

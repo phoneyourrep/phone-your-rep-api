@@ -34,7 +34,11 @@ FactoryGirl.define do
     rep
   end
 
-  factory :state { state_code 'state_code' }
+  factory :state do
+    state_code 'state_code'
+    abbr 'ABBR'
+  end
+
   factory :congressional_district { state }
   factory :district { state }
   factory :impression
