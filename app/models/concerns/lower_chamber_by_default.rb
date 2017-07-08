@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
 module LowerChamberByDefault
-  def self.included(base)
-    base.class_eval do
-      before_save :set_chamber, if: -> { chamber.nil? }
-    end
+  extend ActiveSupport::Concern
+
+  included do
+    before_save :set_chamber, if: -> { chamber.nil? }
   end
 
   def set_chamber

@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
 module HasLevel
-  def self.included(base)
-    base.class_eval do
-      scope :level, ->(level) { where level: level }
-    end
+  extend ActiveSupport::Concern
+
+  included do
+    scope :level, ->(level) { where level: level }
   end
 
   def set_level
