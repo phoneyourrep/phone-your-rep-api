@@ -1,3 +1,5 @@
 # frozen_string_literal: true
 
-json.partial! 'rep', rep: @rep
+rendering = JsonRendering.new json
+
+rendering.rep @rep

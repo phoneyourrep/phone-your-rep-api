@@ -1,3 +1,5 @@
 # frozen_string_literal: true
 
-json.partial! 'office_location', office_location: @office_location
+rendering = JsonRendering.new json
+
+rendering.office_location @office_location
