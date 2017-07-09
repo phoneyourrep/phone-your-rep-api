@@ -23,8 +23,8 @@ class RepsController < ApplicationController
     if geo_params.keys.any?
       geo = GeoLookup.new(geo_params.to_h.symbolize_keys)
       @district = geo.congressional_district
-      @reps     = apply_scopes(geo.send(method)).each do |rep|
-        rep.sort_offices(geo.coordinates.latlon)
+      @reps     = apply_scopes(geo.send(method)).map do |rep|
+        GeoRepRepresenter.new(rep, geo.latlon)
       end
     elsif scopes_present?
       @reps = apply_scopes(Rep).active.order(:bioguide_id)
