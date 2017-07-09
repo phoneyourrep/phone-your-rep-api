@@ -41,6 +41,6 @@ json.extract! rep,
               :youtube_id,
               :instagram_id
 
-json.set! 'office_locations', rep.sorted_offices_array do |office|
+json.set! 'office_locations', rep.active_office_locations do |office|
   json.partial! 'api/beta/office_locations/office_location', office_location: office
 end
