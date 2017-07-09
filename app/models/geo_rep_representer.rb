@@ -16,6 +16,6 @@ class GeoRepRepresenter
   end
 
   def active_office_locations
-    @office_locations ||= sort_offices(coordinates)
+    @active_office_locations ||= sort_offices(coordinates)
   end
 end

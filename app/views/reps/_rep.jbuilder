@@ -5,11 +5,24 @@ return json.error 'Record not found' if rep.blank?
 json.self rep_url(rep.official_id)
 
 json.state do
-  json.partial! 'states/state', state: rep.state
+  json.self state_url(rep.state.state_code)
+  json.extract! rep.state,
+                :state_code,
+                :name,
+                :abbr
 end
 
-json.district do
-  json.partial! 'districts/district', district: rep.district if rep.district
+if rep.district
+  json.district do
+    json.self district_url(rep.district.full_code)
+    json.extract! rep.district,
+                  :full_code,
+                  :code,
+                  :state_code,
+                  :level,
+                  :chamber,
+                  :name
+  end
 end
 
 json.extract! rep,
@@ -41,6 +54,30 @@ json.extract! rep,
               :youtube_id,
               :instagram_id
 
-json.set! 'office_locations', rep.active_office_locations do |office|
-  json.partial! 'office_locations/office_location', office_location: office
+json.set! 'office_locations', rep.active_office_locations do |office_location|
+  json.self office_location_url(office_location.office_id)
+  json.rep rep_url(office_location.official_id)
+  json.extract! office_location,
+                :active,
+                :official_id,
+                :level,
+                :office_id,
+                :bioguide_id,
+                :state_leg_id,
+                :office_type,
+                :distance,
+                :building,
+                :address,
+                :suite,
+                :city,
+                :state,
+                :zip,
+                :phone,
+                :fax,
+                :hours,
+                :latitude,
+                :longitude,
+                :v_card_link,
+                :downloads,
+                :qr_code_link
 end
