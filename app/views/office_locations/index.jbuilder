@@ -2,4 +2,4 @@
 
 rendering = JsonRendering.new json
 
-rendering.office_locations @office_locations
+rendering.response :office_locations, @office_locations

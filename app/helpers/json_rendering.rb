@@ -3,10 +3,17 @@
 class JsonRendering
   include Rails.application.routes.url_helpers
 
-  attr_reader :json
+  attr_reader :json, :route_prefix
 
-  def initialize(json)
+  def initialize(json, options = {})
+    options.symbolize_keys!
     @json = json
+    @route_prefix = options[:route_prefix].to_s
+    @route_prefix += '_' unless @route_prefix.end_with?('_') || @route_prefix.blank?
+  end
+
+  def response(symbol, object)
+    send(symbol, object)
   end
 
   def reps(reps)
@@ -23,7 +30,7 @@ class JsonRendering
 
   def rep(rep)
     return json.error 'Record not found' if rep.blank?
-    json.self rep_url(rep.official_id)
+    json.self send("#{route_prefix}rep_url", rep.official_id)
     json.state { state rep.state }
     json.district { district rep.district } if rep.district
     _rep rep
@@ -33,18 +40,18 @@ class JsonRendering
   end
 
   def state(state)
-    json.self state_url(state.state_code)
+    json.self send("#{route_prefix}state_url", state.state_code)
     json.extract! state, :state_code, :name, :abbr
   end
 
   def district(district)
-    json.self district_url(district.full_code)
+    json.self send("#{route_prefix}district_url", district.full_code)
     json.extract! district, :full_code, :code, :state_code, :level, :chamber, :name
   end
 
   def office_location(office_location)
-    json.self office_location_url(office_location.office_id)
-    json.rep rep_url(office_location.official_id)
+    json.self send("#{route_prefix}office_location_url", office_location.office_id)
+    json.rep send("#{route_prefix}rep_url", office_location.official_id)
     json.extract! office_location, :active, :official_id, :level, :office_id,
                   :bioguide_id, :state_leg_id, :office_type, :distance, :building,
                   :address, :suite, :city, :state, :zip, :phone, :fax, :hours,

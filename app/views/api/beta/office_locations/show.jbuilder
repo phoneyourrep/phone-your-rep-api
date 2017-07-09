@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
-rendering = JsonRendering.new json
+rendering = JsonRendering.new json, route_prefix: :api_beta
 
-rendering.office_location @office_location
+rendering.response :office_location, @office_location

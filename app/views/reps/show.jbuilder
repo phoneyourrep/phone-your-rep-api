@@ -2,4 +2,4 @@
 
 rendering = JsonRendering.new json
 
-rendering.rep @rep
+rendering.response :rep, @rep

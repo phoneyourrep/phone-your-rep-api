@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-rendering = JsonRendering.new json
+rendering = JsonRendering.new json, route_prefix: :api_beta
 
 json.total_records @reps.size
 json.set! '_links' do
@@ -9,5 +9,5 @@ json.set! '_links' do
   end
 end
 json.set! 'reps' do
-  rendering.reps @reps
+  rendering.response :reps, @reps
 end
