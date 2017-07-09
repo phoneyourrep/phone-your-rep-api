@@ -73,15 +73,14 @@ describe Governor, type: :model do
     expect(rep.photo).to be(nil)
   end
 
-  context '#sorted_offices_array' do
+  context '#sorted_offices' do
     context 'when #sort_offices is not called' do
       it 'will return its active_office_locations unsorted' do
-        expect(@rep.sorted_offices).to be(nil)
-        expect(@rep.sorted_offices_array).not_to eq(@rep.sorted_offices)
-        expect(@rep.sorted_offices_array).not_to include(@office_one)
-        expect(@rep.sorted_offices_array).to include(@office_two)
-        expect(@rep.sorted_offices_array).to include(@office_three)
-        expect(@rep.sorted_offices_array).to include(@office_four)
+        expect(@rep.sorted_offices).not_to include(@office_one)
+        expect(@rep.sorted_offices).to include(@office_two)
+        expect(@rep.sorted_offices).to include(@office_three)
+        expect(@rep.sorted_offices).to include(@office_four)
+        expect(@rep.sorted_offices.all? { |off| off.distance.nil? }).to be true
       end
     end
 
@@ -89,11 +88,11 @@ describe Governor, type: :model do
       it 'will return its active_office_locations sorted by distance' do
         @rep.sort_offices [0.0, 0.0]
 
-        expect(@rep.sorted_offices_array).to eq(@rep.sorted_offices)
         expect(@rep.sorted_offices).not_to include(@office_one)
         expect(@rep.sorted_offices.first).to eq(@office_three)
         expect(@rep.sorted_offices.second).to eq(@office_four)
         expect(@rep.sorted_offices.third).to eq(@office_two)
+        expect(@rep.sorted_offices.none? { |off| off.distance.nil? }).to be true
       end
 
       it 'will calculate distance for each active_office_location' do
