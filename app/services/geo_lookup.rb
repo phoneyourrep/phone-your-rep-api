@@ -17,6 +17,8 @@ class GeoLookup
   # Radius of the gem lookup for office_locations
   attr_accessor :radius
 
+  delegate :latlon, to: :coordinates
+
   def initialize(address: '', lat: 0.0, long: 0.0, radius: 0.0)
     self.address     = address.to_s
     self.radius      = radius.to_f
@@ -30,7 +32,7 @@ class GeoLookup
     return Rep.none if state.blank?
     self.reps = Rep.by_location(
       state: state, district: districts.values.compact
-    ).includes(:office_locations)
+    )
   end
 
   def find_national_legislators_only
@@ -38,8 +40,8 @@ class GeoLookup
   end
 
   def find_office_locations
-    return OfficeLocation.none if coordinates.latlon.empty?
-    self.office_locations = OfficeLocation.active.near coordinates.latlon, radius
+    return OfficeLocation.none if latlon.empty?
+    self.office_locations = OfficeLocation.active.near latlon, radius
   end
 
   def congressional_district
