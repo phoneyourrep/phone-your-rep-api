@@ -63,13 +63,12 @@ class Rep < ApplicationRecord
   is_impressionable
 
   # Instance attribute that holds offices sorted by location after calling the :sort_offices method.
-  attr_accessor :sorted_offices
+  attr_writer :sorted_offices
 
   # Sort the offices by proximity to the request coordinates,
   # making sure to not miss offices that aren't geocoded.
   def sort_offices(coordinates)
-    self.sorted_offices =
-      (active_office_locations.sorted_by_distance(coordinates) + active_office_locations).uniq
+    self.sorted_offices = active_office_locations.sorted_by_distance(coordinates)
     sorted_offices.each { |office| office.calculate_distance(coordinates) }
   end
 
@@ -79,8 +78,8 @@ class Rep < ApplicationRecord
   end
 
   # Return office_locations even if they were never sorted.
-  def sorted_offices_array
-    sorted_offices || active_office_locations.order(:office_id)
+  def sorted_offices
+    @sorted_offices ||= active_office_locations.order(:office_id)
   end
 
   def add_photo
