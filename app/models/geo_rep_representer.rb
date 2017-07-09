@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 class GeoRepRepresenter
-  delegate *Rep.columns.map(&:name),
+  delegate(*Rep.columns.map(&:name),
            :state,
            :district,
            :sort_offices,
-           :sorted_offices_array,
-           to: :rep
+           :sorted_offices,
+           to: :rep)
 
   attr_reader :rep, :coordinates
 
@@ -13,7 +15,7 @@ class GeoRepRepresenter
     @coordinates = coordinates
   end
 
-  def office_locations
-    @office_locations ||= sort_offices(coordinates) && sorted_offices_array
+  def active_office_locations
+    @office_locations ||= sort_offices(coordinates)
   end
 end
