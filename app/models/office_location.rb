@@ -38,7 +38,7 @@ class OfficeLocation < ApplicationRecord
 
   scope :active, -> { where(active: true) }
 
-  scope :sorted_by_distance, ->(coordinates) { near(coordinates, 4000) }
+  scope :sorted_by_distance, ->(coordinates) { near(coordinates, 10_000) }
 
   scope :capitol, -> { where office_type: 'capitol' }
 
