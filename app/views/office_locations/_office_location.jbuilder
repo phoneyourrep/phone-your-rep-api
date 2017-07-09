@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 json.self office_location_url(office_location.office_id)
-json.rep rep_url(office_location.rep.official_id)
+json.rep rep_url(office_location.official_id)
 json.extract! office_location,
               :active,
               :official_id,
