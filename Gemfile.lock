@@ -1,4 +1,11 @@
 GIT
+  remote: https://github.com/msimonborg/jbuilder-jpartial.git
+  revision: c60f2a893af66f9fd94b19f4adb7302188901775
+  specs:
+    jbuilder-jpartial (0.1.0)
+      jbuilder
+
+GIT
   remote: https://github.com/msimonborg/lapi.git
   revision: 4bf69e590d3cc77e4aa71e98631d37978f926d55
   specs:
@@ -310,6 +317,7 @@ DEPENDENCIES
   has_scope (~> 0.7.1)
   impressionist (~> 1.6.0)
   jbuilder (~> 2.7)
+  jbuilder-jpartial!
   lapi!
   listen (~> 3.0.5)
   multi_json (~> 1.12.0, >= 1.12.1)

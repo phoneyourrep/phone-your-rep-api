@@ -7,5 +7,6 @@ json.set! '_links' do
   end
 end
 json.set! 'states', @states do |state|
-  json.partial! 'state', state: state
+  json._state state
 end
+
