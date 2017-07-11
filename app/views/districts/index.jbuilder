@@ -7,5 +7,5 @@ json.set! '_links' do
   end
 end
 json.set! 'districts', @districts do |district|
-  json.partial! 'district', district: district
+  json._district district
 end

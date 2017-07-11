@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
-rendering = JsonRendering.new json
-
-rendering.response :reps, @reps
+json.array! @reps do |rep|
+  json._rep rep
+end

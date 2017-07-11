@@ -42,6 +42,7 @@ Metrics/BlockLength:
     - '**/*.rake'
     - 'config/routes.rb'
     - 'spec/**/*'
+    - 'config/initializers/jpartial.rb'
 
 Style/DotPosition:
   EnforcedStyle: trailing

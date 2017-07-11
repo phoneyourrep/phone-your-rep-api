@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
-rendering = JsonRendering.new json
-
-rendering.response :office_locations, @office_locations
+json.array! @office_locations do |office_location|
+  json._office_location office_location
+end
