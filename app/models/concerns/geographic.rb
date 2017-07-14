@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 module Geographic
+  extend ActiveSupport::Concern
+
   FACTORY = RGeo::Geographic.simple_mercator_factory
   EWKB = RGeo::WKRep::WKBGenerator.new(
     type_format:    :ewkb,
@@ -8,11 +10,7 @@ module Geographic
     hex_format:     true
   )
 
-  def self.included(base)
-    base.extend(ClassMethods)
-  end
-
-  module ClassMethods
+  class_methods do
     def containing_latlon(lat, lon)
       point = FACTORY.point(lon, lat)
       containing_point(point)
