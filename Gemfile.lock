@@ -54,6 +54,8 @@ GEM
     arel (8.0.0)
     ast (2.3.0)
     bcrypt (3.1.11)
+    bootsnap (1.1.2)
+      msgpack (~> 1.0)
     buftok (0.2.0)
     bugsnag (5.3.3)
     builder (3.2.3)
@@ -144,6 +146,7 @@ GEM
     mime-types-data (3.2016.0521)
     mini_portile2 (2.2.0)
     minitest (5.10.2)
+    msgpack (1.1.0)
     multi_json (1.12.1)
     multi_xml (0.6.0)
     multipart-post (2.0.0)
@@ -298,6 +301,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord-postgis-adapter (~> 5.0)
+  bootsnap (>= 1.1.0)
   bugsnag (~> 5.0, >= 5.3.3)
   coveralls (~> 0.8.0)
   database_cleaner
