@@ -3494,23 +3494,6 @@
     longitude: -93.71986679999999
     id: C001075-shreveport
 - id:
-    bioguide: C001076
-    govtrack: 412270
-    thomas: '01956'
-  offices:
-  - address: 51 S. University Ave.
-    building: ''
-    city: Provo
-    fax: ''
-    hours: ''
-    phone: 801-851-2500
-    state: UT
-    suite: Suite 318
-    zip: '84601'
-    latitude: 40.232986
-    longitude: -111.6578512
-    id: C001076-provo
-- id:
     bioguide: C001077
     govtrack: 412271
     thomas: '01912'
@@ -17111,18 +17094,18 @@
     latitude: 40.433674
     longitude: -80.003871
     id: T000461-pittsburgh
-  - address: 538 Spruce Street
+  - address: 7 North Wilkes-Barre Boulevard
     building: ''
-    city: Scranton
-    fax: 570-941-3544
+    city: Wilkes-Barre
+    fax: 570-820-6442
     hours: ''
-    phone: 570-941-3540
+    phone: 570-820-4088
     state: PA
-    suite: Suite 302
-    zip: '18503'
-    latitude: 41.407372
-    longitude: -75.662826
-    id: T000461-scranton
+    suite: Suite 406
+    zip: '18702'
+    latitude: 41.2419893
+    longitude: -75.8773626
+    id: T000461-wilkes_barre
   - address: 1397 Eisenhower Blvd
     building: Richland Square III
     city: Johnstown
@@ -19440,3 +19423,47 @@
     id: S001202-mobile
     latitude: 30.690756
     longitude: -88.12684589999999
+- id:
+    bioguide: G000584
+    govtrack: 412736
+  offices:
+  - address: 222 North 32nd Street
+    building: ''
+    city: Billings
+    fax: ''
+    hours: ''
+    phone: 406-969-1736
+    state: MT
+    suite: Suite 900
+    zip: '59101'
+    id: G000584-billings
+    latitude: 45.7810511
+    longitude: -108.5125313
+  - address: 910 North Last Chance Gulch 
+    building: ''
+    city: Helena
+    fax: ''
+    hours: ''
+    phone: 406-502-1435
+    state: MT
+    suite: Suite B
+    zip: '59601'
+    id: G000584-helena
+    latitude: 46.5971376
+    longitude: -112.0351931
+- id:
+    bioguide: G000585
+    govtrack: 412739
+  offices:
+  - address: 350 S. Bixel Street
+    building: ''
+    city: Los Angeles
+    fax: 213-481-1425
+    hours: ''
+    phone: 213-481-1427
+    state: CA
+    suite: '#120'
+    zip: '90017'
+    id: G000585-los_angeles
+    latitude: 34.0569399
+    longitude: -118.2618953
