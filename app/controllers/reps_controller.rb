@@ -44,7 +44,7 @@ class RepsController < ApplicationController
   def show; end
 
   def official_ids
-    @reps = apply_scopes(Rep).official_ids_and_names
+    @reps = apply_scopes(Rep).where(active: true).official_ids_and_names
     render json: @reps
   end
 
