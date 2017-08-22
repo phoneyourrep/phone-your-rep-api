@@ -56,6 +56,14 @@ class Rep < ApplicationRecord
 
   scope :party, ->(name) { where party: name.capitalize }
 
+  def self.official_ids_and_names
+    all.
+      select(:official_full, :official_id).
+      pluck(:official_full, :official_id).
+      map { |a| { official_full: a.first, official_id: a.last } if a.first.present? }.
+      compact
+  end
+
   before_save :set_level, :set_official_id
 
   serialize :committees, Array

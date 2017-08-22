@@ -15,6 +15,7 @@ Rails.application.routes.draw do
     end
 
     namespace :beta do # beta version
+      get '/reps/ids', to: 'reps#official_ids'
       resources :zctas,            only: %i[index show]
       resources :reps,             only: %i[index show]
       resources :issues,           only: %i[index new create update]

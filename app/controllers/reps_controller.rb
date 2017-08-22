@@ -3,7 +3,14 @@
 class RepsController < ApplicationController
   before_action :set_rep, only: :show
   after_action :make_impression, only: :index
-  has_scope :state, :party, :chamber, :district, :level, :last_name, :official_ids, only: :index
+  has_scope :state,
+            :party,
+            :chamber,
+            :district,
+            :level,
+            :last_name,
+            :official_ids,
+            only: %i[index official_ids]
   has_scope :independent,
             :republican,
             :democrat,
@@ -12,7 +19,7 @@ class RepsController < ApplicationController
             :legislators,
             :governors,
             type: :boolean,
-            only: :index
+            only: %i[index official_ids]
 
   # GET /reps
   def index
@@ -35,6 +42,11 @@ class RepsController < ApplicationController
 
   # GET /reps/1
   def show; end
+
+  def official_ids
+    @reps = apply_scopes(Rep).official_ids_and_names
+    render json: @reps
+  end
 
   private
 
