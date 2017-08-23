@@ -121,9 +121,7 @@ namespace :pyr do
     end
 
     def lookup_qr_code_dir
-      if ENV['dir']
-        ENV['dir']
-      else
+      ENV.fetch('dir') do
         date  = DateTime.now
         year  = date.strftime('%Y')
         month = date.strftime('%m')
