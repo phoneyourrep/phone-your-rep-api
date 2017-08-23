@@ -43,5 +43,8 @@ module PhoneYourRepApi
 
     # Use Rack::Attack to deter malicious attacks by throttling requests by IP.
     config.middleware.use Rack::Attack
+
+    # Set the S3 Bucket name for QR codes
+    config.s3_bucket = ENV.fetch('PYR_S3_BUCKET') { 'phone-your-rep-images' }
   end
 end

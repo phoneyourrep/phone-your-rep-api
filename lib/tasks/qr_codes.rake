@@ -5,7 +5,7 @@ namespace :pyr do
     # Set the "PYR_S3_BUCKET" environment variable on your machine or
     # at the command line (e.g. `rake some_task PYR_S3_BUCKET=your-own-bucket`)
     # if you wish to generate and upload your own images.
-    S3_BUCKET = ENV['PYR_S3_BUCKET']
+    S3_BUCKET = Rails.configuration.s3_bucket
 
     desc 'Generate QR code images for all office locations'
     task :generate, [:rep_set] do |_t, args|
@@ -81,9 +81,13 @@ namespace :pyr do
           FileUtils.mv(filename, "../../../../../../../../qr_codes/#{args[:rep_set]}/#{filename}")
         end
       end
-      Dir.chdir('../qr_codes') do
-        sh "git add #{args[:rep_set]}/*.png && git commit -m "\
-          "'update QR codes #{Time.now}' && git push"
+      begin
+        Dir.chdir('../qr_codes') do
+          sh "git add #{args[:rep_set]}/*.png && git commit -m "\
+            "'update QR codes #{Time.now}' && git push"
+        end
+      rescue RuntimeError => e
+        Rails.logger.error e
       end
     end
 
