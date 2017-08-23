@@ -9,10 +9,10 @@ namespace :db do
     namespace :update do
       desc 'Download updated legislators-historical.yaml'
       task :fetch_retired_reps do
-        source = get_source(
+        source = get_source do
           'https://raw.githubusercontent.com/unitedstates/congress-legislators/'\
             'master/legislators-historical.yaml'
-        )
+        end
         file = get_file('lib', 'seeds', 'legislators-historical.yaml')
         update_yaml_file(file, source)
       end
@@ -25,10 +25,10 @@ namespace :db do
 
       desc 'Download updated legislators-current.yaml'
       task :fetch_current_reps do
-        source = get_source(
+        source = get_source do
           'https://raw.githubusercontent.com/unitedstates/congress-legislators/'\
             'master/legislators-current.yaml'
-        )
+        end
         file = get_file('lib', 'seeds', 'legislators-current.yaml')
         update_yaml_file(file, source)
       end
@@ -52,10 +52,10 @@ namespace :db do
 
       desc 'Download updated legislators-social-media.yaml'
       task :fetch_socials do
-        source = get_source(
+        source = get_source do
           'https://raw.githubusercontent.com/unitedstates/congress-legislators/'\
             'master/legislators-social-media.yaml'
-        )
+        end
         file = get_file('lib', 'seeds', 'legislators-social-media.yaml')
         update_yaml_file(file, source)
       end
@@ -68,10 +68,10 @@ namespace :db do
 
       desc 'Download updated legislators-district-offices.yaml'
       task :fetch_office_locations do
-        source = get_source(
+        source = get_source do
           'https://raw.githubusercontent.com/thewalkers/congress-legislators/'\
             'master/legislators-district-offices.yaml'
-        )
+        end
         file = get_file('lib', 'seeds', 'legislators-district-offices.yaml')
         update_yaml_file(file, source)
       end
@@ -159,12 +159,8 @@ namespace :db do
         File.open("#{file_prefix}.yaml", 'w') { |yml| yml.write data_hash.to_yaml }
       end
 
-      def get_source(default)
-        if ENV['source']
-          ENV['source']
-        else
-          default
-        end
+      def get_source(&default)
+        ENV.fetch('source', &default)
       end
 
       def get_file(*default)
