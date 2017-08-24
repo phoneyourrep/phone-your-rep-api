@@ -9,7 +9,7 @@ class StateRep < Rep
   end
 
   def set_role
-    self.role = "#{state.name} State #{state.send("#{chamber}_chamber_title")}"
+    self.role = "State #{state.send("#{chamber}_chamber_title")}"
   end
 
   def set_party_as_democrat
