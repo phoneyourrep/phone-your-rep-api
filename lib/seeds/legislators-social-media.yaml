@@ -1426,11 +1426,11 @@
     thomas: '01506'
     govtrack: 400271
   social:
-    twitter: GregoryMeeks
+    twitter: RepGregoryMeeks
+    twitter_id: 22812754
     facebook: gregorymeeksny05
     youtube: gwmeeks
     youtube_id: UCljJnwgQS6Z6-NypDyqKJZQ
-    twitter_id: 22812754
     instagram: repgregorymeeks
 - id:
     bioguide: M001111
@@ -4267,10 +4267,10 @@
     govtrack: 412598
     thomas: '02194'
   social:
-    twitter: senbookeroffice
+    twitter: SenBooker
+    twitter_id: 2167097881
     youtube: SenCoryBooker
     youtube_id: UC6FlymqNS1VettnVZa7goPA
-    twitter_id: 2167097881
 - id:
     bioguide: C001101
     govtrack: 412600
