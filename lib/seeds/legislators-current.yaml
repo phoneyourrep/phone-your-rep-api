@@ -687,7 +687,7 @@
     fec:
     - S6MO00305
     - P80005721
-    cspan: 1012014
+    cspan: 44501
     wikipedia: Claire McCaskill
     house_history: 18811
     ballotpedia: Claire McCaskill
@@ -810,6 +810,7 @@
     class: 1
     party: Democrat
     url: http://menendez.senate.gov/
+    how: appointment
   - type: sen
     start: '2007-01-04'
     end: '2013-01-03'
@@ -1254,6 +1255,7 @@
     fax: 202-224-1724
     contact_form: http://www.barrasso.senate.gov/public/index.cfm?FuseAction=ContactUs.ContactForm
     office: 307 Dirksen Senate Office Building
+    how: appointment
   - type: sen
     start: '2013-01-03'
     end: '2019-01-03'
@@ -1353,6 +1355,7 @@
     fax: 202-228-0378
     contact_form: http://www.wicker.senate.gov/public/index.cfm?FuseAction=Contact.EMailSenatorWicker
     office: 555 Dirksen Senate Office Building
+    how: appointment
   - type: sen
     start: '2013-01-03'
     end: '2019-01-03'
@@ -2631,6 +2634,7 @@
     fax: 202-228-0282
     contact_form: http://www.gillibrand.senate.gov/contact/
     office: 478 Russell Senate Office Building
+    how: appointment
   - type: sen
     start: '2013-01-03'
     end: '2019-01-03'
@@ -3370,6 +3374,7 @@
     class: 3
     party: Democrat
     url: http://bennet.senate.gov/
+    how: appointment
   - type: sen
     start: '2011-01-05'
     end: '2017-01-03'
@@ -3391,12 +3396,12 @@
     class: 3
     state_rank: senior
     party: Democrat
-    url: https://www.bennet.senate.gov
+    url: https://www.bennet.senate.gov/public
     rss_url: http://www.bennet.senate.gov/rss/feeds/?type=news
     address: 261 Russell Senate Office Building Washington DC 20510
     office: 261 Russell Senate Office Building
     phone: 202-224-5852
-    contact_form: https://www.bennet.senate.gov/?p=contact
+    contact_form: https://www.bennet.senate.gov/public/index.cfm/contact
     fax: 202-228-5097
 - id:
     bioguide: B001257
@@ -7502,7 +7507,7 @@
     fec:
     - H8NY07046
     cspan: 57880
-    wikipedia: Joseph Crowley
+    wikipedia: Joe Crowley
     house_history: 11748
     ballotpedia: Joseph Crowley
     maplight: 201
@@ -9987,7 +9992,7 @@
     fax: 202-226-4386
     contact_form: https://www.flake.senate.gov/public/index.cfm/contact-jeff
     office: 413 Russell Senate Office Building
-    state_rank: junior
+    state_rank: senior
     rss_url: http://www.flake.senate.gov/public/index.cfm/rss/feed
 - id:
     bioguide: F000459
@@ -18315,98 +18320,6 @@
   - name: Robert Matsui
     relation: wife
 - id:
-    bioguide: M000303
-    thomas: '00754'
-    lis: S197
-    govtrack: 300071
-    opensecrets: N00006424
-    votesmart: 53270
-    icpsr: 15039
-    fec:
-    - S6AZ00019
-    - P80002801
-    cspan: 7476
-    wikipedia: John McCain
-    house_history: 17696
-    ballotpedia: John McCain
-    maplight: 592
-    wikidata: Q10390
-    google_entity_id: kg:/m/0bymv
-  name:
-    first: John
-    middle: S.
-    last: McCain
-    official_full: John McCain
-  bio:
-    birthday: '1936-08-29'
-    gender: M
-    religion: Episcopalian
-  terms:
-  - type: rep
-    start: '1983-01-03'
-    end: '1985-01-03'
-    state: AZ
-    district: 1
-    party: Republican
-  - type: rep
-    start: '1985-01-03'
-    end: '1987-01-03'
-    state: AZ
-    district: 1
-    party: Republican
-  - type: sen
-    start: '1987-01-06'
-    end: '1993-01-03'
-    state: AZ
-    class: 3
-    party: Republican
-  - type: sen
-    start: '1993-01-05'
-    end: '1999-01-03'
-    state: AZ
-    class: 3
-    party: Republican
-  - type: sen
-    start: '1999-01-06'
-    end: '2005-01-03'
-    state: AZ
-    class: 3
-    party: Republican
-    url: http://mccain.senate.gov/
-  - type: sen
-    start: '2005-01-04'
-    end: '2011-01-03'
-    state: AZ
-    class: 3
-    party: Republican
-    url: http://mccain.senate.gov/
-  - type: sen
-    start: '2011-01-05'
-    end: '2017-01-03'
-    state: AZ
-    class: 3
-    party: Republican
-    url: http://www.mccain.senate.gov
-    address: 218 Russell Senate Office Building Washington DC 20510
-    phone: 202-224-2235
-    fax: 202-228-2862
-    contact_form: http://www.mccain.senate.gov/public/index.cfm/contact-form
-    office: 218 Russell Senate Office Building
-    state_rank: senior
-  - type: sen
-    start: '2017-01-03'
-    end: '2023-01-03'
-    state: AZ
-    class: 3
-    state_rank: senior
-    party: Republican
-    url: https://www.mccain.senate.gov
-    address: 218 Russell Senate Office Building Washington DC 20510
-    office: 218 Russell Senate Office Building
-    phone: 202-224-2235
-    contact_form: https://www.mccain.senate.gov/public/index.cfm/contact-form
-    fax: 202-228-2862
-- id:
     bioguide: M001165
     thomas: '01833'
     govtrack: 412190
@@ -19618,6 +19531,7 @@
   - type: sen
     start: '2003-01-07'
     end: '2005-01-03'
+    how: appointment
     state: AK
     class: 3
     party: Republican
@@ -19671,7 +19585,7 @@
     - H6CT05124
     - S2CT00132
     cspan: 1021270
-    wikipedia: Chris Murphy (Connecticut politician)
+    wikipedia: Chris Murphy
     house_history: 18809
     ballotpedia: Christopher S. Murphy
     maplight: 681
@@ -21442,7 +21356,7 @@
     - H8MI09068
     - S4MI00355
     cspan: 50199
-    wikipedia: Gary Peters (politician)
+    wikipedia: Gary Peters
     house_history: 20028
     ballotpedia: Gary Peters
     maplight: 787
@@ -23600,7 +23514,7 @@
     fec:
     - H0FL12101
     cspan: 62532
-    wikipedia: Dennis A. Ross
+    wikipedia: Dennis Ross (politician)
     house_history: 20823
     ballotpedia: Dennis A. Ross
     maplight: 1423
@@ -25600,6 +25514,7 @@
     state_rank: junior
     contact_form: http://www.scott.senate.gov/contact/email-me
     rss_url: http://www.scott.senate.gov/rss.xml
+    how: appointment
   - type: sen
     start: '2015-01-06'
     end: '2017-01-03'
@@ -26154,7 +26069,7 @@
     govtrack: 300089
     opensecrets: N00009920
     votesmart: 53266
-    icpsr: 14659
+    icpsr: 94659
     fec:
     - S6AL00013
     cspan: 1859
@@ -28833,7 +28748,7 @@
     office: 110 Hart Senate Office Building
     phone: 202-224-4654
     url: https://www.vanhollen.senate.gov
-    contact_form: https://www.vanhollen.senate.gov/content/contact-senator
+    contact_form: http://www.vanhollen.senate.gov/contact/email
     fax: 202-225-0375
 - id:
     bioguide: V000081
@@ -30836,6 +30751,7 @@
     phone: 202-224-6244
     contact_form: http://www.heller.senate.gov/public/index.cfm/contact-form
     office: 361a Russell Senate Office Building
+    how: appointment
   - type: sen
     start: '2013-01-03'
     end: '2019-01-03'
@@ -31256,6 +31172,7 @@
     url: http://www.schatz.senate.gov
     state_rank: senior
     contact_form: http://www.schatz.senate.gov/contact
+    how: appointment
   - type: sen
     start: '2015-01-06'
     end: '2017-01-03'
@@ -32447,67 +32364,6 @@
     rss_url: http://yoho.house.gov/rss.xml
     address: 511 Cannon House Office Building; Washington DC 20515-0903
     office: 511 Cannon House Office Building
-- id:
-    govtrack: 412526
-    bioguide: D000621
-    thomas: '02116'
-    cspan: 79744
-    votesmart: 137630
-    wikipedia: Ron DeSantis
-    fec:
-    - H2FL00292
-    opensecrets: N00034746
-    ballotpedia: Ron DeSantis
-    maplight: 1750
-    icpsr: 21318
-    wikidata: Q3105215
-    google_entity_id: kg:/m/0l8mn35
-  name:
-    first: Ron
-    last: DeSantis
-    official_full: Ron DeSantis
-  bio:
-    gender: M
-    birthday: '1978-09-14'
-  terms:
-  - type: rep
-    start: '2013-01-03'
-    end: '2015-01-03'
-    state: FL
-    party: Republican
-    district: 6
-    office: 427 Cannon House Office Building
-    address: 427 Cannon HOB; Washington DC 20515-0906
-    phone: 202-225-2706
-    url: http://desantis.house.gov
-    rss_url: http://desantis.house.gov/rss.xml
-    contact_form: https://desantis.house.gov/contact/email-me
-    fax: 202-226-6299
-  - type: rep
-    start: '2015-01-06'
-    end: '2017-01-03'
-    state: FL
-    party: Republican
-    district: 6
-    office: 308 Cannon House Office Building
-    address: 308 Cannon HOB; Washington DC 20515-0906
-    phone: 202-225-2706
-    url: http://desantis.house.gov
-    rss_url: http://desantis.house.gov/rss.xml
-    contact_form: https://desantis.house.gov/contact/email-me
-    fax: 202-226-6299
-  - type: rep
-    start: '2017-01-03'
-    end: '2019-01-03'
-    state: FL
-    district: 6
-    party: Republican
-    phone: 202-225-2706
-    url: https://desantis.house.gov
-    rss_url: http://desantis.house.gov/rss.xml
-    address: 1524 Longworth House Office Building; Washington DC 20515-0906
-    office: 1524 Longworth House Office Building
-    fax: 202-226-6299
 - id:
     govtrack: 412529
     bioguide: F000462
@@ -37387,6 +37243,7 @@
     votesmart: 102964
     cspan: 79710
     icpsr: 21544
+    ballotpedia: David Rouzer
   name:
     first: David
     last: Rouzer
@@ -37786,6 +37643,7 @@
     votesmart: 47357
     cspan: 76428
     icpsr: 21548
+    ballotpedia: Brendan Boyle
   name:
     first: Brendan
     last: Boyle
@@ -38256,50 +38114,6 @@
     address: 1232 Longworth House Office Building; Washington DC 20515-4802
     office: 1232 Longworth House Office Building
     fax: 202-225-7856
-- id:
-    bioguide: J000297
-    fec:
-    - H4WV03070
-    govtrack: 412663
-    opensecrets: N00035531
-    thomas: '02278'
-    maplight: 2119
-    wikidata: Q5415437
-    wikipedia: Evan Jenkins (politician)
-    google_entity_id: kg:/m/0d4_hq
-    votesmart: 8297
-    cspan: 76592
-    icpsr: 21558
-  name:
-    first: Evan
-    last: Jenkins
-    official_full: Evan H. Jenkins
-  bio:
-    gender: M
-    birthday: '1960-09-12'
-  terms:
-  - type: rep
-    start: '2015-01-06'
-    end: '2017-01-03'
-    state: WV
-    district: 3
-    party: Republican
-    address: 502 Cannon HOB; Washington DC 20515-4803
-    office: 502 Cannon House Office Building
-    phone: 202-225-3452
-    url: https://evanjenkins.house.gov
-    fax: 202-225-9061
-  - type: rep
-    start: '2017-01-03'
-    end: '2019-01-03'
-    state: WV
-    district: 3
-    party: Republican
-    phone: 202-225-3452
-    url: https://evanjenkins.house.gov
-    address: 1609 Longworth House Office Building; Washington DC 20515-4803
-    office: 1609 Longworth House Office Building
-    fax: 202-225-9061
 - id:
     bioguide: R000600
     fec:
@@ -38981,7 +38795,7 @@
     - S4LA00065
     govtrack: 412679
     votesmart: 35496
-    wikipedia: John Neely Kennedy
+    wikipedia: John Kennedy (Louisiana politician)
     ballotpedia: John Neely Kennedy
     lis: S389
     wikidata: Q6250211
@@ -40665,7 +40479,7 @@
 - id:
     bioguide: G000580
     govtrack: 412729
-    wikipedia: Tom Garrett Jr.
+    wikipedia: Thomas Garrett (Virginia politician)
     wikidata: Q16213961
     google_entity_id: kg:/m/0j_7g_0
     votesmart: 134493
@@ -40990,6 +40804,7 @@
     wikipedia: Doug Jones (politician)
     wikidata: Q30122825
     cspan: 1024592
+    icpsr: 41705
     votesmart: 176464
     ballotpedia: Doug Jones (Alabama)
     google_entity_id: kg:/g/11dyzdzg1j
@@ -41023,6 +40838,7 @@
     fec:
     - S8MN00578
     cspan: 111313
+    icpsr: 41706
     wikipedia: Tina Smith
     ballotpedia: Tina Smith
     wikidata: Q18631509
@@ -41040,7 +40856,9 @@
   terms:
   - type: sen
     start: '2018-01-03'
-    end: '2021-01-03'
+    end: '2018-11-06'
+    how: appointment
+    end-type: special-election
     state: MN
     class: 2
     party: Democrat
@@ -41056,6 +40874,9 @@
     govtrack: 412743
     wikipedia: Cindy Hyde-Smith
     wikidata: Q5120540
+    icpsr: 41707
+    google_entity_id: kg:/m/03wc2px
+    opensecrets: N00043298
   name:
     first: Cindy
     last: Hyde-Smith
@@ -41066,13 +40887,15 @@
   terms:
   - type: sen
     start: '2018-04-09'
-    end: '2021-01-03'
+    end: '2018-11-06'
+    how: appointment
+    end-type: special-election
     state: MS
     class: 2
     party: Republican
     state_rank: junior
-    url: https://www.senate.gov/senators/115thCongress/Hyde-Smith_Cindy.htm
-    contact_form: ''
+    url: https://www.hydesmith.senate.gov
+    contact_form: https://www.hydesmith.senate.gov/content/contact-senator
     address: G12 Dirksen Senate Office Building Washington DC 20510
     office: G12 Dirksen Senate Office Building
     phone: 202-224-5054
@@ -41085,6 +40908,8 @@
     wikipedia: Conor Lamb
     wikidata: Q43387164
     ballotpedia: Conor Lamb
+    google_entity_id: kg:/g/11gdj36kt1
+    votesmart: 177656
   name:
     first: Conor
     last: Lamb
@@ -41112,6 +40937,8 @@
     wikipedia: Debbie Lesko
     wikidata: Q16731415
     ballotpedia: Debbie Lesko
+    google_entity_id: kg:/m/0zwmkgq
+    votesmart: 106483
   name:
     first: Debbie
     last: Lesko
@@ -41126,6 +40953,150 @@
     state: AZ
     district: 8
     party: Republican
+    url: https://lesko.house.gov/
     address: 2435 Rayburn House Office Building; Washington DC 20515-0308
     office: 2435 Rayburn House Office Building
     phone: 202-225-4576
+- id:
+    bioguide: C001115
+    fec:
+    - H8TX27049
+    govtrack: 412746
+    cspan: 10322
+    wikipedia: Michael Cloud
+    wikidata: Q55313952
+    ballotpedia: Michael Cloud (Texas)
+    opensecrets: N00041882
+    votesmart: 177350
+  name:
+    first: Michael
+    last: Cloud
+    official_full: Michael Cloud
+  bio:
+    gender: M
+    birthday: '1975-05-13'
+  terms:
+  - type: rep
+    start: '2018-07-10'
+    end: '2019-01-03'
+    state: TX
+    district: 27
+    party: Republican
+    url: https://cloud.house.gov/
+    address: 2331 Rayburn House Office Building; Washington DC 20515-4327
+    office: 2331 Rayburn House Office Building
+    phone: 202-225-7742
+- id:
+    bioguide: K000352
+    thomas: '00655'
+    lis: S243
+    govtrack: 300062
+    opensecrets: N00006406
+    votesmart: 26721
+    icpsr: 15429
+    fec:
+    - S4AZ00030
+    house_history: 16529
+    wikipedia: Jon Kyl
+    wikidata: Q371031
+    google_entity_id: kg:/m/01y0mp
+  name:
+    first: Jon
+    last: Kyl
+    official_full: Jon Kyl
+  bio:
+    birthday: '1942-04-25'
+    gender: M
+    religion: Presbyterian
+  terms:
+  - type: rep
+    start: '1987-01-06'
+    end: '1989-01-03'
+    state: AZ
+    district: 4
+    party: Republican
+  - type: rep
+    start: '1989-01-03'
+    end: '1991-01-03'
+    state: AZ
+    district: 4
+    party: Republican
+  - type: rep
+    start: '1991-01-03'
+    end: '1993-01-03'
+    state: AZ
+    district: 4
+    party: Republican
+  - type: rep
+    start: '1993-01-05'
+    end: '1995-01-03'
+    state: AZ
+    district: 4
+    party: Republican
+  - type: sen
+    start: '1995-01-04'
+    end: '2001-01-03'
+    state: AZ
+    class: 1
+    party: Republican
+  - type: sen
+    start: '2001-01-03'
+    end: '2007-01-03'
+    state: AZ
+    class: 1
+    party: Republican
+    url: http://kyl.senate.gov/
+  - type: sen
+    start: '2007-01-04'
+    end: '2013-01-03'
+    state: AZ
+    class: 1
+    party: Republican
+    url: http://kyl.senate.gov/
+    address: 730 HART SENATE OFFICE BUILDING WASHINGTON DC 20510
+    phone: 202-224-4521
+    fax: 202-224-2207
+    contact_form: http://www.kyl.senate.gov/contact.cfm
+    office: 730 Hart Senate Office Building
+  - type: sen
+    start: '2018-09-05'
+    end: '2020-11-03'
+    how: appointment
+    end-type: special-election
+    state: AZ
+    class: 3
+    state_rank: junior
+    party: Republican
+    address: G12 Dirksen Senate Office Building Washington DC 20510
+    office: G12 Dirksen Senate Office Building
+    phone: 202-224-2235
+    fax: 202-228-2862
+    url: https://www.senate.gov/senators/115thCongress/Kyl_Jon.htm
+    contact_form: ''
+- id:
+    bioguide: B001306
+    fec:
+    - H8OH12180
+    govtrack: 412747
+    opensecrets: N00042194
+    wikipedia: Troy Balderson
+    wikidata: Q16194422
+    ballotpedia: Troy Balderson
+  name:
+    first: Troy
+    last: Balderson
+    official_full: Troy Balderson
+  bio:
+    gender: M
+    birthday: '1962-01-16'
+  terms:
+  - type: rep
+    start: '2018-09-05'
+    end: '2019-01-03'
+    state: OH
+    district: 12
+    party: Republican
+    url: https://balderson.house.gov/
+    address: 1203 Longworth House Office Building; Washington DC 20515-3512
+    office: 1203 Longworth House Office Building
+    phone: 202-225-5355
