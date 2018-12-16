@@ -10,8 +10,14 @@ class StateRepUpdater
       state_abbr = meta.abbreviation.upcase
       state      = State.find_by(abbr: state_abbr)
       chambers   = meta.chambers
-      state.upper_chamber_title = chambers['upper']['title']
-      state.lower_chamber_title = chambers['lower']['title'] if chambers['lower']
+      if state_abbr == 'DC'
+        state.upper_chamber_title = 'Councilmember'
+      elsif state_abbr == 'NE'
+        state.upper_chamber_title = 'Senator'
+      else
+        state.upper_chamber_title = chambers['upper']['title']
+        state.lower_chamber_title = chambers['lower']['title'] if chambers['lower']
+      end
       state.save
 
       open_states_reps = OpenStates.legislators { |r| r.state = state_abbr }.objects
@@ -35,6 +41,12 @@ class StateRepUpdater
     end
 
     destroy_offices_with_no_phone_or_address
+    deactivate_inactive_reps
+  end
+
+  def deactivate_inactive_reps
+    ids = open_states_reps.map(&:leg_id)
+    StateRep.where(state: state, active: true).where.not(official_id: ids).update(active: false)
   end
 
   def destroy_offices_with_no_phone_or_address
@@ -57,9 +69,9 @@ class StateRepUpdater
   end
 
   def update_political_info(rep, os_rep)
-    rep.chamber      = os_rep.chamber
-    rep.party        = os_rep.party
+    rep.chamber = %w[DC NE].include?(rep.state.abbr) ? 'upper' : os_rep.chamber
     rep.contact_form = os_rep.email
+    rep.party        = os_rep.party
     rep.active       = os_rep.active
     rep.photo_url    = os_rep.photo_url
     rep.photo        = os_rep.photo_url
