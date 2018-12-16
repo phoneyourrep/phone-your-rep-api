@@ -214,7 +214,6 @@ describe OfficeLocation, type: :model do
 
       expect(office.address).to_not eq('123 Main St.')
       expect(office.city).to_not eq('Anytown')
-      expect(office.state).to_not eq('NY')
       expect(office.zip).to_not eq('10000')
 
       rep = CongressionalRep.create(state: State.new, chamber: 'lower')
@@ -223,7 +222,6 @@ describe OfficeLocation, type: :model do
 
       expect(office.address).to_not eq('123 Main St.')
       expect(office.city).to_not eq('Anytown')
-      expect(office.state).to_not eq('NY')
       expect(office.zip).to_not eq('10000-1234')
     end
   end
