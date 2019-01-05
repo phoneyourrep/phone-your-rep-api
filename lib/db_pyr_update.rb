@@ -79,7 +79,7 @@ module DbPyrUpdate
     end
 
     def update_rep_name(rep, name)
-      rep.official_full = name['official_full']
+      rep.official_full = name['official_full'] || "#{name['first']} #{name['last']}"
       rep.first         = name['first']
       rep.middle        = name['middle']
       rep.last          = name['last']
@@ -108,7 +108,7 @@ module DbPyrUpdate
     end
 
     def update_rep_capitol_office(rep, term)
-      address_ary = term['address'].split(' ')
+      address_ary = term['address']&.split(' ') || []
       cap_office  = OfficeLocation.find_or_create_by(
         office_type: 'capitol',
         official_id: rep.official_id
