@@ -104,6 +104,10 @@
     state_rank: senior
     url: https://www.brown.senate.gov
     rss_url: http://www.brown.senate.gov/rss/feeds/?type=all&amp;
+    contact_form: http://www.brown.senate.gov/contact/
+    address: 713 Hart Senate Office Building Washington DC 20510
+    office: 713 Hart Senate Office Building
+    phone: 202-224-2315
 - id:
     bioguide: C000127
     thomas: '00172'
@@ -179,6 +183,10 @@
     state_rank: junior
     url: https://www.cantwell.senate.gov
     rss_url: http://www.cantwell.senate.gov/public/index.cfm/rss/feed
+    contact_form: http://www.cantwell.senate.gov/public/index.cfm/email-maria
+    address: 511 Hart Senate Office Building Washington DC 20510
+    office: 511 Hart Senate Office Building
+    phone: 202-224-3441
 - id:
     bioguide: C000141
     thomas: '00174'
@@ -304,6 +312,10 @@
     state_rank: senior
     url: https://www.cardin.senate.gov
     rss_url: http://www.cardin.senate.gov/rss/feeds/?type=all
+    contact_form: http://www.cardin.senate.gov/contact/
+    address: 509 Hart Senate Office Building Washington DC 20510
+    office: 509 Hart Senate Office Building
+    phone: 202-224-4524
 - id:
     bioguide: C000174
     thomas: '00179'
@@ -403,6 +415,10 @@
     state_rank: senior
     url: https://www.carper.senate.gov/public
     rss_url: http://www.carper.senate.gov/public/index.cfm/rss/feed
+    contact_form: http://www.carper.senate.gov/public/index.cfm/email-senator-carper
+    address: 513 Hart Senate Office Building Washington DC 20510
+    office: 513 Hart Senate Office Building
+    phone: 202-224-2441
 - id:
     bioguide: C001070
     thomas: '01828'
@@ -465,6 +481,10 @@
     state_rank: senior
     url: https://www.casey.senate.gov
     rss_url: http://www.casey.senate.gov/rss/feeds/?all
+    contact_form: https://www.casey.senate.gov/contact/
+    address: 393 Russell Senate Office Building Washington DC 20510
+    office: 393 Russell Senate Office Building
+    phone: 202-224-6324
 - id:
     bioguide: F000062
     thomas: '01332'
@@ -545,6 +565,10 @@
     state_rank: senior
     url: https://www.feinstein.senate.gov
     rss_url: http://www.feinstein.senate.gov/public/?a=rss.feed
+    contact_form: https://www.feinstein.senate.gov/public/index.cfm/e-mail-me
+    address: 331 Hart Senate Office Building Washington DC 20510
+    office: 331 Hart Senate Office Building
+    phone: 202-224-3841
 - id:
     bioguide: K000367
     thomas: '01826'
@@ -604,6 +628,10 @@
     party: Democrat
     state_rank: senior
     url: https://www.klobuchar.senate.gov
+    contact_form: http://www.klobuchar.senate.gov/public/index.cfm/contact
+    address: 302 Hart Senate Office Building Washington DC 20510
+    office: 302 Hart Senate Office Building
+    phone: 202-224-3244
 - id:
     bioguide: M000639
     thomas: '00791'
@@ -721,6 +749,10 @@
     state_rank: senior
     url: https://www.menendez.senate.gov
     rss_url: http://www.menendez.senate.gov/rss/feeds/index.cfm?type=news
+    contact_form: https://www.menendez.senate.gov/contact
+    address: 528 Hart Senate Office Building Washington DC 20510
+    office: 528 Hart Senate Office Building
+    phone: 202-224-4744
 - id:
     bioguide: S000033
     thomas: '01010'
@@ -845,6 +877,10 @@
     state_rank: junior
     url: https://www.sanders.senate.gov
     rss_url: http://www.sanders.senate.gov/rss/
+    contact_form: http://www.sanders.senate.gov/contact/
+    address: 332 Dirksen Senate Office Building Washington DC 20510
+    office: 332 Dirksen Senate Office Building
+    phone: 202-224-5141
 - id:
     bioguide: S000770
     thomas: '01531'
@@ -927,6 +963,10 @@
     state_rank: senior
     url: https://www.stabenow.senate.gov
     rss_url: http://stabenow.senate.gov/rss/?p=news
+    contact_form: https://www.stabenow.senate.gov/contact
+    address: 731 Hart Senate Office Building Washington DC 20510
+    office: 731 Hart Senate Office Building
+    phone: 202-224-4822
 - id:
     bioguide: T000464
     thomas: '01829'
@@ -986,6 +1026,10 @@
     state_rank: senior
     url: https://www.tester.senate.gov
     rss_url: http://www.tester.senate.gov/rss/?p=hot_topic
+    contact_form: https://www.tester.senate.gov/?p=email_senator
+    address: 311 Hart Senate Office Building Washington DC 20510
+    office: 311 Hart Senate Office Building
+    phone: 202-224-2644
 - id:
     bioguide: W000802
     thomas: '01823'
@@ -1045,6 +1089,10 @@
     state_rank: junior
     url: https://www.whitehouse.senate.gov
     rss_url: http://www.whitehouse.senate.gov/rss/feeds/?type=all&amp;cachebuster=1
+    contact_form: https://www.whitehouse.senate.gov/contact/email-sheldon
+    address: 530 Hart Senate Office Building Washington DC 20510
+    office: 530 Hart Senate Office Building
+    phone: 202-224-2921
 - id:
     bioguide: B001261
     thomas: '01881'
@@ -1106,6 +1154,10 @@
     state_rank: junior
     url: https://www.barrasso.senate.gov
     rss_url: http://www.barrasso.senate.gov/public/index.cfm?FuseAction=Rss.Feed
+    contact_form: https://www.barrasso.senate.gov/public/index.cfm/contact-form
+    address: 307 Dirksen Senate Office Building Washington DC 20510
+    office: 307 Dirksen Senate Office Building
+    phone: 202-224-6441
 - id:
     bioguide: W000437
     thomas: '01226'
@@ -1213,6 +1265,10 @@
     party: Republican
     state_rank: senior
     url: https://www.wicker.senate.gov
+    contact_form: https://www.wicker.senate.gov/public/index.cfm/contact
+    address: 555 Dirksen Senate Office Building Washington DC 20510
+    office: 555 Dirksen Senate Office Building
+    phone: 202-224-6253
 - id:
     bioguide: A000360
     thomas: '01695'
@@ -2505,6 +2561,10 @@
     state_rank: junior
     url: https://www.gillibrand.senate.gov
     rss_url: http://www.gillibrand.senate.gov/rss/
+    contact_form: https://www.gillibrand.senate.gov/contact/email-me
+    address: 478 Russell Senate Office Building Washington DC 20510
+    office: 478 Russell Senate Office Building
+    phone: 202-224-4451
 - id:
     bioguide: C001088
     thomas: '01984'
@@ -2617,6 +2677,10 @@
     state_rank: senior
     url: https://www.manchin.senate.gov
     rss_url: http://www.manchin.senate.gov/public/index.cfm/rss/feed
+    contact_form: http://www.manchin.senate.gov/public/index.cfm/contact-form
+    address: 306 Hart Senate Office Building Washington DC 20510
+    office: 306 Hart Senate Office Building
+    phone: 202-224-3954
 - id:
     bioguide: A000055
     thomas: '01460'
@@ -2935,6 +2999,10 @@
     state_rank: junior
     url: https://www.baldwin.senate.gov
     rss_url: http://www.baldwin.senate.gov/rss/feeds/?type=all
+    contact_form: https://www.baldwin.senate.gov/feedback
+    address: 709 Hart Senate Office Building Washington DC 20510
+    office: 709 Hart Senate Office Building
+    phone: 202-224-5653
 - id:
     bioguide: B001270
     thomas: '01996'
@@ -3457,6 +3525,7 @@
     icpsr: 20351
     wikidata: Q458971
     google_entity_id: kg:/m/01fnkt
+    lis: S396
   name:
     first: Marsha
     middle: W.
@@ -3553,6 +3622,9 @@
     party: Republican
     state_rank: junior
     url: https://www.blackburn.senate.gov
+    address: B40B Dirksen Senate Office Building Washington DC 20510
+    office: B40b Dirksen Senate Office Building
+    phone: 202-224-3344
 - id:
     bioguide: B000574
     thomas: '00099'
@@ -11117,6 +11189,10 @@
     party: Democrat
     state_rank: junior
     url: https://www.heinrich.senate.gov
+    contact_form: http://www.heinrich.senate.gov/contact
+    address: 303 Hart Senate Office Building Washington DC 20510
+    office: 303 Hart Senate Office Building
+    phone: 202-224-5521
 - id:
     bioguide: H001056
     thomas: '02071'
@@ -11475,6 +11551,10 @@
     state_rank: junior
     url: https://www.hirono.senate.gov
     rss_url: http://www.hirono.senate.gov/rss/feeds/?type=all
+    contact_form: https://www.hirono.senate.gov/contact
+    address: 730 Hart Senate Office Building Washington DC 20510
+    office: 730 Hart Senate Office Building
+    phone: 202-224-6361
 - id:
     bioguide: H001061
     thomas: '02079'
@@ -17771,6 +17851,10 @@
     state_rank: junior
     url: https://www.murphy.senate.gov
     rss_url: http://www.theday.com/article/20121216/nws12/312169935/1069/rss
+    contact_form: http://www.murphy.senate.gov/contact
+    address: 136 Hart Senate Office Building Washington DC 20510
+    office: 136 Hart Senate Office Building
+    phone: 202-224-4041
 - id:
     bioguide: M001111
     thomas: '01409'
@@ -28235,6 +28319,7 @@
     house_history: 15032387755
     wikidata: Q1556541
     google_entity_id: kg:/m/03qnndb
+    lis: S403
   name:
     first: Kyrsten
     last: Sinema
@@ -28289,6 +28374,9 @@
     party: Democrat
     state_rank: senior
     url: https://www.sinema.senate.gov
+    address: 825B&C Hart Senate Office Building Washington DC 20510
+    office: 825b&c Hart Senate Office Building
+    phone: 202-224-4521
 - id:
     govtrack: 412510
     bioguide: L000578
@@ -29905,6 +29993,10 @@
     state_rank: senior
     url: https://www.warren.senate.gov
     rss_url: http://www.warren.senate.gov/rss/?p=hot_topic
+    contact_form: https://www.warren.senate.gov/?p=email_senator
+    address: 317 Hart Senate Office Building Washington DC 20510
+    office: 317 Hart Senate Office Building
+    phone: 202-224-4543
 - id:
     govtrack: 412543
     bioguide: K000379
@@ -30039,6 +30131,10 @@
     state_rank: junior
     url: https://www.king.senate.gov
     rss_url: http://www.king.senate.gov/rss/feeds/?type=all
+    contact_form: https://www.king.senate.gov/contact
+    address: 133 Hart Senate Office Building Washington DC 20510
+    office: 133 Hart Senate Office Building
+    phone: 202-224-5344
 - id:
     govtrack: 412546
     bioguide: K000380
@@ -30466,6 +30562,7 @@
     icpsr: 21350
     wikidata: Q3957020
     google_entity_id: kg:/m/02rhrnw
+    lis: S398
   name:
     first: Kevin
     last: Cramer
@@ -30520,6 +30617,9 @@
     party: Republican
     state_rank: junior
     url: https://www.cramer.senate.gov
+    address: B40C Dirksen Senate Office Building Washington DC 20510
+    office: B40c Dirksen Senate Office Building
+    phone: 202-224-2043
 - id:
     bioguide: F000463
     thomas: '02179'
@@ -30568,6 +30668,10 @@
     state_rank: senior
     url: https://www.fischer.senate.gov
     rss_url: http://www.fischer.senate.gov/public/index.cfm/rss/feed
+    contact_form: http://www.fischer.senate.gov/public/index.cfm/contact
+    address: 454 Russell Senate Office Building Washington DC 20510
+    office: 454 Russell Senate Office Building
+    phone: 202-224-6551
 - id:
     govtrack: 412557
     bioguide: K000382
@@ -31472,6 +31576,10 @@
     party: Republican
     state_rank: junior
     url: https://www.cruz.senate.gov
+    contact_form: https://www.cruz.senate.gov/?p=form&id=16
+    address: 404 Russell Senate Office Building Washington DC 20510
+    office: 404 Russell Senate Office Building
+    phone: 202-224-5922
 - id:
     govtrack: 412574
     bioguide: W000814
@@ -31953,6 +32061,10 @@
     state_rank: junior
     url: https://www.kaine.senate.gov
     rss_url: http://www.kaine.senate.gov/rss/feeds/?type=all
+    contact_form: https://www.kaine.senate.gov/contact
+    address: 231 Russell Senate Office Building Washington DC 20510
+    office: 231 Russell Senate Office Building
+    phone: 202-224-4024
 - id:
     govtrack: 412583
     bioguide: K000381
@@ -36712,6 +36824,7 @@
     google_entity_id: kg:/g/11cntnvwkg
     cspan: 104738
     icpsr: 21743
+    lis: S402
   name:
     first: Jacky
     last: Rosen
@@ -36738,6 +36851,9 @@
     party: Democrat
     state_rank: junior
     url: https://www.rosen.senate.gov
+    address: G12 Dirksen Senate Office Building Washington DC 20510
+    office: G12 Dirksen Senate Office Building
+    phone: 202-224-6244
 - id:
     bioguide: S001201
     govtrack: 412717
@@ -38032,6 +38148,7 @@
     fec:
     - H8AZ09040
     govtrack: 412753
+    wikipedia: Greg Stanton
   name:
     first: Greg
     last: Stanton
@@ -38054,6 +38171,7 @@
     fec:
     - H8CA10126
     govtrack: 412754
+    wikipedia: Josh Harder
   name:
     first: Josh
     last: Harder
@@ -38076,6 +38194,7 @@
     fec:
     - H8CA10167
     govtrack: 412755
+    wikipedia: TJ Cox
   name:
     first: TJ
     last: Cox
@@ -38098,6 +38217,7 @@
     fec:
     - H8CA25074
     govtrack: 412756
+    wikipedia: Katie Hill (politician)
   name:
     first: Katie
     last: Hill
@@ -38120,13 +38240,14 @@
     fec:
     - H8CA39174
     govtrack: 412757
+    wikipedia: Gil Cisneros
   name:
     first: Gilbert
     middle: Ray
     last: Cisneros
   bio:
     gender: M
-    birthday: '1972'
+    birthday: '1971-02-12'
   terms:
   - type: rep
     start: '2019-01-03'
@@ -38143,6 +38264,7 @@
     fec:
     - H8CA45130
     govtrack: 412758
+    wikipedia: Katie Porter
   name:
     first: Katie
     last: Porter
@@ -38165,6 +38287,7 @@
     fec:
     - H8CA48035
     govtrack: 412759
+    wikipedia: Harley Rouda
   name:
     first: Harley
     last: Rouda
@@ -38187,6 +38310,7 @@
     fec:
     - H8CA49058
     govtrack: 412760
+    wikipedia: Mike Levin
   name:
     first: Mike
     last: Levin
@@ -38209,6 +38333,7 @@
     fec:
     - H8CO02178
     govtrack: 412761
+    wikipedia: Joe Neguse
   name:
     first: Joe
     last: Neguse
@@ -38231,6 +38356,7 @@
     fec:
     - H8CO06229
     govtrack: 412762
+    wikipedia: Jason Crow
   name:
     first: Jason
     last: Crow
@@ -38253,6 +38379,7 @@
     fec:
     - H8CT05245
     govtrack: 412763
+    wikipedia: Jahana Hayes
   name:
     first: Jahana
     last: Hayes
@@ -38275,6 +38402,7 @@
     fec:
     - H8FL06148
     govtrack: 412764
+    wikipedia: Michael Waltz
   name:
     first: Michael
     last: Waltz
@@ -38297,6 +38425,7 @@
     fec:
     - H8FL15230
     govtrack: 412765
+    wikipedia: Ross Spano
   name:
     first: Ross
     last: Spano
@@ -38319,6 +38448,7 @@
     fec:
     - H8FL17053
     govtrack: 412766
+    wikipedia: Greg Steube
   name:
     first: W.
     middle: Gregory
@@ -38342,6 +38472,7 @@
     fec:
     - H8FL26039
     govtrack: 412767
+    wikipedia: Debbie Mucarsel-Powell
   name:
     first: Debbie
     last: Mucarsel-Powell
@@ -38364,6 +38495,7 @@
     fec:
     - H8FL27193
     govtrack: 412768
+    wikipedia: Donna Shalala
   name:
     first: Donna
     middle: E.
@@ -38387,6 +38519,7 @@
     fec:
     - H8GA06393
     govtrack: 412769
+    wikipedia: Lucy McBath
   name:
     first: Lucy
     last: McBath
@@ -38409,6 +38542,7 @@
     fec:
     - H8GU01020
     govtrack: 412770
+    wikipedia: Michael San Nicolas
   name:
     first: Michael
     middle: F. Q.
@@ -38432,6 +38566,7 @@
     fec:
     - H8IA01094
     govtrack: 412771
+    wikipedia: Abby Finkenauer
   name:
     first: Abby
     last: Finkenauer
@@ -38454,6 +38589,7 @@
     fec:
     - H8IA03124
     govtrack: 412772
+    wikipedia: Cindy Axne
   name:
     first: Cynthia
     last: Axne
@@ -38476,6 +38612,7 @@
     fec:
     - H8ID01124
     govtrack: 412773
+    wikipedia: Russ Fulcher
   name:
     first: Russ
     last: Fulcher
@@ -38498,6 +38635,7 @@
     fec:
     - H8IL04134
     govtrack: 412774
+    wikipedia: Jesús "Chuy" García
   name:
     first: Jesús
     middle: G.
@@ -38521,6 +38659,7 @@
     fec:
     - H8IL06139
     govtrack: 412775
+    wikipedia: Sean Casten
   name:
     first: Sean
     last: Casten
@@ -38543,6 +38682,7 @@
     fec:
     - H8IL14174
     govtrack: 412776
+    wikipedia: Lauren Underwood
   name:
     first: Lauren
     last: Underwood
@@ -38565,6 +38705,7 @@
     fec:
     - H8IN04199
     govtrack: 412777
+    wikipedia: Jim Baird (American politician)
   name:
     first: James
     middle: R.
@@ -38588,6 +38729,7 @@
     fec:
     - H8IN06129
     govtrack: 412778
+    wikipedia: Greg Pence
   name:
     first: Greg
     last: Pence
@@ -38610,6 +38752,7 @@
     fec:
     - H8KS02199
     govtrack: 412779
+    wikipedia: Steve Watkins (politician)
   name:
     first: Steven
     middle: C.
@@ -38633,6 +38776,7 @@
     fec:
     - H8KS03155
     govtrack: 412780
+    wikipedia: Sharice Davids
   name:
     first: Sharice
     last: Davids
@@ -38655,6 +38799,7 @@
     fec:
     - H8MA03106
     govtrack: 412781
+    wikipedia: Lori Trahan
   name:
     first: Lori
     last: Trahan
@@ -38677,6 +38822,7 @@
     fec:
     - H8MA07032
     govtrack: 412782
+    wikipedia: Ayanna Pressley
   name:
     first: Ayanna
     last: Pressley
@@ -38699,6 +38845,7 @@
     fec:
     - H8MD06168
     govtrack: 412783
+    wikipedia: David Trone
   name:
     first: David
     middle: J.
@@ -38722,6 +38869,7 @@
     fec:
     - H8MI08102
     govtrack: 412784
+    wikipedia: Elissa Slotkin
   name:
     first: Elissa
     last: Slotkin
@@ -38744,6 +38892,7 @@
     fec:
     - H8MI09118
     govtrack: 412785
+    wikipedia: Andy Levin
   name:
     first: Andy
     last: Levin
@@ -38766,6 +38915,7 @@
     fec:
     - H8MI11254
     govtrack: 412786
+    wikipedia: Haley Stevens
   name:
     first: Haley
     middle: M.
@@ -38789,6 +38939,7 @@
     fec:
     - H8MI13250
     govtrack: 412787
+    wikipedia: Rashida Tlaib
   name:
     first: Rashida
     last: Tlaib
@@ -38811,6 +38962,7 @@
     fec:
     - H0MN01045
     govtrack: 412788
+    wikipedia: Jim Hagedorn
   name:
     first: Jim
     last: Hagedorn
@@ -38833,6 +38985,7 @@
     fec:
     - H6MN02131
     govtrack: 412789
+    wikipedia: Angie Craig
   name:
     first: Angie
     last: Craig
@@ -38855,6 +39008,7 @@
     fec:
     - H8MN03143
     govtrack: 412790
+    wikipedia: Dean Phillips
   name:
     first: Dean
     last: Phillips
@@ -38877,6 +39031,7 @@
     fec:
     - H8MN05239
     govtrack: 412791
+    wikipedia: Ilhan Omar
   name:
     first: Ilhan
     last: Omar
@@ -38899,6 +39054,7 @@
     fec:
     - H8MN08043
     govtrack: 412792
+    wikipedia: Pete Stauber
   name:
     first: Pete
     last: Stauber
@@ -38921,6 +39077,7 @@
     fec:
     - H8MS03125
     govtrack: 412793
+    wikipedia: Michael Guest (politician)
   name:
     first: Michael
     last: Guest
@@ -38943,6 +39100,7 @@
     fec:
     - H8ND00096
     govtrack: 412794
+    wikipedia: Kelly Armstrong
   name:
     first: Kelly
     last: Armstrong
@@ -38965,6 +39123,7 @@
     fec:
     - H8NH01210
     govtrack: 412795
+    wikipedia: Chris Pappas (politician)
   name:
     first: Chris
     last: Pappas
@@ -38987,6 +39146,7 @@
     fec:
     - H8NJ02166
     govtrack: 412796
+    wikipedia: Jeff Van Drew
   name:
     first: Jefferson
     last: Van Drew
@@ -39009,6 +39169,7 @@
     fec:
     - H8NJ03206
     govtrack: 412797
+    wikipedia: Andy Kim (politician)
   name:
     first: Andy
     last: Kim
@@ -39031,6 +39192,7 @@
     fec:
     - H8NJ07223
     govtrack: 412798
+    wikipedia: Tom Malinowski
   name:
     first: Tom
     last: Malinowski
@@ -39053,6 +39215,7 @@
     fec:
     - H8NJ11142
     govtrack: 412799
+    wikipedia: Mikie Sherrill
   name:
     first: Mikie
     last: Sherrill
@@ -39075,6 +39238,7 @@
     fec:
     - H8NM01331
     govtrack: 412800
+    wikipedia: Deb Haaland
   name:
     first: Debra
     middle: A.
@@ -39098,6 +39262,7 @@
     fec:
     - H8NM02248
     govtrack: 412801
+    wikipedia: Xochitl Torres Small
   name:
     first: Xochitl
     last: Torres Small
@@ -39120,6 +39285,7 @@
     fec:
     - H8NV03200
     govtrack: 412802
+    wikipedia: Susie Lee
   name:
     first: Susie
     last: Lee
@@ -39142,6 +39308,7 @@
     fec:
     - H8NY11113
     govtrack: 412803
+    wikipedia: Max Rose (politician)
   name:
     first: Max
     last: Rose
@@ -39164,6 +39331,7 @@
     fec:
     - H8NY15148
     govtrack: 412804
+    wikipedia: Alexandria Ocasio-Cortez
   name:
     first: Alexandria
     last: Ocasio-Cortez
@@ -39186,6 +39354,7 @@
     fec:
     - H8NY19181
     govtrack: 412805
+    wikipedia: Antonio Delgado (politician)
   name:
     first: Antonio
     last: Delgado
@@ -39208,6 +39377,7 @@
     fec:
     - H8NY22151
     govtrack: 412806
+    wikipedia: Anthony Brindisi
   name:
     first: Anthony
     last: Brindisi
@@ -39252,6 +39422,7 @@
     fec:
     - H8OK05109
     govtrack: 412808
+    wikipedia: Kendra Horn
   name:
     first: Kendra
     middle: S.
@@ -39275,6 +39446,7 @@
     fec:
     - H8PA04116
     govtrack: 412809
+    wikipedia: Madeleine Dean
   name:
     first: Madeleine
     last: Dean
@@ -39297,6 +39469,7 @@
     fec:
     - H8PA06087
     govtrack: 412810
+    wikipedia: Chrissy Houlahan
   name:
     first: Chrissy
     last: Houlahan
@@ -39319,6 +39492,7 @@
     fec:
     - H8PA10147
     govtrack: 412811
+    wikipedia: Dan Meuser
   name:
     first: Daniel
     last: Meuser
@@ -39341,6 +39515,7 @@
     fec:
     - H8PA13125
     govtrack: 412812
+    wikipedia: John Joyce (American politician)
   name:
     first: John
     last: Joyce
@@ -39363,6 +39538,7 @@
     fec:
     - H8PA18199
     govtrack: 412813
+    wikipedia: Guy Reschenthaler
   name:
     first: Guy
     last: Reschenthaler
@@ -39385,6 +39561,7 @@
     fec:
     - H8SC01116
     govtrack: 412814
+    wikipedia: Joe Cunningham (American politician)
   name:
     first: Joe
     last: Cunningham
@@ -39407,6 +39584,7 @@
     fec:
     - H8SC04250
     govtrack: 412815
+    wikipedia: William Timmons (politician)
   name:
     first: William
     middle: R.
@@ -39430,6 +39608,7 @@
     fec:
     - H8SD01055
     govtrack: 412816
+    wikipedia: Dusty Johnson
   name:
     first: Dusty
     last: Johnson
@@ -39452,6 +39631,7 @@
     fec:
     - H8TN02119
     govtrack: 412817
+    wikipedia: Tim Burchett
   name:
     first: Tim
     last: Burchett
@@ -39474,6 +39654,7 @@
     fec:
     - H8TN06094
     govtrack: 412818
+    wikipedia: John Rose (Tennessee politician)
   name:
     first: John
     middle: W.
@@ -39497,6 +39678,7 @@
     fec:
     - H8TN07076
     govtrack: 412819
+    wikipedia: Mark E. Green
   name:
     first: Mark
     middle: E.
@@ -39520,6 +39702,7 @@
     fec:
     - H8TX02166
     govtrack: 412820
+    wikipedia: Dan Crenshaw
   name:
     first: Dan
     last: Crenshaw
@@ -39542,6 +39725,7 @@
     fec:
     - H8TX03123
     govtrack: 412821
+    wikipedia: Van Taylor
   name:
     first: Van
     last: Taylor
@@ -39564,6 +39748,7 @@
     fec:
     - H8TX05144
     govtrack: 412822
+    wikipedia: Lance Gooden
   name:
     first: Lance
     last: Gooden
@@ -39586,6 +39771,7 @@
     fec:
     - H8TX06233
     govtrack: 412823
+    wikipedia: Ron Wright (politician)
   name:
     first: Ron
     last: Wright
@@ -39608,6 +39794,7 @@
     fec:
     - H8TX07140
     govtrack: 412824
+    wikipedia: Lizzie Pannill Fletcher
   name:
     first: Lizzie
     last: Fletcher
@@ -39630,6 +39817,7 @@
     fec:
     - H8TX16109
     govtrack: 412825
+    wikipedia: Veronica Escobar
   name:
     first: Veronica
     last: Escobar
@@ -39652,6 +39840,7 @@
     fec:
     - H8TX21307
     govtrack: 412826
+    wikipedia: Chip Roy
   name:
     first: Chip
     last: Roy
@@ -39674,6 +39863,7 @@
     fec:
     - H8TX29052
     govtrack: 412827
+    wikipedia: Sylvia Garcia
   name:
     first: Sylvia
     middle: R.
@@ -39697,6 +39887,7 @@
     fec:
     - H8TX32098
     govtrack: 412828
+    wikipedia: Colin Allred
   name:
     first: Colin
     middle: Z.
@@ -39720,6 +39911,7 @@
     fec:
     - H8UT04053
     govtrack: 412829
+    wikipedia: Ben McAdams
   name:
     first: Ben
     last: McAdams
@@ -39742,6 +39934,7 @@
     fec:
     - H8VA02111
     govtrack: 412830
+    wikipedia: Elaine Luria
   name:
     first: Elaine
     middle: G.
@@ -39765,6 +39958,7 @@
     fec:
     - H8VA05171
     govtrack: 412831
+    wikipedia: Denver Riggleman
   name:
     first: Denver
     last: Riggleman
@@ -39787,6 +39981,7 @@
     fec:
     - H8VA06104
     govtrack: 412832
+    wikipedia: Ben Cline
   name:
     first: Ben
     last: Cline
@@ -39809,6 +40004,7 @@
     fec:
     - H8VA07094
     govtrack: 412833
+    wikipedia: Abigail Spanberger
   name:
     first: Abigail
     middle: Davis
@@ -39832,6 +40028,7 @@
     fec:
     - H8VA10106
     govtrack: 412834
+    wikipedia: Jennifer Wexton
   name:
     first: Jennifer
     last: Wexton
@@ -39854,6 +40051,7 @@
     fec:
     - H8WA08189
     govtrack: 412835
+    wikipedia: Kim Schrier
   name:
     first: Kim
     last: Schrier
@@ -39876,6 +40074,7 @@
     fec:
     - H8WI01156
     govtrack: 412836
+    wikipedia: Bryan Steil
   name:
     first: Bryan
     last: Steil
@@ -39898,6 +40097,7 @@
     fec:
     - H8WV03097
     govtrack: 412837
+    wikipedia: Carol Miller (politician)
   name:
     first: Carol
     middle: D.
@@ -39946,9 +40146,11 @@
     wikipedia: Mike Braun
     wikidata: Q42804470
     ballotpedia: Mike Braun
+    lis: S397
   name:
     first: Mike
     last: Braun
+    official_full: Mike Braun
   bio:
     gender: M
     birthday: '1954-03-24'
@@ -39961,6 +40163,9 @@
     party: Republican
     state_rank: junior
     url: https://www.braun.senate.gov
+    address: B85 Russell Senate Office Building Washington DC 20510
+    office: B85 Russell Senate Office Building
+    phone: 202-224-4814
 - id:
     bioguide: H001089
     fec:
@@ -39969,9 +40174,11 @@
     wikipedia: Josh Hawley
     wikidata: Q23020745
     ballotpedia: Josh Hawley
+    lis: S399
   name:
     first: Joshua
     last: Hawley
+    official_full: Josh Hawley
   bio:
     gender: M
     birthday: '1979-12-31'
@@ -39984,6 +40191,9 @@
     party: Republican
     state_rank: junior
     url: https://www.hawley.senate.gov
+    address: B40A Dirksen Senate Office Building Washington DC 20510
+    office: B40a Dirksen Senate Office Building
+    phone: 202-224-6154
 - id:
     bioguide: R000615
     fec:
@@ -39992,9 +40202,11 @@
     wikipedia: MItt Romney
     wikidata: Q4496
     ballotpedia: Mitt Romney
+    lis: S401
   name:
     first: Mitt
     last: Romney
+    official_full: Mitt Romney
   bio:
     gender: M
     birthday: '1947-03-12'
@@ -40007,6 +40219,9 @@
     party: Republican
     state_rank: junior
     url: https://www.romney.senate.gov
+    address: B33 Russell Senate Office Building Washington DC 20510
+    office: B33 Russell Senate Office Building
+    phone: 202-224-5251
 - id:
     bioguide: M001197
     fec:
@@ -40023,6 +40238,7 @@
     votesmart: 137299
     cspan: 29126
     icpsr: 21501
+    lis: S400
   name:
     first: Martha
     last: McSally
@@ -40060,12 +40276,16 @@
     class: 3
     party: Republican
     state_rank: junior
-    url: http://www.mcsally.senate.gov
+    url: https://www.mcsally.senate.gov
+    address: B40D Dirksen Senate Office Building Washington DC 20510
+    office: B40d Dirksen Senate Office Building
+    phone: 202-224-2235
 - id:
     bioguide: G000592
     fec:
     - H8ME02185
-    govtrack: ~
+    govtrack: 412842
+    wikipedia: Jared Golden
   name:
     first: Jared
     middle: Forrest
