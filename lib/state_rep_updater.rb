@@ -10,19 +10,22 @@ class StateRepUpdater
       state_abbr = meta.abbreviation
       state      = State.find_by(abbr: state_abbr.upcase)
       chambers   = meta.chambers
-      if state_abbr == 'dc'
-        state.upper_chamber_title = 'Councilmember'
-      elsif state_abbr == 'ne'
-        state.upper_chamber_title = 'Senator'
-      else
-        state.upper_chamber_title = chambers['upper']['title']
-        state.lower_chamber_title = chambers['lower']['title'] if chambers['lower']
-      end
+      set_state_chambers(state, chambers)
       state.save
 
       open_states_reps = OpenStates.legislators { |r| r.state = state_abbr }.objects
       new(open_states_reps, state).update!
       OpenStates::Legislator.destroy_all
+    end
+  end
+
+  def self.set_state_chambers(state, chambers)
+    case state.abbr
+    when 'DC' then state.upper_chamber_title = 'Councilmember'
+    when 'NE' then state.upper_chamber_title = 'Senator'
+    else
+      state.upper_chamber_title = chambers['upper']['title']
+      state.lower_chamber_title = chambers['lower']['title'] if chambers['lower']
     end
   end
 

@@ -12,8 +12,8 @@ describe Governor, type: :model do
 
     @rep = create(
       :governor,
-      official_full: 'Phil Scott',
-      first: 'Phil',
+      official_full: 'Philip Scott',
+      first: 'Philip',
       last: 'Scott',
       state: @state,
       office_locations: [@office_one, @office_two, @office_three, @office_four]
@@ -23,11 +23,11 @@ describe Governor, type: :model do
   after(:all) { [Rep, State, OfficeLocation].each(&:destroy_all) }
 
   it 'has an official full name' do
-    expect(@rep.official_full).to eq('Phil Scott')
+    expect(@rep.official_full).to eq('Philip Scott')
   end
 
   it 'constructs an official_id based on the name and state' do
-    expect(@rep.official_id).to eq('VT-phil-scott')
+    expect(@rep.official_id).to eq('VT-philip-scott')
   end
 
   it 'belongs_to a state' do
@@ -52,8 +52,8 @@ describe Governor, type: :model do
     expect(@rep.active_office_locations).to include(@office_four)
   end
 
-  it 'has constructs a photo_url based on its official_id' do
-    photo_url = 'https://www.nga.org/files/live/sites/NGA/files/images/govportraits/VT-PhilScott.jpg'
+  it 'constructs a photo_url based on its official_id' do
+    photo_url = 'https://cdn.civil.services/us-governors/headshots/512x512/philip-scott.jpg'
 
     expect(@rep.photo_url).to eq(photo_url)
   end

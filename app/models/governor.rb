@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Governor < Rep
-  NGA_PHOTO_SLUG = 'https://www.nga.org/files/live/sites/NGA/files/images/govportraits/'
+  GOVERNOR_PHOTO_SLUG = 'https://cdn.civil.services/us-governors/headshots/512x512/'
 
   before_save :set_photo_url, if: -> { photo_url.blank? }
   before_save :set_role, :set_level, :set_official_id, :make_sure_district_and_chamber_are_empty
@@ -14,7 +14,7 @@ class Governor < Rep
   end
 
   def set_photo_url
-    self.photo_url = "#{NGA_PHOTO_SLUG}#{state.abbr}-#{first}#{last}.jpg"
+    self.photo_url = "#{GOVERNOR_PHOTO_SLUG}#{first.downcase}-#{last.downcase}.jpg"
   end
 
   def set_role

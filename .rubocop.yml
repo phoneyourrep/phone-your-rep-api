@@ -23,6 +23,10 @@ Metrics/MethodLength:
   Exclude:
     - 'db/**/*'
 
+Metrics/ClassLength:
+  Exclude:
+    - 'lib/state_rep_updater.rb'
+
 Style/ClassAndModuleChildren:
   Exclude:
     - 'test/test_helper.rb'

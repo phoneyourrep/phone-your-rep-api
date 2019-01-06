@@ -26,6 +26,8 @@ FactoryGirl.define do
 
   factory :governor do
     official_full 'Official Full'
+    first 'First'
+    last 'Last'
     state
   end
 
