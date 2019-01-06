@@ -8,9 +8,9 @@ class StateRepUpdater
     metadata = OpenStates.metadata.objects
     metadata.each do |meta|
       state_abbr = meta.abbreviation
-      state      = State.find_by(abbr: state_abbr.upcase)
       chambers   = meta.chambers
-      set_state_chambers(state, chambers)
+      state      = State.find_by(abbr: state_abbr.upcase)
+      state      = set_chambers_and_return_state(state, chambers)
       state.save
 
       open_states_reps = OpenStates.legislators { |r| r.state = state_abbr }.objects
@@ -19,7 +19,7 @@ class StateRepUpdater
     end
   end
 
-  def self.set_state_chambers(state, chambers)
+  def self.set_chambers_and_return_state(state, chambers)
     case state.abbr
     when 'DC' then state.upper_chamber_title = 'Councilmember'
     when 'NE' then state.upper_chamber_title = 'Senator'
@@ -27,6 +27,7 @@ class StateRepUpdater
       state.upper_chamber_title = chambers['upper']['title']
       state.lower_chamber_title = chambers['lower']['title'] if chambers['lower']
     end
+    state
   end
 
   def initialize(open_states_reps, state)
