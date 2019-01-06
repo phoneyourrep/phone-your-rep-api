@@ -7,12 +7,12 @@ class StateRepUpdater
   def self.update!
     metadata = OpenStates.metadata.objects
     metadata.each do |meta|
-      state_abbr = meta.abbreviation.upcase
-      state      = State.find_by(abbr: state_abbr)
+      state_abbr = meta.abbreviation
+      state      = State.find_by(abbr: state_abbr.upcase)
       chambers   = meta.chambers
-      if state_abbr == 'DC'
+      if state_abbr == 'dc'
         state.upper_chamber_title = 'Councilmember'
-      elsif state_abbr == 'NE'
+      elsif state_abbr == 'ne'
         state.upper_chamber_title = 'Senator'
       else
         state.upper_chamber_title = chambers['upper']['title']
@@ -64,6 +64,7 @@ class StateRepUpdater
     update_political_info(rep, os_rep)
     rep.add_photo if rep.photo_url != rep.photo
     rep.save
+    puts "Updated #{state.abbr} #{rep.role} #{rep.official_full}"
 
     add_or_update_office_locations(rep, os_rep)
   end
@@ -93,7 +94,10 @@ class StateRepUpdater
         office_type: os_off.type, rep: rep
       )
       update_fax_phone_and_address(rep, off, os_off)
-      off.save unless off.address.blank? && off.phone.blank?
+      unless off.address.blank? && off.phone.blank?
+        off.save
+        puts "Updated #{rep.official_full}'s #{off.city} office"
+      end
     end
   end
 
