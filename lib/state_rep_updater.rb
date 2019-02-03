@@ -13,9 +13,19 @@ class StateRepUpdater
       state      = set_chambers_and_return_state(state, chambers)
       state.save
 
-      open_states_reps = OpenStates.legislators { |r| r.state = state_abbr }.objects
+      update_state_legislators(state, attempt: 1)
+    end
+  end
+
+  def self.update_state_legislators(state, attempt:)
+    open_states_reps = OpenStates.legislators { |r| r.state = state.abbr.downcase }.objects
+    
+    # Recursively call method again if objects are nil, and give up after five attempts.
+    if open_states_reps
       new(open_states_reps, state).update!
       OpenStates::Legislator.destroy_all
+    elsif attempt <= 5
+      update_state_legislators(state, attempt: attempt + 1)
     end
   end
 
