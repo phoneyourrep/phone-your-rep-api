@@ -96,9 +96,10 @@ namespace :db do
       puts "There are now #{Rep.count} reps and #{OfficeLocation.count} offices in the database."
       Rake::Task['db:pyr:update:socials'].invoke
       OfficeLocation.joins(:rep).
+        where(office_type: 'district').
         where.
         not(reps: { type: 'StateRep' }).
-        destroy_all(office_type: 'district')
+        destroy_all
       Rake::Task['db:pyr:update:office_locations'].invoke
       puts "There are now #{OfficeLocation.count} office locations in the database."
       Rake::Task['db:pyr:update:governors'].invoke
