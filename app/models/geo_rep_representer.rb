@@ -2,7 +2,7 @@
 
 class GeoRepRepresenter
   METHODS = %i[
-    id 
+    id
     district_id
     state_id
     role
@@ -43,7 +43,7 @@ class GeoRepRepresenter
     sorted_offices
   ].freeze
 
-  delegate *METHODS, to: :rep
+  delegate(*METHODS, to: :rep)
 
   attr_reader :rep, :coordinates
 

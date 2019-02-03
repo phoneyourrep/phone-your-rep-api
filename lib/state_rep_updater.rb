@@ -19,7 +19,7 @@ class StateRepUpdater
 
   def self.update_state_legislators(state, attempt:)
     open_states_reps = OpenStates.legislators { |r| r.state = state.abbr.downcase }.objects
-    
+
     # Recursively call method again if objects are nil, and give up after five attempts.
     if open_states_reps
       new(open_states_reps, state).update!
