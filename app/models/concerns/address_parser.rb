@@ -5,6 +5,39 @@ module AddressParser
     Nokogiri::HTML('&nbsp;').text
   end
 
+  def set_city_state_and_zip
+    return unless address && address_changed?
+    phone_only = address.match(/[\p{Zs}\s]+Phone(\s?)+\z/)
+    return add_fields_for_phone_only(phone_only) if phone_only
+    trim_address_tail
+    extract_zip_and_state_from_full_address
+
+    address_array = address.gsub("\n", ', ').split(', ')
+    address_array.length <= 1 ? geocode_city : extract_city_from_address_array(address_array)
+
+    extract_building_and_suite
+    self.address = nil if address.blank?
+  end
+
+  def add_fields_for_phone_only(phone_only)
+    address.sub!(phone_only.to_s, '')
+    self.city    = address
+    self.state   = rep.state.abbr
+    self.address = ''
+    geocode
+    reverse_geocode
+  end
+
+  def trim_address_tail
+    trim = address.match(/[A-Za-z\s\p{Zs}]+\z/)
+    address.sub!(trim.to_s, '') unless trim.to_s == "\n"
+  end
+
+  def extract_zip_and_state_from_full_address
+    extract_zip_from_full_address
+    extract_state_from_full_address
+  end
+
   def extract_zip_from_full_address
     self.zip = address.match(/(\p{Zs}|\s)+\d{5}(?:[-\s]\d{4})?(\s+)?\z/).to_s
     address.sub!(zip, '')
@@ -15,20 +48,6 @@ module AddressParser
     self.state = address.match(/,?\s+[A-Z]{2}(\s|,)?\z/).to_s
     address.sub!(state, '')
     state.delete!("\n ,#{nbsp}")
-  end
-
-  def trim_address_tail
-    trim = address.match(/[A-Za-z\s\p{Zs}]+\z/)
-    address.sub!(trim.to_s, '') unless trim.to_s == "\n"
-  end
-
-  def add_fields_for_phone_only(phone_only)
-    address.sub!(phone_only.to_s, '')
-    self.city    = address
-    self.state   = rep.state.abbr
-    self.address = ''
-    geocode
-    reverse_geocode
   end
 
   def split_city_on_digits
@@ -43,20 +62,6 @@ module AddressParser
     return unless match
     send "#{attribute}=", match.to_s.strip
     address.sub!(match.to_s, '').strip!
-  end
-
-  def set_city_state_and_zip
-    return unless address && address_changed?
-    phone_only = address.match(/[\p{Zs}\s]+Phone(\s?)+\z/)
-    return add_fields_for_phone_only(phone_only) if phone_only
-    trim_address_tail
-    extract_zip_and_state_from_full_address
-
-    address_array = address.gsub("\n", ', ').split(', ')
-    address_array.length <= 1 ? geocode_city : extract_city_from_address_array(address_array)
-
-    extract_building_and_suite
-    self.address = nil if address.blank?
   end
 
   def extract_city_from_address_array(address_array)
@@ -75,10 +80,5 @@ module AddressParser
   def extract_building_and_suite
     extract_building_or_suite :building, /\A[\w\W]+[Bb]uilding\s?/
     extract_building_or_suite :suite, /(Annex\s)?([Rr](oo)?m|[Ss](ui)?te)\.?\s\w+(-\w+)?/
-  end
-
-  def extract_zip_and_state_from_full_address
-    extract_zip_from_full_address
-    extract_state_from_full_address
   end
 end
