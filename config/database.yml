@@ -25,4 +25,3 @@ production:
   <<: *default
   database: phonerep_prod
   url: <%= ENV["DATABASE_URL"] ? ENV["DATABASE_URL"].sub(/^postgres/, "postgis") : "" %>
-  # url: <%= ENV["DATABASE_URL"] %>

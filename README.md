@@ -55,6 +55,7 @@ If you've already configured and seeded the database before and just need to upd
  If you're configuring for the first time and you're getting errors, or you don't want to do a complete reset, or you're some kind of control freak, here are the manual steps broken down
 
 #### Step 1: Creating the spatial database and migrating
+## In development
 ```
 bundle exec rake db:drop # skip this unless you're resetting
 bundle exec rake db:create
@@ -62,6 +63,40 @@ bundle exec rake db:gis:setup # enables the PostGIS extension
 bundle exec rake db:migrate
 ```
 Migrating is your first test that you have a properly configured database. If you get errors while migrating, you may have PostGIS configuration issues and your database is not recognizing the geospatial datatypes. Read up on the documentation for RGeo and ActiveRecord PostGIS Adapter to troubleshoot.
+
+## In Production (Heroku)
+
+You will need a properly provisioned Postgres database with PostGIS enabled. On Heroku you'll need a minimum of hobby-basic tier database and follow these steps.
+
+Your Heroku buildpacks should be in the following order prior to your first git push:
+```
+https://github.com/diowa/heroku-buildpack-rgeo-prep.git
+https://github.com/peterkeen/heroku-buildpack-vendorbinaries.git
+heroku/ruby
+```
+Git push and run this command to load the schema into the database:
+```
+heroku run --app [APP_NAME] DISABLE_DATABASE_ENVIRONMENT_CHECK=1 rake db:schema:load
+```
+You'll also want to configure the following environment variables:
+```
+# necessary for performing geocoding. You can configure another geocoding service and API key in config/initializers/geocoder.rb
+GOOGLE_API_KEY = your_key
+
+LD_LIBRARY_PATH = /app/lib
+
+# Necessary for running update tasks on state rep data
+OPENSTATES_API_KEY = your_key
+
+# AWS bucket for QR code images. Set this var if you want to customize the images and manage your own bucket. Defaults to phone-your-rep-images if you don't
+PYR_S3_BUCKET = your_bucket
+
+# Governator gem uses these to scrape data on U.S. governors. This feature is deprecated in favor of scraping data from the open source [CivilServiceUSA/us-governors repo](https://github.com/CivilServiceUSA/us-governors)
+TWITTER_ACCESS_TOKEN = your_token
+TWITTER_ACCESS_TOKEN_SECRET = your_secret_token
+TWITTER_CONSUMER_KEY = your_key
+TWITTER_CONSUMER_SECRET = your_secret_key
+```
 
 #### Step 2: Seeding the data
 Many of the offices have coordinates preloaded in the seed data. Any that don't will automatically be geocoded during seeding.
@@ -86,7 +121,7 @@ The `shapefiles` task loads the geographic boundary data for the states and dist
 ```
 bundle exec rake db:pyr:seed_reps
 ```
-The `seed_reps` task loads all of the rep and office location data and generates VCards for each office.
+The `seed_reps` task loads all of the rep and office location data.
 
 If you want to be able to look up congressional districts by ZCTA, run `bundle exec rake db:pyr:zctas`, or if starting from scratch you can pass `zctas=true` as a variable to the seeds task, e.g.
 ```
@@ -97,43 +132,58 @@ or
 bundle exec rake db:pyr:setup_and_seed zctas=true
 ```
 
+If you want to scrape all state reps and load them into the database run the following command:
+```
+bundle exec rake db:pyr:update:state_reps
+```
+This will take some time to complete. Maybe an hour?
+
 Finally
 ```
 bundle exec rails s
 ```
 #### Congrats! You've set up a geospatial database! Have a few cold ones, you deserve it.
-The app is configured to get QR code images from the `phone-your-rep-images` S3 bucket by default. These QR codes are kept up to date with the current data. If you are adapting this app for a different data set and wish to generate your own, you can do so easily by following these steps:
+The app is configured to get QR code images from the `phone-your-rep-images` S3 bucket by default. These QR codes are kept up to date with the current data. If you wish to generate your own, you can do so easily by following these steps:
 
 ##### Create your own dedicated S3 bucket
 ##### Set a `PYR_S3_BUCKET` evironment variable to the bucket name
 ##### Download and configure the AWS command line tool to interact with your bucket.
+##### Create a directory and git repository named `qr_codes` in the same directory as this one.
 
 Then just
 ```
-rake pyr:qr_codes:create
+# If you want to generate and upload QR codes for all congressional and state reps, plus governors
+$ bundle exec rake pyr:qr_codes:create_all
+
+# If you want to focus on smaller sets:
+$ bundle exec rake pyr:qr_codes:create[congress]
+$ bundle exec rake pyr:qr_codes:create[governors]
+$ bundle exec rake pyr:qr_codes:create[vt] # Substitute argument with any two-letter state and U.S. territory abbreviation
 ```
 This will generate the images, empty the bucket, upload the images, and then delete the local copies. If you set the environment variable properly, your app should automatically point to the right URLs.
+
+Generating the QR codes for all reps takes a couple hours to execute and is CPU intensive.
 
 # Updating
 If you just need to update your existing database with the most current data then run
 ```
-rake db:pyr:update:all
+$ bundle exec rake db:pyr:update:all
 ```
 The discreet steps are broken down as follows:
 ```
-rake db:pyr:update:retired_reps
+$ bundle exec rake db:pyr:update:retired_reps
 ```
 This deactivates any reps (and their office locations) that are no longer serving in congress.
 ```
-rake db:pyr:update:current_reps
+$ bundle exec rake db:pyr:update:current_reps
 ```
 This updates basic info for the active reps, including name, role, state, district, and DC office. New reps will be added to the database.
 ```
-rake db:pyr:update:socials
+$ bundle exec rake db:pyr:update:socials
 ```
 This updates the social media accounts for active reps.
 ```
-rake db:pyr:update:office_locations
+$ bundle exec rake db:pyr:update:office_locations
 ```
 This updates all of the active district offices for all reps, adds new ones, and deactivates those no longer in service. Updated VCards are also generated for each office.
 
@@ -161,7 +211,7 @@ You can also specify an alternative data source (as long as it's in YAML format)
 
 # Deployment
 
-This is deployed on Heroku. Deploying a geo-spatially enabled database to Heroku can be a bit of a challenge. Docs for that will come soon.
+This is deployed on Heroku. See the [Installation](#installation) section for deployment steps.
 
 # Contributing
 
