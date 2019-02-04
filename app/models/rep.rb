@@ -94,7 +94,7 @@ class Rep < ApplicationRecord
     update photo: fetch_photo_data ? photo_url : nil
   end
 
-  def fetch_photo_data
+  def fetch_photo_data # rubocop:disable Metrics/MethodLength
     open(photo_url, &:read) unless photo_url.blank?
   rescue OpenURI::HTTPError => e
     logger.error e
@@ -108,5 +108,9 @@ class Rep < ApplicationRecord
   rescue Encoding::UndefinedConversionError => e
     logger.error e
     e.message
+  rescue RuntimeError => e
+    logger.error e
+    return false if e.message.include?('redirection forbidden')
+    raise
   end
 end
