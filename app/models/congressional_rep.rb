@@ -6,7 +6,7 @@ class CongressionalRep < Rep
   belongs_to :district, class_name: 'CongressionalDistrict'
 
   def set_photo_url
-    self.photo_url = "https://phoneyourrep.github.io/images/congress/450x550/#{official_id}.jpg"
+    self.photo_url = "https://theunitedstates.io/images/congress/450x550/#{official_id}.jpg"
   end
 
   def set_bioguide_id

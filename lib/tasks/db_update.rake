@@ -122,7 +122,12 @@ namespace :db do
 
       desc 'Fetch and update photo URLs'
       task :photos do
-        Rep.active.each(&:add_photo)
+        CongressionalRep.active.each do |rep|
+          rep.set_photo_url
+          rep.add_photo
+        end
+
+        StateRep.active.each(&:add_photo)
       end
 
       def update_database(filename:, klass:)
