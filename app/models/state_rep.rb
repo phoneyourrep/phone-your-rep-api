@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class StateRep < Rep
-  before_save :set_state_leg_id, :set_role
+  before_save :set_state_leg_id, :set_role, :set_florida_photo_url
   before_save :set_party_as_democrat, if: -> { party == 'Democratic' }
 
   def set_state_leg_id
@@ -14,5 +14,10 @@ class StateRep < Rep
 
   def set_party_as_democrat
     self.party = 'Democrat'
+  end
+
+  def set_florida_photo_url
+    self.photo_url = self.photo_url.sub("flhouse", "myfloridahouse")
+    self.photo = photo_url
   end
 end
