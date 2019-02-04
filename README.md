@@ -15,6 +15,8 @@ State and district shapefiles - https://www.census.gov/geo/maps-data/data/tiger-
 
 ZCTA to congressional district relationship file - http://www2.census.gov/geo/docs/maps-data/data/rel/zcta_cd111_rel_10.txt
 
+State Reps - http://openstates.org
+
 # Vagrant
 If you are too busy to do the manual installation, you can download a Vagrant BOX which has the requirements below already installed, download it here.
 
@@ -26,8 +28,8 @@ rbenv install 2.4.1 or rvm install 2.4.1
 ```
 Make sure you have PostgreSQL installed, and then install the PostGIS extension. If you're using MacOS you can try installing with Homebrew. Otherwise it's recommended that you use the Vagrant box.
 ```
-brew install postgres
-brew install postgis
+$ brew install postgres
+$ brew install postgis
 ```
 
 Mac users can also download the [Heroku PostgreSQL app](https://postgresapp.com/) instead of running `brew install`. The app comes with the PostGIS extension enabled and everything working out of the box. This is by far the easiest route to get PostGIS on a Mac.
@@ -35,19 +37,19 @@ Mac users can also download the [Heroku PostgreSQL app](https://postgresapp.com/
 Then
 
 ```
-gem install bundler
-bundle install
-bundle exec rake db:pyr:setup
+$ gem install bundler
+$ bundle install
+$ bundle exec rake db:pyr:setup
 ```
 
 Run the tests
 ```
-bundle exec rake
+$ bundle exec rake
 ```
 
 If you didn't get any errors during setup and the tests are passing, you can seed the database. It will take a little while, so grab a cold one
 ```
-bundle exec rake db:seed
+$ bundle exec rake db:seed
 ```
 
 If you've already configured and seeded the database before and just need to update to the most current data, skip ahead to #Updating. If you want to reset the database and seed with one command run `bundle exec rake db:pyr:setup_and_seed`
@@ -57,10 +59,10 @@ If you've already configured and seeded the database before and just need to upd
 #### Step 1: Creating the spatial database and migrating
 ## In development
 ```
-bundle exec rake db:drop # skip this unless you're resetting
-bundle exec rake db:create
-bundle exec rake db:gis:setup # enables the PostGIS extension
-bundle exec rake db:migrate
+$ bundle exec rake db:drop # skip this unless you're resetting
+$ bundle exec rake db:create
+$ bundle exec rake db:gis:setup # enables the PostGIS extension
+$ bundle exec rake db:migrate
 ```
 Migrating is your first test that you have a properly configured database. If you get errors while migrating, you may have PostGIS configuration issues and your database is not recognizing the geospatial datatypes. Read up on the documentation for RGeo and ActiveRecord PostGIS Adapter to troubleshoot.
 
@@ -76,7 +78,7 @@ heroku/ruby
 ```
 Git push and run this command to load the schema into the database:
 ```
-heroku run --app [APP_NAME] DISABLE_DATABASE_ENVIRONMENT_CHECK=1 rake db:schema:load
+$ heroku run --app [APP_NAME] DISABLE_DATABASE_ENVIRONMENT_CHECK=1 rake db:schema:load
 ```
 You'll also want to configure the following environment variables:
 ```
@@ -110,37 +112,37 @@ after_validation :geocode, if: :needs_geocoding?
 
 The `seeds.rb` file invokes a handful of discreet seeding tasks. If you want to isolate any of these, or seed manually, here they are broken down:
 ```
-bundle exec rake db:pyr:seed_states
-bundle exec rake db:pyr:seed_districts
+$ bundle exec rake db:pyr:seed_states
+$ bundle exec rake db:pyr:seed_districts
 ```
 The two tasks above load the basic state and district data such as names and codes.
 ```
-bundle exec rake db:pyr:shapefiles
+$ bundle exec rake db:pyr:shapefiles
 ```
 The `shapefiles` task loads the geographic boundary data for the states and districts, and is the last test that your database is configured properly for GIS.
 ```
-bundle exec rake db:pyr:seed_reps
+$ bundle exec rake db:pyr:seed_reps
 ```
 The `seed_reps` task loads all of the rep and office location data.
 
 If you want to be able to look up congressional districts by ZCTA, run `bundle exec rake db:pyr:zctas`, or if starting from scratch you can pass `zctas=true` as a variable to the seeds task, e.g.
 ```
-bundle exec rake db:seed zctas=true
+$ bundle exec rake db:seed zctas=true
 ```
 or
 ```
-bundle exec rake db:pyr:setup_and_seed zctas=true
+$ bundle exec rake db:pyr:setup_and_seed zctas=true
 ```
 
 If you want to scrape all state reps and load them into the database run the following command:
 ```
-bundle exec rake db:pyr:update:state_reps
+$ bundle exec rake db:pyr:update:state_reps
 ```
 This will take some time to complete. Maybe an hour?
 
 Finally
 ```
-bundle exec rails s
+$ bundle exec rails s
 ```
 #### Congrats! You've set up a geospatial database! Have a few cold ones, you deserve it.
 The app is configured to get QR code images from the `phone-your-rep-images` S3 bucket by default. These QR codes are kept up to date with the current data. If you wish to generate your own, you can do so easily by following these steps:
@@ -186,6 +188,10 @@ This updates the social media accounts for active reps.
 $ bundle exec rake db:pyr:update:office_locations
 ```
 This updates all of the active district offices for all reps, adds new ones, and deactivates those no longer in service. Updated VCards are also generated for each office.
+```
+$ bundle exec rake db:pyr:update:photos
+```
+Verifies and updates photo urls for all reps.
 
 If you need to generate updated QR codes you can run the update command as `rake db:pyr:update:all qr_codes=true`
 

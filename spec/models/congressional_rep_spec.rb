@@ -58,7 +58,7 @@ describe CongressionalRep, type: :model do
   end
 
   it 'has a photo_url based on its bioguide_id' do
-    photo_url = 'https://phoneyourrep.github.io/images/congress/450x550/S000033.jpg'
+    photo_url = 'https://theunitedstates.io/images/congress/450x550/S000033.jpg'
 
     expect(@rep.photo_url).to eq(photo_url)
   end
