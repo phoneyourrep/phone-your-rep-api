@@ -17,7 +17,7 @@ class StateRep < Rep
   end
 
   def set_florida_photo_url
-    self.photo_url = self.photo_url.sub("flhouse", "myfloridahouse")
+    self.photo_url = photo_url&.sub('flhouse', 'myfloridahouse')
     self.photo = photo_url
   end
 end
